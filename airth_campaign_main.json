@@ -1,4 +1,3 @@
-{
   "campaign": {
     "meta": {
       "name": "Airth Campaign",
@@ -717,6 +716,8 @@
     
     "npc_template": {
       "moniker": "",
+      "home": "",
+      "gender": ["male", "female", "transgender"],
       "faction": "",
       "appearance": "",
       "and_yet": "",
@@ -732,8 +733,70 @@
       "tragedies": [],
       "pc_leverage": ""
     },
+
+    "npc_generation_guidelines": {
+      "gender_distribution": {
+      "male": 0.60,
+      "female": 0.39,
+      "transgender": 0.01,
+      "note": "Apply probabilistically when generating NPCs"
+      }
+    }
     
     "settlements": {
+      "caelrun": {
+    "name": "Caelrun",
+    "type": "Lakeside fishing village",
+    "population": {
+      "total": 1200,
+      "breakdown": {
+        "agriculture_herding": 300,
+        "militia_active": 36,
+        "veterans_elites": 24,
+        "clergy": 24,
+        "ilmenor_scholars": 0,
+        "artisans_builders": 36,
+        "traders_ferrymen": 18,
+        "fisherfolk_riverfolk": 600,
+        "monastics_hermits": 6,
+        "servants_dependents": 18,
+        "bound_laborers": 6,
+        "fringe_outliers": 132
+      }
+    },
+    "economy": ["Fishing", "Eel-trapping","Barley cultivation", "Rush weaving", "Lake-industry crafts"],
+    "exports": ["Dried fish", "Smoked fish", "Fish oil", "Barley (seed & food)", "Rush mats", "Fish bone tools", "Waterfowl", "Cattail products", "Lake-hemp rope", "Willow baskets"],
+    "imports": ["Tools", "Salt", "Weapons", "Iron", "Pottery", "Wine"],
+    "character": "Humid, productive, quietly watched by forces villagers don't acknowledge",
+    "atmosphere": {
+      "sounds": ["Lapping water", "Fish market calls", "Net-mending rhythms", "Waterfowl cries", "Oars creaking", "Reed rustling"],
+      "smells": ["Fish (fresh, drying, smoking)", "Lake water", "Wet reeds", "Barley fields", "Fish oil rendering", "Mud"],
+      "mood": "Industrious, practical, prosperity with undercurrent of carefully ignored truths"
+    },
+    "families": ["Hallan", "Caernach", "Velmari", "Tarnes", "Norvak", "Bresul"],
+    "locations": {},
+    "factions": ["Aurka (active near lake ruins)", "Lizard-men (shadow authority, most unaware)"],
+    "tensions": [
+      "Aurka activity drawing unwanted attention to ruins",
+      "Unspoken lizard-man control - acknowledged by few, ignored by most",
+      "Fishing rights disputes between families",
+      "Fringe workers (leech gatherers, bog-edge camps) operate outside village authority"
+    ],
+    "rumors": [
+      "Aurka found carved stones in submerged temple foundations",
+      "Nerzul smugglers use secret lake channels at night",
+      "Old temple columns visible in shallows during summer droughts"
+    ],
+    "defenses": {
+      "militia": "Ceremonial, mostly for disputes and drunk fishers",
+      "reality": "Lizard-men enforce territorial boundaries from shadows",
+      "village_understanding": "Most residents believe their prosperity comes from hard work and good location, unaware of the arrangement"
+    },
+    "trade_focus": "Food surplus provider - feeds other Marches villages",
+    "nearest_neighbors": ["Nemetra (northwest)", "Tagmira (east)", "Nerzul (south, hidden)"],
+    "road_position": "On main Lamares-Orziben caravan route, between Nemetra and Tagmira",
+    "hidden_truth": "Village exists by lizard-man sufferance, most residents unaware of this arrangement. A few families know and maintain the unspoken compact."
+  }
       "nerzul": {
         "name": "Nerzul",
         "location": "South of Caelrun",
@@ -742,8 +805,344 @@
     },
     
     "families": {},
-    "npcs": {},
-    "items": {},
-    "plots": {}
+
+    "npcs": {
+  "taziri_nkhaleb": {
+    "moniker": "The Measure",
+    "home": "The road itself—feels wrong when stationary more than two days",
+    "gender": "female",
+    "faction": "Neutral merchant (minor Elunad association via late husband)",
+    "appearance": "Imazuran woman, late 40s, olive skin weathered by road dust, sharp brown eyes that count everything, ochre and grey traveling robes, silver measuring-chain belt, ink-stained hands",
+    "and_yet": "Keeps Isarna shrine in lead wagon, burns expensive incense at every crossroads",
+    "wants": "Profitable predictable routes, respect from both cultures, vengeance on lizard-men",
+    "does_not_want": "Questions about husband's death, choosing factional sides, lizard-men mentioned as allies",
+    "oddly_also": "Collects obscure road songs in journal, refuses water drawn south of the road",
+    "thinks_with": "Coin, probabilities, road-wisdom from Elunad husband",
+    "family": "Late husband Irven (Elunad, killed by lizard-men 8yr ago), son Khalid (24, leads return caravans), daughter Sarit (22, manages Orziben warehouses), son Davin (19, Ilmenor scribe apprentice), brother Azghar (teamster)",
+    "self_image": "Bridge between Gallaecian and Imazuran, keeper of husband's legacy, protector of her caravan family",
+    "recreation": "Singing road songs at crossroads, updating ledgers by candlelight, polishing husband's waystone marker",
+    "dreams": "Davin becomes respected Ilmenor scholar, safe profitable routes forever, finding who killed Irven",
+    "anecdotes": [
+      "Once outbid a hobgoblin warlord for iron nails using only dried figs and honey",
+      "Navigated through fey-glamoured woods by singing Isarna hymns until dawn",
+      "Refused Covenant-Bound 'special cargo' offer despite massive payment"
+    ],
+    "tragedies": [
+      "Husband Irven killed in southern swamps 8 years ago (believes lizard-men responsible)",
+      "Has hidden map of 'safe paths' Irven drew before death—guards it obsessively",
+      "Receives coded letters from Davin hinting at dangerous Ilmenor secrets"
+    ],
+    "pc_leverage": "Prove lizard-men didn't kill Irven OR find actual killers; protect Davin; share intelligence on humanoid coordination; respect her authority on the road"
+  },
+
+  "mother_yaleth": {
+    "moniker": "Mother Yaleth",
+    "home": "Nemetra—has never left, refuses to, sees leaving as betrayal of the sick and dying who need her",
+    "gender": "female",
+    "faction": "Herb-wives (unofficial leader), allied with House Yebrin",
+    "appearance": "Late 60s, weathered face with deep lines, sharp grey eyes that miss nothing, faded green shawl, earth-stained hands, walks with carved hazelwood staff, wears dried herb bundles at belt",
+    "and_yet": "",
+    "wants": "Truth about northern woods threat, village to take danger seriously, protect the younger herb-wives",
+    "does_not_want": "Militia interference, fools dismissing her warnings, goblins harmed before she learns what they know",
+    "oddly_also": "Heavy smoker (pipe, strong tobacco) despite it damaging her lungs—considered unfeminine, she doesn't care",
+    "thinks_with": "Observation, herb-lore passed down generations, pattern recognition from decades of births and deaths",
+    "family": "House Yebrin (distant cousin), 6 herb-wives under her guidance, no living children",
+    "self_image": "Proud of her humility, quietly smug about being right when others are wrong",
+    "recreation": "Smoking her pipe on the compound steps at dusk, watching village life",
+    "dreams": "Establish Nemetra as tobacco exporter, prove herb-wives' wisdom to the fools, die respected",
+    "anecdotes": [
+      "Delivered Captain Durvin himself during a winter storm—he was blue when he came out, she breathed life back into him. He's never thanked her once.",
+      "Diagnosed House Halbet's pottery master with lung rot from kiln smoke 20 years ago—he ignored her, kept working, died within the year. His son listens now.",
+      "Once talked down a delirious wounded orc at the forest edge using only hand signs and offering him water. Militia wanted to kill it. She sent it limping north with bandaged leg."
+    ],
+    "tragedies": [
+      "Lost all three of her children (two daughters, one son) to fever in a single week during Year 285. She knows every herb that might have saved them—none grew close enough in time.",
+      "Her husband left her 40 years ago, said she 'loved plants more than people.' He remarried in Tagmira. She never speaks of him but keeps his tobacco pouch.",
+      "Her mentor, Old Kessa, was killed by militiamen who thought she was consorting with fey (she was gathering moonlit herbs). Yaleth found the body. Durvin's father led that patrol—she's never forgotten."
+    ],
+    "pc_leverage": "Bring her proof of northern woods threat, protect goblins from militia, share intelligence she can't gather herself, respect her knowledge"
+  },
+
+  "ordun_tarnes": {
+    "moniker": "The Quiet Negotiator",
+    "home": "Caelrun",
+    "gender": "male",
+    "faction": "House Tarnes, grain collective leader",
+    "appearance": "Weathered, patient, knows soil and seasons",
+    "and_yet": "",
+    "wants": "Good harvests, peace with all parties including lizard-men",
+    "does_not_want": "Village discovering his quiet negotiations, conflict disrupting planting seasons",
+    "oddly_also": "",
+    "thinks_with": "Seasonal cycles, careful observation, pragmatic compromise",
+    "family": "House Tarnes patriarch, extended family of 15+",
+    "self_image": "Keeper of ancient compact, protector through diplomacy not strength",
+    "recreation": "Walking barley fields at dawn alone",
+    "dreams": "Pass knowledge of lizard-man arrangement to worthy successor",
+    "anecdotes": [],
+    "tragedies": [],
+    "pc_leverage": "Respect for the compact, help with harvest, keep his secret"
+  },
+
+  "merra_of_the_fields": {
+    "moniker": "",
+    "home": "Caelrun",
+    "gender": "female",
+    "faction": "House Tarnes (married in)",
+    "appearance": "Sharp-tongued, practical, sun-darkened skin",
+    "and_yet": "",
+    "wants": "Efficient land use, respect for agricultural expertise",
+    "does_not_want": "Fishers' opinions on farming, wasted resources",
+    "oddly_also": "",
+    "thinks_with": "Schedules, yield calculations, no-nonsense planning",
+    "family": "Married to Tarnes cousin, three children work the fields",
+    "self_image": "The one who actually makes things run",
+    "recreation": "Doesn't have time for recreation, resents the question",
+    "dreams": "Expand barley cultivation, prove women can manage large operations",
+    "anecdotes": [],
+    "tragedies": [],
+    "pc_leverage": "Practical help, respect for her authority, efficient solutions"
+  },
+
+  "kelvan_bresul": {
+    "moniker": "",
+    "home": "Caelrun",
+    "gender": "male",
+    "faction": "House Bresul, militia captain (ceremonial)",
+    "appearance": "Soft around the middle, drinks too much, ceremonial armor kept polished",
+    "and_yet": "",
+    "wants": "To be taken seriously, to not see what he half-sees in marshes",
+    "does_not_want": "Real conflict, questions about militia effectiveness, night patrols near swamp edge",
+    "oddly_also": "",
+    "thinks_with": "Denial, alcohol, maintaining appearances",
+    "family": "House Bresul, wife tired of his drinking, two teenage sons",
+    "self_image": "Protector of Caelrun (deeply insecure about this)",
+    "recreation": "Drinking at the Waterside Tavern, telling war stories from his youth that may not be true",
+    "dreams": "Prove himself in real conflict (terrified this might actually happen)",
+    "anecdotes": [],
+    "tragedies": [],
+    "pc_leverage": "Validate his importance, bring him information that makes him look competent, don't expose his fear"
+  },
+
+  "sarith_the_scarred": {
+    "moniker": "The Watcher",
+    "home": "Caelrun",
+    "gender": "male",
+    "faction": "Former Elunad, adopted House Hallan, village elder",
+    "appearance": "Old wounds visible, walks with cane, sharp eyes despite age",
+    "and_yet": "",
+    "wants": "Maintain lizard-man compact, village safety, peaceful succession of knowledge",
+    "does_not_want": "Foolish heroes disrupting arrangement, Aurka attracting wrong attention",
+    "oddly_also": "",
+    "thinks_with": "Decades of border wisdom, Elunad training, cold pragmatism",
+    "family": "Adopted by Hallan after serving with them, never married, mentors quietly",
+    "self_image": "Last guardian of a necessary truth",
+    "recreation": "Carving waystones, teaching those few who listen",
+    "dreams": "Die knowing compact will hold after he's gone",
+    "anecdotes": [],
+    "tragedies": [],
+    "pc_leverage": "Prove trustworthiness, demonstrate understanding of complex situations, Elunad connection"
+  },
+
+  "mother_hildreth": {
+    "moniker": "",
+    "home": "Caelrun",
+    "gender": "female",
+    "faction": "House Velmari, Senior Thulda priestess",
+    "appearance": "Elderly, serene, grey wool robes, moves slowly but purposefully",
+    "and_yet": "",
+    "wants": "Proper funeral rites, peace for the dying, respect for Thulda's mysteries",
+    "does_not_want": "Rushed burials, impiety, questions about death she cannot answer",
+    "oddly_also": "",
+    "thinks_with": "Ritual, tradition, acceptance of mortality",
+    "family": "House Velmari, outlived husband and two children",
+    "self_image": "Shepherd of souls, keeper of the final threshold",
+    "recreation": "Spinning wool by the shrine, humming old funeral songs",
+    "dreams": "Train successor, die in her sleep at the shrine",
+    "anecdotes": [],
+    "tragedies": [],
+    "pc_leverage": "Respect for rituals, help with funeral preparations, listening to her wisdom"
+  },
+
+  "tovar_the_boatwright": {
+    "moniker": "",
+    "home": "Caelrun",
+    "gender": "male",
+    "faction": "House Bresul, master boat builder",
+    "appearance": "Perfectionist, calloused hands, sawdust in beard, critical eye",
+    "and_yet": "",
+    "wants": "Every boat built to last decades, apprentices who listen, proper materials",
+    "does_not_want": "Rush jobs, cheap timber, people who don't understand craftsmanship",
+    "oddly_also": "",
+    "thinks_with": "Wood grain, water flow, structural integrity",
+    "family": "House Bresul, three apprentices (terrorized), wife understands his moods",
+    "self_image": "Last true craftsman in a world of shortcuts",
+    "recreation": "There is no recreation, only boat work",
+    "dreams": "Build the perfect fishing boat, retire without regrets",
+    "anecdotes": [],
+    "tragedies": [],
+    "pc_leverage": "Respect his craft, patience, bring quality materials, don't rush him"
+  },
+
+  "yavra_quickwater": {
+    "moniker": "Quickwater",
+    "home": "Caelrun",
+    "gender": "female",
+    "faction": "House Norvak, ferry operator, Nerzul contact",
+    "appearance": "Amazigh woman, agile, knows every channel, suspicious eyes",
+    "and_yet": "",
+    "wants": "Profitable smuggling routes, Nerzul connections maintained, not getting caught",
+    "does_not_want": "Questions about nighttime ferry trips, militia attention, loose-lipped passengers",
+    "oddly_also": "",
+    "thinks_with": "Hidden channels, tide timing, who can be trusted",
+    "family": "House Norvak, but operates independently, sends money home",
+    "self_image": "Free trader in unfree world",
+    "recreation": "Gambling with Nerzul smugglers, winning usually",
+    "dreams": "Retire wealthy to Imazuran, never explain where money came from",
+    "anecdotes": [],
+    "tragedies": [],
+    "pc_leverage": "Gold, discretion, Nerzul connections, don't threaten her operation"
+  },
+
+  "brecht_hallan": {
+    "moniker": "The Fleet Master",
+    "home": "Caelrun",
+    "gender": "male",
+    "faction": "House Hallan patriarch, fleet master",
+    "appearance": "Commands 40+ boats, hard but fair, weathered from decades on water",
+    "and_yet": "",
+    "wants": "Productive fishing, family prosperity, compact honored quietly",
+    "does_not_want": "Outsiders disrupting arrangement, family members talking too much, bad fishing seasons",
+    "oddly_also": "",
+    "thinks_with": "Fish migrations, weather signs, political calculation",
+    "family": "House Hallan patriarch, 40+ extended family, inherited secret from father",
+    "self_image": "Steward of village prosperity through necessary silence",
+    "recreation": "Fishing alone, teaching grandchildren knots",
+    "dreams": "Pass fleet and secret to worthy heir, die on the water",
+    "anecdotes": [],
+    "tragedies": [],
+    "pc_leverage": "Prove discretion, help fishing operations, understand burden of secrets"
+  },
+
+  "essa_the_net_mender": {
+    "moniker": "",
+    "home": "Caelrun",
+    "gender": "female",
+    "faction": "House Caernach, guild mistress, rope-maker",
+    "appearance": "Blind in one eye from fishing accident, hands never stop moving, weathered face",
+    "and_yet": "",
+    "wants": "Guild neutrality maintained, quality rope production, gossip (currency of information)",
+    "does_not_want": "Family feuds disrupting guild, shoddy work, being left out of news",
+    "oddly_also": "",
+    "thinks_with": "Rope tension, social networks, who owes whom",
+    "family": "House Caernach, widowed, grown children fish for other families",
+    "self_image": "Spider at center of web, keeper of village knowledge",
+    "recreation": "Gossip is recreation, knitting while listening",
+    "dreams": "Retire as most respected elder, write nothing down",
+    "anecdotes": [],
+    "tragedies": [],
+    "pc_leverage": "Trade information, respect guild neutrality, commission quality rope"
+  },
+
+  "brother_kellis": {
+    "moniker": "",
+    "home": "Caelrun (far shore reed hut)",
+    "gender": "transgender",
+    "faction": "Wandering Ossamar devotee",
+    "appearance": "Lives in reed hut, marks safe water paths with cairns, speaks in riddles",
+    "and_yet": "",
+    "wants": "Safe crossings for travelers, communion with water spirits, solitude mostly",
+    "does_not_want": "Village politics, questions about their past, cairns disturbed",
+    "oddly_also": "",
+    "thinks_with": "Water currents, liminal spaces, Ossamar's mysteries",
+    "family": "No family ties, left former life behind decades ago",
+    "self_image": "Between-dweller, neither shore nor water, guide for the crossing",
+    "recreation": "Wading at dawn, arranging stones, watching reflections",
+    "dreams": "Perfect understanding of Ossamar's nature, death by drowning peacefully",
+    "anecdotes": [],
+    "tragedies": [],
+    "pc_leverage": "Respect for Ossamar, offerings at cairns, understanding of liminality"
+  },
+
+  "penna": {
+    "moniker": "",
+    "home": "Caelrun",
+    "gender": "female",
+    "faction": "House Hallan servant family (three generations)",
+    "appearance": "Middle-aged, efficient, knows compound routines better than family members",
+    "and_yet": "",
+    "wants": "Smooth household operation, respect for her knowledge, security for her children",
+    "does_not_want": "Chaos, disrespect, her children treated as lesser",
+    "oddly_also": "",
+    "thinks_with": "Schedules, household logistics, practical solutions",
+    "family": "Servant family for three generations, husband also serves Hallan, four children",
+    "self_image": "Backbone of great house, underestimated and essential",
+    "recreation": "Teaching daughters household management, rare moments of stillness",
+    "dreams": "Eldest daughter marries above station, family rises",
+    "anecdotes": [],
+    "tragedies": [],
+    "pc_leverage": "Respect for her position, help her children, recognize her competence"
+  },
+
+  "dren": {
+    "moniker": "",
+    "home": "Caelrun",
+    "gender": "male",
+    "faction": "Debt-bound to House Norvak",
+    "appearance": "Young, bitter, stained from fish oil rendering, thin from hard work",
+    "and_yet": "",
+    "wants": "Freedom from debt, revenge on Norvak, escape from Caelrun",
+    "does_not_want": "Seven more years of service, condescension, being reminded of debt",
+    "oddly_also": "",
+    "thinks_with": "Resentment, counting days, escape planning",
+    "family": "Father took debt, died, debt passed to son, siblings scattered",
+    "self_image": "Prisoner, victim of unjust system",
+    "recreation": "Drinking stolen wine, fantasizing about burning oil pits",
+    "dreams": "Flee to Velgroth, never see fish again, Norvak suffers somehow",
+    "anecdotes": [],
+    "tragedies": [],
+    "pc_leverage": "Help reduce debt, offer escape route, validate his anger, employment after freedom"
+  },
+
+  "kessa_the_leech_wife": {
+    "moniker": "The Leech-Wife",
+    "home": "Caelrun (marsh edge)",
+    "gender": "female",
+    "faction": "No ties, fringe dweller",
+    "appearance": "Stained fingers, knows medicinal herbs, lives alone on marsh edge",
+    "and_yet": "",
+    "wants": "Left alone, herbs to grow wild, occasional trade for necessities",
+    "does_not_want": "Village interference, questions about what she sees, herb-gathering competition",
+    "oddly_also": "",
+    "thinks_with": "Marsh rhythms, medicinal properties, survival",
+    "family": "No ties, may have fled something in past",
+    "self_image": "Useful outcast, too valuable to exile, too strange to integrate",
+    "recreation": "Observing marsh life, talking to leeches",
+    "dreams": "Die in marsh, body returned to water and mud",
+    "anecdotes": [],
+    "tragedies": [],
+    "pc_leverage": "Respect her knowledge, trade fairly, don't pry into past, leave her alone mostly"
+  },
+
+  "varren_muddfoot": {
+    "moniker": "Muddfoot",
+    "home": "Caelrun (stilted shack)",
+    "gender": "male",
+    "faction": "Disowned Bresul cousin, Aurka informant",
+    "appearance": "Nervous energy, lives in stilted shack, stinks of frog and marsh",
+    "and_yet": "",
+    "wants": "Aurka payment, information to trade, respect from family (won't admit this)",
+    "does_not_want": "Family reconciliation attempts, being forced to choose sides, caught informing",
+    "oddly_also": "",
+    "thinks_with": "Information as currency, survival at margins, opportunism",
+    "family": "Distant Bresul cousin, disowned for theft (claims he was framed)",
+    "self_image": "Survivor, wronged but unbowed, eventually they'll see",
+    "recreation": "Spying on ruins, catching frogs, trading rumors",
+    "dreams": "Aurka find something valuable, he gets cut, family begs forgiveness he'll deny",
+    "anecdotes": [],
+    "tragedies": [],
+    "pc_leverage": "Information trade, gold, Aurka connections, don't threaten his operation"
   }
-}
+},
+"items": {},
+"plots": {}
+  }
