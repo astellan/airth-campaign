@@ -1,0 +1,749 @@
+{
+  "campaign": {
+    "meta": {
+      "name": "Airth Campaign",
+      "system": "AD&D",
+      "setting_genre": "Dark Fantasy Post-Apocalyptic",
+      "current_date": "Year ~300 (The Rising period)",
+      "current_year": 300
+    },
+    
+    "cosmology": {
+      "planes": {
+        "material_world": {
+          "name": "Airth",
+          "description": "Primary mortal realm, subject to natural laws, site of the Silence"
+        },
+        "faery": {
+          "name": "The Otherworld",
+          "description": "Parallel realm, semi-permeable boundary",
+          "status": "Blurring with Airth post-Silence (dangerous)",
+          "notes": "Lizard-men and fey have mutual aversion"
+        },
+        "elemental_planes": {
+          "fire_sun": {
+            "name": "The Sun / Fire Plane",
+            "description": "One and the same, vast beyond comprehension, 12000 times the surface area of the earth",
+            "threat": "Source of fire elemental conspiracy to ignite moon (END-OF-WORLD THREAT)",
+            "scope": "Only fire elementals relevant to current plot, other factions OUT OF SCOPE"
+          }
+        },
+        "corpse_planes": {
+          "description": "Dead gods' home planes, gods destroyed utterly and completely",
+          "status": "High-level adventure locations (planar travel required)",
+          "contents": "Remnant divine power, ancient secrets, ultimate relics"
+        },
+        "moon": {
+          "name": "The Moon",
+          "description": "Prison/refuge for the Slumbering Being (Urzael)",
+          "inhabitants": ["Lune Cats", "Crystalmir Dryads", "neutral-good creatures"],
+          "threat": "Target of fire elemental ignition plot - if ignited: near-extinction event",
+          "connection_to_gloaming": "EXTENT UNDECIDED - serves as refuge, possible worship object, ancient memory repository"
+        }
+      },
+      
+      "divine_structure": {
+        "old_gods": {
+          "pantheon": "Annunaki",
+          "deities": ["Nanna-Sin", "Ki", "Inanna", "Utu", "Enki", "Ninhursag"],
+          "status": "DESTROYED on their home planes",
+          "silence_date": 0,
+          "temple_undead_status": "Active, awaiting return that will never come",
+          "temple_undead_knowledge": "Either don't know gods are dead, refuse to accept it, or suspect but don't speak (taboo)"
+        },
+        "new_gods": {
+          "emergence_date": 150,
+          "origin": "Irrelevant to campaign, no memory of creation",
+          "manifestation": "At sacred sites (Irkali)",
+          "deities": {
+            "veltharos": {
+              "name": "Veltharos",
+              "domain": "Sky/Storm",
+              "aspects": ["kingship", "prophecy", "storms"]
+            },
+            "bandua": {
+              "name": "Bandua",
+              "domain": "Hearth/Defense",
+              "aspects": ["walls", "hearths", "blood-oaths"]
+            },
+            "cossus": {
+              "name": "Cossus",
+              "domain": "War/Honor",
+              "aspects": ["seasonal war", "honor duels", "strength through hardship"]
+            },
+            "ossamar": {
+              "name": "Ossamar",
+              "domain": "Water/Transition",
+              "aspects": ["rivers", "fords", "perilous crossings"]
+            },
+            "thulda": {
+              "name": "Thulda",
+              "domain": "Death/Sleep",
+              "aspects": ["death", "sleep", "wool", "shepherds"]
+            },
+            "isarna": {
+              "name": "Isarna",
+              "domain": "Travel/Guidance",
+              "aspects": ["travel", "guidance", "sacred wandering"]
+            },
+            "lugus": {
+              "name": "Lugus",
+              "domain": "Craft/Law",
+              "aspects": ["craft", "speech", "binding laws"]
+            },
+            "malac": {
+              "name": "Malac",
+              "domain": "Fire/Prophecy",
+              "aspects": ["sacred fire", "prophecy through ordeal", "divine madness"],
+              "factions": {
+                "good_bad_ugly": "UNDECIDED - bad faction sympathetic to fire elementals, unwittingly helping conspiracy"
+              }
+            }
+          }
+        },
+        "paramandir": {
+          "name": "Paramandir",
+          "status": "Mythic neutral paladin who bound Urzael to the moon",
+          "current_status": "Unknown (possibly preserved on moon)",
+          "divinity": false
+        }
+      },
+      
+      "magic_systems": {
+        "divine": {
+          "source": "New Gods",
+          "method": "Traditional clerical casting",
+          "requirements": "Taboos and observances"
+        },
+        "arcane": {
+          "source": "Salvaged pre-Silence knowledge",
+          "control": "Ilmenor order",
+          "status": "Strictly regulated, dangerous if untrained"
+        },
+        "illusionism": {
+          "source": "Folds between planes",
+          "control": "Independent tradition, not Ilmenor-governed",
+          "status": "Tolerated but suspect"
+        },
+        "druidic": {
+          "source": "Living World and Faery",
+          "age": "Predates both pantheons",
+          "practitioners": "Serdanos (Rootbound)"
+        },
+        "fey": {
+          "types": ["glamour", "illusion", "binding oaths"],
+          "sun_metal_crafting": "Covenant-Bound can fashion items/weapons from sun-metal"
+        },
+        "necromancy": {
+          "source": "Preserved by undead temple servants",
+          "type": "Blend of old divine and arcane methods",
+          "locations": "31 Temples of Dead Gods (including one north of Tagmira)"
+        }
+      }
+    },
+    
+    "geography": {
+      "regions": {
+        "velgroth_lucernia": {
+          "name": "Velgroth-Lucernia",
+          "culture": "Gallaecian",
+          "population": 240000,
+          "territory_hexes": 9,
+          "territory_area_sq_miles": 15000,
+          "capital_cities": ["Velgroth", "Lucernia"],
+          "government": "High Kingship (multiple petty kingdoms under nominal High King)",
+          "recent_history": "Past 50 years: No inter-kingdom warfare (unprecedented peace)",
+          "notable_kingdoms": ["Thalvyr (among the most troublesome)"],
+          "cities": {
+            "velgroth": {
+              "type": "coastal",
+              "status": "Recovering seafaring tradition, exploring wild coasts",
+              "exploration": "Seeking other human settlements with no success"
+            },
+            "lucernia": {
+              "type": "inland",
+              "history": "Was Sparta-like but ardor has cooled, collectivist culture fading"
+            }
+          }
+        },
+        "imazuran_confederation": {
+          "name": "Imazuran Confederation",
+          "culture": "Amazigh",
+          "location": "East of Velgroth-Lucernia",
+          "relations": "Cultural exchange via shared pantheon",
+          "detail_level": "Less detailed in current docs"
+        },
+        "luric_marches": {
+          "name": "The Luric Marches",
+          "type": "Frontier/Contested",
+          "location": "Between civilized lands and wilderness",
+          "culture": "Mix of cultures",
+          "campaign_focus": true
+        }
+      },
+      
+      "terrain_types": {
+        "swamp_marsh": {
+          "controllers": "Lizard-men (brutally enforce their writ)",
+          "human_settlements": "Exist by lizard-man sufferance",
+          "example_settlements": ["Caelrun (most residents unaware of lizard-man control)", "Nerzul (south of Caelrun)"],
+          "resistance": "Lizard-men resistant to fey/fire manipulation"
+        },
+        "hills_highlands": {
+          "controllers": "Orcs"
+        },
+        "ruins_badlands": {
+          "controllers": "Hobgoblins"
+        },
+        "burnt_lands": {
+          "controllers": "Fire elementals",
+          "threat_level": "LATE GAME/HIGH LEVEL"
+        }
+      },
+      
+      "sacred_geography": {
+        "irkali": {
+          "name": "The Five Irkali (Marhaz)",
+          "description": "Sites where New Gods first manifested",
+          "purpose": "Pilgrimage destinations",
+          "examples": {
+            "marhaz_of_broken_blades": {
+              "deity": "Cossus",
+              "location": "Tharnok"
+            }
+          }
+        },
+        "shrines_waystones": {
+          "examples": ["Ford of Ossamar", "Tree of Mist-Song"]
+        },
+        "ruins_of_old_gods": {
+          "type": "Temple complexes (undead-haunted)",
+          "contents": "Knowledge/treasure",
+          "danger": "High"
+        }
+      }
+    },
+    
+    "population": {
+      "cultural_groups": {
+        "gallaecian": {
+          "linguistic_root": "Pre-Roman Iberian/Celtiberian",
+          "territory": "Western territories (Velgroth-Lucernia)",
+          "government": "High Kingship"
+        },
+        "amazigh": {
+          "linguistic_root": "Berber/North African",
+          "territory": "Eastern (Imazuran)",
+          "relations": "Cultural exchange with Gallaecian"
+        }
+      },
+      
+      "profession_percentages": {
+        "agriculture_herding": 0.85,
+        "militia_active": 0.03,
+        "veterans_elites": 0.02,
+        "clergy": 0.02,
+        "ilmenor_scholars": 0.005,
+        "artisans_builders": 0.03,
+        "traders_ferrymen": 0.015,
+        "fisherfolk_riverfolk": 0.01,
+        "monastics_hermits": 0.005,
+        "servants_dependents": 0.015,
+        "bound_laborers": 0.005,
+        "fringe_outliers": 0.01
+      }
+    },
+    
+    "species": {
+      "humans": {
+        "notes": "See cultural_groups and population sections"
+      },
+      
+      "dwarves": {
+        "presence": "Rare in the Marches",
+        "role": "Skilled craftsmen",
+        "detail_level": "Minimal (example: Brel Karzhadun)"
+      },
+      
+      "elves": {
+        "presence": "Present almost everywhere but in small numbers",
+        "role": "NEEDS CLARIFICATION",
+        "restriction": "ALL elves barred from sacred sites",
+        "factions": {
+          "forsworn": {
+            "alignment": "The Good",
+            "status": "Severed from Faery via ritual",
+            "relationship": "Mortal-aligned, never fully trusted",
+            "cost": "Shortened lifespans, often sterile",
+            "stance": "Oppose Covenant-Bound"
+          },
+          "covenant_bound": {
+            "alignment": "The Bad",
+            "status": "Embraced fey inheritance, serve The Pact-Render",
+            "leader": "The Pact-Render (Covenant-Bound elf, powerful, ancient)",
+            "abilities": ["Glamour-wielding", "Command fey servants", "Fashion magic items/weapons from sun-metal"],
+            "view_of_mortals": "As cattle",
+            "role": "Major antagonists",
+            "goals": "NEEDS DEVELOPMENT",
+            "questions": ["Why want sun-metal?", "Relationship to fire elementals?", "What from mortals?", "Long-term plans?"]
+          },
+          "gray_kin": {
+            "alignment": "The Ugly",
+            "status": "Liminal, walk the line",
+            "role": "Provide necessary but feared services",
+            "relationship_to_pact_render": "Respect their goals but not their methods"
+          }
+        }
+      },
+      
+      "lizard_men": {
+        "territorial_control": "Brutally enforce their writ in claimed territories",
+        "approach": "Harsh but attempt to be fair in their own way",
+        "human_settlements": "Caelrun exists by lizard-man sufferance (most residents unaware)",
+        "factions": "Multiple clans with different approaches",
+        "cruelest_faction": "Occasionally eats goblins",
+        "taboo": "Teaching their language to outsiders",
+        "resistance": {
+          "fey_glamours": true,
+          "fey_manipulation": true,
+          "fire_elemental_whispers": true,
+          "fire_conspiracy_recruitment": true
+        },
+        "needs_development": [
+          "Specific clan/faction names and territories",
+          "Leadership structures",
+          "Territory definition vs contested zones",
+          "Enforcement mechanisms",
+          "Why Caelrun allowed",
+          "Culture, religion, technology",
+          "Why resistant to fey/fire"
+        ]
+      },
+      
+      "goblins": {
+        "physical": {
+          "height": "3-4 feet",
+          "head": "Wide (Homo floresiensis trait)",
+          "mouth": "Sharp, toothy (traditional D&D)",
+          "frame": "Small but wiry",
+          "movement": "Quick, nervous"
+        },
+        "intelligence": {
+          "language": true,
+          "cunning": true,
+          "planning": "Simple but functional",
+          "tools": "Basic level"
+        },
+        "threat_level": "Only dangerous in groups, individually nuisance",
+        "relationships": {
+          "enslaved_by": ["gnolls", "hobgoblins"],
+          "eaten_by": "Cruelest lizard-man faction (occasionally)",
+          "tolerated_by": "Most lizard-man factions",
+          "human_view": "Pests or minor threats"
+        },
+        "needs_development": [
+          "Tribal organization (if any)",
+          "Free settlements (when not enslaved)",
+          "Population levels",
+          "Independent culture/society",
+          "Reproduction/lifecycle"
+        ]
+      },
+      
+      "humanoids": {
+        "origin": "UNCLEAR - NEEDS IDEAS",
+        "gray_blood_tribes": {
+          "equivalent": "Orcs",
+          "scale": "Village-scale threats",
+          "development": "Some learned negotiation",
+          "example": "Stone Pillars clan"
+        },
+        "red_mask_cohorts": {
+          "equivalent": "Hobgoblin/Bugbear",
+          "culture": "Militaristic, ceremonial",
+          "history": "Remnants of beast-man empire",
+          "slavery": "Enslave goblins (labor, fodder, servants)"
+        },
+        "hungerbound": {
+          "equivalent": "Gnolls/Trolls",
+          "worship": "Appetite and pain",
+          "slavery": "Enslave goblins (food, labor)",
+          "factions": {
+            "good_bad_ugly": "UNDECIDED - even the good are terrible foes",
+            "examples": "NEEDS DEVELOPMENT - could mirror gray_blood_tribes (some negotiation possible) or red_mask_cohorts (organized, ceremonial) structures"
+          }
+        },
+        "ogres": {
+          "culture": "Druidic/shamanic",
+          "roles": "Prophets and tyrants",
+          "teachers": "Some taught by Ogre Magi"
+        }
+      },
+      
+      "fey_beings": {
+        "gloaming_court": {
+          "alignment": "The Good (neutral, not actively malicious)",
+          "leader": "Aislith Who Wove the First Garland",
+          "goal": "Collect memories of the lost human/faery connection",
+          "methods": ["Emotion-harvesting", "Dream-teaching", "Memory-gathering"],
+          "stance_on_humanity": "Don't wish humans specific harm",
+          "moon_connection": "EXTENT UNDECIDED",
+          "status": "Desperate, manipulative, not overtly hostile",
+          "tools": "NEED DEVELOPMENT - gameable mechanics"
+        },
+        "lesser_fey": {
+          "portunes": {
+            "role": "Craftsmen",
+            "likely_allegiance": "Covenant-Bound"
+          },
+          "shee": {
+            "role": "Minor nobility",
+            "likely_allegiance": "Covenant-Bound"
+          },
+          "domestic_spirits": {
+            "status": "Fled during Gloaming crisis"
+          },
+          "woodwoses": {
+            "description": "Bark-skinned, semi-feral"
+          }
+        }
+      },
+      
+      "undead": {
+        "temple_undead": {
+          "organization": "Organized, Intelligent",
+          "leadership": {
+            "zimru_irkala": {
+              "title": "Hierophant",
+              "hd": 10,
+              "type": "Greater Wight",
+              "belief": "Gods merely 'silent' not dead OR knows but maintains order",
+              "method": "Enforces liturgy as law"
+            }
+          },
+          "purpose": "Preserve old rites, await return (futile)"
+        }
+      },
+      
+      "elemental_planar": {
+        "fire_elementals": {
+          "origin": "The Sun (which IS the Fire Plane)",
+          "goal": "Ignite the moon = NEAR-EXTINCTION EVENT",
+          "timeline": "Decades away but accelerating",
+          "methods": ["Using Ogre Magi as priest-proxies", "Whispering through flames", "Creating sun-metal"],
+          "threat_level": "LATE GAME/HIGH LEVEL (7-10+)",
+          "scope": "Other fire plane factions OUT OF SCOPE"
+        },
+        "moon_creatures": {
+          "alignment": "Neutral Good",
+          "types": ["Lune Cats", "Crystalmir Dryads", "Reflectors", "Mooncalves", "Aether Slimes"],
+          "stakes": "Will die if moon is ignited",
+          "gloaming_relationship": "UNDECIDED"
+        }
+      }
+    },
+    
+    "factions": {
+      "ardanir": {
+        "name": "The Ardanir",
+        "type": "Paladin Order",
+        "devotion": "Veltharos (sky/justice)",
+        "philosophy": "Divine justice over mortal kings",
+        "symbol": "Lightning bolt breaking crown",
+        "tension": "Won't kneel to mortal authority (High King, petty kings)",
+        "mission": "Unite Gallaecian/Amazigh through shared faith",
+        "relationship_to_nobility": "COMPLEX - TO BE DEVELOPED"
+      },
+      
+      "clerical_hierarchies": {
+        "veltharos": ["Tower priests", "Omen-readers"],
+        "bandua": ["Hearth-wardens", "City defenders"],
+        "cossus": ["Duel arbiters", "War-judges"],
+        "ossamar": ["Water-seers", "Ford-keepers"],
+        "thulda": ["Funeral priests", "Wool-weavers"],
+        "isarna": ["Guides", "Pilgrims", "Twilight wardens"],
+        "lugus": ["Craft-clerks", "Judges"],
+        "malac": {
+          "types": ["Fire-seers", "Ash-scarred prophets"],
+          "note": "EXAMPLES - needs work"
+        }
+      },
+      
+      "serdanos": {
+        "name": "The Serdanos (Rootbound)",
+        "type": "Druidic Order",
+        "focus": "Living World and Faery boundaries",
+        "relationship_to_gods": "Not god-worshippers (predate both pantheons)",
+        "goal": "Repair Faery-Airth connection",
+        "warning": "Making Faery a faith caused post-Fall horrors"
+      },
+      
+      "ilmenor": {
+        "name": "The Ilmenor",
+        "type": "Arcane Organization",
+        "purpose": "Preserve/control arcane knowledge",
+        "structure": "Quasi-monastic, rigorous testing",
+        "symbol": "Open eye within seven-pointed star",
+        "methods": ["Isolated libraries", "Encrypted texts"],
+        "tensions": ["Hunt rogue mages", "Tolerate Illusionists"],
+        "goal": "Eventually reforge unified arcana via political influence",
+        "relationship_to_nobility": "TO BE DEVELOPED"
+      },
+      
+      "illusionists": {
+        "name": "Illusionists",
+        "type": "Independent Tradition",
+        "source": "Folds between planes",
+        "relationship_to_ilmenor": "Separate, tolerated but suspect",
+        "organization": "No formal organization"
+      },
+      
+      "elunad": {
+        "name": "The Elunad",
+        "type": "Rangers/Road-Guardians",
+        "heritage": "Pre-Silence Imperial scouts",
+        "symbol": "Silver hoofprint beneath crescent moon",
+        "token": "Ancestral objects passed mentor-to-student",
+        "mission": "Maintain sacred roads, connect enclaves",
+        "territory": ["Roads", "Fords", "Borderlands"],
+        "sacred_duty": "Protect five Irkali pilgrimage routes"
+      },
+      
+      "aurka": {
+        "name": "The Aurka",
+        "type": "Relic-Hunters",
+        "structure": "Loose network, no hierarchy",
+        "purpose": "Salvage pre-Silence knowledge/relics",
+        "methods": ["Exploration", "Smuggling", "Barter"],
+        "reputation": "Tomb-robbers or folk heroes",
+        "code": "Independence and cleverness prized",
+        "rivals": ["Ilmenor", "Temple guards", "Each other"]
+      },
+      
+      "gladiator_culture": {
+        "red_mantle": {
+          "location": "Tharnok",
+          "status": "Elite",
+          "size": 40
+        },
+        "corval_dustbound": {
+          "location": "Corval",
+          "role": "Training ground"
+        },
+        "status": "Rising social power (threatens traditional authority)",
+        "tension": "Cossus worship vs. Ardanir philosophy",
+        "relationship_to_nobility": "TO BE DEVELOPED"
+      },
+      
+      "fire_elemental_conspiracy": {
+        "name": "The Fire Elemental Conspiracy",
+        "threat_level": "LATE GAME",
+        "goal": "Ignite the moon (END OF WORLD)",
+        "timeline": "Decades away, gathering power",
+        "methods": ["Recruit Ogre Magi as priests", "Arm humanoids with sun-metal", "Manipulate through whispering flames"],
+        "player_introduction": "Rumors, distant signs, late-game revelation",
+        "potential_opposition": "Gloaming Court (if moon-connected)?"
+      },
+      
+      "covenant_bound": {
+        "name": "The Covenant-Bound",
+        "type": "Fey - PRIMARY EARLY-MID ANTAGONISTS",
+        "leader": "The Pact-Render (Covenant-Bound elf)",
+        "goal": "Turn the earth into another Faery using humanoids as tools (think they can control them, but cannot control men). Seek revenge for crimes committed against fey by humans during The Deepening, and assurance it can never happen again.",
+        "methods": ["Command fey servants", "Fashion weapons/items from sun-metal", "Arm humanoid proxies (Bronze Host)", "Glamour and manipulation"],
+        "relationship_to_fire_elementals": "Think they are using fire elementals' power to their advantage, unaware of plan to ignite moon",
+        "relationship_to_sun_metal": "NEEDS DEVELOPMENT - Why can they work it? What do they make?",
+        "power_level": "Early-mid game encounters"
+      },
+      
+      "gloaming_court": {
+        "name": "The Gloaming Court",
+        "type": "Fey - NEUTRAL/AMBIGUOUS",
+        "leader": "Aislith Who Wove the First Garland",
+        "goal": "Collect memories of the lost human/faery connection",
+        "methods": ["Emotion-harvesting", "Dream-teaching", "Manipulation"],
+        "status": "Desperate, dangerous, not openly hostile",
+        "stance": "Don't wish humanity specific harm",
+        "moon_connection": "EXTENT UNDECIDED",
+        "potential_role": "Oppose fire elementals if moon is power source?"
+      },
+      
+      "humanoid_coalitions": {
+        "bronze_host": {
+          "composition": "Shee-armed orcs",
+          "coordination": "Covenant-Bound",
+          "threat_level": "Early-mid game"
+        },
+        "fire_worshipping_gnolls": {
+          "leader": "Tharzuul's packs",
+          "threat_level": "MID-LEVEL",
+          "slavery": "Enslave goblins"
+        },
+        "hobgoblin_legions": {
+          "equipment": "Testing fire weapons",
+          "threat_level": "LATE GAME",
+          "slavery": "Enslave goblins"
+        },
+        "concern": "Unprecedented coordination",
+        "origin": "UNCLEAR"
+      }
+    },
+    
+    "timeline": {
+      "periods": {
+        "before_year_0": "Age of the Old Gods",
+        "year_0": "The Silence",
+        "year_5": "The Fratricide",
+        "year_50_100": "The Bleeding Years",
+        "year_100_150": "The Deepening",
+        "year_150_200": "The Turning",
+        "year_200_250": "The Five Shrines",
+        "year_250_300": "The Rising - Last 50 years: No warfare between Velgroth-Lucernian kingdoms"
+      },
+      "key_events": {
+        "the_silence": "Gods vanished, omens ceased",
+        "the_kindling_war": "Humans burned fey glades (post-Silence desperation)",
+        "the_deepening": "Crimes committed against fey by humans - Covenant-Bound seek revenge for this period",
+        "emergence_of_irkali": "New Gods appeared at sacred sites",
+        "formation_of_orders": "Ilmenor, Ardanir, Elunad established",
+        "establishment_of_high_kingship": "TO BE DEVELOPED - when? how? why peace for 50 years?",
+        "current": "Fragile recovery, new threats emerging"
+      }
+    },
+    
+    "materials": {
+      "sun_metal": {
+        "creation": "Fire elementals from Sun/Fire Plane",
+        "properties": {
+          "temperature": "Warm to touch, never cools completely",
+          "durability": "Extremely durable",
+          "magical_properties": "NEEDS DEVELOPMENT",
+          "crafting_requirements": "NEEDS DEVELOPMENT for non-Covenant-Bound"
+        },
+        "who_can_work_it": ["Fire elementals (original creators)", "Ogre Magi (taught by fire elementals)", "Covenant-Bound elves (QUESTION: Why?)"],
+        "distribution": {
+          "sources": ["Fire elemental sites (LATE GAME)", "Ogre Magi priests craft with it", "Covenant-Bound fashion weapons/items"],
+          "appears_in": "Humanoid hands (armed by Covenant-Bound or fire cultists)"
+        },
+        "factions_wanting_it": ["Fire Elementals", "Covenant-Bound (WHY?)", "Gloaming Court (depends on moon connection)"],
+        "possible_purposes": "NEEDS DECISION - ritual component? anti-magic? planar anchor? life-draining? other?"
+      },
+      
+      "technology_level": {
+        "allowed": ["Bronze", "Iron", "Early medieval tools"],
+        "forbidden": ["Gunpowder", "Advanced tech"],
+        "magic": "Rare, feared, controlled",
+        "notable": "Sun-metal (fire elemental/Covenant-Bound creation)"
+      }
+    },
+    
+    "settlement_template": {
+      "name": "",
+      "type": "",
+      "population": {
+        "total": 0,
+        "breakdown": {
+          "agriculture_herding": 0,
+          "militia_active": 0,
+          "veterans_elites": 0,
+          "clergy": 0,
+          "ilmenor_scholars": 0,
+          "artisans_builders": 0,
+          "traders_ferrymen": 0,
+          "fisherfolk_riverfolk": 0,
+          "monastics_hermits": 0,
+          "servants_dependents": 0,
+          "bound_laborers": 0,
+          "fringe_outliers": 0
+        }
+      },
+      "economy": [],
+      "exports": [],
+      "imports": [],
+      "character": "",
+      "atmosphere": {
+        "sounds": [],
+        "smells": [],
+        "mood": ""
+      },
+      "families": [],
+      "locations": {
+        "location_id": {
+          "type": "",
+          "services": []
+        }
+      },
+      "factions": [],
+      "tensions": [],
+      "rumors": [],
+      "defenses": {},
+      "trade_focus": "",
+      "nearest_neighbors": [],
+      "road_position": ""
+    },
+    
+    "location_types": {
+      "flophouse": {
+        "services": ["bed"]
+      },
+      "guild_hall": {
+        "services": ["scribing scrolls", "repairing items", "cooking for groups", "crafting", "practicing alchemy or magic"]
+      },
+      "homes": {
+        "services": ["bed"]
+      },
+      "inn": {
+        "services": ["bed", "food & drink"]
+      },
+      "market": {
+        "services": ["goods for sale"]
+      },
+      "shrines": {
+        "services": ["place for offerings"]
+      },
+      "stables": {
+        "services": ["equine services", "bed"]
+      },
+      "streets": {
+        "services": ["flavor (description of town)", "encounters"]
+      },
+      "tavern": {
+        "services": ["food & drink", "hirelings", "entertainment"]
+      },
+      "temple": {
+        "services": ["succor", "wine", "tutelage", "tithing recipients (for paladin characters)", "blessings"]
+      }
+    },
+    
+    "npc_template": {
+      "moniker": "",
+      "faction": "",
+      "appearance": "",
+      "and_yet": "",
+      "wants": "",
+      "does_not_want": "",
+      "oddly_also": "",
+      "thinks_with": "",
+      "family": "",
+      "self_image": "",
+      "recreation": "",
+      "dreams": "",
+      "anecdotes": [],
+      "tragedies": [],
+      "pc_leverage": ""
+    },
+    
+    "settlements": {
+      "nerzul": {
+        "name": "Nerzul",
+        "location": "South of Caelrun",
+        "status": "NEEDS DEVELOPMENT"
+      }
+    },
+    
+    "families": {},
+    "npcs": {},
+    "items": {},
+    "plots": {}
+  }
+}
