@@ -6,6 +6,112 @@
       "current_date": "Year ~300 (The Rising period)",
       "current_year": 300
     },
+
+    "players": {
+  "hoi": {
+    "characters": {
+      "chekkad_ag_maktar": {
+        "name": "Chekkad ag Maktar",
+        "race": "human",
+        "class": "illusionist",
+        "level": 3,
+        "status": "alive",
+        "spells": ["blur"],
+        "items": [],
+        "mentors": []
+      },
+      "strummer": {
+        "name": "Strummer",
+        "race": "human",
+        "class": "bard",
+        "level": 3,
+        "status": "alive",
+        "items": [],
+        "mentors": []
+      }
+    }
+  },
+  "phil": {
+    "characters": {
+      "vetranio": {
+        "name": "Vetranio",
+        "race": "human",
+        "class": "magic-user",
+        "level": 4,
+        "status": "alive",
+        "spells": [],
+        "items": [],
+        "mentors": []
+      },
+      "tartessia": {
+        "name": "Tartessia",
+        "race": "elf",
+        "class": "fighter/magic-user",
+        "level": "2/1",
+        "status": "alive",
+        "spells": [],
+        "items": [],
+        "mentors": []
+      },
+      "zaphon": {
+        "name": "Zaphon",
+        "race": "human",
+        "class": "cleric",
+        "level": 4,
+        "status": "alive",
+        "spells": [],
+        "items": [],
+        "mentors": []
+      }
+    }
+  },
+  "andre": {
+    "characters": {
+      "brigantios": {
+        "name": "Brigantios",
+        "race": "human",
+        "class": "druid",
+        "level": 3,
+        "status": "alive",
+        "spells": [],
+        "items": [],
+        "mentors": []
+      },
+      "trebastos": {
+        "name": "Trebastos",
+        "race": "human",
+        "class": "fighter",
+        "level": 4,
+        "status": "alive",
+        "items": [],
+        "mentors": []
+      }
+    }
+  },
+  "chris": {
+    "characters": {
+      "sardet": {
+        "name": "Sardet",
+        "race": "human",
+        "class": "paladin",
+        "level": 4,
+        "status": "alive",
+        "spells": [],
+        "items": [],
+        "mentors": []
+      },
+      "zardun": {
+        "name": "Zardun",
+        "race": "human",
+        "class": "thief",
+        "level": 4,
+        "status": "alive",
+        "items": [],
+        "mentors": []
+      }
+    }
+  }
+}
     
     "cosmology": {
       "planes": {
@@ -1145,4 +1251,398 @@
 },
 "items": {},
 "plots": {}
+
+"adventure_site_template": {
+  "name": "",
+  "type": ["dungeon", "wilderness", "ruins", "urban", "planar", "underwater", "sacred_site"],
+  "location": "",
+  "access_difficulty": ["trivial", "moderate", "difficult", "extreme", "impossible_without_magic"],
+  "recommended_level": "",
+  "estimated_sessions": 0,
+  
+  "overview": {
+    "what_it_is": "",
+    "why_it_exists": "",
+    "current_state": "",
+    "historical_context": ""
+  },
+  
+  "access_challenges": {
+    "physical": [],
+    "magical": [],
+    "political": [],
+    "environmental": [],
+    "temporal": ""
+  },
+  
+  "known_dangers": {
+    "creatures": [],
+    "traps": [],
+    "environmental_hazards": [],
+    "magical_hazards": [],
+    "unknown_threats": []
+  },
+  
+  "rewards": {
+    "treasure": [],
+    "knowledge": [],
+    "magical_items": [],
+    "strategic_value": [],
+    "reputation_gains": []
+  },
+  
+  "factions_interested": {
+    "faction_name": {
+      "interest_level": ["aware", "investigating", "actively_pursuing", "obsessed"],
+      "goals": "",
+      "resources_committed": "",
+      "knowledge_level": ""
+    }
+  },
+  
+  "local_knowledge": {
+    "common_rumors": [],
+    "specialist_knowledge": {
+      "source": "",
+      "cost_to_acquire": "",
+      "accuracy": "",
+      "information": []
+    },
+    "forbidden_knowledge": []
+  },
+  
+  "entry_requirements": {
+    "mandatory": [],
+    "highly_recommended": [],
+    "useful": []
+  },
+  
+  "key_locations": {
+    "location_id": {
+      "name": "",
+      "description": "",
+      "dangers": [],
+      "treasures": [],
+      "connections": []
+    }
+  },
+  
+  "consequences": {
+    "success": [],
+    "partial_success": [],
+    "failure": [],
+    "discovery": []
+  },
+  
+  "dm_notes": {
+    "design_intent": "",
+    "scaling_options": "",
+    "alternative_approaches": [],
+    "integration_points": []
+  }
+}
+
+"adventure_sites": {
+  "submerged_temple_garden_enki_ki": {
+    "name": "The Submerged Temple-Garden of Enki and Ki",
+    "type": ["underwater", "ruins", "sacred_site"],
+    "location": "Northern depths of Caelrun lake, 40-60 feet below surface",
+    "access_difficulty": "extreme",
+    "recommended_level": "3-5",
+    "estimated_sessions": "2-4",
+    
+    "overview": {
+      "what_it_is": "Massive pre-Silence temple complex with two wings: Enki's Archive (stone halls, bronze scrolls, agricultural/medical texts) and Ki's Vault (ceramic seed storage with preservation enchantments still active). Flooded terraces where enchanted plants still grow underwater, twisted and strange.",
+      "why_it_exists": "Built as combined library and seed bank - knowledge preservation and agricultural insurance for civilization. Dedicated to Enki (god of water, wisdom, civilization) and Ki (earth mother, fertility).",
+      "current_state": "Submerged, partially collapsed, overtaken by mutated magical plant growth. Preservation enchantments failing but still functional in places. Something still moves in the halls - possibly undead temple servants, water spirits, or worse.",
+      "historical_context": "300 years underwater since the Silence. Lizard-men know of it, permit limited human exploration as part of Caelrun compact. Aurka have been diving it for years with mixed success."
+    },
+    
+    "access_challenges": {
+      "physical": ["40-60 foot depth - fatal for normal diving", "Cold thermocline", "Poor visibility (silt clouds)", "Tangled plant growth", "Collapsing stone structures"],
+      "magical": ["Failing preservation enchantments create unpredictable effects", "Spore-releasing plants cause visions/madness", "Memory silt releases psychic echoes of the Silence", "Some plants animated by degrading magic"],
+      "political": ["Northern waters deeper into lizard-man territory", "Full exploitation crosses unstated compact line", "Rival Aurka groups competing for finds", "Village won't support major expeditions (compact violation)"],
+      "environmental": ["Warmest water late summer only", "Visibility best in summer", "Night diving nearly impossible", "Storms churn silt, make diving impossible for days"],
+      "temporal": "Aurka report activity increasing - brighter glow, more movement, fish avoiding area. Something may be waking."
+    },
+    
+    "known_dangers": {
+      "creatures": [
+        "The Pale Carp - albino fish, too many teeth, swarm wounded divers",
+        "Something that moves through halls with purpose",
+        "Voices underwater speaking Old Tongue",
+        "Possible undead/transformed temple servants"
+      ],
+      "traps": ["None intentional", "Ancient mechanisms may trigger unexpectedly"],
+      "environmental_hazards": [
+        "Drowning (depth, cold, pressure)",
+        "Silt clouds (zero visibility)",
+        "Structural collapse",
+        "Plant entanglement",
+        "Hypothermia"
+      ],
+      "magical_hazards": [
+        "Lotus-Breath Kelp - spore release causes euphoric visions, divers forget to surface",
+        "Bone-Root Vines - animated, grab divers",
+        "Memory Silt - psychic echoes of the Silence when disturbed",
+        "Black vines (unknown effect, Aurka refuse to discuss)",
+        "Transformation - one diver came up changed, speaks only in agricultural metaphors"
+      ],
+      "unknown_threats": [
+        "Western wing - Aurka stopped diving there, won't explain why",
+        "Lights that move with purpose",
+        "Bodies never recovered from certain sections",
+        "The green-blue glow on moonless nights"
+      ]
+    },
+    
+    "rewards": {
+      "treasure": [
+        "Bronze scroll cases (waterproof, sealed)",
+        "Worked bronze tools and ceremonial items",
+        "Precious metal star charts",
+        "Gold/silver ritual implements"
+      ],
+      "knowledge": [
+        "Pre-Silence agricultural treatises",
+        "Irrigation calculations and water management",
+        "Medical texts",
+        "Old Tongue inscriptions",
+        "Information about what caused the Silence (possibly)"
+      ],
+      "magical_items": [
+        "Ceramic seed jars with active preservation enchantments",
+        "Extinct crop seeds (blight-resistant grain, year-round fruit trees, lost medicinal plants)",
+        "Magical plant specimens (dangerous but valuable)",
+        "Possibly functioning Old God ritual components"
+      ],
+      "strategic_value": [
+        "Agricultural revolution potential",
+        "Monopoly on lost crops",
+        "Knowledge valuable to Orziben alchemists, Imazuran botanists, noble houses",
+        "Understanding of Old God magic systems"
+      ],
+      "reputation_gains": [
+        "Aurka contacts and reputation",
+        "Recognition from scholars/Ilmenor",
+        "Caelrun village respect (if compact honored)",
+        "Potential lizard-men goodwill (if respectful)"
+      ]
+    },
+    
+    "factions_interested": {
+      "aurka": {
+        "interest_level": "actively_pursuing",
+        "goals": "Recover seed vault contents, sell texts to highest bidders, establish controlled access",
+        "resources_committed": "Multiple diving expeditions, Varren Muddfoot as local recruiter, mapping efforts",
+        "knowledge_level": "High - have mapped portions, know dangers, found seed jar, keeping vault location secret"
+      },
+      "lizard_men": {
+        "interest_level": "aware",
+        "goals": "Maintain territorial control, enforce compact limits, watch human foolishness",
+        "resources_committed": "Passive observation, will not rescue failed divers",
+        "knowledge_level": "Complete - navigate ruins easily, know what's dangerous, find human obsession with 'plant-jars and scratched stones' amusing"
+      },
+      "ilmenor": {
+        "interest_level": "investigating",
+        "goals": "Recover pre-Silence arcane texts, study failing enchantments, control dangerous knowledge",
+        "resources_committed": "Agents may buy Aurka finds, no direct expeditions yet",
+        "knowledge_level": "Low - know ruins exist, suspect Old God magic present, want access to texts"
+      },
+      "caelrun_village": {
+        "interest_level": "aware",
+        "goals": "Maintain compact, benefit from Aurka spending, avoid angering lizard-men",
+        "resources_committed": "None - actively discourage major expeditions",
+        "knowledge_level": "Medium - elders (Brecht, Sarith, Ordun) know compact details, general population knows 'dangerous old temple, people die, not our business'"
+      }
+    },
+    
+    "local_knowledge": {
+      "common_rumors": [
+        "Old temple in deep north water, very dangerous",
+        "Aurka dive it for relics, several have died",
+        "Don't fish directly over ruins (bad luck, plants tangle nets)",
+        "Don't night-fish northern waters",
+        "If you see green glow, row away",
+        "Fisher decades ago opened a jar, planted seeds - whole family died of fever"
+      ],
+      "specialist_knowledge": {
+        "varren_muddfoot": {
+          "cost_to_acquire": "Few silver, drinks, or information trade",
+          "accuracy": "Partial - secondhand from Aurka",
+          "information": [
+            "Temple is there, Aurka diving it",
+            "Very dangerous, several dead",
+            "Something down there still works (the glow)",
+            "Aurka found something big recently"
+          ]
+        },
+        "actual_aurka_diver": {
+          "cost_to_acquire": "Expensive (50+ gp) or significant favor, rare access",
+          "accuracy": "High - firsthand experience",
+          "information": [
+            "Depth estimates (40-60 feet)",
+            "Which sections collapse easily",
+            "Where plants are thickest",
+            "Best diving: late summer, warmest water, best visibility",
+            "Never dive alone, never at night, never touch black vines",
+            "Spore madness symptoms and treatment"
+          ]
+        },
+        "sarith_the_scarred": {
+          "cost_to_acquire": "Trust, Elunad connection, or proving competence",
+          "accuracy": "Perfect - knows compact details",
+          "information": [
+            "Lizard-men permit limited exploration only",
+            "Major expedition would violate compact",
+            "Deaths are expected, no rescue",
+            "Village won't support full exploitation",
+            "Historical context of ruins"
+          ]
+        }
+      },
+      "forbidden_knowledge": [
+        "What Aurka saw in western wing (won't sell at any price)",
+        "What happened to transformed diver",
+        "Exact seed vault location (Aurka keeping secret)",
+        "What the voices underwater say",
+        "Why bodies aren't recovered from certain sections"
+      ]
+    },
+    
+    "entry_requirements": {
+      "mandatory": [
+        "Water breathing (potion, spell, magic item) - 40-60 feet for extended time",
+        "Light source functional underwater",
+        "Rope, anchors, basic diving equipment"
+      ],
+      "highly_recommended": [
+        "Cold resistance or protection",
+        "Cure disease/poison (for spores)",
+        "Freedom of movement or similar (plant entanglement)",
+        "Multiple party members (never dive alone)",
+        "Navigation method (easy to get lost in silt)",
+        "Communication method underwater"
+      ],
+      "useful": [
+        "Read Languages or Old Tongue knowledge",
+        "Identify magic",
+        "Dispel magic",
+        "Healing magic/potions",
+        "Darkvision",
+        "Local guide (Aurka)",
+        "Lizard-man goodwill (won't help but won't hinder)"
+      ]
+    },
+    
+    "key_locations": {
+      "entrance_colonnade": {
+        "name": "The Entrance Colonnade",
+        "description": "Massive columns barely visible from surface. Four still standing, three collapsed. Wide steps descend deeper. Plant growth thickest here -kelp forests and vine tangles. Pale carp school nearby.",
+        "dangers": ["Lotus-Breath Kelp concentrated", "Bone-Root Vines", "Pale Carp", "Poor visibility"],
+        "treasures": ["Bronze tools scattered on steps", "Worked stone fragments"],
+        "connections": ["Steps lead to Archive Hall (east) and Garden Terraces (west)"]
+      },
+      
+      "archive_hall_enki": {
+        "name": "Enki's Archive Hall",
+        "description": "Long stone chamber, shelves carved into walls. Many bronze scroll cases remain, some sealed, some breached. Silt thick on floor. Eastern wall partially collapsed. Faint inscriptions in Old Tongue. Cold current flows through.",
+        "dangers": ["Structural instability", "Memory Silt (disturbing releases psychic echoes)", "Zero visibility if silt disturbed", "Something moves here at night"],
+        "treasures": ["Bronze scroll cases (agricultural, medical, irrigation texts)", "Stone tablets", "Ritual bronze implements"],
+        "connections": ["North to Reading Chambers", "South to Ablution Pool", "Collapsed passage east"]
+      },
+      
+      "seed_vault_ki": {
+        "name": "Ki's Seed Vault",
+        "description": "Circular chamber, ceramic jars in wall niches (200+). Many shattered, some intact with glowing preservation runes. Center altar has growth diagram inscriptions. Western wall shows murals of gardens. Aurka have mapped this but keep location secret.",
+        "dangers": ["Aurka guards/traps if they've secured it", "Preservation enchantments failing unpredictably", "Rival Aurka groups", "Some jars contain dangerous specimens"],
+        "treasures": ["Intact seed jars (worth fortunes)", "Preservation enchantment research", "Complete agricultural knowledge", "Possibly magical plant seeds"],
+        "connections": ["North to Garden Terraces", "South to Offering Chamber"]
+      },
+      
+      "garden_terraces": {
+        "name": "The Flooded Garden Terraces",
+        "description": "Stepped terraces, once open to sky, now deep underwater. Magical plants grow wild - some beautiful, some horrifying. Bioluminescent flowers, carnivorous vines, kelp that whispers. Original purpose: cultivate sacred plants. Current state: twisted magical ecosystem.",
+        "dangers": ["Lotus-Breath Kelp heaviest concentration", "Bone-Root Vines (most active)", "Carnivorous plants", "Spore clouds", "Easy to get lost in growth"],
+        "treasures": ["Living magical plant specimens", "Seeds can be harvested (dangerous)", "Ancient gardening tools (bronze, possibly magical)"],
+        "connections": ["East to Seed Vault", "South to Western Wing", "North to surface (plant-choked)"]
+      },
+      
+      "western_wing": {
+        "name": "The Western Wing (Unexplored)",
+        "description": "Aurka stopped diving here. Entrance visible but they won't approach. Green-blue glow strongest from this direction. Voices underwater seem to originate here. Architecture different - older? Disturbing carvings visible on entrance columns.",
+        "dangers": ["UNKNOWN - Aurka won't discuss", "Lights that move with purpose originate here", "Bodies not recovered from this section", "Changed diver was exploring here before transformation"],
+        "treasures": ["UNKNOWN - possibly greatest treasures", "Possibly answers about the Silence", "Possibly something that should stay buried"],
+        "connections": ["Unknown - Aurka mapping incomplete"]
+      }
+    },
+    
+    "consequences": {
+      "success": [
+        "Seed jars recovered - agricultural revolution possible",
+        "Texts recovered - knowledge boom, Ilmenor interest",
+        "Aurka reputation gain - future cooperation",
+        "Potential ongoing revenue from controlled access",
+        "Understanding of Old God preservation magic",
+        "Caelrun elders grateful if compact honored"
+      ],
+      "partial_success": [
+        "Some treasures recovered, but party member transformed/cursed",
+        "Knowledge gained but rivals also got valuable intel",
+        "Structural damage causes sections to collapse permanently",
+        "Lizard-men annoyed by excessive disturbance",
+        "Awakened something in the Western Wing"
+      ],
+      "failure": [
+        "Party member(s) drowned, bodies not recovered",
+        "Madness from spores - permanent effects",
+        "Trapped in collapsed section",
+        "Transformed by temple magic",
+        "Lizard-men claim bodies/equipment",
+        "Village shrugs - 'another group tried the ruins'",
+        "Aurka blacklist party as incompetent"
+      ],
+      "discovery": [
+        "If Western Wing explored - major plot revelations possible",
+        "If preservation enchantments fully studied - arcane breakthrough",
+        "If all seed jars catalogued - complete pre-Silence botanical knowledge",
+        "If voices understood - possibly communication with Old God remnants/undead",
+        "If Memory Silt properly investigated - witness the Silence firsthand (dangerous)"
+      ]
+    },
+    
+    "dm_notes": {
+      "design_intent": "Multi-session underwater dungeon crawl with resource management (air, light, time). Rewards exploration and preparation over brute force. Ties to setting cosmology (Old Gods, the Silence) while remaining accessible to mid-level party. Creates ongoing campaign resource (controlled access to ruins).",
+      
+      "scaling_options": [
+        "Level 2-3: Entrance and Archive Hall only, Aurka-guided, simple recovery mission",
+        "Level 3-5: Full complex except Western Wing, competing with Aurka, multiple treasures",
+        "Level 5-7: Western Wing exploration, awakened guardians, cosmic horror elements",
+        "Adjust creature numbers, add/remove magical hazards, change Aurka from allies to rivals"
+      ],
+      
+      "alternative_approaches": [
+        "Ally with Aurka - guided expedition, split rewards",
+        "Rival Aurka - race to seed vault, potential combat underwater",
+        "Negotiate lizard-men permission for major expedition (difficult, interesting RP)",
+        "Magical approach - water breathing + water walking for surface approach, teleportation",
+        "Research first - buy all available info, prepare perfectly, single efficient dive",
+        "Ignore diving - hire/coerce Aurka to retrieve specific items",
+        "Political - convince Caelrun elders to support, change compact terms"
+      ],
+      
+      "integration_points": [
+        "Seeds recovered could become trade goods, political leverage",
+        "Texts could advance PC knowledge of Old Gods, foreshadow Corpse Planes",
+        "Changed diver could become recurring NPC - prophet/oracle/problem",
+        "Western Wing could connect to larger Old God plot",
+        "Lizard-men relationship established here affects future swamp adventures",
+        "Success attracts Ilmenor attention - recruitment or problems",
+        "Failure creates reputation consequences in Caelrun",
+        "Discovery in Memory Silt could reveal Silence details relevant to main plot"
+      ]
+    }
+  }
+}
+
   }
