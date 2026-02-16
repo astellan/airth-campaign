@@ -51,7 +51,21 @@
         "defenses": {},
         "trade_focus": "",
         "nearest_neighbors": [],
-        "road_position": ""
+        "road_position": "",
+        "steadings": {}
+      },
+      
+      "steading_template": {
+        "name": "",
+        "population": 0,
+        "families": 0,
+        "primary_activity": "",
+        "exports_to_parent": [],
+        "character": "",
+        "demihumans_present": false,
+        "humanoid_tolerance": ["none", "low", "moderate", "high"],
+        "threat_proximity": ["safe", "cautious", "dangerous", "extreme"],
+        "notable_residents": []
       },
       
       "npc_template": {
@@ -390,7 +404,7 @@
           "swamp_marsh": {
             "controllers": "Lizard-men (brutally enforce their writ)",
             "human_settlements": "Exist by lizard-man sufferance",
-            "example_settlements": ["Caelrun (most residents unaware of lizard-man control)", "Nerzul (south of Caelrun)"],
+            "example_settlements": ["Caelrun (most residents unaware of lizard-man control)", "Nebruz (south of Caelrun)"],
             "resistance": "Lizard-men resistant to fey/fire manipulation"
           },
           "hills_highlands": {
@@ -1024,7 +1038,7 @@
           ],
           "rumors": [
             "Aurka found carved stones in submerged temple foundations",
-            "Nerzul smugglers use secret lake channels at night",
+            "Nebruz smugglers use secret lake channels at night",
             "Old temple columns visible in shallows during summer droughts"
           ],
           "defenses": {
@@ -1033,15 +1047,76 @@
             "village_understanding": "Most residents believe their prosperity comes from hard work and good location, unaware of the arrangement"
           },
           "trade_focus": "Food surplus provider - feeds other Marches villages",
-          "nearest_neighbors": ["Nemetra (northwest)", "Tagmira (east)", "Nerzul (south, hidden)"],
+          "nearest_neighbors": ["Nemetra (northwest)", "Tagmira (east)", "Nebruz (south, hidden)"],
           "road_position": "On main Lamares-Orziben caravan route, between Nemetra and Tagmira",
-          "hidden_truth": "Village exists by lizard-man sufferance, most residents unaware of this arrangement. A few families know and maintain the unspoken compact."
-        },
-        
-        "nerzul": {
-          "name": "Nerzul",
-          "location": "South of Caelrun",
-          "status": "NEEDS DEVELOPMENT"
+          "hidden_truth": "Village exists by lizard-man sufferance, most residents unaware of this arrangement. A few families know and maintain the unspoken compact.",
+          
+          "steadings": {
+            "nebruz": {
+              "name": "Nebruz",
+              "population": 45,
+              "families": 3,
+              "primary_activity": "Smuggling, black market trade, hidden waystation",
+              "exports_to_parent": ["Intelligence on swamp movements", "Contraband routing", "Covert passage for travelers"],
+              "character": "Hidden, opportunistic, dangerous - exists in shadows both literal and political",
+              "demihumans_present": true,
+              "humanoid_tolerance": "high",
+              "threat_proximity": "extreme",
+              "notable_residents": ["Yavra Quickwater (Caelrun contact)", "NEEDS DEVELOPMENT"]
+            },
+            
+            "salmura": {
+              "name": "Salmura",
+              "population": 30,
+              "families": 2,
+              "primary_activity": "Fish drying and smoking, salt fish production",
+              "exports_to_parent": ["Dried fish", "Smoked fish", "Fish jerky", "Salted roe"],
+              "character": "Windswept, isolated, hardworking - smoke always rising from drying racks",
+              "demihumans_present": false,
+              "humanoid_tolerance": "none",
+              "threat_proximity": "cautious",
+              "notable_residents": ["NEEDS DEVELOPMENT"]
+            },
+            
+            "carvoal": {
+              "name": "Carvoal",
+              "population": 25,
+              "families": 2,
+              "primary_activity": "Charcoal burning, timber cutting at swamp edge",
+              "exports_to_parent": ["Charcoal", "Hardwood timber", "Ash (for soap-making)"],
+              "character": "Smoky, watchful, tense - closest to lizard-man patrols, sees things others don't",
+              "demihumans_present": false,
+              "humanoid_tolerance": "low",
+              "threat_proximity": "dangerous",
+              "notable_residents": ["NEEDS DEVELOPMENT"]
+            },
+            
+            "xuncal": {
+              "name": "Xuncal",
+              "population": 35,
+              "families": 3,
+              "primary_activity": "Reed cutting, rush weaving, basket making",
+              "exports_to_parent": ["Rush mats", "Willow baskets", "Thatching reeds", "Woven screens"],
+              "character": "Quiet, rhythmic, traditional - families have worked these beds for generations",
+              "demihumans_present": false,
+              "humanoid_tolerance": "none",
+              "threat_proximity": "safe",
+              "notable_residents": ["NEEDS DEVELOPMENT"]
+            },
+            
+            "angueira": {
+              "name": "Angueira",
+              "population": 20,
+              "families": 1,
+              "primary_activity": "Eel trapping, specialized fishing techniques",
+              "exports_to_parent": ["Live eels", "Eel oil", "Smoked eels", "Eel leather"],
+              "character": "Secretive, superstitious, skilled - guard eel-trap techniques jealously",
+              "demihumans_present": false,
+              "humanoid_tolerance": "moderate",
+              "threat_proximity": "cautious",
+              "notable_residents": ["NEEDS DEVELOPMENT"]
+            }
+          }
         }
       },
       
@@ -1531,20 +1606,20 @@
           "moniker": "Quickwater",
           "home": "Caelrun",
           "gender": "female",
-          "faction": "House Norvak, ferry operator, Nerzul contact",
+          "faction": "House Norvak, ferry operator, Nebruz contact",
           "appearance": "Amazigh woman, agile, knows every channel, suspicious eyes",
           "and_yet": "",
-          "wants": "Profitable smuggling routes, Nerzul connections maintained, not getting caught",
+          "wants": "Profitable smuggling routes, Nebruz connections maintained, not getting caught",
           "does_not_want": "Questions about nighttime ferry trips, militia attention, loose-lipped passengers",
           "oddly_also": "",
           "thinks_with": "Hidden channels, tide timing, who can be trusted",
           "family": "House Norvak, but operates independently, sends money home",
           "self_image": "Free trader in unfree world",
-          "recreation": "Gambling with Nerzul smugglers, winning usually",
+          "recreation": "Gambling with Nebruz smugglers, winning usually",
           "dreams": "Retire wealthy to Imazuran, never explain where money came from",
           "anecdotes": [],
           "tragedies": [],
-          "pc_leverage": "Gold, discretion, Nerzul connections, don't threaten her operation"
+          "pc_leverage": "Gold, discretion, Nebruz connections, don't threaten her operation"
         },
         
         "brecht_hallan": {
