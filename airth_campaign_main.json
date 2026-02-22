@@ -8,270 +8,240 @@
       "current_year": 300
     },
 
+    "calendar": {
+      "name": "Calendar of Airth",
+      "description": "A reconstructed calendar rooted in pre-Roman Iberian and Amazigh seasonal observances. Used across Velgroth-Lucernia, the Imazuran Confederation, and the contested wilds of the Luric March.",
+      "structure": {
+        "total_days": 365,
+        "months_count": 12,
+        "standard_month_days": 30,
+        "long_month_days": 31,
+        "long_month": "Voarn",
+        "liminal_days": {
+          "count": 4,
+          "name": "Ardaneth",
+          "description": "Days outside the months, observed when equilibrium breaks, boundaries thin, or seasonal veils part. Positioned at solstices and equinoxes."
+        }
+      },
+      "lunar_cycle": {
+        "days_per_cycle": 28,
+        "uses": ["planting", "magic", "omen-reading"]
+      },
+      "months": [
+        { "index": 1,  "name": "Karnon",   "days": 30, "season": "Deep Winter",   "meaning": "The enfolding dark; silence" },
+        { "index": 2,  "name": "Thunor",   "days": 30, "season": "Late Winter",   "meaning": "Storms and clearings" },
+        { "index": 3,  "name": "Arkun",    "days": 30, "season": "Early Spring",  "meaning": "Sprouts and greening" },
+        { "index": 4,  "name": "Nabaia",   "days": 30, "season": "Spring",        "meaning": "Fertility, rising waters" },
+        { "index": 5,  "name": "Ulkar",    "days": 30, "season": "Late Spring",   "meaning": "Warm rains and long days" },
+        { "index": 6,  "name": "Sarnath",  "days": 30, "season": "Early Summer",  "meaning": "Fire, heat, late night revels" },
+        { "index": 7,  "name": "Belghaen", "days": 30, "season": "Mid Summer",    "meaning": "Haze, deep sun, ripening crops" },
+        { "index": 8,  "name": "Keltoi",   "days": 30, "season": "Late Summer",   "meaning": "Dry winds, dust" },
+        { "index": 9,  "name": "Ragaia",   "days": 30, "season": "Harvest",       "meaning": "Smoke, ash, grains" },
+        { "index": 10, "name": "Dumnos",   "days": 30, "season": "Autumn",        "meaning": "Descent, decay" },
+        { "index": 11, "name": "Eshmun",   "days": 30, "season": "Emberfall",     "meaning": "Dimming coals, still and cold nights" },
+        { "index": 12, "name": "Voarn",    "days": 31, "season": "Frostfall",     "meaning": "Frost, veils, dimming light" }
+      ],
+      "ardaneth": [
+        {
+          "name": "Ibnuth",
+          "placement": "Between Karnon & Thunor",
+          "season_marker": "Midwinter (Winter Solstice)",
+          "color": "Black",
+          "title": "The Veil-Still",
+          "observances": "A silent night of ancestral remembrance. Fires are ceremonially extinguished and re-lit."
+        },
+        {
+          "name": "Raaneth",
+          "placement": "Between Arkun & Nabaia",
+          "season_marker": "Spring Equinox",
+          "color": "Green",
+          "title": "The Gate-Opening",
+          "observances": "Threshold rites, seed offerings, and river blessings."
+        },
+        {
+          "name": "Ulziran",
+          "placement": "Between Sarnath & Belghaen",
+          "season_marker": "Midsummer (Summer Solstice)",
+          "color": "Gold",
+          "title": "The High Eye",
+          "observances": "Celebratory rites to elders, sun-rites, masked revels."
+        },
+        {
+          "name": "Dazkur",
+          "placement": "Between Dumnos & Eshmun",
+          "season_marker": "Autumn Equinox",
+          "color": "Red",
+          "title": "The Hinge of Descent",
+          "observances": "Harvest mourning, burning of effigies, youthful dalliance."
+        }
+      ],
+      "feast_days": [
+        {
+          "name": "Taranuz",
+          "deity": "Veltharos",
+          "date": { "day": 11, "month": "Karnon" },
+          "etymology": "From Taran- (Proto-Celtic for thunder) + -uz (veneration)",
+          "observances": "Sky vigils, tower rites, silence before storm"
+        },
+        {
+          "name": "Ambarra",
+          "deity": "Bandua",
+          "date": { "day": 6, "month": "Thunor" },
+          "etymology": "From Iberian ambar ('enclosure,' 'dwelling')",
+          "observances": "Hearth rites, oaths, home-ward blessings"
+        },
+        {
+          "name": "Cossial",
+          "deity": "Cossus",
+          "date": { "day": 18, "month": "Ulkar" },
+          "etymology": "From the god's own name + -ial (Lusitanian adjectival)",
+          "observances": "Duels, war dances, endurance tests"
+        },
+        {
+          "name": "Tilanda",
+          "deity": "Ossamar",
+          "date": { "day": 9, "month": "Nabaia" },
+          "etymology": "From Amazigh till ('truth') + anda ('flow')",
+          "observances": "River offerings, crossing rites"
+        },
+        {
+          "name": "Thuldar",
+          "deity": "Thulda",
+          "date": { "day": 27, "month": "Dumnos" },
+          "etymology": "From the goddess's name + -ar (old agentive ending)",
+          "observances": "Wool veiling, funeral chants"
+        },
+        {
+          "name": "Israya",
+          "deity": "Isarna",
+          "date": { "day": 7, "month": "Arkun" },
+          "etymology": "From Isarna + raya (path or track in Mozarabic)",
+          "observances": "Way-clearing, lantern processions"
+        },
+        {
+          "name": "Lugazil",
+          "deity": "Lugus",
+          "date": { "day": 13, "month": "Keltoi" },
+          "etymology": "From Lugus + azil (Berber root for 'refuge' or 'binding')",
+          "observances": "Law-readings, feast of artisans"
+        },
+        {
+          "name": "Malzun",
+          "deity": "Malac",
+          "date": { "day": 2, "month": "Belghaen" },
+          "etymology": "From Amazigh mazun (possessed, touched by fire)",
+          "observances": "Prophecy rites, flame trials"
+        }
+      ]
+    },
+
     "session_template": {
-  "session_number": 0,
-  "date": "",
-  "locations": [],
-  "party_members_present": [],
-  "summary": "",
-  "encounters": {
-    "combat": [],
-    "social": [],
-    "exploration": []
-  },
-  "npcs_met": [],
-  "items_gained": [],
-  "items_lost": [],
-  "rumors_learned": [],
-  "quests_started": [],
-  "quests_completed": [],
-  "xp_awarded": 0,
-  "deaths": [],
-  "significant_events": [],
-  "location_at_session_end": "",
-  "dm_notes": ""
-}
-"session_log": {
-  "1": {
-    "session_number": 1,
-    "date": "2025-04-08",
-    "locations": [],
-    "party_members_present": [],
-    "summary": "",
-    "encounters": {},
-    "npcs_met": [],
-    "items_gained": [],
-    "items_lost": [],
-    "rumors_learned": [],
-    "quests_started": [],
-    "quests_completed": [],
-    "xp_awarded": 0,
-    "deaths": [],
-    "significant_events": [],
-    "location_at_session_end": "",
-    "dm_notes": ""
-  },
-  "2": {
-    "session_number": 2,
-    "date": "2025-04-22",
-    "locations": [],
-    "party_members_present": [],
-    "summary": "",
-    "encounters": {},
-    "npcs_met": [],
-    "items_gained": [],
-    "items_lost": [],
-    "rumors_learned": [],
-    "quests_started": [],
-    "quests_completed": [],
-    "xp_awarded": 0,
-    "deaths": [],
-    "significant_events": [],
-    "location_at_session_end": "",
-    "dm_notes": ""
-  },
-  "3": {
-    "session_number": 3,
-    "date": "2025-05-13",
-    "locations": [],
-    "party_members_present": [],
-    "summary": "",
-    "encounters": {
-      "combat": [
-        {
-          "opponents": ["Brat-Kho", "Mollgarn the Unfailing", "Ulzhar Bone-Tongue"],
-          "notes": "Orc adversaries with magical items"
-        }
-      ]
+      "session_number": 0,
+      "date": "",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
     },
-    "npcs_met": ["Brat-Kho (obsidian glyph slab, booming voice)", "Mollgarn the Unfailing (spell-stealing plaque)", "Ulzhar Bone-Tongue (silver-wrapped fingerbone, command spell)"],
-    "items_gained": [],
-    "items_lost": [],
-    "rumors_learned": [],
-    "quests_started": [],
-    "quests_completed": [],
-    "xp_awarded": 0,
-    "deaths": [],
-    "significant_events": [],
-    "location_at_session_end": "",
-    "dm_notes": ""
-  },
-  "4": {
-    "session_number": 4,
-    "date": "2025-05-27",
-    "locations": [],
-    "party_members_present": [],
-    "summary": "",
-    "encounters": {},
-    "npcs_met": [],
-    "items_gained": [],
-    "items_lost": [],
-    "rumors_learned": [],
-    "quests_started": [],
-    "quests_completed": [],
-    "xp_awarded": 0,
-    "deaths": [],
-    "significant_events": [],
-    "location_at_session_end": "",
-    "dm_notes": ""
-  },
-  "5": {
-    "session_number": 5,
-    "date": "2025-06-03",
-    "locations": ["Bramblewood"],
-    "party_members_present": [],
-    "summary": "Penetrated mysteries of the Bramblewood, encountered skeletons commandeered by mysterious cloaked figure, escaped with loot",
-    "encounters": {
-      "combat": [
-        {
-          "opponents": ["Skeletons"],
-          "notes": "Controlled by cloaked figure"
-        }
-      ]
+
+    "session_log": {
+      "1": {"session_number": 1, "date": "2025-04-08", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
+      "2": {"session_number": 2, "date": "2025-04-22", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
+      "3": {
+        "session_number": 3, "date": "2025-05-13", "locations": [], "party_members_present": [],
+        "summary": "",
+        "encounters": {
+          "combat": [{"opponents": ["Brat-Kho", "Mollgarn the Unfailing", "Ulzhar Bone-Tongue"], "notes": "Orc adversaries with magical items"}]
+        },
+        "npcs_met": ["Brat-Kho (obsidian glyph slab, booming voice)", "Mollgarn the Unfailing (spell-stealing plaque)", "Ulzhar Bone-Tongue (silver-wrapped fingerbone, command spell)"],
+        "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""
+      },
+      "4": {"session_number": 4, "date": "2025-05-27", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
+      "5": {
+        "session_number": 5, "date": "2025-06-03", "locations": ["Bramblewood"], "party_members_present": [],
+        "summary": "Penetrated mysteries of the Bramblewood, encountered skeletons commandeered by mysterious cloaked figure, escaped with loot",
+        "encounters": {"combat": [{"opponents": ["Skeletons"], "notes": "Controlled by cloaked figure"}]},
+        "npcs_met": ["Cloaked figure (mysterious, skeleton controller)"],
+        "items_gained": ["Loot (unspecified)"], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""
+      },
+      "6":  {"session_number": 6,  "date": "2025-06-10", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
+      "7":  {"session_number": 7,  "date": "2025-06-17", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
+      "8":  {"session_number": 8,  "date": "2025-09-02", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
+      "9":  {"session_number": 9,  "date": "2025-09-09", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
+      "10": {"session_number": 10, "date": "2025-09-16", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
+      "11": {"session_number": 11, "date": "2025-09-22", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
+      "12": {"session_number": 12, "date": "2025-10-07", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
+      "13": {"session_number": 13, "date": "2025-11-11", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
+      "14": {"session_number": 14, "date": "2025-11-18", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
+      "15": {"session_number": 15, "date": "2025-12-02", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
+      "16": {"session_number": 16, "date": "2025-12-09", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
+      "17": {"session_number": 17, "date": "2025-12-16", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
+      "18": {"session_number": 18, "date": "2026-01-06", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
+      "19": {"session_number": 19, "date": "2026-01-13", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
+      "20": {"session_number": 20, "date": "2026-01-20", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
+      "21": {"session_number": 21, "date": "2026-01-27", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""}
     },
-    "npcs_met": ["Cloaked figure (mysterious, skeleton controller)"],
-    "items_gained": ["Loot (unspecified)"],
-    "items_lost": [],
-    "rumors_learned": [],
-    "quests_started": [],
-    "quests_completed": [],
-    "xp_awarded": 0,
-    "deaths": [],
-    "significant_events": [],
-    "location_at_session_end": "",
-    "dm_notes": ""
-  },
-  "6": {"session_number": 6, "date": "2025-06-10", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
-  "7": {"session_number": 7, "date": "2025-06-17", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
-  "8": {"session_number": 8, "date": "2025-09-02", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
-  "9": {"session_number": 9, "date": "2025-09-09", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
-  "10": {"session_number": 10, "date": "2025-09-16", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
-  "11": {"session_number": 11, "date": "2025-09-22", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
-  "12": {"session_number": 12, "date": "2025-10-07", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
-  "13": {"session_number": 13, "date": "2025-11-11", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
-  "14": {"session_number": 14, "date": "2025-11-18", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
-  "15": {"session_number": 15, "date": "2025-12-02", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
-  "16": {"session_number": 16, "date": "2025-12-09", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
-  "17": {"session_number": 17, "date": "2025-12-16", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
-  "18": {"session_number": 18, "date": "2026-01-06", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
-  "19": {"session_number": 19, "date": "2026-01-13", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
-  "20": {"session_number": 20, "date": "2026-01-20", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""},
-  "21": {"session_number": 21, "date": "2026-01-27", "locations": [], "party_members_present": [], "summary": "", "encounters": {}, "npcs_met": [], "items_gained": [], "items_lost": [], "rumors_learned": [], "quests_started": [], "quests_completed": [], "xp_awarded": 0, "deaths": [], "significant_events": [], "location_at_session_end": "", "dm_notes": ""}
-}
 
     "templates": {
       "settlement_template": {
-        "name": "",
-        "type": "",
+        "name": "", "type": "",
         "population": {
           "total": 0,
           "breakdown": {
-            "agriculture_herding": 0,
-            "militia_active": 0,
-            "veterans_elites": 0,
-            "clergy": 0,
-            "ilmenor_scholars": 0,
-            "artisans_builders": 0,
-            "traders_ferrymen": 0,
-            "fisherfolk_riverfolk": 0,
-            "monastics_hermits": 0,
-            "servants_dependents": 0,
-            "bound_laborers": 0,
-            "fringe_outliers": 0
+            "agriculture_herding": 0, "militia_active": 0, "veterans_elites": 0, "clergy": 0,
+            "ilmenor_scholars": 0, "artisans_builders": 0, "traders_ferrymen": 0,
+            "fisherfolk_riverfolk": 0, "monastics_hermits": 0, "servants_dependents": 0,
+            "bound_laborers": 0, "fringe_outliers": 0
           }
         },
-        "economy": [],
-        "exports": [],
-        "imports": [],
-        "character": "",
-        "atmosphere": {
-          "sounds": [],
-          "smells": [],
-          "mood": ""
-        },
+        "economy": [], "exports": [], "imports": [], "character": "",
+        "atmosphere": {"sounds": [], "smells": [], "mood": ""},
         "families": [],
-        "locations": {
-          "location_id": {
-            "type": "",
-            "services": []
-          }
-        },
-        "factions": [],
-        "tensions": [],
-        "rumors": [],
-        "defenses": {},
-        "trade_focus": "",
-        "nearest_neighbors": [],
-        "road_position": "",
-        "steadings": {}
+        "locations": {"location_id": {"type": "", "services": []}},
+        "factions": [], "tensions": [], "rumors": [], "defenses": {},
+        "trade_focus": "", "nearest_neighbors": [], "road_position": "", "steadings": {}
       },
-      
       "steading_template": {
-        "name": "",
-        "population": 0,
-        "families": 0,
-        "primary_activity": "",
-        "exports_to_parent": [],
-        "character": "",
-        "demihumans_present": false,
+        "name": "", "population": 0, "families": 0, "primary_activity": "",
+        "exports_to_parent": [], "character": "", "demihumans_present": false,
         "humanoid_tolerance": ["none", "low", "moderate", "high"],
         "threat_proximity": ["safe", "cautious", "dangerous", "extreme"],
         "notable_residents": []
       },
-      
       "npc_template": {
-        "moniker": "",
-        "home": "",
-        "gender": ["male", "female", "transgender"],
-        "faction": "",
-        "appearance": "",
-        "and_yet": "",
-        "wants": "",
-        "does_not_want": "",
-        "oddly_also": "",
-        "thinks_with": "",
-        "family": "",
-        "self_image": "",
-        "recreation": "",
-        "dreams": "",
-        "anecdotes": [],
-        "tragedies": [],
-        "pc_leverage": ""
+        "moniker": "", "home": "", "gender": ["male", "female", "transgender"],
+        "faction": "", "appearance": "", "and_yet": "", "wants": "",
+        "does_not_want": "", "oddly_also": "", "thinks_with": "", "family": "",
+        "self_image": "", "recreation": "", "dreams": "", "anecdotes": [],
+        "tragedies": [], "pc_leverage": ""
       },
-      
       "location_types": {
-        "flophouse": {
-          "services": ["bed"]
-        },
-        "guild_hall": {
-          "services": ["scribing scrolls", "repairing items", "cooking for groups", "crafting", "practicing alchemy or magic"]
-        },
-        "homes": {
-          "services": ["bed"]
-        },
-        "inn": {
-          "services": ["bed", "food & drink"]
-        },
-        "market": {
-          "services": ["goods for sale"]
-        },
-        "shrines": {
-          "services": ["place for offerings"]
-        },
-        "stables": {
-          "services": ["equine services", "bed"]
-        },
-        "streets": {
-          "services": ["flavor (description of town)", "encounters"]
-        },
-        "tavern": {
-          "services": ["food & drink", "hirelings", "entertainment"]
-        },
-        "temple": {
-          "services": ["succor", "wine", "tutelage", "tithing recipients (for paladin characters)", "blessings"]
-        }
+        "flophouse": {"services": ["bed"]},
+        "guild_hall": {"services": ["scribing scrolls", "repairing items", "cooking for groups", "crafting", "practicing alchemy or magic"]},
+        "homes": {"services": ["bed"]},
+        "inn": {"services": ["bed", "food & drink"]},
+        "market": {"services": ["goods for sale"]},
+        "shrines": {"services": ["place for offerings"]},
+        "stables": {"services": ["equine services", "bed"]},
+        "streets": {"services": ["flavor (description of town)", "encounters"]},
+        "tavern": {"services": ["food & drink", "hirelings", "entertainment"]},
+        "temple": {"services": ["succor", "wine", "tutelage", "tithing recipients (for paladin characters)", "blessings"]}
       },
-      
       "adventure_site_template": {
         "name": "",
         "type": ["dungeon", "wilderness", "ruins", "urban", "planar", "underwater", "sacred_site"],
@@ -279,110 +249,35 @@
         "access_difficulty": ["trivial", "moderate", "difficult", "extreme", "impossible_without_magic"],
         "recommended_level": "",
         "estimated_sessions": 0,
-        
-        "overview": {
-          "what_it_is": "",
-          "why_it_exists": "",
-          "current_state": "",
-          "historical_context": ""
-        },
-        
-        "access_challenges": {
-          "physical": [],
-          "magical": [],
-          "political": [],
-          "environmental": [],
-          "temporal": ""
-        },
-        
-        "known_dangers": {
-          "creatures": [],
-          "traps": [],
-          "environmental_hazards": [],
-          "magical_hazards": [],
-          "unknown_threats": []
-        },
-        
-        "rewards": {
-          "treasure": [],
-          "knowledge": [],
-          "magical_items": [],
-          "strategic_value": [],
-          "reputation_gains": []
-        },
-        
+        "overview": {"what_it_is": "", "why_it_exists": "", "current_state": "", "historical_context": ""},
+        "access_challenges": {"physical": [], "magical": [], "political": [], "environmental": [], "temporal": ""},
+        "known_dangers": {"creatures": [], "traps": [], "environmental_hazards": [], "magical_hazards": [], "unknown_threats": []},
+        "rewards": {"treasure": [], "knowledge": [], "magical_items": [], "strategic_value": [], "reputation_gains": []},
         "factions_interested": {
-          "faction_name": {
-            "interest_level": ["aware", "investigating", "actively_pursuing", "obsessed"],
-            "goals": "",
-            "resources_committed": "",
-            "knowledge_level": ""
-          }
+          "faction_name": {"interest_level": ["aware", "investigating", "actively_pursuing", "obsessed"], "goals": "", "resources_committed": "", "knowledge_level": ""}
         },
-        
         "local_knowledge": {
           "common_rumors": [],
-          "specialist_knowledge": {
-            "source": "",
-            "cost_to_acquire": "",
-            "accuracy": "",
-            "information": []
-          },
+          "specialist_knowledge": {"source": "", "cost_to_acquire": "", "accuracy": "", "information": []},
           "forbidden_knowledge": []
         },
-        
-        "entry_requirements": {
-          "mandatory": [],
-          "highly_recommended": [],
-          "useful": []
-        },
-        
+        "entry_requirements": {"mandatory": [], "highly_recommended": [], "useful": []},
         "key_locations": {
-          "location_id": {
-            "name": "",
-            "description": "",
-            "dangers": [],
-            "treasures": [],
-            "connections": []
-          }
+          "location_id": {"name": "", "description": "", "dangers": [], "treasures": [], "connections": []}
         },
-        
-        "consequences": {
-          "success": [],
-          "partial_success": [],
-          "failure": [],
-          "discovery": []
-        },
-        
-        "dm_notes": {
-          "design_intent": "",
-          "scaling_options": "",
-          "alternative_approaches": [],
-          "integration_points": []
-        }
+        "consequences": {"success": [], "partial_success": [], "failure": [], "discovery": []},
+        "dm_notes": {"design_intent": "", "scaling_options": "", "alternative_approaches": [], "integration_points": []}
       },
-      
       "player_character_template": {
-        "name": "",
-        "race": "",
-        "subrace": "",
-        "class": "",
-        "level": 0,
-        "status": "alive",
-        "faction": "",
-        "spells": [],
-        "items": [],
-        "mentors": []
+        "name": "", "race": "", "subrace": "", "class": "", "level": 0,
+        "status": "alive", "faction": "", "spells": [], "items": [], "mentors": []
       }
     },
-    
+
     "taxonomy": {
       "cosmology": {
         "planes": {
-          "material_world": {
-            "name": "Airth",
-            "description": "Primary mortal realm, subject to natural laws, site of the Silence"
-          },
+          "material_world": {"name": "Airth", "description": "Primary mortal realm, subject to natural laws, site of the Silence"},
           "faery": {
             "name": "The Otherworld",
             "description": "Parallel realm, semi-permeable boundary",
@@ -410,7 +305,6 @@
             "connection_to_gloaming": "EXTENT UNDECIDED - serves as refuge, possible worship object, ancient memory repository"
           }
         },
-        
         "divine_structure": {
           "old_gods": {
             "pantheon": "Annunaki",
@@ -425,48 +319,17 @@
             "origin": "Irrelevant to campaign, no memory of creation",
             "manifestation": "At sacred sites (Irkali)",
             "deities": {
-              "veltharos": {
-                "name": "Veltharos",
-                "domain": "Sky/Storm",
-                "aspects": ["kingship", "prophecy", "storms"]
-              },
-              "bandua": {
-                "name": "Bandua",
-                "domain": "Hearth/Defense",
-                "aspects": ["walls", "hearths", "blood-oaths"]
-              },
-              "cossus": {
-                "name": "Cossus",
-                "domain": "War/Honor",
-                "aspects": ["seasonal war", "honor duels", "strength through hardship"]
-              },
-              "ossamar": {
-                "name": "Ossamar",
-                "domain": "Water/Transition",
-                "aspects": ["rivers", "fords", "perilous crossings"]
-              },
-              "thulda": {
-                "name": "Thulda",
-                "domain": "Death/Sleep",
-                "aspects": ["death", "sleep", "wool", "shepherds"]
-              },
-              "isarna": {
-                "name": "Isarna",
-                "domain": "Travel/Guidance",
-                "aspects": ["travel", "guidance", "sacred wandering"]
-              },
-              "lugus": {
-                "name": "Lugus",
-                "domain": "Craft/Law",
-                "aspects": ["craft", "speech", "binding laws"]
-              },
+              "veltharos": {"name": "Veltharos", "domain": "Sky/Storm", "aspects": ["kingship", "prophecy", "storms"]},
+              "bandua": {"name": "Bandua", "domain": "Hearth/Defense", "aspects": ["walls", "hearths", "blood-oaths"]},
+              "cossus": {"name": "Cossus", "domain": "War/Honor", "aspects": ["seasonal war", "honor duels", "strength through hardship"]},
+              "ossamar": {"name": "Ossamar", "domain": "Water/Transition", "aspects": ["rivers", "fords", "perilous crossings"]},
+              "thulda": {"name": "Thulda", "domain": "Death/Sleep", "aspects": ["death", "sleep", "wool", "shepherds"]},
+              "isarna": {"name": "Isarna", "domain": "Travel/Guidance", "aspects": ["travel", "guidance", "sacred wandering"]},
+              "lugus": {"name": "Lugus", "domain": "Craft/Law", "aspects": ["craft", "speech", "binding laws"]},
               "malac": {
-                "name": "Malac",
-                "domain": "Fire/Prophecy",
+                "name": "Malac", "domain": "Fire/Prophecy",
                 "aspects": ["sacred fire", "prophecy through ordeal", "divine madness"],
-                "factions": {
-                  "good_bad_ugly": "UNDECIDED - bad faction sympathetic to fire elementals, unwittingly helping conspiracy"
-                }
+                "factions": {"good_bad_ugly": "UNDECIDED - bad faction sympathetic to fire elementals, unwittingly helping conspiracy"}
               }
             }
           },
@@ -477,80 +340,41 @@
             "divinity": false
           }
         },
-        
         "magic_systems": {
-          "divine": {
-            "source": "New Gods",
-            "method": "Traditional clerical casting",
-            "requirements": "Taboos and observances"
-          },
-          "arcane": {
-            "source": "Salvaged pre-Silence knowledge",
-            "control": "Ilmenor order",
-            "status": "Strictly regulated, dangerous if untrained"
-          },
-          "illusionism": {
-            "source": "Folds between planes",
-            "control": "Independent tradition, not Ilmenor-governed",
-            "status": "Tolerated but suspect"
-          },
-          "druidic": {
-            "source": "Living World and Faery",
-            "age": "Predates both pantheons",
-            "practitioners": "Serdanos (Rootbound)"
-          },
-          "fey": {
-            "types": ["glamour", "illusion", "binding oaths"],
-            "sun_metal_crafting": "Covenant-Bound can fashion items/weapons from sun-metal"
-          },
-          "necromancy": {
-            "source": "Preserved by undead temple servants",
-            "type": "Blend of old divine and arcane methods",
-            "locations": "31 Temples of Dead Gods (including one north of Tagmira)"
-          }
+          "divine": {"source": "New Gods", "method": "Traditional clerical casting", "requirements": "Taboos and observances"},
+          "arcane": {"source": "Salvaged pre-Silence knowledge", "control": "Ilmenor order", "status": "Strictly regulated, dangerous if untrained"},
+          "illusionism": {"source": "Folds between planes", "control": "Independent tradition, not Ilmenor-governed", "status": "Tolerated but suspect"},
+          "druidic": {"source": "Living World and Faery", "age": "Predates both pantheons", "practitioners": "Serdanos (Rootbound)"},
+          "fey": {"types": ["glamour", "illusion", "binding oaths"], "sun_metal_crafting": "Covenant-Bound can fashion items/weapons from sun-metal"},
+          "necromancy": {"source": "Preserved by undead temple servants", "type": "Blend of old divine and arcane methods", "locations": "31 Temples of Dead Gods (including one north of Tagmira)"}
         }
       },
-      
       "geography": {
         "regions": {
           "velgroth_lucernia": {
-            "name": "Velgroth-Lucernia",
-            "culture": "Gallaecian",
-            "population": 240000,
-            "territory_hexes": 9,
-            "territory_area_sq_miles": 15000,
+            "name": "Velgroth-Lucernia", "culture": "Gallaecian", "population": 240000,
+            "territory_hexes": 9, "territory_area_sq_miles": 15000,
             "capital_cities": ["Velgroth", "Lucernia"],
             "government": "High Kingship (multiple petty kingdoms under nominal High King)",
             "recent_history": "Past 50 years: No inter-kingdom warfare (unprecedented peace)",
             "notable_kingdoms": ["Thalvyr (among the most troublesome)"],
             "cities": {
-              "velgroth": {
-                "type": "coastal",
-                "status": "Recovering seafaring tradition, exploring wild coasts",
-                "exploration": "Seeking other human settlements with no success"
-              },
-              "lucernia": {
-                "type": "inland",
-                "history": "Was Sparta-like but ardor has cooled, collectivist culture fading"
-              }
+              "velgroth": {"type": "coastal", "status": "Recovering seafaring tradition, exploring wild coasts", "exploration": "Seeking other human settlements with no success"},
+              "lucernia": {"type": "inland", "history": "Was Sparta-like but ardor has cooled, collectivist culture fading"}
             }
           },
           "imazuran_confederation": {
-            "name": "Imazuran Confederation",
-            "culture": "Amazigh",
+            "name": "Imazuran Confederation", "culture": "Amazigh",
             "location": "East of Velgroth-Lucernia",
             "relations": "Cultural exchange via shared pantheon",
             "detail_level": "Less detailed in current docs"
           },
           "luric_marches": {
-            "name": "The Luric Marches",
-            "type": "Frontier/Contested",
+            "name": "The Luric Marches", "type": "Frontier/Contested",
             "location": "Between civilized lands and wilderness",
-            "culture": "Mix of cultures",
-            "campaign_focus": true
+            "culture": "Mix of cultures", "campaign_focus": true
           }
         },
-        
         "terrain_types": {
           "swamp_marsh": {
             "controllers": "Lizard-men (brutally enforce their writ)",
@@ -558,113 +382,61 @@
             "example_settlements": ["Caelrun (most residents unaware of lizard-man control)", "Nebruz (south of Caelrun)"],
             "resistance": "Lizard-men resistant to fey/fire manipulation"
           },
-          "hills_highlands": {
-            "controllers": "Orcs"
-          },
-          "ruins_badlands": {
-            "controllers": "Hobgoblins"
-          },
-          "burnt_lands": {
-            "controllers": "Fire elementals",
-            "threat_level": "LATE GAME/HIGH LEVEL"
-          }
+          "hills_highlands": {"controllers": "Orcs"},
+          "ruins_badlands": {"controllers": "Hobgoblins"},
+          "burnt_lands": {"controllers": "Fire elementals", "threat_level": "LATE GAME/HIGH LEVEL"}
         },
-        
         "sacred_geography": {
           "irkali": {
             "name": "The Five Irkali (Marhaz)",
             "description": "Sites where New Gods first manifested",
             "purpose": "Pilgrimage destinations",
-            "examples": {
-              "marhaz_of_broken_blades": {
-                "deity": "Cossus",
-                "location": "Tharnok"
-              }
-            }
+            "examples": {"marhaz_of_broken_blades": {"deity": "Cossus", "location": "Tharnok"}}
           },
-          "shrines_waystones": {
-            "examples": ["Ford of Ossamar", "Tree of Mist-Song"]
-          },
-          "ruins_of_old_gods": {
-            "type": "Temple complexes (undead-haunted)",
-            "contents": "Knowledge/treasure",
-            "danger": "High"
-          }
+          "shrines_waystones": {"examples": ["Ford of Ossamar", "Tree of Mist-Song"]},
+          "ruins_of_old_gods": {"type": "Temple complexes (undead-haunted)", "contents": "Knowledge/treasure", "danger": "High"}
         }
       },
-      
       "population": {
         "cultural_groups": {
-          "gallaecian": {
-            "linguistic_root": "Pre-Roman Iberian/Celtiberian",
-            "territory": "Western territories (Velgroth-Lucernia)",
-            "government": "High Kingship"
-          },
-          "amazigh": {
-            "linguistic_root": "Berber/North African",
-            "territory": "Eastern (Imazuran)",
-            "relations": "Cultural exchange with Gallaecian"
-          }
+          "gallaecian": {"linguistic_root": "Pre-Roman Iberian/Celtiberian", "territory": "Western territories (Velgroth-Lucernia)", "government": "High Kingship"},
+          "amazigh": {"linguistic_root": "Berber/North African", "territory": "Eastern (Imazuran)", "relations": "Cultural exchange with Gallaecian"}
         },
-        
         "profession_percentages": {
-          "agriculture_herding": 0.85,
-          "militia_active": 0.03,
-          "veterans_elites": 0.02,
-          "clergy": 0.02,
-          "ilmenor_scholars": 0.005,
-          "artisans_builders": 0.03,
-          "traders_ferrymen": 0.015,
-          "fisherfolk_riverfolk": 0.01,
-          "monastics_hermits": 0.005,
-          "servants_dependents": 0.015,
-          "bound_laborers": 0.005,
-          "fringe_outliers": 0.01
+          "agriculture_herding": 0.85, "militia_active": 0.03, "veterans_elites": 0.02,
+          "clergy": 0.02, "ilmenor_scholars": 0.005, "artisans_builders": 0.03,
+          "traders_ferrymen": 0.015, "fisherfolk_riverfolk": 0.01, "monastics_hermits": 0.005,
+          "servants_dependents": 0.015, "bound_laborers": 0.005, "fringe_outliers": 0.01
         }
       },
-      
       "species": {
-        "humans": {
-          "notes": "See cultural_groups and population sections"
-        },
-        
-        "dwarves": {
-          "presence": "Rare in the Marches",
-          "role": "Skilled craftsmen",
-          "detail_level": "Minimal (example: Brel Karzhadun)"
-        },
-        
+        "humans": {"notes": "See cultural_groups and population sections"},
+        "dwarves": {"presence": "Rare in the Marches", "role": "Skilled craftsmen", "detail_level": "Minimal (example: Brel Karzhadun)"},
         "elves": {
           "presence": "Present almost everywhere but in small numbers",
           "role": "NEEDS CLARIFICATION",
           "restriction": "ALL elves barred from sacred sites",
           "factions": {
             "forsworn": {
-              "alignment": "The Good",
-              "status": "Severed from Faery via ritual",
+              "alignment": "The Good", "status": "Severed from Faery via ritual",
               "relationship": "Mortal-aligned, never fully trusted",
-              "cost": "Shortened lifespans, often sterile",
-              "stance": "Oppose Covenant-Bound"
+              "cost": "Shortened lifespans, often sterile", "stance": "Oppose Covenant-Bound"
             },
             "covenant_bound": {
-              "alignment": "The Bad",
-              "status": "Embraced fey inheritance, serve The Pact-Render",
+              "alignment": "The Bad", "status": "Embraced fey inheritance, serve The Pact-Render",
               "leader": "The Pact-Render (Covenant-Bound elf, powerful, ancient)",
               "abilities": ["Glamour-wielding", "Command fey servants", "Fashion magic items/weapons from sun-metal"],
-              "view_of_mortals": "As cattle",
-              "role": "Major antagonists",
+              "view_of_mortals": "As cattle", "role": "Major antagonists",
               "goals": "NEEDS DEVELOPMENT",
               "questions": ["Why want sun-metal?", "Relationship to fire elementals?", "What from mortals?", "Long-term plans?"]
             },
             "gray_kin": {
-              "alignment": "The Ugly",
-              "status": "Liminal, walk the line",
+              "alignment": "The Ugly", "status": "Liminal, walk the line",
               "role": "Provide necessary but feared services",
               "relationship_to_pact_render": "Respect their goals but not their methods"
             }
           }
         },
-        
         "lizard_men": {
           "territorial_control": "Brutally enforce their writ in claimed territories",
           "approach": "Harsh but attempt to be fair in their own way",
@@ -672,120 +444,47 @@
           "factions": "Multiple clans with different approaches",
           "cruelest_faction": "Occasionally eats goblins",
           "taboo": "Teaching their language to outsiders",
-          "resistance": {
-            "fey_glamours": true,
-            "fey_manipulation": true,
-            "fire_elemental_whispers": true,
-            "fire_conspiracy_recruitment": true
-          },
-          "needs_development": [
-            "Specific clan/faction names and territories",
-            "Leadership structures",
-            "Territory definition vs contested zones",
-            "Enforcement mechanisms",
-            "Why Caelrun allowed",
-            "Culture, religion, technology",
-            "Why resistant to fey/fire"
-          ]
+          "resistance": {"fey_glamours": true, "fey_manipulation": true, "fire_elemental_whispers": true, "fire_conspiracy_recruitment": true},
+          "needs_development": ["Specific clan/faction names and territories", "Leadership structures", "Territory definition vs contested zones", "Enforcement mechanisms", "Why Caelrun allowed", "Culture, religion, technology", "Why resistant to fey/fire"]
         },
-        
         "goblins": {
-          "physical": {
-            "height": "3-4 feet",
-            "head": "Wide (Homo floresiensis trait)",
-            "mouth": "Sharp, toothy (traditional D&D)",
-            "frame": "Small but wiry",
-            "movement": "Quick, nervous"
-          },
-          "intelligence": {
-            "language": true,
-            "cunning": true,
-            "planning": "Simple but functional",
-            "tools": "Basic level"
-          },
+          "physical": {"height": "3-4 feet", "head": "Wide (Homo floresiensis trait)", "mouth": "Sharp, toothy (traditional D&D)", "frame": "Small but wiry", "movement": "Quick, nervous"},
+          "intelligence": {"language": true, "cunning": true, "planning": "Simple but functional", "tools": "Basic level"},
           "threat_level": "Only dangerous in groups, individually nuisance",
-          "relationships": {
-            "enslaved_by": ["gnolls", "hobgoblins"],
-            "eaten_by": "Cruelest lizard-man faction (occasionally)",
-            "tolerated_by": "Most lizard-man factions",
-            "human_view": "Pests or minor threats"
-          },
-          "needs_development": [
-            "Tribal organization (if any)",
-            "Free settlements (when not enslaved)",
-            "Population levels",
-            "Independent culture/society",
-            "Reproduction/lifecycle"
-          ]
+          "relationships": {"enslaved_by": ["gnolls", "hobgoblins"], "eaten_by": "Cruelest lizard-man faction (occasionally)", "tolerated_by": "Most lizard-man factions", "human_view": "Pests or minor threats"},
+          "needs_development": ["Tribal organization (if any)", "Free settlements (when not enslaved)", "Population levels", "Independent culture/society", "Reproduction/lifecycle"]
         },
-        
         "humanoids": {
           "origin": "UNCLEAR - NEEDS IDEAS",
-          "gray_blood_tribes": {
-            "equivalent": "Orcs",
-            "scale": "Village-scale threats",
-            "development": "Some learned negotiation",
-            "example": "Stone Pillars clan"
-          },
-          "red_mask_cohorts": {
-            "equivalent": "Hobgoblin/Bugbear",
-            "culture": "Militaristic, ceremonial",
-            "history": "Remnants of beast-man empire",
-            "slavery": "Enslave goblins (labor, fodder, servants)"
-          },
+          "gray_blood_tribes": {"equivalent": "Orcs", "scale": "Village-scale threats", "development": "Some learned negotiation", "example": "Stone Pillars clan"},
+          "red_mask_cohorts": {"equivalent": "Hobgoblin/Bugbear", "culture": "Militaristic, ceremonial", "history": "Remnants of beast-man empire", "slavery": "Enslave goblins (labor, fodder, servants)"},
           "hungerbound": {
-            "equivalent": "Gnolls/Trolls",
-            "worship": "Appetite and pain",
-            "slavery": "Enslave goblins (food, labor)",
-            "factions": {
-              "good_bad_ugly": "UNDECIDED - even the good are terrible foes",
-              "examples": "NEEDS DEVELOPMENT - could mirror gray_blood_tribes (some negotiation possible) or red_mask_cohorts (organized, ceremonial) structures"
-            }
+            "equivalent": "Gnolls/Trolls", "worship": "Appetite and pain", "slavery": "Enslave goblins (food, labor)",
+            "factions": {"good_bad_ugly": "UNDECIDED - even the good are terrible foes", "examples": "NEEDS DEVELOPMENT"}
           },
-          "ogres": {
-            "culture": "Druidic/shamanic",
-            "roles": "Prophets and tyrants",
-            "teachers": "Some taught by Ogre Magi"
-          }
+          "ogres": {"culture": "Druidic/shamanic", "roles": "Prophets and tyrants", "teachers": "Some taught by Ogre Magi"}
         },
-        
         "fey_beings": {
           "gloaming_court": {
-            "alignment": "The Good (neutral, not actively malicious)",
-            "leader": "Aislith Who Wove the First Garland",
+            "alignment": "The Good (neutral, not actively malicious)", "leader": "Aislith Who Wove the First Garland",
             "goal": "Collect memories of the lost human/faery connection",
             "methods": ["Emotion-harvesting", "Dream-teaching", "Memory-gathering"],
-            "stance_on_humanity": "Don't wish humans specific harm",
-            "moon_connection": "EXTENT UNDECIDED",
-            "status": "Desperate, manipulative, not overtly hostile",
-            "tools": "NEED DEVELOPMENT - gameable mechanics"
+            "stance_on_humanity": "Don't wish humans specific harm", "moon_connection": "EXTENT UNDECIDED",
+            "status": "Desperate, manipulative, not overtly hostile", "tools": "NEED DEVELOPMENT - gameable mechanics"
           },
           "lesser_fey": {
-            "portunes": {
-              "role": "Craftsmen",
-              "likely_allegiance": "Covenant-Bound"
-            },
-            "shee": {
-              "role": "Minor nobility",
-              "likely_allegiance": "Covenant-Bound"
-            },
-            "domestic_spirits": {
-              "status": "Fled during Gloaming crisis"
-            },
-            "woodwoses": {
-              "description": "Bark-skinned, semi-feral"
-            }
+            "portunes": {"role": "Craftsmen", "likely_allegiance": "Covenant-Bound"},
+            "shee": {"role": "Minor nobility", "likely_allegiance": "Covenant-Bound"},
+            "domestic_spirits": {"status": "Fled during Gloaming crisis"},
+            "woodwoses": {"description": "Bark-skinned, semi-feral"}
           }
         },
-        
         "undead": {
           "temple_undead": {
             "organization": "Organized, Intelligent",
             "leadership": {
               "zimru_irkala": {
-                "title": "Hierophant",
-                "hd": 10,
-                "type": "Greater Wight",
+                "title": "Hierophant", "hd": 10, "type": "Greater Wight",
                 "belief": "Gods merely 'silent' not dead OR knows but maintains order",
                 "method": "Enforces liturgy as law"
               }
@@ -793,7 +492,6 @@
             "purpose": "Preserve old rites, await return (futile)"
           }
         },
-        
         "elemental_planar": {
           "fire_elementals": {
             "origin": "The Sun (which IS the Fire Plane)",
@@ -806,24 +504,18 @@
           "moon_creatures": {
             "alignment": "Neutral Good",
             "types": ["Lune Cats", "Crystalmir Dryads", "Reflectors", "Mooncalves", "Aether Slimes"],
-            "stakes": "Will die if moon is ignited",
-            "gloaming_relationship": "UNDECIDED"
+            "stakes": "Will die if moon is ignited", "gloaming_relationship": "UNDECIDED"
           }
         }
       },
-      
       "factions": {
         "ardanir": {
-          "name": "The Ardanir",
-          "type": "Paladin Order",
-          "devotion": "Veltharos (sky/justice)",
-          "philosophy": "Divine justice over mortal kings",
-          "symbol": "Lightning bolt breaking crown",
+          "name": "The Ardanir", "type": "Paladin Order", "devotion": "Veltharos (sky/justice)",
+          "philosophy": "Divine justice over mortal kings", "symbol": "Lightning bolt breaking crown",
           "tension": "Won't kneel to mortal authority (High King, petty kings)",
           "mission": "Unite Gallaecian/Amazigh through shared faith",
           "relationship_to_nobility": "COMPLEX - TO BE DEVELOPED"
         },
-        
         "clerical_hierarchies": {
           "veltharos": ["Tower priests", "Omen-readers"],
           "bandua": ["Hearth-wardens", "City defenders"],
@@ -832,24 +524,17 @@
           "thulda": ["Funeral priests", "Wool-weavers"],
           "isarna": ["Guides", "Pilgrims", "Twilight wardens"],
           "lugus": ["Craft-clerks", "Judges"],
-          "malac": {
-            "types": ["Fire-seers", "Ash-scarred prophets"],
-            "note": "EXAMPLES - needs work"
-          }
+          "malac": {"types": ["Fire-seers", "Ash-scarred prophets"], "note": "EXAMPLES - needs work"}
         },
-        
         "serdanos": {
-          "name": "The Serdanos (Rootbound)",
-          "type": "Druidic Order",
+          "name": "The Serdanos (Rootbound)", "type": "Druidic Order",
           "focus": "Living World and Faery boundaries",
           "relationship_to_gods": "Not god-worshippers (predate both pantheons)",
           "goal": "Repair Faery-Airth connection",
           "warning": "Making Faery a faith caused post-Fall horrors"
         },
-        
         "ilmenor": {
-          "name": "The Ilmenor",
-          "type": "Arcane Organization",
+          "name": "The Ilmenor", "type": "Arcane Organization",
           "purpose": "Preserve/control arcane knowledge",
           "structure": "Quasi-monastic, rigorous testing",
           "symbol": "Open eye within seven-pointed star",
@@ -858,18 +543,14 @@
           "goal": "Eventually reforge unified arcana via political influence",
           "relationship_to_nobility": "TO BE DEVELOPED"
         },
-        
         "illusionists": {
-          "name": "Illusionists",
-          "type": "Independent Tradition",
+          "name": "Illusionists", "type": "Independent Tradition",
           "source": "Folds between planes",
           "relationship_to_ilmenor": "Separate, tolerated but suspect",
           "organization": "No formal organization"
         },
-        
         "elunad": {
-          "name": "The Elunad",
-          "type": "Rangers/Road-Guardians",
+          "name": "The Elunad", "type": "Rangers/Road-Guardians",
           "heritage": "Pre-Silence Imperial scouts",
           "symbol": "Silver hoofprint beneath crescent moon",
           "token": "Ancestral objects passed mentor-to-student",
@@ -877,10 +558,8 @@
           "territory": ["Roads", "Fords", "Borderlands"],
           "sacred_duty": "Protect five Irkali pilgrimage routes"
         },
-        
         "aurka": {
-          "name": "The Aurka",
-          "type": "Relic-Hunters",
+          "name": "The Aurka", "type": "Relic-Hunters",
           "structure": "Loose network, no hierarchy",
           "purpose": "Salvage pre-Silence knowledge/relics",
           "methods": ["Exploration", "Smuggling", "Barter"],
@@ -888,35 +567,23 @@
           "code": "Independence and cleverness prized",
           "rivals": ["Ilmenor", "Temple guards", "Each other"]
         },
-        
         "gladiator_culture": {
-          "red_mantle": {
-            "location": "Tharnok",
-            "status": "Elite",
-            "size": 40
-          },
-          "corval_dustbound": {
-            "location": "Corval",
-            "role": "Training ground"
-          },
+          "red_mantle": {"location": "Tharnok", "status": "Elite", "size": 40},
+          "corval_dustbound": {"location": "Corval", "role": "Training ground"},
           "status": "Rising social power (threatens traditional authority)",
           "tension": "Cossus worship vs. Ardanir philosophy",
           "relationship_to_nobility": "TO BE DEVELOPED"
         },
-        
         "fire_elemental_conspiracy": {
-          "name": "The Fire Elemental Conspiracy",
-          "threat_level": "LATE GAME",
+          "name": "The Fire Elemental Conspiracy", "threat_level": "LATE GAME",
           "goal": "Ignite the moon (END OF WORLD)",
           "timeline": "Decades away, gathering power",
           "methods": ["Recruit Ogre Magi as priests", "Arm humanoids with sun-metal", "Manipulate through whispering flames"],
           "player_introduction": "Rumors, distant signs, late-game revelation",
           "potential_opposition": "Gloaming Court (if moon-connected)?"
         },
-        
         "covenant_bound": {
-          "name": "The Covenant-Bound",
-          "type": "Fey - PRIMARY EARLY-MID ANTAGONISTS",
+          "name": "The Covenant-Bound", "type": "Fey - PRIMARY EARLY-MID ANTAGONISTS",
           "leader": "The Pact-Render (Covenant-Bound elf)",
           "goal": "Turn the earth into another Faery using humanoids as tools (think they can control them, but cannot control men). Seek revenge for crimes committed against fey by humans during The Deepening, and assurance it can never happen again.",
           "methods": ["Command fey servants", "Fashion weapons/items from sun-metal", "Arm humanoid proxies (Bronze Host)", "Glamour and manipulation"],
@@ -924,40 +591,22 @@
           "relationship_to_sun_metal": "NEEDS DEVELOPMENT - Why can they work it? What do they make?",
           "power_level": "Early-mid game encounters"
         },
-        
         "gloaming_court": {
-          "name": "The Gloaming Court",
-          "type": "Fey - NEUTRAL/AMBIGUOUS",
+          "name": "The Gloaming Court", "type": "Fey - NEUTRAL/AMBIGUOUS",
           "leader": "Aislith Who Wove the First Garland",
           "goal": "Collect memories of the lost human/faery connection",
           "methods": ["Emotion-harvesting", "Dream-teaching", "Manipulation"],
           "status": "Desperate, dangerous, not openly hostile",
-          "stance": "Don't wish humanity specific harm",
-          "moon_connection": "EXTENT UNDECIDED",
+          "stance": "Don't wish humanity specific harm", "moon_connection": "EXTENT UNDECIDED",
           "potential_role": "Oppose fire elementals if moon is power source?"
         },
-        
         "humanoid_coalitions": {
-          "bronze_host": {
-            "composition": "Shee-armed orcs",
-            "coordination": "Covenant-Bound",
-            "threat_level": "Early-mid game"
-          },
-          "fire_worshipping_gnolls": {
-            "leader": "Tharzuul's packs",
-            "threat_level": "MID-LEVEL",
-            "slavery": "Enslave goblins"
-          },
-          "hobgoblin_legions": {
-            "equipment": "Testing fire weapons",
-            "threat_level": "LATE GAME",
-            "slavery": "Enslave goblins"
-          },
-          "concern": "Unprecedented coordination",
-          "origin": "UNCLEAR"
+          "bronze_host": {"composition": "Shee-armed orcs", "coordination": "Covenant-Bound", "threat_level": "Early-mid game"},
+          "fire_worshipping_gnolls": {"leader": "Tharzuul's packs", "threat_level": "MID-LEVEL", "slavery": "Enslave goblins"},
+          "hobgoblin_legions": {"equipment": "Testing fire weapons", "threat_level": "LATE GAME", "slavery": "Enslave goblins"},
+          "concern": "Unprecedented coordination", "origin": "UNCLEAR"
         }
       },
-      
       "timeline": {
         "periods": {
           "before_year_0": "Age of the Old Gods",
@@ -979,7 +628,6 @@
           "current": "Fragile recovery, new threats emerging"
         }
       },
-      
       "materials": {
         "sun_metal": {
           "creation": "Fire elementals from Sun/Fire Plane",
@@ -997,7 +645,6 @@
           "factions_wanting_it": ["Fire Elementals", "Covenant-Bound (WHY?)", "Gloaming Court (depends on moon connection)"],
           "possible_purposes": "NEEDS DECISION - ritual component? anti-magic? planar anchor? life-draining? other?"
         },
-        
         "technology_level": {
           "allowed": ["Bronze", "Iron", "Early medieval tools"],
           "forbidden": ["Gunpowder", "Advanced tech"],
@@ -1006,148 +653,49 @@
         }
       }
     },
-    
+
     "generation_guidelines": {
       "npc_gender_distribution": {
-        "male": 0.60,
-        "female": 0.39,
-        "transgender": 0.01,
+        "male": 0.60, "female": 0.39, "transgender": 0.01,
         "note": "Apply probabilistically when generating NPCs"
       },
-      
       "settlement_population_breakdown": {
-        "agriculture_herding": 0.85,
-        "militia_active": 0.03,
-        "veterans_elites": 0.02,
-        "clergy": 0.02,
-        "ilmenor_scholars": 0.005,
-        "artisans_builders": 0.03,
-        "traders_ferrymen": 0.015,
-        "fisherfolk_riverfolk": 0.01,
-        "monastics_hermits": 0.005,
-        "servants_dependents": 0.015,
-        "bound_laborers": 0.005,
-        "fringe_outliers": 0.01
+        "agriculture_herding": 0.85, "militia_active": 0.03, "veterans_elites": 0.02,
+        "clergy": 0.02, "ilmenor_scholars": 0.005, "artisans_builders": 0.03,
+        "traders_ferrymen": 0.015, "fisherfolk_riverfolk": 0.01, "monastics_hermits": 0.005,
+        "servants_dependents": 0.015, "bound_laborers": 0.005, "fringe_outliers": 0.01
       }
     },
-    
+
     "campaign_state": {
       "players": {
         "hoi": {
           "characters": {
-            "chekkad_ag_maktar": {
-              "name": "Chekkad ag Maktar",
-              "race": "human",
-              "class": "illusionist",
-              "level": 3,
-              "status": "alive",
-              "faction": "",
-              "spells": ["blur"],
-              "items": [],
-              "mentors": []
-            },
-            "strummer": {
-              "name": "Strummer",
-              "race": "human",
-              "class": "bard",
-              "level": 3,
-              "status": "alive",
-              "faction": "",
-              "items": [],
-              "mentors": []
-            }
+            "chekkad_ag_maktar": {"name": "Chekkad ag Maktar", "race": "human", "class": "illusionist", "level": 3, "status": "alive", "faction": "", "spells": ["blur"], "items": [], "mentors": []},
+            "strummer": {"name": "Strummer", "race": "human", "class": "bard", "level": 3, "status": "alive", "faction": "", "items": [], "mentors": []}
           }
         },
         "phil": {
           "characters": {
-            "vetranio": {
-              "name": "Vetranio",
-              "race": "human",
-              "class": "magic-user",
-              "level": 4,
-              "status": "alive",
-              "faction": "ilmenor",
-              "spells": [],
-              "items": [],
-              "mentors": []
-            },
-            "tartessia": {
-              "name": "Tartessia",
-              "race": "elf",
-              "subrace": "forsworn",
-              "class": "fighter/magic-user",
-              "level": "2/1",
-              "status": "alive",
-              "faction": "",
-              "spells": [],
-              "items": [],
-              "mentors": []
-            },
-            "zaphon": {
-              "name": "Zaphon",
-              "race": "human",
-              "class": "cleric",
-              "level": 4,
-              "status": "alive",
-              "faction": "",
-              "spells": [],
-              "items": [],
-              "mentors": []
-            }
+            "vetranio": {"name": "Vetranio", "race": "human", "class": "magic-user", "level": 4, "status": "alive", "faction": "ilmenor", "spells": [], "items": [], "mentors": []},
+            "tartessia": {"name": "Tartessia", "race": "elf", "subrace": "forsworn", "class": "fighter/magic-user", "level": "2/1", "status": "alive", "faction": "", "spells": [], "items": [], "mentors": []},
+            "zaphon": {"name": "Zaphon", "race": "human", "class": "cleric", "level": 4, "status": "alive", "faction": "", "spells": [], "items": [], "mentors": []}
           }
         },
         "andre": {
           "characters": {
-            "brigantios": {
-              "name": "Brigantios",
-              "race": "human",
-              "class": "druid",
-              "level": 3,
-              "status": "alive",
-              "faction": "serdanos",
-              "spells": [],
-              "items": [],
-              "mentors": []
-            },
-            "trebastos": {
-              "name": "Trebastos",
-              "race": "human",
-              "class": "fighter",
-              "level": 4,
-              "status": "alive",
-              "faction": "",
-              "items": [],
-              "mentors": []
-            }
+            "brigantios": {"name": "Brigantios", "race": "human", "class": "druid", "level": 3, "status": "alive", "faction": "serdanos", "spells": [], "items": [], "mentors": []},
+            "trebastos": {"name": "Trebastos", "race": "human", "class": "fighter", "level": 4, "status": "alive", "faction": "", "items": [], "mentors": []}
           }
         },
         "chris": {
           "characters": {
-            "sardet": {
-              "name": "Sardet",
-              "race": "human",
-              "class": "paladin",
-              "level": 4,
-              "status": "alive",
-              "faction": "ardanir",
-              "spells": [],
-              "items": [],
-              "mentors": []
-            },
-            "zardun": {
-              "name": "Zardun",
-              "race": "human",
-              "class": "thief",
-              "level": 4,
-              "status": "alive",
-              "faction": "",
-              "items": [],
-              "mentors": []
-            }
+            "sardet": {"name": "Sardet", "race": "human", "class": "paladin", "level": 4, "status": "alive", "faction": "ardanir", "spells": [], "items": [], "mentors": []},
+            "zardun": {"name": "Zardun", "race": "human", "class": "thief", "level": 4, "status": "alive", "faction": "", "items": [], "mentors": []}
           }
         }
       },
-      
+
       "settlements": {
         "caelrun": {
           "name": "Caelrun",
@@ -1155,18 +703,10 @@
           "population": {
             "total": 1200,
             "breakdown": {
-              "agriculture_herding": 300,
-              "militia_active": 36,
-              "veterans_elites": 24,
-              "clergy": 24,
-              "ilmenor_scholars": 0,
-              "artisans_builders": 36,
-              "traders_ferrymen": 18,
-              "fisherfolk_riverfolk": 600,
-              "monastics_hermits": 6,
-              "servants_dependents": 18,
-              "bound_laborers": 6,
-              "fringe_outliers": 132
+              "agriculture_herding": 300, "militia_active": 36, "veterans_elites": 24,
+              "clergy": 24, "ilmenor_scholars": 0, "artisans_builders": 36,
+              "traders_ferrymen": 18, "fisherfolk_riverfolk": 600, "monastics_hermits": 6,
+              "servants_dependents": 18, "bound_laborers": 6, "fringe_outliers": 132
             }
           },
           "economy": ["Fishing", "Eel-trapping", "Barley cultivation", "Rush weaving", "Lake-industry crafts"],
@@ -1201,76 +741,51 @@
           "nearest_neighbors": ["Nemetra (northwest)", "Tagmira (east)", "Nebruz (south, hidden)"],
           "road_position": "On main Lamares-Orziben caravan route, between Nemetra and Tagmira",
           "hidden_truth": "Village exists by lizard-man sufferance, most residents unaware of this arrangement. A few families know and maintain the unspoken compact.",
-          
           "steadings": {
             "nebruz": {
-              "name": "Nebruz",
-              "population": 45,
-              "families": 3,
+              "name": "Nebruz", "population": 45, "families": 3,
               "primary_activity": "Smuggling, black market trade, hidden waystation",
               "exports_to_parent": ["Intelligence on swamp movements", "Contraband routing", "Covert passage for travelers"],
               "character": "Hidden, opportunistic, dangerous - exists in shadows both literal and political",
-              "demihumans_present": true,
-              "humanoid_tolerance": "high",
-              "threat_proximity": "extreme",
+              "demihumans_present": true, "humanoid_tolerance": "high", "threat_proximity": "extreme",
               "notable_residents": ["Yavra Quickwater", "NEEDS DEVELOPMENT"]
             },
-            
             "salmura": {
-              "name": "Salmura",
-              "population": 30,
-              "families": 2,
+              "name": "Salmura", "population": 30, "families": 2,
               "primary_activity": "Fish drying and smoking, salt fish production",
               "exports_to_parent": ["Dried fish", "Smoked fish", "Fish jerky", "Salted roe"],
               "character": "Windswept, isolated, hardworking - smoke always rising from drying racks",
-              "demihumans_present": false,
-              "humanoid_tolerance": "none",
-              "threat_proximity": "cautious",
+              "demihumans_present": false, "humanoid_tolerance": "none", "threat_proximity": "cautious",
               "notable_residents": ["NEEDS DEVELOPMENT"]
             },
-            
             "carvoal": {
-              "name": "Carvoal",
-              "population": 25,
-              "families": 2,
+              "name": "Carvoal", "population": 25, "families": 2,
               "primary_activity": "Charcoal burning, timber cutting at swamp edge",
               "exports_to_parent": ["Charcoal", "Hardwood timber", "Ash (for soap-making)"],
               "character": "Smoky, watchful, tense - closest to lizard-man patrols, sees things others don't",
-              "demihumans_present": false,
-              "humanoid_tolerance": "low",
-              "threat_proximity": "dangerous",
+              "demihumans_present": false, "humanoid_tolerance": "low", "threat_proximity": "dangerous",
               "notable_residents": ["NEEDS DEVELOPMENT"]
             },
-            
             "xuncal": {
-              "name": "Xuncal",
-              "population": 35,
-              "families": 3,
+              "name": "Xuncal", "population": 35, "families": 3,
               "primary_activity": "Reed cutting, rush weaving, basket making",
               "exports_to_parent": ["Rush mats", "Willow baskets", "Thatching reeds", "Woven screens"],
               "character": "Quiet, rhythmic, traditional - families have worked these beds for generations",
-              "demihumans_present": false,
-              "humanoid_tolerance": "none",
-              "threat_proximity": "safe",
+              "demihumans_present": false, "humanoid_tolerance": "none", "threat_proximity": "safe",
               "notable_residents": ["NEEDS DEVELOPMENT"]
             },
-            
             "angueira": {
-              "name": "Angueira",
-              "population": 20,
-              "families": 1,
+              "name": "Angueira", "population": 20, "families": 1,
               "primary_activity": "Eel trapping, specialized fishing techniques",
               "exports_to_parent": ["Live eels", "Eel oil", "Smoked eels", "Eel leather"],
               "character": "Secretive, superstitious, skilled - guard eel-trap techniques jealously",
-              "demihumans_present": false,
-              "humanoid_tolerance": "moderate",
-              "threat_proximity": "cautious",
+              "demihumans_present": false, "humanoid_tolerance": "moderate", "threat_proximity": "cautious",
               "notable_residents": ["NEEDS DEVELOPMENT"]
             }
           }
         }
       },
-      
+
       "adventure_sites": {
         "submerged_temple_garden_enki_ki": {
           "name": "The Submerged Temple-Garden of Enki and Ki",
@@ -1279,14 +794,12 @@
           "access_difficulty": "extreme",
           "recommended_level": "3-5",
           "estimated_sessions": "2-4",
-          
           "overview": {
             "what_it_is": "Massive pre-Silence temple complex with two wings: Enki's Archive (stone halls, bronze scrolls, agricultural/medical texts) and Ki's Vault (ceramic seed storage with preservation enchantments still active). Flooded terraces where enchanted plants still grow underwater, twisted and strange.",
             "why_it_exists": "Built as combined library and seed bank - knowledge preservation and agricultural insurance for civilization. Dedicated to Enki (god of water, wisdom, civilization) and Ki (earth mother, fertility).",
-            "current_state": "Submerged, partially collapsed, overtaken by mutated magical plant growth. Preservation enchantments failing but still functional in places. Something still moves in the halls - possibly undead temple servants, water spirits, or worse.",
+            "current_state": "Submerged, partially collapsed, overtaken by mutated magical plant growth. Preservation enchantments failing but still functional in places. Something still moves in the halls.",
             "historical_context": "300 years underwater since the Silence. Lizard-men know of it, permit limited human exploration as part of Caelrun compact. Aurka have been diving it for years with mixed success."
           },
-          
           "access_challenges": {
             "physical": ["40-60 foot depth - fatal for normal diving", "Cold thermocline", "Poor visibility (silt clouds)", "Tangled plant growth", "Collapsing stone structures"],
             "magical": ["Failing preservation enchantments create unpredictable effects", "Spore-releasing plants cause visions/madness", "Memory silt releases psychic echoes of the Silence", "Some plants animated by degrading magic"],
@@ -1294,185 +807,48 @@
             "environmental": ["Warmest water late summer only", "Visibility best in summer", "Night diving nearly impossible", "Storms churn silt, make diving impossible for days"],
             "temporal": "Aurka report activity increasing - brighter glow, more movement, fish avoiding area. Something may be waking."
           },
-          
           "known_dangers": {
-            "creatures": [
-              "The Pale Carp - albino fish, too many teeth, swarm wounded divers",
-              "Something that moves through halls with purpose",
-              "Voices underwater speaking Old Tongue",
-              "Possible undead/transformed temple servants"
-            ],
+            "creatures": ["The Pale Carp - albino fish, too many teeth, swarm wounded divers", "Something that moves through halls with purpose", "Voices underwater speaking Old Tongue", "Possible undead/transformed temple servants"],
             "traps": ["None intentional", "Ancient mechanisms may trigger unexpectedly"],
-            "environmental_hazards": [
-              "Drowning (depth, cold, pressure)",
-              "Silt clouds (zero visibility)",
-              "Structural collapse",
-              "Plant entanglement",
-              "Hypothermia"
-            ],
-            "magical_hazards": [
-              "Lotus-Breath Kelp - spore release causes euphoric visions, divers forget to surface",
-              "Bone-Root Vines - animated, grab divers",
-              "Memory Silt - psychic echoes of the Silence when disturbed",
-              "Black vines (unknown effect, Aurka refuse to discuss)",
-              "Transformation - one diver came up changed, speaks only in agricultural metaphors"
-            ],
-            "unknown_threats": [
-              "Western wing - Aurka stopped diving there, won't explain why",
-              "Lights that move with purpose",
-              "Bodies never recovered from certain sections",
-              "The green-blue glow on moonless nights"
-            ]
+            "environmental_hazards": ["Drowning (depth, cold, pressure)", "Silt clouds (zero visibility)", "Structural collapse", "Plant entanglement", "Hypothermia"],
+            "magical_hazards": ["Lotus-Breath Kelp - spore release causes euphoric visions, divers forget to surface", "Bone-Root Vines - animated, grab divers", "Memory Silt - psychic echoes of the Silence when disturbed", "Black vines (unknown effect, Aurka refuse to discuss)", "Transformation - one diver came up changed, speaks only in agricultural metaphors"],
+            "unknown_threats": ["Western wing - Aurka stopped diving there, won't explain why", "Lights that move with purpose", "Bodies never recovered from certain sections", "The green-blue glow on moonless nights"]
           },
-          
           "rewards": {
-            "treasure": [
-              "Bronze scroll cases (waterproof, sealed)",
-              "Worked bronze tools and ceremonial items",
-              "Precious metal star charts",
-              "Gold/silver ritual implements"
-            ],
-            "knowledge": [
-              "Pre-Silence agricultural treatises",
-              "Irrigation calculations and water management",
-              "Medical texts",
-              "Old Tongue inscriptions",
-              "Information about what caused the Silence (possibly)"
-            ],
-            "magical_items": [
-              "Ceramic seed jars with active preservation enchantments",
-              "Extinct crop seeds (blight-resistant grain, year-round fruit trees, lost medicinal plants)",
-              "Magical plant specimens (dangerous but valuable)",
-              "Possibly functioning Old God ritual components"
-            ],
-            "strategic_value": [
-              "Agricultural revolution potential",
-              "Monopoly on lost crops",
-              "Knowledge valuable to Orziben alchemists, Imazuran botanists, noble houses",
-              "Understanding of Old God magic systems"
-            ],
-            "reputation_gains": [
-              "Aurka contacts and reputation",
-              "Recognition from scholars/Ilmenor",
-              "Caelrun village respect (if compact honored)",
-              "Potential lizard-men goodwill (if respectful)"
-            ]
+            "treasure": ["Bronze scroll cases (waterproof, sealed)", "Worked bronze tools and ceremonial items", "Precious metal star charts", "Gold/silver ritual implements"],
+            "knowledge": ["Pre-Silence agricultural treatises", "Irrigation calculations and water management", "Medical texts", "Old Tongue inscriptions", "Information about what caused the Silence (possibly)"],
+            "magical_items": ["Ceramic seed jars with active preservation enchantments", "Extinct crop seeds (blight-resistant grain, year-round fruit trees, lost medicinal plants)", "Magical plant specimens (dangerous but valuable)", "Possibly functioning Old God ritual components"],
+            "strategic_value": ["Agricultural revolution potential", "Monopoly on lost crops", "Knowledge valuable to Orziben alchemists, Imazuran botanists, noble houses", "Understanding of Old God magic systems"],
+            "reputation_gains": ["Aurka contacts and reputation", "Recognition from scholars/Ilmenor", "Caelrun village respect (if compact honored)", "Potential lizard-men goodwill (if respectful)"]
           },
-          
           "factions_interested": {
-            "aurka": {
-              "interest_level": "actively_pursuing",
-              "goals": "Recover seed vault contents, sell texts to highest bidders, establish controlled access",
-              "resources_committed": "Multiple diving expeditions, Varren Muddfoot as local recruiter, mapping efforts",
-              "knowledge_level": "High - have mapped portions, know dangers, found seed jar, keeping vault location secret"
-            },
-            "lizard_men": {
-              "interest_level": "aware",
-              "goals": "Maintain territorial control, enforce compact limits, watch human foolishness",
-              "resources_committed": "Passive observation, will not rescue failed divers",
-              "knowledge_level": "Complete - navigate ruins easily, know what's dangerous, find human obsession with 'plant-jars and scratched stones' amusing"
-            },
-            "ilmenor": {
-              "interest_level": "investigating",
-              "goals": "Recover pre-Silence arcane texts, study failing enchantments, control dangerous knowledge",
-              "resources_committed": "Agents may buy Aurka finds, no direct expeditions yet",
-              "knowledge_level": "Low - know ruins exist, suspect Old God magic present, want access to texts"
-            },
-            "caelrun_village": {
-              "interest_level": "aware",
-              "goals": "Maintain compact, benefit from Aurka spending, avoid angering lizard-men",
-              "resources_committed": "None - actively discourage major expeditions",
-              "knowledge_level": "Medium - elders (Brecht, Sarith, Ordun) know compact details, general population knows 'dangerous old temple, people die, not our business'"
-            }
+            "aurka": {"interest_level": "actively_pursuing", "goals": "Recover seed vault contents, sell texts to highest bidders, establish controlled access", "resources_committed": "Multiple diving expeditions, Varren Muddfoot as local recruiter, mapping efforts", "knowledge_level": "High - have mapped portions, know dangers, found seed jar, keeping vault location secret"},
+            "lizard_men": {"interest_level": "aware", "goals": "Maintain territorial control, enforce compact limits, watch human foolishness", "resources_committed": "Passive observation, will not rescue failed divers", "knowledge_level": "Complete - navigate ruins easily, know what's dangerous, find human obsession with 'plant-jars and scratched stones' amusing"},
+            "ilmenor": {"interest_level": "investigating", "goals": "Recover pre-Silence arcane texts, study failing enchantments, control dangerous knowledge", "resources_committed": "Agents may buy Aurka finds, no direct expeditions yet", "knowledge_level": "Low - know ruins exist, suspect Old God magic present, want access to texts"},
+            "caelrun_village": {"interest_level": "aware", "goals": "Maintain compact, benefit from Aurka spending, avoid angering lizard-men", "resources_committed": "None - actively discourage major expeditions", "knowledge_level": "Medium - elders (Brecht, Sarith, Ordun) know compact details, general population knows 'dangerous old temple, people die, not our business'"}
           },
-          
           "local_knowledge": {
-            "common_rumors": [
-              "Old temple in deep north water, very dangerous",
-              "Aurka dive it for relics, several have died",
-              "Don't fish directly over ruins (bad luck, plants tangle nets)",
-              "Don't night-fish northern waters",
-              "If you see green glow, row away",
-              "Fisher decades ago opened a jar, planted seeds - whole family died of fever"
-            ],
+            "common_rumors": ["Old temple in deep north water, very dangerous", "Aurka dive it for relics, several have died", "Don't fish directly over ruins (bad luck, plants tangle nets)", "Don't night-fish northern waters", "If you see green glow, row away", "Fisher decades ago opened a jar, planted seeds - whole family died of fever"],
             "specialist_knowledge": {
-              "varren_muddfoot": {
-                "cost_to_acquire": "Few silver, drinks, or information trade",
-                "accuracy": "Partial - secondhand from Aurka",
-                "information": [
-                  "Temple is there, Aurka diving it",
-                  "Very dangerous, several dead",
-                  "Something down there still works (the glow)",
-                  "Aurka found something big recently"
-                ]
-              },
-              "actual_aurka_diver": {
-                "cost_to_acquire": "Expensive (50+ gp) or significant favor, rare access",
-                "accuracy": "High - firsthand experience",
-                "information": [
-                  "Depth estimates (40-60 feet)",
-                  "Which sections collapse easily",
-                  "Where plants are thickest",
-                  "Best diving: late summer, warmest water, best visibility",
-                  "Never dive alone, never at night, never touch black vines",
-                  "Spore madness symptoms and treatment"
-                ]
-              },
-              "sarith_the_scarred": {
-                "cost_to_acquire": "Trust, Elunad connection, or proving competence",
-                "accuracy": "Perfect - knows compact details",
-                "information": [
-                  "Lizard-men permit limited exploration only",
-                  "Major expedition would violate compact",
-                  "Deaths are expected, no rescue",
-                  "Village won't support full exploitation",
-                  "Historical context of ruins"
-                ]
-              }
+              "varren_muddfoot": {"cost_to_acquire": "Few silver, drinks, or information trade", "accuracy": "Partial - secondhand from Aurka", "information": ["Temple is there, Aurka diving it", "Very dangerous, several dead", "Something down there still works (the glow)", "Aurka found something big recently"]},
+              "actual_aurka_diver": {"cost_to_acquire": "Expensive (50+ gp) or significant favor, rare access", "accuracy": "High - firsthand experience", "information": ["Depth estimates (40-60 feet)", "Which sections collapse easily", "Where plants are thickest", "Best diving: late summer, warmest water, best visibility", "Never dive alone, never at night, never touch black vines", "Spore madness symptoms and treatment"]},
+              "sarith_the_scarred": {"cost_to_acquire": "Trust, Elunad connection, or proving competence", "accuracy": "Perfect - knows compact details", "information": ["Lizard-men permit limited exploration only", "Major expedition would violate compact", "Deaths are expected, no rescue", "Village won't support full exploitation", "Historical context of ruins"]}
             },
-            "forbidden_knowledge": [
-              "What Aurka saw in western wing (won't sell at any price)",
-              "What happened to transformed diver",
-              "Exact seed vault location (Aurka keeping secret)",
-              "What the voices underwater say",
-              "Why bodies aren't recovered from certain sections"
-            ]
+            "forbidden_knowledge": ["What Aurka saw in western wing (won't sell at any price)", "What happened to transformed diver", "Exact seed vault location (Aurka keeping secret)", "What the voices underwater say", "Why bodies aren't recovered from certain sections"]
           },
-          
           "entry_requirements": {
-            "mandatory": [
-              "Water breathing (potion, spell, magic item) - 40-60 feet for extended time",
-              "Light source functional underwater",
-              "Rope, anchors, basic diving equipment"
-            ],
-            "highly_recommended": [
-              "Cold resistance or protection",
-              "Cure disease/poison (for spores)",
-              "Freedom of movement or similar (plant entanglement)",
-              "Multiple party members (never dive alone)",
-              "Navigation method (easy to get lost in silt)",
-              "Communication method underwater"
-            ],
-            "useful": [
-              "Read Languages or Old Tongue knowledge",
-              "Identify magic",
-              "Dispel magic",
-              "Healing magic/potions",
-              "Darkvision",
-              "Local guide (Aurka)",
-              "Lizard-man goodwill (won't help but won't hinder)"
-            ]
+            "mandatory": ["Water breathing (potion, spell, magic item) - 40-60 feet for extended time", "Light source functional underwater", "Rope, anchors, basic diving equipment"],
+            "highly_recommended": ["Cold resistance or protection", "Cure disease/poison (for spores)", "Freedom of movement or similar (plant entanglement)", "Multiple party members (never dive alone)", "Navigation method (easy to get lost in silt)", "Communication method underwater"],
+            "useful": ["Read Languages or Old Tongue knowledge", "Identify magic", "Dispel magic", "Healing magic/potions", "Darkvision", "Local guide (Aurka)", "Lizard-man goodwill (won't help but won't hinder)"]
           },
-          
           "key_locations": {
             "entrance_colonnade": {
               "name": "The Entrance Colonnade",
-              "description": "Massive columns barely visible from surface. Four still standing, three collapsed. Wide steps descend deeper. Plant growth thickest here -kelp forests and vine tangles. Pale carp school nearby.",
+              "description": "Massive columns barely visible from surface. Four still standing, three collapsed. Wide steps descend deeper. Plant growth thickest here - kelp forests and vine tangles. Pale carp school nearby.",
               "dangers": ["Lotus-Breath Kelp concentrated", "Bone-Root Vines", "Pale Carp", "Poor visibility"],
               "treasures": ["Bronze tools scattered on steps", "Worked stone fragments"],
               "connections": ["Steps lead to Archive Hall (east) and Garden Terraces (west)"]
             },
-            
             "archive_hall_enki": {
               "name": "Enki's Archive Hall",
               "description": "Long stone chamber, shelves carved into walls. Many bronze scroll cases remain, some sealed, some breached. Silt thick on floor. Eastern wall partially collapsed. Faint inscriptions in Old Tongue. Cold current flows through.",
@@ -1480,7 +856,6 @@
               "treasures": ["Bronze scroll cases (agricultural, medical, irrigation texts)", "Stone tablets", "Ritual bronze implements"],
               "connections": ["North to Reading Chambers", "South to Ablution Pool", "Collapsed passage east"]
             },
-            
             "seed_vault_ki": {
               "name": "Ki's Seed Vault",
               "description": "Circular chamber, ceramic jars in wall niches (200+). Many shattered, some intact with glowing preservation runes. Center altar has growth diagram inscriptions. Western wall shows murals of gardens. Aurka have mapped this but keep location secret.",
@@ -1488,7 +863,6 @@
               "treasures": ["Intact seed jars (worth fortunes)", "Preservation enchantment research", "Complete agricultural knowledge", "Possibly magical plant seeds"],
               "connections": ["North to Garden Terraces", "South to Offering Chamber"]
             },
-            
             "garden_terraces": {
               "name": "The Flooded Garden Terraces",
               "description": "Stepped terraces, once open to sky, now deep underwater. Magical plants grow wild - some beautiful, some horrifying. Bioluminescent flowers, carnivorous vines, kelp that whispers. Original purpose: cultivate sacred plants. Current state: twisted magical ecosystem.",
@@ -1496,7 +870,6 @@
               "treasures": ["Living magical plant specimens", "Seeds can be harvested (dangerous)", "Ancient gardening tools (bronze, possibly magical)"],
               "connections": ["East to Seed Vault", "South to Western Wing", "North to surface (plant-choked)"]
             },
-            
             "western_wing": {
               "name": "The Western Wing (Unexplored)",
               "description": "Aurka stopped diving here. Entrance visible but they won't approach. Green-blue glow strongest from this direction. Voices underwater seem to originate here. Architecture different - older? Disturbing carvings visible on entrance columns.",
@@ -1505,82 +878,28 @@
               "connections": ["Unknown - Aurka mapping incomplete"]
             }
           },
-          
           "consequences": {
-            "success": [
-              "Seed jars recovered - agricultural revolution possible",
-              "Texts recovered - knowledge boom, Ilmenor interest",
-              "Aurka reputation gain - future cooperation",
-              "Potential ongoing revenue from controlled access",
-              "Understanding of Old God preservation magic",
-              "Caelrun elders grateful if compact honored"
-            ],
-            "partial_success": [
-              "Some treasures recovered, but party member transformed/cursed",
-              "Knowledge gained but rivals also got valuable intel",
-              "Structural damage causes sections to collapse permanently",
-              "Lizard-men annoyed by excessive disturbance",
-              "Awakened something in the Western Wing"
-            ],
-            "failure": [
-              "Party member(s) drowned, bodies not recovered",
-              "Madness from spores - permanent effects",
-              "Trapped in collapsed section",
-              "Transformed by temple magic",
-              "Lizard-men claim bodies/equipment",
-              "Village shrugs - 'another group tried the ruins'",
-              "Aurka blacklist party as incompetent"
-            ],
-            "discovery": [
-              "If Western Wing explored - major plot revelations possible",
-              "If preservation enchantments fully studied - arcane breakthrough",
-              "If all seed jars catalogued - complete pre-Silence botanical knowledge",
-              "If voices understood - possibly communication with Old God remnants/undead",
-              "If Memory Silt properly investigated - witness the Silence firsthand (dangerous)"
-            ]
+            "success": ["Seed jars recovered - agricultural revolution possible", "Texts recovered - knowledge boom, Ilmenor interest", "Aurka reputation gain - future cooperation", "Potential ongoing revenue from controlled access", "Understanding of Old God preservation magic", "Caelrun elders grateful if compact honored"],
+            "partial_success": ["Some treasures recovered, but party member transformed/cursed", "Knowledge gained but rivals also got valuable intel", "Structural damage causes sections to collapse permanently", "Lizard-men annoyed by excessive disturbance", "Awakened something in the Western Wing"],
+            "failure": ["Party member(s) drowned, bodies not recovered", "Madness from spores - permanent effects", "Trapped in collapsed section", "Transformed by temple magic", "Lizard-men claim bodies/equipment", "Village shrugs - 'another group tried the ruins'", "Aurka blacklist party as incompetent"],
+            "discovery": ["If Western Wing explored - major plot revelations possible", "If preservation enchantments fully studied - arcane breakthrough", "If all seed jars catalogued - complete pre-Silence botanical knowledge", "If voices understood - possibly communication with Old God remnants/undead", "If Memory Silt properly investigated - witness the Silence firsthand (dangerous)"]
           },
-          
           "dm_notes": {
             "design_intent": "Multi-session underwater dungeon crawl with resource management (air, light, time). Rewards exploration and preparation over brute force. Ties to setting cosmology (Old Gods, the Silence) while remaining accessible to mid-level party. Creates ongoing campaign resource (controlled access to ruins).",
-            
-            "scaling_options": [
-              "Level 2-3: Entrance and Archive Hall only, Aurka-guided, simple recovery mission",
-              "Level 3-5: Full complex except Western Wing, competing with Aurka, multiple treasures",
-              "Level 5-7: Western Wing exploration, awakened guardians, cosmic horror elements",
-              "Adjust creature numbers, add/remove magical hazards, change Aurka from allies to rivals"
-            ],
-            
-            "alternative_approaches": [
-              "Ally with Aurka - guided expedition, split rewards",
-              "Rival Aurka - race to seed vault, potential combat underwater",
-              "Negotiate lizard-men permission for major expedition (difficult, interesting RP)",
-              "Magical approach - water breathing + water walking for surface approach, teleportation",
-              "Research first - buy all available info, prepare perfectly, single efficient dive",
-              "Ignore diving - hire/coerce Aurka to retrieve specific items",
-              "Political - convince Caelrun elders to support, change compact terms"
-            ],
-            
-            "integration_points": [
-              "Seeds recovered could become trade goods, political leverage",
-              "Texts could advance PC knowledge of Old Gods, foreshadow Corpse Planes",
-              "Changed diver could become recurring NPC - prophet/oracle/problem",
-              "Western Wing could connect to larger Old God plot",
-              "Lizard-men relationship established here affects future swamp adventures",
-              "Success attracts Ilmenor attention - recruitment or problems",
-              "Failure creates reputation consequences in Caelrun",
-              "Discovery in Memory Silt could reveal Silence details relevant to main plot"
-            ]
+            "scaling_options": ["Level 2-3: Entrance and Archive Hall only, Aurka-guided, simple recovery mission", "Level 3-5: Full complex except Western Wing, competing with Aurka, multiple treasures", "Level 5-7: Western Wing exploration, awakened guardians, cosmic horror elements", "Adjust creature numbers, add/remove magical hazards, change Aurka from allies to rivals"],
+            "alternative_approaches": ["Ally with Aurka - guided expedition, split rewards", "Rival Aurka - race to seed vault, potential combat underwater", "Negotiate lizard-men permission for major expedition (difficult, interesting RP)", "Magical approach - water breathing + water walking for surface approach, teleportation", "Research first - buy all available info, prepare perfectly, single efficient dive", "Ignore diving - hire/coerce Aurka to retrieve specific items", "Political - convince Caelrun elders to support, change compact terms"],
+            "integration_points": ["Seeds recovered could become trade goods, political leverage", "Texts could advance PC knowledge of Old Gods, foreshadow Corpse Planes", "Changed diver could become recurring NPC - prophet/oracle/problem", "Western Wing could connect to larger Old God plot", "Lizard-men relationship established here affects future swamp adventures", "Success attracts Ilmenor attention - recruitment or problems", "Failure creates reputation consequences in Caelrun", "Discovery in Memory Silt could reveal Silence details relevant to main plot"]
           }
         }
       },
-      
+
       "families": {},
-      
+      "items": {},
+      "plots": {},
+
       "npcs": {
         "taziri_nkhaleb": {
-          "moniker": "The Measure",
-          "home": "The road itself—feels wrong when stationary more than two days",
-          "gender": "female",
+          "moniker": "The Measure", "home": "The road itself—feels wrong when stationary more than two days", "gender": "female",
           "faction": "Neutral merchant (minor Elunad association via late husband)",
           "appearance": "Imazuran woman, late 40s, olive skin weathered by road dust, sharp brown eyes that count everything, ochre and grey traveling robes, silver measuring-chain belt, ink-stained hands",
           "and_yet": "Keeps Isarna shrine in lead wagon, burns expensive incense at every crossroads",
@@ -1592,23 +911,12 @@
           "self_image": "Bridge between Gallaecian and Imazuran, keeper of husband's legacy, protector of her caravan family",
           "recreation": "Singing road songs at crossroads, updating ledgers by candlelight, polishing husband's waystone marker",
           "dreams": "Davin becomes respected Ilmenor scholar, safe profitable routes forever, finding who killed Irven",
-          "anecdotes": [
-            "Once outbid a hobgoblin warlord for iron nails using only dried figs and honey",
-            "Navigated through fey-glamoured woods by singing Isarna hymns until dawn",
-            "Refused Covenant-Bound 'special cargo' offer despite massive payment"
-          ],
-          "tragedies": [
-            "Husband Irven killed in southern swamps 8 years ago (believes lizard-men responsible)",
-            "Has hidden map of 'safe paths' Irven drew before death—guards it obsessively",
-            "Receives coded letters from Davin hinting at dangerous Ilmenor secrets"
-          ],
+          "anecdotes": ["Once outbid a hobgoblin warlord for iron nails using only dried figs and honey", "Navigated through fey-glamoured woods by singing Isarna hymns until dawn", "Refused Covenant-Bound 'special cargo' offer despite massive payment"],
+          "tragedies": ["Husband Irven killed in southern swamps 8 years ago (believes lizard-men responsible)", "Has hidden map of 'safe paths' Irven drew before death—guards it obsessively", "Receives coded letters from Davin hinting at dangerous Ilmenor secrets"],
           "pc_leverage": "Prove lizard-men didn't kill Irven OR find actual killers; protect Davin; share intelligence on humanoid coordination; respect her authority on the road"
         },
-        
         "mother_yaleth": {
-          "moniker": "Mother Yaleth",
-          "home": "Nemetra—has never left, refuses to, sees leaving as betrayal of the sick and dying who need her",
-          "gender": "female",
+          "moniker": "Mother Yaleth", "home": "Nemetra—has never left, refuses to, sees leaving as betrayal of the sick and dying who need her", "gender": "female",
           "faction": "Herb-wives (unofficial leader), allied with House Yebrin",
           "appearance": "Late 60s, weathered face with deep lines, sharp grey eyes that miss nothing, faded green shawl, earth-stained hands, walks with carved hazelwood staff, wears dried herb bundles at belt",
           "and_yet": "",
@@ -1620,303 +928,179 @@
           "self_image": "Proud of her humility, quietly smug about being right when others are wrong",
           "recreation": "Smoking her pipe on the compound steps at dusk, watching village life",
           "dreams": "Establish Nemetra as tobacco exporter, prove herb-wives' wisdom to the fools, die respected",
-          "anecdotes": [
-            "Delivered Captain Durvin himself during a winter storm—he was blue when he came out, she breathed life back into him. He's never thanked her once.",
-            "Diagnosed House Halbet's pottery master with lung rot from kiln smoke 20 years ago—he ignored her, kept working, died within the year. His son listens now.",
-            "Once talked down a delirious wounded orc at the forest edge using only hand signs and offering him water. Militia wanted to kill it. She sent it limping north with bandaged leg."
-          ],
-          "tragedies": [
-            "Lost all three of her children (two daughters, one son) to fever in a single week during Year 285. She knows every herb that might have saved them—none grew close enough in time.",
-            "Her husband left her 40 years ago, said she 'loved plants more than people.' He remarried in Tagmira. She never speaks of him but keeps his tobacco pouch.",
-            "Her mentor, Old Kessa, was killed by militiamen who thought she was consorting with fey (she was gathering moonlit herbs). Yaleth found the body. Durvin's father led that patrol—she's never forgotten."
-          ],
+          "anecdotes": ["Delivered Captain Durvin himself during a winter storm—he was blue when he came out, she breathed life back into him. He's never thanked her once.", "Diagnosed House Halbet's pottery master with lung rot from kiln smoke 20 years ago—he ignored her, kept working, died within the year. His son listens now.", "Once talked down a delirious wounded orc at the forest edge using only hand signs and offering him water. Militia wanted to kill it. She sent it limping north with bandaged leg."],
+          "tragedies": ["Lost all three of her children (two daughters, one son) to fever in a single week during Year 285. She knows every herb that might have saved them—none grew close enough in time.", "Her husband left her 40 years ago, said she 'loved plants more than people.' He remarried in Tagmira. She never speaks of him but keeps his tobacco pouch.", "Her mentor, Old Kessa, was killed by militiamen who thought she was consorting with fey (she was gathering moonlit herbs). Yaleth found the body. Durvin's father led that patrol—she's never forgotten."],
           "pc_leverage": "Bring her proof of northern woods threat, protect goblins from militia, share intelligence she can't gather herself, respect her knowledge"
         },
-        
         "ordun_tarnes": {
-          "moniker": "The Quiet Negotiator",
-          "home": "Caelrun",
-          "gender": "male",
-          "faction": "House Tarnes, grain collective leader",
-          "appearance": "Weathered, patient, knows soil and seasons",
-          "and_yet": "",
+          "moniker": "The Quiet Negotiator", "home": "Caelrun", "gender": "male", "faction": "House Tarnes, grain collective leader",
+          "appearance": "Weathered, patient, knows soil and seasons", "and_yet": "",
           "wants": "Good harvests, peace with all parties including lizard-men",
           "does_not_want": "Village discovering his quiet negotiations, conflict disrupting planting seasons",
-          "oddly_also": "",
-          "thinks_with": "Seasonal cycles, careful observation, pragmatic compromise",
+          "oddly_also": "", "thinks_with": "Seasonal cycles, careful observation, pragmatic compromise",
           "family": "House Tarnes patriarch, extended family of 15+",
           "self_image": "Keeper of ancient compact, protector through diplomacy not strength",
           "recreation": "Walking barley fields at dawn alone",
           "dreams": "Pass knowledge of lizard-man arrangement to worthy successor",
-          "anecdotes": [],
-          "tragedies": [],
-          "pc_leverage": "Respect for the compact, help with harvest, keep his secret"
+          "anecdotes": [], "tragedies": [], "pc_leverage": "Respect for the compact, help with harvest, keep his secret"
         },
-        
         "merra_of_the_fields": {
-          "moniker": "",
-          "home": "Caelrun",
-          "gender": "female",
-          "faction": "House Tarnes (married in)",
-          "appearance": "Sharp-tongued, practical, sun-darkened skin",
-          "and_yet": "",
+          "moniker": "", "home": "Caelrun", "gender": "female", "faction": "House Tarnes (married in)",
+          "appearance": "Sharp-tongued, practical, sun-darkened skin", "and_yet": "",
           "wants": "Efficient land use, respect for agricultural expertise",
           "does_not_want": "Fishers' opinions on farming, wasted resources",
-          "oddly_also": "",
-          "thinks_with": "Schedules, yield calculations, no-nonsense planning",
+          "oddly_also": "", "thinks_with": "Schedules, yield calculations, no-nonsense planning",
           "family": "Married to Tarnes cousin, three children work the fields",
           "self_image": "The one who actually makes things run",
           "recreation": "Doesn't have time for recreation, resents the question",
           "dreams": "Expand barley cultivation, prove women can manage large operations",
-          "anecdotes": [],
-          "tragedies": [],
-          "pc_leverage": "Practical help, respect for her authority, efficient solutions"
+          "anecdotes": [], "tragedies": [], "pc_leverage": "Practical help, respect for her authority, efficient solutions"
         },
-        
         "kelvan_bresul": {
-          "moniker": "",
-          "home": "Caelrun",
-          "gender": "male",
-          "faction": "House Bresul, militia captain (ceremonial)",
-          "appearance": "Soft around the middle, drinks too much, ceremonial armor kept polished",
-          "and_yet": "",
+          "moniker": "", "home": "Caelrun", "gender": "male", "faction": "House Bresul, militia captain (ceremonial)",
+          "appearance": "Soft around the middle, drinks too much, ceremonial armor kept polished", "and_yet": "",
           "wants": "To be taken seriously, to not see what he half-sees in marshes",
           "does_not_want": "Real conflict, questions about militia effectiveness, night patrols near swamp edge",
-          "oddly_also": "",
-          "thinks_with": "Denial, alcohol, maintaining appearances",
+          "oddly_also": "", "thinks_with": "Denial, alcohol, maintaining appearances",
           "family": "House Bresul, wife tired of his drinking, two teenage sons",
           "self_image": "Protector of Caelrun (deeply insecure about this)",
           "recreation": "Drinking at the Waterside Tavern, telling war stories from his youth that may not be true",
           "dreams": "Prove himself in real conflict (terrified this might actually happen)",
-          "anecdotes": [],
-          "tragedies": [],
-          "pc_leverage": "Validate his importance, bring him information that makes him look competent, don't expose his fear"
+          "anecdotes": [], "tragedies": [], "pc_leverage": "Validate his importance, bring him information that makes him look competent, don't expose his fear"
         },
-        
         "sarith_the_scarred": {
-          "moniker": "The Watcher",
-          "home": "Caelrun",
-          "gender": "male",
-          "faction": "Former Elunad, adopted House Hallan, village elder",
-          "appearance": "Old wounds visible, walks with cane, sharp eyes despite age",
-          "and_yet": "",
+          "moniker": "The Watcher", "home": "Caelrun", "gender": "male", "faction": "Former Elunad, adopted House Hallan, village elder",
+          "appearance": "Old wounds visible, walks with cane, sharp eyes despite age", "and_yet": "",
           "wants": "Maintain lizard-man compact, village safety, peaceful succession of knowledge",
           "does_not_want": "Foolish heroes disrupting arrangement, Aurka attracting wrong attention",
-          "oddly_also": "",
-          "thinks_with": "Decades of border wisdom, Elunad training, cold pragmatism",
+          "oddly_also": "", "thinks_with": "Decades of border wisdom, Elunad training, cold pragmatism",
           "family": "Adopted by Hallan after serving with them, never married, mentors quietly",
           "self_image": "Last guardian of a necessary truth",
           "recreation": "Carving waystones, teaching those few who listen",
           "dreams": "Die knowing compact will hold after he's gone",
-          "anecdotes": [],
-          "tragedies": [],
-          "pc_leverage": "Prove trustworthiness, demonstrate understanding of complex situations, Elunad connection"
+          "anecdotes": [], "tragedies": [], "pc_leverage": "Prove trustworthiness, demonstrate understanding of complex situations, Elunad connection"
         },
-        
         "mother_hildreth": {
-          "moniker": "",
-          "home": "Caelrun",
-          "gender": "female",
-          "faction": "House Velmari, Senior Thulda priestess",
-          "appearance": "Elderly, serene, grey wool robes, moves slowly but purposefully",
-          "and_yet": "",
+          "moniker": "", "home": "Caelrun", "gender": "female", "faction": "House Velmari, Senior Thulda priestess",
+          "appearance": "Elderly, serene, grey wool robes, moves slowly but purposefully", "and_yet": "",
           "wants": "Proper funeral rites, peace for the dying, respect for Thulda's mysteries",
           "does_not_want": "Rushed burials, impiety, questions about death she cannot answer",
-          "oddly_also": "",
-          "thinks_with": "Ritual, tradition, acceptance of mortality",
+          "oddly_also": "", "thinks_with": "Ritual, tradition, acceptance of mortality",
           "family": "House Velmari, outlived husband and two children",
           "self_image": "Shepherd of souls, keeper of the final threshold",
           "recreation": "Spinning wool by the shrine, humming old funeral songs",
           "dreams": "Train successor, die in her sleep at the shrine",
-          "anecdotes": [],
-          "tragedies": [],
-          "pc_leverage": "Respect for rituals, help with funeral preparations, listening to her wisdom"
+          "anecdotes": [], "tragedies": [], "pc_leverage": "Respect for rituals, help with funeral preparations, listening to her wisdom"
         },
-        
         "tovar_the_boatwright": {
-          "moniker": "",
-          "home": "Caelrun",
-          "gender": "male",
-          "faction": "House Bresul, master boat builder",
-          "appearance": "Perfectionist, calloused hands, sawdust in beard, critical eye",
-          "and_yet": "",
+          "moniker": "", "home": "Caelrun", "gender": "male", "faction": "House Bresul, master boat builder",
+          "appearance": "Perfectionist, calloused hands, sawdust in beard, critical eye", "and_yet": "",
           "wants": "Every boat built to last decades, apprentices who listen, proper materials",
           "does_not_want": "Rush jobs, cheap timber, people who don't understand craftsmanship",
-          "oddly_also": "",
-          "thinks_with": "Wood grain, water flow, structural integrity",
+          "oddly_also": "", "thinks_with": "Wood grain, water flow, structural integrity",
           "family": "House Bresul, three apprentices (terrorized), wife understands his moods",
           "self_image": "Last true craftsman in a world of shortcuts",
           "recreation": "There is no recreation, only boat work",
           "dreams": "Build the perfect fishing boat, retire without regrets",
-          "anecdotes": [],
-          "tragedies": [],
-          "pc_leverage": "Respect his craft, patience, bring quality materials, don't rush him"
+          "anecdotes": [], "tragedies": [], "pc_leverage": "Respect his craft, patience, bring quality materials, don't rush him"
         },
-        
         "yavra_quickwater": {
-          "moniker": "Quickwater",
-          "home": "Caelrun/Nebruz",
-          "gender": "female",
-          "faction": "House Norvak (Caelrun branch), ferry operator based in Nebruz",
-          "appearance": "Amazigh woman, agile, knows every channel, suspicious eyes",
-          "and_yet": "",
+          "moniker": "Quickwater", "home": "Caelrun/Nebruz", "gender": "female", "faction": "House Norvak (Caelrun branch), ferry operator based in Nebruz",
+          "appearance": "Amazigh woman, agile, knows every channel, suspicious eyes", "and_yet": "",
           "wants": "Profitable smuggling routes, Nebruz connections maintained, not getting caught",
           "does_not_want": "Questions about nighttime ferry trips, militia attention, loose-lipped passengers",
-          "oddly_also": "",
-          "thinks_with": "Hidden channels, tide timing, who can be trusted",
+          "oddly_also": "", "thinks_with": "Hidden channels, tide timing, who can be trusted",
           "family": "House Norvak, but operates independently, sends money home",
           "self_image": "Free trader in unfree world",
           "recreation": "Gambling with Nebruz smugglers, winning usually",
           "dreams": "Retire wealthy to Imazuran, never explain where money came from",
-          "anecdotes": [],
-          "tragedies": [],
-          "pc_leverage": "Gold, discretion, Nebruz connections, don't threaten her operation"
+          "anecdotes": [], "tragedies": [], "pc_leverage": "Gold, discretion, Nebruz connections, don't threaten her operation"
         },
-        
         "brecht_hallan": {
-          "moniker": "The Fleet Master",
-          "home": "Caelrun",
-          "gender": "male",
-          "faction": "House Hallan patriarch, fleet master",
-          "appearance": "Commands 40+ boats, hard but fair, weathered from decades on water",
-          "and_yet": "",
+          "moniker": "The Fleet Master", "home": "Caelrun", "gender": "male", "faction": "House Hallan patriarch, fleet master",
+          "appearance": "Commands 40+ boats, hard but fair, weathered from decades on water", "and_yet": "",
           "wants": "Productive fishing, family prosperity, compact honored quietly",
           "does_not_want": "Outsiders disrupting arrangement, family members talking too much, bad fishing seasons",
-          "oddly_also": "",
-          "thinks_with": "Fish migrations, weather signs, political calculation",
+          "oddly_also": "", "thinks_with": "Fish migrations, weather signs, political calculation",
           "family": "House Hallan patriarch, 40+ extended family, inherited secret from father",
           "self_image": "Steward of village prosperity through necessary silence",
           "recreation": "Fishing alone, teaching grandchildren knots",
           "dreams": "Pass fleet and secret to worthy heir, die on the water",
-          "anecdotes": [],
-          "tragedies": [],
-          "pc_leverage": "Prove discretion, help fishing operations, understand burden of secrets"
+          "anecdotes": [], "tragedies": [], "pc_leverage": "Prove discretion, help fishing operations, understand burden of secrets"
         },
-        
         "essa_the_net_mender": {
-          "moniker": "",
-          "home": "Caelrun",
-          "gender": "female",
-          "faction": "House Caernach, guild mistress, rope-maker",
-          "appearance": "Blind in one eye from fishing accident, hands never stop moving, weathered face",
-          "and_yet": "",
+          "moniker": "", "home": "Caelrun", "gender": "female", "faction": "House Caernach, guild mistress, rope-maker",
+          "appearance": "Blind in one eye from fishing accident, hands never stop moving, weathered face", "and_yet": "",
           "wants": "Guild neutrality maintained, quality rope production, gossip (currency of information)",
           "does_not_want": "Family feuds disrupting guild, shoddy work, being left out of news",
-          "oddly_also": "",
-          "thinks_with": "Rope tension, social networks, who owes whom",
+          "oddly_also": "", "thinks_with": "Rope tension, social networks, who owes whom",
           "family": "House Caernach, widowed, grown children fish for other families",
           "self_image": "Spider at center of web, keeper of village knowledge",
           "recreation": "Gossip is recreation, knitting while listening",
           "dreams": "Retire as most respected elder, write nothing down",
-          "anecdotes": [],
-          "tragedies": [],
-          "pc_leverage": "Trade information, respect guild neutrality, commission quality rope"
+          "anecdotes": [], "tragedies": [], "pc_leverage": "Trade information, respect guild neutrality, commission quality rope"
         },
-        
         "brother_kellis": {
-          "moniker": "",
-          "home": "Caelrun (far shore reed hut)",
-          "gender": "transgender",
-          "faction": "Wandering Ossamar devotee",
-          "appearance": "Lives in reed hut, marks safe water paths with cairns, speaks in riddles",
-          "and_yet": "",
+          "moniker": "", "home": "Caelrun (far shore reed hut)", "gender": "transgender", "faction": "Wandering Ossamar devotee",
+          "appearance": "Lives in reed hut, marks safe water paths with cairns, speaks in riddles", "and_yet": "",
           "wants": "Safe crossings for travelers, communion with water spirits, solitude mostly",
           "does_not_want": "Village politics, questions about their past, cairns disturbed",
-          "oddly_also": "",
-          "thinks_with": "Water currents, liminal spaces, Ossamar's mysteries",
+          "oddly_also": "", "thinks_with": "Water currents, liminal spaces, Ossamar's mysteries",
           "family": "No family ties, left former life behind decades ago",
           "self_image": "Between-dweller, neither shore nor water, guide for the crossing",
           "recreation": "Wading at dawn, arranging stones, watching reflections",
           "dreams": "Perfect understanding of Ossamar's nature, death by drowning peacefully",
-          "anecdotes": [],
-          "tragedies": [],
-          "pc_leverage": "Respect for Ossamar, offerings at cairns, understanding of liminality"
+          "anecdotes": [], "tragedies": [], "pc_leverage": "Respect for Ossamar, offerings at cairns, understanding of liminality"
         },
-        
         "penna": {
-          "moniker": "",
-          "home": "Caelrun",
-          "gender": "female",
-          "faction": "House Hallan servant family (three generations)",
-          "appearance": "Middle-aged, efficient, knows compound routines better than family members",
-          "and_yet": "",
+          "moniker": "", "home": "Caelrun", "gender": "female", "faction": "House Hallan servant family (three generations)",
+          "appearance": "Middle-aged, efficient, knows compound routines better than family members", "and_yet": "",
           "wants": "Smooth household operation, respect for her knowledge, security for her children",
           "does_not_want": "Chaos, disrespect, her children treated as lesser",
-          "oddly_also": "",
-          "thinks_with": "Schedules, household logistics, practical solutions",
+          "oddly_also": "", "thinks_with": "Schedules, household logistics, practical solutions",
           "family": "Servant family for three generations, husband also serves Hallan, four children",
           "self_image": "Backbone of great house, underestimated and essential",
           "recreation": "Teaching daughters household management, rare moments of stillness",
           "dreams": "Eldest daughter marries above station, family rises",
-          "anecdotes": [],
-          "tragedies": [],
-          "pc_leverage": "Respect for her position, help her children, recognize her competence"
+          "anecdotes": [], "tragedies": [], "pc_leverage": "Respect for her position, help her children, recognize her competence"
         },
-        
         "dren": {
-          "moniker": "",
-          "home": "Caelrun",
-          "gender": "male",
-          "faction": "Debt-bound to House Norvak",
-          "appearance": "Young, bitter, stained from fish oil rendering, thin from hard work",
-          "and_yet": "",
+          "moniker": "", "home": "Caelrun", "gender": "male", "faction": "Debt-bound to House Norvak",
+          "appearance": "Young, bitter, stained from fish oil rendering, thin from hard work", "and_yet": "",
           "wants": "Freedom from debt, revenge on Norvak, escape from Caelrun",
           "does_not_want": "Seven more years of service, condescension, being reminded of debt",
-          "oddly_also": "",
-          "thinks_with": "Resentment, counting days, escape planning",
+          "oddly_also": "", "thinks_with": "Resentment, counting days, escape planning",
           "family": "Father took debt, died, debt passed to son, siblings scattered",
           "self_image": "Prisoner, victim of unjust system",
           "recreation": "Drinking stolen wine, fantasizing about burning oil pits",
           "dreams": "Flee to Velgroth, never see fish again, Norvak suffers somehow",
-          "anecdotes": [],
-          "tragedies": [],
-          "pc_leverage": "Help reduce debt, offer escape route, validate his anger, employment after freedom"
+          "anecdotes": [], "tragedies": [], "pc_leverage": "Help reduce debt, offer escape route, validate his anger, employment after freedom"
         },
-        
         "kessa_the_leech_wife": {
-          "moniker": "The Leech-Wife",
-          "home": "Caelrun (marsh edge)",
-          "gender": "female",
-          "faction": "No ties, fringe dweller",
-          "appearance": "Stained fingers, knows medicinal herbs, lives alone on marsh edge",
-          "and_yet": "",
+          "moniker": "The Leech-Wife", "home": "Caelrun (marsh edge)", "gender": "female", "faction": "No ties, fringe dweller",
+          "appearance": "Stained fingers, knows medicinal herbs, lives alone on marsh edge", "and_yet": "",
           "wants": "Left alone, herbs to grow wild, occasional trade for necessities",
           "does_not_want": "Village interference, questions about what she sees, herb-gathering competition",
-          "oddly_also": "",
-          "thinks_with": "Marsh rhythms, medicinal properties, survival",
+          "oddly_also": "", "thinks_with": "Marsh rhythms, medicinal properties, survival",
           "family": "No ties, may have fled something in past",
           "self_image": "Useful outcast, too valuable to exile, too strange to integrate",
           "recreation": "Observing marsh life, talking to leeches",
           "dreams": "Die in marsh, body returned to water and mud",
-          "anecdotes": [],
-          "tragedies": [],
-          "pc_leverage": "Respect her knowledge, trade fairly, don't pry into past, leave her alone mostly"
+          "anecdotes": [], "tragedies": [], "pc_leverage": "Respect her knowledge, trade fairly, don't pry into past, leave her alone mostly"
         },
-        
         "varren_muddfoot": {
-          "moniker": "Muddfoot",
-          "home": "Caelrun (stilted shack)",
-          "gender": "male",
-          "faction": "Disowned Bresul cousin, Aurka informant",
-          "appearance": "Nervous energy, lives in stilted shack, stinks of frog and marsh",
-          "and_yet": "",
+          "moniker": "Muddfoot", "home": "Caelrun (stilted shack)", "gender": "male", "faction": "Disowned Bresul cousin, Aurka informant",
+          "appearance": "Nervous energy, lives in stilted shack, stinks of frog and marsh", "and_yet": "",
           "wants": "Aurka payment, information to trade, respect from family (won't admit this)",
           "does_not_want": "Family reconciliation attempts, being forced to choose sides, caught informing",
-          "oddly_also": "",
-          "thinks_with": "Information as currency, survival at margins, opportunism",
+          "oddly_also": "", "thinks_with": "Information as currency, survival at margins, opportunism",
           "family": "Distant Bresul cousin, disowned for theft (claims he was framed)",
           "self_image": "Survivor, wronged but unbowed, eventually they'll see",
           "recreation": "Spying on ruins, catching frogs, trading rumors",
           "dreams": "Aurka find something valuable, he gets cut, family begs forgiveness he'll deny",
-          "anecdotes": [],
-          "tragedies": [],
-          "pc_leverage": "Information trade, gold, Aurka connections, don't threaten his operation"
+          "anecdotes": [], "tragedies": [], "pc_leverage": "Information trade, gold, Aurka connections, don't threaten his operation"
         }
-      },
-      
-      "items": {},
-      
-      "plots": {}
+      }
     }
   }
 }
