@@ -1,0 +1,67 @@
+{
+  "npcs": {
+    "taziri_nkhaleb": {
+      "moniker": "The Measure",
+      "home": "The road itself\u2014feels wrong when stationary more than two days",
+      "home_settlement": "itinerant",
+      "gender": "female",
+      "faction": "Neutral merchant (minor Elunad association via late husband)",
+      "appearance": "Imazuran woman, late 40s, olive skin weathered by road dust, sharp brown eyes that count everything, ochre and grey traveling robes, silver measuring-chain belt, ink-stained hands",
+      "and_yet": "Keeps Isarna shrine in lead wagon, burns expensive incense at every crossroads",
+      "wants": "Profitable predictable routes, respect from both cultures, vengeance on lizard-men",
+      "does_not_want": "Questions about husband's death, choosing factional sides, lizard-men mentioned as allies",
+      "oddly_also": "Collects obscure road songs in journal, refuses water drawn south of the road",
+      "thinks_with": "Coin, probabilities, road-wisdom from Elunad husband",
+      "family": "Late husband Irven (Elunad, killed by lizard-men 8yr ago), son Khalid (24, leads return caravans), daughter Sarit (22, manages Orziben warehouses), son Davin (19, Ilmenor scribe apprentice), brother Azghar (teamster)",
+      "self_image": "Bridge between Gallaecian and Imazuran, keeper of husband's legacy, protector of her caravan family",
+      "recreation": "Singing road songs at crossroads, updating ledgers by candlelight, polishing husband's waystone marker",
+      "dreams": "Davin becomes respected Ilmenor scholar, safe profitable routes forever, finding who killed Irven",
+      "anecdotes": [
+        "Once outbid a hobgoblin warlord for iron nails using only dried figs and honey",
+        "Navigated through fey-glamoured woods by singing Isarna hymns until dawn",
+        "Refused Covenant-Bound 'special cargo' offer despite massive payment"
+      ],
+      "tragedies": [
+        "Husband Irven killed in southern swamps 8 years ago (believes lizard-men responsible)",
+        "Has hidden map of 'safe paths' Irven drew before death\u2014guards it obsessively",
+        "Receives coded letters from Davin hinting at dangerous Ilmenor secrets"
+      ],
+      "pc_leverage": "Prove lizard-men didn't kill Irven OR find actual killers; protect Davin; share intelligence on humanoid coordination; respect her authority on the road",
+      "caravan": {
+        "route": "Caelrun to Tagmira (primary), broader Luric Marches circuit",
+        "current_leg": "Caelrun to Tagmira \u2014 party traveling with her",
+        "brother_azghar": "Teamster, Taziri's brother, manages the wagons day-to-day",
+        "waystone_observance": "Will stop at Waystone of Isarna west of Tagmira for offering (bread, silver thread)",
+        "dm_notes": "Taziri is the party's most reliable civilian connection across the Luric Marches. She knows both Caelrun and Tagmira well and can brief the party on surface-level politics of either. She has no knowledge of the undead alliance. Her Isarna observance at the waystone is a natural scene transition into Tagmira."
+      }
+    },
+    "mother_yaleth": {
+      "moniker": "Mother Yaleth",
+      "home": "Nemetra\u2014has never left, refuses to, sees leaving as betrayal of the sick and dying who need her",
+      "home_settlement": "nemetra",
+      "gender": "female",
+      "faction": "Herb-wives (unofficial leader), allied with House Yebrin",
+      "appearance": "Late 60s, weathered face with deep lines, sharp grey eyes that miss nothing, faded green shawl, earth-stained hands, walks with carved hazelwood staff, wears dried herb bundles at belt",
+      "and_yet": "",
+      "wants": "Truth about northern woods threat, village to take danger seriously, protect the younger herb-wives",
+      "does_not_want": "Militia interference, fools dismissing her warnings, goblins harmed before she learns what they know",
+      "oddly_also": "Heavy smoker (pipe, strong tobacco) despite it damaging her lungs\u2014considered unfeminine, she doesn't care",
+      "thinks_with": "Observation, herb-lore passed down generations, pattern recognition from decades of births and deaths",
+      "family": "House Yebrin (distant cousin), 6 herb-wives under her guidance, no living children",
+      "self_image": "Proud of her humility, quietly smug about being right when others are wrong",
+      "recreation": "Smoking her pipe on the compound steps at dusk, watching village life",
+      "dreams": "Establish Nemetra as tobacco exporter, prove herb-wives' wisdom to the fools, die respected",
+      "anecdotes": [
+        "Delivered Captain Durvin himself during a winter storm\u2014he was blue when he came out, she breathed life back into him. He's never thanked her once.",
+        "Diagnosed House Halbet's pottery master with lung rot from kiln smoke 20 years ago\u2014he ignored her, kept working, died within the year. His son listens now.",
+        "Once talked down a delirious wounded orc at the forest edge using only hand signs and offering him water. Militia wanted to kill it. She sent it limping north with bandaged leg."
+      ],
+      "tragedies": [
+        "Lost all three of her children (two daughters, one son) to fever in a single week during Year 285. She knows every herb that might have saved them\u2014none grew close enough in time.",
+        "Her husband left her 40 years ago, said she 'loved plants more than people.' He remarried in Tagmira. She never speaks of him but keeps his tobacco pouch.",
+        "Her mentor, Old Kessa, was killed by militiamen who thought she was consorting with fey (she was gathering moonlit herbs). Yaleth found the body. Durvin's father led that patrol\u2014she's never forgotten."
+      ],
+      "pc_leverage": "Bring her proof of northern woods threat, protect goblins from militia, share intelligence she can't gather herself, respect her knowledge"
+    }
+  }
+}
