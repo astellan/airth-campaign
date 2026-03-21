@@ -1,0 +1,1793 @@
+{
+  "campaign_state": {
+    "players": {
+      "hoi": {
+        "characters": {
+          "chekkad_ag_maktar": {
+            "name": "Chekkad ag Maktar",
+            "race": "human",
+            "class": "illusionist",
+            "level": 3,
+            "status": "alive",
+            "faction": "",
+            "spells": [
+              "blur"
+            ],
+            "items": [],
+            "mentors": []
+          },
+          "strummer": {
+            "name": "Strummer",
+            "race": "human",
+            "class": "bard",
+            "level": 3,
+            "status": "alive",
+            "faction": "",
+            "items": [],
+            "mentors": []
+          }
+        }
+      },
+      "phil": {
+        "characters": {
+          "vetranio": {
+            "name": "Vetranio",
+            "race": "human",
+            "class": "magic-user",
+            "level": 4,
+            "status": "alive",
+            "faction": "ilmenor",
+            "spells": [],
+            "items": [],
+            "mentors": []
+          },
+          "tartessia": {
+            "name": "Tartessia",
+            "race": "elf",
+            "subrace": "forsworn",
+            "class": "fighter/magic-user",
+            "level": "2/1",
+            "status": "alive",
+            "faction": "",
+            "spells": [],
+            "items": [],
+            "mentors": []
+          },
+          "zaphon": {
+            "name": "Zaphon",
+            "race": "human",
+            "class": "cleric",
+            "level": 4,
+            "status": "alive",
+            "faction": "",
+            "spells": [],
+            "items": [],
+            "mentors": []
+          }
+        }
+      },
+      "andre": {
+        "characters": {
+          "brigantios": {
+            "name": "Brigantios",
+            "race": "human",
+            "class": "druid",
+            "level": 3,
+            "status": "alive",
+            "faction": "serdanos",
+            "spells": [],
+            "items": [],
+            "mentors": []
+          },
+          "trebastos": {
+            "name": "Trebastos",
+            "race": "human",
+            "class": "fighter",
+            "level": 4,
+            "status": "alive",
+            "faction": "",
+            "items": [],
+            "mentors": []
+          }
+        }
+      },
+      "chris": {
+        "characters": {
+          "sardet": {
+            "name": "Sardet",
+            "race": "human",
+            "class": "paladin",
+            "level": 4,
+            "status": "alive",
+            "faction": "ardanir",
+            "spells": [],
+            "items": [],
+            "mentors": []
+          },
+          "zardun": {
+            "name": "Zardun",
+            "race": "human",
+            "class": "thief",
+            "level": 4,
+            "status": "alive",
+            "faction": "",
+            "items": [],
+            "mentors": []
+          }
+        }
+      }
+    },
+    "npcs": {
+      "taziri_nkhaleb": {
+        "moniker": "The Measure",
+        "home": "The road itself\u2014feels wrong when stationary more than two days",
+        "home_settlement": "itinerant",
+        "gender": "female",
+        "faction": "Neutral merchant (minor Elunad association via late husband)",
+        "appearance": "Imazuran woman, late 40s, olive skin weathered by road dust, sharp brown eyes that count everything, ochre and grey traveling robes, silver measuring-chain belt, ink-stained hands",
+        "and_yet": "Keeps Isarna shrine in lead wagon, burns expensive incense at every crossroads",
+        "wants": "Profitable predictable routes, respect from both cultures, vengeance on lizard-men",
+        "does_not_want": "Questions about husband's death, choosing factional sides, lizard-men mentioned as allies",
+        "oddly_also": "Collects obscure road songs in journal, refuses water drawn south of the road",
+        "thinks_with": "Coin, probabilities, road-wisdom from Elunad husband",
+        "family": "Late husband Irven (Elunad, killed by lizard-men 8yr ago), son Khalid (24, leads return caravans), daughter Sarit (22, manages Orziben warehouses), son Davin (19, Ilmenor scribe apprentice), brother Azghar (teamster)",
+        "self_image": "Bridge between Gallaecian and Imazuran, keeper of husband's legacy, protector of her caravan family",
+        "recreation": "Singing road songs at crossroads, updating ledgers by candlelight, polishing husband's waystone marker",
+        "dreams": "Davin becomes respected Ilmenor scholar, safe profitable routes forever, finding who killed Irven",
+        "anecdotes": [
+          "Once outbid a hobgoblin warlord for iron nails using only dried figs and honey",
+          "Navigated through fey-glamoured woods by singing Isarna hymns until dawn",
+          "Refused Covenant-Bound 'special cargo' offer despite massive payment"
+        ],
+        "tragedies": [
+          "Husband Irven killed in southern swamps 8 years ago (believes lizard-men responsible)",
+          "Has hidden map of 'safe paths' Irven drew before death\u2014guards it obsessively",
+          "Receives coded letters from Davin hinting at dangerous Ilmenor secrets"
+        ],
+        "pc_leverage": "Prove lizard-men didn't kill Irven OR find actual killers; protect Davin; share intelligence on humanoid coordination; respect her authority on the road",
+        "caravan": {
+          "route": "Caelrun to Tagmira (primary), broader Luric Marches circuit",
+          "current_leg": "Caelrun to Tagmira \u2014 party traveling with her",
+          "brother_azghar": "Teamster, Taziri's brother, manages the wagons day-to-day",
+          "waystone_observance": "Will stop at Waystone of Isarna west of Tagmira for offering (bread, silver thread)",
+          "dm_notes": "Taziri is the party's most reliable civilian connection across the Luric Marches. She knows both Caelrun and Tagmira well and can brief the party on surface-level politics of either. She has no knowledge of the undead alliance. Her Isarna observance at the waystone is a natural scene transition into Tagmira."
+        }
+      },
+      "mother_yaleth": {
+        "moniker": "Mother Yaleth",
+        "home": "Nemetra\u2014has never left, refuses to, sees leaving as betrayal of the sick and dying who need her",
+        "home_settlement": "nemetra",
+        "gender": "female",
+        "faction": "Herb-wives (unofficial leader), allied with House Yebrin",
+        "appearance": "Late 60s, weathered face with deep lines, sharp grey eyes that miss nothing, faded green shawl, earth-stained hands, walks with carved hazelwood staff, wears dried herb bundles at belt",
+        "and_yet": "",
+        "wants": "Truth about northern woods threat, village to take danger seriously, protect the younger herb-wives",
+        "does_not_want": "Militia interference, fools dismissing her warnings, goblins harmed before she learns what they know",
+        "oddly_also": "Heavy smoker (pipe, strong tobacco) despite it damaging her lungs\u2014considered unfeminine, she doesn't care",
+        "thinks_with": "Observation, herb-lore passed down generations, pattern recognition from decades of births and deaths",
+        "family": "House Yebrin (distant cousin), 6 herb-wives under her guidance, no living children",
+        "self_image": "Proud of her humility, quietly smug about being right when others are wrong",
+        "recreation": "Smoking her pipe on the compound steps at dusk, watching village life",
+        "dreams": "Establish Nemetra as tobacco exporter, prove herb-wives' wisdom to the fools, die respected",
+        "anecdotes": [
+          "Delivered Captain Durvin himself during a winter storm\u2014he was blue when he came out, she breathed life back into him. He's never thanked her once.",
+          "Diagnosed House Halbet's pottery master with lung rot from kiln smoke 20 years ago\u2014he ignored her, kept working, died within the year. His son listens now.",
+          "Once talked down a delirious wounded orc at the forest edge using only hand signs and offering him water. Militia wanted to kill it. She sent it limping north with bandaged leg."
+        ],
+        "tragedies": [
+          "Lost all three of her children (two daughters, one son) to fever in a single week during Year 285. She knows every herb that might have saved them\u2014none grew close enough in time.",
+          "Her husband left her 40 years ago, said she 'loved plants more than people.' He remarried in Tagmira. She never speaks of him but keeps his tobacco pouch.",
+          "Her mentor, Old Kessa, was killed by militiamen who thought she was consorting with fey (she was gathering moonlit herbs). Yaleth found the body. Durvin's father led that patrol\u2014she's never forgotten."
+        ],
+        "pc_leverage": "Bring her proof of northern woods threat, protect goblins from militia, share intelligence she can't gather herself, respect her knowledge"
+      }
+    },
+    "settlements": {
+      "caelrun": {
+        "name": "Caelrun",
+        "type": "Lakeside fishing village",
+        "population": {
+          "total": 1200,
+          "breakdown": {
+            "agriculture_herding": 300,
+            "militia_active": 36,
+            "veterans_elites": 24,
+            "clergy": 24,
+            "ilmenor_scholars": 0,
+            "artisans_builders": 36,
+            "traders_ferrymen": 18,
+            "fisherfolk_riverfolk": 600,
+            "monastics_hermits": 6,
+            "servants_dependents": 18,
+            "bound_laborers": 6,
+            "fringe_outliers": 132
+          }
+        },
+        "economy": [
+          "Fishing",
+          "Eel-trapping",
+          "Barley cultivation",
+          "Rush weaving",
+          "Lake-industry crafts"
+        ],
+        "exports": [
+          "Dried fish",
+          "Smoked fish",
+          "Fish oil",
+          "Barley (seed & food)",
+          "Rush mats",
+          "Fish bone tools",
+          "Waterfowl",
+          "Cattail products",
+          "Lake-hemp rope",
+          "Willow baskets"
+        ],
+        "imports": [
+          "Tools",
+          "Salt",
+          "Weapons",
+          "Iron",
+          "Pottery",
+          "Wine"
+        ],
+        "character": "Humid, productive, quietly watched by forces villagers don't acknowledge",
+        "atmosphere": {
+          "sounds": [
+            "Lapping water",
+            "Fish market calls",
+            "Net-mending rhythms",
+            "Waterfowl cries",
+            "Oars creaking",
+            "Reed rustling"
+          ],
+          "smells": [
+            "Fish (fresh, drying, smoking)",
+            "Lake water",
+            "Wet reeds",
+            "Barley fields",
+            "Fish oil rendering",
+            "Mud"
+          ],
+          "mood": "Industrious, practical, prosperity with undercurrent of carefully ignored truths"
+        },
+        "families": {},
+        "locations": {},
+        "factions": [
+          "Aurka (active near lake ruins)",
+          "Lizard-men (shadow authority, most unaware)"
+        ],
+        "tensions": [
+          "Aurka activity drawing unwanted attention to ruins",
+          "Unspoken lizard-man control - acknowledged by few, ignored by most",
+          "Fishing rights disputes between families",
+          "Fringe workers (leech gatherers, bog-edge camps) operate outside village authority"
+        ],
+        "rumors": [
+          "Aurka found carved stones in submerged temple foundations",
+          "Nebruz smugglers use secret lake channels at night",
+          "Old temple columns visible in shallows during summer droughts"
+        ],
+        "defenses": {
+          "militia": "Ceremonial, mostly for disputes and drunk fishers",
+          "reality": "Lizard-men enforce territorial boundaries from shadows",
+          "village_understanding": "Most residents believe their prosperity comes from hard work and good location, unaware of the arrangement"
+        },
+        "trade_focus": "Food surplus provider - feeds other Marches villages",
+        "nearest_neighbors": [
+          "Nemetra (northwest)",
+          "Tagmira (east)",
+          "Nebruz (south, hidden)"
+        ],
+        "road_position": "On main Lamares-Orziben caravan route, between Nemetra and Tagmira",
+        "hidden_truth": "Village exists by lizard-man sufferance, most residents unaware of this arrangement. A few families know and maintain the unspoken compact.",
+        "steadings": {
+          "nebruz": {
+            "name": "Nebruz",
+            "population": 45,
+            "families": 3,
+            "primary_activity": "Smuggling, black market trade, hidden waystation",
+            "exports_to_parent": [
+              "Intelligence on swamp movements",
+              "Contraband routing",
+              "Covert passage for travelers"
+            ],
+            "character": "Hidden, opportunistic, dangerous - exists in shadows both literal and political",
+            "demihumans_present": true,
+            "humanoid_tolerance": "high",
+            "threat_proximity": "extreme",
+            "notable_residents": [
+              "Yavra Quickwater"
+            ]
+          },
+          "salmura": {
+            "name": "Salmura",
+            "population": 30,
+            "families": 2,
+            "primary_activity": "Fish drying and smoking, salt fish production",
+            "exports_to_parent": [
+              "Dried fish",
+              "Smoked fish",
+              "Fish jerky",
+              "Salted roe"
+            ],
+            "character": "Windswept, isolated, hardworking - smoke always rising from drying racks",
+            "demihumans_present": false,
+            "humanoid_tolerance": "none",
+            "threat_proximity": "cautious",
+            "notable_residents": []
+          },
+          "carvoal": {
+            "name": "Carvoal",
+            "population": 25,
+            "families": 2,
+            "primary_activity": "Charcoal burning, timber cutting at swamp edge",
+            "exports_to_parent": [
+              "Charcoal",
+              "Hardwood timber",
+              "Ash (for soap-making)"
+            ],
+            "character": "Smoky, watchful, tense - closest to lizard-man patrols, sees things others don't",
+            "demihumans_present": false,
+            "humanoid_tolerance": "low",
+            "threat_proximity": "dangerous",
+            "notable_residents": []
+          },
+          "xuncal": {
+            "name": "Xuncal",
+            "population": 35,
+            "families": 3,
+            "primary_activity": "Reed cutting, rush weaving, basket making",
+            "exports_to_parent": [
+              "Rush mats",
+              "Willow baskets",
+              "Thatching reeds",
+              "Woven screens"
+            ],
+            "character": "Quiet, rhythmic, traditional - families have worked these beds for generations",
+            "demihumans_present": false,
+            "humanoid_tolerance": "none",
+            "threat_proximity": "safe",
+            "notable_residents": []
+          },
+          "angueira": {
+            "name": "Angueira",
+            "population": 20,
+            "families": 1,
+            "primary_activity": "Eel trapping, specialized fishing techniques",
+            "exports_to_parent": [
+              "Live eels",
+              "Eel oil",
+              "Smoked eels",
+              "Eel leather"
+            ],
+            "character": "Secretive, superstitious, skilled - guard eel-trap techniques jealously",
+            "demihumans_present": false,
+            "humanoid_tolerance": "moderate",
+            "threat_proximity": "cautious",
+            "notable_residents": []
+          }
+        },
+        "npcs": {
+          "ordun_tarnes": {
+            "moniker": "The Quiet Negotiator",
+            "home": "Caelrun",
+            "home_settlement": "caelrun",
+            "gender": "male",
+            "faction": "House Tarnes, grain collective leader",
+            "appearance": "Weathered, patient, knows soil and seasons",
+            "and_yet": "",
+            "wants": "Good harvests, peace with all parties including lizard-men",
+            "does_not_want": "Village discovering his quiet negotiations, conflict disrupting planting seasons",
+            "oddly_also": "",
+            "thinks_with": "Seasonal cycles, careful observation, pragmatic compromise",
+            "family": "House Tarnes patriarch, extended family of 15+",
+            "self_image": "Keeper of ancient compact, protector through diplomacy not strength",
+            "recreation": "Walking barley fields at dawn alone",
+            "dreams": "Pass knowledge of lizard-man arrangement to worthy successor",
+            "anecdotes": [],
+            "tragedies": [],
+            "pc_leverage": "Respect for the compact, help with harvest, keep his secret"
+          },
+          "merra_of_the_fields": {
+            "moniker": "",
+            "home": "Caelrun",
+            "home_settlement": "caelrun",
+            "gender": "female",
+            "faction": "House Tarnes (married in)",
+            "appearance": "Sharp-tongued, practical, sun-darkened skin",
+            "and_yet": "",
+            "wants": "Efficient land use, respect for agricultural expertise",
+            "does_not_want": "Fishers' opinions on farming, wasted resources",
+            "oddly_also": "",
+            "thinks_with": "Schedules, yield calculations, no-nonsense planning",
+            "family": "Married to Tarnes cousin, three children work the fields",
+            "self_image": "The one who actually makes things run",
+            "recreation": "Doesn't have time for recreation, resents the question",
+            "dreams": "Expand barley cultivation, prove women can manage large operations",
+            "anecdotes": [],
+            "tragedies": [],
+            "pc_leverage": "Practical help, respect for her authority, efficient solutions"
+          },
+          "kelvan_bresul": {
+            "moniker": "",
+            "home": "Caelrun",
+            "home_settlement": "caelrun",
+            "gender": "male",
+            "faction": "House Bresul, militia captain (ceremonial)",
+            "appearance": "Soft around the middle, drinks too much, ceremonial armor kept polished",
+            "and_yet": "",
+            "wants": "To be taken seriously, to not see what he half-sees in marshes",
+            "does_not_want": "Real conflict, questions about militia effectiveness, night patrols near swamp edge",
+            "oddly_also": "",
+            "thinks_with": "Denial, alcohol, maintaining appearances",
+            "family": "House Bresul, wife tired of his drinking, two teenage sons",
+            "self_image": "Protector of Caelrun (deeply insecure about this)",
+            "recreation": "Drinking at the Waterside Tavern, telling war stories from his youth that may not be true",
+            "dreams": "Prove himself in real conflict (terrified this might actually happen)",
+            "anecdotes": [],
+            "tragedies": [],
+            "pc_leverage": "Validate his importance, bring him information that makes him look competent, don't expose his fear"
+          },
+          "sarith_the_scarred": {
+            "moniker": "The Watcher",
+            "home": "Caelrun",
+            "home_settlement": "caelrun",
+            "gender": "male",
+            "faction": "Former Elunad, adopted House Hallan, village elder",
+            "appearance": "Old wounds visible, walks with cane, sharp eyes despite age",
+            "and_yet": "",
+            "wants": "Maintain lizard-man compact, village safety, peaceful succession of knowledge",
+            "does_not_want": "Foolish heroes disrupting arrangement, Aurka attracting wrong attention",
+            "oddly_also": "",
+            "thinks_with": "Decades of border wisdom, Elunad training, cold pragmatism",
+            "family": "Adopted by Hallan after serving with them, never married, mentors quietly",
+            "self_image": "Last guardian of a necessary truth",
+            "recreation": "Carving waystones, teaching those few who listen",
+            "dreams": "Die knowing compact will hold after he's gone",
+            "anecdotes": [],
+            "tragedies": [],
+            "pc_leverage": "Prove trustworthiness, demonstrate understanding of complex situations, Elunad connection"
+          },
+          "mother_hildreth": {
+            "moniker": "",
+            "home": "Caelrun",
+            "home_settlement": "caelrun",
+            "gender": "female",
+            "faction": "House Velmari, Senior Thulda priestess",
+            "appearance": "Elderly, serene, grey wool robes, moves slowly but purposefully",
+            "and_yet": "",
+            "wants": "Proper funeral rites, peace for the dying, respect for Thulda's mysteries",
+            "does_not_want": "Rushed burials, impiety, questions about death she cannot answer",
+            "oddly_also": "",
+            "thinks_with": "Ritual, tradition, acceptance of mortality",
+            "family": "House Velmari, outlived husband and two children",
+            "self_image": "Shepherd of souls, keeper of the final threshold",
+            "recreation": "Spinning wool by the shrine, humming old funeral songs",
+            "dreams": "Train successor, die in her sleep at the shrine",
+            "anecdotes": [],
+            "tragedies": [],
+            "pc_leverage": "Respect for rituals, help with funeral preparations, listening to her wisdom"
+          },
+          "tovar_the_boatwright": {
+            "moniker": "",
+            "home": "Caelrun",
+            "home_settlement": "caelrun",
+            "gender": "male",
+            "faction": "House Bresul, master boat builder",
+            "appearance": "Perfectionist, calloused hands, sawdust in beard, critical eye",
+            "and_yet": "",
+            "wants": "Every boat built to last decades, apprentices who listen, proper materials",
+            "does_not_want": "Rush jobs, cheap timber, people who don't understand craftsmanship",
+            "oddly_also": "",
+            "thinks_with": "Wood grain, water flow, structural integrity",
+            "family": "House Bresul, three apprentices (terrorized), wife understands his moods",
+            "self_image": "Last true craftsman in a world of shortcuts",
+            "recreation": "There is no recreation, only boat work",
+            "dreams": "Build the perfect fishing boat, retire without regrets",
+            "anecdotes": [],
+            "tragedies": [],
+            "pc_leverage": "Respect his craft, patience, bring quality materials, don't rush him"
+          },
+          "yavra_quickwater": {
+            "moniker": "Quickwater",
+            "home": "Caelrun/Nebruz",
+            "home_settlement": "nebruz",
+            "gender": "female",
+            "faction": "House Norvak (Caelrun branch), ferry operator based in Nebruz",
+            "appearance": "Amazigh woman, agile, knows every channel, suspicious eyes",
+            "and_yet": "",
+            "wants": "Profitable smuggling routes, Nebruz connections maintained, not getting caught",
+            "does_not_want": "Questions about nighttime ferry trips, militia attention, loose-lipped passengers",
+            "oddly_also": "",
+            "thinks_with": "Hidden channels, tide timing, who can be trusted",
+            "family": "House Norvak, but operates independently, sends money home",
+            "self_image": "Free trader in unfree world",
+            "recreation": "Gambling with Nebruz smugglers, winning usually",
+            "dreams": "Retire wealthy to Imazuran, never explain where money came from",
+            "anecdotes": [],
+            "tragedies": [],
+            "pc_leverage": "Gold, discretion, Nebruz connections, don't threaten her operation"
+          },
+          "brecht_hallan": {
+            "moniker": "The Fleet Master",
+            "home": "Caelrun",
+            "home_settlement": "caelrun",
+            "gender": "male",
+            "faction": "House Hallan patriarch, fleet master",
+            "appearance": "Commands 40+ boats, hard but fair, weathered from decades on water",
+            "and_yet": "",
+            "wants": "Productive fishing, family prosperity, compact honored quietly",
+            "does_not_want": "Outsiders disrupting arrangement, family members talking too much, bad fishing seasons",
+            "oddly_also": "",
+            "thinks_with": "Fish migrations, weather signs, political calculation",
+            "family": "House Hallan patriarch, 40+ extended family, inherited secret from father",
+            "self_image": "Steward of village prosperity through necessary silence",
+            "recreation": "Fishing alone, teaching grandchildren knots",
+            "dreams": "Pass fleet and secret to worthy heir, die on the water",
+            "anecdotes": [],
+            "tragedies": [],
+            "pc_leverage": "Prove discretion, help fishing operations, understand burden of secrets"
+          },
+          "essa_the_net_mender": {
+            "moniker": "",
+            "home": "Caelrun",
+            "home_settlement": "caelrun",
+            "gender": "female",
+            "faction": "House Caernach, guild mistress, rope-maker",
+            "appearance": "Blind in one eye from fishing accident, hands never stop moving, weathered face",
+            "and_yet": "",
+            "wants": "Guild neutrality maintained, quality rope production, gossip (currency of information)",
+            "does_not_want": "Family feuds disrupting guild, shoddy work, being left out of news",
+            "oddly_also": "",
+            "thinks_with": "Rope tension, social networks, who owes whom",
+            "family": "House Caernach, widowed, grown children fish for other families",
+            "self_image": "Spider at center of web, keeper of village knowledge",
+            "recreation": "Gossip is recreation, knitting while listening",
+            "dreams": "Retire as most respected elder, write nothing down",
+            "anecdotes": [],
+            "tragedies": [],
+            "pc_leverage": "Trade information, respect guild neutrality, commission quality rope"
+          },
+          "brother_kellis": {
+            "moniker": "",
+            "home": "Caelrun (far shore reed hut)",
+            "home_settlement": "caelrun",
+            "gender": "transgender",
+            "faction": "Wandering Ossamar devotee",
+            "appearance": "Lives in reed hut, marks safe water paths with cairns, speaks in riddles",
+            "and_yet": "",
+            "wants": "Safe crossings for travelers, communion with water spirits, solitude mostly",
+            "does_not_want": "Village politics, questions about their past, cairns disturbed",
+            "oddly_also": "",
+            "thinks_with": "Water currents, liminal spaces, Ossamar's mysteries",
+            "family": "No family ties, left former life behind decades ago",
+            "self_image": "Between-dweller, neither shore nor water, guide for the crossing",
+            "recreation": "Wading at dawn, arranging stones, watching reflections",
+            "dreams": "Perfect understanding of Ossamar's nature, death by drowning peacefully",
+            "anecdotes": [],
+            "tragedies": [],
+            "pc_leverage": "Respect for Ossamar, offerings at cairns, understanding of liminality"
+          },
+          "penna": {
+            "moniker": "",
+            "home": "Caelrun",
+            "home_settlement": "caelrun",
+            "gender": "female",
+            "faction": "House Hallan servant family (three generations)",
+            "appearance": "Middle-aged, efficient, knows compound routines better than family members",
+            "and_yet": "",
+            "wants": "Smooth household operation, respect for her knowledge, security for her children",
+            "does_not_want": "Chaos, disrespect, her children treated as lesser",
+            "oddly_also": "",
+            "thinks_with": "Schedules, household logistics, practical solutions",
+            "family": "Servant family for three generations, husband also serves Hallan, four children",
+            "self_image": "Backbone of great house, underestimated and essential",
+            "recreation": "Teaching daughters household management, rare moments of stillness",
+            "dreams": "Eldest daughter marries above station, family rises",
+            "anecdotes": [],
+            "tragedies": [],
+            "pc_leverage": "Respect for her position, help her children, recognize her competence"
+          },
+          "dren": {
+            "moniker": "",
+            "home": "Caelrun",
+            "home_settlement": "caelrun",
+            "gender": "male",
+            "faction": "Debt-bound to House Norvak",
+            "appearance": "Young, bitter, stained from fish oil rendering, thin from hard work",
+            "and_yet": "",
+            "wants": "Freedom from debt, revenge on Norvak, escape from Caelrun",
+            "does_not_want": "Seven more years of service, condescension, being reminded of debt",
+            "oddly_also": "",
+            "thinks_with": "Resentment, counting days, escape planning",
+            "family": "Father took debt, died, debt passed to son, siblings scattered",
+            "self_image": "Prisoner, victim of unjust system",
+            "recreation": "Drinking stolen wine, fantasizing about burning oil pits",
+            "dreams": "Flee to Velgroth, never see fish again, Norvak suffers somehow",
+            "anecdotes": [],
+            "tragedies": [],
+            "pc_leverage": "Help reduce debt, offer escape route, validate his anger, employment after freedom"
+          },
+          "kessa_the_leech_wife": {
+            "moniker": "The Leech-Wife",
+            "home": "Caelrun (marsh edge)",
+            "home_settlement": "caelrun",
+            "gender": "female",
+            "faction": "No ties, fringe dweller",
+            "appearance": "Stained fingers, knows medicinal herbs, lives alone on marsh edge",
+            "and_yet": "",
+            "wants": "Left alone, herbs to grow wild, occasional trade for necessities",
+            "does_not_want": "Village interference, questions about what she sees, herb-gathering competition",
+            "oddly_also": "",
+            "thinks_with": "Marsh rhythms, medicinal properties, survival",
+            "family": "No ties, may have fled something in past",
+            "self_image": "Useful outcast, too valuable to exile, too strange to integrate",
+            "recreation": "Observing marsh life, talking to leeches",
+            "dreams": "Die in marsh, body returned to water and mud",
+            "anecdotes": [],
+            "tragedies": [],
+            "pc_leverage": "Respect her knowledge, trade fairly, don't pry into past, leave her alone mostly"
+          },
+          "varren_muddfoot": {
+            "moniker": "Muddfoot",
+            "home": "Caelrun (stilted shack)",
+            "home_settlement": "caelrun",
+            "gender": "male",
+            "faction": "Disowned Bresul cousin, Aurka informant",
+            "appearance": "Nervous energy, lives in stilted shack, stinks of frog and marsh",
+            "and_yet": "",
+            "wants": "Aurka payment, information to trade, respect from family (won't admit this)",
+            "does_not_want": "Family reconciliation attempts, being forced to choose sides, caught informing",
+            "oddly_also": "",
+            "thinks_with": "Information as currency, survival at margins, opportunism",
+            "family": "Distant Bresul cousin, disowned for theft (claims he was framed)",
+            "self_image": "Survivor, wronged but unbowed, eventually they'll see",
+            "recreation": "Spying on ruins, catching frogs, trading rumors",
+            "dreams": "Aurka find something valuable, he gets cut, family begs forgiveness he'll deny",
+            "anecdotes": [],
+            "tragedies": [],
+            "pc_leverage": "Information trade, gold, Aurka connections, don't threaten his operation"
+          }
+        },
+        "adventure_sites": {
+          "submerged_temple_garden_enki_ki": {
+            "name": "The Submerged Temple-Garden of Enki and Ki",
+            "type": [
+              "underwater",
+              "ruins",
+              "sacred_site"
+            ],
+            "location": "Northern depths of Caelrun lake, 40-60 feet below surface",
+            "access_difficulty": "extreme",
+            "recommended_level": "3-5",
+            "estimated_sessions_min": 2,
+            "estimated_sessions_max": 4,
+            "overview": {
+              "what_it_is": "Massive pre-Silence temple complex with two wings: Enki's Archive (stone halls, bronze scrolls, agricultural/medical texts) and Ki's Vault (ceramic seed storage with preservation enchantments still active). Flooded terraces where enchanted plants still grow underwater, twisted and strange.",
+              "why_it_exists": "Built as combined library and seed bank - knowledge preservation and agricultural insurance for civilization. Dedicated to Enki (god of water, wisdom, civilization) and Ki (earth mother, fertility).",
+              "current_state": "Submerged, partially collapsed, overtaken by mutated magical plant growth. Preservation enchantments failing but still functional in places. Something still moves in the halls.",
+              "historical_context": "300 years underwater since the Silence. Lizard-men know of it, permit limited human exploration as part of Caelrun compact. Aurka have been diving it for years with mixed success."
+            },
+            "access_challenges": {
+              "physical": [
+                "40-60 foot depth - fatal for normal diving",
+                "Cold thermocline",
+                "Poor visibility (silt clouds)",
+                "Tangled plant growth",
+                "Collapsing stone structures"
+              ],
+              "magical": [
+                "Failing preservation enchantments create unpredictable effects",
+                "Spore-releasing plants cause visions/madness",
+                "Memory silt releases psychic echoes of the Silence",
+                "Some plants animated by degrading magic"
+              ],
+              "political": [
+                "Northern waters deeper into lizard-man territory",
+                "Full exploitation crosses unstated compact line",
+                "Rival Aurka groups competing for finds",
+                "Village won't support major expeditions (compact violation)"
+              ],
+              "environmental": [
+                "Warmest water late summer only",
+                "Visibility best in summer",
+                "Night diving nearly impossible",
+                "Storms churn silt, make diving impossible for days"
+              ],
+              "temporal": "Aurka report activity increasing - brighter glow, more movement, fish avoiding area. Something may be waking."
+            },
+            "known_dangers": {
+              "creatures": [
+                "The Pale Carp - albino fish, too many teeth, swarm wounded divers",
+                "Something that moves through halls with purpose",
+                "Voices underwater speaking Old Tongue",
+                "Possible undead/transformed temple servants"
+              ],
+              "traps": [
+                "None intentional",
+                "Ancient mechanisms may trigger unexpectedly"
+              ],
+              "environmental_hazards": [
+                "Drowning (depth, cold, pressure)",
+                "Silt clouds (zero visibility)",
+                "Structural collapse",
+                "Plant entanglement",
+                "Hypothermia"
+              ],
+              "magical_hazards": [
+                "Lotus-Breath Kelp - spore release causes euphoric visions, divers forget to surface",
+                "Bone-Root Vines - animated, grab divers",
+                "Memory Silt - psychic echoes of the Silence when disturbed",
+                "Black vines (unknown effect, Aurka refuse to discuss)",
+                "Transformation - one diver came up changed, speaks only in agricultural metaphors"
+              ],
+              "unknown_threats": [
+                "Western wing - Aurka stopped diving there, won't explain why",
+                "Lights that move with purpose",
+                "Bodies never recovered from certain sections",
+                "The green-blue glow on moonless nights"
+              ]
+            },
+            "rewards": {
+              "treasure": [
+                "Bronze scroll cases (waterproof, sealed)",
+                "Worked bronze tools and ceremonial items",
+                "Precious metal star charts",
+                "Gold/silver ritual implements"
+              ],
+              "knowledge": [
+                "Pre-Silence agricultural treatises",
+                "Irrigation calculations and water management",
+                "Medical texts",
+                "Old Tongue inscriptions",
+                "Information about what caused the Silence (possibly)"
+              ],
+              "magical_items": [
+                "Ceramic seed jars with active preservation enchantments",
+                "Extinct crop seeds (blight-resistant grain, year-round fruit trees, lost medicinal plants)",
+                "Magical plant specimens (dangerous but valuable)",
+                "Possibly functioning Old God ritual components"
+              ],
+              "strategic_value": [
+                "Agricultural revolution potential",
+                "Monopoly on lost crops",
+                "Knowledge valuable to Orziben alchemists, Imazuran botanists, noble houses",
+                "Understanding of Old God magic systems"
+              ],
+              "reputation_gains": [
+                "Aurka contacts and reputation",
+                "Recognition from scholars/Ilmenor",
+                "Caelrun village respect (if compact honored)",
+                "Potential lizard-men goodwill (if respectful)"
+              ]
+            },
+            "factions_interested": {
+              "aurka": {
+                "interest_level": "actively_pursuing",
+                "goals": "Recover seed vault contents, sell texts to highest bidders, establish controlled access",
+                "resources_committed": "Multiple diving expeditions, Varren Muddfoot as local recruiter, mapping efforts",
+                "knowledge_level": "High - have mapped portions, know dangers, found seed jar, keeping vault location secret"
+              },
+              "lizard_men": {
+                "interest_level": "aware",
+                "goals": "Maintain territorial control, enforce compact limits, watch human foolishness",
+                "resources_committed": "Passive observation, will not rescue failed divers",
+                "knowledge_level": "Complete - navigate ruins easily, know what's dangerous, find human obsession with 'plant-jars and scratched stones' amusing"
+              },
+              "ilmenor": {
+                "interest_level": "investigating",
+                "goals": "Recover pre-Silence arcane texts, study failing enchantments, control dangerous knowledge",
+                "resources_committed": "Agents may buy Aurka finds, no direct expeditions yet",
+                "knowledge_level": "Low - know ruins exist, suspect Old God magic present, want access to texts"
+              },
+              "caelrun_village": {
+                "interest_level": "aware",
+                "goals": "Maintain compact, benefit from Aurka spending, avoid angering lizard-men",
+                "resources_committed": "None - actively discourage major expeditions",
+                "knowledge_level": "Medium - elders (Brecht, Sarith, Ordun) know compact details, general population knows 'dangerous old temple, people die, not our business'"
+              }
+            },
+            "local_knowledge": {
+              "common_rumors": [
+                "Old temple in deep north water, very dangerous",
+                "Aurka dive it for relics, several have died",
+                "Don't fish directly over ruins (bad luck, plants tangle nets)",
+                "Don't night-fish northern waters",
+                "If you see green glow, row away",
+                "Fisher decades ago opened a jar, planted seeds - whole family died of fever"
+              ],
+              "specialist_knowledge": {
+                "varren_muddfoot": {
+                  "cost_to_acquire": "Few silver, drinks, or information trade",
+                  "accuracy": "Partial - secondhand from Aurka",
+                  "information": [
+                    "Temple is there, Aurka diving it",
+                    "Very dangerous, several dead",
+                    "Something down there still works (the glow)",
+                    "Aurka found something big recently"
+                  ]
+                },
+                "actual_aurka_diver": {
+                  "cost_to_acquire": "Expensive (50+ gp) or significant favor, rare access",
+                  "accuracy": "High - firsthand experience",
+                  "information": [
+                    "Depth estimates (40-60 feet)",
+                    "Which sections collapse easily",
+                    "Where plants are thickest",
+                    "Best diving: late summer, warmest water, best visibility",
+                    "Never dive alone, never at night, never touch black vines",
+                    "Spore madness symptoms and treatment"
+                  ]
+                },
+                "sarith_the_scarred": {
+                  "cost_to_acquire": "Trust, Elunad connection, or proving competence",
+                  "accuracy": "Perfect - knows compact details",
+                  "information": [
+                    "Lizard-men permit limited exploration only",
+                    "Major expedition would violate compact",
+                    "Deaths are expected, no rescue",
+                    "Village won't support full exploitation",
+                    "Historical context of ruins"
+                  ]
+                }
+              },
+              "forbidden_knowledge": [
+                "What Aurka saw in western wing (won't sell at any price)",
+                "What happened to transformed diver",
+                "Exact seed vault location (Aurka keeping secret)",
+                "What the voices underwater say",
+                "Why bodies aren't recovered from certain sections"
+              ]
+            },
+            "entry_requirements": {
+              "mandatory": [
+                "Water breathing (potion, spell, magic item) - 40-60 feet for extended time",
+                "Light source functional underwater",
+                "Rope, anchors, basic diving equipment"
+              ],
+              "highly_recommended": [
+                "Cold resistance or protection",
+                "Cure disease/poison (for spores)",
+                "Freedom of movement or similar (plant entanglement)",
+                "Multiple party members (never dive alone)",
+                "Navigation method (easy to get lost in silt)",
+                "Communication method underwater"
+              ],
+              "useful": [
+                "Read Languages or Old Tongue knowledge",
+                "Identify magic",
+                "Dispel magic",
+                "Healing magic/potions",
+                "Darkvision",
+                "Local guide (Aurka)",
+                "Lizard-man goodwill (won't help but won't hinder)"
+              ]
+            },
+            "key_locations": {
+              "entrance_colonnade": {
+                "name": "The Entrance Colonnade",
+                "description": "Massive columns barely visible from surface. Four still standing, three collapsed. Wide steps descend deeper. Plant growth thickest here - kelp forests and vine tangles. Pale carp school nearby.",
+                "dangers": [
+                  "Lotus-Breath Kelp concentrated",
+                  "Bone-Root Vines",
+                  "Pale Carp",
+                  "Poor visibility"
+                ],
+                "treasures": [
+                  "Bronze tools scattered on steps",
+                  "Worked stone fragments"
+                ],
+                "connections": [
+                  "Steps lead to Archive Hall (east) and Garden Terraces (west)"
+                ]
+              },
+              "archive_hall_enki": {
+                "name": "Enki's Archive Hall",
+                "description": "Long stone chamber, shelves carved into walls. Many bronze scroll cases remain, some sealed, some breached. Silt thick on floor. Eastern wall partially collapsed. Faint inscriptions in Old Tongue. Cold current flows through.",
+                "dangers": [
+                  "Structural instability",
+                  "Memory Silt (disturbing releases psychic echoes)",
+                  "Zero visibility if silt disturbed",
+                  "Something moves here at night"
+                ],
+                "treasures": [
+                  "Bronze scroll cases (agricultural, medical, irrigation texts)",
+                  "Stone tablets",
+                  "Ritual bronze implements"
+                ],
+                "connections": [
+                  "North to Reading Chambers",
+                  "South to Ablution Pool",
+                  "Collapsed passage east"
+                ]
+              },
+              "seed_vault_ki": {
+                "name": "Ki's Seed Vault",
+                "description": "Circular chamber, ceramic jars in wall niches (200+). Many shattered, some intact with glowing preservation runes. Center altar has growth diagram inscriptions. Western wall shows murals of gardens. Aurka have mapped this but keep location secret.",
+                "dangers": [
+                  "Aurka guards/traps if they've secured it",
+                  "Preservation enchantments failing unpredictably",
+                  "Rival Aurka groups",
+                  "Some jars contain dangerous specimens"
+                ],
+                "treasures": [
+                  "Intact seed jars (worth fortunes)",
+                  "Preservation enchantment research",
+                  "Complete agricultural knowledge",
+                  "Possibly magical plant seeds"
+                ],
+                "connections": [
+                  "North to Garden Terraces",
+                  "South to Offering Chamber"
+                ]
+              },
+              "garden_terraces": {
+                "name": "The Flooded Garden Terraces",
+                "description": "Stepped terraces, once open to sky, now deep underwater. Magical plants grow wild - some beautiful, some horrifying. Bioluminescent flowers, carnivorous vines, kelp that whispers. Original purpose: cultivate sacred plants. Current state: twisted magical ecosystem.",
+                "dangers": [
+                  "Lotus-Breath Kelp heaviest concentration",
+                  "Bone-Root Vines (most active)",
+                  "Carnivorous plants",
+                  "Spore clouds",
+                  "Easy to get lost in growth"
+                ],
+                "treasures": [
+                  "Living magical plant specimens",
+                  "Seeds can be harvested (dangerous)",
+                  "Ancient gardening tools (bronze, possibly magical)"
+                ],
+                "connections": [
+                  "East to Seed Vault",
+                  "South to Western Wing",
+                  "North to surface (plant-choked)"
+                ]
+              },
+              "western_wing": {
+                "name": "The Western Wing (Unexplored)",
+                "description": "Aurka stopped diving here. Entrance visible but they won't approach. Green-blue glow strongest from this direction. Voices underwater seem to originate here. Architecture different - older? Disturbing carvings visible on entrance columns.",
+                "dangers": [
+                  "UNKNOWN - Aurka won't discuss",
+                  "Lights that move with purpose originate here",
+                  "Bodies not recovered from this section",
+                  "Changed diver was exploring here before transformation"
+                ],
+                "treasures": [
+                  "UNKNOWN - possibly greatest treasures",
+                  "Possibly answers about the Silence",
+                  "Possibly something that should stay buried"
+                ],
+                "connections": [
+                  "Unknown - Aurka mapping incomplete"
+                ]
+              }
+            },
+            "consequences": {
+              "success": [
+                "Seed jars recovered - agricultural revolution possible",
+                "Texts recovered - knowledge boom, Ilmenor interest",
+                "Aurka reputation gain - future cooperation",
+                "Potential ongoing revenue from controlled access",
+                "Understanding of Old God preservation magic",
+                "Caelrun elders grateful if compact honored"
+              ],
+              "partial_success": [
+                "Some treasures recovered, but party member transformed/cursed",
+                "Knowledge gained but rivals also got valuable intel",
+                "Structural damage causes sections to collapse permanently",
+                "Lizard-men annoyed by excessive disturbance",
+                "Awakened something in the Western Wing"
+              ],
+              "failure": [
+                "Party member(s) drowned, bodies not recovered",
+                "Madness from spores - permanent effects",
+                "Trapped in collapsed section",
+                "Transformed by temple magic",
+                "Lizard-men claim bodies/equipment",
+                "Village shrugs - 'another group tried the ruins'",
+                "Aurka blacklist party as incompetent"
+              ],
+              "discovery": [
+                "If Western Wing explored - major plot revelations possible",
+                "If preservation enchantments fully studied - arcane breakthrough",
+                "If all seed jars catalogued - complete pre-Silence botanical knowledge",
+                "If voices understood - possibly communication with Old God remnants/undead",
+                "If Memory Silt properly investigated - witness the Silence firsthand (dangerous)"
+              ]
+            },
+            "dm_notes": {
+              "design_intent": "Multi-session underwater dungeon crawl with resource management (air, light, time). Rewards exploration and preparation over brute force. Ties to setting cosmology (Old Gods, the Silence) while remaining accessible to mid-level party. Creates ongoing campaign resource (controlled access to ruins).",
+              "scaling_options": [
+                "Level 2-3: Entrance and Archive Hall only, Aurka-guided, simple recovery mission",
+                "Level 3-5: Full complex except Western Wing, competing with Aurka, multiple treasures",
+                "Level 5-7: Western Wing exploration, awakened guardians, cosmic horror elements",
+                "Adjust creature numbers, add/remove magical hazards, change Aurka from allies to rivals"
+              ],
+              "alternative_approaches": [
+                "Ally with Aurka - guided expedition, split rewards",
+                "Rival Aurka - race to seed vault, potential combat underwater",
+                "Negotiate lizard-men permission for major expedition (difficult, interesting RP)",
+                "Magical approach - water breathing + water walking for surface approach, teleportation",
+                "Research first - buy all available info, prepare perfectly, single efficient dive",
+                "Ignore diving - hire/coerce Aurka to retrieve specific items",
+                "Political - convince Caelrun elders to support, change compact terms"
+              ],
+              "integration_points": [
+                "Seeds recovered could become trade goods, political leverage",
+                "Texts could advance PC knowledge of Old Gods, foreshadow Corpse Planes",
+                "Changed diver could become recurring NPC - prophet/oracle/problem",
+                "Western Wing could connect to larger Old God plot",
+                "Lizard-men relationship established here affects future swamp adventures",
+                "Success attracts Ilmenor attention - recruitment or problems",
+                "Failure creates reputation consequences in Caelrun",
+                "Discovery in Memory Silt could reveal Silence details relevant to main plot"
+              ]
+            }
+          }
+        },
+        "items": {},
+        "plots": {}
+      },
+      "tagmira": {
+        "name": "Tagmira",
+        "type": "village",
+        "population": {
+          "total": 320,
+          "breakdown": {
+            "agriculture_herding": 272,
+            "militia_active": 10,
+            "veterans_elites": 6,
+            "clergy": 6,
+            "ilmenor_scholars": 0,
+            "artisans_builders": 10,
+            "traders_ferrymen": 5,
+            "fisherfolk_riverfolk": 3,
+            "monastics_hermits": 2,
+            "servants_dependents": 5,
+            "bound_laborers": 2,
+            "fringe_outliers": 3
+          }
+        },
+        "economy": [
+          "subsistence farming",
+          "herding",
+          "hunting",
+          "limited trade"
+        ],
+        "exports": [
+          "wool",
+          "hides",
+          "timber",
+          "smoked meat"
+        ],
+        "imports": [
+          "salt",
+          "metalwork",
+          "grain in lean years",
+          "trade goods from Taziri's caravan"
+        ],
+        "character": "A hardscrabble upland village hemmed by forest and old fears. Houses cluster around a central hearth-hall. The people are clannish, proud of small dignities, and slow to trust outsiders \u2014 but Sardet's deeds at the Circle of Cossus and the party's role fighting the orc raid have bought real goodwill.",
+        "atmosphere": {
+          "sounds": [
+            "wind off the northern ridges",
+            "livestock bells",
+            "the distant axe-work of woodcutters",
+            "dogs that go quiet near the forest edge at dusk"
+          ],
+          "smells": [
+            "woodsmoke",
+            "animal dung",
+            "baking bread",
+            "something faintly earthy and wrong near the Bramblewood"
+          ],
+          "mood": "Watchful but not unfriendly. The village has suffered orc pressure, lost Old Maedra without explanation, and carries a low hum of unease it cannot name."
+        },
+        "families": {},
+        "locations": {
+          "gravefield_of_thulda": {
+            "type": "sacred_site",
+            "description": "Burial mounds northeast of the village, encircled by carved posts. Wool wrappings and grave-goods mark each mound. Tended by two quiet widows. Site of Ildun-Ayenar's burial \u2014 the cleric of Ossamar the undead sacrificed to keep the Sphere running. His grave is unmarked by any symbol of Ossamar; the votive stone found in his hand bore old-empire symbols, not of his god. Some villagers visit and feel uneasy without knowing why.",
+            "services": [
+              "place for offerings",
+              "burial rites of Thulda"
+            ],
+            "current_state": "Active. The widows who tend it have noted the grass grows oddly thick over Ildun's mound.",
+            "dm_notes": "The party knows the undead sacrificed Ildun here. If they return and examine the grave carefully, faint necrotic resonance is detectable. The widows will mention that no one from Ossamar's order has come to claim his memory."
+          },
+          "ford_of_ossamar": {
+            "type": "sacred_site",
+            "description": "A wide clear ford three miles east, marked by cairns and iron braziers. Once tended by Ildun-Ayenar. The shrine is now untended \u2014 braziers cold, cairns crumbling slightly at the edges. Travelers still stop here but find it comfortless.",
+            "services": [
+              "place for offerings",
+              "river crossing"
+            ],
+            "current_state": "Abandoned since Ildun's disappearance. The undead took him here. The ford is still usable but the sacred atmosphere has drained away.",
+            "dm_notes": "The party forgave the undead for this sacrifice. Villagers just think Ildun wandered off or died quietly. Anyone who knew him well \u2014 Maedra did \u2014 carries the truth into undeath."
+          },
+          "circle_of_cossus": {
+            "type": "sacred_site",
+            "description": "A stone ring in a forest glade south of the village. Originally a fey circle corrupted ~150 years ago when men tried to sacralize it, now consecrated to Cossus as a trial-by-combat ground. Sardet officiated the duel between Tenn Darnel and Ulan Caernach here, which won the party real standing in the village.",
+            "services": [
+              "trial by combat",
+              "oath-swearing"
+            ],
+            "current_state": "The stones still hum faintly when oaths are spoken. The fey corruption is old and dormant but not gone.",
+            "dm_notes": "Sardet's officiating here is remembered. If the party needs to call in goodwill with Tagmira, this is a touchstone. The residual fey taint is undetectable except to a druid (Brigantios could sense it). It is old and dormant but not gone."
+          },
+          "mound_of_threads": {
+            "type": "sacred_site",
+            "description": "A rounded earthen mound on the western ridge, shrine to Thulda sacred to shepherds and mourners. Wool offerings are laid here; it serves as both tomb and temple. Still actively maintained.",
+            "services": [
+              "place for offerings",
+              "mourning rites"
+            ],
+            "current_state": "Active. Wool offerings accumulate. The Elaran family tends it most faithfully.",
+            "dm_notes": "No supernatural activity here yet, but Thulda's domain is death and mourning \u2014 thematically resonant with everything happening at the temple."
+          },
+          "tree_of_mist_song": {
+            "type": "sacred_site",
+            "description": "A lightning-scarred ash north of the village atop a stony knoll. One of the oldest trees in the region. Stones circle its roots, carved in spirals and claw marks. A dryad is trapped within \u2014 bitterly lonely, her forest long since cleared except for this one isolated tree. The party has not yet managed to rouse her.",
+            "services": [
+              "druidic site"
+            ],
+            "current_state": "The dryad is present but dormant from loneliness and despair. She will respond to genuine druidic attention or to someone who sits with her tree in true silence for a full turn.",
+            "dm_notes": "Once roused she will be desperate and raw \u2014 centuries of isolation. She knows things about the Bramblewood's origins (it was seeded by the old gods as a perimeter). Could become an ally or a tragedy depending on the party's choices. Nabia, Bracara's mentor, once held vigil here."
+          },
+          "waystone_of_isarna": {
+            "type": "sacred_site",
+            "description": "A stone marker etched with a crescent and hoofprint west of Tagmira, one of Isarna's oldest way-shrines. Taziri's caravan will almost certainly stop here for an offering on arrival. Bread and silver thread are traditional.",
+            "services": [
+              "place for offerings",
+              "traveler's waypoint"
+            ],
+            "current_state": "Active and well-maintained by passing travelers.",
+            "dm_notes": "Good moment for roleplay as the caravan arrives. Taziri's offering here is a natural transition into Tagmira proper."
+          },
+          "hearth_hall": {
+            "type": "tavern",
+            "description": "The central gathering hall of Tagmira. Food, drink, and village business. Militia captain Hadran Throsk holds informal court here most evenings.",
+            "services": [
+              "food & drink",
+              "hirelings",
+              "rumors",
+              "encounters with village factions"
+            ]
+          },
+          "bramblewood": {
+            "type": "wilderness",
+            "description": "The dense thorn-forest north of Tagmira. Grown by the old gods as a living perimeter, seeded with divine fear and watered by clerics' blood (see Thorn-Bound Covenant). Contains the Temple of the Old Gods. The undead cannot stray far from it without losing consciousness unless they pay a high magical cost.",
+            "services": [],
+            "current_state": "The orc Bronze Host is pressing from the northwest. The undead are aware but cannot project force outside the Bramblewood. The party is caught between these pressures.",
+            "dm_notes": "See temple and orc sections below."
+          }
+        },
+        "factions": [
+          {
+            "name": "Village Militia",
+            "leader": "Hadran Throsk",
+            "strength": "10 active, 6 veterans who can be called",
+            "awareness_of_undead": "Dim \u2014 they know something is wrong in the Bramblewood, have heard stories, but have no clear picture",
+            "awareness_of_orc_threat": "High \u2014 the Bronze Host has been pushing hunters out of the northwest grounds for two months",
+            "disposition_to_party": "Favorable \u2014 the party fought alongside them against the orc raid",
+            "character": "Not a garrison force \u2014 Tagmirans are tough and have always spent the spring patrolling and intimidating the orcs. They know what war costs. The problem is not their courage but that the Bronze Host has suddenly become something different: better equipped, coordinated, and backed by something the militia does not understand.",
+            "spring_patrol_tradition": "Every spring the militia patrols the northwest aggressively to keep orc pressure down. This has worked for a generation. It is not working now."
+          },
+          {
+            "name": "House Elders (informal council)",
+            "members": [
+              "Dornan Elaran",
+              "Tarrek Veyran",
+              "Yetha Ruvin",
+              "Brennar Hallan",
+              "Raston Darnel",
+              "Rinna Caernach"
+            ],
+            "awareness_of_undead": "None formally \u2014 Maedra has 'disappeared', no uproar",
+            "awareness_of_orc_threat": "Moderate \u2014 they know hunters are being pushed back, do not yet grasp the scale",
+            "disposition_to_party": "Mixed but leaning favorable after Sardet's officiating and the orc fight"
+          },
+          {
+            "name": "Temple of the Old Gods (Zimru's undead)",
+            "location": "Bramblewood",
+            "current_posture": "Quiet and patient. Sphere is functional after the orc sacrifice. Want more sacrifices \u2014 specifically more orcs, which conveniently aligns with Tagmira's orc problem. Also quietly seeking Tagmiran 'recruits' for undeath. Maedra is now Zimru's consort and seen by the undead as nearly a prophet.",
+            "disposition_to_party": "Allied, with expectations. Zimru will want an accounting of the sacrifice and will press for the next one."
+          },
+          {
+            "name": "Bronze Host (Pact-Render orcs)",
+            "location": "Northwest hunting grounds and the Bronzeworking Triangle beyond",
+            "current_posture": "Actively pushing Tagmirans out of the northwest forest. Two months since the raid \u2014 all named orc leaders survived, equipment upgraded via Pact-Render fey bronze. Making a play for the hunting grounds as first step toward assault on Tagmira proper. The undead know and cannot act.",
+            "disposition_to_party": "Hostile"
+          }
+        ],
+        "tensions": [
+          "Maedra has vanished \u2014 whispers but no answers. The undead want more Tagmiran recruits.",
+          "The Bronze Host has seized the northwest hunting grounds. This is not a rumor \u2014 hunters have been driven back, one was killed, and Tagmira will face serious food pressure this winter if nothing changes. Hadran and the elders know it.",
+          "The orcs are suddenly too powerful. They have bronze weapons, coordination, and something behind them. The Tagmirans are tough and have always held the line in spring patrols \u2014 but this is different, and it is starting to dawn on them.",
+          "Two Bronze Host orcs were brought to Tagmira as captives to witness the trial by combat \u2014 meant as intimidation. It may have given the orcs useful intelligence about Tagmira's current strength instead.",
+          "The undead alliance is secret. If Hadran or the elders learned the party is allied with the Bramblewood undead, there would be a reckoning.",
+          "House Darnel and House Caernach water-rights tension persists after the duel \u2014 Tenn Darnel lost and has not forgiven it.",
+          "Ulan Caernach and Rondasek Elaran are back to village life but changed \u2014 they've seen skeletons fight and orcs bleed. They are quietly restless."
+        ],
+        "rumors": [
+          "Old Maedra walked into the Bramblewood one night and didn't come back. Some say she went to die in peace. Others say the wood took her.",
+          "Borric of House Caernach swears he saw Maedra on the Bramblewood path at dusk \u2014 but she looked wrong. He won't say how.",
+          "The Ford of Ossamar has gone cold since Ildun died. Offerings left there feel unaccepted."
+        ],
+        "defenses": {
+          "militia": "10 active under Hadran Throsk",
+          "veterans": "6 callable, including Borric and Feln of House Caernach",
+          "walls": "Wooden palisade wall surrounding the village",
+          "notes": "Tagmira is not fortified. A serious Bronze Host assault would be catastrophic without party intervention or some other force."
+        },
+        "trade_focus": "Taziri's caravan is the primary outside trade connection",
+        "nearest_neighbors": [
+          "Caelrun (1 day west)",
+          "Bramblewood temple (1 hour north)"
+        ],
+        "road_position": "End of a trade spur; Taziri's route terminates here",
+        "npcs": {
+          "hadran_throsk": {
+            "moniker": "Hadran Throsk",
+            "home": "Hearth-hall, Tagmira",
+            "home_settlement": "Tagmira",
+            "gender": "male",
+            "faction": "Village Militia",
+            "appearance": "Scarred veteran, limp from an old wound, booming voice that carries across the hall. Middle-aged, weathered, still formidable. Wears his militia captain's insignia like a priest wears vestments.",
+            "and_yet": "Carves delicate wood figurines of ancient war heroes in his off hours \u2014 small, patient work that surprises anyone who sees it.",
+            "wants": "To protect Tagmira without spending lives he cannot replace. Wants to understand the orc threat well enough to do something about it.",
+            "does_not_want": "Outside interference that makes the village dependent. Another generation bled out in a fight they didn't start.",
+            "oddly_also": "Wants Tagmira to become fortified enough that it won't need him specifically.",
+            "thinks_with": "Hard experience. Deeply skeptical of magic but respects the gods. Distrusts anything he can't see clearly.",
+            "family": "Estranged daughter in Velgroth-Lucernia. No surviving kin in the village.",
+            "self_image": "The last responsible man in a village full of people who haven't yet learned what war costs.",
+            "recreation": "Carving. Occasionally drinks alone.",
+            "dreams": "A fortified Tagmira that doesn't need him.",
+            "anecdotes": [
+              "Once rallied the militia during a night raid five winters ago \u2014 that's why they follow him.",
+              "Served as a mercenary for the Confederation before returning home."
+            ],
+            "tragedies": [
+              "Estrangement from his daughter, reasons unstated."
+            ],
+            "pc_leverage": "He respects those who fight well and act with restraint. The party earned credit in the orc raid. If they bring him actionable intelligence about the Bronze Host, he will act on it. He does not yet know about the undead alliance \u2014 that knowledge would complicate everything.",
+            "dm_notes": "Hadran is primarily a civic/political resource. The party will likely need to decide how much to tell him about the Bronze Host's Pact-Render backing, and whether to ever reveal the undead alliance. He is not the kind of man who would be comfortable with the latter."
+          },
+          "ulan_caernach": {
+            "moniker": "Ulan Caernach",
+            "home": "House Caernach hall, Tagmira",
+            "home_settlement": "Tagmira",
+            "gender": "male",
+            "faction": "House Caernach",
+            "appearance": "22, lean and deliberate in movement. Carries the curved knife Mellan gave him. Won the duel against Tenn Darnel at the Circle of Cossus. Has since fought orcs and skeletons alongside the party.",
+            "and_yet": "Rubs his thumb across his knife's carved grip when thinking \u2014 a tell he's unaware of.",
+            "wants": "To understand what he's become after the things he's seen. Quietly proud of the duel win; privately unsure what it means.",
+            "does_not_want": "To be someone who goes looking for violence. But he would answer a call.",
+            "oddly_also": "Wants someone to tell him whether what the party is doing \u2014 the undead, all of it \u2014 is right or wrong. He suspects no one will.",
+            "thinks_with": "Patience and observation. Tactical rather than impulsive.",
+            "family": "Mother Rinna (manages Caernach hall), brother Theren (wants to join the Elunad), stepfather Mellan (hunter).",
+            "self_image": "A hunter's son who won a duel and then fought things that should not exist. Still processing.",
+            "recreation": "Hunting. Sitting with Tussen and the older fighters in the evenings.",
+            "dreams": "Vaguely: that the things he's seen don't come to Tagmira's door.",
+            "anecdotes": [
+              "Won the Trial by Combat with Tenn Darnel \u2014 Sardet officiated.",
+              "Fought orcs and animated skeletons with the party."
+            ],
+            "tragedies": [],
+            "pc_leverage": "Fought alongside the party. Will answer a call without much persuasion. Sardet in particular has his respect."
+          },
+          "rondasek_elaran": {
+            "moniker": "Rondasek Elaran",
+            "home": "House Elaran hall, Tagmira",
+            "home_settlement": "Tagmira",
+            "gender": "male",
+            "faction": "House Elaran",
+            "appearance": "Young fighter, Elaran coloring \u2014 dark-browed, stocky. Less polished than Ulan, more openly eager.",
+            "and_yet": "Has started leaving small offerings at the Tree of Mist-Song since fighting the skeletons. Won't say why.",
+            "wants": "To be someone the village talks about the way they talk about Hadran.",
+            "does_not_want": "To be ordinary after what he's seen.",
+            "oddly_also": "Is quietly fascinated by the undead in a way he'd never admit aloud.",
+            "thinks_with": "Courage first, consequences second.",
+            "family": "House Elaran \u2014 under Dornan's authority, cousin to the ridge-courier line.",
+            "self_image": "Someone who has been tested and did not break.",
+            "recreation": "Sparring. Hunting with Ulan when Ulan will have him.",
+            "dreams": "Reputation. Recognition. Something worth telling.",
+            "anecdotes": [
+              "Fought alongside the party against orcs and skeletons."
+            ],
+            "tragedies": [],
+            "pc_leverage": "Eager to be called again. Will follow without much prompting. The party should be careful \u2014 his courage outruns his experience."
+          },
+          "zimru": {
+            "moniker": "Zimru, Hierophant of the Annunaki",
+            "home": "Temple of the Old Gods, Bramblewood",
+            "home_settlement": "Bramblewood temple",
+            "gender": "male",
+            "faction": "Temple of the Old Gods",
+            "appearance": "Tall, stooped slightly as though time itself bends around him. Skin like oiled parchment drawn thin over bone. Gold-threaded vestments long dulled but impeccably arranged. Eyes that burn with focused discipline \u2014 he remembers sight and continues the act out of sheer will.",
+            "and_yet": "Occasionally addresses the party in the plural as though speaking to an assembly, then catches himself \u2014 a remnant of addressing full congregations three centuries gone.",
+            "wants": "Order. The preservation of the old laws in the gods' absence. To prevent humanity's extermination by guiding what remains. To continue the necromantic plan with Maedra. More sacrifices to keep the Sphere running.",
+            "does_not_want": "Forgetting \u2014 of names, rites, obligations. The chaos of mortal improvisation. Self-interested necromancy that undermines the temple's order.",
+            "oddly_also": "Wants the party to understand that he salutes them for choosing action over purity \u2014 the undead they destroyed 'would have let the world die praying.'",
+            "thinks_with": "Legal codes. Every decision is framed as judgment, not preference. Chaos disgusts him; even cruel law commands his respect.",
+            "family": "None living. The undead of the temple are his order.",
+            "self_image": "The last functioning priest of a dead divine system. Not a monster \u2014 a caretaker. The gods failed; their law must not.",
+            "recreation": "The Sphere. Observation. Issuing decrees to an empty hall.",
+            "dreams": "A world ordered by the old laws, maintained through undeath until the gods return \u2014 or until he accepts they will not.",
+            "anecdotes": [
+              "'If the gods have died, then their law must rule in their stead.'",
+              "'Those of my people whom you destroyed clung to purity. They would have let the world die praying. You chose. For this, I salute you.'",
+              "'I can keep watch through the Sphere. I can guide what remains. Maedra's change will anchor life beyond death. Endorse this, and you will act with sight. Refuse, and you will fight blind while the last light gutters.'"
+            ],
+            "tragedies": [
+              "Three centuries of perfect lucidity watching everything he served collapse and be forgotten."
+            ],
+            "pc_leverage": "He respects the party for their choices and will treat them as functioning agents \u2014 not mortals to be toyed with. Approach him formally. He responds to order, competence, and those who honor obligations. He will press them on the next sacrifice. He knows about the orc threat via the Sphere and cannot act on it himself \u2014 this is leverage the party holds.",
+            "mechanics": {
+              "stat_as": "Greater Wight",
+              "hd": "10+",
+              "class_levels": "5th level Cleric / 5th level Magic-User",
+              "key_spells": [
+                "command undead",
+                "animate dead",
+                "wall of force",
+                "hold person",
+                "geas",
+                "dispel magic"
+              ],
+              "immunities": [
+                "charm",
+                "sleep",
+                "hold"
+              ],
+              "special": "Level drain on touch \u2014 uses it as judgment, not rage"
+            },
+            "dm_notes": "Voice and demeanor: undead Tywin Lannister. Never rush his dialogue. No contractions. Every line sounds like a decree being read aloud. He will assess the party's order, not their morality."
+          },
+          "maedra": {
+            "moniker": "Old Maedra (now undead)",
+            "home": "Temple of the Old Gods, Bramblewood",
+            "home_settlement": "Bramblewood temple",
+            "gender": "female",
+            "faction": "Temple of the Old Gods",
+            "appearance": "What she looked like in life: a small, ancient woman who appeared at funerals and vigils without being seen to arrive. What she looks like now: similar, but the stillness is absolute. The undead of the temple regard her with something close to reverence.",
+            "and_yet": "She wept at Ildun-Ayenar's burial \u2014 before her transformation. The undead saw this as a sign of her readiness.",
+            "wants": "Unclear even to her \u2014 she has quickened into undeath recently and is still becoming what she will be. Zimru sees her as anchoring 'life beyond death.' She may still carry human attachments.",
+            "does_not_want": "To be forgotten by Tagmira. Possibly. She is not yet past caring.",
+            "oddly_also": "The undead see her as practically a prophet \u2014 her willing transformation has given her unusual status.",
+            "thinks_with": "Old knowledge, old grief, old love for the village she came from.",
+            "family": "None living \u2014 she outlived everyone.",
+            "self_image": "In flux. She chose this. She is not sure yet what she chose it for.",
+            "recreation": "Unknown. She was last seen weeping at Ildun's grave.",
+            "dreams": "Unknown.",
+            "anecdotes": [
+              "Appeared at Ildun-Ayenar's burial weeping \u2014 she knew him better than anyone realized.",
+              "Borric of House Caernach saw her on the Bramblewood path at dusk and said she 'looked wrong.'"
+            ],
+            "tragedies": [
+              "Chose undeath. Whether this is tragedy depends on what she does with it."
+            ],
+            "pc_leverage": "The party knew her in life. She may be the most human-accessible face of the undead alliance \u2014 and also potentially its most dangerous element if her human attachments lead her to act outside Zimru's order.",
+            "dm_notes": "Maedra is a slow-burn NPC. She does not need to appear this session necessarily, but her presence should be felt \u2014 the undead's deference to her, the way she's changed. She and Zimru are consorts in whatever sense that word applies to the undead."
+          },
+          "enni_the_ash_wife": {
+            "moniker": "Enni the Ash-Wife",
+            "home": "Lean-to at the forest's edge, Tagmira",
+            "home_settlement": "Tagmira",
+            "gender": "female",
+            "faction": "None",
+            "appearance": "Old, nearly blind, sharp-eyed despite it. Speaks in riddles and feigns more power than she has \u2014 though she has some.",
+            "and_yet": "Villagers fear her and also bring her food and trinkets for healing. She accepts both without comment.",
+            "wants": "To pass on her full knowledge before she dies. To name one last heir who will listen.",
+            "does_not_want": "Her people to forget the gods' silence \u2014 that forgetting is its own danger.",
+            "oddly_also": "Wants someone to ask her what she actually knows, rather than what she'll say for free.",
+            "thinks_with": "Parable, long memory, grave silence.",
+            "family": "A few distant kin and one loyal servant.",
+            "self_image": "The last woman in Tagmira who remembers what it felt like when the gods still spoke.",
+            "recreation": "Tracing stories in the ash of the hearth.",
+            "dreams": "That the hearth-fires will speak again.",
+            "anecdotes": [
+              "Can cast friends and identify \u2014 the village knows this and uses her accordingly."
+            ],
+            "tragedies": [
+              "Has watched the sacred knowledge of the old ways dwindle to almost nothing in her lifetime."
+            ],
+            "pc_leverage": "Respects memory, ritual, and those who listen more than they speak. She almost certainly knows something is wrong with Maedra and the Bramblewood \u2014 but will make the party work for it."
+          },
+          "tarrek_veyran": {
+            "moniker": "Tarrek Veyran",
+            "home": "Veyran forge-hall, Tagmira",
+            "home_settlement": "Tagmira",
+            "gender": "male",
+            "faction": "House Veyran",
+            "appearance": "Gruff, broad, soot-stained. Runs the village forge. Fair in his dealings and known for it.",
+            "and_yet": "Officiates disputes when Hadran is not available \u2014 not because he wants to, but because people trust him.",
+            "wants": "A well-run forge, a village that leaves him alone to work.",
+            "does_not_want": "The chaos of clan feuds spilling into his hall.",
+            "oddly_also": "Scoffed at Ildun-Ayenar's funeral that 'even river-priests die thirsty' \u2014 he believes in the gods even less than most, which makes him oddly clear-eyed.",
+            "thinks_with": "Practicality. What works, what doesn't.",
+            "family": "Elder sister Morla (healer/wise-woman), apprentices Garrin and Felmar.",
+            "self_image": "A craftsman who keeps the village functional while others argue.",
+            "recreation": "Work.",
+            "dreams": "Nothing as grand as most people's. A good apprentice.",
+            "anecdotes": [
+              "Served as neutral witness at the Trial by Combat between Tenn Darnel and Ulan Caernach."
+            ],
+            "tragedies": [],
+            "pc_leverage": "Practical help \u2014 metalwork, repairs, information about village disputes. Does not deal in rumors but will speak plainly if asked directly."
+          },
+          "peema": {
+            "moniker": "Peema",
+            "home": "House Hallan hall, Tagmira",
+            "home_settlement": "Tagmira",
+            "gender": "female",
+            "faction": "House Hallan (orphan ward)",
+            "appearance": "Young, quiet, clever. One of the orphan foundlings raised by Brennar Hallan as messengers and servants. Wary of strangers \u2014 except Trebastos, with whom she has struck up an unlikely rapport.",
+            "and_yet": "Carries a small hand mirror that she is never without. She does not explain it.",
+            "wants": "To understand what the fairy in the mirror is and what it wants from her. She is not frightened of it \u2014 she is curious, which may be more dangerous.",
+            "does_not_want": "Adults taking her mirror. Adults dismissing what she's seen.",
+            "oddly_also": "Peema says the trees whisper at night. She is not wrong.",
+            "thinks_with": "Observation and silence. She watches more than she speaks.",
+            "family": "Orphan \u2014 no known family. Raised in House Hallan with Salla and Dun.",
+            "self_image": "Someone who knows something important that no one will believe.",
+            "recreation": "Watching. Listening. Long conversations with the mirror when she thinks no one is near.",
+            "dreams": "Unclear \u2014 possibly shaped by whatever the fairy has told her.",
+            "anecdotes": [
+              "Trebastos (Andre's fighter) has struck up a genuine rapport with her \u2014 she trusts him in a way she trusts almost no one.",
+              "The mirror shows her a fairy \u2014 connection to the Gloaming Court and a figure named Aislith, not yet developed."
+            ],
+            "tragedies": [
+              "Orphaned under unspecified circumstances. Raised as a servant-ward, not a daughter."
+            ],
+            "pc_leverage": "Trebastos has her trust. She will speak to him about the mirror if he asks directly and privately. She will not speak about it in front of others she doesn't know.",
+            "dm_notes": "The mirror and the fairy (Gloaming Court / Aislith connection) are an undeveloped thread. Do not force it this session \u2014 but Trebastos's relationship with her is a natural way to surface it when ready. The fact that Peema says the trees whisper at night and is correct about it should register to any PC paying attention. The Pact-Render fey and the Gloaming Court may be on opposite sides of the same fey politics \u2014 unknown as yet."
+          }
+        },
+        "adventure_sites": {
+          "temple_of_the_old_gods": {
+            "name": "Temple of the Old Gods",
+            "type": [
+              "dungeon",
+              "sacred_site",
+              "ruins"
+            ],
+            "location": "Bramblewood, north of Tagmira",
+            "access_difficulty": "difficult",
+            "recommended_level": "2-4",
+            "estimated_sessions_min": 1,
+            "estimated_sessions_max": 3,
+            "overview": {
+              "what_it_is": "A functioning undead temple-complex preserving the rites and hierarchy of the old gods, now led by Zimru, a 300-year-old undead hierophant. Contains the Sphere \u2014 a divine communion device now powered by sacrifice.",
+              "why_it_exists": "Built in the age of the old gods; its undead inhabitants refused to abandon it when the gods went silent. The Bramblewood was grown by the old gods as a living perimeter.",
+              "current_state": "Functional and alert. The first orc sacrifice was completed; the Sphere is active. Zimru will press the party for more sacrifices. Maedra has newly joined as Zimru's consort and is regarded as a prophet by the undead. The undead know about the Bronze Host threat but cannot project force outside the Bramblewood.",
+              "historical_context": "The temple served willing sacrifices to Enki, Ninhursag, and the Annunaki pantheon. The undead here are former priests and initiates who chose to remain as custodians. See the Ghoul Theologian's lecture for their theological self-justification."
+            },
+            "access_challenges": {
+              "physical": [
+                "Bramblewood thorns and undead flora",
+                "Hollow Boars patrol near the temple"
+              ],
+              "magical": [
+                "Black Cantors suppress divine magic in 30' radius",
+                "Bramblewood encounters before reaching temple"
+              ],
+              "political": [
+                "The undead recognize the party as allies \u2014 but Zimru will judge any breach of the alliance severely"
+              ],
+              "environmental": [
+                "Difficult terrain",
+                "necrotic resonance throughout"
+              ],
+              "temporal": "The undead lose consciousness when straying from the temple unless they pay a high magical cost \u2014 they cannot escort the party or intervene outside"
+            },
+            "known_dangers": {
+              "creatures": [
+                "Hollow Boars",
+                "Pale Remnants",
+                "Black Cantors",
+                "Ossuary Confessors",
+                "Threnody Wights",
+                "Skeletal Servitors",
+                "Velric the Apologetic Wight (wandering)",
+                "Flesh-Splice Automatons"
+              ],
+              "traps": [
+                "Grasping Brambleheart (entangle)",
+                "Withered Thornbush (poison)",
+                "Pulsing Bloomvine (acid)"
+              ],
+              "environmental_hazards": [
+                "Necrotic resonance",
+                "Cradle Mound sleep effect",
+                "Torch of the Last Vigil (undead tracking)"
+              ],
+              "magical_hazards": [
+                "Black Cantor Inverted Hymn",
+                "Spinal Vat contact effects",
+                "Hanging Psalm Scrolls (1d20 table)"
+              ],
+              "unknown_threats": [
+                "Velric's warning: 'Zimru-Irkala has foreseen it \u2014 in the Sphere \u2014 YOU ARE IN GREAT DANGER'"
+              ]
+            },
+            "rewards": {
+              "treasure": [
+                "Eight Jars in Necromancy Chamber (including Black Blood/Potion of Healing, Stoneflower Extract/Potion of Undead Control, Distilled Marrow/Potion of Extra-Healing)",
+                "Necrotic scalpel (silvered dagger) in Storeroom",
+                "Clasp of Forgotten Names (Velric)",
+                "Minor relics throughout catacombs"
+              ],
+              "knowledge": [
+                "Sphere operation (Book 5: Who Knees Before the Mantle Gold)",
+                "True names of guardian undead (Book 10)",
+                "Bramblewood origins (Book 13: Thorn-Bound Covenant)",
+                "Sphere-linkage map fragment (Lentigus)"
+              ],
+              "magical_items": [
+                "Thorn dagger +1, +3 vs living (Cultivar chamber)",
+                "Chamber of the Cultivar ritual diagram (Manual of Golems, lignin)"
+              ],
+              "strategic_value": [
+                "Alliance with Zimru provides intelligence via the Sphere",
+                "Undead cannot help against orcs directly but can advise",
+                "Maedra may be able to relay information about Tagmira"
+              ],
+              "reputation_gains": [
+                "Continued good standing with Zimru if sacrifice obligations are met"
+              ]
+            },
+            "factions_interested": {
+              "zimru_and_undead": {
+                "interest_level": "obsessed",
+                "goals": "Keep the Sphere running via sacrifice. Recruit more Tagmirans to undeath. Preserve the temple. Guide what remains of humanity from the Bramblewood.",
+                "resources_committed": "The entire temple garrison",
+                "knowledge_level": "Full \u2014 they live here"
+              },
+              "bronze_host_orcs": {
+                "interest_level": "aware",
+                "goals": "Avoid the Bramblewood. The orcs fear it and give it wide berth \u2014 one reason they push northwest rather than directly at Tagmira.",
+                "resources_committed": "None directed at the temple",
+                "knowledge_level": "They know something terrible lives there"
+              }
+            },
+            "local_knowledge": {
+              "common_rumors": [
+                "The Bramblewood walks at night \u2014 shadows that move wrong.",
+                "Anyone who enters the wood alone doesn't come back the same.",
+                "Old Maedra went in and never came out."
+              ],
+              "specialist_knowledge": {
+                "enni_the_ash_wife": {
+                  "cost_to_acquire": "Genuine respect and something she values",
+                  "accuracy": "High \u2014 she has lived near it her whole life",
+                  "information": [
+                    "The wood was not always like this",
+                    "Something in there remembers the old gods",
+                    "Maedra knew more than she ever said"
+                  ]
+                },
+                "the_bound_confessor_skull": {
+                  "cost_to_acquire": "Roll on 'What It Wants' table",
+                  "accuracy": "High but cryptic",
+                  "information": [
+                    "Password of the Gate",
+                    "True names of guardians",
+                    "Safest route to the inner sanctum"
+                  ]
+                }
+              },
+              "forbidden_knowledge": [
+                "The Sphere shows Zimru things \u2014 including a great danger coming for the party (Velric's warning). What this danger is has not yet been revealed."
+              ]
+            },
+            "current_session_hooks": {
+              "zimru_will_want": [
+                "A full account of the orc sacrifice \u2014 who, how, what rites were observed",
+                "Commitment to arranging a second sacrifice. The orcs northwest of Tagmira are the obvious target \u2014 this aligns with the party's own interest in stopping the Bronze Host",
+                "Information about what the party observed in Caelrun and on the road"
+              ],
+              "maedra_factor": "The party will encounter her transformed for the first time (or again, if they have already). Her reception of them will be complex \u2014 she chose this, but she remembers them.",
+              "sphere_revelation": "Zimru may show the party something in the Sphere \u2014 either the Bronze Host's movements, or the vague danger Velric warned about, depending on what serves the story."
+            }
+          },
+          "bronze_host_territory": {
+            "name": "Bronze Host Orc Territory (Northwest Hunting Grounds)",
+            "type": [
+              "wilderness"
+            ],
+            "location": "Northwest of Tagmira, beyond the forest hunting grounds",
+            "access_difficulty": "moderate",
+            "recommended_level": "2-3",
+            "estimated_sessions_min": 1,
+            "estimated_sessions_max": 2,
+            "overview": {
+              "what_it_is": "The territory the Bronze Host orcs are seizing from Tagmira's hunters, backed by Pact-Render fey who supply them with bronze weapons and equipment via the Bronzeworking Triangle.",
+              "why_it_exists": "The Pact-Render has made a bargain with the orc tribe \u2014 bronze weapons and equipment in exchange for territorial expansion. Control of the hunting grounds is the first step toward an assault on Tagmira.",
+              "current_state": "Two months since the party drove back the initial raid. All named orc leaders survived. Equipment significantly upgraded: bronze spears, laminated wooden armor. The Bronzeworking Triangle (Ore Pit, Crucible Glen, Mule Paths) is operational. The undead know but cannot act.",
+              "historical_context": "These orcs were already territorial but lacked the equipment and coordination for a sustained campaign. The Pact-Render fey changed that equation."
+            },
+            "known_dangers": {
+              "creatures": [
+                "Orc Warriors of the Bronze Host (HD 1+1, bronze spears, coordinated thrust)",
+                "Orc Champions (HD 3, magical fey-carved spears, command voice)",
+                "Brat-Kho the Voice That Bends (Script-Stone of Persuasion)",
+                "Mollgarn the Unfailing (Ashmark of Preservation)",
+                "Ulzhar Bone-Tongue (Pendant of the Hollow Tongue)",
+                "Wane-Faced overseers at the Ore Pit",
+                "Possible Shee emissary on the Mule Paths"
+              ],
+              "traps": [
+                "Ambush positions in the ravine terrain",
+                "Hidden cache sites on the Mule Paths"
+              ],
+              "environmental_hazards": [
+                "Rough hill terrain",
+                "Narrow ravines favoring orc ambush"
+              ],
+              "magical_hazards": [
+                "Fey bronze weapons ignore cold iron wards",
+                "Pact-Render shee have unknown fey powers"
+              ],
+              "unknown_threats": [
+                "The Shee emissary's capabilities and schedule",
+                "Whether the Pact-Render itself can be engaged diplomatically or only opposed"
+              ]
+            },
+            "rewards": {
+              "treasure": [
+                "Bronze weapons (valuable, fey-crafted)",
+                "Relic items carried by the three champions",
+                "Possible contents of the Bronzeworking Triangle caches"
+              ],
+              "knowledge": [
+                "Understanding the Pact-Render's involvement",
+                "Location of the Bronzeworking Triangle"
+              ],
+              "magical_items": [
+                "Script-Stone of Persuasion (Brat-Kho)",
+                "Ashmark of Preservation (Mollgarn)",
+                "Pendant of the Hollow Tongue (Ulzhar)"
+              ],
+              "strategic_value": [
+                "Destroying or disrupting the Bronzeworking Triangle would collapse the orc military advantage",
+                "Eliminating the orc leaders would break the Host's coordination",
+                "Capturing the Shee emissary could provide leverage against the Pact-Render"
+              ],
+              "reputation_gains": [
+                "Tagmira's gratitude and trust if the hunting grounds are secured",
+                "Potential second sacrifice for Zimru if orc leaders are taken alive or killed appropriately"
+              ]
+            },
+            "factions_interested": {
+              "tagmira_militia": {
+                "interest_level": "investigating",
+                "goals": "Recover the northwest hunting grounds before winter. Do not yet grasp the Pact-Render dimension.",
+                "resources_committed": "Hadran can muster 10 militia + 6 veterans if convinced the threat is serious",
+                "knowledge_level": "Knows orcs are better equipped than before. Does not know about the Bronzeworking Triangle or the Shee."
+              },
+              "zimru_and_undead": {
+                "interest_level": "aware",
+                "goals": "The orcs make excellent sacrifice candidates. Cannot act directly. Will strongly encourage the party to address the threat \u2014 it serves both Tagmira and the Sphere.",
+                "resources_committed": "Intelligence via the Sphere only",
+                "knowledge_level": "High \u2014 the Sphere shows them the orc movements"
+              },
+              "pact_render": {
+                "interest_level": "actively_pursuing",
+                "goals": "Use the orcs as proxies to pressure Tagmira. Keep the Bronzeworking Triangle secret and operational.",
+                "resources_committed": "Shee emissary, bronze supply chain, Wane-Faced overseers",
+                "knowledge_level": "Full awareness of their own operation; does not know about the undead alliance"
+              }
+            },
+            "bronzeworking_triangle": {
+              "hex_1_ore_pit": {
+                "description": "Rocky hills with copper and tin extraction. Slave pens cut into stone. Wane-Faced (ogre) overseers and orc enforcers. Minor fey shrine to maintain the Pact.",
+                "encounters": [
+                  "Collapsing mine shaft",
+                  "Desperate slave escape attempt",
+                  "Ore-smuggling gnoll"
+                ]
+              },
+              "hex_2_crucible_glen": {
+                "description": "Forested ravine with hidden charcoal kilns and clay forges. Portune-controlled, ritualized. Engraving stations where Pact symbols are inscribed on weapons.",
+                "encounters": [
+                  "Rune-bound tools",
+                  "Cursed molds",
+                  "Overseer duel",
+                  "Hidden forge-spirit"
+                ]
+              },
+              "hex_3_mule_paths": {
+                "description": "Foggy pine forest with disguised pack trails and hidden caches of bronze weapons.",
+                "encounters": [
+                  "Abandoned shipment",
+                  "Cursed buckler",
+                  "Party mistaken for saboteurs",
+                  "Shee emissary appearance"
+                ]
+              }
+            },
+            "orc_leaders": {
+              "brat_kho": {
+                "title": "Brat-Kho, the Voice That Bends",
+                "relic": "Script-Stone of Persuasion",
+                "ac": 4,
+                "hd": 3,
+                "dmg": "1d8+1",
+                "special": [
+                  "Echo of Authority",
+                  "Vocal Clarity",
+                  "+2 reaction"
+                ],
+                "morale": 10
+              },
+              "mollgarn": {
+                "title": "Mollgarn the Unfailing",
+                "relic": "Ashmark of Preservation",
+                "ac": 3,
+                "hd": 3,
+                "dmg": "1d10",
+                "special": [
+                  "Delay Poison",
+                  "Forget"
+                ],
+                "morale": 11
+              },
+              "ulzhar": {
+                "title": "Ulzhar Bone-Tongue",
+                "relic": "Pendant of the Hollow Tongue",
+                "ac": 5,
+                "hd": 3,
+                "dmg": "1d6",
+                "special": [
+                  "Comprehend Languages",
+                  "Command Word",
+                  "Binding Oath"
+                ],
+                "morale": 9
+              }
+            },
+            "captive_witness_incident": {
+              "summary": "The party previously defeated a Bronze Host force and took two orc captives to Tagmira to witness the Trial by Combat at the Circle of Cossus. The intent was intimidation \u2014 show the orcs what Tagmira does to its enemies.",
+              "possible_backfire": "The captives observed Tagmira's current defenses, population, and the fact that the village is relying on outside adventurers. This intelligence, brought back to the Bronze Host, may have encouraged rather than deterred their escalation.",
+              "dm_notes": "The party is partly responsible for the Bronze Host's current boldness, however inadvertently. Zimru, watching through the Sphere, almost certainly noticed this."
+            }
+          }
+        },
+        "travel_to_tagmira": {
+          "duration": "1 day",
+          "traveling_with": "Taziri's caravan",
+          "waystone_stop": {
+            "location": "Waystone of Isarna, west of Tagmira (on the road from Caelrun)",
+            "event": "Taziri will want to stop for an offering. Bread and silver thread are traditional. Good moment for character roleplay and transition into Tagmira.",
+            "dm_notes": "Let this breathe \u2014 it signals arrival is near and gives the caravan a moment of ritual normalcy before the complications of Tagmira begin."
+          },
+          "flavor_notes": [
+            "The road north narrows. The Bramblewood is visible as a dark mass on the horizon well before Tagmira itself.",
+            "Taziri knows Tagmira well \u2014 she can brief the party on surface village politics if asked.",
+            "The militia members who know the party might be met on the road or at the gate.",
+            "Nothing in the Bramblewood moves by day \u2014 but the sense of being watched from the tree line is hard to shake."
+          ],
+          "possible_road_encounter": {
+            "name": "Returning Patrol",
+            "description": "A Tagmira patrol of 3 militia heading back from the northwest. They are not fleeing \u2014 they held the line but were outmatched. One is bandaged. They know the party and will report directly: the orcs have bronze weapons, they move in coordinated groups, and there are more of them than last spring. They want to know if the party is coming to help.",
+            "dm_notes": "Sets the tone correctly \u2014 these are not frightened villagers, they are soldiers who fought and are thinking about how to fight better. The party's arrival matters to them."
+          }
+        },
+        "session_pressure_points": {
+          "immediate": [
+            "Zimru wants an accounting of the sacrifice and a commitment to the next one \u2014 the orcs northwest are the obvious candidates",
+            "Tagmira's hunters are being pushed off the northwest grounds \u2014 Hadran needs help or intelligence",
+            "Maedra's transformation \u2014 the party will face her changed, and the village still doesn't know she's gone"
+          ],
+          "slow_burn": [
+            "The undead want Tagmiran recruits \u2014 someone in the village may already be in contact with them",
+            "The dryad in the Tree of Mist-Song \u2014 bitterly lonely, has knowledge of the Bramblewood, waiting",
+            "Velric's warning from the Sphere \u2014 a great danger foreseen, not yet revealed",
+            "Tenn Darnel lost the duel and has not forgiven it \u2014 a grudge waiting for a trigger"
+          ],
+          "convergence": "The orc threat and the sacrifice demand point in the same direction \u2014 the party can satisfy Zimru and defend Tagmira with the same action, if they can coordinate militia, manage the undead alliance's secrecy, and get through the Bronze Host's now-upgraded defenses."
+        },
+        "items": {},
+        "plots": {}
+      }
+    }
+  }
+}

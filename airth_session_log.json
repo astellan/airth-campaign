@@ -1,0 +1,513 @@
+{
+  "session_log": [
+    {
+      "session_number": 1,
+      "date": "2025-04-08",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 2,
+      "date": "2025-04-22",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 3,
+      "date": "2025-05-13",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [
+          {
+            "opponents": [
+              "Brat-Kho",
+              "Mollgarn the Unfailing",
+              "Ulzhar Bone-Tongue"
+            ],
+            "notes": "Orc adversaries with magical items"
+          }
+        ],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [
+        "Brat-Kho (obsidian glyph slab, booming voice)",
+        "Mollgarn the Unfailing (spell-stealing plaque)",
+        "Ulzhar Bone-Tongue (silver-wrapped fingerbone, command spell)"
+      ],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 4,
+      "date": "2025-05-27",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 5,
+      "date": "2025-06-03",
+      "locations": [
+        "Bramblewood"
+      ],
+      "party_members_present": [],
+      "summary": "Penetrated mysteries of the Bramblewood, encountered skeletons commandeered by mysterious cloaked figure, escaped with loot",
+      "encounters": {
+        "combat": [
+          {
+            "opponents": [
+              "Skeletons"
+            ],
+            "notes": "Controlled by cloaked figure"
+          }
+        ],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [
+        "Cloaked figure (mysterious, skeleton controller)"
+      ],
+      "items_gained": [
+        "Loot (unspecified)"
+      ],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 6,
+      "date": "2025-06-10",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 7,
+      "date": "2025-06-17",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 8,
+      "date": "2025-09-02",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 9,
+      "date": "2025-09-09",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 10,
+      "date": "2025-09-16",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 11,
+      "date": "2025-09-22",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 12,
+      "date": "2025-10-07",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 13,
+      "date": "2025-11-11",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 14,
+      "date": "2025-11-18",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 15,
+      "date": "2025-12-02",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 16,
+      "date": "2025-12-09",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 17,
+      "date": "2025-12-16",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 18,
+      "date": "2026-01-06",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 19,
+      "date": "2026-01-13",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 20,
+      "date": "2026-01-20",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 21,
+      "date": "2026-01-27",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    }
+  ]
+}
