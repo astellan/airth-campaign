@@ -8,7 +8,7 @@
       "properties": [],
       "value": "high — exact value unassessed",
       "status": "party_possession",
-      "holder": "unassigned",
+      "holder": null,
       "acquired": {
         "session": 23,
         "from": "Troll's hoard, lean-to west of Bramblewood",
@@ -24,7 +24,7 @@
       "properties": [],
       "value": "high — exact value unassessed",
       "status": "party_possession",
-      "holder": "unassigned",
+      "holder": null,
       "acquired": {
         "session": 23,
         "from": "Troll's hoard, lean-to west of Bramblewood",
@@ -59,9 +59,9 @@
       "value": "unknown",
       "status": "npc_possession",
       "holder": "Brat-Kho (Bronze Host orc leader)",
-      "acquired": {
-        "session": null,
-        "from": "Brat-Kho (Bronze Host orc leader)",
+      "origin": {
+        "npc": "Brat-Kho",
+        "faction": "Bronze Host",
         "location": "unknown"
       },
       "dm_notes": "Held by Brat-Kho, a leader of the Bronze Host. Potential loot if the party defeats him."
@@ -77,9 +77,9 @@
       "value": "unknown",
       "status": "npc_possession",
       "holder": "Mollgarn the Unfailing (Bronze Host orc leader)",
-      "acquired": {
-        "session": null,
-        "from": "Mollgarn the Unfailing (Bronze Host orc leader)",
+      "origin": {
+        "npc": "Mollgarn the Unfailing",
+        "faction": "Bronze Host",
         "location": "unknown"
       },
       "dm_notes": "Held by Mollgarn the Unfailing, a leader of the Bronze Host. Potential loot if the party defeats him."
@@ -95,9 +95,9 @@
       "value": "unknown",
       "status": "npc_possession",
       "holder": "Ulzhar Bone-Tongue (Bronze Host orc leader)",
-      "acquired": {
-        "session": null,
-        "from": "Ulzhar Bone-Tongue (Bronze Host orc leader)",
+      "origin": {
+        "npc": "Ulzhar Bone-Tongue",
+        "faction": "Bronze Host",
         "location": "unknown"
       },
       "dm_notes": "Held by Ulzhar Bone-Tongue, a leader of the Bronze Host. Potential loot if the party defeats him."

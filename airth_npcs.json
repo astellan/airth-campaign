@@ -36,7 +36,7 @@
       }
     },
     "pima": {
-      "moniker": "",
+      "moniker": null,
       "home": "Tagmira",
       "home_settlement": "tagmira",
       "gender": "female",
@@ -44,13 +44,13 @@
       "appearance": "Young orphan girl",
       "and_yet": "Possesses a mirror that allows her to communicate with a fairy girl on the other side",
       "wants": "The Bronze Host defeated; protection for Tagmira",
-      "does_not_want": "",
-      "oddly_also": "",
+      "does_not_want": null,
+      "oddly_also": null,
       "thinks_with": "Her connection to fairie through the mirror",
       "family": "Orphan — no known family",
-      "self_image": "",
-      "recreation": "",
-      "dreams": "",
+      "self_image": null,
+      "recreation": null,
+      "dreams": null,
       "anecdotes": [],
       "tragedies": [
         "Orphan with no known family"
