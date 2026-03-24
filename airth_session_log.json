@@ -508,6 +508,93 @@
       "significant_events": [],
       "location_at_session_end": "",
       "dm_notes": ""
+    },
+    {
+      "session_number": 22,
+      "date": "",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 23,
+      "date": "2026-03-17",
+      "locations": [
+        "Tagmira",
+        "Lean-to west of the Bramblewood (NW of Tagmira)"
+      ],
+      "party_members_present": [
+        "Zaphon (Hoi, covering for Phil)",
+        "Chekkad ag Maktar (Hoi)",
+        "Strummer (Hoi)",
+        "Sardet (Chris)",
+        "Zardun (Chris)",
+        "Brigantios (Andre)",
+        "Trebastos (Andre)"
+      ],
+      "summary": "The party traveled to the lean-to NW of Tagmira, previously used as a base during early Bramblewood exploration, and found a troll had taken up residence. They killed it in a brutal fight that nearly cost Sardet his life, and recovered a valuable crown and jewels. Returning to Tagmira, they learned the Bronze Host has declared the hunting grounds NW of the town off-limits, and a local hunter is missing. Pima, a young girl who uses a mirror to communicate with fairie, implored the party to defeat the Bronze Host. Tagmira is gripped by fear.",
+      "encounters": {
+        "combat": [
+          {
+            "opponents": ["Troll"],
+            "notes": "Troll had taken up residence in the lean-to; nearly killed Sardet"
+          }
+        ],
+        "social": [
+          {
+            "description": "Pima asks the party to defeat the Bronze Host",
+            "notes": "Pima is a girl with a mirror that enables communication with fairie"
+          }
+        ],
+        "exploration": [
+          {
+            "description": "Lean-to west of the Bramblewood, NW of Tagmira",
+            "notes": "Previously used as a party base camp during early Bramblewood exploration"
+          }
+        ]
+      },
+      "npcs_met": [
+        "Pima (young girl with a mirror enabling communication with fairie)"
+      ],
+      "items_gained": [
+        "Valuable crown",
+        "Jewels"
+      ],
+      "items_lost": [],
+      "rumors_learned": [
+        "The Bronze Host has declared the hunting grounds NW of Tagmira off-limits",
+        "A local hunter has gone missing in the affected area"
+      ],
+      "quests_started": [
+        "Investigate the Bronze Host's ban on the hunting grounds NW of Tagmira and find the missing hunter"
+      ],
+      "quests_completed": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [
+        "Troll killed at the lean-to; Sardet nearly slain",
+        "Bronze Host declares hunting grounds NW of Tagmira off-limits",
+        "Pima requests the party defeat the Bronze Host",
+        "Tagmira gripped by fear"
+      ],
+      "location_at_session_end": "Tagmira",
+      "dm_notes": ""
     }
   ]
 }

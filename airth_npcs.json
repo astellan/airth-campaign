@@ -35,6 +35,34 @@
         "dm_notes": "Taziri is the party's most reliable civilian connection across the Luric Marches. She knows both Caelrun and Tagmira well and can brief the party on surface-level politics of either. She has no knowledge of the undead alliance. Her Isarna observance at the waystone is a natural scene transition into Tagmira."
       }
     },
+    "pima": {
+      "moniker": "",
+      "home": "Tagmira",
+      "home_settlement": "tagmira",
+      "gender": "female",
+      "faction": "none",
+      "appearance": "Young orphan girl",
+      "and_yet": "Possesses a mirror that allows her to communicate with a fairy girl on the other side",
+      "wants": "The Bronze Host defeated; protection for Tagmira",
+      "does_not_want": "",
+      "oddly_also": "",
+      "thinks_with": "Her connection to fairie through the mirror",
+      "family": "Orphan — no known family",
+      "self_image": "",
+      "recreation": "",
+      "dreams": "",
+      "anecdotes": [],
+      "tragedies": [
+        "Orphan with no known family"
+      ],
+      "pc_leverage": "She has asked the party to defeat the Bronze Host on behalf of Tagmira",
+      "fairie_connection": {
+        "mirror": "A magic mirror Pima found, enabling two-way communication with fairie",
+        "fairy_girl": "A fairy girl on the other side of the mirror; identity unknown beyond being Pima's contact",
+        "aislith": "The fairy queen, described to Pima by the fairy girl",
+        "dm_notes": "The nature and origin of the mirror is unknown. The fairy girl's relationship to Aislith and motivations for reaching out through Pima are unestablished."
+      }
+    },
     "mother_yaleth": {
       "moniker": "Mother Yaleth",
       "home": "Nemetra\u2014has never left, refuses to, sees leaving as betrayal of the sick and dying who need her",
