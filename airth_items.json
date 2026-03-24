@@ -1,0 +1,106 @@
+{
+  "items": {
+    "crown_of_the_lean_to": {
+      "name": "Crown (lean-to treasure)",
+      "type": "jewelry",
+      "magical": false,
+      "description": "A valuable crown recovered from the lean-to west of the Bramblewood after killing the troll",
+      "properties": [],
+      "value": "high — exact value unassessed",
+      "status": "party_possession",
+      "holder": "unassigned",
+      "acquired": {
+        "session": 23,
+        "from": "Troll's hoard, lean-to west of Bramblewood",
+        "location": "Lean-to west of the Bramblewood, NW of Tagmira"
+      },
+      "dm_notes": "Part of troll hoard. Value not yet assessed in-game. May have a history worth developing."
+    },
+    "jewels_lean_to": {
+      "name": "Jewels (lean-to treasure)",
+      "type": "treasure",
+      "magical": false,
+      "description": "A collection of jewels recovered from the lean-to west of the Bramblewood after killing the troll",
+      "properties": [],
+      "value": "high — exact value unassessed",
+      "status": "party_possession",
+      "holder": "unassigned",
+      "acquired": {
+        "session": 23,
+        "from": "Troll's hoard, lean-to west of Bramblewood",
+        "location": "Lean-to west of the Bramblewood, NW of Tagmira"
+      },
+      "dm_notes": "Part of troll hoard. Composition and individual values unspecified."
+    },
+    "bramblewood_loot_s5": {
+      "name": "Bramblewood loot (session 5)",
+      "type": "unspecified",
+      "magical": null,
+      "description": "Unspecified loot taken from the Bramblewood during the party's early exploration",
+      "properties": [],
+      "value": "unknown",
+      "status": "unaccounted",
+      "holder": "unknown",
+      "acquired": {
+        "session": 5,
+        "from": "Bramblewood",
+        "location": "Bramblewood"
+      },
+      "dm_notes": "Listed in session 5 as 'loot (unspecified)'. Needs clarification — what was it, and does the party still have it?"
+    },
+    "obsidian_glyph_slab": {
+      "name": "Obsidian Glyph Slab",
+      "type": "magical_object",
+      "magical": true,
+      "description": "An obsidian slab covered in glyphs, carried by the orc Brat-Kho; associated with a booming voice effect",
+      "properties": [
+        "Produces a booming voice when used"
+      ],
+      "value": "unknown",
+      "status": "unaccounted",
+      "holder": "Brat-Kho (orc, session 3 — fate unknown)",
+      "acquired": {
+        "session": null,
+        "from": "Brat-Kho (orc adversary, session 3)",
+        "location": "unknown"
+      },
+      "dm_notes": "Enemy item from session 3. Not confirmed as party loot. Clarify whether the party took this after the fight."
+    },
+    "spell_stealing_plaque": {
+      "name": "Spell-Stealing Plaque",
+      "type": "magical_object",
+      "magical": true,
+      "description": "A plaque carried by Mollgarn the Unfailing; capable of stealing spells",
+      "properties": [
+        "Steals or counters spells"
+      ],
+      "value": "unknown",
+      "status": "unaccounted",
+      "holder": "Mollgarn the Unfailing (orc, session 3 — fate unknown)",
+      "acquired": {
+        "session": null,
+        "from": "Mollgarn the Unfailing (orc adversary, session 3)",
+        "location": "unknown"
+      },
+      "dm_notes": "Enemy item from session 3. Not confirmed as party loot. Clarify whether the party took this after the fight."
+    },
+    "silver_wrapped_fingerbone": {
+      "name": "Silver-Wrapped Fingerbone",
+      "type": "magical_object",
+      "magical": true,
+      "description": "A fingerbone wrapped in silver, carried by Ulzhar Bone-Tongue; associated with a command spell",
+      "properties": [
+        "Casts or enhances command spell"
+      ],
+      "value": "unknown",
+      "status": "unaccounted",
+      "holder": "Ulzhar Bone-Tongue (orc, session 3 — fate unknown)",
+      "acquired": {
+        "session": null,
+        "from": "Ulzhar Bone-Tongue (orc adversary, session 3)",
+        "location": "unknown"
+      },
+      "dm_notes": "Enemy item from session 3. Not confirmed as party loot. Clarify whether the party took this after the fight."
+    }
+  }
+}
