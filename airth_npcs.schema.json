@@ -38,7 +38,10 @@
       "properties": {
         "moniker": { "type": ["string", "null"] },
         "home": { "type": "string" },
-        "home_settlement": { "type": "string" },
+        "home_settlement": {
+          "type": "string",
+          "$comment": "Reference: must match a key in airth_settlements.json. Use 'itinerant' for NPCs with no fixed settlement."
+        },
         "gender": { "type": "string" },
         "faction": {
           "type": "string",
