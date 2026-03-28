@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Airth NPCs",
+  "type": "object",
+  "required": ["npcs"],
+  "properties": {
+    "npcs": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/npc"
+      }
+    }
+  },
+  "definitions": {
+    "npc": {
+      "type": "object",
+      "required": [
+        "moniker",
+        "home",
+        "home_settlement",
+        "gender",
+        "faction",
+        "appearance",
+        "and_yet",
+        "wants",
+        "does_not_want",
+        "oddly_also",
+        "thinks_with",
+        "family",
+        "self_image",
+        "recreation",
+        "dreams",
+        "anecdotes",
+        "tragedies",
+        "pc_leverage"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "moniker": { "type": ["string", "null"] },
+        "home": { "type": "string" },
+        "home_settlement": { "type": "string" },
+        "gender": { "type": "string" },
+        "faction": { "type": "string" },
+        "appearance": { "type": "string" },
+        "and_yet": { "type": ["string", "null"] },
+        "wants": { "type": "string" },
+        "does_not_want": { "type": ["string", "null"] },
+        "oddly_also": { "type": ["string", "null"] },
+        "thinks_with": {
+          "type": "string",
+          "enum": ["fists", "magic", "persuasion", "money", "blade", "lore"]
+        },
+        "family": { "type": "string" },
+        "self_image": { "type": ["string", "null"] },
+        "recreation": { "type": ["string", "null"] },
+        "dreams": { "type": ["string", "null"] },
+        "anecdotes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "tragedies": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "pc_leverage": { "type": "string" }
+      }
+    }
+  }
+}
