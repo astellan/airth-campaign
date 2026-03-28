@@ -48,7 +48,22 @@
         "oddly_also": { "type": ["string", "null"] },
         "thinks_with": {
           "type": "string",
-          "enum": ["fists", "magic", "persuasion", "money", "blade", "lore"]
+          "enum": [
+            "blade",
+            "devotion",
+            "endurance",
+            "faith",
+            "fear",
+            "fists",
+            "guilt",
+            "honor",
+            "lore",
+            "magic",
+            "money",
+            "persuasion",
+            "pride",
+            "tradition"
+          ]
         },
         "family": { "type": "string" },
         "self_image": { "type": ["string", "null"] },
