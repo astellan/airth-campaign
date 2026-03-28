@@ -24,8 +24,11 @@ def schema():
 
 @pytest.fixture(scope="session")
 def settlements():
-    with open(ROOT / "airth_settlements.json") as f:
-        return json.load(f)["settlements"]
+    """Load all settlement files from the settlements/ directory."""
+    result = {}
+    for path in (ROOT / "settlements").glob("*.json"):
+        result[path.stem] = json.loads(path.read_text())
+    return result
 
 
 @pytest.fixture(scope="session")

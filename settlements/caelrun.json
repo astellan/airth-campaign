@@ -1,0 +1,844 @@
+{
+  "name": "Caelrun",
+  "type": "Lakeside fishing village",
+  "population": {
+    "total": 1200,
+    "breakdown": {
+      "agriculture_herding": 300,
+      "militia_active": 36,
+      "veterans_elites": 24,
+      "clergy": 24,
+      "ilmenor_scholars": 0,
+      "artisans_builders": 36,
+      "traders_ferrymen": 18,
+      "fisherfolk_riverfolk": 600,
+      "monastics_hermits": 6,
+      "servants_dependents": 18,
+      "bound_laborers": 6,
+      "fringe_outliers": 132
+    }
+  },
+  "economy": [
+    "Fishing",
+    "Eel-trapping",
+    "Barley cultivation",
+    "Rush weaving",
+    "Lake-industry crafts"
+  ],
+  "exports": [
+    "Dried fish",
+    "Smoked fish",
+    "Fish oil",
+    "Barley (seed & food)",
+    "Rush mats",
+    "Fish bone tools",
+    "Waterfowl",
+    "Cattail products",
+    "Lake-hemp rope",
+    "Willow baskets"
+  ],
+  "imports": [
+    "Tools",
+    "Salt",
+    "Weapons",
+    "Iron",
+    "Pottery",
+    "Wine"
+  ],
+  "character": "Humid, productive, quietly watched by forces villagers don't acknowledge",
+  "atmosphere": {
+    "sounds": [
+      "Lapping water",
+      "Fish market calls",
+      "Net-mending rhythms",
+      "Waterfowl cries",
+      "Oars creaking",
+      "Reed rustling"
+    ],
+    "smells": [
+      "Fish (fresh, drying, smoking)",
+      "Lake water",
+      "Wet reeds",
+      "Barley fields",
+      "Fish oil rendering",
+      "Mud"
+    ],
+    "mood": "Industrious, practical, prosperity with undercurrent of carefully ignored truths"
+  },
+  "families": {},
+  "locations": {},
+  "factions": [
+    "Aurka (active near lake ruins)",
+    "Lizard-men (shadow authority, most unaware)"
+  ],
+  "tensions": [
+    "Aurka activity drawing unwanted attention to ruins",
+    "Unspoken lizard-man control - acknowledged by few, ignored by most",
+    "Fishing rights disputes between families",
+    "Fringe workers (leech gatherers, bog-edge camps) operate outside village authority"
+  ],
+  "rumors": [
+    "Aurka found carved stones in submerged temple foundations",
+    "Nebruz smugglers use secret lake channels at night",
+    "Old temple columns visible in shallows during summer droughts"
+  ],
+  "defenses": {
+    "militia": "Ceremonial, mostly for disputes and drunk fishers",
+    "reality": "Lizard-men enforce territorial boundaries from shadows",
+    "village_understanding": "Most residents believe their prosperity comes from hard work and good location, unaware of the arrangement"
+  },
+  "trade_focus": "Food surplus provider - feeds other Marches villages",
+  "nearest_neighbors": [
+    "Nemetra (northwest)",
+    "Tagmira (east)",
+    "Nebruz (south, hidden)"
+  ],
+  "road_position": "On main Lamares-Orziben caravan route, between Nemetra and Tagmira",
+  "hidden_truth": "Village exists by lizard-man sufferance, most residents unaware of this arrangement. A few families know and maintain the unspoken compact.",
+  "steadings": {
+    "nebruz": {
+      "name": "Nebruz",
+      "population": 45,
+      "families": 3,
+      "primary_activity": "Smuggling, black market trade, hidden waystation",
+      "exports_to_parent": [
+        "Intelligence on swamp movements",
+        "Contraband routing",
+        "Covert passage for travelers"
+      ],
+      "character": "Hidden, opportunistic, dangerous - exists in shadows both literal and political",
+      "demihumans_present": true,
+      "humanoid_tolerance": "high",
+      "threat_proximity": "extreme",
+      "notable_residents": [
+        "Yavra Quickwater"
+      ]
+    },
+    "salmura": {
+      "name": "Salmura",
+      "population": 30,
+      "families": 2,
+      "primary_activity": "Fish drying and smoking, salt fish production",
+      "exports_to_parent": [
+        "Dried fish",
+        "Smoked fish",
+        "Fish jerky",
+        "Salted roe"
+      ],
+      "character": "Windswept, isolated, hardworking - smoke always rising from drying racks",
+      "demihumans_present": false,
+      "humanoid_tolerance": "none",
+      "threat_proximity": "cautious",
+      "notable_residents": []
+    },
+    "carvoal": {
+      "name": "Carvoal",
+      "population": 25,
+      "families": 2,
+      "primary_activity": "Charcoal burning, timber cutting at swamp edge",
+      "exports_to_parent": [
+        "Charcoal",
+        "Hardwood timber",
+        "Ash (for soap-making)"
+      ],
+      "character": "Smoky, watchful, tense - closest to lizard-man patrols, sees things others don't",
+      "demihumans_present": false,
+      "humanoid_tolerance": "low",
+      "threat_proximity": "dangerous",
+      "notable_residents": []
+    },
+    "xuncal": {
+      "name": "Xuncal",
+      "population": 35,
+      "families": 3,
+      "primary_activity": "Reed cutting, rush weaving, basket making",
+      "exports_to_parent": [
+        "Rush mats",
+        "Willow baskets",
+        "Thatching reeds",
+        "Woven screens"
+      ],
+      "character": "Quiet, rhythmic, traditional - families have worked these beds for generations",
+      "demihumans_present": false,
+      "humanoid_tolerance": "none",
+      "threat_proximity": "safe",
+      "notable_residents": []
+    },
+    "angueira": {
+      "name": "Angueira",
+      "population": 20,
+      "families": 1,
+      "primary_activity": "Eel trapping, specialized fishing techniques",
+      "exports_to_parent": [
+        "Live eels",
+        "Eel oil",
+        "Smoked eels",
+        "Eel leather"
+      ],
+      "character": "Secretive, superstitious, skilled - guard eel-trap techniques jealously",
+      "demihumans_present": false,
+      "humanoid_tolerance": "moderate",
+      "threat_proximity": "cautious",
+      "notable_residents": []
+    }
+  },
+  "npcs": {
+    "ordun_tarnes": {
+      "moniker": "The Quiet Negotiator",
+      "home": "Caelrun",
+      "home_settlement": "caelrun",
+      "gender": "male",
+      "faction": "House Tarnes, grain collective leader",
+      "appearance": "Weathered, patient, knows soil and seasons",
+      "and_yet": "",
+      "wants": "Good harvests, peace with all parties including lizard-men",
+      "does_not_want": "Village discovering his quiet negotiations, conflict disrupting planting seasons",
+      "oddly_also": "",
+      "thinks_with": "Seasonal cycles, careful observation, pragmatic compromise",
+      "family": "House Tarnes patriarch, extended family of 15+",
+      "self_image": "Keeper of ancient compact, protector through diplomacy not strength",
+      "recreation": "Walking barley fields at dawn alone",
+      "dreams": "Pass knowledge of lizard-man arrangement to worthy successor",
+      "anecdotes": [],
+      "tragedies": [],
+      "pc_leverage": "Respect for the compact, help with harvest, keep his secret"
+    },
+    "merra_of_the_fields": {
+      "moniker": "",
+      "home": "Caelrun",
+      "home_settlement": "caelrun",
+      "gender": "female",
+      "faction": "House Tarnes (married in)",
+      "appearance": "Sharp-tongued, practical, sun-darkened skin",
+      "and_yet": "",
+      "wants": "Efficient land use, respect for agricultural expertise",
+      "does_not_want": "Fishers' opinions on farming, wasted resources",
+      "oddly_also": "",
+      "thinks_with": "Schedules, yield calculations, no-nonsense planning",
+      "family": "Married to Tarnes cousin, three children work the fields",
+      "self_image": "The one who actually makes things run",
+      "recreation": "Doesn't have time for recreation, resents the question",
+      "dreams": "Expand barley cultivation, prove women can manage large operations",
+      "anecdotes": [],
+      "tragedies": [],
+      "pc_leverage": "Practical help, respect for her authority, efficient solutions"
+    },
+    "kelvan_bresul": {
+      "moniker": "",
+      "home": "Caelrun",
+      "home_settlement": "caelrun",
+      "gender": "male",
+      "faction": "House Bresul, militia captain (ceremonial)",
+      "appearance": "Soft around the middle, drinks too much, ceremonial armor kept polished",
+      "and_yet": "",
+      "wants": "To be taken seriously, to not see what he half-sees in marshes",
+      "does_not_want": "Real conflict, questions about militia effectiveness, night patrols near swamp edge",
+      "oddly_also": "",
+      "thinks_with": "Denial, alcohol, maintaining appearances",
+      "family": "House Bresul, wife tired of his drinking, two teenage sons",
+      "self_image": "Protector of Caelrun (deeply insecure about this)",
+      "recreation": "Drinking at the Waterside Tavern, telling war stories from his youth that may not be true",
+      "dreams": "Prove himself in real conflict (terrified this might actually happen)",
+      "anecdotes": [],
+      "tragedies": [],
+      "pc_leverage": "Validate his importance, bring him information that makes him look competent, don't expose his fear"
+    },
+    "sarith_the_scarred": {
+      "moniker": "The Watcher",
+      "home": "Caelrun",
+      "home_settlement": "caelrun",
+      "gender": "male",
+      "faction": "Former Elunad, adopted House Hallan, village elder",
+      "appearance": "Old wounds visible, walks with cane, sharp eyes despite age",
+      "and_yet": "",
+      "wants": "Maintain lizard-man compact, village safety, peaceful succession of knowledge",
+      "does_not_want": "Foolish heroes disrupting arrangement, Aurka attracting wrong attention",
+      "oddly_also": "",
+      "thinks_with": "Decades of border wisdom, Elunad training, cold pragmatism",
+      "family": "Adopted by Hallan after serving with them, never married, mentors quietly",
+      "self_image": "Last guardian of a necessary truth",
+      "recreation": "Carving waystones, teaching those few who listen",
+      "dreams": "Die knowing compact will hold after he's gone",
+      "anecdotes": [],
+      "tragedies": [],
+      "pc_leverage": "Prove trustworthiness, demonstrate understanding of complex situations, Elunad connection"
+    },
+    "mother_hildreth": {
+      "moniker": "",
+      "home": "Caelrun",
+      "home_settlement": "caelrun",
+      "gender": "female",
+      "faction": "House Velmari, Senior Thulda priestess",
+      "appearance": "Elderly, serene, grey wool robes, moves slowly but purposefully",
+      "and_yet": "",
+      "wants": "Proper funeral rites, peace for the dying, respect for Thulda's mysteries",
+      "does_not_want": "Rushed burials, impiety, questions about death she cannot answer",
+      "oddly_also": "",
+      "thinks_with": "Ritual, tradition, acceptance of mortality",
+      "family": "House Velmari, outlived husband and two children",
+      "self_image": "Shepherd of souls, keeper of the final threshold",
+      "recreation": "Spinning wool by the shrine, humming old funeral songs",
+      "dreams": "Train successor, die in her sleep at the shrine",
+      "anecdotes": [],
+      "tragedies": [],
+      "pc_leverage": "Respect for rituals, help with funeral preparations, listening to her wisdom"
+    },
+    "tovar_the_boatwright": {
+      "moniker": "",
+      "home": "Caelrun",
+      "home_settlement": "caelrun",
+      "gender": "male",
+      "faction": "House Bresul, master boat builder",
+      "appearance": "Perfectionist, calloused hands, sawdust in beard, critical eye",
+      "and_yet": "",
+      "wants": "Every boat built to last decades, apprentices who listen, proper materials",
+      "does_not_want": "Rush jobs, cheap timber, people who don't understand craftsmanship",
+      "oddly_also": "",
+      "thinks_with": "Wood grain, water flow, structural integrity",
+      "family": "House Bresul, three apprentices (terrorized), wife understands his moods",
+      "self_image": "Last true craftsman in a world of shortcuts",
+      "recreation": "There is no recreation, only boat work",
+      "dreams": "Build the perfect fishing boat, retire without regrets",
+      "anecdotes": [],
+      "tragedies": [],
+      "pc_leverage": "Respect his craft, patience, bring quality materials, don't rush him"
+    },
+    "yavra_quickwater": {
+      "moniker": "Quickwater",
+      "home": "Caelrun/Nebruz",
+      "home_settlement": "nebruz",
+      "gender": "female",
+      "faction": "House Norvak (Caelrun branch), ferry operator based in Nebruz",
+      "appearance": "Amazigh woman, agile, knows every channel, suspicious eyes",
+      "and_yet": "",
+      "wants": "Profitable smuggling routes, Nebruz connections maintained, not getting caught",
+      "does_not_want": "Questions about nighttime ferry trips, militia attention, loose-lipped passengers",
+      "oddly_also": "",
+      "thinks_with": "Hidden channels, tide timing, who can be trusted",
+      "family": "House Norvak, but operates independently, sends money home",
+      "self_image": "Free trader in unfree world",
+      "recreation": "Gambling with Nebruz smugglers, winning usually",
+      "dreams": "Retire wealthy to Imazuran, never explain where money came from",
+      "anecdotes": [],
+      "tragedies": [],
+      "pc_leverage": "Gold, discretion, Nebruz connections, don't threaten her operation"
+    },
+    "brecht_hallan": {
+      "moniker": "The Fleet Master",
+      "home": "Caelrun",
+      "home_settlement": "caelrun",
+      "gender": "male",
+      "faction": "House Hallan patriarch, fleet master",
+      "appearance": "Commands 40+ boats, hard but fair, weathered from decades on water",
+      "and_yet": "",
+      "wants": "Productive fishing, family prosperity, compact honored quietly",
+      "does_not_want": "Outsiders disrupting arrangement, family members talking too much, bad fishing seasons",
+      "oddly_also": "",
+      "thinks_with": "Fish migrations, weather signs, political calculation",
+      "family": "House Hallan patriarch, 40+ extended family, inherited secret from father",
+      "self_image": "Steward of village prosperity through necessary silence",
+      "recreation": "Fishing alone, teaching grandchildren knots",
+      "dreams": "Pass fleet and secret to worthy heir, die on the water",
+      "anecdotes": [],
+      "tragedies": [],
+      "pc_leverage": "Prove discretion, help fishing operations, understand burden of secrets"
+    },
+    "essa_the_net_mender": {
+      "moniker": "",
+      "home": "Caelrun",
+      "home_settlement": "caelrun",
+      "gender": "female",
+      "faction": "House Caernach, guild mistress, rope-maker",
+      "appearance": "Blind in one eye from fishing accident, hands never stop moving, weathered face",
+      "and_yet": "",
+      "wants": "Guild neutrality maintained, quality rope production, gossip (currency of information)",
+      "does_not_want": "Family feuds disrupting guild, shoddy work, being left out of news",
+      "oddly_also": "",
+      "thinks_with": "Rope tension, social networks, who owes whom",
+      "family": "House Caernach, widowed, grown children fish for other families",
+      "self_image": "Spider at center of web, keeper of village knowledge",
+      "recreation": "Gossip is recreation, knitting while listening",
+      "dreams": "Retire as most respected elder, write nothing down",
+      "anecdotes": [],
+      "tragedies": [],
+      "pc_leverage": "Trade information, respect guild neutrality, commission quality rope"
+    },
+    "brother_kellis": {
+      "moniker": "",
+      "home": "Caelrun (far shore reed hut)",
+      "home_settlement": "caelrun",
+      "gender": "transgender",
+      "faction": "Wandering Ossamar devotee",
+      "appearance": "Lives in reed hut, marks safe water paths with cairns, speaks in riddles",
+      "and_yet": "",
+      "wants": "Safe crossings for travelers, communion with water spirits, solitude mostly",
+      "does_not_want": "Village politics, questions about their past, cairns disturbed",
+      "oddly_also": "",
+      "thinks_with": "Water currents, liminal spaces, Ossamar's mysteries",
+      "family": "No family ties, left former life behind decades ago",
+      "self_image": "Between-dweller, neither shore nor water, guide for the crossing",
+      "recreation": "Wading at dawn, arranging stones, watching reflections",
+      "dreams": "Perfect understanding of Ossamar's nature, death by drowning peacefully",
+      "anecdotes": [],
+      "tragedies": [],
+      "pc_leverage": "Respect for Ossamar, offerings at cairns, understanding of liminality"
+    },
+    "penna": {
+      "moniker": "",
+      "home": "Caelrun",
+      "home_settlement": "caelrun",
+      "gender": "female",
+      "faction": "House Hallan servant family (three generations)",
+      "appearance": "Middle-aged, efficient, knows compound routines better than family members",
+      "and_yet": "",
+      "wants": "Smooth household operation, respect for her knowledge, security for her children",
+      "does_not_want": "Chaos, disrespect, her children treated as lesser",
+      "oddly_also": "",
+      "thinks_with": "Schedules, household logistics, practical solutions",
+      "family": "Servant family for three generations, husband also serves Hallan, four children",
+      "self_image": "Backbone of great house, underestimated and essential",
+      "recreation": "Teaching daughters household management, rare moments of stillness",
+      "dreams": "Eldest daughter marries above station, family rises",
+      "anecdotes": [],
+      "tragedies": [],
+      "pc_leverage": "Respect for her position, help her children, recognize her competence"
+    },
+    "dren": {
+      "moniker": "",
+      "home": "Caelrun",
+      "home_settlement": "caelrun",
+      "gender": "male",
+      "faction": "Debt-bound to House Norvak",
+      "appearance": "Young, bitter, stained from fish oil rendering, thin from hard work",
+      "and_yet": "",
+      "wants": "Freedom from debt, revenge on Norvak, escape from Caelrun",
+      "does_not_want": "Seven more years of service, condescension, being reminded of debt",
+      "oddly_also": "",
+      "thinks_with": "Resentment, counting days, escape planning",
+      "family": "Father took debt, died, debt passed to son, siblings scattered",
+      "self_image": "Prisoner, victim of unjust system",
+      "recreation": "Drinking stolen wine, fantasizing about burning oil pits",
+      "dreams": "Flee to Velgroth, never see fish again, Norvak suffers somehow",
+      "anecdotes": [],
+      "tragedies": [],
+      "pc_leverage": "Help reduce debt, offer escape route, validate his anger, employment after freedom"
+    },
+    "kessa_the_leech_wife": {
+      "moniker": "The Leech-Wife",
+      "home": "Caelrun (marsh edge)",
+      "home_settlement": "caelrun",
+      "gender": "female",
+      "faction": "No ties, fringe dweller",
+      "appearance": "Stained fingers, knows medicinal herbs, lives alone on marsh edge",
+      "and_yet": "",
+      "wants": "Left alone, herbs to grow wild, occasional trade for necessities",
+      "does_not_want": "Village interference, questions about what she sees, herb-gathering competition",
+      "oddly_also": "",
+      "thinks_with": "Marsh rhythms, medicinal properties, survival",
+      "family": "No ties, may have fled something in past",
+      "self_image": "Useful outcast, too valuable to exile, too strange to integrate",
+      "recreation": "Observing marsh life, talking to leeches",
+      "dreams": "Die in marsh, body returned to water and mud",
+      "anecdotes": [],
+      "tragedies": [],
+      "pc_leverage": "Respect her knowledge, trade fairly, don't pry into past, leave her alone mostly"
+    },
+    "varren_muddfoot": {
+      "moniker": "Muddfoot",
+      "home": "Caelrun (stilted shack)",
+      "home_settlement": "caelrun",
+      "gender": "male",
+      "faction": "Disowned Bresul cousin, Aurka informant",
+      "appearance": "Nervous energy, lives in stilted shack, stinks of frog and marsh",
+      "and_yet": "",
+      "wants": "Aurka payment, information to trade, respect from family (won't admit this)",
+      "does_not_want": "Family reconciliation attempts, being forced to choose sides, caught informing",
+      "oddly_also": "",
+      "thinks_with": "Information as currency, survival at margins, opportunism",
+      "family": "Distant Bresul cousin, disowned for theft (claims he was framed)",
+      "self_image": "Survivor, wronged but unbowed, eventually they'll see",
+      "recreation": "Spying on ruins, catching frogs, trading rumors",
+      "dreams": "Aurka find something valuable, he gets cut, family begs forgiveness he'll deny",
+      "anecdotes": [],
+      "tragedies": [],
+      "pc_leverage": "Information trade, gold, Aurka connections, don't threaten his operation"
+    }
+  },
+  "adventure_sites": {
+    "submerged_temple_garden_enki_ki": {
+      "name": "The Submerged Temple-Garden of Enki and Ki",
+      "type": [
+        "underwater",
+        "ruins",
+        "sacred_site"
+      ],
+      "location": "Northern depths of Caelrun lake, 40-60 feet below surface",
+      "access_difficulty": "extreme",
+      "recommended_level": "3-5",
+      "estimated_sessions_min": 2,
+      "estimated_sessions_max": 4,
+      "overview": {
+        "what_it_is": "Massive pre-Silence temple complex with two wings: Enki's Archive (stone halls, bronze scrolls, agricultural/medical texts) and Ki's Vault (ceramic seed storage with preservation enchantments still active). Flooded terraces where enchanted plants still grow underwater, twisted and strange.",
+        "why_it_exists": "Built as combined library and seed bank - knowledge preservation and agricultural insurance for civilization. Dedicated to Enki (god of water, wisdom, civilization) and Ki (earth mother, fertility).",
+        "current_state": "Submerged, partially collapsed, overtaken by mutated magical plant growth. Preservation enchantments failing but still functional in places. Something still moves in the halls.",
+        "historical_context": "300 years underwater since the Silence. Lizard-men know of it, permit limited human exploration as part of Caelrun compact. Aurka have been diving it for years with mixed success."
+      },
+      "access_challenges": {
+        "physical": [
+          "40-60 foot depth - fatal for normal diving",
+          "Cold thermocline",
+          "Poor visibility (silt clouds)",
+          "Tangled plant growth",
+          "Collapsing stone structures"
+        ],
+        "magical": [
+          "Failing preservation enchantments create unpredictable effects",
+          "Spore-releasing plants cause visions/madness",
+          "Memory silt releases psychic echoes of the Silence",
+          "Some plants animated by degrading magic"
+        ],
+        "political": [
+          "Northern waters deeper into lizard-man territory",
+          "Full exploitation crosses unstated compact line",
+          "Rival Aurka groups competing for finds",
+          "Village won't support major expeditions (compact violation)"
+        ],
+        "environmental": [
+          "Warmest water late summer only",
+          "Visibility best in summer",
+          "Night diving nearly impossible",
+          "Storms churn silt, make diving impossible for days"
+        ],
+        "temporal": "Aurka report activity increasing - brighter glow, more movement, fish avoiding area. Something may be waking."
+      },
+      "known_dangers": {
+        "creatures": [
+          "The Pale Carp - albino fish, too many teeth, swarm wounded divers",
+          "Something that moves through halls with purpose",
+          "Voices underwater speaking Old Tongue",
+          "Possible undead/transformed temple servants"
+        ],
+        "traps": [
+          "None intentional",
+          "Ancient mechanisms may trigger unexpectedly"
+        ],
+        "environmental_hazards": [
+          "Drowning (depth, cold, pressure)",
+          "Silt clouds (zero visibility)",
+          "Structural collapse",
+          "Plant entanglement",
+          "Hypothermia"
+        ],
+        "magical_hazards": [
+          "Lotus-Breath Kelp - spore release causes euphoric visions, divers forget to surface",
+          "Bone-Root Vines - animated, grab divers",
+          "Memory Silt - psychic echoes of the Silence when disturbed",
+          "Black vines (unknown effect, Aurka refuse to discuss)",
+          "Transformation - one diver came up changed, speaks only in agricultural metaphors"
+        ],
+        "unknown_threats": [
+          "Western wing - Aurka stopped diving there, won't explain why",
+          "Lights that move with purpose",
+          "Bodies never recovered from certain sections",
+          "The green-blue glow on moonless nights"
+        ]
+      },
+      "rewards": {
+        "treasure": [
+          "Bronze scroll cases (waterproof, sealed)",
+          "Worked bronze tools and ceremonial items",
+          "Precious metal star charts",
+          "Gold/silver ritual implements"
+        ],
+        "knowledge": [
+          "Pre-Silence agricultural treatises",
+          "Irrigation calculations and water management",
+          "Medical texts",
+          "Old Tongue inscriptions",
+          "Information about what caused the Silence (possibly)"
+        ],
+        "magical_items": [
+          "Ceramic seed jars with active preservation enchantments",
+          "Extinct crop seeds (blight-resistant grain, year-round fruit trees, lost medicinal plants)",
+          "Magical plant specimens (dangerous but valuable)",
+          "Possibly functioning Old God ritual components"
+        ],
+        "strategic_value": [
+          "Agricultural revolution potential",
+          "Monopoly on lost crops",
+          "Knowledge valuable to Orziben alchemists, Imazuran botanists, noble houses",
+          "Understanding of Old God magic systems"
+        ],
+        "reputation_gains": [
+          "Aurka contacts and reputation",
+          "Recognition from scholars/Ilmenor",
+          "Caelrun village respect (if compact honored)",
+          "Potential lizard-men goodwill (if respectful)"
+        ]
+      },
+      "factions_interested": {
+        "aurka": {
+          "interest_level": "actively_pursuing",
+          "goals": "Recover seed vault contents, sell texts to highest bidders, establish controlled access",
+          "resources_committed": "Multiple diving expeditions, Varren Muddfoot as local recruiter, mapping efforts",
+          "knowledge_level": "High - have mapped portions, know dangers, found seed jar, keeping vault location secret"
+        },
+        "lizard_men": {
+          "interest_level": "aware",
+          "goals": "Maintain territorial control, enforce compact limits, watch human foolishness",
+          "resources_committed": "Passive observation, will not rescue failed divers",
+          "knowledge_level": "Complete - navigate ruins easily, know what's dangerous, find human obsession with 'plant-jars and scratched stones' amusing"
+        },
+        "ilmenor": {
+          "interest_level": "investigating",
+          "goals": "Recover pre-Silence arcane texts, study failing enchantments, control dangerous knowledge",
+          "resources_committed": "Agents may buy Aurka finds, no direct expeditions yet",
+          "knowledge_level": "Low - know ruins exist, suspect Old God magic present, want access to texts"
+        },
+        "caelrun_village": {
+          "interest_level": "aware",
+          "goals": "Maintain compact, benefit from Aurka spending, avoid angering lizard-men",
+          "resources_committed": "None - actively discourage major expeditions",
+          "knowledge_level": "Medium - elders (Brecht, Sarith, Ordun) know compact details, general population knows 'dangerous old temple, people die, not our business'"
+        }
+      },
+      "local_knowledge": {
+        "common_rumors": [
+          "Old temple in deep north water, very dangerous",
+          "Aurka dive it for relics, several have died",
+          "Don't fish directly over ruins (bad luck, plants tangle nets)",
+          "Don't night-fish northern waters",
+          "If you see green glow, row away",
+          "Fisher decades ago opened a jar, planted seeds - whole family died of fever"
+        ],
+        "specialist_knowledge": {
+          "varren_muddfoot": {
+            "cost_to_acquire": "Few silver, drinks, or information trade",
+            "accuracy": "Partial - secondhand from Aurka",
+            "information": [
+              "Temple is there, Aurka diving it",
+              "Very dangerous, several dead",
+              "Something down there still works (the glow)",
+              "Aurka found something big recently"
+            ]
+          },
+          "actual_aurka_diver": {
+            "cost_to_acquire": "Expensive (50+ gp) or significant favor, rare access",
+            "accuracy": "High - firsthand experience",
+            "information": [
+              "Depth estimates (40-60 feet)",
+              "Which sections collapse easily",
+              "Where plants are thickest",
+              "Best diving: late summer, warmest water, best visibility",
+              "Never dive alone, never at night, never touch black vines",
+              "Spore madness symptoms and treatment"
+            ]
+          },
+          "sarith_the_scarred": {
+            "cost_to_acquire": "Trust, Elunad connection, or proving competence",
+            "accuracy": "Perfect - knows compact details",
+            "information": [
+              "Lizard-men permit limited exploration only",
+              "Major expedition would violate compact",
+              "Deaths are expected, no rescue",
+              "Village won't support full exploitation",
+              "Historical context of ruins"
+            ]
+          }
+        },
+        "forbidden_knowledge": [
+          "What Aurka saw in western wing (won't sell at any price)",
+          "What happened to transformed diver",
+          "Exact seed vault location (Aurka keeping secret)",
+          "What the voices underwater say",
+          "Why bodies aren't recovered from certain sections"
+        ]
+      },
+      "entry_requirements": {
+        "mandatory": [
+          "Water breathing (potion, spell, magic item) - 40-60 feet for extended time",
+          "Light source functional underwater",
+          "Rope, anchors, basic diving equipment"
+        ],
+        "highly_recommended": [
+          "Cold resistance or protection",
+          "Cure disease/poison (for spores)",
+          "Freedom of movement or similar (plant entanglement)",
+          "Multiple party members (never dive alone)",
+          "Navigation method (easy to get lost in silt)",
+          "Communication method underwater"
+        ],
+        "useful": [
+          "Read Languages or Old Tongue knowledge",
+          "Identify magic",
+          "Dispel magic",
+          "Healing magic/potions",
+          "Darkvision",
+          "Local guide (Aurka)",
+          "Lizard-man goodwill (won't help but won't hinder)"
+        ]
+      },
+      "key_locations": {
+        "entrance_colonnade": {
+          "name": "The Entrance Colonnade",
+          "description": "Massive columns barely visible from surface. Four still standing, three collapsed. Wide steps descend deeper. Plant growth thickest here - kelp forests and vine tangles. Pale carp school nearby.",
+          "dangers": [
+            "Lotus-Breath Kelp concentrated",
+            "Bone-Root Vines",
+            "Pale Carp",
+            "Poor visibility"
+          ],
+          "treasures": [
+            "Bronze tools scattered on steps",
+            "Worked stone fragments"
+          ],
+          "connections": [
+            "Steps lead to Archive Hall (east) and Garden Terraces (west)"
+          ]
+        },
+        "archive_hall_enki": {
+          "name": "Enki's Archive Hall",
+          "description": "Long stone chamber, shelves carved into walls. Many bronze scroll cases remain, some sealed, some breached. Silt thick on floor. Eastern wall partially collapsed. Faint inscriptions in Old Tongue. Cold current flows through.",
+          "dangers": [
+            "Structural instability",
+            "Memory Silt (disturbing releases psychic echoes)",
+            "Zero visibility if silt disturbed",
+            "Something moves here at night"
+          ],
+          "treasures": [
+            "Bronze scroll cases (agricultural, medical, irrigation texts)",
+            "Stone tablets",
+            "Ritual bronze implements"
+          ],
+          "connections": [
+            "North to Reading Chambers",
+            "South to Ablution Pool",
+            "Collapsed passage east"
+          ]
+        },
+        "seed_vault_ki": {
+          "name": "Ki's Seed Vault",
+          "description": "Circular chamber, ceramic jars in wall niches (200+). Many shattered, some intact with glowing preservation runes. Center altar has growth diagram inscriptions. Western wall shows murals of gardens. Aurka have mapped this but keep location secret.",
+          "dangers": [
+            "Aurka guards/traps if they've secured it",
+            "Preservation enchantments failing unpredictably",
+            "Rival Aurka groups",
+            "Some jars contain dangerous specimens"
+          ],
+          "treasures": [
+            "Intact seed jars (worth fortunes)",
+            "Preservation enchantment research",
+            "Complete agricultural knowledge",
+            "Possibly magical plant seeds"
+          ],
+          "connections": [
+            "North to Garden Terraces",
+            "South to Offering Chamber"
+          ]
+        },
+        "garden_terraces": {
+          "name": "The Flooded Garden Terraces",
+          "description": "Stepped terraces, once open to sky, now deep underwater. Magical plants grow wild - some beautiful, some horrifying. Bioluminescent flowers, carnivorous vines, kelp that whispers. Original purpose: cultivate sacred plants. Current state: twisted magical ecosystem.",
+          "dangers": [
+            "Lotus-Breath Kelp heaviest concentration",
+            "Bone-Root Vines (most active)",
+            "Carnivorous plants",
+            "Spore clouds",
+            "Easy to get lost in growth"
+          ],
+          "treasures": [
+            "Living magical plant specimens",
+            "Seeds can be harvested (dangerous)",
+            "Ancient gardening tools (bronze, possibly magical)"
+          ],
+          "connections": [
+            "East to Seed Vault",
+            "South to Western Wing",
+            "North to surface (plant-choked)"
+          ]
+        },
+        "western_wing": {
+          "name": "The Western Wing (Unexplored)",
+          "description": "Aurka stopped diving here. Entrance visible but they won't approach. Green-blue glow strongest from this direction. Voices underwater seem to originate here. Architecture different - older? Disturbing carvings visible on entrance columns.",
+          "dangers": [
+            "UNKNOWN - Aurka won't discuss",
+            "Lights that move with purpose originate here",
+            "Bodies not recovered from this section",
+            "Changed diver was exploring here before transformation"
+          ],
+          "treasures": [
+            "UNKNOWN - possibly greatest treasures",
+            "Possibly answers about the Silence",
+            "Possibly something that should stay buried"
+          ],
+          "connections": [
+            "Unknown - Aurka mapping incomplete"
+          ]
+        }
+      },
+      "consequences": {
+        "success": [
+          "Seed jars recovered - agricultural revolution possible",
+          "Texts recovered - knowledge boom, Ilmenor interest",
+          "Aurka reputation gain - future cooperation",
+          "Potential ongoing revenue from controlled access",
+          "Understanding of Old God preservation magic",
+          "Caelrun elders grateful if compact honored"
+        ],
+        "partial_success": [
+          "Some treasures recovered, but party member transformed/cursed",
+          "Knowledge gained but rivals also got valuable intel",
+          "Structural damage causes sections to collapse permanently",
+          "Lizard-men annoyed by excessive disturbance",
+          "Awakened something in the Western Wing"
+        ],
+        "failure": [
+          "Party member(s) drowned, bodies not recovered",
+          "Madness from spores - permanent effects",
+          "Trapped in collapsed section",
+          "Transformed by temple magic",
+          "Lizard-men claim bodies/equipment",
+          "Village shrugs - 'another group tried the ruins'",
+          "Aurka blacklist party as incompetent"
+        ],
+        "discovery": [
+          "If Western Wing explored - major plot revelations possible",
+          "If preservation enchantments fully studied - arcane breakthrough",
+          "If all seed jars catalogued - complete pre-Silence botanical knowledge",
+          "If voices understood - possibly communication with Old God remnants/undead",
+          "If Memory Silt properly investigated - witness the Silence firsthand (dangerous)"
+        ]
+      },
+      "dm_notes": {
+        "design_intent": "Multi-session underwater dungeon crawl with resource management (air, light, time). Rewards exploration and preparation over brute force. Ties to setting cosmology (Old Gods, the Silence) while remaining accessible to mid-level party. Creates ongoing campaign resource (controlled access to ruins).",
+        "scaling_options": [
+          "Level 2-3: Entrance and Archive Hall only, Aurka-guided, simple recovery mission",
+          "Level 3-5: Full complex except Western Wing, competing with Aurka, multiple treasures",
+          "Level 5-7: Western Wing exploration, awakened guardians, cosmic horror elements",
+          "Adjust creature numbers, add/remove magical hazards, change Aurka from allies to rivals"
+        ],
+        "alternative_approaches": [
+          "Ally with Aurka - guided expedition, split rewards",
+          "Rival Aurka - race to seed vault, potential combat underwater",
+          "Negotiate lizard-men permission for major expedition (difficult, interesting RP)",
+          "Magical approach - water breathing + water walking for surface approach, teleportation",
+          "Research first - buy all available info, prepare perfectly, single efficient dive",
+          "Ignore diving - hire/coerce Aurka to retrieve specific items",
+          "Political - convince Caelrun elders to support, change compact terms"
+        ],
+        "integration_points": [
+          "Seeds recovered could become trade goods, political leverage",
+          "Texts could advance PC knowledge of Old Gods, foreshadow Corpse Planes",
+          "Changed diver could become recurring NPC - prophet/oracle/problem",
+          "Western Wing could connect to larger Old God plot",
+          "Lizard-men relationship established here affects future swamp adventures",
+          "Success attracts Ilmenor attention - recruitment or problems",
+          "Failure creates reputation consequences in Caelrun",
+          "Discovery in Memory Silt could reveal Silence details relevant to main plot"
+        ]
+      }
+    }
+  },
+  "items": {},
+  "plots": {}
+}
