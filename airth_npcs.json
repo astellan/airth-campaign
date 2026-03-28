@@ -1,4 +1,5 @@
 {
+  "$schema": "./airth_npcs.schema.json",
   "npcs": {
     "taziri_nkhaleb": {
       "moniker": "The Measure",
@@ -11,7 +12,7 @@
       "wants": "Profitable predictable routes, respect from both cultures, vengeance on lizard-men",
       "does_not_want": "Questions about husband's death, choosing factional sides, lizard-men mentioned as allies",
       "oddly_also": "Collects obscure road songs in journal, refuses water drawn south of the road",
-      "thinks_with": "Coin, probabilities, road-wisdom from Elunad husband",
+      "thinks_with": "money",
       "family": "Late husband Irven (Elunad, killed by lizard-men 8yr ago), son Khalid (24, leads return caravans), daughter Sarit (22, manages Orziben warehouses), son Davin (19, Ilmenor scribe apprentice), brother Azghar (teamster)",
       "self_image": "Bridge between Gallaecian and Imazuran, keeper of husband's legacy, protector of her caravan family",
       "recreation": "Singing road songs at crossroads, updating ledgers by candlelight, polishing husband's waystone marker",
@@ -46,7 +47,7 @@
       "wants": "The Bronze Host defeated; protection for Tagmira",
       "does_not_want": null,
       "oddly_also": null,
-      "thinks_with": "Her connection to fairie through the mirror",
+      "thinks_with": "magic",
       "family": "Orphan — no known family",
       "self_image": null,
       "recreation": null,
@@ -74,7 +75,7 @@
       "wants": "Truth about northern woods threat, village to take danger seriously, protect the younger herb-wives",
       "does_not_want": "Militia interference, fools dismissing her warnings, goblins harmed before she learns what they know",
       "oddly_also": "Heavy smoker (pipe, strong tobacco) despite it damaging her lungs\u2014considered unfeminine, she doesn't care",
-      "thinks_with": "Observation, herb-lore passed down generations, pattern recognition from decades of births and deaths",
+      "thinks_with": "lore",
       "family": "House Yebrin (distant cousin), 6 herb-wives under her guidance, no living children",
       "self_image": "Proud of her humility, quietly smug about being right when others are wrong",
       "recreation": "Smoking her pipe on the compound steps at dusk, watching village life",
