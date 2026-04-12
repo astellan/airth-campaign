@@ -90,6 +90,31 @@
         "Her mentor, Old Kessa, was killed by militiamen who thought she was consorting with fey (she was gathering moonlit herbs). Yaleth found the body. Durvin's father led that patrol\u2014she's never forgotten."
       ],
       "pc_leverage": "Bring her proof of northern woods threat, protect goblins from militia, share intelligence she can't gather herself, respect her knowledge"
+    },
+    "tazuln": {
+      "moniker": "the Seer",
+      "home": "A stone shelter north of Orziben, built into a hillside. Eleven small holes in the ceiling, deliberate.",
+      "home_settlement": "itinerant",
+      "gender": "male",
+      "faction": "Illusionists",
+      "appearance": "Age unclear. Milky eyes that move constantly. Clumsy. Hands covered in small scars.",
+      "and_yet": "Never loses anything. Always knows who is in the room before they speak.",
+      "wants": "A student who won't flinch at what the other worlds look like.",
+      "does_not_want": null,
+      "oddly_also": "Always working on a stew, and breaks bread with unseen beings.",
+      "thinks_with": "magic",
+      "family": "None known or claimed.",
+      "self_image": "Not blind. Everyone else is.",
+      "recreation": "Sitting very still, watching the worlds.",
+      "dreams": "To find a portal at one of the twenty vertices before he dies.",
+      "anecdotes": [
+        "Described the interior of a sealed Ilmenor vault in Imazuran in precise detail. He has never been inside it. The Ilmenor have not commented.",
+        "Walked off a roof once. Got up, dusted off, said 'that ledge is much lower in the fourth world.' Has not elaborated."
+      ],
+      "tragedies": [
+        "All his friends live in other worlds so he only gets to see them through a glass, darkly."
+      ],
+      "pc_leverage": "Will teach Chekkad that illusions are not fabrications but resonance — light and form bleeding through from adjacent worlds."
     }
   }
 }
