@@ -119,6 +119,31 @@
         "Davanek — killed two years ago in the third collapse. Ossek still refers to him in the present tense occasionally, catching himself with a small cough. He has not noticed the pattern, or does not consider it relevant."
       ],
       "pc_leverage": "Needs Zardun's hands, eyes, and feet — traps, locks, moving quietly when something turns out to be home. Offers: tomb layout knowledge, inscription reading, Aurka contacts, and the judgment to abort before it goes wrong. Will not hesitate to run; is not ashamed of this. Will mention Nevret, Bressul, and Davanek with unsettling frequency in contexts that make Zardun wonder whether they also thought the partnership sounded like a good idea."
+    },
+    "ossivan_carn": {
+      "moniker": null,
+      "home": "Velgroth — travels a circuit through the Marches, available for hire at feast days and disputes",
+      "home_settlement": "itinerant",
+      "gender": "male",
+      "faction": "lugus-lay-judiciary",
+      "appearance": "Well-dressed for the road. Clean hands. Writes everything down in a small bound ledger he keeps inside his coat.",
+      "and_yet": "Genuinely believes he is helping. Is not wrong often enough to be dismissed.",
+      "wants": "The record to be accurate. His reputation to precede him. Repeat business.",
+      "does_not_want": "People who won't accept a fair verdict.",
+      "oddly_also": "Excellent memory for names, debts, and slights — his own and others'.",
+      "thinks_with": "tradition",
+      "family": "Wife in Velgroth who manages his affairs there. Two daughters he mentions with precise, performative pride.",
+      "self_image": "The most impartial man in any room.",
+      "recreation": "Writing up cases. Corresponding with other lay-judges. Winning arguments he replays in his head.",
+      "dreams": "A permanent seat in Velgroth's civic court. Recognition that the Marches need proper law.",
+      "anecdotes": [
+        "Once arbitrated a land dispute between two families who had been feuding for thirty years. Both left furious. Both complied. He considers this a success.",
+        "Was run out of a village near Lucernia after a verdict went badly wrong — he maintains the verdict was correct, the village was wrong to ignore it."
+      ],
+      "tragedies": [
+        "The verdict near Lucernia. He doesn't discuss details. He has discussed the principle at length."
+      ],
+      "pc_leverage": "He can be hired, cited, or invoked — Lugus's law is neutral, and Ossivan follows it. He can also be pointed at enemies. The problem is he cannot be controlled once engaged, and he keeps notes on everyone."
     }
   }
 }
