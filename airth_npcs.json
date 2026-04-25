@@ -92,6 +92,58 @@
       ],
       "pc_leverage": "Bring her proof of northern woods threat, protect goblins from militia, share intelligence she can't gather herself, respect her knowledge"
     },
+    "ossek_thrice_buried": {
+      "moniker": "Thrice-Buried",
+      "home": "Itinerant; uses a back room in a Caelrun fishmonger's he does accounts for",
+      "home_settlement": "itinerant",
+      "gender": "male",
+      "faction": "aurka",
+      "appearance": "Small, back-injured and crooked, ink-stained scar-ridged fingers. Moves with the careful deliberation of bad knees. Always: an overfull satchel, paper rolls in his belt, lamp-oil smell. Pale eyes that are always reading something, even when looking at you.",
+      "and_yet": "Can walk past Ilmenor inquisitors, tomb guardians, and militia captains on nothing but confident tone and improvised credentials. People believe him immediately and regret it later.",
+      "wants": "To read Ameniseb's tomb inscriptions — believes his work on conditional immortality connects to deliberately suppressed pre-Silence arcane knowledge.",
+      "does_not_want": "To fight, climb, run, or share credit.",
+      "oddly_also": "Collects small ceramic animal figurines from ruins — not for value, just because he likes them. Dozens wrapped in cloth in his satchel.",
+      "thinks_with": "lore",
+      "family": "Two adult sons, Jevek and Danek, in Velgroth-Lucernia — they think he is dead, or wish he were. A niece in Caelrun who leaves food out for him.",
+      "self_image": "The most competent man in any given ruin. Physically diminished, intellectually unmatched. Has earned every scar.",
+      "recreation": "Annotating his own notes. Arguing with texts. Writing marginalia he will never send.",
+      "dreams": "To find something that rewrites accepted history of the Silence — not for glory, just to know.",
+      "anecdotes": [
+        "Convinced an Ilmenor inquisitor his grimoire was a recipe book by reading from it in a made-up dialect for four unbroken minutes.",
+        "Emerged from the second collapse after three days underground — dehydrated, one broken rib — still clutching his rubbing. 'The rubbing was worth it.' No one agrees.",
+        "Identified a sealed vault in Caelrun's lake ruins from waterlogged timber patterns during a drought — without entering the water. Sold the information before learning what was inside. Still annoyed."
+      ],
+      "tragedies": [
+        "Nevret — young Aurka, one season in, killed in the first collapse. Ossek got out. Keeps Nevret's iron stylus in his breast pocket; doesn't discuss it, except constantly, in passing, as though Nevret might walk in.",
+        "Bressul — steady, experienced, survived everything, killed in the second collapse. Ossek invokes him most when pointing out load-bearing features: 'Bressul always checked those first.'",
+        "Davanek — killed two years ago in the third collapse. Ossek still refers to him in the present tense occasionally, catching himself with a small cough. He has not noticed the pattern, or does not consider it relevant."
+      ],
+      "pc_leverage": "Needs Zardun's hands, eyes, and feet — traps, locks, moving quietly when something turns out to be home. Offers: tomb layout knowledge, inscription reading, Aurka contacts, and the judgment to abort before it goes wrong. Will not hesitate to run; is not ashamed of this. Will mention Nevret, Bressul, and Davanek with unsettling frequency in contexts that make Zardun wonder whether they also thought the partnership sounded like a good idea."
+    },
+    "ossivan_carn": {
+      "moniker": null,
+      "home": "Velgroth — travels a circuit through the Marches, available for hire at feast days and disputes",
+      "home_settlement": "itinerant",
+      "gender": "male",
+      "faction": "lugus-lay-judiciary",
+      "appearance": "Well-dressed for the road. Clean hands. Writes everything down in a small bound ledger he keeps inside his coat.",
+      "and_yet": "Genuinely believes he is helping. Is not wrong often enough to be dismissed.",
+      "wants": "The record to be accurate. His reputation to precede him. Repeat business.",
+      "does_not_want": "People who won't accept a fair verdict.",
+      "oddly_also": "Excellent memory for names, debts, and slights — his own and others'.",
+      "thinks_with": "tradition",
+      "family": "Wife in Velgroth who manages his affairs there. Two daughters he mentions with precise, performative pride.",
+      "self_image": "The most impartial man in any room.",
+      "recreation": "Writing up cases. Corresponding with other lay-judges. Winning arguments he replays in his head.",
+      "dreams": "A permanent seat in Velgroth's civic court. Recognition that the Marches need proper law.",
+      "anecdotes": [
+        "Once arbitrated a land dispute between two families who had been feuding for thirty years. Both left furious. Both complied. He considers this a success.",
+        "Was run out of a village near Lucernia after a verdict went badly wrong — he maintains the verdict was correct, the village was wrong to ignore it."
+      ],
+      "tragedies": [
+        "The verdict near Lucernia. He doesn't discuss details. He has discussed the principle at length."
+      ],
+      "pc_leverage": "He can be hired, cited, or invoked — Lugus's law is neutral, and Ossivan follows it. He can also be pointed at enemies. The problem is he cannot be controlled once engaged, and he keeps notes on everyone."
     "tazuln": {
       "moniker": "the Seer",
       "home": "A stone shelter north of Orziben, built into a hillside. Eleven small holes in the ceiling, deliberate.",
