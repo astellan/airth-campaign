@@ -595,6 +595,179 @@
       ],
       "location_at_session_end": "Tagmira",
       "dm_notes": ""
+    },
+    {
+      "session_number": 24,
+      "date": "",
+      "in_game_dates": "",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "quests_pending_or_deferred": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 25,
+      "date": "",
+      "in_game_dates": "",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "quests_pending_or_deferred": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 26,
+      "date": "",
+      "in_game_dates": "",
+      "locations": [],
+      "party_members_present": [],
+      "summary": "",
+      "encounters": {
+        "combat": [],
+        "social": [],
+        "exploration": []
+      },
+      "npcs_met": [],
+      "items_gained": [],
+      "items_lost": [],
+      "rumors_learned": [],
+      "quests_started": [],
+      "quests_completed": [],
+      "quests_pending_or_deferred": [],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [],
+      "location_at_session_end": "",
+      "dm_notes": ""
+    },
+    {
+      "session_number": 27,
+      "date": "2026-04-21",
+      "in_game_dates": "Ragaia 12-15",
+      "locations": [
+        "Nemetra",
+        "Caelrun",
+        "Decaying dock on the southwest shore of the lake south of Caelrun",
+        "Swamp path between Caelrun and Nebruz",
+        "Nebruz",
+        "Leeandra's hut (swamp southwest of Nebruz)"
+      ],
+      "party_members_present": [
+        "Izen (Zack)",
+        "Tafat (Zack)",
+        "Brigantios (Andre)",
+        "Trebastos (Andre)",
+        "Sardet (Chris)",
+        "Zardoon (Chris)",
+        "Chekkad (Hoi)",
+        "Strummer (Hoi)"
+      ],
+      "summary": "Party split their early time between Nemetra and Caelrun gathering intel on the gnoll threat to Nemetra. Mother Yaleth was the primary source on the Ember-Tongue and pack structure; Tikka was interrogated and confirmed details, including Skrix's tree-markings in the northern forest. The party considered a Skrix extraction but did not act on it. They pivoted instead to the underwater investigation of the lake north of Caelrun, which required water-breathing potions. Yaleth supplied upland herbs for the brew (and tobacco for trade) and pointed them at Leeandra. Yavra ferried them to a decaying dock on the lake's southwest shore; from there the party took the swamp path to Nebruz, detecting and avoiding will-o-wisps en route. After overnighting in Nebruz they continued southwest into the swamp to Leeandra. Leeandra accepted the herbs and agreed to brew the potions over four days, but tasked the party with retrieving the brain fluid of a giant constrictor snake for her ring-lore. Session ended with the party preparing to depart on the constrictor hunt while the brew set.",
+      "encounters": {
+        "combat": [],
+        "social": [
+          {
+            "description": "Mother Yaleth at the herb-wives' compound (Nemetra)",
+            "notes": "Extended interrogation about the Ember-Tongue, pack structure, and the Corrupted Grove. Yaleth supplies upland herbs for Leeandra's water-breathing brew and a parcel of tobacco — Yaleth is convinced tobacco will be profitable; Caelrun militia have already taken to it."
+          },
+          {
+            "description": "Captain Durvin (Nemetra militia)",
+            "notes": "Standard gnoll briefing; militia cannot field a deep scout. No commitments asked or given."
+          },
+          {
+            "description": "Tikka in the pig pens (Nemetra)",
+            "notes": "Goblin refugee, male. Confirms Skrix is alive and carving spiral-slash warnings into trees in the northern forest. Adds detail to the gnoll picture but does not break new ground."
+          },
+          {
+            "description": "Yavra (Caelrun)",
+            "notes": "Ferried the party to the decaying dock on the southwest shore of the lake south of Caelrun, putting them on the swamp path to Nebruz."
+          },
+          {
+            "description": "Leeandra (swamp southwest of Nebruz)",
+            "notes": "Lizard-man diplomat and ring-lore practitioner. Accepted the herbs, agreed to brew water-breathing potions over four days, and dispatched the party to retrieve the brain fluid of a giant constrictor snake for her work. Established as the keystone NPC holding the Luric marches together."
+          }
+        ],
+        "exploration": [
+          {
+            "description": "Caelrun → southwest-shore dock → swamp path → Nebruz",
+            "notes": "Will-o-wisps detected on the swamp path; party avoided them without engaging."
+          },
+          {
+            "description": "Overnight in Nebruz, then southwest through swamp to Leeandra's hut",
+            "notes": "Leeandra's home is some hours southwest of Nebruz through the swamp."
+          }
+        ]
+      },
+      "npcs_met": [
+        "Mother Yaleth (herb-wife, Nemetra)",
+        "Captain Durvin (House Zeren, Nemetra militia)",
+        "Tikka (goblin refugee, Nemetra pig pens)",
+        "Yavra (Caelrun)",
+        "Leeandra (lizard-man diplomat, swamp southwest of Nebruz)"
+      ],
+      "items_gained": [
+        "Upland herbs from Mother Yaleth (delivered to Leeandra as part of the water-breathing brew)",
+        "Parcel of tobacco from Mother Yaleth (commercial trial)"
+      ],
+      "items_lost": [
+        "Upland herbs (delivered to Leeandra)"
+      ],
+      "rumors_learned": [
+        "Skrix the goblin is alive and is carving spiral-slash warnings into trees in the northern forest",
+        "Tobacco is gaining traction with the Caelrun militia — Yaleth sees a trade opportunity",
+        "Leeandra is the diplomatic keystone keeping the lizard-man tribes from each other's throats and from Caelrun; the Luric marches depend on her"
+      ],
+      "quests_started": [
+        "Retrieve the brain fluid of a giant constrictor snake for Leeandra (in exchange for the water-breathing potions)",
+        "Underwater investigation of the lake north of Caelrun (latent, awaiting potions)"
+      ],
+      "quests_completed": [],
+      "quests_pending_or_deferred": [
+        "Disrupt or destroy the Gnoll Packs of the Ember-Tongue before they can move on Nemetra",
+        "Retrieve Skrix alive if possible"
+      ],
+      "xp_awarded": 0,
+      "deaths": [],
+      "significant_events": [
+        "Party established Mother Yaleth as primary gnoll-country source and Leeandra as primary lizard-man contact",
+        "Pivot from gnoll-scout to lake-dive expedition; gnoll arc deferred",
+        "First overland traverse of the Caelrun → Nebruz swamp route; will-o-wisp threat noted but avoided",
+        "Tobacco entered Caelrun militia culture — first commercial breadcrumb for a future trade angle",
+        "Leeandra agreed to brew water-breathing potions (4-day timer) and assigned the constrictor brain-fluid quest"
+      ],
+      "location_at_session_end": "Leeandra's hut, swamp southwest of Nebruz",
+      "dm_notes": "Most of the prepped gnoll-scout material (Nighthowl patrol encounter, Corrupted Grove vantage, sun-metal fragment, Kethraz's Ridge beat) rolls forward — bank for a later session when the party returns to the gnoll thread. Skrix extraction is hanging unresolved; party is interested but has not committed. Leeandra now load-bearing for two arcs: water-breathing potions (4-day brew clock) and the constrictor brain-fluid hunt (session 28 driver). Tobacco trial planted as a slow-burn commercial subplot. Yavra surfaced as a Caelrun NPC — needs a fuller record. Nebruz overnight not detailed yet; settlement notes pending."
     }
   ]
 }
