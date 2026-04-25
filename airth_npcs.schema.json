@@ -85,6 +85,7 @@
           "enum": [
             "blade",
             "devotion",
+            "diplomacy",
             "endurance",
             "faith",
             "fear",
@@ -97,7 +98,8 @@
             "persuasion",
             "pride",
             "tradition"
-          ]
+          ],
+          "$comment_pending": []
         },
         "family": { "type": "string" },
         "self_image": { "type": ["string", "null"] },
