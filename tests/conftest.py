@@ -35,3 +35,15 @@ def settlements():
 def npc_schema(schema):
     """The NPC definition block from the schema."""
     return schema["definitions"]["npc"]
+
+
+@pytest.fixture(scope="session")
+def items():
+    with open(ROOT / "airth_items.json") as f:
+        return json.load(f)["items"]
+
+
+@pytest.fixture(scope="session")
+def session_log():
+    with open(ROOT / "airth_session_log.json") as f:
+        return json.load(f)["session_log"]

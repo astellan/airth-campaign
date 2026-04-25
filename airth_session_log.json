@@ -108,6 +108,7 @@
     {
       "session_number": 5,
       "date": "2025-06-03",
+      "in_game_dates": "unknown",
       "locations": [
         "Bramblewood"
       ],
@@ -535,6 +536,7 @@
     {
       "session_number": 23,
       "date": "2026-03-17",
+      "in_game_dates": "unknown",
       "locations": [
         "Tagmira",
         "Lean-to west of the Bramblewood (NW of Tagmira)"
