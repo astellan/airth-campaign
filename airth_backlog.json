@@ -1,0 +1,102 @@
+{
+  "backlog": [
+    {
+      "id": "BL-01",
+      "category": "schema",
+      "description": "Review quest and adventure site definitions — confirm whether they need sharper separation or if current informal treatment is sufficient",
+      "status": "open",
+      "notes": "Currently quests appear inline in session logs and adventure sites have ad hoc stub files. May be fine as-is."
+    },
+    {
+      "id": "BL-02",
+      "category": "campaign_state",
+      "description": "Update airth_campaign_state.json: level-ups for Strummer (4), Chekkad (4), Sardet (5), Zardoon (5); add Izen and Tafat; fix _settlements_file pointer to settlements/",
+      "status": "open",
+      "notes": "All four level-ups are from session 26. Izen and Tafat are Zack's characters and have no entry at all."
+    },
+    {
+      "id": "BL-03",
+      "category": "npcs",
+      "description": "Add NPC record: Ossek Thrice-Buried",
+      "status": "open",
+      "notes": "Antiquarian, tomb-diver, Aurka contacts. Zardoon's recurring contact. Source doc: OSSEK THRICE-BURIED Google Doc (session 26)."
+    },
+    {
+      "id": "BL-04",
+      "category": "npcs",
+      "description": "Add NPC record: Tazuln 'the Seer'",
+      "status": "open",
+      "notes": "Illusionist hermit north of Orziben. Chekkad's trainer and ongoing mentor. Source doc: Chekkad's Training Google Doc (session 26)."
+    },
+    {
+      "id": "BL-05",
+      "category": "npcs",
+      "description": "Add NPC record: Ossivan Carn",
+      "status": "open",
+      "notes": "Traveling lay-judge of Lugus, Marches circuit, originally Velgroth. Recurring antagonist/neutral figure. Source doc: strummer_training.md and lugazil_tagmira.md."
+    },
+    {
+      "id": "BL-06",
+      "category": "npcs",
+      "description": "Add NPC record: Yavra (Caelrun)",
+      "status": "open",
+      "notes": "Ferryman/boatman in Caelrun. First appeared session 27. Minimal detail currently on record."
+    },
+    {
+      "id": "BL-07",
+      "category": "npcs",
+      "description": "Add NPC record: unnamed Ardanir examiner at Veltharoch",
+      "status": "open",
+      "notes": "Older man, scar along jaw. Administered Sardet's level 5 examination and issued the Debt of Living Souls commission. Stub-level record is fine for now."
+    },
+    {
+      "id": "BL-08",
+      "category": "data_integrity",
+      "description": "Resolve 'Pima' vs. 'Peema' — same NPC appears in airth_npcs.json and settlements/tagmira.json under different spellings",
+      "status": "open",
+      "notes": "Orphan girl with fairy mirror. Pick a spelling, remove the duplicate."
+    },
+    {
+      "id": "BL-09",
+      "category": "data_integrity",
+      "description": "Resolve 'Zardun' vs. 'Zardoon' — campaign state uses Zardun, session logs use Zardoon",
+      "status": "open",
+      "notes": "Standardize across all files once spelling is confirmed."
+    },
+    {
+      "id": "BL-10",
+      "category": "data_integrity",
+      "description": "Fix Leeandra's NPC record: thinks_with needs 'diplomacy', faction needs 'lizard-men'",
+      "status": "open",
+      "notes": "Record won't validate against airth_npcs.schema.json until these are corrected."
+    },
+    {
+      "id": "BL-11",
+      "category": "adventure_sites",
+      "description": "Develop tomb south of Dravesa — flesh out interior, jackalwere details, and inscription content before party returns",
+      "status": "open",
+      "notes": "Stub file exists at adventure_sites/tomb_south_of_dravesa.json. Ossek's interest is Ameniseb inscriptions and pre-Silence conditional immortality. Should tie to existing lore."
+    },
+    {
+      "id": "BL-12",
+      "category": "locations",
+      "description": "Add location record for Tazuln's shelter north of Orziben",
+      "status": "open",
+      "notes": "Hard to find — eleven holes in hillside ceiling, no path. Relevant to Chekkad's portal-hunting thread."
+    },
+    {
+      "id": "BL-13",
+      "category": "settlements",
+      "description": "Write Nebruz settlement notes",
+      "status": "open",
+      "notes": "Party overnighted there in session 27. Flagged in dm_notes as pending. Adapted from Gnatdamp in Gygax Magazine #1 — full text in Andrew's Google Doc."
+    },
+    {
+      "id": "BL-14",
+      "category": "lore",
+      "description": "Document twelve-world cosmology in airth_campaign_main.json or airth_taxonomy.json",
+      "status": "open",
+      "notes": "Established as canon in session 26 via Chekkad's training. 12 worlds, 20 portals at vertices of a truncated dodecahedron. Illusions are resonance from adjacent worlds."
+    }
+  ]
+}
