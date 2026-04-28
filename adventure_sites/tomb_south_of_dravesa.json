@@ -1,0 +1,91 @@
+{
+  "name": "Unplundered Tomb South of Dravesa",
+  "type": ["dungeon", "ruins"],
+  "status": "stub",
+  "status_note": "Interior unknown — not yet developed. Needs a full site file before the party returns.",
+  "location": "South of Dravesa, exact position unrecorded",
+  "region": "Jackalwere-infested area south of Dravesa",
+  "first_referenced": "Session 26",
+  "access_difficulty": "difficult",
+  "recommended_level": "",
+  "estimated_sessions_min": 0,
+  "estimated_sessions_max": 0,
+  "overview": {
+    "what_it_is": "A single unplundered tomb of unknown provenance south of Dravesa.",
+    "why_it_exists": "",
+    "current_state": "Unplundered at time of first visit (Session 26). Interior unexplored.",
+    "historical_context": "Ossek Thrice-Buried believes the inscriptions may connect to pre-Silence arcane knowledge on conditional immortality, possibly Ameniseb's work."
+  },
+  "access_challenges": {
+    "physical": [],
+    "magical": [],
+    "political": [],
+    "environmental": ["Jackalwere infestation in surrounding area — numbers and lair location unknown"],
+    "temporal": ""
+  },
+  "known_dangers": {
+    "creatures": ["Jackalweres (area infestation, perimeter threat — decide whether they have a nearby lair or are transient)"],
+    "traps": [],
+    "environmental_hazards": [],
+    "magical_hazards": [],
+    "unknown_threats": ["Tomb interior hazards unspecified"]
+  },
+  "rewards": {
+    "treasure": [],
+    "knowledge": ["Tomb inscriptions — Ossek believes they relate to pre-Silence conditional immortality, possibly Ameniseb's work"],
+    "magical_items": [],
+    "strategic_value": [],
+    "reputation_gains": ["Aurka network access through Ossek Thrice-Buried"]
+  },
+  "factions_interested": {
+    "ossek_thrice_buried": {
+      "interest_level": "obsessed",
+      "goals": "Full inscription rubbing — specifically wants to read and copy the tomb inscriptions at any cost",
+      "resources_committed": "Will recruit Zardoon; will risk his life and others' for the inscriptions",
+      "knowledge_level": "Identified the site and led Zardoon there; knows exterior layout; no interior knowledge"
+    }
+  },
+  "local_knowledge": {
+    "common_rumors": [],
+    "specialist_knowledge": {
+      "ossek_thrice_buried": {
+        "cost_to_acquire": "Zardoon's hands, eyes, and feet",
+        "accuracy": "High on exterior; none on interior",
+        "information": [
+          "Tomb location",
+          "Jackalwere infestation in the area",
+          "Belief that inscriptions connect to Ameniseb and pre-Silence conditional immortality"
+        ]
+      }
+    },
+    "forbidden_knowledge": []
+  },
+  "entry_requirements": {
+    "mandatory": [],
+    "highly_recommended": ["Deal with or avoid jackalwere perimeter"],
+    "useful": []
+  },
+  "key_locations": {},
+  "consequences": {
+    "success": [],
+    "partial_success": [],
+    "failure": [],
+    "discovery": []
+  },
+  "hooks": [
+    "Ossek wants to return for a full inscription rubbing — will recruit Zardoon",
+    "Pre-Silence conditional immortality angle may connect to larger campaign threads",
+    "Aurka network access through Ossek is a secondary reward"
+  ],
+  "key_npc": "Ossek Thrice-Buried (antiquarian, Aurka contacts — will push for inscriptions at the expense of everything else)",
+  "dm_notes": {
+    "design_intent": "Develop interior before the party returns. Ossek's three dead partners (Nevret, Bressul, Davanek) are a tone-setter — this site should feel genuinely dangerous.",
+    "scaling_options": [],
+    "alternative_approaches": [],
+    "integration_points": [
+      "Jackalwere infestation: decide whether they have a lair nearby or are transient — not just flavor, a real perimeter threat",
+      "Conditional immortality inscription content should tie to whatever pre-Silence lore is already canon",
+      "Ossek cannot be controlled and will get people killed pursuing a rubbing"
+    ]
+  }
+}

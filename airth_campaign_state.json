@@ -118,6 +118,7 @@
       }
     },
     "_settlements_file": "airth_settlements.json",
-    "_npcs_file": "airth_npcs.json"
+    "_npcs_file": "airth_npcs.json",
+    "_adventure_sites_dir": "adventure_sites/"
   }
 }
