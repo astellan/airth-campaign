@@ -350,27 +350,121 @@
         }
       },
       "lizard_men": {
-        "territorial_control": "Brutally enforce their writ in claimed territories",
-        "approach": "Harsh but attempt to be fair in their own way",
-        "human_settlements": "Caelrun exists by lizard-man sufferance (most residents unaware)",
-        "factions": "Multiple clans with different approaches",
-        "cruelest_faction": "Occasionally eats goblins",
-        "taboo": "Teaching their language to outsiders",
-        "resistance": {
+        "overview": "Apex predators and dominant species of the swamp. Rational, organized, and possessed of a sophisticated material culture. Human settlements exist in swamp territory by lizard-man sufferance, though most human residents are unaware of this. Lizard-men are not a faction — they are a population, with ideological tendencies operating across the whole.",
+        "ecology": {
+          "role": "Apex predator — hunt and eat other predators as well as lesser life forms",
+          "diet": [
+            "Eggs of all kinds (staple and prized)",
+            "Fish and eels (trapped in weirs)",
+            "Large insects and grubs",
+            "Freshwater crustaceans — crayfish, crabs",
+            "Snails and mollusks",
+            "Amphibians and salamanders",
+            "Fungi and shelf mushrooms",
+            "Aquatic tubers and roots",
+            "Algae (protein-dense swamp varieties)",
+            "Carrion — fresh-killed preferred, nothing wasted"
+          ],
+          "preferred_terrain": "Swamp and wetland. Capable of inhabiting bodies of water. Forests and plains are unpleasant; prolonged exposure to dry terrain is debilitating. Expansion into non-swamp biomes is currently impractical.",
+          "population": "High. The swamp, in places, is intensively managed to support lizard-man population density."
+        },
+        "agriculture": {
+          "character": "Alien in appearance to human eyes — what looks like wilderness is often managed land. Channels are not random. Log structures are not debris.",
+          "systems": [
+            {
+              "name": "Egg nurseries",
+              "description": "Controlled mud-heated incubation beds for reptile, amphibian, and bird eggs. Managed like orchards — seeded, tended, harvested."
+            },
+            {
+              "name": "Insect colonies",
+              "description": "Farmed in hollow logs and constructed mounds. Termites, beetles, and grubs at scale."
+            },
+            {
+              "name": "Fish ponds",
+              "description": "Channeled and weirèd sections of swamp managed for sustained yield."
+            },
+            {
+              "name": "Fungus cultivation",
+              "description": "Rotting wood structures seeded and harvested. Multiple species maintained."
+            },
+            {
+              "name": "Managed hunting grounds",
+              "description": "Sections of swamp where prey populations are deliberately maintained and culled rather than exhausted."
+            }
+          ]
+        },
+        "froggish_folk": {
+          "role": "Labor force. Live among lizard-men in a state of subjugation but not outright misery.",
+          "status": "Too simple to conceive of an alternative. Accept their condition without resentment.",
+          "material_conditions": "Relatively comfortable by their own standards. Lizard-man shamans provide magical services the froggish folk cannot generate themselves — a genuine exchange, if unequal.",
+          "labor_types": [
+            "Aquatic labor — harvesting weirs, clearing channels, retrieving submerged eggs",
+            "Messengers — fast, small, unnoticed in water and reed",
+            "Lookouts — station in shallows and reeds, can submerge for extended periods",
+            "Entertainers — communal chorus; lizard-men find it genuinely pleasurable"
+          ],
+          "free_froggish_folk": "A population of froggish folk live outside lizard-man settlements. They have freedom but no shamanic umbrella.",
+          "faction_attitudes": {
+            "clean_death": "Kind and fair toward froggish folk",
+            "restrained_hunger": "Cruel; occasionally eats them — rare but not unknown",
+            "long_work": "Largely indifferent; does not engage much"
+          }
+        },
+        "religion": {
+          "pantheon": "Semuyana",
+          "notes": "All lizard-men worship the same pantheon regardless of ideological faction. The ideological split is ethical, not religious — the Restrained Hunger cannot be cast out as heretics. They worship the same gods and merely interpret the license those gods grant differently.",
+          "shamanic_tradition": "Respected by all factions. Lizard-man shamans can cast spells; this is a point of distinction from the froggish folk and a source of cultural pride."
+        },
+        "diplomacy": {
+          "leeandra": {
+            "role": "Cross-faction diplomat. Stands outside all three ideological tendencies.",
+            "mission": "Maintain an uneasy peace between the three factions, and between lizard-men collectively and humanity.",
+            "status": "Trusted and resented in equal measure by all factions. Her neutrality is both her authority and her vulnerability.",
+            "significance": "Load-bearing for the stability of the Luric Marches. Her removal would be catastrophic."
+          },
+          "attitude_toward_diplomacy": "All three factions support Leeandra and the broader diplomatic project. They are rational beings who understand that internal conflict weakens them collectively."
+        },
+        "resistances": {
           "fey_glamours": true,
           "fey_manipulation": true,
           "fire_elemental_whispers": true,
           "fire_conspiracy_recruitment": true
         },
-        "needs_development": [
-          "Specific clan/faction names and territories",
-          "Leadership structures",
-          "Territory definition vs contested zones",
-          "Enforcement mechanisms",
-          "Why Caelrun allowed",
-          "Culture, religion, technology",
-          "Why resistant to fey/fire"
-        ]
+        "ideological_factions": {
+          "_note": "These are tendencies, not organizations. They are ideological — not territorial, not hereditary. Brothers and sisters may hold different views. All factions share the same pantheon, respect the shamanic tradition, and support lizard-man diplomatic solidarity.",
+          "the_clean_death": {
+            "name": "The Clean Death",
+            "alignment_role": "The Good",
+            "ethos": "Minimize suffering in the kill. Death is necessary; cruelty is not.",
+            "worldview": "Pluralist. See lizard-men as one people among many equals — alongside humans, elves, orcs, hobgoblins. Coexistence is not just strategic; it is correct.",
+            "attitude_toward_expansion": "Content within the swamp. Want stable, lasting relations with neighboring peoples.",
+            "attitude_toward_humanity": "Most open of the three factions. Genuine belief in mutual respect.",
+            "coalition_role": "Natural ally to Leeandra. The ideological anchor of any anti-Restrained Hunger coalition — but uncomfortable partnering with the Long Work, whose endgame contradicts Clean Death values."
+          },
+          "the_restrained_hunger": {
+            "name": "The Restrained Hunger",
+            "alignment_role": "The Bad",
+            "ethos": "The hunger for sentient humanoid flesh is real and present. They refrain — for now. They frame this restraint as discipline and virtue, not as shame.",
+            "worldview": "Inward-focused. The threat they pose is visceral and personal, not political or territorial.",
+            "attitude_toward_expansion": "Not expansionist. The danger they represent is not conquest but appetite.",
+            "attitude_toward_humanity": "Suppress a genuine desire to eat them. The restraint is real but fragile.",
+            "attitude_toward_froggish_folk": "Cruel. Occasionally eats them — rare, but it happens.",
+            "attitude_toward_goblins": "Will eat them if opportunity arises. Goblins are low-status enough that there are no consequences.",
+            "coalition_role": "The threat that forces the Clean Death and the Long Work into uneasy alliance despite their disagreements. Support lizard-man solidarity but are a powder keg within it."
+          },
+          "the_long_work": {
+            "name": "The Long Work",
+            "alignment_role": "The Ugly",
+            "ethos": "Humane killers, like the Clean Death. But where the Clean Death accept the current world, the Long Work intend to change it — slowly, over centuries.",
+            "worldview": "Expansionist. See territorial growth as an engineering problem: divert water, flood plains, convert biomes, make the Marches progressively less hospitable to human settlement. No urgency. No aggression. Just patient work.",
+            "attitude_toward_expansion": "The defining characteristic. Their agricultural sophistication is the engine of a centuries-long territorial ambition. They are not at war with humanity — they are redesigning the landscape.",
+            "attitude_toward_humanity": "Not hostile. Not peers either. Humanity will retreat as the swamp advances; this is simply how the world will go.",
+            "attitude_toward_froggish_folk": "Largely indifferent. Neither kind nor cruel.",
+            "coalition_role": "The necessary but uncomfortable partner in any alliance against the Restrained Hunger. The Clean Death must accept that the Long Work's endgame is the slow displacement of humanity — a genuine moral problem for the coalition, and a lever for the party once they understand it."
+          }
+        },
+        "taboo": "Teaching the lizard-man language to outsiders",
+        "human_settlements": "Caelrun exists by lizard-man sufferance. Most residents are unaware of this. Other human settlements in swamp territory operate under similar conditions."
       },
       "goblins": {
         "physical": {
