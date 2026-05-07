@@ -243,9 +243,62 @@
         "imazuran_confederation": {
           "name": "Imazuran Confederation",
           "culture": "Amazigh",
+          "population": 240000,
+          "territory_hexes": 14,
+          "territory_area_sq_miles": 23000,
           "location": "East of Luric Marches",
-          "relations": "Cultural exchange via shared pantheon",
-          "detail_level": "Less detailed in current docs"
+          "government": "Confederation of clan-kingdoms; each clan led by an Agellid; paramount Amghar elected by assembly for fixed term, non-consecutive",
+          "current_amghar": "Naravas (late 50s, mid-steppe clan; politically caught between border hawks demanding action to reclaim lost territories and cautious inland clans; publicly champions New Gods, privately maintains family bazina)",
+          "settlements": {
+            "altava": {
+              "type": "inland steppe",
+              "status": "Largest settlement; nearest to the assembly ground; closest thing to a political center without being a capital"
+            },
+            "madauros": {
+              "type": "highland",
+              "status": "Highland town; defensible; second most significant settlement"
+            },
+            "zarai": {
+              "type": "river crossing",
+              "status": "Market and waystation town on a reliable river crossing; trade hub"
+            }
+          },
+          "geography": {
+            "character": "Inland plateau and high plain, cut by seasonal rivers; dispersed population with wide open ground between settlements",
+            "western_frontier": "The Sebkha — dry salt flat belt separating Imazuran from the Luric Marches; hard to traverse but a road now runs through it (primary trade corridor west)",
+            "borders": "Humanoid-occupied or geographically forbidding on all sides; humanoids expanded from always-wild regions and now hold ancestral Imazuran lands"
+          },
+          "lost_territories": {
+            "thagaste": {
+              "direction": "North",
+              "status": "Humanoid-occupied but not destroyed; ancestral home of Tafat's clan; formally held as a grievance-claim by the Confederation assembly; some original population may remain",
+              "significance": "Tafat (PC) was displaced from here; her clan is now landless, living on confederation hospitality, with a recognized claim"
+            }
+          },
+          "horse_culture": {
+            "military": "Light cavalry; riders control horses with leg pressure and voice, no saddle or bridle; finest mobile fighters in the region",
+            "social": "Horses mark clan status; exchanged as bride-price and blood-price",
+            "funerary": "Horses buried with important dead or sacrificed at burial; horse breeding and training closely guarded knowledge"
+          },
+          "religion": {
+            "primary": "New Gods (shared pantheon with Velgroth-Lucernia); at least one Irkali site within Imazuran territory — faith has indigenous legitimacy, not a western import",
+            "ancestor_worship": "Fading tradition displaced by New Gods; bazinas (low stone tumuli) and haouanet (rock-cut cliff tombs) dot the landscape; elder clans still observe old rites quietly; disturbing burial sites remains a serious transgression"
+          },
+          "trade": {
+            "primary_route": "West through the Sebkha into the Luric Marches (dangerous, expensive, invaluable)",
+            "internal": "Pastoral and settled communities exchange hides, wool, cattle, horses, cheese for grain, pottery, metalwork",
+            "exports": "Horses (most prized); cattle; highland goods",
+            "constraints": "Effectively landlocked with hostile or forbidding borders on all sides; entirely dependent on the Sebkha road for outside trade"
+          },
+          "history": {
+            "pre_silence": "A prior Imazuran polity existed but its political structures were destroyed by the Silence and the Kindling War; clan and individual continuity survived but institutional memory did not",
+            "post_silence": "Confederation formed by surviving clan-leaders as a pragmatic response to humanoid expansion; a new political structure, not a restoration of the old",
+            "recent": "Humanoids pressing all borders; ancestral lands lost and remembered; Thagaste in the north occupied within living memory"
+          },
+          "relations": {
+            "velgroth_lucernia": "Cultural and diplomatic ties through shared pantheon; Ardanir order seeks to deepen unity between Gallaecian and Amazigh through shared faith",
+            "luric_marches": "Western neighbor; blurry frontier; the Sebkha road is the thread connecting them; Imazuran has permanent interest in Marches stability"
+          }
         },
         "luric_marches": {
           "name": "The Luric Marches",
