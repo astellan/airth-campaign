@@ -1,0 +1,234 @@
+{
+  "name": "Deep Swamp Encounter Table",
+  "die": "d10",
+  "region": "Swamp southwest of Nebruz — lizard-man territory",
+  "frequency": "Check every 4 hours of travel or when the party makes significant noise",
+  "encounters": [
+    {
+      "roll": 1,
+      "name": "Quicksand",
+      "type": "hazard",
+      "description": "One or more PCs stumble into a treacherous sucking bog. No warning — the surface looks like solid ground.",
+      "mechanics": {
+        "trigger": "Each PC makes a Luck check (d20, roll under Dexterity) or stumbles in",
+        "rescue": "Rope or handhold extended to victim; rescuer makes Strength check DC 12",
+        "retry": "Check may be attempted multiple times; three consecutive failures — victim slips under and drowns",
+        "osric_note": "Use standard OSRIC drowning rules once submerged"
+      }
+    },
+    {
+      "roll": 2,
+      "name": "Giant Leeches",
+      "type": "combat",
+      "description": "The party fords a fetid creek. Colossal leeches attach before the party realizes they are under attack.",
+      "number_appearing": "1d5",
+      "osric_stats": {
+        "hd": "3",
+        "hp_avg": 13,
+        "ac": 9,
+        "mv": "3\" (6\" swimming)",
+        "attacks": "1 bite",
+        "damage": "1d6 + blood drain",
+        "special": [
+          "Attaches on successful hit — thereafter drains 1d6 hp automatically each round",
+          "Salt or open flame causes immediate detachment",
+          "Forcing off by hand deals an additional 1d6 damage to the victim"
+        ],
+        "morale": 10,
+        "xp": "65 + 4/hp"
+      }
+    },
+    {
+      "roll": 3,
+      "name": "Insect Swarm",
+      "type": "combat",
+      "description": "A massive stinging swarm descends on the party, drawn by the scent of blood or an open wound. Fills a 3\" × 3\" area.",
+      "number_appearing": "1 swarm",
+      "osric_stats": {
+        "hd": "3 (for spell targeting purposes)",
+        "ac": "immune to normal weapons and non-area attacks",
+        "mv": "3\" flying",
+        "damage": "2 hp/round to all creatures within swarm area",
+        "special": [
+          "Immune to normal weapons, missiles, and single-target spells",
+          "Fire, smoke, or area-effect spells disperse",
+          "All attack rolls at -2 while inside the swarm",
+          "Swarm pursues for 1d4 rounds if party flees"
+        ],
+        "morale": "n/a (mindless)",
+        "xp": "175"
+      }
+    },
+    {
+      "roll": 4,
+      "name": "Alligator Ambush",
+      "type": "combat",
+      "description": "A group of giant alligators waits motionless below the surface of a stagnant pool. The party must pass the pool's edge.",
+      "number_appearing": "1d4",
+      "osric_stats": {
+        "hd": "7",
+        "hp_avg": 31,
+        "ac": 5,
+        "mv": "9\" // 15\" swimming",
+        "attacks": "1 bite",
+        "damage": "3d6",
+        "special": [
+          "Surprise on 1-4 on d6 when submerged — party must make active Intelligence check against stealth to detect",
+          "Natural attack roll of 18+ means victim is dragged underwater — OSRIC drowning rules apply",
+          "Withdraw from combat into water at will"
+        ],
+        "morale": 8,
+        "xp": "850 + 12/hp"
+      }
+    },
+    {
+      "roll": 5,
+      "name": "Giant Boa Constrictor",
+      "type": "combat",
+      "description": "A massive constrictor lies coiled in the canopy above a trail. It drops on or grabs a PC or mount as they pass beneath.",
+      "number_appearing": "1",
+      "osric_stats": {
+        "hd": "6+1",
+        "hp_avg": 28,
+        "ac": 5,
+        "mv": "9\"",
+        "attacks": "1 bite + constriction",
+        "damage": "1d4 (bite) + 2d4 (constriction)",
+        "special": [
+          "Once constriction hits, automatically deals 2d4 hp every round thereafter",
+          "Constricted victim cannot attack freely — -4 to all actions",
+          "Escape requires Strength check vs. snake's Strength (treat as 18) or snake must be killed",
+          "NOTE: This is the quest creature — Leeandra needs the brain fluid; killing it is the objective"
+        ],
+        "morale": 8,
+        "xp": "725 + 10/hp"
+      }
+    },
+    {
+      "roll": 6,
+      "name": "Will-o-Wisps",
+      "type": "combat/hazard",
+      "description": "Pale lights drift through the reed beds, dancing just ahead of the party — leading toward open water or quicksand if followed.",
+      "number_appearing": "1d3",
+      "osric_stats": {
+        "hd": "9",
+        "hp_avg": 40,
+        "ac": -8,
+        "mv": "18\"",
+        "attacks": "1 electrical shock",
+        "damage": "2d8",
+        "special": [
+          "Invisible at will — can vanish and reappear anywhere within 18\" in one round",
+          "Immune to all spells except magic missile and protection from evil",
+          "Struck only by +1 or better magical weapons",
+          "Primary tactic: lure party into hazardous terrain (quicksand, deep water, alligator pools) rather than direct combat"
+        ],
+        "morale": 10,
+        "xp": "3000 + 14/hp"
+      },
+      "dm_notes": "Will-o-wisps detected and avoided by the party in session 27 — they know this threat exists."
+    },
+    {
+      "roll": 7,
+      "name": "The Debate",
+      "type": "social",
+      "description": "Three lizard-men at rest — not hunting, not working. The party comes upon them mid-argument. These are not members of an organization; they simply hold different views.",
+      "number_appearing": "3",
+      "osric_stats": {
+        "hd": "2+1",
+        "hp_avg": 10,
+        "ac": 5,
+        "mv": "6\" // 12\" swimming",
+        "attacks": "2 claws + 1 bite, or by weapon",
+        "damage": "1d2 / 1d2 / 1d8, or by weapon",
+        "morale": 8,
+        "xp": "40 + 3/hp"
+      },
+      "factions_present": ["Clean Death", "Restrained Hunger", "Long Work (observer)"],
+      "without_comprehend_languages": "The party sees three lizard-men having what might be a dispute, a ritual, or nothing at all. Posture is tense but not aggressive. Interrupting clumsily risks violence.",
+      "with_comprehend_languages": "A Clean Death argues measured patience — Leeandra vouched for these humans, the constrictor hunt serves everyone, interference is foolish. The Restrained Hunger isn't really disagreeing on logic; it keeps circling back to the same point without quite saying it. The Long Work says almost nothing, watches the reeds. The debate is not about the party specifically — it is about what the party represents.",
+      "violence_trigger": "Aggressive movement, weapons drawn, or interrupting before the argument reaches its natural pause",
+      "dm_notes": "This encounter rewards the spell. Without it the party gets tension and uncertainty. With it they get their first real window into the ideological fault lines."
+    },
+    {
+      "roll": 8,
+      "name": "Restrained Hunger Patrol",
+      "type": "combat/social",
+      "description": "Two or three lizard-men block the path. Not attacking — but the air is wrong. They are still.",
+      "number_appearing": "2d4",
+      "osric_stats": {
+        "hd": "2+1",
+        "hp_avg": 10,
+        "ac": 5,
+        "mv": "6\" // 12\" swimming",
+        "attacks": "2 claws + 1 bite, or by weapon",
+        "damage": "1d2 / 1d2 / 1d8, or by weapon",
+        "morale": 9,
+        "xp": "40 + 3/hp"
+      },
+      "without_comprehend_languages": "Three lizard-men in the path. They do not move. Their intent is unreadable.",
+      "with_comprehend_languages": "Active internal debate: one voice saying not here, not Leeandra's errand. Another quieter, hungrier. The party has a window — name-drop Leeandra, show force, or back away slowly. Standing still while doing nothing lets the debate resolve badly.",
+      "resolution_options": [
+        "Name Leeandra — immediate tension drop, they step aside",
+        "Show force without aggression (weapons visible, no advance) — standoff, then they withdraw",
+        "Back away slowly — they let the party go, follow at distance for 1d4 turns",
+        "Advance or show aggression — combat"
+      ],
+      "violence_trigger": "Advancing without acknowledgment, any aggressive action, or waiting too long without a response",
+      "dm_notes": "Morale 9 reflects the internal tension — they want to fight but the restraint is real. If Leeandra is named they will not attack; she carries authority across all factions."
+    },
+    {
+      "roll": 9,
+      "name": "Long Work Engineers",
+      "type": "social/exploration",
+      "description": "A work crew of four to six lizard-men doing something strange — redirecting a creek, tending an egg nursery the size of a barn, or maintaining fish weirs. They ignore the party entirely.",
+      "number_appearing": "2d4",
+      "osric_stats": {
+        "hd": "2+1",
+        "hp_avg": 10,
+        "ac": 5,
+        "mv": "6\" // 12\" swimming",
+        "attacks": "2 claws + 1 bite, or by weapon",
+        "damage": "1d2 / 1d2 / 1d8, or by weapon",
+        "morale": 6,
+        "xp": "40 + 3/hp"
+      },
+      "without_comprehend_languages": "A crew of lizard-men working. The work is alien — channels too straight, berms too even, structures too deliberate. They do not acknowledge the party. Threatening them or interfering with the work will bring a response.",
+      "with_comprehend_languages": "Calm technical discussion. Water flow, load-bearing estimates, timelines measured in generations. One mentions a place name that might be Caelrun. Another describes a channel that will take forty years to complete. The work is entirely real and entirely unhurried.",
+      "violence_trigger": "Interfering with the work, threatening the crew, or sustained presence without moving on",
+      "dm_notes": "Morale 6 — they are not fighters by inclination and will withdraw if pressed, but interference with Long Work infrastructure will bring a larger response next encounter. The Caelrun reference is a slow-burn revelation the party may or may not register."
+    },
+    {
+      "roll": 10,
+      "name": "No Encounter — Landscape Beat",
+      "type": "exploration",
+      "description": "Roll d6 for which feature the party observes.",
+      "landscape_beats": [
+        {
+          "roll": 1,
+          "description": "A section of creek that bends at an angle no natural watercourse would take. The bank is shored up with packed clay and driven stakes. Old work. Settled."
+        },
+        {
+          "roll": 2,
+          "description": "A stand of dead trees hung with thousands of mud tubes — insect colonies the size of haystacks. A faint heat coming off them. Nothing moves, but something is alive inside."
+        },
+        {
+          "roll": 3,
+          "description": "Shallow pools separated by low berms, each thick with fish. The berms are too even. Someone built this and maintains it."
+        },
+        {
+          "roll": 4,
+          "description": "A clearing of churned mud, dimpled at regular intervals. Warm underfoot. Something is incubating below the surface. The party may not recognize it as a nursery."
+        },
+        {
+          "roll": 5,
+          "description": "A narrow channel running arrow-straight through the reed beds, disappearing into the mist in both directions. No obvious origin or end. Decades of work at minimum."
+        },
+        {
+          "roll": 6,
+          "description": "The remains of something very large, recently killed and mostly eaten. Clean work — little wasted. Something capable of taking down a creature this size lives nearby."
+        }
+      ]
+    }
+  ]
+}
