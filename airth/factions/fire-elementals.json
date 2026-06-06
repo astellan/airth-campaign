@@ -1,0 +1,89 @@
+{
+  "$schema": "../../schema/faction.schema.json",
+  "id": "fire-elementals",
+  "name": "The Fire Elementals",
+
+  "identity": {
+    "descriptors": ["ancient", "alien", "patient", "catastrophic"],
+    "symbol": "None. Their presence is felt as warmth from no source, fire that whispers, metal that never cools.",
+    "public_perception": "Not yet widely known as a faction. Encountered as isolated phenomena — a whispering flame, a too-warm relic, an Ogre Mage with unusual purpose. The full picture is a late-game revelation."
+  },
+
+  "goals": {
+    "primary": "Ignite the moon. This is an extinction-level event for life on Airth — whether they understand or care about that consequence is unclear.",
+    "secondary": [
+      "Extend influence through proxies: Ogre Magi as priest-intermediaries, humanoids armed with sun-metal.",
+      "Produce and distribute sun-metal as a ritual component and instrument of the endgame."
+    ],
+    "hidden_agenda": "The full scope of their plan — igniting the moon — is unknown to their proxies. The Covenant-Bound believe they are using fire elemental power to their own ends; they are not."
+  },
+
+  "philosophy": {
+    "summary": "Utterly alien. Their motivations, sense of time, and relationship to mortal life are not comprehensible in mortal terms. They are not evil in any human sense — they are forces with a goal. Decades means nothing to them. The plan is already in motion.",
+    "methods": [
+      "Whisper through flames — recruit and manipulate at a distance.",
+      "Use Ogre Magi as priest-proxies who work sun-metal and spread fire worship.",
+      "Arm humanoid factions with sun-metal without revealing its ultimate purpose.",
+      "Operate entirely through intermediaries — they are not yet present on Airth in force."
+    ],
+    "limits": []
+  },
+
+  "position": {
+    "territory": "The Sun, which is the Fire Plane — one and the same, vast beyond comprehension. On Airth: fire elemental sites are late-game locations, not yet in play.",
+    "power_level": "extraplanar",
+    "active_since": "Unknown. Their timeline is measured in decades at minimum; the plan has been in motion longer than anyone on Airth has been aware of it."
+  },
+
+  "relationships": {
+    "alliances": [
+      {
+        "faction_id": "ogre-magi",
+        "nature": "Ogre Magi serve as priests and sun-metal craftsmen. They were taught to work sun-metal by fire elementals. Whether they understand what they are serving is undeveloped."
+      },
+      {
+        "faction_id": "covenant-bound",
+        "nature": "The Covenant-Bound believe they are using fire elemental power for their own ends. They are wrong. The fire elementals are using them — the nature of that relationship needs development."
+      }
+    ],
+    "rivals": [
+      {
+        "faction_id": "gloaming-court",
+        "nature": "Potential opposition if the moon is connected to the Gloaming Court's power source. Undeveloped — this is a late-game question."
+      },
+      {
+        "faction_id": "lizard-men",
+        "nature": "Lizard-men are resistant to fire elemental whispers and cannot be recruited. This resistance is a notable feature of their species."
+      }
+    ],
+    "needs": [
+      "Proxies on Airth to do the physical work of the plan.",
+      "Sun-metal distributed into humanoid hands.",
+      "The moon reached — mechanism undeveloped."
+    ],
+    "provides": [
+      "Sun-metal — warm to touch, never cools, extremely durable, magical properties undeveloped.",
+      "Knowledge of sun-metal crafting to Ogre Magi and Covenant-Bound.",
+      "Power to those willing to worship fire."
+    ]
+  },
+
+  "nodes": {
+    "ogre-magi-cults": {
+      "name": "Ogre Magi Priest-Cults",
+      "type": "operations",
+      "role": "Ogre Magi recruited as priests craft sun-metal and spread fire worship. The primary operational arm of the fire elementals on Airth.",
+      "connections": ["sun-metal-distribution"],
+      "notes": "Hobgoblin legions are testing fire weapons — this is the downstream effect of Ogre Magi arming humanoid factions. Late-game threat tier."
+    },
+    "sun-metal-distribution": {
+      "name": "Sun-Metal Distribution Network",
+      "type": "operations",
+      "role": "Sun-metal flows from fire elemental sources through Ogre Magi and Covenant-Bound into humanoid hands. Its ultimate purpose — ritual component for igniting the moon — is unknown to most who handle it.",
+      "connections": ["ogre-magi-cults"],
+      "notes": "Sun-metal properties and crafting requirements need development. Why the Covenant-Bound can work it is an open question."
+    }
+  },
+
+  "dm_notes": "LATE GAME — introduce through rumors, distant signs, and a slow accumulation of sun-metal sightings before the full picture emerges. The Covenant-Bound are being used without knowing it; this is a lever for the party once they understand it. The Gloaming Court may oppose fire elementals if the moon is their power source — undeveloped but worth deciding before the late game arrives. Lizard-men's resistance to fire elemental whispers is a notable and unexplained species trait. Sun-metal needs a full properties decision before it becomes a significant plot element."
+}
