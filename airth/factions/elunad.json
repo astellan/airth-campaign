@@ -1,0 +1,102 @@
+{
+  "$schema": "../../schema/faction.schema.json",
+  "id": "elunad",
+  "name": "The Elunad",
+
+  "identity": {
+    "descriptors": ["watchful", "deliberate", "secretive", "quietly proud"],
+    "symbol": "A silver hoofprint beneath a crescent moon",
+    "public_perception": "Venerated as road-blessers, feared as spirit-guides, often misunderstood. Sought after as guides, but resented when they refuse to lead. True Elunad rarely declare themselves openly — false bearers of their tokens have brought tragedy, and the order is wary as a result."
+  },
+
+  "goals": {
+    "primary": "To connect and preserve roads and isolated enclaves — keeping the paths between what remains of civilization passable and protected.",
+    "secondary": [
+      "Reopen old roads and aid pilgrims on the five Irkali pilgrimage routes.",
+      "Interpret omens at crossroads and preserve fragments of pre-Silence travel magic.",
+      "Guard the five sacred sites where the new gods first emerged."
+    ],
+    "hidden_agenda": "Some Elunad believe they are charting the forgotten geometry of the gods — that the roads, fords, and shrines they maintain form a pattern, and they are preparing the way for something still unknown."
+  },
+
+  "philosophy": {
+    "summary": "The Elunad are heirs by bequest, not blood, to an ancient order of imperial emissaries and road-guardians. Their lineage traces through tokens, not families — each true Elunad carries a handcrafted object passed from mentor to student back to the Old Empire itself. Few remain. They carry the memory of an unbroken road.",
+    "methods": [
+      "Travel alone or in silent pairs — never in numbers.",
+      "Communicate through bells, path-marking sigils, and silent gestures.",
+      "Only draw steel when pilgrims or roads are directly threatened.",
+      "Authenticate identity through ancestral tokens — antler-wrapped stone, etched iron, silver knot — each bearing unmistakable markings of the order."
+    ],
+    "limits": [
+      "Never settle in cities.",
+      "Will not authenticate false token-bearers — the consequences have been too severe.",
+      "Rarely declare themselves openly."
+    ]
+  },
+
+  "position": {
+    "territory": "Roads, fords, mountain passes, and borderlands — never cities. The five Irkali pilgrimage routes are their primary responsibility.",
+    "power_level": "regional",
+    "active_since": "Founded when the first shrines to Isarna were raised along the ruined pilgrim roads after the Fall. Their practices preserve fragments of pre-Silence travel magic."
+  },
+
+  "relationships": {
+    "alliances": [
+      {
+        "faction_id": "serdanos",
+        "nature": "Occasional alignment around shared border-keeping. Neither answers to the other."
+      },
+      {
+        "faction_id": "isarnan-shrines",
+        "nature": "The Elunad guard Isarna's pilgrimage routes and waystone network. Isarnan clergy and dream-guides are among their most reliable contacts."
+      }
+    ],
+    "rivals": [
+      {
+        "faction_id": "humanoid-coalitions",
+        "nature": "Woodwoses, humanoids, and usurpers of roads are ongoing threats to the routes the Elunad protect."
+      },
+      {
+        "faction_id": "corrupt-toll-keepers",
+        "nature": "Those who exploit roads for private gain are a persistent enemy — not always violent, but always opposed."
+      }
+    ],
+    "needs": [
+      "Roads and fords left passable and uncontrolled.",
+      "Communities that venerate the pilgrimage routes and waystones.",
+      "Students willing to accept the token and the full weight of the lineage."
+    ],
+    "provides": [
+      "Safe passage and guidance across roads, fords, and borderlands.",
+      "Interpretation of omens and crossroads signs.",
+      "Maintenance of the five Irkali pilgrimage routes and their sacred sites.",
+      "Messengers and liaisons across isolated enclaves."
+    ]
+  },
+
+  "nodes": {
+    "pilgrimage-routes": {
+      "name": "The Five Irkali Routes",
+      "type": "operations",
+      "role": "The five sacred pilgrimage roads connecting the sites where the new gods first emerged after the Silence. Each is fraught with peril. The Elunad maintain and guard them.",
+      "connections": ["waystone-network"],
+      "notes": "These are the Elunad's primary operational responsibility. Their practices preserve fragments of pre-Silence travel magic used to keep the routes passable."
+    },
+    "waystone-network": {
+      "name": "Waystone Network",
+      "type": "support",
+      "role": "Shrines and waystones maintained along roads and at crossroads. Isarnan observance points. Provide structure for the Elunad's silent communication network.",
+      "connections": ["pilgrimage-routes"],
+      "notes": "The Waystone of Isarna west of Tagmira is one such node — Taziri Nkhaleb stops here for offering (bread, silver thread) on her caravan routes. Her late husband Irven was Elunad, killed by lizard-men 8 years ago."
+    },
+    "token-lineages": {
+      "name": "Token Lineages",
+      "type": "support",
+      "role": "The chain of mentorship through which the order perpetuates itself. Each token traces lineage to the Old Empire. False bearers have brought tragedy; authentication is serious business.",
+      "connections": ["pilgrimage-routes"],
+      "notes": "Many tokens have been lost. The order is smaller than it once was. No central registry exists — lineage is known only to those within it."
+    }
+  },
+
+  "dm_notes": "Taziri Nkhaleb's late husband Irven was Elunad — killed by lizard-men 8 years ago. This is a live connection to the faction for the party. The waystone west of Tagmira is a natural scene transition point. The hidden geometry thread — that the road network forms a divine pattern — is a long-term revelation available if the party engages deeply with the Elunad. The five Irkali sacred sites are each a potential adventure location. Matt G.'s ranger character is a member; his token lineage is undeveloped."
+}
