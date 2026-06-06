@@ -21,6 +21,28 @@
       }
     },
 
+    "node": {
+      "type": "object",
+      "required": ["name", "type"],
+      "additionalProperties": false,
+      "properties": {
+        "name":        { "$ref": "#/definitions/short_text", "minLength": 1 },
+        "type": {
+          "type": "string",
+          "enum": ["leadership", "operations", "support", "floating"]
+        },
+        "role":        { "$ref": "#/definitions/long_text" },
+        "goal":        { "$ref": "#/definitions/long_text" },
+        "connections": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+        },
+        "npcs":        { "type": "array", "items": { "type": "string", "pattern": "^[a-z0-9_]+$" } },
+        "location":    { "$ref": "#/definitions/short_text" },
+        "notes":       { "$ref": "#/definitions/long_text" }
+      }
+    },
+
     "faction": {
       "type": "object",
       "required": ["id", "name"],
@@ -89,6 +111,11 @@
           }
         },
 
+        "nodes": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/definitions/node" }
+        },
+
         "subfactions": {
           "type": "object",
           "additionalProperties": { "$ref": "#/definitions/faction" }
@@ -112,6 +139,7 @@
     "philosophy":   { "$ref": "#/definitions/faction/properties/philosophy" },
     "position":     { "$ref": "#/definitions/faction/properties/position" },
     "relationships":{ "$ref": "#/definitions/faction/properties/relationships" },
+    "nodes":        { "$ref": "#/definitions/faction/properties/nodes" },
     "subfactions":  { "$ref": "#/definitions/faction/properties/subfactions" },
     "projects":     { "$ref": "#/definitions/faction/properties/projects" },
     "dm_notes":     { "$ref": "#/definitions/faction/properties/dm_notes" }
