@@ -1,0 +1,88 @@
+{
+  "$schema": "../../schema/dungeon.schema.json",
+  "id": "tomb-south-of-dravesa",
+  "name": "Unplundered Tomb South of Dravesa",
+  "type": [
+    "tomb",
+    "ruin"
+  ],
+  "status": "stub",
+  "status_note": "Interior unknown — not yet developed. Needs a full site file before the party returns.",
+  "location": "South of Dravesa, exact position unrecorded",
+  "first_referenced": "Session 26",
+  "estimated_sessions": {
+    "min": 0,
+    "max": 0
+  },
+  "overview": {
+    "what_it_is": "A single unplundered tomb of unknown provenance south of Dravesa.",
+    "current_state": "Unplundered at time of first visit (Session 26). Interior unexplored.",
+    "historical_context": "Ossek Thrice-Buried believes the inscriptions may connect to pre-Silence arcane knowledge on conditional immortality, possibly Ameniseb's work."
+  },
+  "approach_vectors": [
+    {
+      "name": "Overland from Dravesa",
+      "description": "Travel south from Dravesa through jackalwere-infested territory to reach the tomb exterior.",
+      "notes": "Jackalwere infestation in surrounding area — numbers and lair location unknown. Deal with or avoid jackalwere perimeter before attempting entry."
+    }
+  ],
+  "factions": {
+    "ossek_thrice_buried": {
+      "name": "Ossek Thrice-Buried",
+      "world_ref": "ossek-thrice-buried",
+      "goal": "Full inscription rubbing — specifically wants to read and copy the tomb inscriptions at any cost. Will recruit Zardoon; will risk his life and others' for the inscriptions.",
+      "disposition_to_party": "friendly",
+      "notes": "Identified the site and led Zardoon there; knows exterior layout; no interior knowledge. Interest level: obsessed. Has Aurka network contacts."
+    }
+  },
+  "npcs": {
+    "ossek-thrice-buried": {
+      "name": "Ossek Thrice-Buried",
+      "world_ref": "ossek-thrice-buried",
+      "role_in_site": "Patron / antiquarian driving return visit",
+      "psychology": "Obsessed with inscription content; cannot be controlled and will get people killed pursuing a rubbing. Three dead partners (Nevret, Bressul, Davanek) are his track record.",
+      "reactions": {
+        "inscriptions_found": "Will demand full rubbing at any cost; disregards party safety.",
+        "denied_access": "Will push back hard and attempt to find another way in."
+      }
+    }
+  },
+  "lore": {
+    "specialist_knowledge": [
+      "Ossek knows: tomb location, jackalwere infestation in the area, belief that inscriptions connect to Ameniseb and pre-Silence conditional immortality. Cost to acquire: Zardoon's hands, eyes, and feet. Accuracy: high on exterior, none on interior."
+    ],
+    "rumors": []
+  },
+  "rewards": {
+    "treasure": [],
+    "magical_items": [],
+    "knowledge": [
+      "Tomb inscriptions — Ossek believes they relate to pre-Silence conditional immortality, possibly Ameniseb's work"
+    ],
+    "strategic_value": [
+      "Aurka network access through Ossek Thrice-Buried"
+    ]
+  },
+  "hooks": [
+    "Ossek wants to return for a full inscription rubbing — will recruit Zardoon.",
+    "Pre-Silence conditional immortality angle may connect to larger campaign threads.",
+    "Aurka network access through Ossek is a secondary reward."
+  ],
+  "campaign_integration": {
+    "related_npcs": [
+      "ossek-thrice-buried"
+    ],
+    "lore_threads": [
+      "Conditional immortality inscription content should tie to whatever pre-Silence lore is already canon."
+    ],
+    "session_first_referenced": "Session 26"
+  },
+  "dm_notes": {
+    "design_intent": "Develop interior before the party returns. Ossek's three dead partners (Nevret, Bressul, Davanek) are a tone-setter — this site should feel genuinely dangerous.",
+    "integration_points": [
+      "Jackalwere infestation: decide whether they have a lair nearby or are transient — not just flavor, a real perimeter threat.",
+      "Conditional immortality inscription content should tie to whatever pre-Silence lore is already canon.",
+      "Ossek cannot be controlled and will get people killed pursuing a rubbing."
+    ]
+  }
+}

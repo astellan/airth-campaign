@@ -1,5 +1,5 @@
 {
-  "$schema": "./schemas/session_log.schema.json",
+  "$schema": "../../schema/session.schema.json",
   "session_log": [
     {
       "session_number": 1,
@@ -553,7 +553,9 @@
       "encounters": {
         "combat": [
           {
-            "opponents": ["Troll"],
+            "opponents": [
+              "Troll"
+            ],
             "notes": "Troll had taken up residence in the lean-to; nearly killed Sardet"
           }
         ],

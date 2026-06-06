@@ -1,0 +1,178 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "session_log.schema.json",
+  "title": "Session Log",
+  "description": "Schema for a campaign session log",
+  "type": "object",
+  "required": [
+    "session_log"
+  ],
+  "additionalProperties": false,
+  "definitions": {
+    "short_text": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "long_text": {
+      "type": "string",
+      "maxLength": 2000
+    }
+  },
+  "properties": {
+    "session_log": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "session_number"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "session_number": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "date": {
+            "$ref": "#/definitions/short_text"
+          },
+          "in_game_dates": {
+            "$ref": "#/definitions/short_text"
+          },
+          "locations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/short_text"
+            }
+          },
+          "party_members_present": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/short_text"
+            }
+          },
+          "summary": {
+            "$ref": "#/definitions/long_text"
+          },
+          "encounters": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "combat": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "opponents": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/definitions/short_text"
+                      }
+                    },
+                    "notes": {
+                      "$ref": "#/definitions/long_text"
+                    }
+                  }
+                }
+              },
+              "social": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "description": {
+                      "$ref": "#/definitions/short_text"
+                    },
+                    "notes": {
+                      "$ref": "#/definitions/long_text"
+                    }
+                  }
+                }
+              },
+              "exploration": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "description": {
+                      "$ref": "#/definitions/short_text"
+                    },
+                    "notes": {
+                      "$ref": "#/definitions/long_text"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "npcs_met": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/short_text"
+            }
+          },
+          "items_gained": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/short_text"
+            }
+          },
+          "items_lost": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/short_text"
+            }
+          },
+          "rumors_learned": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/long_text"
+            }
+          },
+          "quests_started": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/long_text"
+            }
+          },
+          "quests_completed": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/long_text"
+            }
+          },
+          "quests_pending_or_deferred": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/long_text"
+            }
+          },
+          "xp_awarded": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "deaths": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/short_text"
+            }
+          },
+          "significant_events": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/long_text"
+            }
+          },
+          "location_at_session_end": {
+            "$ref": "#/definitions/short_text"
+          },
+          "dm_notes": {
+            "$ref": "#/definitions/long_text"
+          }
+        }
+      }
+    }
+  }
+}

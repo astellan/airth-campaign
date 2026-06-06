@@ -8,32 +8,39 @@ import pytest
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
+AIRTH = ROOT / "airth"
+SCHEMA = ROOT / "schema"
 
 
 @pytest.fixture(scope="session")
 def npcs():
     result = {}
-    for path in (ROOT / "npcs").glob("*.json"):
+    for path in (AIRTH / "npcs").glob("*.json"):
         result[path.stem] = json.loads(path.read_text())
     return result
 
 
 @pytest.fixture(scope="session")
 def schema():
-    with open(ROOT / "schemas" / "npcs.schema.json") as f:
+    with open(SCHEMA / "npc.schema.json") as f:
+        return json.load(f)
+
+
+@pytest.fixture(scope="session")
+def airth_npc_config():
+    with open(AIRTH / "config" / "npc.json") as f:
         return json.load(f)
 
 
 @pytest.fixture(scope="session")
 def settlements():
-    """Load all settlement files from the settlements/ directory."""
     result = {}
-    for path in (ROOT / "settlements").glob("*.json"):
+    for path in (AIRTH / "settlements").glob("*.json"):
         result[path.stem] = json.loads(path.read_text())
     return result
 
 
 @pytest.fixture(scope="session")
 def npc_schema(schema):
-    """The NPC definition block from the schema."""
+    """The NPC definition block from the generic schema."""
     return schema["definitions"]["npc"]

@@ -5,7 +5,7 @@ Each test checks one rule. Failures report exactly which NPC and field
 caused the problem.
 """
 
-ITINERANT = "itinerant"  # special value for NPCs with no fixed settlement
+ITINERANT = "itinerant"  # universal value for NPCs with no fixed settlement
 
 
 # ---------------------------------------------------------------------------
@@ -30,11 +30,11 @@ def test_required_fields_present(npcs):
 
 
 # ---------------------------------------------------------------------------
-# Enum: thinks_with
+# Enum: thinks_with (generic schema)
 # ---------------------------------------------------------------------------
 
 def test_thinks_with_is_valid_enum(npcs, npc_schema):
-    """thinks_with must be a value in the blessed enum list."""
+    """thinks_with must be a value in the schema enum list."""
     valid = set(npc_schema["properties"]["thinks_with"]["enum"])
     invalid = []
     for npc_key, npc in npcs.items():
@@ -45,17 +45,17 @@ def test_thinks_with_is_valid_enum(npcs, npc_schema):
 
 
 # ---------------------------------------------------------------------------
-# Enum: faction
+# Enum: faction (Airth config)
 # ---------------------------------------------------------------------------
 
-def test_faction_is_valid_enum(npcs, npc_schema):
-    """faction must be a value in the blessed enum list."""
-    valid = set(npc_schema["properties"]["faction"]["enum"])
+def test_faction_is_valid_enum(npcs, airth_npc_config):
+    """faction must be a value in the Airth faction list."""
+    valid = set(airth_npc_config["faction"]["enum"])
     invalid = []
     for npc_key, npc in npcs.items():
         value = npc.get("faction")
         if value and value not in valid:
-            invalid.append(f"{npc_key}: '{value}' not in faction enum")
+            invalid.append(f"{npc_key}: '{value}' not in Airth faction enum")
     assert not invalid, "\n".join(invalid)
 
 
@@ -64,12 +64,12 @@ def test_faction_is_valid_enum(npcs, npc_schema):
 # ---------------------------------------------------------------------------
 
 def test_home_settlement_references_exist(npcs, settlements):
-    """home_settlement must be a key in airth_settlements.json, or 'itinerant'."""
+    """home_settlement must be a key in airth/settlements/, or 'itinerant'."""
     invalid = []
     for npc_key, npc in npcs.items():
         value = npc.get("home_settlement")
         if value and value != ITINERANT and value not in settlements:
-            invalid.append(f"{npc_key}: '{value}' not found in airth_settlements.json")
+            invalid.append(f"{npc_key}: '{value}' not found in airth/settlements/")
     assert not invalid, "\n".join(invalid)
 
 

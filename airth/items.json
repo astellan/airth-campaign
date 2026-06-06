@@ -1,5 +1,5 @@
 {
-  "$schema": "./schemas/items.schema.json",
+  "$schema": "../../schema/item.schema.json",
   "items": {
     "crown_of_the_lean_to": {
       "name": "Crown (lean-to treasure)",

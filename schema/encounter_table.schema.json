@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "encounter_table.schema.json",
+  "title": "Encounter Table",
+  "description": "Schema for a random encounter table in a D&D campaign",
+  "type": "object",
+  "required": ["id", "name", "die", "table"],
+  "additionalProperties": false,
+
+  "definitions": {
+    "short_text": { "type": "string", "maxLength": 100 },
+    "long_text":  { "type": "string", "maxLength": 500 }
+  },
+
+  "properties": {
+    "id":          { "type": "string", "pattern": "^[a-z0-9-]+$", "minLength": 1 },
+    "name":        { "$ref": "#/definitions/short_text", "minLength": 1 },
+    "description": { "$ref": "#/definitions/long_text" },
+    "region_id":   { "type": "string", "pattern": "^[a-z0-9-]*$" },
+    "terrain":     { "$ref": "#/definitions/short_text" },
+    "frequency":   { "$ref": "#/definitions/short_text" },
+    "die":         { "$ref": "#/definitions/short_text", "minLength": 1 },
+    "table": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["roll", "encounter"],
+        "additionalProperties": false,
+        "properties": {
+          "roll":      { "type": "integer", "minimum": 1 },
+          "encounter": { "$ref": "#/definitions/long_text", "minLength": 1 },
+          "notes":     { "$ref": "#/definitions/long_text" }
+        }
+      }
+    }
+  }
+}
