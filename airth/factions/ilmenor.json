@@ -1,0 +1,124 @@
+{
+  "$schema": "../../schema/faction.schema.json",
+  "id": "ilmenor",
+  "name": "The Ilmenor",
+
+  "identity": {
+    "descriptors": ["cold", "methodical", "secretive", "exacting"],
+    "symbol": "An open eye within a seven-pointed star",
+    "public_perception": "Respected but feared. Seen as cold scholars or dangerous meddlers. Most magic-users in the world belong to this order; those outside it are viewed with deep suspicion — or open hostility."
+  },
+
+  "goals": {
+    "primary": "To preserve and control arcane knowledge — kept from unworthy hands and wielded only with solemn restraint.",
+    "secondary": [
+      "Recover lost grimoires and magical relics.",
+      "Dismantle rogue magical traditions.",
+      "Standardize arcane script and speech across Velgroth-Lucernia."
+    ],
+    "hidden_agenda": "Some among the Ilmenor seek to reforge the unified arcana of the fallen empire — gaining the confidence of kings to do so. Their 'language of truth' project is a vector for this."
+  },
+
+  "philosophy": {
+    "summary": "Arcane knowledge is sacred. Libraries are their holiest sites. The order was formed from survivors of the last arcane conclave before the Fall — they believe they are the only thing standing between the world and a second catastrophe. Members undergo years of isolation, testing, and arcane ordeal before being trusted with any real power.",
+    "methods": [
+      "Preserve arcane knowledge in isolated towers and hidden libraries.",
+      "Use cyphered writing, fire-signals, and locked spellbooks for communication.",
+      "Demand oaths before offering aid.",
+      "Hunt rogue spellcasters; keep Illusionists under cautious watch.",
+      "Brand initiates with a tattoo of an open eye on the inner wrist at induction."
+    ],
+    "limits": [
+      "Will not share arcane knowledge with the unvetted.",
+      "Will not tolerate rogue magic — but tolerate Illusionists so long as they avoid tampering with forbidden truths."
+    ]
+  },
+
+  "position": {
+    "territory": "Isolated towers, hidden libraries, and ruins of the Old Empire. Croton Hall serves as a meeting point with Lugus clerks for linguistic standardization across Velgroth-Lucernia.",
+    "power_level": "regional",
+    "active_since": "Formed from survivors of the last arcane conclave before the Fall."
+  },
+
+  "relationships": {
+    "alliances": [
+      {
+        "faction_id": "lugus-lay-judiciary",
+        "nature": "Meet at Croton Hall to standardize script and speech across Velgroth-Lucernia. A functional, if uneasy, working relationship."
+      },
+      {
+        "faction_id": "lawful-rulers",
+        "nature": "Aligned with certain kings and temple archivists who benefit from Ilmenor order and discretion."
+      }
+    ],
+    "rivals": [
+      {
+        "faction_id": "aurka",
+        "nature": "Suspicious of the Aurka enough to keep them close. The Aurka dig up things the Ilmenor want right of refusal over — grimoires, relics, dangerous fragments. Uneasy proximity rather than open war."
+      },
+      {
+        "faction_id": "illusionists",
+        "nature": "Tolerated as a separate tradition, not classed as rogue — but viewed as dangerous artists of unreality. Disputes arise when illusions disrupt Ilmenor workings or defy natural law."
+      },
+      {
+        "faction_id": "serdanos",
+        "nature": "The Serdanos distrust the Ilmenor's rigid arcane boundaries and manipulation of the hidden world. The feeling is mutual."
+      }
+    ],
+    "needs": [
+      "Isolated, defensible locations for towers and libraries.",
+      "Political cover from lawful rulers.",
+      "First refusal on arcane relics and grimoires recovered from ruins."
+    ],
+    "provides": [
+      "Arcane training and ordeal for magic-users.",
+      "Preservation of pre-Fall magical knowledge.",
+      "Inquisitors who track and suppress rogue spellcraft."
+    ]
+  },
+
+  "nodes": {
+    "sanctum-of-durranox": {
+      "name": "Sanctum of Durranox",
+      "type": "operations",
+      "role": "Cliffside Ilmenor observatory built atop an Irkali of Malac (god of fire and ordeal). Used for advanced training and testing. The basalt walls hum faintly with stored sunlight. The crystal Lens here focuses sunlight through ancient geometry below.",
+      "location": "Cliffside — precise location undisclosed",
+      "npcs": ["master_marnen_the_veiled"],
+      "connections": ["croton-hall"],
+      "notes": "Master Marnen the Veiled (MU 8) — blindfolded, calm, exacting. Runs the Lens alignment test. Scholars whisper he saw 'fire that thinks.' The Sun-Mote item originates here; connects to the fire elemental plot."
+    },
+    "croton-hall": {
+      "name": "Croton Hall",
+      "type": "operations",
+      "role": "Meeting point where Ilmenor scholars and clerks of Lugus standardize script and speech across Velgroth-Lucernia. Site of the Harmonium Tablets — a damaged clay tablet that rewrites itself between Gallic and Amazigh forms. A minor fey spirit of law and deceit was found altering the doctrine subtly.",
+      "location": "Croton",
+      "npcs": ["selva_of_nemetra"],
+      "connections": ["sanctum-of-durranox", "eld-varn-ruin"],
+      "notes": "The language unification project is a vector for the Ilmenor's hidden agenda. The Harmonium Tablets incident connects to the Pact-Render and Covenant-Bound — their doctrine may already be contaminated."
+    },
+    "eld-varn-ruin": {
+      "name": "The Eld-Varn Ruin",
+      "type": "operations",
+      "role": "Half-sunk temple once dedicated to Malac (god of ordeal and madness). Used for field testing of candidates — specifically clarity of thought and resistance to illusion. Memory globes left by past expeditions still float in the lower chambers.",
+      "location": "Unknown — near Nemetra",
+      "npcs": ["selva_of_nemetra"],
+      "connections": ["croton-hall"],
+      "notes": "The memory globes project illusionary replays of old experiments — including possible visions of the old gods dying and fire on the sun. Connects to dead gods lore and the fire elemental conspiracy."
+    },
+    "inquisitors": {
+      "name": "Ilmenor Inquisitors",
+      "type": "operations",
+      "role": "Field agents who track and suppress rogue spellcraft. Walk past obstacles on credentials and authority alone.",
+      "connections": ["sanctum-of-durranox"],
+      "notes": "Ossek Thrice-Buried walks past Ilmenor inquisitors on improvised credentials — they are present in the Luric Marches and aware of arcane activity in the region."
+    },
+    "scattered-libraries": {
+      "name": "Isolated Towers and Hidden Libraries",
+      "type": "support",
+      "role": "The backbone of the order's preservation mission. Scattered across the Old Empire's ruins. Most members are dedicated to transcription, preservation, and debate — not fieldwork.",
+      "connections": ["croton-hall", "sanctum-of-durranox"]
+    }
+  },
+
+  "dm_notes": "Vetranio (Phil) is an Ilmenor magic-user — his mentor Toudarcos sent him to investigate suspected spellcraft. Every arcane relic the party finds has Ilmenor interest attached. The Harmonium Tablets at Croton Hall may already be corrupted by the Covenant-Bound. The Eld-Varn memory globes contain glimpses of fire on the sun and 'they did not all die' — connects to both dead gods lore and the fire elemental conspiracy. Selva of Nemetra is a named Ilmenor figure in the Marches. The Sun-Mote item from Sanctum of Durranox reacts to fire elementals — a future hook."
+}
