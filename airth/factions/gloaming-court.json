@@ -1,0 +1,90 @@
+{
+  "$schema": "../../schema/faction.schema.json",
+  "id": "gloaming-court",
+  "name": "The Gloaming Court",
+
+  "identity": {
+    "descriptors": ["desperate", "melancholic", "dangerous", "reaching"],
+    "symbol": "None known. Associated with mirrors, twilight, and the boundary between sleep and waking.",
+    "public_perception": "Not publicly known as a faction. Encountered as a fairy girl in a mirror, a whisper at the edge of a dream, a child who says the trees talk and is not wrong."
+  },
+
+  "goals": {
+    "primary": "Collect and preserve memories of the lost human/faery connection — the relationship that existed before the Silence severed the two worlds.",
+    "secondary": [
+      "Reach mortal allies who can act in Airth where fey cannot.",
+      "Oppose whatever threatens the moon — their connection to it is undecided but real."
+    ],
+    "hidden_agenda": "Their desperation makes them dangerous. What they are willing to do to preserve what they are collecting — and what they want it for — is not yet established."
+  },
+
+  "philosophy": {
+    "summary": "The Gloaming Court does not wish humanity specific harm. They are not the Covenant-Bound. But they are not safe — their methods include emotion-harvesting, dream-teaching, and manipulation, and their need is real enough to drive them to reach through mirrors to orphan girls in frightened border towns. Aislith Who Wove the First Garland leads them; what she wants from the world is not fully known.",
+    "methods": [
+      "Emotion-harvesting — collecting the felt memory of human/fey connection.",
+      "Dream-teaching — communicating and influencing through dreams.",
+      "Manipulation of mortal proxies, knowingly or not.",
+      "Reaching through thin places — mirrors, twilight thresholds, veil-thin locations."
+    ],
+    "limits": [
+      "Not openly hostile to humanity.",
+      "Will not align with the Covenant-Bound — they are on opposite sides of fey politics."
+    ]
+  },
+
+  "position": {
+    "territory": "Faery — the thinning boundary between Faery and Airth. The moon may be a refuge, power source, or ancient memory repository for them; extent undecided.",
+    "power_level": "extraplanar",
+    "active_since": "Predates the current political situation. Their crisis began with the Silence and has been deepening since."
+  },
+
+  "relationships": {
+    "alliances": [
+      {
+        "faction_id": "pima",
+        "nature": "A fairy girl — identity unknown, relationship to Aislith unestablished — has reached through a magic mirror to Pima, an orphan girl in Tagmira. The nature and origin of the mirror is unknown. This is the Gloaming Court's live operational contact with the mortal world."
+      }
+    ],
+    "rivals": [
+      {
+        "faction_id": "covenant-bound",
+        "nature": "Opposite sides of the same fey politics. The Pact-Render and Aislith are likely not allies. The specific nature of their opposition is undeveloped."
+      },
+      {
+        "faction_id": "fire-elementals",
+        "nature": "If the moon is a Gloaming Court refuge or power source, the fire elemental plan to ignite it makes them existential enemies. This is undecided but load-bearing for the late game."
+      }
+    ],
+    "needs": [
+      "Mortal proxies who can act in Airth.",
+      "Preservation of the emotional and experiential memory of human/fey connection.",
+      "The moon — for reasons not yet established."
+    ],
+    "provides": [
+      "Information about fey politics and the Covenant-Bound that no mortal source has.",
+      "Dream-teaching and fey knowledge to those they choose to reach.",
+      "A potential ally against the fire elementals, if the moon connection is developed."
+    ]
+  },
+
+  "nodes": {
+    "aislith": {
+      "name": "Aislith Who Wove the First Garland",
+      "type": "leadership",
+      "role": "Leader of the Gloaming Court. Described to Pima by the fairy girl in the mirror. Her direct goals, capabilities, and relationship to the fairy girl are unestablished.",
+      "connections": ["mirror-contact"],
+      "notes": "The name is known; the person is not. Develop before any direct encounter."
+    },
+    "mirror-contact": {
+      "name": "The Mirror Contact",
+      "type": "operations",
+      "role": "A fairy girl of unknown identity communicates with Pima through a magic mirror in Tagmira. This is the Gloaming Court's only known active contact with the mortal world. The mirror's origin is unknown. The fairy girl's relationship to Aislith is unestablished.",
+      "location": "Tagmira",
+      "npcs": ["pima"],
+      "connections": ["aislith"],
+      "notes": "Trebastos has a relationship with Pima — a natural way to surface this thread when ready. Pima says the trees whisper at night and is correct about it. The Pact-Render fey and the Gloaming Court may be on opposite sides of the same fey politics — this mirror contact may be the party's window into that division."
+    }
+  },
+
+  "dm_notes": "NEUTRAL/AMBIGUOUS — not a threat, not a safe ally. The Gloaming Court is the most underdeveloped major faction and should be allowed to stay mysterious until the thread is ready. Key undecided questions that will shape the late game: (1) What is the Gloaming Court's connection to the moon? (2) What are they willing to do to protect it? (3) What do they actually want from mortal proxies — information, action, sacrifice? The mirror/Pima thread is the live hook. Do not force it — let it surface through Trebastos's relationship with her. The Pima vs. Peema spelling discrepancy (BL-08) should be resolved before this thread becomes significant."
+}
