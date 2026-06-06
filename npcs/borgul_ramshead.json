@@ -1,0 +1,20 @@
+{
+  "moniker": "Mother",
+  "home": "Mother's Boarding House, Nebruz",
+  "home_settlement": "nebruz",
+  "gender": "male",
+  "faction": "independent",
+  "appearance": "Human male; towering, heavyset, former slaver",
+  "and_yet": null,
+  "wants": "Full rooms and no trouble",
+  "does_not_want": "Adventurers in his house",
+  "oddly_also": null,
+  "thinks_with": "fists",
+  "family": "Not established",
+  "self_image": null,
+  "recreation": null,
+  "dreams": null,
+  "anecdotes": [],
+  "tragedies": [],
+  "pc_leverage": "He does not rent to adventurers; bribery or a strong reputation in Nebruz might change this"
+}

@@ -1,0 +1,482 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "dungeon_schema.json",
+  "title": "Dungeon",
+  "description": "Schema for a single dungeon site in the Airth campaign",
+  "type": "object",
+  "required": ["id", "name", "type", "status"],
+  "additionalProperties": false,
+
+  "definitions": {
+    "short_text": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "long_text": {
+      "type": "string",
+      "maxLength": 500
+    }
+  },
+
+  "properties": {
+
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[a-z0-9-]+$"
+    },
+
+    "name": { "$ref": "#/definitions/short_text", "minLength": 1 },
+
+    "type": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": ["tomb", "temple", "cave", "ruin", "tower", "stronghold", "underground_lair", "mine", "sewer", "extraplanar"]
+      }
+    },
+
+    "status": {
+      "type": "string",
+      "enum": ["stub", "in_development", "ready", "retired"]
+    },
+
+    "status_note":     { "$ref": "#/definitions/short_text" },
+    "location":        { "$ref": "#/definitions/short_text" },
+    "region_id":       { "type": "string", "pattern": "^[a-z0-9-]*$" },
+    "first_referenced":{ "$ref": "#/definitions/short_text" },
+
+    "character_levels": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "min": { "type": "integer", "minimum": 1, "maximum": 20 },
+        "max": { "type": "integer", "minimum": 1, "maximum": 20 }
+      }
+    },
+
+    "estimated_sessions": {
+      "type": "object",
+      "required": ["min", "max"],
+      "additionalProperties": false,
+      "properties": {
+        "min": { "type": "integer", "minimum": 0 },
+        "max": { "type": "integer", "minimum": 0 }
+      }
+    },
+
+    "overview": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "what_it_is":         { "$ref": "#/definitions/long_text" },
+        "apparent_nature":    { "$ref": "#/definitions/long_text" },
+        "actual_nature":      { "$ref": "#/definitions/long_text" },
+        "why_it_exists":      { "$ref": "#/definitions/long_text" },
+        "current_state":      { "$ref": "#/definitions/long_text" },
+        "historical_context": { "$ref": "#/definitions/long_text" }
+      }
+    },
+
+    "architecture": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "construction": { "$ref": "#/definitions/short_text" },
+        "ceilings":     { "$ref": "#/definitions/short_text" },
+        "floors":       { "$ref": "#/definitions/short_text" },
+        "walls":        { "$ref": "#/definitions/short_text" },
+        "doors":        { "$ref": "#/definitions/short_text" },
+        "light":        { "$ref": "#/definitions/short_text" },
+        "scale":        { "$ref": "#/definitions/short_text" },
+        "notes":        { "$ref": "#/definitions/long_text" }
+      }
+    },
+
+    "site_modifiers": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "description":        { "$ref": "#/definitions/long_text" },
+        "rules":              { "type": "array", "items": { "$ref": "#/definitions/long_text" } },
+        "affected_locations": { "type": "array", "items": { "$ref": "#/definitions/short_text" } }
+      }
+    },
+
+    "states": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "trigger"],
+        "additionalProperties": false,
+        "properties": {
+          "name":             { "$ref": "#/definitions/short_text", "minLength": 1 },
+          "trigger":          { "$ref": "#/definitions/long_text", "minLength": 1 },
+          "description":      { "$ref": "#/definitions/long_text" },
+          "location_changes": { "type": "object" },
+          "faction_changes":  { "type": "object" },
+          "modifier_changes": { "type": "array", "items": { "$ref": "#/definitions/long_text" } }
+        }
+      }
+    },
+
+    "central_mechanic": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name":               { "$ref": "#/definitions/short_text" },
+        "description":        { "$ref": "#/definitions/long_text" },
+        "rules":              { "type": "array", "items": { "$ref": "#/definitions/long_text" } },
+        "locations_involved": { "type": "array", "items": { "$ref": "#/definitions/short_text" } }
+      }
+    },
+
+    "factions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["name", "goal"],
+        "additionalProperties": false,
+        "properties": {
+          "name":      { "$ref": "#/definitions/short_text", "minLength": 1 },
+          "world_ref": { "type": "string", "pattern": "^[a-z0-9-]*$" },
+          "members": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/short_text" }
+          },
+          "goal":                 { "$ref": "#/definitions/long_text", "minLength": 1 },
+          "disposition_to_party": {
+            "type": "string",
+            "enum": ["hostile", "unfriendly", "neutral", "friendly", "allied"]
+          },
+          "daily_behavior": { "$ref": "#/definitions/long_text" },
+          "relationships": {
+            "type": "object",
+            "additionalProperties": { "$ref": "#/definitions/long_text" }
+          },
+          "notes": { "$ref": "#/definitions/long_text" }
+        }
+      }
+    },
+
+    "ecology": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "daily_rhythm":           { "$ref": "#/definitions/long_text" },
+        "creature_relationships": { "type": "array", "items": { "$ref": "#/definitions/long_text" } },
+        "site_behaviors":         { "type": "array", "items": { "$ref": "#/definitions/long_text" } }
+      }
+    },
+
+    "approach_vectors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "description"],
+        "additionalProperties": false,
+        "properties": {
+          "name":        { "$ref": "#/definitions/short_text", "minLength": 1 },
+          "description": { "$ref": "#/definitions/long_text", "minLength": 1 },
+          "suited_to":   { "type": "array", "items": { "$ref": "#/definitions/short_text" } },
+          "notes":       { "$ref": "#/definitions/long_text" }
+        }
+      }
+    },
+
+    "entrances": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "additionalProperties": false,
+        "properties": {
+          "id":            { "type": "string", "minLength": 1, "pattern": "^[a-z0-9-]+$" },
+          "name":          { "$ref": "#/definitions/short_text", "minLength": 1 },
+          "description":   { "$ref": "#/definitions/long_text" },
+          "access_method": { "$ref": "#/definitions/long_text" },
+          "hazards":       { "type": "array", "items": { "$ref": "#/definitions/long_text" } },
+          "notes":         { "$ref": "#/definitions/long_text" }
+        }
+      }
+    },
+
+    "random_events": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "frequency": { "$ref": "#/definitions/short_text" },
+        "zones": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "required": ["die", "table"],
+            "additionalProperties": false,
+            "properties": {
+              "die":       { "$ref": "#/definitions/short_text" },
+              "locations": { "type": "array", "items": { "$ref": "#/definitions/short_text" } },
+              "table": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["roll", "event"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "roll":  { "type": "integer", "minimum": 1 },
+                    "event": { "$ref": "#/definitions/long_text", "minLength": 1 }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "embedded_tables": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["description", "die", "table"],
+        "additionalProperties": false,
+        "properties": {
+          "description": { "$ref": "#/definitions/short_text", "minLength": 1 },
+          "trigger":     { "$ref": "#/definitions/long_text" },
+          "die":         { "$ref": "#/definitions/short_text", "minLength": 1 },
+          "table": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["roll", "result"],
+              "additionalProperties": false,
+              "properties": {
+                "roll":   { "type": "integer", "minimum": 1 },
+                "result": { "$ref": "#/definitions/long_text", "minLength": 1 }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "key_locations": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["name", "description"],
+        "additionalProperties": false,
+        "properties": {
+          "name":        { "$ref": "#/definitions/short_text", "minLength": 1 },
+          "description": { "$ref": "#/definitions/long_text", "minLength": 1 },
+          "features": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "description": { "$ref": "#/definitions/long_text" },
+                "mechanics":   { "$ref": "#/definitions/long_text" },
+                "treasure":    { "type": "array", "items": { "$ref": "#/definitions/long_text" } },
+                "notes":       { "$ref": "#/definitions/long_text" }
+              }
+            }
+          },
+          "creatures": { "type": "array", "items": { "$ref": "#/definitions/long_text" } },
+          "traps":     { "type": "array", "items": { "$ref": "#/definitions/long_text" } },
+          "treasure":  { "type": "array", "items": { "$ref": "#/definitions/long_text" } },
+          "notes":     { "$ref": "#/definitions/long_text" }
+        }
+      }
+    },
+
+    "npcs": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["name"],
+        "additionalProperties": false,
+        "properties": {
+          "name":      { "$ref": "#/definitions/short_text", "minLength": 1 },
+          "world_ref": { "type": "string", "pattern": "^[a-z0-9-]*$" },
+          "alignment": {
+            "type": "string",
+            "enum": ["LG", "LN", "LE", "NG", "N", "NE", "CG", "CN", "CE"]
+          },
+          "class_level": { "$ref": "#/definitions/short_text" },
+          "hp":          { "type": "integer", "minimum": 0 },
+          "ac":          { "type": "integer" },
+          "move":        { "$ref": "#/definitions/short_text" },
+          "equipment":   { "type": "array", "items": { "$ref": "#/definitions/short_text" } },
+          "spells": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "items": { "$ref": "#/definitions/short_text" }
+            }
+          },
+          "psychology":   { "$ref": "#/definitions/long_text" },
+          "role_in_site": { "$ref": "#/definitions/short_text" },
+          "location":     { "$ref": "#/definitions/short_text" },
+          "reactions": {
+            "type": "object",
+            "additionalProperties": { "$ref": "#/definitions/long_text" }
+          }
+        }
+      }
+    },
+
+    "monster_summary": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "additionalProperties": false,
+        "properties": {
+          "name":            { "$ref": "#/definitions/short_text", "minLength": 1 },
+          "source":          { "$ref": "#/definitions/short_text" },
+          "move":            { "$ref": "#/definitions/short_text" },
+          "ac":              { "type": "integer" },
+          "hd":              { "$ref": "#/definitions/short_text" },
+          "atk":             { "$ref": "#/definitions/short_text" },
+          "special_attack":  { "$ref": "#/definitions/long_text" },
+          "special_defense": { "$ref": "#/definitions/long_text" },
+          "locations":       { "type": "array", "items": { "$ref": "#/definitions/short_text" } }
+        }
+      }
+    },
+
+    "lore": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "languages": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/short_text" }
+        },
+        "inscriptions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["content"],
+            "additionalProperties": false,
+            "properties": {
+              "location": { "$ref": "#/definitions/short_text" },
+              "language": { "$ref": "#/definitions/short_text" },
+              "content":  { "$ref": "#/definitions/long_text", "minLength": 1 },
+              "reveals":  { "$ref": "#/definitions/long_text" }
+            }
+          }
+        },
+        "rumors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["text", "veracity"],
+            "additionalProperties": false,
+            "properties": {
+              "text":     { "$ref": "#/definitions/long_text", "minLength": 1 },
+              "veracity": { "type": "string", "enum": ["true", "false", "partial"] }
+            }
+          }
+        },
+        "specialist_knowledge": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/long_text" }
+        }
+      }
+    },
+
+    "rewards": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "treasure":        { "type": "array", "items": { "$ref": "#/definitions/long_text" } },
+        "magical_items":   { "type": "array", "items": { "$ref": "#/definitions/long_text" } },
+        "knowledge":       { "type": "array", "items": { "$ref": "#/definitions/long_text" } },
+        "strategic_value": { "type": "array", "items": { "$ref": "#/definitions/long_text" } }
+      }
+    },
+
+    "hooks": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/long_text" }
+    },
+
+    "persistent_consequences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "trigger", "description"],
+        "additionalProperties": false,
+        "properties": {
+          "name":                     { "$ref": "#/definitions/short_text", "minLength": 1 },
+          "trigger":                  { "$ref": "#/definitions/long_text", "minLength": 1 },
+          "description":              { "$ref": "#/definitions/long_text", "minLength": 1 },
+          "resolution":               { "$ref": "#/definitions/long_text" },
+          "notes":                    { "$ref": "#/definitions/long_text" }
+        }
+      }
+    },
+
+    "resolution": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "victory_condition": { "$ref": "#/definitions/long_text" },
+        "world_changes":     { "type": "array", "items": { "$ref": "#/definitions/long_text" } },
+        "party_rewards":     { "type": "array", "items": { "$ref": "#/definitions/long_text" } },
+        "notes":             { "$ref": "#/definitions/long_text" }
+      }
+    },
+
+    "reuse_notes": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "revisit_hooks":        { "type": "array", "items": { "$ref": "#/definitions/long_text" } },
+        "ongoing_threats":      { "type": "array", "items": { "$ref": "#/definitions/long_text" } },
+        "repopulation":         { "$ref": "#/definitions/long_text" },
+        "follow_on_adventures": { "type": "array", "items": { "$ref": "#/definitions/long_text" } }
+      }
+    },
+
+    "campaign_integration": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "related_npcs":             { "type": "array", "items": { "$ref": "#/definitions/short_text" } },
+        "related_sites":            { "type": "array", "items": { "$ref": "#/definitions/short_text" } },
+        "lore_threads":             { "type": "array", "items": { "$ref": "#/definitions/long_text" } },
+        "session_first_referenced": { "$ref": "#/definitions/short_text" }
+      }
+    },
+
+    "dm_notes": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "design_intent": { "$ref": "#/definitions/long_text" },
+        "tone":          { "$ref": "#/definitions/short_text" },
+        "key_secrets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["secret"],
+            "additionalProperties": false,
+            "properties": {
+              "secret":                    { "$ref": "#/definitions/long_text", "minLength": 1 },
+              "known_by":                  { "$ref": "#/definitions/short_text" },
+              "consequence_if_discovered": { "$ref": "#/definitions/long_text" }
+            }
+          }
+        },
+        "scaling_options":   { "type": "array", "items": { "$ref": "#/definitions/long_text" } },
+        "integration_points":{ "type": "array", "items": { "$ref": "#/definitions/long_text" } }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "moniker": "the Mad",
+  "home": "A poorly maintained house in Nebruz; will not leave after dark",
+  "home_settlement": "nebruz",
+  "gender": "male",
+  "faction": "none",
+  "appearance": "Human male; missing both legs from the knee down, moves on short crutches. Eyes that expect the worst.",
+  "and_yet": null,
+  "wants": "Scraps; to survive the night; for the footsteps outside his door to stop",
+  "does_not_want": "To be outside after dark; to speak of what was done to him",
+  "oddly_also": null,
+  "thinks_with": "fear",
+  "family": "None surviving",
+  "self_image": null,
+  "recreation": null,
+  "dreams": null,
+  "anecdotes": [],
+  "tragedies": [
+    "Captured by a renegade band of lizard-folk (exiles from the treaty tribes) who tortured him and ate his legs over several days. Leeandra drove them off and returned him to Nebruz. His body survived; his mind did not.",
+    "Believes his severed legs return each night to walk outside his door and collect the rest of him."
+  ],
+  "pc_leverage": "The renegade lizard-folk band is still at large in the swamp — distinct from the treaty tribes. Kalo is the only known survivor who has seen them. Getting him to speak requires extraordinary trust or extreme circumstances."
+}

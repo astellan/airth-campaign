@@ -1,0 +1,28 @@
+{
+  "moniker": null,
+  "home": "Tagmira",
+  "home_settlement": "tagmira",
+  "gender": "female",
+  "faction": "none",
+  "appearance": "Young orphan girl",
+  "and_yet": "Possesses a mirror that allows her to communicate with a fairy girl on the other side",
+  "wants": "The Bronze Host defeated; protection for Tagmira",
+  "does_not_want": null,
+  "oddly_also": null,
+  "thinks_with": "magic",
+  "family": "Orphan — no known family",
+  "self_image": null,
+  "recreation": null,
+  "dreams": null,
+  "anecdotes": [],
+  "tragedies": [
+    "Orphan with no known family"
+  ],
+  "pc_leverage": "She has asked the party to defeat the Bronze Host on behalf of Tagmira",
+  "fairie_connection": {
+    "mirror": "A magic mirror Pima found, enabling two-way communication with fairie",
+    "fairy_girl": "A fairy girl on the other side of the mirror; identity unknown beyond being Pima's contact",
+    "aislith": "The fairy queen, described to Pima by the fairy girl",
+    "dm_notes": "The nature and origin of the mirror is unknown. The fairy girl's relationship to Aislith and motivations for reaching out through Pima are unestablished."
+  }
+}

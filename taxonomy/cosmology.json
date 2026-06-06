@@ -1,0 +1,211 @@
+{
+  "planes": {
+    "material_world": {
+      "name": "Airth",
+      "description": "Primary mortal realm, subject to natural laws, site of the Silence"
+    },
+    "faery": {
+      "name": "The Otherworld",
+      "description": "Parallel realm, semi-permeable boundary",
+      "status": "Blurring with Airth post-Silence (dangerous)",
+      "notes": "Lizard-men and fey have mutual aversion"
+    },
+    "elemental_planes": {
+      "fire_sun": {
+        "name": "The Sun / Fire Plane",
+        "description": "One and the same, vast beyond comprehension, 12000 times the surface area of the earth",
+        "threat": "Source of fire elemental conspiracy to ignite moon (END-OF-WORLD THREAT)",
+        "scope": "Only fire elementals relevant to current plot, other factions OUT OF SCOPE"
+      }
+    },
+    "corpse_planes": {
+      "description": "Dead gods' home planes, gods destroyed utterly and completely",
+      "status": "High-level adventure locations (planar travel required)",
+      "contents": "Remnant divine power, ancient secrets, ultimate relics"
+    },
+    "moon": {
+      "name": "The Moon",
+      "description": "Prison/refuge for the Slumbering Being (Urzael)",
+      "inhabitants": [
+        "Lune Cats",
+        "Crystalmir Dryads",
+        "neutral-good creatures"
+      ],
+      "threat": "Target of fire elemental ignition plot - if ignited: near-extinction event",
+      "connection_to_gloaming": "EXTENT UNDECIDED - serves as refuge, possible worship object, ancient memory repository"
+    }
+  },
+  "divine_structure": {
+    "old_gods": {
+      "pantheon": "Annunaki",
+      "deities": [
+        "Nanna-Sin",
+        "Ki",
+        "Inanna",
+        "Utu",
+        "Enki",
+        "Ninhursag"
+      ],
+      "status": "DESTROYED on their home planes",
+      "silence_date": 0,
+      "temple_undead_status": "Active, awaiting return that will never come",
+      "temple_undead_knowledge": "Either don't know gods are dead, refuse to accept it, or suspect but don't speak (taboo)"
+    },
+    "new_gods": {
+      "emergence_date": 150,
+      "origin": "Irrelevant to campaign, no memory of creation",
+      "manifestation": "At sacred sites (Irkali)",
+      "deities": {
+        "veltharos": {
+          "name": "Veltharos",
+          "domain": "Sky/Storm",
+          "aspects": [
+            "kingship",
+            "prophecy",
+            "storms"
+          ],
+          "clergy": [
+            "Tower priests",
+            "Omen-readers"
+          ]
+        },
+        "bandua": {
+          "name": "Bandua",
+          "domain": "Hearth/Defense",
+          "aspects": [
+            "walls",
+            "hearths",
+            "blood-oaths"
+          ],
+          "clergy": [
+            "Hearth-wardens",
+            "City defenders"
+          ]
+        },
+        "cossus": {
+          "name": "Cossus",
+          "domain": "War/Honor",
+          "aspects": [
+            "seasonal war",
+            "honor duels",
+            "strength through hardship"
+          ],
+          "clergy": [
+            "Duel arbiters",
+            "War-judges"
+          ]
+        },
+        "ossamar": {
+          "name": "Ossamar",
+          "domain": "Water/Transition",
+          "aspects": [
+            "rivers",
+            "fords",
+            "perilous crossings"
+          ],
+          "clergy": [
+            "Water-seers",
+            "Ford-keepers"
+          ]
+        },
+        "thulda": {
+          "name": "Thulda",
+          "domain": "Death/Sleep",
+          "aspects": [
+            "death",
+            "sleep",
+            "wool",
+            "shepherds"
+          ],
+          "clergy": [
+            "Funeral priests",
+            "Wool-weavers"
+          ]
+        },
+        "isarna": {
+          "name": "Isarna",
+          "domain": "Travel/Guidance",
+          "aspects": [
+            "travel",
+            "guidance",
+            "sacred wandering"
+          ],
+          "clergy": [
+            "Guides",
+            "Pilgrims",
+            "Twilight wardens"
+          ]
+        },
+        "lugus": {
+          "name": "Lugus",
+          "domain": "Craft/Law",
+          "aspects": [
+            "craft",
+            "speech",
+            "binding laws"
+          ],
+          "clergy": [
+            "Craft-clerks",
+            "Judges"
+          ]
+        },
+        "malac": {
+          "name": "Malac",
+          "domain": "Fire/Prophecy",
+          "aspects": [
+            "sacred fire",
+            "prophecy through ordeal",
+            "divine madness"
+          ],
+          "clergy": [
+            "Fire-seers",
+            "Ash-scarred prophets"
+          ],
+          "clergy_note": "EXAMPLES - needs work",
+          "factions_note": "UNDECIDED - bad faction sympathetic to fire elementals, unwittingly helping conspiracy"
+        }
+      }
+    },
+    "paramandir": {
+      "name": "Paramandir",
+      "status": "Mythic neutral paladin who bound Urzael to the moon",
+      "current_status": "Unknown (possibly preserved on moon)",
+      "divinity": false
+    }
+  },
+  "magic_systems": {
+    "divine": {
+      "source": "New Gods",
+      "method": "Traditional clerical casting",
+      "requirements": "Taboos and observances"
+    },
+    "arcane": {
+      "source": "Salvaged pre-Silence knowledge",
+      "control": "Ilmenor order",
+      "status": "Strictly regulated, dangerous if untrained"
+    },
+    "illusionism": {
+      "source": "Folds between planes",
+      "control": "Independent tradition, not Ilmenor-governed",
+      "status": "Tolerated but suspect"
+    },
+    "druidic": {
+      "source": "Living World and Faery",
+      "age": "Predates both pantheons",
+      "practitioners": "Serdanos (Rootbound)"
+    },
+    "fey": {
+      "types": [
+        "glamour",
+        "illusion",
+        "binding oaths"
+      ],
+      "sun_metal_crafting": "Covenant-Bound can fashion items/weapons from sun-metal"
+    },
+    "necromancy": {
+      "source": "Preserved by undead temple servants",
+      "type": "Blend of old divine and arcane methods",
+      "locations": "31 Temples of Dead Gods (including one north of Tagmira)"
+    }
+  }
+}

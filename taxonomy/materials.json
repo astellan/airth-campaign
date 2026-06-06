@@ -1,0 +1,43 @@
+{
+  "sun_metal": {
+    "creation": "Fire elementals from Sun/Fire Plane",
+    "properties": {
+      "temperature": "Warm to touch, never cools completely",
+      "durability": "Extremely durable",
+      "magical_properties": "NEEDS DEVELOPMENT",
+      "crafting_requirements": "NEEDS DEVELOPMENT for non-Covenant-Bound"
+    },
+    "who_can_work_it": [
+      "Fire elementals (original creators)",
+      "Ogre Magi (taught by fire elementals)",
+      "Covenant-Bound elves (QUESTION: Why?)"
+    ],
+    "distribution": {
+      "sources": [
+        "Fire elemental sites (LATE GAME)",
+        "Ogre Magi priests craft with it",
+        "Covenant-Bound fashion weapons/items"
+      ],
+      "appears_in": "Humanoid hands (armed by Covenant-Bound or fire cultists)"
+    },
+    "factions_wanting_it": [
+      "Fire Elementals",
+      "Covenant-Bound (WHY?)",
+      "Gloaming Court (depends on moon connection)"
+    ],
+    "possible_purposes": "NEEDS DECISION - ritual component? anti-magic? planar anchor? life-draining? other?"
+  },
+  "technology_level": {
+    "allowed": [
+      "Bronze",
+      "Iron",
+      "Early medieval tools"
+    ],
+    "forbidden": [
+      "Gunpowder",
+      "Advanced tech"
+    ],
+    "magic": "Rare, feared, controlled",
+    "notable": "Sun-metal (fire elemental/Covenant-Bound creation)"
+  }
+}

@@ -12,13 +12,15 @@ ROOT = Path(__file__).parent.parent
 
 @pytest.fixture(scope="session")
 def npcs():
-    with open(ROOT / "airth_npcs.json") as f:
-        return json.load(f)["npcs"]
+    result = {}
+    for path in (ROOT / "npcs").glob("*.json"):
+        result[path.stem] = json.loads(path.read_text())
+    return result
 
 
 @pytest.fixture(scope="session")
 def schema():
-    with open(ROOT / "airth_npcs.schema.json") as f:
+    with open(ROOT / "schemas" / "npcs.schema.json") as f:
         return json.load(f)
 
 

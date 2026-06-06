@@ -1,0 +1,35 @@
+{
+  "moniker": "The Measure",
+  "home": "The road itself—feels wrong when stationary more than two days",
+  "home_settlement": "itinerant",
+  "gender": "female",
+  "faction": "independent",
+  "appearance": "Imazuran woman, late 40s, olive skin weathered by road dust, sharp brown eyes that count everything, ochre and grey traveling robes, silver measuring-chain belt, ink-stained hands",
+  "and_yet": "Keeps Isarna shrine in lead wagon, burns expensive incense at every crossroads",
+  "wants": "Profitable predictable routes, respect from both cultures, vengeance on lizard-men",
+  "does_not_want": "Questions about husband's death, choosing factional sides, lizard-men mentioned as allies",
+  "oddly_also": "Collects obscure road songs in journal, refuses water drawn south of the road",
+  "thinks_with": "money",
+  "family": "Late husband Irven (Elunad, killed by lizard-men 8yr ago), son Khalid (24, leads return caravans), daughter Sarit (22, manages Orziben warehouses), son Davin (19, Ilmenor scribe apprentice), brother Azghar (teamster)",
+  "self_image": "Bridge between Gallaecian and Imazuran, keeper of husband's legacy, protector of her caravan family",
+  "recreation": "Singing road songs at crossroads, updating ledgers by candlelight, polishing husband's waystone marker",
+  "dreams": "Davin becomes respected Ilmenor scholar, safe profitable routes forever, finding who killed Irven",
+  "anecdotes": [
+    "Once outbid a hobgoblin warlord for iron nails using only dried figs and honey",
+    "Navigated through fey-glamoured woods by singing Isarna hymns until dawn",
+    "Refused Covenant-Bound 'special cargo' offer despite massive payment"
+  ],
+  "tragedies": [
+    "Husband Irven killed in southern swamps 8 years ago (believes lizard-men responsible)",
+    "Has hidden map of 'safe paths' Irven drew before death—guards it obsessively",
+    "Receives coded letters from Davin hinting at dangerous Ilmenor secrets"
+  ],
+  "pc_leverage": "Prove lizard-men didn't kill Irven OR find actual killers; protect Davin; share intelligence on humanoid coordination; respect her authority on the road",
+  "caravan": {
+    "route": "Caelrun to Tagmira (primary), broader Luric Marches circuit",
+    "current_leg": "Caelrun to Tagmira — party traveling with her",
+    "brother_azghar": "Teamster, Taziri's brother, manages the wagons day-to-day",
+    "waystone_observance": "Will stop at Waystone of Isarna west of Tagmira for offering (bread, silver thread)",
+    "dm_notes": "Taziri is the party's most reliable civilian connection across the Luric Marches. She knows both Caelrun and Tagmira well and can brief the party on surface-level politics of either. She has no knowledge of the undead alliance. Her Isarna observance at the waystone is a natural scene transition into Tagmira."
+  }
+}

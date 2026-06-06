@@ -1,0 +1,27 @@
+{
+  "moniker": null,
+  "home": "A hut in the swamp, several hours southwest of Nebruz",
+  "home_settlement": "nebruz",
+  "gender": "female",
+  "faction": "independent",
+  "appearance": "Human female; full description not yet established at the table",
+  "and_yet": "Brews potions and pursues ring-lore with the steady patience of a craftsman, not the urgency of a power-seeker",
+  "wants": "Peace between the lizard-man tribes; freedom to pursue ring-lore; outsiders who respect swamp politics",
+  "does_not_want": "Tribal war in the Luric marches; outsiders treating the swamp as enemy territory",
+  "oddly_also": "Maintains a close friendship with Dorota of Nebruz — an unusual trust neither explains",
+  "thinks_with": "diplomacy",
+  "family": "Not established",
+  "self_image": null,
+  "recreation": null,
+  "dreams": null,
+  "anecdotes": [],
+  "tragedies": [],
+  "pc_leverage": "Deliver the upland herbs from Mother Yaleth (done, session 27); retrieve giant constrictor snake brain fluid for ring-lore; demonstrate respect for lizard-man tribal politics and the swamp's balance",
+  "current_business": {
+    "brew": "Water-breathing potions for the party (4-day brew)",
+    "brew_started_in_game": "Ragaia 15",
+    "brew_ready_in_game": "Ragaia 19",
+    "ingredient_needed": "Giant constrictor snake brain fluid — party tasked with retrieval (session 27)",
+    "dm_notes": "Load-bearing for two arcs: the water-breathing brew (4-day clock) and the constrictor hunt (session 28 driver). Diplomatic keystone of the Luric marches — her neutrality prevents lizard-man tribal war and keeps tribes from raiding Caelrun."
+  }
+}

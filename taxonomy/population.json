@@ -1,0 +1,14 @@
+{
+  "cultural_groups": {
+    "gallaecian": {
+      "linguistic_root": "Pre-Roman Iberian/Celtiberian",
+      "territory": "Western territories (Velgroth-Lucernia)",
+      "government": "High Kingship"
+    },
+    "amazigh": {
+      "linguistic_root": "Berber/North African",
+      "territory": "Eastern (Imazuran)",
+      "relations": "Cultural exchange with Gallaecian"
+    }
+  }
+}

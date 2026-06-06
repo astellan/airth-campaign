@@ -1,0 +1,75 @@
+{
+  "periods": [
+    {
+      "key": "before_year_0",
+      "label": "Age of the Old Gods",
+      "years": "pre-0"
+    },
+    {
+      "key": "year_0",
+      "label": "The Silence",
+      "years": "0"
+    },
+    {
+      "key": "year_5",
+      "label": "The Fratricide",
+      "years": "5"
+    },
+    {
+      "key": "year_50_100",
+      "label": "The Bleeding Years",
+      "years": "50-100"
+    },
+    {
+      "key": "year_100_150",
+      "label": "The Deepening",
+      "years": "100-150"
+    },
+    {
+      "key": "year_150_200",
+      "label": "The Turning",
+      "years": "150-200"
+    },
+    {
+      "key": "year_200_250",
+      "label": "The Five Shrines",
+      "years": "200-250"
+    },
+    {
+      "key": "year_250_300",
+      "label": "The Rising",
+      "years": "250-300",
+      "note": "Last 50 years: No warfare between Velgroth-Lucernian kingdoms"
+    }
+  ],
+  "key_events": {
+    "the_silence": {
+      "period": "year_0",
+      "description": "Gods vanished, omens ceased"
+    },
+    "the_kindling_war": {
+      "period": "year_50_100",
+      "description": "Humans burned fey glades (post-Silence desperation)"
+    },
+    "the_deepening": {
+      "period": "year_100_150",
+      "description": "Crimes committed against fey by humans - Covenant-Bound seek revenge for this period"
+    },
+    "emergence_of_irkali": {
+      "period": "year_150_200",
+      "description": "New Gods appeared at sacred sites"
+    },
+    "formation_of_orders": {
+      "period": "year_150_200",
+      "description": "Ilmenor, Ardanir, Elunad established"
+    },
+    "establishment_of_high_kingship": {
+      "period": "year_250_300",
+      "description": "TO BE DEVELOPED - when? how? why peace for 50 years?"
+    },
+    "current": {
+      "period": "year_250_300",
+      "description": "Fragile recovery, new threats emerging"
+    }
+  }
+}

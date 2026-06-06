@@ -1,0 +1,65 @@
+{
+  "fey_beings": {
+    "gloaming_court": {
+      "alignment": "The Good (neutral, not actively malicious)",
+      "note": "See taxonomy.factions.gloaming_court for full entry"
+    },
+    "lesser_fey": {
+      "portunes": {
+        "role": "Craftsmen",
+        "likely_allegiance": "Covenant-Bound"
+      },
+      "shee": {
+        "role": "Minor nobility",
+        "likely_allegiance": "Covenant-Bound"
+      },
+      "domestic_spirits": {
+        "status": "Fled during Gloaming crisis"
+      },
+      "woodwoses": {
+        "description": "Bark-skinned, semi-feral"
+      }
+    }
+  },
+  "undead": {
+    "temple_undead": {
+      "organization": "Organized, Intelligent",
+      "leadership": {
+        "zimru_irkala": {
+          "title": "Hierophant",
+          "hd": 10,
+          "type": "Greater Wight",
+          "belief": "Gods merely 'silent' not dead OR knows but maintains order",
+          "method": "Enforces liturgy as law"
+        }
+      },
+      "purpose": "Preserve old rites, await return (futile)"
+    }
+  },
+  "elemental_planar": {
+    "fire_elementals": {
+      "origin": "The Sun (which IS the Fire Plane)",
+      "goal": "Ignite the moon = NEAR-EXTINCTION EVENT",
+      "timeline": "Decades away but accelerating",
+      "methods": [
+        "Using Ogre Magi as priest-proxies",
+        "Whispering through flames",
+        "Creating sun-metal"
+      ],
+      "threat_level": "LATE GAME/HIGH LEVEL (7-10+)",
+      "scope": "Other fire plane factions OUT OF SCOPE"
+    },
+    "moon_creatures": {
+      "alignment": "Neutral Good",
+      "types": [
+        "Lune Cats",
+        "Crystalmir Dryads",
+        "Reflectors",
+        "Mooncalves",
+        "Aether Slimes"
+      ],
+      "stakes": "Will die if moon is ignited",
+      "gloaming_relationship": "UNDECIDED"
+    }
+  }
+}

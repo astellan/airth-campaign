@@ -1,0 +1,169 @@
+{
+  "ardanir": {
+    "name": "The Ardanir",
+    "type": "Paladin Order",
+    "devotion": "Veltharos (sky/justice)",
+    "philosophy": "Divine justice over mortal kings",
+    "symbol": "Lightning bolt breaking crown",
+    "tension": "Won't kneel to mortal authority (High King, petty kings)",
+    "mission": "Unite Gallaecian/Amazigh through shared faith",
+    "relationship_to_nobility": "COMPLEX - TO BE DEVELOPED"
+  },
+  "serdanos": {
+    "name": "The Serdanos (Rootbound)",
+    "type": "Druidic Order",
+    "focus": "Living World and Faery boundaries",
+    "relationship_to_gods": "Not god-worshippers (predate both pantheons)",
+    "goal": "Repair Faery-Airth connection",
+    "warning": "Making Faery a faith caused post-Fall horrors"
+  },
+  "ilmenor": {
+    "name": "The Ilmenor",
+    "type": "Arcane Organization",
+    "purpose": "Preserve/control arcane knowledge",
+    "structure": "Quasi-monastic, rigorous testing",
+    "symbol": "Open eye within seven-pointed star",
+    "methods": [
+      "Isolated libraries",
+      "Encrypted texts"
+    ],
+    "tensions": [
+      "Hunt rogue mages",
+      "Tolerate Illusionists"
+    ],
+    "goal": "Eventually reforge unified arcana via political influence",
+    "relationship_to_nobility": "TO BE DEVELOPED"
+  },
+  "illusionists": {
+    "name": "Illusionists",
+    "type": "Independent Tradition",
+    "source": "Folds between planes",
+    "relationship_to_ilmenor": "Separate, tolerated but suspect",
+    "organization": "No formal organization"
+  },
+  "elunad": {
+    "name": "The Elunad",
+    "type": "Rangers/Road-Guardians",
+    "heritage": "Pre-Silence Imperial scouts",
+    "symbol": "Silver hoofprint beneath crescent moon",
+    "token": "Ancestral objects passed mentor-to-student",
+    "mission": "Maintain sacred roads, connect enclaves",
+    "territory": [
+      "Roads",
+      "Fords",
+      "Borderlands"
+    ],
+    "sacred_duty": "Protect five Irkali pilgrimage routes"
+  },
+  "aurka": {
+    "name": "The Aurka",
+    "type": "Relic-Hunters",
+    "structure": "Loose network, no hierarchy",
+    "purpose": "Salvage pre-Silence knowledge/relics",
+    "methods": [
+      "Exploration",
+      "Smuggling",
+      "Barter"
+    ],
+    "reputation": "Tomb-robbers or folk heroes",
+    "code": "Independence and cleverness prized",
+    "rivals": [
+      "Ilmenor",
+      "Temple guards",
+      "Each other"
+    ]
+  },
+  "gladiator_culture": {
+    "name": "Gladiator Culture",
+    "type": "Social Institution",
+    "red_mantle": {
+      "location": "Tharnok",
+      "status": "Elite",
+      "size": 40
+    },
+    "corval_dustbound": {
+      "location": "Corval",
+      "role": "Training ground"
+    },
+    "status": "Rising social power (threatens traditional authority)",
+    "tension": "Cossus worship vs. Ardanir philosophy",
+    "relationship_to_nobility": "TO BE DEVELOPED"
+  },
+  "fire_elemental_conspiracy": {
+    "name": "The Fire Elemental Conspiracy",
+    "type": "Extraplanar Threat",
+    "alignment": "The Bad",
+    "threat_level": "LATE GAME",
+    "goal": "Ignite the moon (END OF WORLD)",
+    "timeline": "Decades away, gathering power",
+    "methods": [
+      "Recruit Ogre Magi as priests",
+      "Arm humanoids with sun-metal",
+      "Manipulate through whispering flames"
+    ],
+    "player_introduction": "Rumors, distant signs, late-game revelation",
+    "potential_opposition": "Gloaming Court (if moon-connected)?"
+  },
+  "covenant_bound": {
+    "name": "The Covenant-Bound",
+    "type": "Fey Faction",
+    "alignment": "The Bad",
+    "threat_tier": "PRIMARY EARLY-MID ANTAGONISTS",
+    "leader": "The Pact-Render (Covenant-Bound elf)",
+    "goal": "Turn the earth into another Faery using humanoids as tools (think they can control them, but cannot control men). Seek revenge for crimes committed against fey by humans during The Deepening, and assurance it can never happen again.",
+    "methods": [
+      "Command fey servants",
+      "Fashion weapons/items from sun-metal",
+      "Arm humanoid proxies (Bronze Host)",
+      "Glamour and manipulation"
+    ],
+    "relationship_to_fire_elementals": "Think they are using fire elementals' power to their advantage, unaware of plan to ignite moon",
+    "relationship_to_sun_metal": "NEEDS DEVELOPMENT - Why can they work it? What do they make?",
+    "power_level": "Early-mid game encounters",
+    "goals_development": [
+      "Why want sun-metal?",
+      "Relationship to fire elementals?",
+      "What from mortals?",
+      "Long-term plans?"
+    ]
+  },
+  "gloaming_court": {
+    "name": "The Gloaming Court",
+    "type": "Fey Faction",
+    "alignment": "The Good (neutral, not actively malicious)",
+    "threat_tier": "NEUTRAL/AMBIGUOUS",
+    "leader": "Aislith Who Wove the First Garland",
+    "goal": "Collect memories of the lost human/faery connection",
+    "methods": [
+      "Emotion-harvesting",
+      "Dream-teaching",
+      "Manipulation"
+    ],
+    "status": "Desperate, dangerous, not openly hostile",
+    "stance": "Don't wish humanity specific harm",
+    "moon_connection": "EXTENT UNDECIDED",
+    "potential_role": "Oppose fire elementals if moon is power source?",
+    "tools": "NEED DEVELOPMENT - gameable mechanics"
+  },
+  "humanoid_coalitions": {
+    "name": "Humanoid Coalitions",
+    "type": "Antagonist Network",
+    "bronze_host": {
+      "composition": "Shee-armed orcs",
+      "coordination": "Covenant-Bound",
+      "threat_level": "Early-mid game"
+    },
+    "fire_worshipping_gnolls": {
+      "leader": "Tharzuul's packs",
+      "threat_level": "MID-LEVEL",
+      "slavery": "Enslave goblins"
+    },
+    "hobgoblin_legions": {
+      "equipment": "Testing fire weapons",
+      "threat_level": "LATE GAME",
+      "slavery": "Enslave goblins"
+    },
+    "concern": "Unprecedented coordination",
+    "origin": "UNCLEAR"
+  }
+}

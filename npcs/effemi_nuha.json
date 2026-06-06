@@ -1,0 +1,22 @@
+{
+  "moniker": null,
+  "home": "Arms & Iron smithy, Nebruz — the only stone building in the village",
+  "home_settlement": "nebruz",
+  "gender": "female",
+  "faction": "none",
+  "appearance": "Short human woman; corded arm muscles, close-cropped hair. Iron ring on right hand (enchanted against divination). Communicates in grunts and monosyllables.",
+  "and_yet": "MU9 — a former imperial wizard who forged enchanted blades for nobility. Presents entirely as a simple smith. Dorota knows; Effemi does not know Dorota knows.",
+  "wants": "Anonymity; her past buried; to keep smithing in peace",
+  "does_not_want": "Anyone from her former life finding her; any reason to reveal her magical abilities",
+  "oddly_also": null,
+  "thinks_with": "pride",
+  "family": "Not established",
+  "self_image": null,
+  "recreation": null,
+  "dreams": null,
+  "anecdotes": [],
+  "tragedies": [
+    "A courtly coup stripped her of her imperial position and set magical and political rivals on her trail"
+  ],
+  "pc_leverage": "Ordinary circumstances will not move her; an overwhelming threat to Nebruz might force her hand; her smithwork is excellent despite low-grade bog iron"
+}
