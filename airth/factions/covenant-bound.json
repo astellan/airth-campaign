@@ -1,0 +1,118 @@
+{
+  "$schema": "../../schema/faction.schema.json",
+  "id": "covenant-bound",
+  "name": "The Covenant-Bound",
+
+  "identity": {
+    "descriptors": ["vengeful", "manipulative", "patient", "fey-blooded"],
+    "symbol": "None known. Identified by fey bronze weapons and equipment distributed to humanoid proxies.",
+    "public_perception": "Not publicly known as a faction. The Bronze Host's escalation is visible; its Pact-Render backing is not. Most Tagmirans know orcs are pushing into the hunting grounds — they do not know why the orcs are suddenly equipped and coordinated."
+  },
+
+  "goals": {
+    "primary": "Transform Airth into another Faery — using humanoids as tools to do the physical work of reshaping the world. They believe they can control the humanoids they arm. They cannot control men.",
+    "secondary": [
+      "Exact revenge for crimes committed against fey by humans during The Deepening (years 100-150).",
+      "Ensure those crimes can never happen again — by making Airth inhospitable to the civilization that committed them.",
+      "Seize and hold the Bramblewood and surrounding territory as a fey-controlled perimeter."
+    ],
+    "hidden_agenda": "The Covenant-Bound believe they are using fire elemental power — specifically sun-metal — to their own ends. They are not. The fire elementals are using them. They do not know about the plan to ignite the moon."
+  },
+
+  "philosophy": {
+    "summary": "Covenant-Bound elves have embraced their fey inheritance fully, severing themselves from mortal life to serve the Pact-Render. They are not the Gloaming Court — they are not ambivalent or desperate. They are committed. The Deepening was a real atrocity, and the world they want is one where it cannot happen again — even if that world has no room for the people who caused it.",
+    "methods": [
+      "Command fey servants and lesser fey as a fighting force.",
+      "Fashion and distribute sun-metal weapons and equipment to humanoid proxies.",
+      "Arm and coordinate humanoid factions — Bronze Host orcs currently — as ground forces.",
+      "Glamour and manipulation of mortal actors who don't yet know they're being used."
+    ],
+    "limits": [
+      "Will not work openly among mortals if it can be avoided — prefer proxy operations.",
+      "Will not break from fire elemental patronage, believing they are the ones in control of that relationship."
+    ]
+  },
+
+  "position": {
+    "territory": "Faery-adjacent locations, thinned-veil sites, and the territory they are actively seizing through humanoid proxies. The Bramblewood and surrounding hunting grounds northwest of Tagmira are a current operational zone.",
+    "power_level": "regional",
+    "active_since": "Organized as a faction in response to The Deepening (years 100-150). Active in the current region for at least the past two months based on Bronze Host escalation."
+  },
+
+  "relationships": {
+    "alliances": [
+      {
+        "faction_id": "fire-elementals",
+        "nature": "The Covenant-Bound believe they are drawing on fire elemental power for their own purposes. The fire elementals are using them. Neither side has disclosed the full picture to the other."
+      },
+      {
+        "faction_id": "bronze-host",
+        "nature": "The Pact-Render supplies the Bronze Host orcs with bronze weapons and equipment via the Bronzeworking Triangle in exchange for territorial expansion. The orcs are the ground force; the Covenant-Bound provide the strategic coordination and materiel."
+      }
+    ],
+    "rivals": [
+      {
+        "faction_id": "ardanir",
+        "nature": "Divine justice and fey transformation of Airth are fundamentally incompatible. Not yet in direct conflict but inevitable."
+      },
+      {
+        "faction_id": "serdanos",
+        "nature": "The Serdanos fear anyone anchoring Faery through belief or power — the Covenant-Bound's project is exactly that at scale."
+      },
+      {
+        "faction_id": "forsworn-elves",
+        "nature": "Forsworn elves severed themselves from fey inheritance and oppose the Covenant-Bound's path. Active ideological enemies."
+      },
+      {
+        "faction_id": "gloaming-court",
+        "nature": "Both are fey factions but on opposite sides of the same politics. The Gloaming Court's goals and the Covenant-Bound's methods may be irreconcilable — undeveloped, but the Pact-Render and Aislith are likely not allies."
+      }
+    ],
+    "needs": [
+      "Humanoid proxies willing to fight for territory in exchange for equipment and coordination.",
+      "Sun-metal supply from fire elemental sources.",
+      "Veil-thin locations to operate from and expand through."
+    ],
+    "provides": [
+      "Bronze weapons and equipment — fey-forged, superior to standard humanoid gear.",
+      "Strategic coordination for otherwise disorganized humanoid warbands.",
+      "Fey powers and glamours in direct encounters."
+    ]
+  },
+
+  "nodes": {
+    "pact-render": {
+      "name": "The Pact-Render",
+      "type": "leadership",
+      "role": "Leader of the Covenant-Bound. A Covenant-Bound elf. The strategic mind behind the Bronze Host operation and the broader regional campaign. Identity and location undeveloped beyond the title.",
+      "connections": ["bronzeworking-triangle", "bronze-host-command"],
+      "notes": "Pact-Render shee have unknown fey powers. The Pact-Render's direct capabilities have not been established — develop before any encounter."
+    },
+    "bronzeworking-triangle": {
+      "name": "The Bronzeworking Triangle",
+      "type": "operations",
+      "role": "The supply chain through which fey bronze weapons and equipment reach the Bronze Host. The mechanism — location, process, intermediaries — is undeveloped.",
+      "connections": ["pact-render", "bronze-host-command"],
+      "notes": "Why the Covenant-Bound can work sun-metal is an open question. The Bronzeworking Triangle is a potential adventure target — disrupt the supply and you degrade the Bronze Host's capability."
+    },
+    "bronze-host-command": {
+      "name": "Bronze Host Command",
+      "type": "operations",
+      "role": "The orc leadership of the Bronze Host — Brat-Kho, Mollgarn the Unfailing, and Ulzhar Bone-Tongue — coordinated by the Pact-Render. Currently pushing Tagmirans out of the northwest forest and making a play for the hunting grounds as the first step toward an assault on Tagmira.",
+      "location": "Bronze Host tower, northwest of Tagmira",
+      "connections": ["pact-render", "bronzeworking-triangle"],
+      "npcs": ["brat_kho", "mollgarn_the_unfailing", "ulzhar_bone_tongue"],
+      "notes": "All three named orc leaders survived the session 3 encounter. Equipment has since been upgraded via Pact-Render fey bronze. Each carries a magical item: Brat-Kho (obsidian glyph slab, booming voice), Mollgarn (spell-stealing plaque), Ulzhar (silver-wrapped fingerbone, command spell). Party departed the Bronze Host tower at start of session 26 — that arc concluded but the faction is still active."
+    },
+    "bramblewood-perimeter": {
+      "name": "Bramblewood Perimeter",
+      "type": "operations",
+      "role": "The Bramblewood and surrounding hunting grounds northwest of Tagmira. The Covenant-Bound are seizing this territory through the Bronze Host. The Bramblewood itself was seeded by the old gods as a living perimeter — the Covenant-Bound's interest in it may go beyond the tactical.",
+      "location": "Northwest of Tagmira",
+      "connections": ["bronze-host-command"],
+      "notes": "The Bramblewood contains the Temple of the Old Gods. Its origin as an old-god perimeter is known to the Serdanos (Nabia held vigil here). Residual fey taint detectable only by a druid. The Covenant-Bound's control of this zone is the current early-game pressure point on Tagmira."
+    }
+  },
+
+  "dm_notes": "PRIMARY EARLY-MID ANTAGONISTS. The Bronze Host is the party's current visible enemy; the Pact-Render backing is the reveal that reframes what they've been fighting. The Covenant-Bound are being used by the fire elementals — this is a mid-game revelation and a potential lever: if the party can get the Covenant-Bound to understand they are tools, not masters, it creates a crack. The Gloaming Court and Covenant-Bound are on opposite sides of fey politics — Pima's Gloaming Court connection (mirror, Aislith) may be the party's window into this division. The Bronzeworking Triangle is a disruption target. Sun-metal properties need a decision before they become a significant plot element."
+}
