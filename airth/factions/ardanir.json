@@ -1,0 +1,85 @@
+{
+  "$schema": "../../schema/faction.schema.json",
+  "id": "ardanir",
+  "name": "The Ardanir",
+
+  "identity": {
+    "descriptors": ["stern", "prophetic", "wandering", "uncompromising"],
+    "symbol": "A lightning bolt breaking a crown",
+    "public_perception": "Revered, feared, or resented depending on the region. Seen as holy outsiders or arrogant zealots. Members will never kneel to any mortal — a stance that earns them both admiration and enemies."
+  },
+
+  "goals": {
+    "primary": "To uphold divine justice as revealed through Veltharos's storms and visions — above and apart from mortal kingship.",
+    "secondary": [
+      "Protect the innocent from tyranny; model a form of authority answerable only to the divine.",
+      "Bind the peoples of Velgroth-Lucernia and the Imazuran Confederation through shared faith — affirming that their gods are one and the same."
+    ],
+    "hidden_agenda": "Some among the Ardanir hope to reforge a god-guided monarchy — anointed by storm and sky alone, answerable to no mortal king. This is not spoken of openly."
+  },
+
+  "philosophy": {
+    "summary": "Divine justice supersedes mortal authority. The Ardanir are a uniquely Amazigh order — their presence in Gallaecian lands is a sacred mission, not a conquest. The unity of the two peoples' pantheons is not a theological convenience; it is the foundation of their calling. Hierarchy is enforced by deeds, not titles.",
+    "methods": [
+      "Parley — speak before striking; offer words before weapons.",
+      "Offer Aid — protect kin, shelter the weak, answer the call of blood.",
+      "Resolve in Duel — let conflict be settled by single combat when honor allows.",
+      "Warfare — only when all else fails, take up arms in full."
+    ],
+    "limits": [
+      "Will never kneel to any mortal authority.",
+      "Will not strike without first offering parley."
+    ]
+  },
+
+  "position": {
+    "territory": "No fixed seat. Operate from isolated shrines, mountain fastnesses, and border marches. Their examination hall at Veltharoch is one known fixed location.",
+    "power_level": "regional",
+    "active_since": "Shortly after the Fall — when Veltharos first spoke in storm to a dying knight."
+  },
+
+  "relationships": {
+    "alliances": [
+      {
+        "faction_id": "veltharan-temple-clergy",
+        "nature": "Occasional alignment; deliberately independent. Shared devotion to Veltharos, but the Ardanir answer to no temple hierarchy."
+      }
+    ],
+    "rivals": [
+      {
+        "faction_id": "petty-kings",
+        "nature": "Refuse all oaths of fealty to secular lords. Resented by any king who demands submission."
+      }
+    ],
+    "needs": [
+      "Isolated shrines and border fastnesses as operational bases.",
+      "Communities willing to shelter wandering paladins."
+    ],
+    "provides": [
+      "Divine justice and protection for the innocent.",
+      "Parley and mediation before conflict escalates.",
+      "Formal commissions to paladins — lifetime charges with weight and consequence."
+    ]
+  },
+
+  "nodes": {
+    "grand-votary": {
+      "name": "The Grand Votary of the High Storm",
+      "type": "leadership",
+      "role": "Nominal head of the order. Title only — identity varies. Authority derives from deeds and storm-signs, not appointment.",
+      "connections": ["veltharoch-examination-hall"],
+      "notes": "The title exists; the person holding it is rarely known outside the order."
+    },
+    "veltharoch-examination-hall": {
+      "name": "Examination Hall at Veltharoch",
+      "type": "operations",
+      "role": "Site of paladin examination and commissioning. Where candidates are confronted, tested, and either turned away or charged.",
+      "location": "Veltharoch, south of Lucernia",
+      "connections": ["grand-votary"],
+      "npcs": ["ardanir_examiner_veltharoch"],
+      "notes": "Sparse hall with a Veltharos shrine — lightning bolt, no crown, open sky. The examiner (older man, scar along jaw) issued Sardet the Debt of Living Souls at session 26. Sardet was confronted directly about the sphere and its blood cost. Iron token of commission left on the bench; grey warhorse given provisionally."
+    }
+  },
+
+  "dm_notes": "Sardet (Chris) carries the Debt of Living Souls — a permanent standing commission to bring the undead back into divine order: convert them, grant them true deaths, repay the souls owed to the gods. No deadline; may be his life's work. Every undead encounter has a hook attached. The grey warhorse is a dangling thread: Veltharos gave it provisionally — it can be taken back or fully granted depending on Sardet's conduct. Members use storm-signs (gesture code) in the field and speak a high liturgical dialect in sacred rites. Surviving a lightning strike is considered the greatest boon — system shock roll required."
+}
