@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "items.schema.json",
+  "title": "Airth Items",
+  "description": "Schema for the campaign item registry — magical objects, treasure, and notable possessions",
+  "type": "object",
+  "required": ["items"],
+  "additionalProperties": false,
+
+  "definitions": {
+    "short_text": { "type": "string", "maxLength": 100 },
+    "long_text":  { "type": "string", "maxLength": 500 }
+  },
+
+  "properties": {
+    "items": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["name", "type", "magical", "status"],
+        "additionalProperties": false,
+        "properties": {
+          "name":        { "$ref": "#/definitions/short_text", "minLength": 1 },
+          "type": {
+            "type": "string",
+            "enum": ["jewelry", "treasure", "magical_object", "weapon", "armor", "consumable", "document", "unspecified"]
+          },
+          "magical":     { "type": ["boolean", "null"] },
+          "description": { "$ref": "#/definitions/long_text" },
+          "properties":  { "type": "array", "items": { "$ref": "#/definitions/short_text" } },
+          "value":       { "$ref": "#/definitions/short_text" },
+          "status": {
+            "type": "string",
+            "enum": ["party_possession", "npc_possession", "lost", "destroyed", "unaccounted", "unknown"]
+          },
+          "holder": { "type": ["string", "null"] },
+          "acquired": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "session":  { "type": "integer", "minimum": 1 },
+              "from":     { "$ref": "#/definitions/short_text" },
+              "location": { "$ref": "#/definitions/short_text" }
+            }
+          },
+          "origin": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "npc":      { "$ref": "#/definitions/short_text" },
+              "faction":  { "$ref": "#/definitions/short_text" },
+              "location": { "$ref": "#/definitions/short_text" }
+            }
+          },
+          "dm_notes": { "$ref": "#/definitions/long_text" }
+        }
+      }
+    }
+  }
+}

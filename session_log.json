@@ -1,4 +1,5 @@
 {
+  "$schema": "./schemas/session_log.schema.json",
   "session_log": [
     {
       "session_number": 1,

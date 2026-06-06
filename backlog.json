@@ -10,9 +10,9 @@
     {
       "id": "BL-02",
       "category": "campaign_state",
-      "description": "Update airth_campaign_state.json: level-ups for Strummer (4), Chekkad (4), Sardet (5), Zardoon (5); add Izen and Tafat; fix _settlements_file pointer to settlements/",
-      "status": "open",
-      "notes": "All four level-ups are from session 26. Izen and Tafat are Zack's characters and have no entry at all."
+      "description": "Apply level-ups from session 26 to campaign_main.json players block: Strummer (4), Chekkad (4), Sardet (5), Zardoon (5); add Izen and Tafat",
+      "status": "closed",
+      "notes": "campaign_state.json has been removed. Players now live in campaign_main.json under campaign.players. Izen and Tafat (Zack's characters) have no entry at all."
     },
     {
       "id": "BL-03",
@@ -68,7 +68,7 @@
       "category": "data_integrity",
       "description": "Fix Leeandra's NPC record: thinks_with needs 'diplomacy', faction needs 'lizard-men'",
       "status": "open",
-      "notes": "Record won't validate against airth_npcs.schema.json until these are corrected."
+      "notes": "Record won't validate against schemas/npcs.schema.json until these are corrected."
     },
     {
       "id": "BL-11",
@@ -94,9 +94,23 @@
     {
       "id": "BL-14",
       "category": "lore",
-      "description": "Document twelve-world cosmology in airth_campaign_main.json or airth_taxonomy.json",
+      "description": "Document twelve-world cosmology in campaign_main.json or taxonomy/",
       "status": "open",
       "notes": "Established as canon in session 26 via Chekkad's training. 12 worlds, 20 portals at vertices of a truncated dodecahedron. Illusions are resonance from adjacent worlds."
+    },
+    {
+      "id": "BL-15",
+      "category": "schema",
+      "description": "Flesh out schemas/items.schema.json — stub created, needs review against full item data",
+      "status": "open",
+      "notes": "Stub covers current item structure. Validate all items.json entries against it and extend enum lists as needed."
+    },
+    {
+      "id": "BL-16",
+      "category": "schema",
+      "description": "Flesh out schemas/session_log.schema.json — stub created, needs review against full session log data",
+      "status": "open",
+      "notes": "Stub covers current session structure including optional in_game_dates and quests_pending_or_deferred fields. Validate all sessions and extend as the log grows."
     }
   ]
 }
