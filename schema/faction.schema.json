@@ -1,0 +1,119 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "faction.schema.json",
+  "title": "Faction",
+  "description": "Schema for a faction or organization in a D&D campaign",
+  "type": "object",
+  "required": ["id", "name"],
+  "additionalProperties": false,
+
+  "definitions": {
+    "short_text": { "type": "string", "maxLength": 100 },
+    "long_text":  { "type": "string", "maxLength": 1000 },
+
+    "relationship": {
+      "type": "object",
+      "required": ["faction_id", "nature"],
+      "additionalProperties": false,
+      "properties": {
+        "faction_id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "nature":     { "$ref": "#/definitions/long_text", "minLength": 1 }
+      }
+    },
+
+    "faction": {
+      "type": "object",
+      "required": ["id", "name"],
+      "additionalProperties": false,
+      "properties": {
+
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9-]+$",
+          "minLength": 1
+        },
+
+        "name": { "$ref": "#/definitions/short_text", "minLength": 1 },
+
+        "identity": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "descriptors":        { "type": "array", "items": { "$ref": "#/definitions/short_text" } },
+            "symbol":             { "$ref": "#/definitions/short_text" },
+            "public_perception":  { "$ref": "#/definitions/long_text" }
+          }
+        },
+
+        "goals": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "primary":       { "$ref": "#/definitions/long_text" },
+            "secondary":     { "type": "array", "items": { "$ref": "#/definitions/long_text" } },
+            "hidden_agenda": { "$ref": "#/definitions/long_text" }
+          }
+        },
+
+        "philosophy": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "summary": { "$ref": "#/definitions/long_text" },
+            "methods": { "type": "array", "items": { "$ref": "#/definitions/long_text" } },
+            "limits":  { "type": "array", "items": { "$ref": "#/definitions/long_text" } }
+          }
+        },
+
+        "position": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "territory":   { "$ref": "#/definitions/long_text" },
+            "power_level": {
+              "type": "string",
+              "enum": ["local", "regional", "national", "extraplanar"]
+            },
+            "active_since": { "$ref": "#/definitions/short_text" }
+          }
+        },
+
+        "relationships": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "alliances": { "type": "array", "items": { "$ref": "#/definitions/relationship" } },
+            "rivals":    { "type": "array", "items": { "$ref": "#/definitions/relationship" } },
+            "needs":     { "type": "array", "items": { "$ref": "#/definitions/long_text" } },
+            "provides":  { "type": "array", "items": { "$ref": "#/definitions/long_text" } }
+          }
+        },
+
+        "subfactions": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/definitions/faction" }
+        },
+
+        "projects": {
+          "type": "array",
+          "items": { "type": "object" }
+        },
+
+        "dm_notes": { "$ref": "#/definitions/long_text" }
+      }
+    }
+  },
+
+  "properties": {
+    "id":           { "type": "string", "pattern": "^[a-z0-9-]+$", "minLength": 1 },
+    "name":         { "$ref": "#/definitions/short_text", "minLength": 1 },
+    "identity":     { "$ref": "#/definitions/faction/properties/identity" },
+    "goals":        { "$ref": "#/definitions/faction/properties/goals" },
+    "philosophy":   { "$ref": "#/definitions/faction/properties/philosophy" },
+    "position":     { "$ref": "#/definitions/faction/properties/position" },
+    "relationships":{ "$ref": "#/definitions/faction/properties/relationships" },
+    "subfactions":  { "$ref": "#/definitions/faction/properties/subfactions" },
+    "projects":     { "$ref": "#/definitions/faction/properties/projects" },
+    "dm_notes":     { "$ref": "#/definitions/faction/properties/dm_notes" }
+  }
+}
