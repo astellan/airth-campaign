@@ -1,0 +1,92 @@
+{
+  "$schema": "../../schema/faction.schema.json",
+  "id": "serdanos",
+  "name": "The Serdanos",
+
+  "identity": {
+    "descriptors": ["observant", "ancient", "decentralized", "silent"],
+    "symbol": "A gnarled spiral etched in stone or bone, often wrapped in living vine",
+    "public_perception": "Half myth, half threat. Some call them healers; others say they walk with monsters. No two villages agree."
+  },
+
+  "goals": {
+    "primary": "To safeguard and understand the Living World — not only plants and beasts, but the subtle currents that bind it to Faery, dream, and memory.",
+    "secondary": [
+      "Reclaim forgotten groves and sacred sites.",
+      "Uncover the ways mortals damaged Faery after the Fall."
+    ],
+    "hidden_agenda": "To ensure the Faery realm is not pulled fully into Airth — the blurring has already begun, and it may yet devour both worlds."
+  },
+
+  "philosophy": {
+    "summary": "The Serdanos predate both the old gods and the new. Their power does not flow from worship — it flows from the Living World itself. They are not god-worshippers; they are custodians. What is remembered is real; what is written down is already dead. The highest sin is to make Faery a faith — many of the worst horrors after the Fall stemmed from exactly that.",
+    "methods": [
+      "Act when the land itself speaks or recoils — not before.",
+      "Pass knowledge master to student through oral tradition and trial.",
+      "Walk places that feel forgotten by the gods.",
+      "Speak to cults of Thulda, Ossamar, and Isarna when rites overlap."
+    ],
+    "limits": [
+      "Carry no written doctrine — ever.",
+      "Will not anchor Faery through belief or worship.",
+      "Rarely act in numbers; rarely declare themselves openly."
+    ]
+  },
+
+  "position": {
+    "territory": "Widespread but sparse. Circles exist in deep forest, high fen, old barrows, and water-veined stone hills. Their paths pass through places that feel forgotten by the gods.",
+    "power_level": "regional",
+    "active_since": "Before the Fall — their power predates both pantheons."
+  },
+
+  "relationships": {
+    "alliances": [
+      {
+        "faction_id": "elunad",
+        "nature": "Occasional alignment around shared border-keeping. Neither order answers to the other."
+      },
+      {
+        "faction_id": "thulda-ossamar-isarna-cults",
+        "nature": "Will speak and cooperate when rites overlap. Not a formal alliance — situational."
+      }
+    ],
+    "rivals": [
+      {
+        "faction_id": "ilmenor",
+        "nature": "Deep distrust. The Ilmenor impose rigid arcane boundaries and manipulate the hidden world; the Serdanos regard this as dangerous interference with forces that should not be codified."
+      },
+      {
+        "faction_id": "covenant-bound",
+        "nature": "Anyone who seeks to anchor Faery through belief or worship is a threat — intentionally or not."
+      }
+    ],
+    "needs": [
+      "Groves, barrows, and fens left undisturbed.",
+      "Communities that do not mistake their silence for heresy."
+    ],
+    "provides": [
+      "Guidance to places where the veil between Airth and Faery is thin.",
+      "Knowledge of old rites, forgotten groves, and the damage done to Faery after the Fall.",
+      "Warning when something old and dormant stirs."
+    ]
+  },
+
+  "nodes": {
+    "elder-circles": {
+      "name": "Elder Circles",
+      "type": "leadership",
+      "role": "Authority flows through lineages of teaching, not titles. Elders are those whose memory runs deepest. Nabia is one such elder.",
+      "npcs": ["nabia"],
+      "notes": "Nabia was Bracara's mentor and once held vigil at the Bramblewood shrine in Tagmira. A touchstone for the faction's presence in the Luric Marches."
+    },
+    "initiate-trials": {
+      "name": "Initiate Trials",
+      "type": "operations",
+      "role": "Initiates undergo trials to receive the Touch of the Green. The process is oral, memory-based, and passed master to student.",
+      "connections": ["elder-circles"],
+      "notes": "Brigantios (Andre) is a Serdanos druid — level 3 at session 26. His training lineage is undeveloped."
+    }
+  },
+
+  "dm_notes": "Brigantios (Andre) is a Serdanos druid — every fey-tainted or Faery-adjacent location has a hook for him. The residual fey taint in the Tagmira shrine is undetectable except to a druid; Brigantios could sense it. Nabia, one of the elder circle, was Bracara's mentor and once held vigil at that shrine. The Bramblewood was seeded by the old gods as a perimeter — the Serdanos likely know this or could know it. Old rites gone feral after centuries of abandonment are an ongoing threat the order monitors. Some Rootbound still walk old temple vaults seeking relics that should not fall into mortal hands."
+}
