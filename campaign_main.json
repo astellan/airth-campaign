@@ -233,366 +233,6 @@
         }
       ]
     },
-    "templates": {
-      "session_template": {
-        "date": "",
-        "locations": [],
-        "party_members_present": [],
-        "summary": "",
-        "encounters": {
-          "combat": [],
-          "social": [],
-          "exploration": []
-        },
-        "npcs_met": [],
-        "items_gained": [],
-        "items_lost": [],
-        "rumors_learned": [],
-        "quests_started": [],
-        "quests_completed": [],
-        "xp_awarded": 0,
-        "deaths": [],
-        "significant_events": [],
-        "location_at_session_end": "",
-        "dm_notes": ""
-      },
-      "settlement_template": {
-        "name": "",
-        "type": "",
-        "population": {
-          "total": 0,
-          "breakdown": {
-            "agriculture_herding": 0,
-            "militia_active": 0,
-            "veterans_elites": 0,
-            "clergy": 0,
-            "ilmenor_scholars": 0,
-            "artisans_builders": 0,
-            "traders_ferrymen": 0,
-            "fisherfolk_riverfolk": 0,
-            "monastics_hermits": 0,
-            "servants_dependents": 0,
-            "bound_laborers": 0,
-            "fringe_outliers": 0
-          }
-        },
-        "economy": [],
-        "exports": [],
-        "imports": [],
-        "character": "",
-        "atmosphere": {
-          "sounds": [],
-          "smells": [],
-          "mood": ""
-        },
-        "families": [],
-        "locations": {
-          "_example": {
-            "type": "",
-            "services": []
-          }
-        },
-        "factions": [],
-        "tensions": [],
-        "rumors": [],
-        "defenses": {},
-        "trade_focus": "",
-        "nearest_neighbors": [],
-        "road_position": "",
-        "steadings": {}
-      },
-      "steading_template": {
-        "name": "",
-        "population": 0,
-        "families": 0,
-        "primary_activity": "",
-        "exports_to_parent": [],
-        "character": "",
-        "demihumans_present": false,
-        "humanoid_tolerance": "none",
-        "_humanoid_tolerance_options": [
-          "none",
-          "low",
-          "moderate",
-          "high"
-        ],
-        "threat_proximity": "safe",
-        "_threat_proximity_options": [
-          "safe",
-          "cautious",
-          "dangerous",
-          "extreme"
-        ],
-        "notable_residents": []
-      },
-      "npc_template": {
-        "moniker": "",
-        "home": "",
-        "home_settlement": "",
-        "gender": "male",
-        "_gender_options": [
-          "male",
-          "female",
-          "transgender"
-        ],
-        "faction": "",
-        "appearance": "",
-        "and_yet": "",
-        "wants": "",
-        "does_not_want": "",
-        "oddly_also": "",
-        "thinks_with": "",
-        "family": "",
-        "self_image": "",
-        "recreation": "",
-        "dreams": "",
-        "anecdotes": [],
-        "tragedies": [],
-        "pc_leverage": ""
-      },
-      "location_types": {
-        "flophouse": {
-          "services": [
-            "bed"
-          ]
-        },
-        "guild_hall": {
-          "services": [
-            "scribing scrolls",
-            "repairing items",
-            "cooking for groups",
-            "crafting",
-            "practicing alchemy or magic"
-          ]
-        },
-        "homes": {
-          "services": [
-            "bed"
-          ]
-        },
-        "inn": {
-          "services": [
-            "bed",
-            "food & drink"
-          ]
-        },
-        "market": {
-          "services": [
-            "goods for sale"
-          ]
-        },
-        "shrines": {
-          "services": [
-            "place for offerings"
-          ]
-        },
-        "stables": {
-          "services": [
-            "equine services",
-            "bed"
-          ]
-        },
-        "streets": {
-          "services": [
-            "flavor (description of town)",
-            "encounters"
-          ]
-        },
-        "tavern": {
-          "services": [
-            "food & drink",
-            "hirelings",
-            "entertainment"
-          ]
-        },
-        "temple": {
-          "services": [
-            "succor",
-            "wine",
-            "tutelage",
-            "tithing recipients (for paladin characters)",
-            "blessings"
-          ]
-        }
-      },
-      "adventure_site_template": {
-        "name": "",
-        "type": [],
-        "_type_options": [
-          "dungeon",
-          "wilderness",
-          "ruins",
-          "urban",
-          "planar",
-          "underwater",
-          "sacred_site"
-        ],
-        "location": "",
-        "access_difficulty": "moderate",
-        "_access_difficulty_options": [
-          "trivial",
-          "moderate",
-          "difficult",
-          "extreme",
-          "impossible_without_magic"
-        ],
-        "recommended_level": "",
-        "estimated_sessions_min": 0,
-        "estimated_sessions_max": 0,
-        "overview": {
-          "what_it_is": "",
-          "why_it_exists": "",
-          "current_state": "",
-          "historical_context": ""
-        },
-        "access_challenges": {
-          "physical": [],
-          "magical": [],
-          "political": [],
-          "environmental": [],
-          "temporal": ""
-        },
-        "known_dangers": {
-          "creatures": [],
-          "traps": [],
-          "environmental_hazards": [],
-          "magical_hazards": [],
-          "unknown_threats": []
-        },
-        "rewards": {
-          "treasure": [],
-          "knowledge": [],
-          "magical_items": [],
-          "strategic_value": [],
-          "reputation_gains": []
-        },
-        "factions_interested": {
-          "_example_faction": {
-            "interest_level": "aware",
-            "_interest_level_options": [
-              "aware",
-              "investigating",
-              "actively_pursuing",
-              "obsessed"
-            ],
-            "goals": "",
-            "resources_committed": "",
-            "knowledge_level": ""
-          }
-        },
-        "local_knowledge": {
-          "common_rumors": [],
-          "specialist_knowledge": {
-            "_example_source": {
-              "cost_to_acquire": "",
-              "accuracy": "",
-              "information": []
-            }
-          },
-          "forbidden_knowledge": []
-        },
-        "entry_requirements": {
-          "mandatory": [],
-          "highly_recommended": [],
-          "useful": []
-        },
-        "key_locations": {
-          "_example_location": {
-            "name": "",
-            "description": "",
-            "dangers": [],
-            "treasures": [],
-            "connections": []
-          }
-        },
-        "consequences": {
-          "success": [],
-          "partial_success": [],
-          "failure": [],
-          "discovery": []
-        },
-        "dm_notes": {
-          "design_intent": "",
-          "scaling_options": [],
-          "alternative_approaches": [],
-          "integration_points": []
-        }
-      },
-      "player_character_template": {
-        "name": "",
-        "race": "",
-        "subrace": "",
-        "class": "",
-        "level": 0,
-        "status": "alive",
-        "_status_options": [
-          "alive",
-          "dead",
-          "missing",
-          "retired"
-        ],
-        "faction": "",
-        "spells": [],
-        "items": [],
-        "mentors": []
-      },
-      "plot_template": {
-        "name": "",
-        "status": "active",
-        "_status_options": [
-          "active",
-          "dormant",
-          "resolved",
-          "failed"
-        ],
-        "tier": "local",
-        "_tier_options": [
-          "local",
-          "regional",
-          "campaign"
-        ],
-        "summary": "",
-        "factions_involved": [],
-        "key_npcs": [],
-        "current_state": "",
-        "player_knowledge": "",
-        "dm_notes": "",
-        "hooks": [],
-        "consequences_if_ignored": ""
-      },
-      "family_template": {
-        "name": "",
-        "home_settlement": "",
-        "status": "",
-        "primary_occupation": "",
-        "notable_members": [],
-        "alliances": [],
-        "rivalries": [],
-        "secrets": [],
-        "resources": "",
-        "dm_notes": ""
-      },
-      "item_template": {
-        "name": "",
-        "type": "",
-        "_type_options": [
-          "weapon",
-          "armor",
-          "tool",
-          "magical",
-          "relic",
-          "trade_good",
-          "document"
-        ],
-        "description": "",
-        "magical": false,
-        "properties": [],
-        "origin": "",
-        "current_owner": "",
-        "value_gp": 0,
-        "dm_notes": ""
-      }
-    },
     "generation_guidelines": {
       "npc_gender_distribution": {
         "male": 0.6,
@@ -615,8 +255,122 @@
         "fringe_outliers": 0.01
       }
     },
-    "_session_log_file": "airth_session_log.json",
-    "_campaign_state_file": "airth_campaign_state.json",
-    "_taxonomy_file": "airth_taxonomy.json"
+    "players": {
+      "hoi": {
+        "characters": {
+          "chekkad_ag_maktar": {
+            "name": "Chekkad ag Maktar",
+            "race": "human",
+            "class": "illusionist",
+            "level": 3,
+            "status": "alive",
+            "faction": "",
+            "spells": [
+              "blur"
+            ],
+            "items": [],
+            "mentors": []
+          },
+          "strummer": {
+            "name": "Strummer",
+            "race": "human",
+            "class": "bard",
+            "level": 3,
+            "status": "alive",
+            "faction": "",
+            "items": [],
+            "mentors": []
+          }
+        }
+      },
+      "phil": {
+        "characters": {
+          "vetranio": {
+            "name": "Vetranio",
+            "race": "human",
+            "class": "magic-user",
+            "level": 4,
+            "status": "alive",
+            "faction": "ilmenor",
+            "spells": [],
+            "items": [],
+            "mentors": []
+          },
+          "tartessia": {
+            "name": "Tartessia",
+            "race": "elf",
+            "subrace": "forsworn",
+            "class": "fighter/magic-user",
+            "level": "2/1",
+            "status": "alive",
+            "faction": "",
+            "spells": [],
+            "items": [],
+            "mentors": []
+          },
+          "zaphon": {
+            "name": "Zaphon",
+            "race": "human",
+            "class": "cleric",
+            "level": 4,
+            "status": "alive",
+            "faction": "",
+            "spells": [],
+            "items": [],
+            "mentors": []
+          }
+        }
+      },
+      "andre": {
+        "characters": {
+          "brigantios": {
+            "name": "Brigantios",
+            "race": "human",
+            "class": "druid",
+            "level": 3,
+            "status": "alive",
+            "faction": "serdanos",
+            "spells": [],
+            "items": [],
+            "mentors": []
+          },
+          "trebastos": {
+            "name": "Trebastos",
+            "race": "human",
+            "class": "fighter",
+            "level": 4,
+            "status": "alive",
+            "faction": "",
+            "items": [],
+            "mentors": []
+          }
+        }
+      },
+      "chris": {
+        "characters": {
+          "sardet": {
+            "name": "Sardet",
+            "race": "human",
+            "class": "paladin",
+            "level": 4,
+            "status": "alive",
+            "faction": "ardanir",
+            "spells": [],
+            "items": [],
+            "mentors": []
+          },
+          "zardun": {
+            "name": "Zardun",
+            "race": "human",
+            "class": "thief",
+            "level": 4,
+            "status": "alive",
+            "faction": "",
+            "items": [],
+            "mentors": []
+          }
+        }
+      }
+    }
   }
 }
