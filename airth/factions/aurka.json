@@ -1,0 +1,99 @@
+{
+  "$schema": "../../schema/faction.schema.json",
+  "id": "aurka",
+  "name": "The Aurka",
+
+  "identity": {
+    "descriptors": ["pragmatic", "cunning", "independent", "scarred"],
+    "symbol": "None officially. Some mark maps with a three-pronged fork or a broken circle. Recognition comes through tales, code-phrases, and scars — not iconography.",
+    "public_perception": "Regarded as tomb-robbers or folk heroes depending on the tale. Open talk of the old gods or old Empire is a taboo in polite society — the Aurka give people a way to tiptoe around the subject, which adds to their folk hero reputation."
+  },
+
+  "goals": {
+    "primary": "Extract knowledge and relics from old ruins and sites of power — things no one else has touched in three centuries.",
+    "secondary": [
+      "Sell valuable findings, trade secrets, map safe routes to forgotten places.",
+      "Stay ahead of the Ilmenor, who want right of refusal over everything the Aurka pull out of the ground."
+    ],
+    "hidden_agenda": "Some among the Aurka believe the old gods can be awakened — or at least used. This is not spoken of openly even within the network."
+  },
+
+  "philosophy": {
+    "summary": "No hierarchy, no guildhall, no agreed-upon code. The Aurka are bound by a shared culture of risk, quiet defiance, and mutual favors. Membership is informal — no oaths, no ranks. Status is earned through deeds and reputation. Independence and cleverness are the only universally prized virtues. No one lives long in this line of work without earning their scars.",
+    "methods": [
+      "Lockpicks, rumors, bribes, and maps etched on the inside of a drinking horn.",
+      "Whispered slang, thief-sign, trail glyphs, and story-code for communication.",
+      "Mutual favors — the network runs on reciprocity, not command.",
+      "Wary respect among members: recognize each other by tales, phrases, and scars."
+    ],
+    "limits": [
+      "No collective limits — each operator sets their own.",
+      "As a practical matter: do not hand anything directly to the Ilmenor."
+    ]
+  },
+
+  "position": {
+    "territory": "Wherever ruins lie, and in the cracks between polities. No fixed base — back rooms, borrowed spaces, ruins themselves.",
+    "power_level": "regional",
+    "active_since": "Descended from treasure-hunters and war-orphans who looted temples in the aftermath of the Silence."
+  },
+
+  "relationships": {
+    "alliances": [
+      {
+        "faction_id": "shadowy-patrons",
+        "nature": "Wealthy buyers, independent scholars, and rogue merchants who fund expeditions in exchange for finds or information. Relationships are transactional and often anonymous."
+      }
+    ],
+    "rivals": [
+      {
+        "faction_id": "ilmenor",
+        "nature": "The Ilmenor want right of refusal over tomes and arcane relics the Aurka recover. The Aurka fear their scrutiny and work around it. Uneasy proximity — the Ilmenor keep the Aurka close enough to monitor."
+      },
+      {
+        "faction_id": "temple-guards",
+        "nature": "Protect the ruins and relics the Aurka want. Ongoing occupational hazard."
+      }
+    ],
+    "needs": [
+      "Ruins, tombs, and forgotten sites left unguarded long enough to work.",
+      "Buyers and patrons willing to pay for what comes out.",
+      "Members who can be trusted — at least enough for one job."
+    ],
+    "provides": [
+      "Access to pre-Silence knowledge and relics.",
+      "Maps of forgotten places and safe routes through ruins.",
+      "A shadow network for those who need to move information or objects without official eyes on them."
+    ]
+  },
+
+  "nodes": {
+    "caelrun-fishmongers": {
+      "name": "Caelrun Fishmonger's Back Room",
+      "type": "support",
+      "role": "Ossek Thrice-Buried operates from a back room here, doing accounts for the fishmonger as cover. A known Aurka contact point in the Luric Marches.",
+      "location": "Caelrun",
+      "npcs": ["ossek_thrice_buried"],
+      "connections": ["tomb-south-of-dravesa"],
+      "notes": "Ossek is the party's live connection to the Aurka network. Can provide Aurka introductions, tomb knowledge, inscription reading, and the judgment to abort before a ruin goes wrong. Cannot be controlled; will get people killed pursuing a rubbing."
+    },
+    "tomb-south-of-dravesa": {
+      "name": "Tomb South of Dravesa",
+      "type": "operations",
+      "role": "Current active Aurka operation — Ossek's obsession. An unplundered tomb in jackalwere country. Interior unknown; inscriptions believed to connect to Ameniseb and pre-Silence conditional immortality.",
+      "location": "South of Dravesa, jackalwere-infested area",
+      "npcs": ["ossek_thrice_buried"],
+      "connections": ["caelrun-fishmongers"],
+      "notes": "Adventure site stub — needs full development before the party returns. Ossek needs Zardoon's hands, eyes, and feet. Zardoon advanced to level 5 through this excursion (session 26). Nevret, Bressul, and Davanek all died on previous Ossek operations."
+    },
+    "scattered-cells": {
+      "name": "Scattered Cells",
+      "type": "support",
+      "role": "The broader Aurka network — loose clusters of operators across Velgroth-Lucernia and the Marches. No central coordination; cells know only their immediate contacts.",
+      "connections": ["caelrun-fishmongers"],
+      "notes": "Zelnar is a named Aurka contact from a prior campaign thread — dormant but could be reactivated. The network's reach is wide but its depth at any given node is shallow."
+    }
+  },
+
+  "dm_notes": "Zardoon (Chris) has Aurka access through Ossek — this is the live connection. Ossek can be pointed at tombs, used for Aurka introductions, or hired for inscription work. He cannot be controlled and will get people killed. His three dead partners (Nevret, Bressul, Davanek) are a tone-setter for any joint operation. The hidden agenda — old gods can be awakened or used — is a long-term revelation available if the party digs deep into the network. Zelnar (named in early faction notes as a thief's mentor) is a dormant Aurka contact; his thread can be picked up if needed."
+}
