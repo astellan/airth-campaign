@@ -1,0 +1,157 @@
+{
+  "$schema": "../../schema/faction.schema.json",
+  "id": "hobgoblin-city-states",
+  "name": "The Hobgoblin City-States",
+
+  "identity": {
+    "descriptors": ["disciplined", "expansionist", "slaveholding", "legalistic", "status-hungry"],
+    "symbol": "A crown above a chain",
+    "public_perception": "Border settlers and march lords know them as slavers and raiders. What they do not know is that the hobgoblins consider themselves a civilization — with cities, law, trade, and diplomatic ambitions. To the hobgoblins, they are not monsters. They are a people not yet recognized."
+  },
+
+  "goals": {
+    "primary": "Win recognition as a legitimate civilized people — trading rights, diplomatic standing, formal acknowledgment from Velgroth-Lucernia, the Imazuran Confederation, or any power strong enough to make it mean something.",
+    "secondary": [
+      "Expand territorial holdings and consolidate the frontier against human encroachment.",
+      "Grow and diversify the slave economy — more races, more labor, more leverage.",
+      "Protect and expand the hidden human slave population, which the hobgoblins regard as a long-term strategic asset."
+    ],
+    "hidden_agenda": "The hobgoblins would not oppose the systematic weakening of human civilization — if humanity were brought low enough, humans could be enslaved openly and in numbers. They do not know this is the fire elemental conspiracy's goal, and they are not actively working toward it. But they would not be sorry."
+  },
+
+  "philosophy": {
+    "summary": "Might makes right — but law is what separates civilization from savagery. The hobgoblins believe they are civilized: they have cities, codified treaties, trade networks, and a slave economy that sustains all of it. Their 'tolerance' — the holding of many races in ordered subjugation — is a point of genuine cultural pride. They parley when they can, fight when they think they will win, and retreat when they won't. They are not irrational.",
+    "methods": [
+      "Parley first — approach powerful parties with offers before resorting to force.",
+      "Slave economy — all labor is performed by subjugated races; hobgoblins fight, govern, and trade.",
+      "Legal convention — inter-city-state relations are governed by treaty law, including the killing taboo.",
+      "Military discipline — coffles and columns travel armed and in formation.",
+      "Strategic caution — never provoke a power you cannot beat; recognition requires survival."
+    ],
+    "limits": [
+      "Will not antagonize Velgroth-Lucernia, the Imazuran Confederation, or any military power that could destroy them.",
+      "The killing taboo: hobgoblins do not kill hobgoblins. A legal convention enforced by treaty, inconsistently honored, and never quite forgotten.",
+      "Will not enslave lizard men. They are afraid of them and wise enough to know it."
+    ]
+  },
+
+  "position": {
+    "territory": "Four 30-mile hexes beginning 30 miles south of the Luric marches. Five city-states with hinterlands worked by slave labor: Kazhar, Tannok, Makkud, Hebrakh, Megrath.",
+    "power_level": "regional",
+    "active_since": "Several generations; stable treaty traditions and an established slave economy."
+  },
+
+  "relationships": {
+    "alliances": [
+      {
+        "faction_id": "ogre-magi",
+        "nature": "Regular slave trade. The hobgoblins sell slaves — primarily for the ogre magi mines, where mortality is extreme and demand is constant. In exchange they receive refined metals and a carefully controlled trickle of magic items. The ogre magi manage the flow deliberately: enough to make the hobgoblins dependent, not enough to make them dangerous."
+      }
+    ],
+    "rivals": [
+      {
+        "faction_id": "lizard-men",
+        "nature": "Avoided. The hobgoblins fear lizard men and will not move against them. Lizard men are the one population entirely off-limits for slavery — a limit born of pragmatism, not principle."
+      }
+    ],
+    "needs": [
+      "A steady supply of enslaved humanoids to sustain the labor economy.",
+      "Refined metals and magic items from the ogre magi trade.",
+      "Diplomatic recognition from a major human or demi-human power."
+    ],
+    "provides": [
+      "Slaves to the ogre magi mines — a regular, reliable supply.",
+      "A buffer between the Luric marches and whatever lies further south."
+    ]
+  },
+
+  "nodes": {
+    "city-state-councils": {
+      "name": "The City-State Councils",
+      "type": "leadership",
+      "role": "Each city-state governs itself. There is no unified hobgoblin leadership — the five councils make treaties, break them, and occasionally war with each other. Collective action requires negotiation and is rare. Hebrakh is traditionally regarded as keeper of treaty law and the killing taboo conventions, though this is a matter of prestige, not enforcement.",
+      "location": "Kazhar, Tannok, Makkud, Hebrakh, Megrath",
+      "npcs": [],
+      "notes": "Wars between city-states are never total — the killing taboo limits escalation, even when violated at the margins. Raids for slaves between city-states occur. Alliances shift. No single city-state has achieved hegemony, though Kazhar tries."
+    },
+    "slave-coffles": {
+      "name": "The Slave Coffles",
+      "type": "operations",
+      "role": "Armed columns that move slaves northward to the ogre magi exchange point. They travel well-armed and in formation, operating as coffles — chained slave columns escorted by soldiers. Coffle commanders are authorized to take additional captives or seize wealth opportunistically, but are strictly cautious about provoking human military response.",
+      "location": "Moving along routes south of the Luric marches",
+      "npcs": ["grvaag_ironchain"],
+      "notes": "Grvaag Ironchain commands one such column out of Makkud. Coffle commanders know they are selling to ogre magi and know the slaves work mines with high mortality. This does not trouble them. They are very wary of being traced back to hobgoblin territory by human forces."
+    },
+    "hidden-pens": {
+      "name": "The Hidden Pens",
+      "type": "support",
+      "role": "Secure facilities in each city-state where the captive human population is kept. Humans are used for bureaucratic and administrative tasks — literate, compliant, generations removed from free society. Their existence is a closely guarded secret from outsiders.",
+      "location": "Each city-state; exact locations unknown to outsiders",
+      "npcs": [],
+      "notes": "Roughly 1,000 humans total across all five city-states. Born into captivity, unaware of human civilization to the north except through old stories. Treated as valuable property — not brutalized, kept capable of work. The hobgoblins understand a literate administrator is worth more intact. Discovery of this population by the PCs would reframe the hobgoblins entirely."
+    }
+  },
+
+  "subfactions": {
+    "kazhar": {
+      "id": "kazhar",
+      "name": "Kazhar",
+      "position": {
+        "territory": "Largest city-state. Would-be hegemon; the others resent its pretensions.",
+        "power_level": "regional"
+      }
+    },
+    "tannok": {
+      "id": "tannok",
+      "name": "Tannok",
+      "position": {
+        "territory": "Smallest city-state, most exposed on the northern frontier. Most interested in expansion toward the Luric marches.",
+        "power_level": "local"
+      }
+    },
+    "makkud": {
+      "id": "makkud",
+      "name": "Makkud",
+      "position": {
+        "territory": "Origin city-state of Grvaag Ironchain's coffle. Well-positioned on the trade route to the ogre magi exchange point.",
+        "power_level": "local"
+      }
+    },
+    "hebrakh": {
+      "id": "hebrakh",
+      "name": "Hebrakh",
+      "position": {
+        "territory": "Traditional keeper of hobgoblin treaty law and the killing taboo conventions.",
+        "power_level": "local"
+      }
+    },
+    "megrath": {
+      "id": "megrath",
+      "name": "Megrath",
+      "position": {
+        "territory": "Interior city-state. Tends to play the others against each other rather than commit to sides.",
+        "power_level": "local"
+      }
+    }
+  },
+
+  "projects": [
+    {
+      "name": "Northern Coffles",
+      "description": "Regular armed columns move slaves north to the ogre magi exchange point. Grvaag Ironchain's column is one of several active at any time. Coffle commanders are authorized to take additional captives or seize wealth of opportunity — cautiously.",
+      "status": "active"
+    },
+    {
+      "name": "Diplomatic Recognition",
+      "description": "No formal overtures yet, but the hobgoblins are alert to any contact with representatives of Velgroth-Lucernia or the Imazuran Confederation. Any such encounter is treated as an opportunity. They will parley before fighting if the opposing party appears powerful.",
+      "status": "latent"
+    },
+    {
+      "name": "The Human Breeding Program",
+      "description": "A multigenerational project to sustain a captive human population for administrative labor. Currently ~1,000 individuals across all five city-states. Hobgoblins regard this as a long-term strategic investment and guard the secret from outsiders absolutely.",
+      "status": "active"
+    }
+  ],
+
+  "dm_notes": "The hobgoblins are a mid-to-late threat the party first encounters through Grvaag's coffle. The core dramatic tension: they are not irrational monsters — they have genuine civilizational ambitions and a coherent worldview. They can be parlayed with. They will be impressed by demonstrated power; a party that looks strong enough might receive a formal overture rather than an attack. The hidden human population is the major secret: if the PCs ever find it, it transforms the hobgoblins from 'slavers' to something far more disturbing. The ogre magi relationship is the load-bearing external link — the hobgoblins are unknowingly serving the fire elemental conspiracy's labor needs. They do not know the endgame; they would not necessarily oppose it. Grvaag Ironchain remembers faces — any PC he has encountered is noted and reported back to Makkud."
+}
