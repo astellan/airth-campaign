@@ -1,0 +1,62 @@
+{
+  "$schema": "../../schema/faction.schema.json",
+  "id": "bandua-faithful",
+  "name": "The Bandua Faithful",
+
+  "identity": {
+    "descriptors": ["martial", "proud", "practical", "territorial"],
+    "symbol": "A spear thrust through a humanoid skull",
+    "public_perception": "The backbone of Dravesa's defense. Respected by those who depend on the walls and the raids; resented by the Schismatics."
+  },
+
+  "goals": {
+    "primary": "Maintain the seasonal raids on humanoid territories and keep Dravesa's fighting strength intact.",
+    "secondary": ["Train the militia", "Keep Schismatic humanoid-tolerance preaching from reaching the steadings"]
+  },
+
+  "philosophy": {
+    "summary": "The world has humanoids in it. Bandua gave humans the capacity to fight them. Failing to use that capacity is an insult to Bandua and a death sentence for the steadings. The seasonal raid is a religious obligation.",
+    "methods": ["Weapons training", "Seasonal raids", "Direct confrontation with Schismatic preaching when provoked"],
+    "limits": ["Will not accept Schismatic converts into fighting training", "Will not call off a raid on religious grounds"]
+  },
+
+  "position": {
+    "territory": "Vraed's Fighting Hall (Dravesa); allied steadings.",
+    "power_level": "local",
+    "active_since": "As long as Dravesa has had walls."
+  },
+
+  "relationships": {
+    "alliances": [
+      {
+        "faction_id": "malac-orthodox",
+        "nature": "Pragmatic. Shared opposition to the Schismatics. The Bandua find the Orthodox passive; the Orthodox find the Bandua crude. They work together anyway."
+      }
+    ],
+    "rivals": [
+      {
+        "faction_id": "malac-schismatics",
+        "nature": "The Schismatics are actively undermining steading participation in the seasonal raids. Two steadings have already refused to contribute fighters."
+      }
+    ],
+    "needs": ["Steading cooperation for seasonal raids", "Warden Keln to act against the Schismatics before Rakhmoth arrives"],
+    "provides": ["Militia training", "Raid leadership", "The stone walls — built and maintained by Bandua faithful labor and pride"]
+  },
+
+  "nodes": {
+    "vraed-halman": {
+      "name": "Vraed Halman",
+      "type": "leadership",
+      "role": "Warrior-priest. Runs the fighting hall. Commands the Bright-Scarred.",
+      "notes": "See npcs/vraed_halman.json."
+    },
+    "bright-scarred": {
+      "name": "The Bright-Scarred",
+      "type": "operations",
+      "role": "~30 initiated fighters who have participated in at least one seasonal raid. Core of the militia.",
+      "notes": "Loyal to Vraed personally as much as to Bandua."
+    }
+  },
+
+  "dm_notes": "Vraed will take unilateral action against Telvari if Stravar keeps stalling — producing Schismatic martyrs and handing Rakhmoth a grievance on arrival. The party can either give him a productive direction or watch him cause the problem everyone is trying to avoid."
+}

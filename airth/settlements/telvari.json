@@ -1,0 +1,16 @@
+{
+  "$schema": "../../schema/settlement.schema.json",
+  "id": "telvari",
+  "name": "Telvari",
+  "status": "stub",
+  "type": "steading",
+  "region": "Luric Marches",
+  "location": {
+    "description": "Northern steading, half a day north of Dravesa. Schismatic locus of fire worship; also a point of humanoid-human interaction.",
+    "terrain": "forest edge",
+    "travel_times": {
+      "from_dravesa": "half day north"
+    }
+  },
+  "associated_settlements": ["dravesa"]
+}

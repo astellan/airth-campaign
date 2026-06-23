@@ -1,0 +1,20 @@
+{
+  "moniker": "High Fire-seer Ilmath",
+  "home": "Temple of the Eternal Flame, Dravesa",
+  "home_settlement": "dravesa",
+  "gender": "female",
+  "faction": "malac-orthodox",
+  "appearance": "Mid-70s. White-robed. Eyes absolutely clear.",
+  "and_yet": "Moves with the unhurried precision of someone who has already decided how she will die.",
+  "wants": "The Orthodox to outlast the schism.",
+  "does_not_want": "Pity.",
+  "oddly_also": "Orziben's cleric died two months ago — she is the last senior Orthodox cleric alive, and has told no one.",
+  "thinks_with": "faith",
+  "family": "Widowed; two adult children in Orziben she corresponds with rarely.",
+  "self_image": "Malac's last credible witness.",
+  "recreation": "Tends the temple flame personally each dawn, regardless of who else is on duty.",
+  "dreams": "A proper successor before she dies.",
+  "anecdotes": ["Refused to close the temple during a Bronze Host siege; conducted full services with arrows in the door."],
+  "tragedies": ["One of her Fire-seers defected to the Schismatics three years ago. She blamed herself."],
+  "pc_leverage": "Has a deposition — Savar met Jorun alone six times before his pilgrimage. Will share it with someone she trusts to use it correctly."
+}

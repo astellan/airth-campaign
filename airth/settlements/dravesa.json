@@ -1,0 +1,99 @@
+{
+  "$schema": "../../schema/settlement.schema.json",
+  "id": "dravesa",
+  "name": "Dravesa",
+  "status": "ready",
+  "type": "small_town",
+  "region": "Luric Marches",
+  "location": {
+    "description": "Forest-edge town on flat ground, surrounded by farming steadings. Stone walls — the only stone walls in the Luric Marches.",
+    "terrain": "flat grassland, forest to north and east",
+    "travel_times": {
+      "from_tagmira": "1 day east",
+      "to_orziben": "1 day west"
+    }
+  },
+  "population": {
+    "total": 800,
+    "character": "Prosperous and factionalized. Strangers are read quickly — flame-drop pendant, sun-disk, or neither.",
+    "families": ["Yebrin", "Zeren", "Drunel", "Thamar", "Ulrek", "Hessari"]
+  },
+  "physical": {
+    "construction": "Stone and heavy timber. Older buildings cut-stone; newer timber-framed. Stone walls — the only ones in the Luric, a point of civic pride tied to the Bandua faithful.",
+    "sounds": ["axes from the wood yards", "market calls", "hides being worked"],
+    "smells": ["pine tar dominant", "curing hides", "earthy bitterness from the dye works", "woodsmoke always"],
+    "approach": "The smell hits before the walls do — pine tar and woodsmoke, with something sharper from the dye works. The tree line is close on the north and east. The stone walls are visible from a distance and unmistakable.",
+    "mood": "Prosperous but watchful. Quieter than its size suggests — the factions don't mix, so there's less of the noise of people getting along."
+  },
+  "economy": {
+    "primary": ["resin", "pelts", "forest dyes"],
+    "exports": ["pine tar", "pelts", "dyes"],
+    "imports": ["food", "weapons", "cloth"],
+    "trade_focus": "Alchemical and preservation materials",
+    "faction_presence": ["malac-orthodox", "malac-schismatics", "bandua-faithful"]
+  },
+  "defenses": {
+    "walls": "Stone — the only stone walls in the Luric Marches. North and South Gates.",
+    "watch": "20 watchmen, rotating shifts",
+    "militia": "~120 able-bodied adults trained through Vraed's hall"
+  },
+  "factions": ["malac-orthodox", "malac-schismatics", "bandua-faithful"],
+  "locations": [
+    {
+      "id": "temple-eternal-flame",
+      "name": "Temple of the Eternal Flame",
+      "type": "religious",
+      "description": "Orthodox HQ. Services at dawn, midday, dusk. Ilmath's residence in back. Attendance halved in five years.",
+      "services": "Blessings 1 sp; funeral rites 5 sp; fire-reading with Ilmath by appointment, no fixed price.",
+      "npc": "ilmath"
+    },
+    {
+      "id": "house-mountain-of-fire",
+      "name": "House of the Mountain of Fire",
+      "type": "religious",
+      "description": "Converted merchant's house. Sun-disk above door, east-facing skylight. Always young people outside. Savar's base.",
+      "services": "Dawn rites free and open; private counsel with Savar free; letters of introduction to the Mountain of Fire pilgrimage.",
+      "npc": "savar"
+    },
+    {
+      "id": "vraeds-fighting-hall",
+      "name": "Vraed's Fighting Hall",
+      "type": "training",
+      "description": "Timber building with practice yard. Bandua shrine at far end: bronze spear in a basin of dried blood and ash.",
+      "services": "Weapons training 1 sp/week; Bandua blessing before combat free to faithful; seasonal raid muster point.",
+      "npc": "vraed-halman"
+    },
+    {
+      "id": "wardens-hall",
+      "name": "Warden's Hall",
+      "type": "civic",
+      "description": "Stone building at the market square. Court three times weekly. Stravar's residence upstairs.",
+      "services": "Dispute resolution; letters of passage 2 gp; contract notarization 5 sp; public notices 1 cp.",
+      "npc": "stravar-keln"
+    },
+    {
+      "id": "gilded-ash-inn",
+      "name": "The Gilded Ash Inn",
+      "type": "inn",
+      "description": "Best inn between Tagmira and Orziben. 12 private rooms, common room seats 60.",
+      "services": "Private room 8 sp/night; common room 4 cp/night; meals 3 cp–8 sp; stabling 2 sp/night; bath 1 cp.",
+      "npc": "maret-duvall"
+    },
+    {
+      "id": "cadek-merchant-house",
+      "name": "Cadek Merchant House",
+      "type": "trade",
+      "description": "Grain, preserved goods, general cargo brokering. Currently shuttered — Adval inside, coming out twice daily to make a scene.",
+      "services": "Grain, preserved goods, cargo brokering. Currently closed.",
+      "npc": "adval-cadek"
+    }
+  ],
+  "npcs": ["stravar-keln", "ilmath", "savar", "vraed-halman", "maret-duvall", "adval-cadek"],
+  "tensions": [
+    "Jorun Cadek left for the Mountain of Fire 6 weeks ago and hasn't returned. Adval blames Savar publicly. Stravar needs evidence before acting.",
+    "Seasonal raid stalling — two steadings won't send fighters. Vraed will move unilaterally if Stravar doesn't act soon.",
+    "Rakhmoth reportedly coming for Midsummer (~3 weeks). Savar is quietly preparing. Stravar doesn't know yet.",
+    "Orziben's Orthodox cleric is dead. Ilmath is the last. She has said nothing."
+  ],
+  "associated_settlements": ["telvari"]
+}

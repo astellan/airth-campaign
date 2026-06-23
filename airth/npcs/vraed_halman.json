@@ -1,0 +1,20 @@
+{
+  "moniker": "Vraed Halman",
+  "home": "Vraed's Fighting Hall, Dravesa",
+  "home_settlement": "dravesa",
+  "gender": "male",
+  "faction": "bandua-faithful",
+  "appearance": "Mid-40s. Two fingers missing, left hand. Bandua's mark tattooed on right forearm.",
+  "and_yet": "Keeps meticulous written records of every raid — more scholar than brute.",
+  "wants": "The seasonal raid to proceed. Schismatics out before Rakhmoth arrives.",
+  "does_not_want": "Stravar stalling.",
+  "oddly_also": "Has never lost a fighter under his command.",
+  "thinks_with": "blade",
+  "family": "Wife Sera; two sons of raiding age; two younger daughters.",
+  "self_image": "The only person in Dravesa taking the actual threat seriously.",
+  "recreation": "Trains alone at dawn, every day.",
+  "dreams": "His sons leading raids after him.",
+  "anecdotes": ["Lost two fingers to a goblin and killed it with the same hand."],
+  "tragedies": ["Lost a close friend when a Schismatic-influenced steading refused to send warning of a raid."],
+  "pc_leverage": "Respects fighting competence only. Will provide four fighters as escort, no questions asked."
+}

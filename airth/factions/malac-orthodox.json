@@ -1,0 +1,62 @@
+{
+  "$schema": "../../schema/faction.schema.json",
+  "id": "malac-orthodox",
+  "name": "The Malac Cult (Orthodox)",
+
+  "identity": {
+    "descriptors": ["traditional", "aging", "dignified", "besieged"],
+    "symbol": "A flame-drop pendant — a teardrop of fire",
+    "public_perception": "The old faith. Respected by elders, ignored by the young. Seen as custodians of something real but diminishing."
+  },
+
+  "goals": {
+    "primary": "Preserve the authentic Malac rite and outlast the schism.",
+    "secondary": ["Maintain the Temple of the Eternal Flame in Dravesa and its counterpart in Orziben."]
+  },
+
+  "philosophy": {
+    "summary": "Malac is approached through specific, careful, earned rites — not through spectacle or mass pilgrimage. The Mountain of Fire is real but dangerous and not for everyone. Correct relationship with Malac requires patience and preparation.",
+    "methods": ["Maintain daily temple services", "Conduct death rites with full preparation", "Train Fire-seers in orthodox rite"],
+    "limits": ["Will not conduct rites at Schismatic sites", "Will not publicly acknowledge the Orthodox is losing"]
+  },
+
+  "position": {
+    "territory": "Dravesa and Orziben only.",
+    "power_level": "local",
+    "active_since": "Pre-schism; the older of the two Malac traditions in the Luric."
+  },
+
+  "relationships": {
+    "alliances": [
+      {
+        "faction_id": "bandua-faithful",
+        "nature": "Pragmatic. Shared opposition to the Schismatics. The Orthodox find the Bandua crude; the Bandua find the Orthodox passive. They work together anyway."
+      }
+    ],
+    "rivals": [
+      {
+        "faction_id": "malac-schismatics",
+        "nature": "The schism. The Schismatics have taken most of the young congregation."
+      }
+    ],
+    "needs": ["Successor Fire-seers — critically short", "Political cover to act against the Schismatics"],
+    "provides": ["Funeral rites", "Blessings", "Fire-reading", "Institutional legitimacy in Dravesa"]
+  },
+
+  "nodes": {
+    "ilmath": {
+      "name": "Ilmath, High Fire-seer",
+      "type": "leadership",
+      "role": "The last senior Orthodox cleric in Dravesa or Orziben.",
+      "notes": "See npcs/ilmath.json"
+    },
+    "fire-seers": {
+      "name": "The Three Fire-seers",
+      "type": "operations",
+      "role": "Daily temple service and rite. One is quietly attending Schismatic dawn rites.",
+      "notes": "Unnamed. The wavering one is the crisis."
+    }
+  },
+
+  "dm_notes": "The Orthodox are dying slowly and know it. Ilmath is the last senior cleric in both settlements — Orziben's died two months ago and she has said nothing. The wavering Fire-seer is the tell that the institution is hollowing out from within."
+}

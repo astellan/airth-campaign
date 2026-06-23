@@ -1,0 +1,73 @@
+{
+  "$schema": "../../schema/faction.schema.json",
+  "id": "malac-schismatics",
+  "name": "Cult of Malac — the Mountain of Fire",
+
+  "identity": {
+    "descriptors": ["fervent", "young", "expanding", "compromised"],
+    "symbol": "A sun-disk pendant — hammered copper, no detail",
+    "public_perception": "The new faith. Draws the young. Seen as vital by adherents, dangerous by the Orthodox and Bandua faithful, and vaguely unsettling by those with no faction."
+  },
+
+  "goals": {
+    "primary": "Formal recognition; Rakhmoth's theology accepted as the true Malac faith.",
+    "secondary": ["End the seasonal raids on humanoid territories", "Establish Telvari as a permanent Schismatic site", "Grow the pilgrimage route to the Mountain of Fire"],
+    "hidden_agenda": "Unknowingly serving fire elemental interests. The Mountain of Fire is a fire elemental site. Pilgrims who go there are being used. Neither Rakhmoth nor Savar understands this."
+  },
+
+  "philosophy": {
+    "summary": "The sun is Malac's true face. The Mountain of Fire (the Irkali, east of Imazuran) is where Malac is most present. Pilgrimage and self-sacrifice there are the highest rite. Humanoid tolerance is correct; seasonal raids are an offense against Malac's broader creation.",
+    "methods": ["Open dawn rites", "Private counsel and recruitment", "Pilgrimage to the Mountain of Fire", "Preaching against seasonal raids in the market"],
+    "limits": ["Will not directly attack the Orthodox — yet", "Will not acknowledge fire elemental influence — they are unaware of it"]
+  },
+
+  "position": {
+    "territory": "House of the Mountain of Fire (Dravesa); Telvari steading (north of Dravesa); the Mountain of Fire itself (east of Imazuran).",
+    "power_level": "local",
+    "active_since": "A generation ago, when Rakhmoth first preached."
+  },
+
+  "relationships": {
+    "alliances": [
+      {
+        "faction_id": "fire-elementals",
+        "nature": "Unknown to the Schismatics. The fire elementals are shaping the cult's theology and using the Mountain of Fire as a foothold on Airth."
+      }
+    ],
+    "rivals": [
+      {
+        "faction_id": "malac-orthodox",
+        "nature": "The schism. The Schismatics have taken most of the young Orthodox congregation."
+      },
+      {
+        "faction_id": "bandua-faithful",
+        "nature": "Direct opposition. Schismatic humanoid-tolerance preaching is undermining steading participation in the seasonal raids."
+      }
+    ],
+    "needs": ["Rakhmoth's presence to consolidate gains", "Formal civic recognition from Warden Keln", "Telvari secured as a permanent site"],
+    "provides": ["Community for the young and alienated", "Letters of introduction for the Mountain of Fire pilgrimage", "Dawn rites, free and open"]
+  },
+
+  "nodes": {
+    "rakhmoth": {
+      "name": "Rakhmoth",
+      "type": "leadership",
+      "role": "Prophet and founder. Currently at the Mountain of Fire. Arriving for Midsummer (~3 weeks).",
+      "notes": "A genuine believer. More dangerous than Savar. His revelation came from fire elemental influence, which he does not know."
+    },
+    "savar": {
+      "name": "Savar",
+      "type": "operations",
+      "role": "Local agent and mouthpiece in Dravesa.",
+      "notes": "See npcs/savar.json. More deeply compromised than Rakhmoth — warm to the touch, perfect recall."
+    },
+    "telvari": {
+      "name": "Telvari",
+      "type": "operations",
+      "role": "Northern steading. Fire worship site and humanoid-human contact point.",
+      "notes": "See settlements/telvari.json."
+    }
+  },
+
+  "dm_notes": "The fire elemental influence is the late-game revelation. Do not name it early. Savar is the tell — warm to the touch, perfect recall, accepted Jorun Cadek's pilgrimage death as fitting. The Mountain of Fire is a fire elemental site; pilgrims who go there do not always return."
+}

@@ -1,0 +1,20 @@
+{
+  "moniker": "Savar",
+  "home": "House of the Mountain of Fire, Dravesa",
+  "home_settlement": "dravesa",
+  "gender": "male",
+  "faction": "malac-schismatics",
+  "appearance": "Early 30s, lean, friendly. Always slightly warm to the touch.",
+  "and_yet": "Eyes linger on you half a second longer than they should.",
+  "wants": "Rakhmoth's arrival; formal recognition for the Schismatics.",
+  "does_not_want": "Any inquiry into Jorun Cadek.",
+  "oddly_also": "Perfect recall of every conversation he has ever had.",
+  "thinks_with": "persuasion",
+  "family": "His family disowned him when he joined the Schismatics; a young son, Dav, being raised by his mother across town.",
+  "self_image": "Rakhmoth's trusted voice in Dravesa.",
+  "recreation": "Correspondence with pilgrims at the Mountain of Fire.",
+  "dreams": "Rakhmoth's theology formally recognized before the Orthodox dies out on its own.",
+  "anecdotes": ["Quoted a man's own words back to him from three years prior, verbatim, mid-argument."],
+  "tragedies": ["Dav doesn't know who his father is."],
+  "pc_leverage": "Will cooperate fully with any inquiry and leave nothing findable. Tell: ask if Jorun's pilgrimage was a good thing — he'll say yes and show no doubt."
+}
