@@ -83,3 +83,33 @@ One voice, tuned to the job. Pick the register by what the text is for.
 - Ability scores in caps, always in AD&D order: STR, INT, WIS, DEX, CON, CHA.
 
 *Example:* **3 ghouls** crouch over a **broken litter**. The wall bears an inscription: "Rest is earned." Each ghoul carries 2d6gp.
+
+## Structure
+
+**Bolded lead-in.** The basic unit of reference text: a bolded element, then its detail. Encounter beats, features, NPC traits, area actions.
+- *Good:* **Ferryman.** Blind. Knows every voice that's crossed in 20 years.
+
+**Order.** Most actionable first, then general to specific. A DM glancing mid-session gets what they need from the first line.
+
+**Prose, bullets, or tables**
+- *Prose:* read-aloud, narrative, initial descriptions. Short paragraphs — 3 sentences max in reference text.
+- *Bullets:* discrete, parallel facts. Sub-items of a feature, contents of a chest, an NPC's wants. One level of nesting max.
+- *Tables:* anything rolled, and comparisons across shared attributes. Nothing else.
+
+**Random tables**
+- Die size in the header: **d6 Rumours**.
+- Die matches entry count: d4, d6, d8, d10, d12, d20, d100.
+- One line per entry. Detail goes elsewhere, cross-referenced.
+
+| d4 | Sound in the dark |
+|---|---|
+| 1 | Dripping water, too regular. |
+| 2 | **2 giant rats** fighting over a boot. |
+| 3 | A bell, once, far below. |
+| 4 | Nothing. Total silence for 1 turn. |
+
+**Headings.** Shallow: three levels max.
+
+**Cross-references.** In parentheses: (Area 7), (see Ossek).
+
+**Split, don't sprawl.** An entry that needs more than one screen becomes sub-entries.
