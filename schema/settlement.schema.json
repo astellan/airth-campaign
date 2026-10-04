@@ -4,17 +4,198 @@
   "title": "Settlement",
   "description": "Schema for a settlement in a D&D campaign",
   "type": "object",
-  "required": ["id", "name", "status"],
+  "required": [
+    "id",
+    "name",
+    "status"
+  ],
   "additionalProperties": true,
-
   "definitions": {
-    "short_text": { "type": "string", "maxLength": 100 },
-    "long_text":  { "type": "string", "maxLength": 500 }
+    "short_text": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "long_text": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "descriptors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "$comment": "Palette descriptors; a single entry may be an italic detail phrase."
+    },
+    "time_row": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "dawn": {
+          "$ref": "#/definitions/descriptors"
+        },
+        "day": {
+          "$ref": "#/definitions/descriptors"
+        },
+        "dusk": {
+          "$ref": "#/definitions/descriptors"
+        },
+        "night": {
+          "$ref": "#/definitions/descriptors"
+        }
+      }
+    }
   },
-
   "properties": {
-    "id":     { "type": "string", "pattern": "^[a-z0-9-]+$", "minLength": 1 },
-    "name":   { "$ref": "#/definitions/short_text", "minLength": 1 },
-    "status": { "type": "string", "enum": ["stub", "in_development", "ready", "retired"] }
-  }
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "minLength": 1
+    },
+    "name": {
+      "$ref": "#/definitions/short_text",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "stub",
+        "in_development",
+        "ready",
+        "retired"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "$comment": "e.g. small_town, village, steading"
+    },
+    "parent": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "$comment": "Steadings only: id of the parent settlement."
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "hamlet",
+        "family",
+        "seasonal",
+        "resource",
+        "noxious_trade"
+      ],
+      "$comment": "Steadings only."
+    },
+    "why_here": {
+      "$ref": "#/definitions/short_text",
+      "$comment": "Steadings only: the single reason it exists."
+    },
+    "palette": {
+      "type": "object",
+      "additionalProperties": false,
+      "$comment": "Arrival palette; see style/settlement.md.",
+      "properties": {
+        "constants": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "far": {
+              "$ref": "#/definitions/descriptors"
+            },
+            "near": {
+              "$ref": "#/definitions/descriptors"
+            },
+            "threshold": {
+              "$ref": "#/definitions/descriptors"
+            },
+            "within": {
+              "$ref": "#/definitions/descriptors"
+            },
+            "leaving": {
+              "$ref": "#/definitions/descriptors"
+            }
+          }
+        },
+        "by_time": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "far": {
+              "$ref": "#/definitions/time_row"
+            },
+            "near": {
+              "$ref": "#/definitions/time_row"
+            },
+            "threshold": {
+              "$ref": "#/definitions/time_row"
+            },
+            "within": {
+              "$ref": "#/definitions/time_row"
+            },
+            "leaving": {
+              "$ref": "#/definitions/time_row"
+            }
+          }
+        },
+        "seasons": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "winter": {
+              "$ref": "#/definitions/descriptors"
+            },
+            "spring": {
+              "$ref": "#/definitions/descriptors"
+            },
+            "summer": {
+              "$ref": "#/definitions/descriptors"
+            },
+            "autumn": {
+              "$ref": "#/definitions/descriptors"
+            }
+          }
+        },
+        "situations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "descriptors"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "when": {
+                "type": "string"
+              },
+              "descriptors": {
+                "$ref": "#/definitions/descriptors"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "steading"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "required": [
+          "parent",
+          "kind",
+          "why_here"
+        ]
+      }
+    }
+  ]
 }
