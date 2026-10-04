@@ -19,29 +19,58 @@
   },
   "physical": {
     "construction": "Stone and heavy timber. Older buildings cut-stone; newer timber-framed. Stone walls — the only ones in the Luric, a point of civic pride tied to the Bandua faithful.",
-    "sounds": ["axes from the wood yards", "market calls", "hides being worked"],
-    "smells": ["pine tar dominant", "curing hides", "earthy bitterness from the dye works", "woodsmoke always"],
+    "sounds": [
+      "axes from the wood yards",
+      "market calls",
+      "hides being worked"
+    ],
+    "smells": [
+      "pine tar dominant",
+      "curing hides",
+      "earthy bitterness from the dye works",
+      "woodsmoke always"
+    ],
     "approach": "The smell hits before the walls do — pine tar and woodsmoke, with something sharper from the dye works. The tree line is close on the north and east. The stone walls are visible from a distance and unmistakable.",
     "mood": "Prosperous but watchful. Quieter than its size suggests — the factions don't mix, so there's less of the noise of people getting along."
   },
   "economy": {
-    "primary": ["resin", "pelts", "forest dyes"],
-    "exports": ["pine tar", "pelts", "dyes"],
-    "imports": ["food", "weapons", "cloth"],
+    "primary": [
+      "resin",
+      "pelts",
+      "forest dyes"
+    ],
+    "exports": [
+      "pine tar",
+      "pelts",
+      "dyes"
+    ],
+    "imports": [
+      "food",
+      "weapons",
+      "cloth"
+    ],
     "trade_focus": "Alchemical and preservation materials",
-    "faction_presence": ["malac-orthodox", "malac-schismatics", "bandua-faithful"]
+    "faction_presence": [
+      "malac-orthodox",
+      "malac-schismatics",
+      "bandua-faithful"
+    ]
   },
   "defenses": {
     "walls": "Stone — the only stone walls in the Luric Marches. North and South Gates.",
     "watch": "20 watchmen, rotating shifts",
     "militia": "~120 able-bodied adults trained through Vraed's hall"
   },
-  "factions": ["malac-orthodox", "malac-schismatics", "bandua-faithful"],
+  "factions": [
+    "malac-orthodox",
+    "malac-schismatics",
+    "bandua-faithful"
+  ],
   "locations": [
     {
       "id": "temple-eternal-flame",
       "name": "Temple of the Eternal Flame",
-      "type": "religious",
+      "type": "temple",
       "description": "Orthodox HQ. Services at dawn, midday, dusk. Ilmath's residence in back. Attendance halved in five years.",
       "services": "Blessings 1 sp; funeral rites 5 sp; fire-reading with Ilmath by appointment, no fixed price.",
       "npc": "ilmath"
@@ -49,7 +78,7 @@
     {
       "id": "house-mountain-of-fire",
       "name": "House of the Mountain of Fire",
-      "type": "religious",
+      "type": "temple",
       "description": "Converted merchant's house. Sun-disk above door, east-facing skylight. Always young people outside. Savar's base.",
       "services": "Dawn rites free and open; private counsel with Savar free; letters of introduction to the Mountain of Fire pilgrimage.",
       "npc": "savar"
@@ -57,7 +86,7 @@
     {
       "id": "vraeds-fighting-hall",
       "name": "Vraed's Fighting Hall",
-      "type": "training",
+      "type": "guild",
       "description": "Timber building with practice yard. Bandua shrine at far end: bronze spear in a basin of dried blood and ash.",
       "services": "Weapons training 1 sp/week; Bandua blessing before combat free to faithful; seasonal raid muster point.",
       "npc": "vraed-halman"
@@ -81,18 +110,210 @@
     {
       "id": "cadek-merchant-house",
       "name": "Cadek Merchant House",
-      "type": "trade",
+      "type": "shop",
       "description": "Grain, preserved goods, general cargo brokering. Currently shuttered — Adval inside, coming out twice daily to make a scene.",
       "services": "Grain, preserved goods, cargo brokering. Currently closed.",
       "npc": "adval-cadek"
+    },
+    {
+      "id": "gates",
+      "name": "North and South Gates",
+      "type": "gate",
+      "description": "2 watchmen each by day; shut at dark, and opened after only on the Warden's pass."
     }
   ],
-  "npcs": ["stravar-keln", "ilmath", "savar", "vraed-halman", "maret-duvall", "adval-cadek"],
   "tensions": [
     "Jorun Cadek left for the Mountain of Fire 6 weeks ago and hasn't returned. Adval blames Savar publicly. Stravar needs evidence before acting.",
     "Seasonal raid stalling — two steadings won't send fighters. Vraed will move unilaterally if Stravar doesn't act soon.",
     "Rakhmoth reportedly coming for Midsummer (~3 weeks). Savar is quietly preparing. Stravar doesn't know yet.",
     "Orziben's Orthodox cleric is dead. Ilmath is the last. She has said nothing."
   ],
-  "associated_settlements": ["telvari"]
+  "associated_settlements": [
+    "telvari"
+  ],
+  "tagline": "Walled forest-edge town of tar, pelts, and three faiths that do not mix.",
+  "ruler": "Warden Stravar Keln, from the Warden's Hall.",
+  "faiths": [
+    "Malac Orthodox (flame-drop pendant)",
+    "Malac Schismatic (sun-disk pendant)",
+    "Bandua (spear through a skull)"
+  ],
+  "strangers": "Read at a glance by their pendant, or the lack of one.",
+  "palette": {
+    "constants": {
+      "far": [
+        "pine tar",
+        "woodsmoke",
+        "stone walls, the only ones in the Marches"
+      ],
+      "near": [
+        "tree line close on north and east",
+        "axe-cut stumps",
+        "steading fences"
+      ],
+      "leaving": [
+        "smoke over the walls",
+        "tar on your boots for a day after"
+      ]
+    },
+    "by_time": {
+      "far": {
+        "dawn": [
+          "smoke rising straight"
+        ],
+        "day": [
+          "axes ringing"
+        ],
+        "dusk": [
+          "tar-smoke red in the low sun"
+        ],
+        "night": [
+          "gate fires on the wall"
+        ]
+      },
+      "threshold": {
+        "dawn": [
+          "gates opening",
+          "carts queued"
+        ],
+        "day": [
+          "watch reads pendants: flame-drop, sun-disk, or neither"
+        ],
+        "dusk": [
+          "last carts hurried in"
+        ],
+        "night": [
+          "gates shut",
+          "pass required"
+        ]
+      },
+      "within": {
+        "dawn": [
+          "temple bell",
+          "Schismatic dawn rite"
+        ],
+        "day": [
+          "market calls",
+          "dye-works stink"
+        ],
+        "dusk": [
+          "Gilded Ash filling"
+        ],
+        "night": [
+          "watch lanterns",
+          "singing behind Schismatic shutters"
+        ]
+      }
+    },
+    "seasons": {
+      "winter": [
+        "walls rimed",
+        "smoke hangs low",
+        "axes silent, wood yards stacked to the eaves",
+        "market thin"
+      ],
+      "spring": [
+        "mud to the ankle at the gates",
+        "sap running",
+        "raid muster in Vraed's yard"
+      ],
+      "summer": [
+        "tar sticky underfoot",
+        "flies on the hides",
+        "dye vats steaming in the open"
+      ],
+      "autumn": [
+        "pelts stacked for trade",
+        "leaf smoke",
+        "steading carts queued for the walls before frost"
+      ]
+    },
+    "situations": [
+      {
+        "name": "Ambarra",
+        "when": "6 Thunor",
+        "descriptors": [
+          "hearth oaths",
+          "doors chalked with spear marks"
+        ]
+      },
+      {
+        "name": "Malzûn",
+        "when": "2 Belghaen",
+        "descriptors": [
+          "both temples full",
+          "Orthodox and Schismatic processions timed not to meet"
+        ]
+      },
+      {
+        "name": "Rakhmoth arrives",
+        "when": "Midsummer",
+        "descriptors": [
+          "road crowded with pilgrims",
+          "sun-disks everywhere"
+        ]
+      }
+    ]
+  },
+  "itself": [
+    {
+      "title": "The only stone walls in the Marches",
+      "text": "The Bandua faithful built them and keep them, and the whole town is proud of them. The North and South Gates shut at dark."
+    },
+    {
+      "title": "Three faiths that do not mix",
+      "text": "Orthodox, Schismatic, and Bandua households keep to their own streets, inns, and tables. The town is quieter than its size, because nobody is getting along."
+    },
+    {
+      "title": "Tar, pelts, and dye",
+      "text": "Resin from the wood yards, pelts from the forest, and dyes from the works make Dravesa rich. Pine tar is what it is known for, and the smell of it is on everything."
+    }
+  ],
+  "encounters": {
+    "day": [
+      "**Adval Cadek** storms out of his shuttered house to shout at the House of the Mountain of Fire.",
+      "**1d4 young Schismatics** hand out copper sun-disks in the market square.",
+      "**2d6 militia** drill in Vraed's yard; the clatter carries across town.",
+      "A tar cart has overturned, blocking the street toward the South Gate.",
+      "**Ilmath** walks to the Warden's Hall carrying a sealed letter.",
+      "The dye-works gutter runs blue, then red."
+    ],
+    "night": [
+      "**2 watchmen** with lanterns ask the party's business.",
+      "**1d4 Bandua faithful** chalk spear marks on a Schismatic door.",
+      "Singing behind the shutters of the House of the Mountain of Fire stops when anyone passes.",
+      "**1d4 drunk raiders** from Vraed's hall go looking for Schismatics.",
+      "**Savar** walks alone to the North Gate to meet a rider.",
+      "A steading family arrives after dark and is refused at the gate."
+    ]
+  },
+  "response": {
+    "watch": "20 watchmen on rotating shifts, answering to the Warden.",
+    "arrival": "1d3 watchmen within 1d10 minutes by day, 1d4 turns at night. Vraed's militia (about 120 trained adults) can be raised in 1 hour.",
+    "strength_now": "20 watchmen",
+    "strength_founding": null,
+    "bribery": null
+  },
+  "rumours": [
+    "Rakhmoth himself is coming for Midsummer.",
+    "Jorun Cadek was seen on the road east, alive and burned.",
+    "Two steadings have refused fighters for the raid, and Vraed means to make them pay.",
+    "The Warden keeps a list of everyone who has gone to the Mountain of Fire.",
+    "Ilmath is dying, and the temple will close when she does.",
+    "Telvari burns something other than wood in its fires."
+  ],
+  "neighbors": [
+    {
+      "settlement": "tagmira",
+      "miles": 18,
+      "direction": "W",
+      "path": "luric-road"
+    },
+    {
+      "settlement": "orziben",
+      "miles": 18,
+      "direction": "E",
+      "path": "luric-road"
+    }
+  ]
 }

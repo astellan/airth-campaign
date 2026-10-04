@@ -1,0 +1,335 @@
+<title>Dravesa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap">
+<style>
+/* Layout: single reading column, ~65ch; areas separated by full rules; sidebars as tinted boxes. */
+:root {
+  --paper: #fbfbf7;
+  --ink: #1e201c;
+  --ink-soft: #55594f;
+  --accent: #3e5937;
+  --rule: #c8cbbf;
+  --panel: #f0f1ea;
+  --serif: "EB Garamond", Garamond, "Garamond Premier Pro", Georgia, "Times New Roman", serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #161814; --ink: #e3e5dc; --ink-soft: #a3a89a; --accent: #a3bd97;
+    --rule: #3a3f36; --panel: #1f221d; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #161814; --ink: #e3e5dc; --ink-soft: #a3a89a; --accent: #a3bd97;
+  --rule: #3a3f36; --panel: #1f221d; color-scheme: dark;
+}
+body {
+  background: var(--paper); color: var(--ink);
+  font-family: var(--serif); font-size: 1.125rem; line-height: 1.5;
+  padding-inline: 16px; padding-block: 2.5rem 4rem;
+}
+main { max-width: 38rem; margin-inline: auto; }
+.sample-note {
+  font-size: .95rem; color: var(--ink-soft); font-style: italic;
+  border-bottom: 1px solid var(--rule); padding-bottom: 1rem; margin: 0 0 2rem;
+}
+h1 { font-weight: 500; font-size: 2.1rem; line-height: 1.15; margin: 0 0 .25rem; text-wrap: balance; }
+.kicker { font-variant: small-caps; letter-spacing: .06em; color: var(--ink-soft); margin: 0 0 1.25rem; }
+h2.section {
+  font-weight: 600; font-size: 1.15rem; font-variant: small-caps; letter-spacing: .06em;
+  color: var(--accent); margin: 2.4rem 0 .6rem; border-bottom: 1px solid var(--rule); padding-bottom: .25rem;
+}
+.area { border-top: 1px solid var(--ink); padding-top: 1.1rem; margin-top: 2.2rem; }
+.area h2 {
+  font-weight: 600; font-size: 1.35rem; margin: 0 0 .6rem; text-wrap: balance;
+  font-variant: small-caps; letter-spacing: .03em;
+}
+.area h2 .num { color: var(--accent); font-variant-numeric: lining-nums; margin-right: .35em; }
+p { margin: 0 0 .75rem; }
+strong { font-weight: 600; }
+.sep { border: 0; border-top: 1px solid var(--rule); width: 3rem; margin: 1rem auto; }
+ul { margin: 0 0 .75rem; padding-left: 1.25rem; }
+li { margin-bottom: .3rem; }
+.dialogue { margin: .5rem 0 1rem 2rem; font-style: italic; }
+.sidebar { background: var(--panel); border: 1px solid var(--rule); padding: 1rem 1.15rem; margin: 1.5rem 0; }
+.sidebar h3 {
+  margin: 0 0 .5rem; font-size: 1.1rem; font-weight: 600;
+  font-variant: small-caps; letter-spacing: .05em; color: var(--accent);
+}
+.sidebar .desc { font-style: italic; margin-bottom: .75rem; }
+dl.stats {
+  display: grid; grid-template-columns: max-content 1fr; gap: .15rem 1rem; margin: 0;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+dl.stats dt { font-variant: small-caps; letter-spacing: .05em; color: var(--ink-soft); }
+dl.stats dd { margin: 0; min-width: 0; }
+.npc-head { margin: 0 0 .5rem; }
+.npc-head .nm { font-weight: 600; font-size: 1.15rem; }
+.npc-head .meta { color: var(--ink-soft); }
+.table-wrap { overflow-x: auto; margin: 1rem 0 1.5rem; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums lining-nums; }
+caption {
+  text-align: left; font-weight: 600; font-variant: small-caps; letter-spacing: .05em;
+  color: var(--accent); padding-bottom: .35rem; font-size: 1.1rem;
+}
+th, td { text-align: left; padding: .3rem .6rem; border-top: 1px solid var(--rule); vertical-align: top; }
+thead th { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); font-weight: 600; font-variant: small-caps; letter-spacing: .05em; }
+td.die, th.die { width: 2.5rem; text-align: center; color: var(--accent); }
+tbody tr:last-child td { border-bottom: 1px solid var(--ink); }
+.ref { color: var(--ink-soft); }
+</style>
+<style>
+.tagline { font-style: italic; color: var(--ink-soft); margin: 0 0 1.25rem; font-size: 1.15rem; }
+.facts p { margin: 0 0 .3rem; }
+.pal p { margin: 0 0 .35rem; }
+.pal em { color: var(--ink-soft); }
+table.grid th:first-child, table.grid td:first-child { width: 6rem; font-variant: small-caps; letter-spacing: .04em; font-weight: 600; }
+table.grid td { font-size: 1rem; }
+.loc { border-top: 1px solid var(--ink); padding-top: 1rem; margin-top: 1.8rem; }
+.loc h3 { font-weight: 600; font-size: 1.25rem; font-variant: small-caps; letter-spacing: .03em; margin: 0 0 .4rem; }
+.loc h3 .num { color: var(--accent); margin-right: .35em; }
+.npc { background: var(--panel); border: 1px solid var(--rule); padding: .8rem 1rem; margin: 1rem 0 .5rem; }
+.npc .head { margin: 0 0 .35rem; }
+.npc .nm { font-weight: 600; }
+.npc .meta { color: var(--ink-soft); }
+.npc p { margin: 0 0 .35rem; }
+.npc .say { font-style: italic; margin-left: 1.25rem; }
+.npc details { margin-top: .4rem; }
+.npc summary { cursor: pointer; color: var(--accent); font-variant: small-caps; letter-spacing: .05em; }
+.npc summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.gap { color: var(--ink-soft); font-style: italic; }
+</style>
+
+<main>
+<p class="sample-note">Test render of Dravesa to <code>style/settlement.md</code>. Facts and NPCs come from the repo; the palette, encounters, rumours, response details and tagline were written for this test and are not canon. Gaps in the data are shown in grey.</p>
+
+<h1>Dravesa</h1>
+<p class="tagline">Walled forest-edge town of tar, pelts, and three faiths that do not mix.</p>
+
+<div class="facts">
+<p><strong>Inhabitants:</strong> 800 (small town). Prosperous and factionalized.</p>
+<p><strong>Ruler:</strong> Warden Stravar Keln, from the Warden’s Hall (Area 4).</p>
+<p><strong>Faiths:</strong> Malac Orthodox (flame-drop pendant), Malac Schismatic (sun-disk pendant), Bandua (spear through a skull).</p>
+<p><strong>Strangers:</strong> Read at a glance by their pendant, or the lack of one.</p>
+<p class="gap"><strong>Equipment:</strong> not recorded.</p>
+</div>
+
+<h2 class="section">Arrival</h2>
+<div class="pal">
+<p><strong>Far:</strong> pine tar · woodsmoke · <em>stone walls, the only ones in the Marches</em></p>
+<p><strong>Near:</strong> tree line close on north and east · axe-cut stumps · steading fences</p>
+<p><strong>Leaving:</strong> smoke over the walls · <em>tar on your boots for a day after</em></p>
+</div>
+<div class="table-wrap">
+<table class="grid">
+<thead><tr><th></th><th>Dawn</th><th>Day</th><th>Dusk</th><th>Night</th></tr></thead>
+<tbody>
+<tr><td>Far</td><td>smoke rising straight</td><td>axes ringing</td><td><em>tar-smoke red in the low sun</em></td><td>gate fires on the wall</td></tr>
+<tr><td>Threshold</td><td>gates opening · carts queued</td><td><em>watch reads pendants: flame-drop, sun-disk, or neither</em></td><td>last carts hurried in</td><td>gates shut · pass required</td></tr>
+<tr><td>Within</td><td>temple bell · Schismatic dawn rite</td><td>market calls · dye-works stink</td><td>Gilded Ash filling</td><td>watch lanterns · <em>singing behind Schismatic shutters</em></td></tr>
+</tbody>
+</table>
+</div>
+<div class="pal">
+<p><strong>Winter</strong> <em>(Voarn–Thunor)</em>: walls rimed · smoke hangs low · <em>axes silent, wood yards stacked to the eaves</em> · market thin</p>
+<p><strong>Spring</strong> <em>(Arkun–Ulkar)</em>: mud to the ankle at the gates · sap running · <em>raid muster in Vraed’s yard</em></p>
+<p><strong>Summer</strong> <em>(Sarnath–Keltoi)</em>: tar sticky underfoot · flies on the hides · <em>dye vats steaming in the open</em></p>
+<p><strong>Autumn</strong> <em>(Ragaia–Eshmun)</em>: pelts stacked for trade · leaf smoke · <em>steading carts queued for the walls before frost</em></p>
+<p><strong>Ambarra</strong> <em>(6 Thunor)</em>: hearth oaths · <em>doors chalked with spear marks</em></p>
+<p><strong>Malzûn</strong> <em>(2 Belghaen)</em>: both temples full · <em>Orthodox and Schismatic processions timed not to meet</em></p>
+<p><strong>Rakhmoth arrives</strong> <em>(Midsummer)</em>: road crowded with pilgrims · <em>sun-disks everywhere</em></p>
+</div>
+
+<h2 class="section">What Makes It Itself</h2>
+<p><strong>The only stone walls in the Marches.</strong> The Bandua faithful built them and keep them, and the whole town is proud of them. The North and South Gates shut at dark.</p>
+<p><strong>Three faiths that do not mix.</strong> Orthodox, Schismatic, and Bandua households keep to their own streets, inns, and tables. The town is quieter than its size, because nobody is getting along.</p>
+<p><strong>Tar, pelts, and dye.</strong> Resin from the wood yards, pelts from the forest, and dyes from the works make Dravesa rich. Pine tar is what it is known for, and the smell of it is on everything.</p>
+
+<h2 class="section">Encounters</h2>
+<div class="table-wrap">
+<table>
+<caption>d6 Dravesa by day</caption>
+<thead><tr><th class="die">d6</th><th>Encounter</th></tr></thead>
+<tbody>
+<tr><td class="die">1</td><td><strong>Adval Cadek</strong> storms out of his shuttered house to shout at the House of the Mountain of Fire.</td></tr>
+<tr><td class="die">2</td><td><strong>1d4 young Schismatics</strong> hand out copper sun-disks in the market square.</td></tr>
+<tr><td class="die">3</td><td><strong>2d6 militia</strong> drill in Vraed’s yard; the clatter carries across town.</td></tr>
+<tr><td class="die">4</td><td>A tar cart has overturned, blocking the street toward the South Gate.</td></tr>
+<tr><td class="die">5</td><td><strong>Ilmath</strong> walks to the Warden’s Hall carrying a sealed letter.</td></tr>
+<tr><td class="die">6</td><td>The dye-works gutter runs blue, then red.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrap">
+<table>
+<caption>d6 Dravesa by night</caption>
+<thead><tr><th class="die">d6</th><th>Encounter</th></tr></thead>
+<tbody>
+<tr><td class="die">1</td><td><strong>2 watchmen</strong> with lanterns ask the party’s business.</td></tr>
+<tr><td class="die">2</td><td><strong>1d4 Bandua faithful</strong> chalk spear marks on a Schismatic door.</td></tr>
+<tr><td class="die">3</td><td>Singing behind the shutters of the House of the Mountain of Fire stops when anyone passes.</td></tr>
+<tr><td class="die">4</td><td><strong>1d4 drunk raiders</strong> from Vraed’s hall go looking for Schismatics.</td></tr>
+<tr><td class="die">5</td><td><strong>Savar</strong> walks alone to the North Gate to meet a rider.</td></tr>
+<tr><td class="die">6</td><td>A steading family arrives after dark and is refused at the gate.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 class="section">Response</h2>
+<p><strong>The watch:</strong> 20 watchmen on rotating shifts, answering to the Warden.</p>
+<p><strong>Arrival on the scene:</strong> 1d3 watchmen within 1d10 minutes by day, 1d4 turns at night. Vraed’s militia (about 120 trained adults) can be raised in 1 hour.</p>
+<p class="gap"><strong>Garrison strength:</strong> 20 watchmen now; founding strength not recorded.</p>
+<p class="gap"><strong>Bribery:</strong> not recorded.</p>
+
+<h2 class="section">Places</h2>
+
+<section class="loc">
+<h3><span class="num">1.</span>Temple of the Eternal Flame</h3>
+<p>The Orthodox temple, where services are held at dawn, midday, and dusk. Attendance has halved in five years.</p>
+<p><strong>Rites:</strong> blessings 1sp; funeral rites 5sp; fire-reading with Ilmath by appointment, no fixed price.</p>
+<div class="npc">
+<p class="head"><span class="nm">Ilmath, High Fire-seer</span> <span class="meta">· high fire-seer · Malac Orthodox</span></p>
+<p>Mid-70s. White robes. Clear eyes.</p>
+<p class="say">“I am Malac’s last credible witness.”</p>
+<p><strong>Wants:</strong> The Orthodox to outlast the schism.<br><strong>Doesn’t want:</strong> Pity.<br><strong>Knows:</strong> Savar met Jorun alone six times before the pilgrimage.<br><strong>Found:</strong> Tending the temple flame, every dawn.</p>
+<details><summary>More</summary>
+<p><strong>Oddly also:</strong> Last senior Orthodox cleric alive. Has told no one.<br><strong>Dreams:</strong> A proper successor before she dies.<br><strong>Thinks with:</strong> faith.<br><strong>Family:</strong> Widowed; two adult children in Orziben she writes to rarely.</p>
+<p><strong>Anecdote:</strong> Refused to close the temple during a Bronze Host siege, and held full services with arrows in the door.</p>
+<p><strong>Tragedy:</strong> One of her Fire-seers defected to the Schismatics three years ago. She blamed herself.</p>
+</details>
+</div>
+</section>
+
+<section class="loc">
+<h3><span class="num">2.</span>House of the Mountain of Fire</h3>
+<p>A converted merchant’s house with a sun-disk above the door and an east-facing skylight. Young people are always outside.</p>
+<p><strong>Rites:</strong> dawn rites, free and open; private counsel with Savar, free; letters of introduction to the Mountain of Fire pilgrimage.</p>
+<div class="npc">
+<p class="head"><span class="nm">Savar</span> <span class="meta">· Schismatic preacher · Malac Schismatic</span></p>
+<p>Early 30s. Lean. Friendly smile. <em>And yet:</em> warm to the touch, and his eyes linger half a second too long.</p>
+<p class="say">“Jorun’s pilgrimage was a good thing.”</p>
+<p><strong>Wants:</strong> Rakhmoth’s arrival. Recognition for the Schismatics.<br><strong>Doesn’t want:</strong> Inquiry into Jorun Cadek.<br><strong>Found:</strong> Writing to pilgrims at the Mountain of Fire.</p>
+<details><summary>More</summary>
+<p><strong>Oddly also:</strong> Perfect recall of every conversation.<br><strong>Dreams:</strong> Rakhmoth’s theology recognized before the Orthodox die out.<br><strong>Thinks with:</strong> persuasion.<br><strong>Family:</strong> Disowned when he joined the Schismatics. A young son, Dav, raised by his mother across town.</p>
+<p><strong>Anecdote:</strong> Quoted a man’s own words back to him from three years prior, verbatim, mid-argument.</p>
+<p><strong>Tragedy:</strong> Dav doesn’t know who his father is.</p>
+</details>
+</div>
+</section>
+
+<section class="loc">
+<h3><span class="num">3.</span>Vraed’s Fighting Hall</h3>
+<p>A timber hall with a practice yard and the muster point for the seasonal raid.</p>
+<p><strong>Interior:</strong> A Bandua shrine at the far end: a bronze spear in a basin of dried blood and ash.</p>
+<p><strong>Members:</strong> About 30 initiated fighters who have been on at least one raid.</p>
+<p><strong>Services:</strong> weapons training 1sp a week; Bandua blessing before combat, free to the faithful.</p>
+<p><strong>Joining:</strong> Schismatic converts are refused.</p>
+<div class="npc">
+<p class="head"><span class="nm">Vraed Halman</span> <span class="meta">· raid leader · Bandua faithful</span></p>
+<p>Mid-40s. Two fingers missing, left hand. Bandua’s mark tattooed on right forearm. <em>And yet:</em> ink-stained fingers on the maimed hand.</p>
+<p class="say">“I’m the only one here taking this seriously.”</p>
+<p><strong>Wants:</strong> The seasonal raid. Schismatics gone before Rakhmoth.<br><strong>Doesn’t want:</strong> Stravar stalling.<br><strong>Offers:</strong> 4 fighters as escort.<br><strong>Found:</strong> Fighting-hall yard at dawn, training alone.</p>
+<details><summary>More</summary>
+<p><strong>Oddly also:</strong> Has never lost a fighter under his command.<br><strong>Dreams:</strong> His sons leading raids after him.<br><strong>Thinks with:</strong> blade.<br><strong>Family:</strong> Wife Sera; two sons of raiding age; two younger daughters.</p>
+<p><strong>Anecdote:</strong> Lost two fingers to a goblin and killed it with the same hand.</p>
+<p><strong>Tragedy:</strong> Lost a close friend when a Schismatic-leaning steading refused to send warning of a raid.</p>
+</details>
+</div>
+</section>
+
+<section class="loc">
+<h3><span class="num">4.</span>Warden’s Hall</h3>
+<p>A stone building on the market square. Court sits three times a week; the Warden lives upstairs.</p>
+<p><strong>Fees:</strong> dispute resolution; letters of passage 2gp; contract notarization 5sp; public notices 1cp.</p>
+<div class="npc">
+<p class="head"><span class="nm">Stravar Keln, the Warden</span> <span class="meta">· warden · independent</span></p>
+<p>Mid-50s. Compact. Scar along the jaw.</p>
+<p class="say">“Until someone wiser decides.”</p>
+<p><strong>Wants:</strong> Resolution before Rakhmoth arrives, without martyrs.<br><strong>Doesn’t want:</strong> Acting without evidence.<br><strong>Knows:</strong> Caravan roads and who travels them.<br><strong>Offers:</strong> Coin; passage to Orziben.<br><strong>Found:</strong> Warden’s Hall, sharpening his knife at dusk.</p>
+<details><summary>More</summary>
+<p><strong>Oddly also:</strong> Keeps a private list of everyone who has travelled to the Mountain of Fire.<br><strong>Dreams:</strong> Dravesa quiet enough that nobody needs a warden.<br><strong>Thinks with:</strong> diplomacy.<br><strong>Family:</strong> Estranged wife in Orziben; three grown children he rarely sees.</p>
+<p><strong>Anecdote:</strong> Talked a Bronze Host raiding party into leaving a steading unmolested, with no weapons drawn.</p>
+<p><strong>Tragedy:</strong> His wife left when he took this posting. He thought she would come around.</p>
+</details>
+</div>
+</section>
+
+<section class="loc">
+<h3><span class="num">5.</span>The Gilded Ash Inn</h3>
+<p>The best inn between Tagmira and Orziben.</p>
+<p><strong>Common room:</strong> Seats 60. Every faction drinks here, at tables Maret chooses.</p>
+<p><strong>Services:</strong> private room 8sp a night (12 rooms); common room 4cp a night; meals 3cp–8sp; stabling 2sp a night; bath 1cp.</p>
+<p><strong>Trouble:</strong> Recruiting is not tolerated; Maret throws out offenders without calling the watch.</p>
+<div class="npc">
+<p class="head"><span class="nm">Maret Duvall</span> <span class="meta">· innkeeper · independent</span></p>
+<p>40s. Strong hands. Ale-stained apron.</p>
+<p class="say">“Leave your god at the door.”</p>
+<p><strong>Wants:</strong> Her inn kept theology-free.<br><strong>Doesn’t want:</strong> Factions recruiting in her common room.<br><strong>Knows:</strong> Everything said in her common room.<br><strong>Offers:</strong> Gossip, for a story.<br><strong>Found:</strong> Behind the bar; account books at close.</p>
+<details><summary>More</summary>
+<p><strong>Oddly also:</strong> Knows which faction every regular belongs to and seats them accordingly.<br><strong>Dreams:</strong> Her daughter takes over the inn; her son goes somewhere safer.<br><strong>Thinks with:</strong> money.<br><strong>Family:</strong> Husband Bren runs the kitchen; 2 teenagers work the inn. Raised Orthodox; never speaks of it.</p>
+<p><strong>Anecdote:</strong> Threw Vraed’s men and two Schismatics out at once last Waterday, without calling the watch.</p>
+<p><strong>Tragedy:</strong> Her brother joined the Schismatics last year. They haven’t spoken since.</p>
+</details>
+</div>
+</section>
+
+<section class="loc">
+<h3><span class="num">6.</span>Cadek Merchant House</h3>
+<p>A grain and cargo brokerage, shuttered for six weeks.</p>
+<p><strong>Wares:</strong> grain, preserved goods, cargo brokering. Closed.</p>
+<div class="npc">
+<p class="head"><span class="nm">Adval Cadek</span> <span class="meta">· merchant · independent</span></p>
+<p>50s. Prosperous build gone soft. <em>And yet:</em> still dressed immaculately.</p>
+<p class="say">“I should have seen it.”</p>
+<p><strong>Wants:</strong> Proof that Savar sent his son to his death.<br><strong>Doesn’t want:</strong> To hear that Jorun went willingly.<br><strong>Offers:</strong> Coin, for proof.</p>
+<details><summary>More</summary>
+<p><strong>Oddly also:</strong> Warehouse shut six weeks. Losing money daily; doesn’t care.<br><strong>Dreams:</strong> Jorun comes home.<br><strong>Thinks with:</strong> guilt.<br><strong>Family:</strong> Wife Pemma, holding the household together; Jorun (son, missing, 21); two younger daughters.</p>
+<p><strong>Anecdote:</strong> Built the Cadek house from a single mule cart twenty years ago.</p>
+<p><strong>Tragedy:</strong> Jorun left for the Mountain of Fire six weeks ago and has not returned.</p>
+</details>
+</div>
+</section>
+
+<section class="loc">
+<h3><span class="num">7.</span>North and South Gates</h3>
+<p><strong>Watch:</strong> 2 watchmen each by day; shut at dark, and opened after only on the Warden’s pass.</p>
+</section>
+
+<h2 class="section">Factions in Town</h2>
+<p><strong>Malac Orthodox.</strong> <em>Purpose:</em> preserve the authentic Malac rite and outlast the schism. <em>Membership:</em> elders, attendance halved in five years. <em>Current scheme:</em> holding on. Leader: Ilmath (Area 1).</p>
+<p><strong>Malac Schismatics.</strong> <em>Purpose:</em> recognition for Rakhmoth’s theology as the true Malac faith. <em>Membership:</em> the young. <em>Current scheme:</em> quietly preparing for Rakhmoth at Midsummer. Leader: Savar (Area 2).</p>
+<p><strong>Bandua Faithful.</strong> <em>Purpose:</em> keep the seasonal raids going and Dravesa’s fighting strength intact. <em>Membership:</em> about 30 initiated fighters; 120 militia trained. <em>Current scheme:</em> force the raid through, and move on Telvari if the Warden keeps stalling. Leader: Vraed (Area 3).</p>
+
+<h2 class="section">Trouble</h2>
+<ul>
+<li>Jorun Cadek left for the Mountain of Fire 6 weeks ago and hasn’t returned. Adval blames Savar publicly; Stravar needs evidence before acting.</li>
+<li>The seasonal raid is stalling because two steadings won’t send fighters. Vraed will move alone if Stravar doesn’t act soon.</li>
+<li>Rakhmoth is reportedly coming for Midsummer, about 3 weeks away. Savar is preparing quietly; Stravar doesn’t know yet.</li>
+<li>Orziben’s Orthodox cleric is dead, leaving Ilmath the last. She has said nothing.</li>
+</ul>
+
+<h2 class="section">Rumours</h2>
+<div class="table-wrap">
+<table>
+<caption>d6 Heard in Dravesa</caption>
+<thead><tr><th class="die">d6</th><th>Rumour</th></tr></thead>
+<tbody>
+<tr><td class="die">1</td><td>Rakhmoth himself is coming for Midsummer.</td></tr>
+<tr><td class="die">2</td><td>Jorun Cadek was seen on the road east, alive and burned.</td></tr>
+<tr><td class="die">3</td><td>Two steadings have refused fighters for the raid, and Vraed means to make them pay.</td></tr>
+<tr><td class="die">4</td><td>The Warden keeps a list of everyone who has gone to the Mountain of Fire.</td></tr>
+<tr><td class="die">5</td><td>Ilmath is dying, and the temple will close when she does.</td></tr>
+<tr><td class="die">6</td><td>Telvari burns something other than wood in its fires.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 class="section">Neighbors</h2>
+<p><strong>Tagmira:</strong> 18 miles west via the Luric Road.<br>
+<strong>Orziben:</strong> 18 miles east via the Luric Road.<br>
+<strong>Telvari</strong> <span class="gap">(steading)</span>: half a day north <span class="gap">· miles and path not recorded</span>.</p>
+
+<h2 class="section">Steadings</h2>
+<p><strong>Telvari:</strong> a forest-edge steading and Schismatic centre of fire worship, where humans and humanoids meet. <span class="gap">Kind and why-here not recorded.</span></p>
+</main>

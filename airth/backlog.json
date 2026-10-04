@@ -132,6 +132,13 @@
       "description": "Paths/roads session: define path file type, then add neighbors (pointcrawl links) to every settlement and steading.",
       "status": "open",
       "notes": "Luric Road (luric-road) runs west to east: Lamares, Nemetra, Caelrun, Tagmira, Dravesa, Orziben. Stops are 18 miles apart by design: one day's journey from one safe walled town to the next."
+    },
+    {
+      "id": "BL-20",
+      "category": "settlements",
+      "description": "Formalize settlement schema for render fields (tagline, header lines, itself, encounters, response, typed locations, rumours) and migrate the other settlements to the Dravesa model. Telvari needs kind, why_here, miles, and path.",
+      "status": "open",
+      "notes": "Reference render: style/examples/dravesa.html. Dravesa gaps: founding garrison strength, bribery, equipment."
     }
   ]
 }
