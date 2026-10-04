@@ -18,6 +18,13 @@ Initial description, with **bolded** features.
 
 Initial description, then area actions, then a dash, then features. Any part may be absent except the title and initial description.
 
+## Sentences
+
+**No sentence fragments in adventure sites.** Every sentence has a subject and a verb. Fragments are allowed only in lists: comma-separated basics ("Stone blocks, 15′ ceiling"), bullet items, table cells, stat blocks, and the stat/hp line of a monster entry. Quoted speech is exempt. This overrides the fragment guidance in `voice.md` for adventure-site text.
+- *Good:* Distant pick-work stops, but starts again a minute later.
+- *Bad:* Distant pick-work stops. Starts again a minute later.
+- *Bad:* Beneath it, the parish cellars and the vault.
+
 ## Area number
 
 - Sequential from 1. Don't restart on new levels.
