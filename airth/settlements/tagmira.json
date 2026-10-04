@@ -4,8 +4,8 @@
   "population": {
     "total": 320,
     "breakdown": {
-      "agriculture_herding": 272,
-      "militia_active": 10,
+      "agriculture_herding": 275,
+      "militia_active": 7,
       "veterans_elites": 6,
       "clergy": 6,
       "ilmenor_scholars": 0,
@@ -20,20 +20,29 @@
   },
   "economy": [
     "subsistence farming",
-    "herding",
+    "goat and sheep herding",
     "hunting",
-    "limited trade"
+    "tallow rendering",
+    "simple iron tools",
+    "pony stock",
+    "caravan logistics"
   ],
   "exports": [
     "wool",
     "hides",
     "timber",
-    "smoked meat"
+    "smoked meat",
+    "tallow",
+    "cheese",
+    "nails",
+    "ponies"
   ],
   "imports": [
     "salt",
     "metalwork",
     "grain in lean years",
+    "wine",
+    "southern goods",
     "trade goods from Taziri's caravan"
   ],
   "character": "A hardscrabble upland village hemmed by forest and old fears. Houses cluster around a central hearth-hall. The people are clannish, proud of small dignities, and slow to trust outsiders — but Sardet's deeds at the Circle of Cossus and the party's role fighting the orc raid have bought real goodwill.",
@@ -52,17 +61,15 @@
     ],
     "mood": "Watchful but not unfriendly. The village has suffered orc pressure, lost Old Maedra without explanation, and carries a low hum of unease it cannot name."
   },
-  "families": {},
   "locations": {
     "gravefield_of_thulda": {
       "type": "sacred_site",
-      "description": "Burial mounds northeast of the village, encircled by carved posts. Wool wrappings and grave-goods mark each mound. Tended by two quiet widows. Site of Ildun-Ayenar's burial — the cleric of Ossamar the undead sacrificed to keep the Sphere running. His grave is unmarked by any symbol of Ossamar; the votive stone found in his hand bore old-empire symbols, not of his god. Some villagers visit and feel uneasy without knowing why.",
+      "description": "Burial mounds northeast of the village, encircled by carved posts. Wool wrappings and grave-goods mark each mound. Tended by two quiet widows.",
       "services": [
         "place for offerings",
         "burial rites of Thulda"
       ],
-      "current_state": "Active. The widows who tend it have noted the grass grows oddly thick over Ildun's mound.",
-      "dm_notes": "The party knows the undead sacrificed Ildun here. If they return and examine the grave carefully, faint necrotic resonance is detectable. The widows will mention that no one from Ossamar's order has come to claim his memory."
+      "current_state": "Active."
     },
     "ford_of_ossamar": {
       "type": "sacred_site",
@@ -71,8 +78,8 @@
         "place for offerings",
         "river crossing"
       ],
-      "current_state": "Abandoned since Ildun's disappearance. The undead took him here. The ford is still usable but the sacred atmosphere has drained away.",
-      "dm_notes": "The party forgave the undead for this sacrifice. Villagers just think Ildun wandered off or died quietly. Anyone who knew him well — Maedra did — carries the truth into undeath."
+      "current_state": "Abandoned since the undead abducted Ildun-Ayenar here and carried him to the Temple of the Old Gods, where he was sacrificed to power the Sphere. The ford is still usable but the sacred atmosphere has drained away.",
+      "dm_notes": "The party accepts Ildun's sacrifice, on one condition: no more humans. Orcs and other humanoids only. Villagers think Ildun wandered off or died quietly. Anyone who knew him well — Maedra did — carries the truth into undeath."
     },
     "circle_of_cossus": {
       "type": "sacred_site",
@@ -91,7 +98,7 @@
         "place for offerings",
         "mourning rites"
       ],
-      "current_state": "Active. Wool offerings accumulate. The Elaran family tends it most faithfully.",
+      "current_state": "Active. Wool offerings accumulate.",
       "dm_notes": "No supernatural activity here yet, but Thulda's domain is death and mourning — thematically resonant with everything happening at the temple."
     },
     "tree_of_mist_song": {
@@ -135,7 +142,16 @@
     {
       "name": "Village Militia",
       "leader": "Hadran Throsk",
-      "strength": "10 active, 6 veterans who can be called",
+      "strength": "7 standing, 6 veterans who can be called",
+      "members": [
+        "Torven Gald — lanky archer raised among woodsmen. Talks too much. Deadly accurate. Wants a reputation; oddly, also a wayhouse of his own.",
+        "Kerrig Bronn — broad-shouldered veteran from the northern hills. Speaks little, watches much. Wants his sons safe; will not lead again.",
+        "Rud Marnach",
+        "Kethan",
+        "Sallo Nine-Toes",
+        "Drom the Younger",
+        "Orlen Fastlimb"
+      ],
       "awareness_of_undead": "Dim — they know something is wrong in the Bramblewood, have heard stories, but have no clear picture",
       "awareness_of_orc_threat": "High — the Bronze Host has been pushing hunters out of the northwest grounds for two months",
       "disposition_to_party": "Favorable — the party fought alongside them against the orc raid",
@@ -143,24 +159,11 @@
       "spring_patrol_tradition": "Every spring the militia patrols the northwest aggressively to keep orc pressure down. This has worked for a generation. It is not working now."
     },
     {
-      "name": "House Elders (informal council)",
-      "members": [
-        "Dornan Elaran",
-        "Tarrek Veyran",
-        "Yetha Ruvin",
-        "Brennar Hallan",
-        "Raston Darnel",
-        "Rinna Caernach"
-      ],
-      "awareness_of_undead": "None formally — Maedra has 'disappeared', no uproar",
-      "awareness_of_orc_threat": "Moderate — they know hunters are being pushed back, do not yet grasp the scale",
-      "disposition_to_party": "Mixed but leaning favorable after Sardet's officiating and the orc fight"
-    },
-    {
       "name": "Temple of the Old Gods (Zimru's undead)",
       "location": "Bramblewood",
       "current_posture": "Quiet and patient. Sphere is functional after the orc sacrifice. Want more sacrifices — specifically more orcs, which conveniently aligns with Tagmira's orc problem. Also quietly seeking Tagmiran 'recruits' for undeath. Maedra is now Zimru's consort and seen by the undead as nearly a prophet.",
-      "disposition_to_party": "Allied, with expectations. Zimru will want an accounting of the sacrifice and will press for the next one."
+      "disposition_to_party": "Allied, with expectations. Zimru will want an accounting of the sacrifice and will press for the next one.",
+      "party_terms": "The party accepts Ildun-Ayenar's sacrifice but forbids more human ones. Orcs and other humanoids only."
     },
     {
       "name": "Bronze Host (Pact-Render orcs)",
@@ -175,26 +178,26 @@
     "The orcs are suddenly too powerful. They have bronze weapons, coordination, and something behind them. The Tagmirans are tough and have always held the line in spring patrols — but this is different, and it is starting to dawn on them.",
     "Two Bronze Host orcs were brought to Tagmira as captives to witness the trial by combat — meant as intimidation. It may have given the orcs useful intelligence about Tagmira's current strength instead.",
     "The undead alliance is secret. If Hadran or the elders learned the party is allied with the Bramblewood undead, there would be a reckoning.",
-    "House Darnel and House Caernach water-rights tension persists after the duel — Tenn Darnel lost and has not forgiven it.",
+    "The water-rights grudge persists after the duel. Tenn Darnel lost and has not forgiven Ulan Caernach.",
     "Ulan Caernach and Rondasek Elaran are back to village life but changed — they've seen skeletons fight and orcs bleed. They are quietly restless."
   ],
   "rumors": [
     "Old Maedra walked into the Bramblewood one night and didn't come back. Some say she went to die in peace. Others say the wood took her.",
-    "Borric of House Caernach swears he saw Maedra on the Bramblewood path at dusk — but she looked wrong. He won't say how.",
-    "The Ford of Ossamar has gone cold since Ildun died. Offerings left there feel unaccepted."
+    "Old Borric swears he saw Maedra on the Bramblewood path at dusk — but she looked wrong. He won't say how.",
+    "The Ford of Ossamar has gone cold since Ildun vanished. Offerings left there feel unaccepted."
   ],
   "defenses": {
-    "militia": "10 active under Hadran Throsk",
-    "veterans": "6 callable, including Borric and Feln of House Caernach",
+    "militia": "7 standing under Hadran Throsk",
+    "veterans": "6 callable, including Borric and Feln",
     "walls": "Wooden palisade wall surrounding the village",
     "notes": "Tagmira is not fortified. A serious Bronze Host assault would be catastrophic without party intervention or some other force."
   },
-  "trade_focus": "Taziri's caravan is the primary outside trade connection",
+  "trade_focus": "Logistics and trade hub. Taziri's caravan is the primary outside connection.",
   "nearest_neighbors": [
     "Caelrun (1 day west)",
     "Bramblewood temple (1 hour north)"
   ],
-  "road_position": "End of a trade spur; Taziri's route terminates here",
+  "road_position": "Trade hub; Taziri's route terminates here",
   "npcs": {
     "hadran_throsk": {
       "moniker": "Hadran Throsk",
@@ -224,17 +227,17 @@
     },
     "ulan_caernach": {
       "moniker": "Ulan Caernach",
-      "home": "House Caernach hall, Tagmira",
+      "home": "Tagmira",
       "home_settlement": "Tagmira",
       "gender": "male",
-      "faction": "House Caernach",
+      "faction": "None",
       "appearance": "22, lean and deliberate in movement. Carries the curved knife Mellan gave him. Won the duel against Tenn Darnel at the Circle of Cossus. Has since fought orcs and skeletons alongside the party.",
       "and_yet": "Rubs his thumb across his knife's carved grip when thinking — a tell he's unaware of.",
       "wants": "To understand what he's become after the things he's seen. Quietly proud of the duel win; privately unsure what it means.",
       "does_not_want": "To be someone who goes looking for violence. But he would answer a call.",
       "oddly_also": "Wants someone to tell him whether what the party is doing — the undead, all of it — is right or wrong. He suspects no one will.",
       "thinks_with": "Patience and observation. Tactical rather than impulsive.",
-      "family": "Mother Rinna (manages Caernach hall), brother Theren (wants to join the Elunad), stepfather Mellan (hunter).",
+      "family": "Mother Rinna, brother Theren (wants to join the Elunad), stepfather Mellan (hunter).",
       "self_image": "A hunter's son who won a duel and then fought things that should not exist. Still processing.",
       "recreation": "Hunting. Sitting with Tussen and the older fighters in the evenings.",
       "dreams": "Vaguely: that the things he's seen don't come to Tagmira's door.",
@@ -247,17 +250,17 @@
     },
     "rondasek_elaran": {
       "moniker": "Rondasek Elaran",
-      "home": "House Elaran hall, Tagmira",
+      "home": "Tagmira",
       "home_settlement": "Tagmira",
       "gender": "male",
-      "faction": "House Elaran",
+      "faction": "None",
       "appearance": "Young fighter, Elaran coloring — dark-browed, stocky. Less polished than Ulan, more openly eager.",
       "and_yet": "Has started leaving small offerings at the Tree of Mist-Song since fighting the skeletons. Won't say why.",
       "wants": "To be someone the village talks about the way they talk about Hadran.",
       "does_not_want": "To be ordinary after what he's seen.",
       "oddly_also": "Is quietly fascinated by the undead in a way he'd never admit aloud.",
       "thinks_with": "Courage first, consequences second.",
-      "family": "House Elaran — under Dornan's authority, cousin to the ridge-courier line.",
+      "family": "Kin to Dornan Elaran. Cousin to Fenth the ridge-courier.",
       "self_image": "Someone who has been tested and did not break.",
       "recreation": "Sparring. Hunting with Ulan when Ulan will have him.",
       "dreams": "Reputation. Recognition. Something worth telling.",
@@ -320,18 +323,18 @@
       "gender": "female",
       "faction": "Temple of the Old Gods",
       "appearance": "What she looked like in life: a small, ancient woman who appeared at funerals and vigils without being seen to arrive. What she looks like now: similar, but the stillness is absolute. The undead of the temple regard her with something close to reverence.",
-      "and_yet": "She wept at Ildun-Ayenar's burial — before her transformation. The undead saw this as a sign of her readiness.",
+      "and_yet": "She wept for Ildun-Ayenar — before her transformation. The undead saw this as a sign of her readiness.",
       "wants": "Unclear even to her — she has quickened into undeath recently and is still becoming what she will be. Zimru sees her as anchoring 'life beyond death.' She may still carry human attachments.",
       "does_not_want": "To be forgotten by Tagmira. Possibly. She is not yet past caring.",
       "oddly_also": "The undead see her as practically a prophet — her willing transformation has given her unusual status.",
       "thinks_with": "Old knowledge, old grief, old love for the village she came from.",
       "family": "None living — she outlived everyone.",
       "self_image": "In flux. She chose this. She is not sure yet what she chose it for.",
-      "recreation": "Unknown. She was last seen weeping at Ildun's grave.",
+      "recreation": "Unknown.",
       "dreams": "Unknown.",
       "anecdotes": [
-        "Appeared at Ildun-Ayenar's burial weeping — she knew him better than anyone realized.",
-        "Borric of House Caernach saw her on the Bramblewood path at dusk and said she 'looked wrong.'"
+        "Knew Ildun-Ayenar better than anyone realized.",
+        "Borric saw her on the Bramblewood path at dusk and said she 'looked wrong.'"
       ],
       "tragedies": [
         "Chose undeath. Whether this is tragedy depends on what she does with it."
@@ -365,15 +368,15 @@
     },
     "tarrek_veyran": {
       "moniker": "Tarrek Veyran",
-      "home": "Veyran forge-hall, Tagmira",
+      "home": "The forge, Tagmira",
       "home_settlement": "Tagmira",
       "gender": "male",
-      "faction": "House Veyran",
+      "faction": "None",
       "appearance": "Gruff, broad, soot-stained. Runs the village forge. Fair in his dealings and known for it.",
       "and_yet": "Officiates disputes when Hadran is not available — not because he wants to, but because people trust him.",
       "wants": "A well-run forge, a village that leaves him alone to work.",
-      "does_not_want": "The chaos of clan feuds spilling into his hall.",
-      "oddly_also": "Scoffed at Ildun-Ayenar's funeral that 'even river-priests die thirsty' — he believes in the gods even less than most, which makes him oddly clear-eyed.",
+      "does_not_want": "Feuds spilling into his forge.",
+      "oddly_also": "Believes in the gods less than most. It makes him clear-eyed.",
       "thinks_with": "Practicality. What works, what doesn't.",
       "family": "Elder sister Morla (healer/wise-woman), apprentices Garrin and Felmar.",
       "self_image": "A craftsman who keeps the village functional while others argue.",
@@ -384,32 +387,6 @@
       ],
       "tragedies": [],
       "pc_leverage": "Practical help — metalwork, repairs, information about village disputes. Does not deal in rumors but will speak plainly if asked directly."
-    },
-    "peema": {
-      "moniker": "Peema",
-      "home": "House Hallan hall, Tagmira",
-      "home_settlement": "Tagmira",
-      "gender": "female",
-      "faction": "House Hallan (orphan ward)",
-      "appearance": "Young, quiet, clever. One of the orphan foundlings raised by Brennar Hallan as messengers and servants. Wary of strangers — except Trebastos, with whom she has struck up an unlikely rapport.",
-      "and_yet": "Carries a small hand mirror that she is never without. She does not explain it.",
-      "wants": "To understand what the fairy in the mirror is and what it wants from her. She is not frightened of it — she is curious, which may be more dangerous.",
-      "does_not_want": "Adults taking her mirror. Adults dismissing what she's seen.",
-      "oddly_also": "Peema says the trees whisper at night. She is not wrong.",
-      "thinks_with": "Observation and silence. She watches more than she speaks.",
-      "family": "Orphan — no known family. Raised in House Hallan with Salla and Dun.",
-      "self_image": "Someone who knows something important that no one will believe.",
-      "recreation": "Watching. Listening. Long conversations with the mirror when she thinks no one is near.",
-      "dreams": "Unclear — possibly shaped by whatever the fairy has told her.",
-      "anecdotes": [
-        "Trebastos (Andre's fighter) has struck up a genuine rapport with her — she trusts him in a way she trusts almost no one.",
-        "The mirror shows her a fairy — connection to the Gloaming Court and a figure named Aislith, not yet developed."
-      ],
-      "tragedies": [
-        "Orphaned under unspecified circumstances. Raised as a servant-ward, not a daughter."
-      ],
-      "pc_leverage": "Trebastos has her trust. She will speak to him about the mirror if he asks directly and privately. She will not speak about it in front of others she doesn't know.",
-      "dm_notes": "The mirror and the fairy (Gloaming Court / Aislith connection) are an undeveloped thread. Do not force it this session — but Trebastos's relationship with her is a natural way to surface it when ready. The fact that Peema says the trees whisper at night and is correct about it should register to any PC paying attention. The Pact-Render fey and the Gloaming Court may be on opposite sides of the same fey politics — unknown as yet."
     }
   },
   "adventure_sites": {

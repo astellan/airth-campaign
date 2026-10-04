@@ -53,8 +53,8 @@
       "id": "BL-08",
       "category": "data_integrity",
       "description": "Resolve 'Pima' vs. 'Peema' — same NPC appears in airth_npcs.json and settlements/tagmira.json under different spellings",
-      "status": "open",
-      "notes": "Orphan girl with fairy mirror. Pick a spelling, remove the duplicate."
+      "status": "closed",
+      "notes": "Resolved: Pima is canonical. Peema merged into npcs/pima.json; duplicate removed from settlements/tagmira.json."
     },
     {
       "id": "BL-09",

@@ -60,32 +60,6 @@
     ],
     "mood": "Militia overconfident and drinking; herb-wives tense and watchful; villagers busy and practical; something is wrong and most are choosing not to see it"
   },
-  "houses": {
-    "house_zeren": {
-      "trade": "Pig farming, militia leadership",
-      "notable": "Captain Durvin — overconfident militia captain, drinks too much"
-    },
-    "house_halbet": {
-      "trade": "Potters and clay workers",
-      "notable": "Master Potter Halbet — oversees 4 kilns and 20+ workers"
-    },
-    "house_veyran": {
-      "trade": "Smiths and toolwrights",
-      "notable": "Minor presence in Nemetra; mostly based in Tagmira. Local representative: Torvek (distant cousin), runs the forge"
-    },
-    "house_imarra": {
-      "trade": "Nut harvesters and forest workers",
-      "notable": null
-    },
-    "house_yebrin": {
-      "trade": "Herbalists and resin gatherers",
-      "notable": "Allied with the herb-wives; Mother Yaleth has a distant cousin here"
-    },
-    "house_drunel": {
-      "trade": "Charcoal burners and woodcutters",
-      "notable": null
-    }
-  },
   "locations": {
     "village_green": "Central gathering space with a large Bandua-blessed oak. Used for announcements, markets, militia drills. Captain Durvin holds court here.",
     "the_royal_welcome": "Tavern run by Varnis — round, nervous, serves everyone. Pork stew, nut bread, herbed ale. Militia drinks here constantly. Six rooms upstairs.",
@@ -98,9 +72,9 @@
     "the_northern_trailhead": "Where the road narrows into the forest. Marked by a cairn and a cracked Isarna waystone. Militia patrol route ends 2 hexes north. Fresh gnoll and goblin tracks visible to anyone who looks."
   },
   "factions": [
-    "House Zeren (militia, pig farming)",
+    "Militia (Captain Durvin)",
     "Herb-wives (medicine, intelligence, alarm)",
-    "House Halbet (pottery, economic weight)",
+    "Potters (Master Potter Halbet, economic weight)",
     "Lizard-men (shadow authority, unspoken)"
   ],
   "tensions": [
@@ -115,7 +89,7 @@
     "A goblin woman spoke coherently to one of the herb-wives before going silent again"
   ],
   "defenses": {
-    "militia": "~30 active under Captain Durvin (House Zeren). Patrols end 2 hexes north. Overconfident and under-informed.",
+    "militia": "~30 active under Captain Durvin. Patrols end 2 hexes north. Overconfident and under-informed.",
     "reality": "Lizard-men enforce territorial boundaries from the south. Nemetra exists by their sufferance.",
     "village_understanding": "Most residents believe the militia protects them. The true arrangement with the lizard-men is unspoken and unacknowledged."
   },
