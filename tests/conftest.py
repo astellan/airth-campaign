@@ -44,3 +44,15 @@ def settlements():
 def npc_schema(schema):
     """The NPC definition block from the generic schema."""
     return schema["definitions"]["npc"]
+
+
+@pytest.fixture(scope="session")
+def settlement_schema():
+    with open(SCHEMA / "settlement.schema.json") as f:
+        return json.load(f)
+
+
+@pytest.fixture(scope="session")
+def settlement_config():
+    with open(AIRTH / "config" / "settlement.json") as f:
+        return json.load(f)

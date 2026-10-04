@@ -7,7 +7,8 @@
   "required": [
     "id",
     "name",
-    "status"
+    "status",
+    "type"
   ],
   "additionalProperties": true,
   "definitions": {
@@ -66,7 +67,13 @@
     },
     "type": {
       "type": "string",
-      "$comment": "e.g. small_town, village, steading"
+      "enum": [
+        "city",
+        "town",
+        "small_town",
+        "village",
+        "steading"
+      ]
     },
     "parent": {
       "type": "string",
@@ -218,6 +225,206 @@
           }
         }
       }
+    },
+    "tagline": {
+      "$ref": "#/definitions/short_text"
+    },
+    "region": {
+      "type": "string"
+    },
+    "population": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "mix": {
+          "type": "string"
+        }
+      }
+    },
+    "ruler": {
+      "type": "string"
+    },
+    "faiths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "strangers": {
+      "type": "string"
+    },
+    "equipment": {
+      "type": "string"
+    },
+    "itself": {
+      "type": "array",
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "title",
+          "text"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "rule": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "encounters": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "day": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 6,
+          "maxItems": 6
+        },
+        "night": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 6,
+          "maxItems": 6
+        }
+      }
+    },
+    "response": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "watch": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "arrival_day": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "arrival_night": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reinforcements": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "bribery": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "strength_now": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "strength_founding": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "strength": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "$comment": "strength: a line of colour on how far the guard has slipped."
+    },
+    "trouble": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "locations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "type",
+          "look"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "$comment": "Key in airth/config/settlement.json location_types."
+          },
+          "look": {
+            "type": "string"
+          },
+          "labels": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "hidden": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "factions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "membership": {
+            "type": "string"
+          },
+          "scheme": {
+            "type": "string"
+          }
+        }
+      }
     }
   },
   "allOf": [
@@ -240,5 +447,6 @@
         ]
       }
     }
-  ]
+  ],
+  "$comment": "Render order and rules: style/settlement.md. Legacy fields (economy, defenses, location, physical) remain allowed until migration."
 }

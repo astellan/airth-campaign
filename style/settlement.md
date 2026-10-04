@@ -9,19 +9,22 @@ Follows `style/voice.md`. Covers settlements and steadings. Storage rules in CLA
 3. **Palette.** See below.
 4. **What makes it itself.** 2–4 short headed paragraphs: the local trade, the signature product, the custom outsiders misread, the hidden rot. Any local rule goes here (*−1 to reaction rolls*, *no weapons over a dagger*).
 5. **Encounters.** Separate d6 tables for day and night. Mix colour and trouble; named locals recur here.
-6. **Response.** Who comes when trouble starts, how fast by day and by night, reinforcements, bribery.
+6. **Response.** Who comes when trouble starts, how fast by day and by night, reinforcements, bribery, and the guard's strength: numbers now against founding, plus a line of colour on how far it has slipped (*"Comfortable after decades of quiet. Only the raiders have fought."*).
 7. **Keyed locations.** See location types below. Services and prices sit inside the location; findable hidden things sit under a **Hidden** sub-heading; NPC cards appear at their location (see NPCs in place).
 8. **Factions in town.** Purpose · Membership · Current scheme · leader's NPC card.
 9. **Trouble.** Current tensions, one line each.
-10. **Rumours.** d6–d10 table.
-11. **Neighbors.** The settlement's place in the pointcrawl: each neighbor with distance, direction, and the path or road that leads there, plus any passage costs. *Tagmira: 18 miles west via luric-road.*
-12. **Steadings.** Name, `kind`, `why_here`. Steadings also appear in Neighbors, by their own track or path.
+10. **Neighbors.** The settlement's place in the pointcrawl: each neighbor with distance, direction, and the path or road that leads there, plus any passage costs. *Tagmira: 18 miles west via luric-road.*
+11. **Steadings.** Name, `kind`, `why_here`. Steadings also appear in Neighbors, by their own track or path.
+
+No rumour tables for now.
 
 Entry length scales with importance: a gate gets one line, the main inn gets a page. Omit empty sections.
 
 ## Location types
 
 Every location opens with one line of look and function, then the labels for its type. Use only the labels that have content.
+
+Label keys for each type are listed in `airth/config/settlement.json`; tests check them.
 
 | Type | Labels |
 |---|---|

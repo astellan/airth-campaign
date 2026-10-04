@@ -4,134 +4,12 @@
   "name": "Dravesa",
   "status": "ready",
   "type": "small_town",
+  "tagline": "Walled forest-edge town of tar, pelts, and three faiths that do not mix.",
   "region": "Luric Marches",
-  "location": {
-    "description": "Forest-edge town on flat ground, surrounded by farming steadings. Stone walls — the only stone walls in the Luric Marches.",
-    "terrain": "flat grassland, forest to north and east",
-    "travel_times": {
-      "from_tagmira": "1 day east",
-      "to_orziben": "1 day east"
-    }
-  },
   "population": {
     "total": 800,
-    "character": "Prosperous and factionalized. Strangers are read quickly — flame-drop pendant, sun-disk, or neither."
+    "mix": "Prosperous and factionalized."
   },
-  "physical": {
-    "construction": "Stone and heavy timber. Older buildings cut-stone; newer timber-framed. Stone walls — the only ones in the Luric, a point of civic pride tied to the Bandua faithful.",
-    "sounds": [
-      "axes from the wood yards",
-      "market calls",
-      "hides being worked"
-    ],
-    "smells": [
-      "pine tar dominant",
-      "curing hides",
-      "earthy bitterness from the dye works",
-      "woodsmoke always"
-    ],
-    "approach": "The smell hits before the walls do — pine tar and woodsmoke, with something sharper from the dye works. The tree line is close on the north and east. The stone walls are visible from a distance and unmistakable.",
-    "mood": "Prosperous but watchful. Quieter than its size suggests — the factions don't mix, so there's less of the noise of people getting along."
-  },
-  "economy": {
-    "primary": [
-      "resin",
-      "pelts",
-      "forest dyes"
-    ],
-    "exports": [
-      "pine tar",
-      "pelts",
-      "dyes"
-    ],
-    "imports": [
-      "food",
-      "weapons",
-      "cloth"
-    ],
-    "trade_focus": "Alchemical and preservation materials",
-    "faction_presence": [
-      "malac-orthodox",
-      "malac-schismatics",
-      "bandua-faithful"
-    ]
-  },
-  "defenses": {
-    "walls": "Stone — the only stone walls in the Luric Marches. North and South Gates.",
-    "watch": "20 watchmen, rotating shifts",
-    "militia": "~120 able-bodied adults trained through Vraed's hall"
-  },
-  "factions": [
-    "malac-orthodox",
-    "malac-schismatics",
-    "bandua-faithful"
-  ],
-  "locations": [
-    {
-      "id": "temple-eternal-flame",
-      "name": "Temple of the Eternal Flame",
-      "type": "temple",
-      "description": "Orthodox HQ. Services at dawn, midday, dusk. Ilmath's residence in back. Attendance halved in five years.",
-      "services": "Blessings 1 sp; funeral rites 5 sp; fire-reading with Ilmath by appointment, no fixed price.",
-      "npc": "ilmath"
-    },
-    {
-      "id": "house-mountain-of-fire",
-      "name": "House of the Mountain of Fire",
-      "type": "temple",
-      "description": "Converted merchant's house. Sun-disk above door, east-facing skylight. Always young people outside. Savar's base.",
-      "services": "Dawn rites free and open; private counsel with Savar free; letters of introduction to the Mountain of Fire pilgrimage.",
-      "npc": "savar"
-    },
-    {
-      "id": "vraeds-fighting-hall",
-      "name": "Vraed's Fighting Hall",
-      "type": "guild",
-      "description": "Timber building with practice yard. Bandua shrine at far end: bronze spear in a basin of dried blood and ash.",
-      "services": "Weapons training 1 sp/week; Bandua blessing before combat free to faithful; seasonal raid muster point.",
-      "npc": "vraed-halman"
-    },
-    {
-      "id": "wardens-hall",
-      "name": "Warden's Hall",
-      "type": "civic",
-      "description": "Stone building at the market square. Court three times weekly. Stravar's residence upstairs.",
-      "services": "Dispute resolution; letters of passage 2 gp; contract notarization 5 sp; public notices 1 cp.",
-      "npc": "stravar-keln"
-    },
-    {
-      "id": "gilded-ash-inn",
-      "name": "The Gilded Ash Inn",
-      "type": "inn",
-      "description": "Best inn between Tagmira and Orziben. 12 private rooms, common room seats 60.",
-      "services": "Private room 8 sp/night; common room 4 cp/night; meals 3 cp–8 sp; stabling 2 sp/night; bath 1 cp.",
-      "npc": "maret-duvall"
-    },
-    {
-      "id": "cadek-merchant-house",
-      "name": "Cadek Merchant House",
-      "type": "shop",
-      "description": "Grain, preserved goods, general cargo brokering. Currently shuttered — Adval inside, coming out twice daily to make a scene.",
-      "services": "Grain, preserved goods, cargo brokering. Currently closed.",
-      "npc": "adval-cadek"
-    },
-    {
-      "id": "gates",
-      "name": "North and South Gates",
-      "type": "gate",
-      "description": "2 watchmen each by day; shut at dark, and opened after only on the Warden's pass."
-    }
-  ],
-  "tensions": [
-    "Jorun Cadek left for the Mountain of Fire 6 weeks ago and hasn't returned. Adval blames Savar publicly. Stravar needs evidence before acting.",
-    "Seasonal raid stalling — two steadings won't send fighters. Vraed will move unilaterally if Stravar doesn't act soon.",
-    "Rakhmoth reportedly coming for Midsummer (~3 weeks). Savar is quietly preparing. Stravar doesn't know yet.",
-    "Orziben's Orthodox cleric is dead. Ilmath is the last. She has said nothing."
-  ],
-  "associated_settlements": [
-    "telvari"
-  ],
-  "tagline": "Walled forest-edge town of tar, pelts, and three faiths that do not mix.",
   "ruler": "Warden Stravar Keln, from the Warden's Hall.",
   "faiths": [
     "Malac Orthodox (flame-drop pendant)",
@@ -289,18 +167,111 @@
   },
   "response": {
     "watch": "20 watchmen on rotating shifts, answering to the Warden.",
-    "arrival": "1d3 watchmen within 1d10 minutes by day, 1d4 turns at night. Vraed's militia (about 120 trained adults) can be raised in 1 hour.",
+    "arrival_day": "1d3 watchmen within 1d10 minutes.",
+    "arrival_night": "1d3 watchmen within 1d4 turns.",
+    "reinforcements": "Vraed's militia, about 120 trained adults, raised in 1 hour.",
+    "bribery": null,
     "strength_now": "20 watchmen",
     "strength_founding": null,
-    "bribery": null
+    "strength": "Comfortable after decades of quiet. Vraed's raiders are the only ones in town who have fought."
   },
-  "rumours": [
-    "Rakhmoth himself is coming for Midsummer.",
-    "Jorun Cadek was seen on the road east, alive and burned.",
-    "Two steadings have refused fighters for the raid, and Vraed means to make them pay.",
-    "The Warden keeps a list of everyone who has gone to the Mountain of Fire.",
-    "Ilmath is dying, and the temple will close when she does.",
-    "Telvari burns something other than wood in its fires."
+  "locations": [
+    {
+      "id": "temple-eternal-flame",
+      "name": "Temple of the Eternal Flame",
+      "type": "temple",
+      "look": "The Orthodox temple. Services at dawn, midday, and dusk.",
+      "labels": {
+        "populace": "Elders, mostly. Attendance has halved in five years.",
+        "rites": "Blessings 1sp; funeral rites 5sp; fire-reading with Ilmath by appointment, no fixed price."
+      }
+    },
+    {
+      "id": "house-mountain-of-fire",
+      "name": "House of the Mountain of Fire",
+      "type": "temple",
+      "look": "A converted merchant's house with a sun-disk above the door and an east-facing skylight.",
+      "labels": {
+        "populace": "Young people, always, outside and in.",
+        "rites": "Dawn rites, free and open; private counsel with Savar, free; letters of introduction to the Mountain of Fire pilgrimage."
+      }
+    },
+    {
+      "id": "vraeds-fighting-hall",
+      "name": "Vraed's Fighting Hall",
+      "type": "guild",
+      "look": "A timber hall with a practice yard, and the muster point for the seasonal raid.",
+      "labels": {
+        "interior": "A Bandua shrine at the far end: a bronze spear in a basin of dried blood and ash.",
+        "members": "About 30 initiated fighters who have been on at least one raid.",
+        "services": "Weapons training 1sp a week; Bandua blessing before combat, free to the faithful.",
+        "joining": "Schismatic converts are refused."
+      }
+    },
+    {
+      "id": "wardens-hall",
+      "name": "Warden's Hall",
+      "type": "civic",
+      "look": "A stone building on the market square. Court sits three times a week; the Warden lives upstairs.",
+      "labels": {
+        "fees": "Dispute resolution; letters of passage 2gp; contract notarization 5sp; public notices 1cp."
+      }
+    },
+    {
+      "id": "gilded-ash-inn",
+      "name": "The Gilded Ash Inn",
+      "type": "inn",
+      "look": "The best inn between Tagmira and Orziben.",
+      "labels": {
+        "common_room": "Seats 60. Every faction drinks here, at tables Maret chooses.",
+        "services": "Private room 8sp a night (12 rooms); common room 4cp a night; meals 3cp–8sp; stabling 2sp a night; bath 1cp.",
+        "trouble": "Recruiting is not tolerated; Maret throws out offenders without calling the watch."
+      }
+    },
+    {
+      "id": "cadek-merchant-house",
+      "name": "Cadek Merchant House",
+      "type": "shop",
+      "look": "A grain and cargo brokerage, shuttered for six weeks.",
+      "labels": {
+        "wares": "Grain, preserved goods, cargo brokering. Closed."
+      }
+    },
+    {
+      "id": "gates",
+      "name": "North and South Gates",
+      "type": "gate",
+      "look": "The North and South Gates in the stone walls.",
+      "labels": {
+        "watch": "2 watchmen each by day; shut at dark, and opened after only on the Warden's pass."
+      }
+    }
+  ],
+  "factions": [
+    {
+      "id": "malac-orthodox",
+      "purpose": "Preserve the authentic Malac rite and outlast the schism.",
+      "membership": "Elders; attendance halved in five years.",
+      "scheme": "Holding on."
+    },
+    {
+      "id": "malac-schismatics",
+      "purpose": "Recognition for Rakhmoth's theology as the true Malac faith.",
+      "membership": "The young.",
+      "scheme": "Quietly preparing for Rakhmoth at Midsummer."
+    },
+    {
+      "id": "bandua-faithful",
+      "purpose": "Keep the seasonal raids going and Dravesa's fighting strength intact.",
+      "membership": "About 30 initiated fighters; 120 militia trained.",
+      "scheme": "Force the raid through, and move on Telvari if the Warden keeps stalling."
+    }
+  ],
+  "trouble": [
+    "Jorun Cadek left for the Mountain of Fire 6 weeks ago and hasn't returned. Adval blames Savar publicly. Stravar needs evidence before acting.",
+    "Seasonal raid stalling — two steadings won't send fighters. Vraed will move unilaterally if Stravar doesn't act soon.",
+    "Rakhmoth reportedly coming for Midsummer (~3 weeks). Savar is quietly preparing. Stravar doesn't know yet.",
+    "Orziben's Orthodox cleric is dead. Ilmath is the last. She has said nothing."
   ],
   "neighbors": [
     {
@@ -315,5 +286,60 @@
       "direction": "E",
       "path": "luric-road"
     }
+  ],
+  "location": {
+    "description": "Forest-edge town on flat ground, surrounded by farming steadings. Stone walls — the only stone walls in the Luric Marches.",
+    "terrain": "flat grassland, forest to north and east",
+    "travel_times": {
+      "from_tagmira": "1 day east",
+      "to_orziben": "1 day east"
+    }
+  },
+  "physical": {
+    "construction": "Stone and heavy timber. Older buildings cut-stone; newer timber-framed. Stone walls — the only ones in the Luric, a point of civic pride tied to the Bandua faithful.",
+    "sounds": [
+      "axes from the wood yards",
+      "market calls",
+      "hides being worked"
+    ],
+    "smells": [
+      "pine tar dominant",
+      "curing hides",
+      "earthy bitterness from the dye works",
+      "woodsmoke always"
+    ],
+    "approach": "The smell hits before the walls do — pine tar and woodsmoke, with something sharper from the dye works. The tree line is close on the north and east. The stone walls are visible from a distance and unmistakable.",
+    "mood": "Prosperous but watchful. Quieter than its size suggests — the factions don't mix, so there's less of the noise of people getting along."
+  },
+  "economy": {
+    "primary": [
+      "resin",
+      "pelts",
+      "forest dyes"
+    ],
+    "exports": [
+      "pine tar",
+      "pelts",
+      "dyes"
+    ],
+    "imports": [
+      "food",
+      "weapons",
+      "cloth"
+    ],
+    "trade_focus": "Alchemical and preservation materials",
+    "faction_presence": [
+      "malac-orthodox",
+      "malac-schismatics",
+      "bandua-faithful"
+    ]
+  },
+  "defenses": {
+    "walls": "Stone — the only stone walls in the Luric Marches. North and South Gates.",
+    "watch": "20 watchmen, rotating shifts",
+    "militia": "~120 able-bodied adults trained through Vraed's hall"
+  },
+  "associated_settlements": [
+    "telvari"
   ]
 }

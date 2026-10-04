@@ -1,0 +1,76 @@
+{
+  "$comment": "Location types and their allowed label keys; see style/settlement.md. null = free labels.",
+  "location_types": {
+    "inn": [
+      "sign",
+      "common_room",
+      "guests",
+      "services",
+      "trouble"
+    ],
+    "temple": [
+      "entrance",
+      "interior",
+      "populace",
+      "rites"
+    ],
+    "shop": [
+      "wares",
+      "proprietor",
+      "prices",
+      "off_the_books"
+    ],
+    "market": [
+      "days",
+      "watch"
+    ],
+    "civic": [
+      "interior",
+      "staff",
+      "fees",
+      "prisoners"
+    ],
+    "residence": [
+      "entrance",
+      "interior",
+      "inhabitants"
+    ],
+    "guild": [
+      "interior",
+      "members",
+      "services",
+      "joining"
+    ],
+    "gate": [
+      "watch",
+      "toll"
+    ],
+    "dock": [
+      "passage"
+    ],
+    "landmark": null,
+    "garrison": [
+      "strength",
+      "readiness",
+      "commander"
+    ],
+    "caravanserai": [
+      "yard",
+      "beasts",
+      "services",
+      "passing_through"
+    ],
+    "arena": [
+      "bouts",
+      "wagers",
+      "champion"
+    ]
+  },
+  "settlement_types": [
+    "city",
+    "town",
+    "small_town",
+    "village",
+    "steading"
+  ]
+}

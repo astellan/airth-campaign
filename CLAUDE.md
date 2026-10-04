@@ -15,6 +15,7 @@ airth/
   session_log.json          session history (INCOMPLETE — don't treat gaps as "nothing happened")
   items.json                items
   config/npc.json           enums used by npc validation (faction list, etc.)
+  config/settlement.json    settlement and location types, allowed location labels
   npcs/*.json                one file per NPC, key = npc.schema.json "npc" definition
   settlements/*.json         one file per settlement
   factions/*.json            one file per faction, faction.schema.json
@@ -35,7 +36,7 @@ Top-level `adventure_sites/`, `archive/`, `encounter_tables/`, `npcs/`, `schemas
 1. Check `airth/backlog.json` for an existing open item covering the request.
 2. Check existing data (factions, NPCs, settlements) before inventing new ones — extend what exists rather than duplicating.
 3. Validate against `schema/*.json` and, for NPCs, `airth/config/npc.json` enums (e.g. `faction`).
-4. Run `pytest` (see `tests/`) before committing. Tests check: required NPC fields present, `thinks_with` and `faction` are valid enum values, `home_settlement` resolves to a real settlement or `"itinerant"`, and array fields (`anecdotes`, `tragedies`) contain only strings.
+4. Run `pytest` (see `tests/`) before committing. Tests check: required NPC fields present, `thinks_with` and `faction` are valid enum values, `home_settlement` resolves to a real settlement or `"itinerant"`, and array fields (`anecdotes`, `tragedies`) contain only strings. Settlement tests validate new-format settlements (those with a `tagline`) against the schema, check location labels against their type, and check that `parent` exists and `neighbors` links are two-way.
 
 ## Faction structure
 
