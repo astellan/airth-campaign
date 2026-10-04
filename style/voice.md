@@ -31,3 +31,22 @@ One voice, tuned to the job. Pick the register by what the text is for.
 **Dialogue.** Lines an NPC says. Short and in character. One or two sample lines per NPC, not speeches. Dialect through word choice, not phonetic spelling.
 - *Good:* "Coin first. Then you can ask."
 - *Bad:* "Well, ah, I s'pose I could tell ye, if ye've got the coin."
+
+## Vocabulary
+
+**DM.** Always "DM," never "GM" or "referee."
+
+**AD&D terms only.** Standard AD&D vocabulary for all game terms; no Airth-specific substitutes.
+- Classes: magic-user, thief, cleric, fighter. Not wizard, rogue, priest.
+- Time: round (1 minute), turn (10 minutes). Never "turn" for a single action.
+- Chances: X-in-6, roll under ability score, percentile. Never "check."
+- Saves: OSRIC's five categories, named in full.
+- Coin: gp, sp, cp, ep, pp. Weight in coins.
+
+**Banned 5e terms:** DC, advantage, disadvantage, short rest, long rest, proficiency, skill check, cantrip, inspiration, bonus action, concentration, CR.
+- *Good:* 2-in-6 chance to spot the tripwire.
+- *Bad:* DC 15 Perception check to notice the tripwire.
+
+**Proper nouns.** Names of places, factions, NPCs, and gods come from the repo exactly as written. Never coin a new one without permission.
+
+**Plain over grand.** Old, short, concrete words. "Rot," not "decomposition." "The dead," not "undead entities." No modern idiom, no corporate or game-designer jargon ("mechanic," "engagement," "lore drop").
