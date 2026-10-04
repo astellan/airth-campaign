@@ -1,0 +1,25 @@
+{
+  "name": "Cael Gald",
+  "moniker": null,
+  "role": "hunter",
+  "home": "Tagmira",
+  "home_settlement": "tagmira",
+  "found": "The northwest hunting grounds, or skinning at his door.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "endurance",
+  "appearance": "Lean, wind-burned, three goose feathers in his hat.",
+  "and_yet": "A child's wooden doll tied to his quiver.",
+  "sayings": [
+    "The northwest's ours again. Say what you like about the rest."
+  ],
+  "wants": "To hunt the far grounds before the orcs come back.",
+  "does_not_want": "Another spring without meat.",
+  "dreams": null,
+  "oddly_also": null,
+  "knows": null,
+  "offers": "A guide in the northwest.",
+  "family": "Brother of Torven Gald, the militia archer.",
+  "anecdotes": [],
+  "tragedies": []
+}

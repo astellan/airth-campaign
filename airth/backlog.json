@@ -153,6 +153,13 @@
       "description": "Fill settlement gaps: founding garrison strength and bribery for each town; miles and paths for Caelrun's steadings; Lamares and Orziben settlement files (both on the Luric Road, referenced as neighbors).",
       "status": "open",
       "notes": ""
+    },
+    {
+      "id": "BL-23",
+      "category": "settlements",
+      "description": "Align every settlement price with the OSRIC 3.0 lodging, food, and services tables; add the rule to style/settlement.md. Tagmira's two inns are marked 'prices pending'.",
+      "status": "open",
+      "notes": "Waiting on the OSRIC 3.0 price table from Andrew."
     }
   ]
 }

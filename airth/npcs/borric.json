@@ -1,0 +1,25 @@
+{
+  "name": "Borric",
+  "moniker": "Old Borric",
+  "role": "veteran",
+  "home": "Tagmira",
+  "home_settlement": "tagmira",
+  "found": "Hearth-Hall, telling anyone who'll listen.",
+  "gender": "male",
+  "faction": "village-militia",
+  "thinks_with": "tradition",
+  "appearance": "Old, bow-legged, militia cloak worn thin.",
+  "and_yet": "A new, well-kept sword.",
+  "sayings": [
+    "I know what I saw on that path."
+  ],
+  "wants": "Someone to believe him about Maedra.",
+  "does_not_want": "To go near the Bramblewood again.",
+  "dreams": null,
+  "oddly_also": null,
+  "knows": "He saw Maedra on the Bramblewood path at dusk, and she looked wrong.",
+  "offers": null,
+  "family": null,
+  "anecdotes": [],
+  "tragedies": []
+}

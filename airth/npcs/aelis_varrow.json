@@ -1,0 +1,25 @@
+{
+  "name": "Aelis Varrow",
+  "moniker": null,
+  "role": "innkeeper",
+  "home": "The Crescent and Hoof, Tagmira",
+  "home_settlement": "tagmira",
+  "found": "The Crescent and Hoof, counting teamsters' coin by the fire pit.",
+  "gender": "female",
+  "faction": "independent",
+  "thinks_with": "money",
+  "appearance": "50s, broad, a teamster's whip coiled at her belt.",
+  "and_yet": "Silver thread braided into her grey hair, like a waystone offering.",
+  "sayings": [
+    "Pay up front. The road doesn't wait."
+  ],
+  "wants": "Taziri's caravan to keep coming.",
+  "does_not_want": "The party and the hunters brawling under her roof.",
+  "dreams": null,
+  "oddly_also": "Keeps a tally of every rider who went north and didn't come back.",
+  "knows": "Everything the caravans heard on the road.",
+  "offers": "Stabling and road news.",
+  "family": null,
+  "anecdotes": [],
+  "tragedies": []
+}

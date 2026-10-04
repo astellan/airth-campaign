@@ -1,0 +1,27 @@
+{
+  "name": "Gorran Fesk",
+  "moniker": null,
+  "role": "alehouse keeper",
+  "home": "The Barred Door, Tagmira",
+  "home_settlement": "tagmira",
+  "found": "The Barred Door, behind the bar with the axe.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "guilt",
+  "appearance": "Big, grey-bearded, an axe hung behind the bar.",
+  "and_yet": "His hands shake when he pours.",
+  "sayings": [
+    "Door's barred at dusk. In or out."
+  ],
+  "wants": "His brother's body back from the Bramblewood.",
+  "does_not_want": "The party drinking here.",
+  "dreams": null,
+  "oddly_also": null,
+  "knows": "Which families have lost someone to the wood.",
+  "offers": null,
+  "family": null,
+  "anecdotes": [],
+  "tragedies": [
+    "His brother Aedd died of fever this spring. Three nights later he walked north into the Bramblewood."
+  ]
+}

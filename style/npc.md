@@ -80,6 +80,8 @@ Hide empty fields. Never print "Not established" or a blank label. A sparse NPC 
 
 **Anecdotes and tragedies.** Specific past events with names, numbers, and consequences attached — not generic backstory. Not "lost people close to him in tomb collapses" but a named event: who died, when, how, and what habit the survivor still carries because of it. The named version gives a DM something to reference in play; the generic version doesn't.
 
+**Gender.** The campaign keeps the traditional roles of the early middle ages. Ratios follow the role: hunters, soldiers, smiths, and raiders skew heavily male; herb-wives, midwives, and spinners skew female; innkeepers and traders are mixed. Exceptions exist and are rare; never generate them at even odds.
+
 **Never name PCs or session events** in any field. NPC files describe the NPC, not the campaign's current state.
 
 **Empty is fine.** Leave optional fields `null` rather than invent detail. Let it emerge at the table.

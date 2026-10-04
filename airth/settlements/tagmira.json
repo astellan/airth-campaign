@@ -186,6 +186,32 @@
       }
     },
     {
+      "id": "crescent-and-hoof",
+      "name": "The Crescent and Hoof",
+      "type": "inn",
+      "look": "The caravan inn on the west road, near where Taziri's route ends.",
+      "labels": {
+        "sign": "A crescent over a hoofprint, copied from the Isarna waystone.",
+        "common_room": "Long tables around a fire pit, with teamsters' boots drying beside it.",
+        "guests": "Taziri's teamsters, pony buyers, and the odd pilgrim to the waystone.",
+        "services": "Private rooms (4), common floor, meals, stabling. Smoked mutton and goat cheese. Prices pending OSRIC 3.0 table.",
+        "trouble": "Teamsters talk. Whatever the caravan heard on the road, the village knows by morning."
+      }
+    },
+    {
+      "id": "barred-door",
+      "name": "The Barred Door",
+      "type": "inn",
+      "look": "A low drinking-house where the hunters drink.",
+      "labels": {
+        "sign": "None. Three iron bars are nailed across the door, put up the week the dead walked.",
+        "common_room": "Low and smoky, with one long bench and tallow lamps.",
+        "guests": "Hunters, woodcutters, off-duty militia, and the ones who blame the party.",
+        "services": "Ale; bread and dripping; floor space. Prices pending OSRIC 3.0 table.",
+        "trouble": "The party is served, slowly. Someone always brings up the Bramblewood dead."
+      }
+    },
+    {
       "id": "circle-of-cossus",
       "name": "Circle of Cossus",
       "type": "temple",
