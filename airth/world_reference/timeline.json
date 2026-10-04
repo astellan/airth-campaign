@@ -70,6 +70,11 @@
     "current": {
       "period": "year_250_300",
       "description": "Fragile recovery, new threats emerging"
+    },
+    "the_long_quiet": {
+      "period": "year_200_250",
+      "years": "c. 220–300",
+      "description": "Luric garrisons slacken. Seasonal war grows more ritual than bloody, and the humanoids stay cowed. The fire cults — several, all puppeted by the fire elementals of the sun — end it. The Malac Schismatics and the ogre fire cult are separate cults."
     }
   }
 }

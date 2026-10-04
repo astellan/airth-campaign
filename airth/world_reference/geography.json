@@ -92,7 +92,9 @@
       "type": "Frontier/Contested",
       "location": "Between civilized lands and wilderness, east of Lucernia, west of Imazuran",
       "culture": "Mix of cultures",
-      "campaign_focus": true
+      "campaign_focus": true,
+      "luric_road": "West–east road: Lamares, Nemetra, Caelrun, Tagmira, Dravesa, Orziben. Walled towns 18 miles apart, one day's walk from one safe wall to the next.",
+      "frontier_order": "Each town began as a garrison. The humans won the Marches but lack the numbers to push further. Humanoids for miles around are held off by intimidation and the seasonal warfare of Cossus. For 80 years that warfare has grown less violent and the guard has slackened. The fire cults have broken the status quo, and in places the humanoids are no longer cowed."
     }
   },
   "terrain_types": {
