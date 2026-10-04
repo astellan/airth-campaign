@@ -135,3 +135,23 @@ One voice, tuned to the job. Pick the register by what the text is for.
 **Colour.** Ink on off-white, plus one muted green accent — numbers and box headings only. Light and dark modes both.
 
 **No decoration.** No icons, emoji, drop caps, or ornaments.
+
+## Don'ts
+
+A final pass before anything goes out. Cut on sight:
+
+- **Foreshadowing.** "This will matter later." Describe what's true now.
+- **Narrator commentary.** "Ominously," "strangely enough," "a grim reminder."
+- **Hedging.** "Seems to," "appears to," "perhaps," "somewhat."
+- **Filler adjectives.** "Ancient," "mysterious," "eerie," "dark" on their own. Earn tone with a concrete detail.
+- **Telling PCs how they feel.** "You feel a sense of dread." Give the cause, not the reaction.
+- **Balanced-encounter framing.** "A challenging fight for a level 3 party." No CR thinking.
+- **Story protection.** No "if the PCs fail, the villain escapes anyway." Outcomes stay open.
+- **Explaining the joke.** Understatement only; don't point at it.
+- **Throat-clearing.** "It is worth noting that," "In this area you will find."
+- **Modern idiom.** "Vibe," "okay," "on the same page."
+- **Padding to fill.** Empty is fine. Leave it for the table.
+
+*Example*
+- *Bad:* An ancient, eerie crypt. You feel a sense of dread. This place seems important; perhaps it will matter later.
+- *Good:* Dust. 10 sarcophagi. One lid already open.
