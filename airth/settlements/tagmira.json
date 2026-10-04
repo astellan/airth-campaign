@@ -29,7 +29,7 @@
     "Cossus (the stone circle; trial by combat)",
     "Thulda (the gravefield and the Mound of Threads)",
     "Isarna (the waystone)",
-    "Ossamar (the ford, now cold)"
+    "Ossamar (the ford, being restored)"
   ],
   "strangers": "The party is known: owed for the northwest, and blamed for the dead. Hostility sits just under the surface.",
   "palette": {
@@ -143,7 +143,7 @@
     },
     {
       "title": "Sacred ground everywhere",
-      "text": "A Cossus stone ring for trial by combat, a Thulda gravefield, a mound of wool offerings, an Isarna waystone, and a ford whose shrine has gone cold. The village keeps them all."
+      "text": "A Cossus stone ring for trial by combat, a Thulda gravefield, a mound of wool offerings, an Isarna waystone, and a ford whose cold shrine is being restored. The village keeps them all."
     }
   ],
   "encounters": {
@@ -264,9 +264,9 @@
       "id": "ford-of-ossamar",
       "name": "Ford of Ossamar",
       "type": "dock",
-      "look": "A wide, clear ford three miles east, marked by cairns and cold iron braziers.",
+      "look": "A wide, clear ford three miles east, marked by cairns and iron braziers.",
       "labels": {
-        "passage": "Still usable. The shrine is untended and comfortless."
+        "passage": "Usable. Meria of the Ford has come from Lamares to restore the shrine, cold since Ildun-Ayenar was taken."
       }
     },
     {

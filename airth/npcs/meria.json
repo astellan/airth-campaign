@@ -1,0 +1,25 @@
+{
+  "name": "Meria",
+  "moniker": "Meria of the Ford",
+  "role": "Isarna warden",
+  "home": "Ford of Ossamar, Tagmira",
+  "home_settlement": "tagmira",
+  "found": "Ford of Ossamar, rebuilding the cairns and relighting the braziers.",
+  "gender": "female",
+  "faction": "none",
+  "thinks_with": "devotion",
+  "appearance": "Middle-aged, road-worn cloak, a crescent-and-hoof pendant.",
+  "and_yet": "Wet to the knees, always.",
+  "sayings": [
+    "A ford is a door. Someone has to keep it."
+  ],
+  "wants": "The ford's shrine warm again.",
+  "does_not_want": "Travellers crossing without an offering.",
+  "dreams": null,
+  "oddly_also": null,
+  "knows": "The old crossing rites of Isarna and Ossamar.",
+  "offers": "Blessings for safe passage.",
+  "family": null,
+  "anecdotes": [],
+  "tragedies": []
+}
