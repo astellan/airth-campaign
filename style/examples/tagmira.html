@@ -1,0 +1,364 @@
+<title>Tagmira</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap">
+<style>
+/* Layout: single reading column, ~65ch; areas separated by full rules; sidebars as tinted boxes. */
+:root {
+  --paper: #fbfbf7;
+  --ink: #1e201c;
+  --ink-soft: #55594f;
+  --accent: #3e5937;
+  --rule: #c8cbbf;
+  --panel: #f0f1ea;
+  --serif: "EB Garamond", Garamond, "Garamond Premier Pro", Georgia, "Times New Roman", serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #161814; --ink: #e3e5dc; --ink-soft: #a3a89a; --accent: #a3bd97;
+    --rule: #3a3f36; --panel: #1f221d; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #161814; --ink: #e3e5dc; --ink-soft: #a3a89a; --accent: #a3bd97;
+  --rule: #3a3f36; --panel: #1f221d; color-scheme: dark;
+}
+body {
+  background: var(--paper); color: var(--ink);
+  font-family: var(--serif); font-size: 1.125rem; line-height: 1.5;
+  padding-inline: 16px; padding-block: 2.5rem 4rem;
+}
+main { max-width: 38rem; margin-inline: auto; }
+.sample-note {
+  font-size: .95rem; color: var(--ink-soft); font-style: italic;
+  border-bottom: 1px solid var(--rule); padding-bottom: 1rem; margin: 0 0 2rem;
+}
+h1 { font-weight: 500; font-size: 2.1rem; line-height: 1.15; margin: 0 0 .25rem; text-wrap: balance; }
+.kicker { font-variant: small-caps; letter-spacing: .06em; color: var(--ink-soft); margin: 0 0 1.25rem; }
+h2.section {
+  font-weight: 600; font-size: 1.15rem; font-variant: small-caps; letter-spacing: .06em;
+  color: var(--accent); margin: 2.4rem 0 .6rem; border-bottom: 1px solid var(--rule); padding-bottom: .25rem;
+}
+.area { border-top: 1px solid var(--ink); padding-top: 1.1rem; margin-top: 2.2rem; }
+.area h2 {
+  font-weight: 600; font-size: 1.35rem; margin: 0 0 .6rem; text-wrap: balance;
+  font-variant: small-caps; letter-spacing: .03em;
+}
+.area h2 .num { color: var(--accent); font-variant-numeric: lining-nums; margin-right: .35em; }
+p { margin: 0 0 .75rem; }
+strong { font-weight: 600; }
+.sep { border: 0; border-top: 1px solid var(--rule); width: 3rem; margin: 1rem auto; }
+ul { margin: 0 0 .75rem; padding-left: 1.25rem; }
+li { margin-bottom: .3rem; }
+.dialogue { margin: .5rem 0 1rem 2rem; font-style: italic; }
+.sidebar { background: var(--panel); border: 1px solid var(--rule); padding: 1rem 1.15rem; margin: 1.5rem 0; }
+.sidebar h3 {
+  margin: 0 0 .5rem; font-size: 1.1rem; font-weight: 600;
+  font-variant: small-caps; letter-spacing: .05em; color: var(--accent);
+}
+.sidebar .desc { font-style: italic; margin-bottom: .75rem; }
+dl.stats {
+  display: grid; grid-template-columns: max-content 1fr; gap: .15rem 1rem; margin: 0;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+dl.stats dt { font-variant: small-caps; letter-spacing: .05em; color: var(--ink-soft); }
+dl.stats dd { margin: 0; min-width: 0; }
+.npc-head { margin: 0 0 .5rem; }
+.npc-head .nm { font-weight: 600; font-size: 1.15rem; }
+.npc-head .meta { color: var(--ink-soft); }
+.table-wrap { overflow-x: auto; margin: 1rem 0 1.5rem; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums lining-nums; }
+caption {
+  text-align: left; font-weight: 600; font-variant: small-caps; letter-spacing: .05em;
+  color: var(--accent); padding-bottom: .35rem; font-size: 1.1rem;
+}
+th, td { text-align: left; padding: .3rem .6rem; border-top: 1px solid var(--rule); vertical-align: top; }
+thead th { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); font-weight: 600; font-variant: small-caps; letter-spacing: .05em; }
+td.die, th.die { width: 2.5rem; text-align: center; color: var(--accent); }
+tbody tr:last-child td { border-bottom: 1px solid var(--ink); }
+.ref { color: var(--ink-soft); }
+</style>
+<style>
+.tagline { font-style: italic; color: var(--ink-soft); margin: 0 0 1.25rem; font-size: 1.15rem; }
+.facts p { margin: 0 0 .3rem; }
+.pal p { margin: 0 0 .35rem; }
+.pal em { color: var(--ink-soft); }
+table.grid th:first-child, table.grid td:first-child { width: 6rem; font-variant: small-caps; letter-spacing: .04em; font-weight: 600; }
+table.grid td { font-size: 1rem; }
+.loc { border-top: 1px solid var(--ink); padding-top: 1rem; margin-top: 1.8rem; }
+.loc h3 { font-weight: 600; font-size: 1.25rem; font-variant: small-caps; letter-spacing: .03em; margin: 0 0 .4rem; }
+.loc h3 .num { color: var(--accent); margin-right: .35em; }
+.npc { background: var(--panel); border: 1px solid var(--rule); padding: .8rem 1rem; margin: 1rem 0 .5rem; }
+.npc .head { margin: 0 0 .35rem; }
+.npc .nm { font-weight: 600; }
+.npc .meta { color: var(--ink-soft); }
+.npc p { margin: 0 0 .35rem; }
+.npc .say { font-style: italic; margin-left: 1.25rem; }
+.npc details { margin-top: .4rem; }
+.npc summary { cursor: pointer; color: var(--accent); font-variant: small-caps; letter-spacing: .05em; }
+.npc summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.gap { color: var(--ink-soft); font-style: italic; }
+.hidden{border-left:2px solid var(--accent);padding-left:.6rem}
+</style>
+
+<main>
+<p class="sample-note">Rendered from <code>airth/settlements/tagmira.json</code> to <code>style/settlement.md</code>. Gaps in the data are shown in grey.</p>
+<h1>Tagmira</h1>
+<p class="tagline">Hardscrabble upland village under the Bramblewood, holding off orcs it no longer understands.</p>
+<div class="facts">
+<p><strong>Inhabitants:</strong> 320 (village). Herders and farmers; clannish.</p>
+<p><strong>Ruler:</strong> No lord. The elders, with militia captain Hadran Throsk holding informal court in the hearth-hall.</p>
+<p><strong>Strangers:</strong> The party is known: owed for the northwest, and blamed for the dead. Hostility sits just under the surface.</p>
+<p class="gap"><strong>Equipment:</strong> not recorded.</p>
+<p><strong>Faiths:</strong> Cossus (the stone circle; trial by combat); Thulda (the gravefield and the Mound of Threads); Isarna (the waystone); Ossamar (the ford, being restored).</p>
+</div>
+<h2 class="section">Arrival</h2><div class="pal">
+<p><strong>Far:</strong> the Bramblewood a dark mass on the horizon · <em>woodsmoke</em></p>
+<p><strong>Near:</strong> goat paths up the ridges · <em>livestock bells</em></p>
+<p><strong>Threshold:</strong> a wooden palisade, not much of a wall</p>
+<p><strong>Leaving:</strong> eyes on your back from the doorways</p>
+</div>
+<div class="table-wrap"><table class="grid"><thead><tr><th></th><th>Dawn</th><th>Day</th><th>Dusk</th><th>Night</th></tr></thead><tbody>
+<tr><td>Far</td><td>mist on the northern ridges</td><td>axe-work from the woodcutters</td><td>dogs going quiet near the forest edge</td><td>the Bramblewood black against the stars</td></tr>
+<tr><td>Within</td><td>baking bread</td><td>goats and sheep in the lanes · wind off the northern ridges</td><td>doors barred early · wool and iron charms on the lintels</td><td>empty lanes · a lamp in every window facing north</td></tr>
+</tbody></table></div>
+<div class="pal">
+<p><strong>Winter</strong> <em>(Voarn–Thunor)</em>: snow on the ridges · flocks folded · food short this year</p>
+<p><strong>Spring</strong> <em>(Arkun–Ulkar)</em>: militia out on patrol to the northwest · lambing</p>
+<p><strong>Summer</strong> <em>(Sarnath–Keltoi)</em>: flocks high on the ridges · tallow rendering</p>
+<p><strong>Autumn</strong> <em>(Ragaia–Eshmun)</em>: smoked meat hung · pony sales · hunters back from the northwest, fewer than before</p>
+<p><strong>Cossial</strong> <em>(18 Ulkar)</em>: duels at the Circle of Cossus · war dances in the hearth-hall</p>
+<p><strong>Thuldar</strong> <em>(27 Dumnos)</em>: wool laid on the Mound of Threads · funeral chants at the gravefield</p>
+<p><strong>Israya</strong> <em>(7 Arkun)</em>: lantern procession to the waystone</p>
+<p><strong>The autumn slaughter</strong> <em>(Ragaia)</em>: the whole village at the slaughter · blood sausage on every hearth · juniper smoke from the ridge</p>
+</div>
+<h2 class="section">What Makes It Itself</h2>
+<p><strong>The dead walk.</strong> Everyone knows the dead walk in the Bramblewood, and some of Tagmira&#x27;s own recent dead have gone there. Doors are barred at dusk.</p>
+<p><strong>Owed and blamed.</strong> The party pushed the Bronze Host back and retook the northwestern hunting grounds, and the village will eat this winter because of it. Their alliance with the dead is known. Some are grateful; others blame them for the dead who walked into the wood.</p>
+<p><strong>Black legs.</strong> Whole legs of mutton and goat are salted and cold-smoked for months over ridge juniper at Carnaxe. Black legs are the local delicacy and the reason caravans stop. Hunters&#x27; hams of venison and boar cost more. Blood sausage is eaten fresh at the autumn slaughter and never sold; a visitor offered some is being honoured.</p>
+<p><strong>Sacred ground everywhere.</strong> A Cossus stone ring for trial by combat, a Thulda gravefield, a mound of wool offerings, an Isarna waystone, and a ford whose cold shrine is being restored. The village keeps them all.</p>
+<h2 class="section">Encounters</h2>
+<div class="table-wrap"><table><caption>d6 Tagmira by day</caption><thead><tr><th class="die">d6</th><th>Encounter</th></tr></thead><tbody>
+<tr><td class="die">1</td><td><strong>Hadran Throsk</strong> wants news of the northwest.</td></tr>
+<tr><td class="die">2</td><td>Hunters back from the northwest with a full haul nod to the party.</td></tr>
+<tr><td class="die">3</td><td><strong>Tenn Darnel</strong> glares at <strong>Ulan Caernach</strong> across a field boundary.</td></tr>
+<tr><td class="die">4</td><td>A widow spits at the party&#x27;s feet; her husband walked into the Bramblewood.</td></tr>
+<tr><td class="die">5</td><td><strong>1d3 militia</strong> practise with bows behind the hearth-hall.</td></tr>
+<tr><td class="die">6</td><td>A cart of black legs comes down from Carnaxe, wrapped in sacking.</td></tr>
+</tbody></table></div>
+<div class="table-wrap"><table><caption>d6 Tagmira by night</caption><thead><tr><th class="die">d6</th><th>Encounter</th></tr></thead><tbody>
+<tr><td class="die">1</td><td>The dogs at the forest edge stop barking all at once.</td></tr>
+<tr><td class="die">2</td><td><strong>Old Borric</strong> swears to anyone listening that he saw Maedra on the Bramblewood path.</td></tr>
+<tr><td class="die">3</td><td><strong>2 militia</strong> on the palisade, watching the northwest.</td></tr>
+<tr><td class="die">4</td><td>A figure stands at the edge of the Bramblewood until a lantern is raised.</td></tr>
+<tr><td class="die">5</td><td>A family keeps vigil over a fresh body, axes ready.</td></tr>
+<tr><td class="die">6</td><td>Something howls on the ridge.</td></tr>
+</tbody></table></div>
+<h2 class="section">Response</h2>
+<p><strong>The watch:</strong> 7 standing militia under Hadran Throsk.</p>
+<p><strong>By day:</strong> 1d3 militia within 1d10 minutes.</p>
+<p><strong>By night:</strong> 1d2 militia within 1d4 turns.</p>
+<p><strong>Reinforcements:</strong> 6 veterans, including Borric and Feln. The hunters, about a dozen, may come or may not; they answer to no one.</p>
+<p><strong>Strength:</strong> 7 militia, 6 veterans, and a dozen hunters outside the militia (founded with 40). Seasoned now. They fought beside the party, won the northwest back, and sleep badly anyway.</p>
+<p class="gap"><strong>Bribery:</strong> not recorded.</p>
+<h2 class="section">Places</h2>
+<section class="loc"><h3><span class="num">1.</span>Hearth-Hall</h3>
+<p>The central gathering hall: food, drink, and village business.</p>
+<p><strong>Guests:</strong> Villagers and militia; Hadran Throsk holds informal court most evenings.</p>
+<p><strong>Services:</strong> Food and drink; hirelings.</p>
+<div class="npc"><p class="head"><span class="nm">Borric, Old Borric</span> <span class="meta">· veteran · village militia</span></p>
+<p>Old, bow-legged, militia cloak worn thin. <em>And yet:</em> A new, well-kept sword.</p>
+<p class="say">“I know what I saw on that path.”</p>
+<p><strong>Wants:</strong> Someone to believe him about Maedra.<br><strong>Doesn’t want:</strong> To go near the Bramblewood again.<br><strong>Knows:</strong> He saw Maedra on the Bramblewood path at dusk, and she looked wrong.<br><strong>Found:</strong> Hearth-Hall, telling anyone who&#x27;ll listen.</p>
+<details><summary>More</summary>
+<p><strong>Thinks with:</strong> tradition</p>
+</details>
+</div>
+</section>
+<section class="loc"><h3><span class="num">2.</span>The Crescent and Hoof</h3>
+<p>The caravan inn on the west road, near where Taziri&#x27;s route ends.</p>
+<p><strong>Sign:</strong> A crescent over a hoofprint, copied from the Isarna waystone.</p>
+<p><strong>Common room:</strong> Long tables around a fire pit, with teamsters&#x27; boots drying beside it.</p>
+<p><strong>Guests:</strong> Taziri&#x27;s teamsters, pony buyers, and the odd pilgrim to the waystone.</p>
+<p class="gap"><strong>Services:</strong> Private rooms (4), common floor, meals, stabling. Smoked mutton and goat cheese. Prices pending OSRIC 3.0 table.</p>
+<p><strong>Trouble:</strong> Teamsters talk. Whatever the caravan heard on the road, the village knows by morning.</p>
+<div class="npc"><p class="head"><span class="nm">Aelis Varrow</span> <span class="meta">· innkeeper · independent</span></p>
+<p>50s, broad, a teamster&#x27;s whip coiled at her belt. <em>And yet:</em> Silver thread braided into her grey hair, like a waystone offering.</p>
+<p class="say">“Pay up front. The road doesn&#x27;t wait.”</p>
+<p><strong>Wants:</strong> Taziri&#x27;s caravan to keep coming.<br><strong>Doesn’t want:</strong> The party and the hunters brawling under her roof.<br><strong>Knows:</strong> Everything the caravans heard on the road.<br><strong>Offers:</strong> Stabling and road news.<br><strong>Found:</strong> The Crescent and Hoof, counting teamsters&#x27; coin by the fire pit.</p>
+<details><summary>More</summary>
+<p><strong>Oddly also:</strong> Keeps a tally of every rider who went north and didn&#x27;t come back.<br><strong>Thinks with:</strong> money</p>
+</details>
+</div>
+</section>
+<section class="loc"><h3><span class="num">3.</span>The Barred Door</h3>
+<p>A low drinking-house where the hunters drink.</p>
+<p><strong>Sign:</strong> None. Three iron bars are nailed across the door, put up the week the dead walked.</p>
+<p><strong>Common room:</strong> Low and smoky, with one long bench and tallow lamps.</p>
+<p><strong>Guests:</strong> Hunters, woodcutters, off-duty militia, and the ones who blame the party.</p>
+<p class="gap"><strong>Services:</strong> Ale; bread and dripping; floor space. Prices pending OSRIC 3.0 table.</p>
+<p><strong>Trouble:</strong> The party is served, slowly. Someone always brings up the Bramblewood dead.</p>
+<div class="npc"><p class="head"><span class="nm">Gorran Fesk</span> <span class="meta">· alehouse keeper · independent</span></p>
+<p>Big, grey-bearded, an axe hung behind the bar. <em>And yet:</em> His hands shake when he pours.</p>
+<p class="say">“Door&#x27;s barred at dusk. In or out.”</p>
+<p><strong>Wants:</strong> His brother&#x27;s body back from the Bramblewood.<br><strong>Doesn’t want:</strong> The party drinking here.<br><strong>Knows:</strong> Which families have lost someone to the wood.<br><strong>Found:</strong> The Barred Door, behind the bar with the axe.</p>
+<details><summary>More</summary>
+<p><strong>Thinks with:</strong> guilt</p>
+<p><strong>Tragedy:</strong> His brother Aedd died of fever this spring. Three nights later he walked north into the Bramblewood.</p>
+</details>
+</div>
+</section>
+<section class="loc"><h3><span class="num">4.</span>Circle of Cossus</h3>
+<p>A stone ring in a forest glade south of the village, consecrated to Cossus.</p>
+<p><strong>Interior:</strong> The stones hum faintly when oaths are spoken.</p>
+<p><strong>Rites:</strong> Trial by combat; oath-swearing.</p>
+</section>
+<section class="loc"><h3><span class="num">5.</span>Gravefield of Thulda</h3>
+<p>Burial mounds northeast of the village, ringed by carved posts and wrapped in wool.</p>
+<p><strong>Populace:</strong> Two quiet widows tend the mounds.</p>
+<p><strong>Rites:</strong> Offerings; burial rites of Thulda.</p>
+</section>
+<section class="loc"><h3><span class="num">6.</span>Mound of Threads</h3>
+<p>A rounded earthen mound on the western ridge, both tomb and shrine to Thulda.</p>
+<p><strong>Populace:</strong> Shepherds and mourners.</p>
+<p><strong>Rites:</strong> Wool offerings; mourning rites.</p>
+</section>
+<section class="loc"><h3><span class="num">7.</span>Tree of Mist-Song</h3>
+<p>A lightning-scarred ash on a stony knoll north of the village, one of the oldest trees in the region.</p>
+<p><strong>Custom:</strong> Stones carved with spirals and claw marks ring its roots.</p>
+<p class="hidden"><strong>Hidden:</strong> A dryad is trapped in the tree, dormant from loneliness. She stirs for real druidic attention, or for someone who sits by the tree in silence for a full turn.</p>
+</section>
+<section class="loc"><h3><span class="num">8.</span>Waystone of Isarna</h3>
+<p>A stone marker etched with a crescent and a hoofprint, on the road west of the village.</p>
+<p><strong>Custom:</strong> Travellers leave bread and silver thread.</p>
+</section>
+<section class="loc"><h3><span class="num">9.</span>Ford of Ossamar</h3>
+<p>A wide, clear ford three miles east, marked by cairns and iron braziers.</p>
+<p><strong>Passage:</strong> Usable. Meria of the Ford has come from Lamares to restore the shrine, cold since Ildun-Ayenar was taken.</p>
+<div class="npc"><p class="head"><span class="nm">Meria, Meria of the Ford</span> <span class="meta">· Isarna warden</span></p>
+<p>Middle-aged, road-worn cloak, a crescent-and-hoof pendant. <em>And yet:</em> Wet to the knees, always.</p>
+<p class="say">“A ford is a door. Someone has to keep it.”</p>
+<p><strong>Wants:</strong> The ford&#x27;s shrine warm again.<br><strong>Doesn’t want:</strong> Travellers crossing without an offering.<br><strong>Knows:</strong> The old crossing rites of Isarna and Ossamar.<br><strong>Offers:</strong> Blessings for safe passage.<br><strong>Found:</strong> Ford of Ossamar, rebuilding the cairns and relighting the braziers.</p>
+<details><summary>More</summary>
+<p><strong>Thinks with:</strong> devotion</p>
+</details>
+</div>
+</section>
+<section class="loc"><h3><span class="num">10.</span>Palisade</h3>
+<p>A wooden palisade around the village.</p>
+<p><strong>Watch:</strong> Not fortified; a serious assault would be catastrophic.</p>
+</section>
+<section class="loc"><h3><span class="num">11.</span>The Ash-House</h3>
+<p>Enni&#x27;s turf-roofed lean-to at the edge of the western woods, smoke leaking through the thatch.</p>
+<p><strong>Inhabitants:</strong> Enni the Ash-Wife and her servant Medam.</p>
+<p class="hidden"><strong>Hidden:</strong> A hearth-pit of ash many years deep, with small bones in it.</p>
+<div class="npc"><p class="head"><span class="nm">Enni, the Ash-Wife</span> <span class="meta">· hedge witch (3rd level)</span></p>
+<p>Old, near-blind eyes, ash-grey shawl, knucklebones in a bag at her hip. <em>And yet:</em> Her eyes follow you exactly.</p>
+<p class="say">“Ask me what I know, not what I&#x27;ll tell you.”</p>
+<p class="say">“The ash remembers.”</p>
+<p><strong>Wants:</strong> One last heir who will listen.<br><strong>Doesn’t want:</strong> The village forgetting the gods&#x27; silence.<br><strong>Knows:</strong> Which charms still work against the dead.<br><strong>Offers:</strong> Healing, charms; friends and identify, for a price.<br><strong>Found:</strong> The Ash-House by the western woods, tracing stories in the hearth-ash.</p>
+<details><summary>More</summary>
+<p><strong>Oddly also:</strong> Takes food and trinkets from villagers who fear her, without comment.<br><strong>Dreams:</strong> That the hearth-fires speak again. It would be a bad thing.<br><strong>Thinks with:</strong> lore<br><strong>Family:</strong> A few distant kin; one loyal servant, Medam.</p>
+<p><strong>Tragedy:</strong> Has watched the old knowledge dwindle to almost nothing in her lifetime.</p>
+</details>
+</div>
+<div class="npc"><p class="head"><span class="nm">Medam</span> <span class="meta">· servant</span></p>
+<p>Big, slow-moving youth, soot on his face. <em>And yet:</em> Moves without a sound.</p>
+<p><strong>Wants:</strong> Enni fed and warm.<br><strong>Doesn’t want:</strong> Strangers in the hut.<br><strong>Found:</strong> The Ash-House, fetching water and wood.</p>
+<details><summary>More</summary>
+<p><strong>Thinks with:</strong> devotion</p>
+</details>
+</div>
+</section>
+<section class="loc"><h3><span class="num">12.</span>The Wheel-Ring</h3>
+<p>A churned yard beside the Crescent and Hoof where Taziri&#x27;s route ends.</p>
+<p><strong>Yard:</strong> Wagons drawn up in a ring at night.</p>
+<p><strong>Beasts:</strong> Mules, oxen, and Tagmiran ponies.</p>
+<p><strong>Who’s passing through:</strong> Taziri&#x27;s teamsters and pony buyers.</p>
+</section>
+<section class="loc"><h3><span class="num">13.</span>Caturo&#x27;s Corrals</h3>
+<p>Rail fences on the south slope.</p>
+<p><strong>Wares:</strong> Hardy upland ponies, the village&#x27;s best export.</p>
+<p><strong>Proprietor:</strong> Caturo Hesk.</p>
+<div class="npc"><p class="head"><span class="nm">Caturo Hesk</span> <span class="meta">· pony breeder · independent</span></p>
+<p>Small, bandy-legged, rope burns on both palms. <em>And yet:</em> A gold ring in one ear.</p>
+<p class="say">“A Tagmira pony will outlive you.”</p>
+<p><strong>Wants:</strong> Buyers from the caravans.<br><strong>Doesn’t want:</strong> His ponies requisitioned by the militia.<br><strong>Offers:</strong> Hardy upland ponies.<br><strong>Found:</strong> Caturo&#x27;s Corrals on the south slope.</p>
+<details><summary>More</summary>
+<p><strong>Thinks with:</strong> money</p>
+</details>
+</div>
+</section>
+<section class="loc"><h3><span class="num">14.</span>Goban&#x27;s Forge</h3>
+<p>A low stone forge.</p>
+<p><strong>Wares:</strong> Nails, simple iron tools, arrowheads.</p>
+<p><strong>Proprietor:</strong> Goban Tesk, always short of iron.</p>
+<div class="npc"><p class="head"><span class="nm">Goban Tesk</span> <span class="meta">· smith · independent</span></p>
+<p>40s, scorched leather apron, burn-scarred forearms. <em>And yet:</em> A thread of Thulda wool tied at his wrist.</p>
+<p class="say">“Iron&#x27;s short. Nails or arrowheads. Choose.”</p>
+<p><strong>Wants:</strong> Iron from the caravan.<br><strong>Doesn’t want:</strong> Forging for a fight he isn&#x27;t paid for.<br><strong>Offers:</strong> Nails, tools, arrowheads.<br><strong>Found:</strong> Goban&#x27;s Forge, at the anvil from dawn.</p>
+<details><summary>More</summary>
+<p><strong>Thinks with:</strong> endurance</p>
+</details>
+</div>
+</section>
+<section class="loc"><h3><span class="num">15.</span>The Stink-House</h3>
+<p>The tallow-house, downwind of everything.</p>
+<p><strong>Wares:</strong> Tallow and candles rendered from sheep fat.</p>
+<p><strong>Proprietor:</strong> Ambata Corr.</p>
+<div class="npc"><p class="head"><span class="nm">Ambata Corr</span> <span class="meta">· tallow-chandler · independent</span></p>
+<p>60s, greasy hands, candle-stubs in her apron. <em>And yet:</em> She smells of rosemary, not fat.</p>
+<p class="say">“Light&#x27;s cheap. Darkness costs more.”</p>
+<p><strong>Wants:</strong> Every north window lit this winter.<br><strong>Doesn’t want:</strong> The Stink-House moved further out.<br><strong>Offers:</strong> Candles and tallow.<br><strong>Found:</strong> The Stink-House, stirring the vats.</p>
+<details><summary>More</summary>
+<p><strong>Thinks with:</strong> tradition</p>
+</details>
+</div>
+</section>
+<section class="loc"><h3><span class="num">16.</span>Tanning Pits</h3>
+<p>Pits by the stream below the village.</p>
+<p><strong>Wares:</strong> Goat and sheep hides.</p>
+<p><strong>Proprietor:</strong> Rebur Tancin.</p>
+<div class="npc"><p class="head"><span class="nm">Rebur Tancin</span> <span class="meta">· tanner · independent</span></p>
+<p>Stained to the elbows, bare feet, a scraping knife. <em>And yet:</em> A neat beard, oiled and combed.</p>
+<p class="say">“Hides don&#x27;t lie about the beast.”</p>
+<p><strong>Wants:</strong> Bigger game from the northwest.<br><strong>Doesn’t want:</strong> Orc hides; he won&#x27;t touch them.<br><strong>Offers:</strong> Goat and sheep hides; leather.<br><strong>Found:</strong> The tanning pits by the stream, stained to the elbow.</p>
+<details><summary>More</summary>
+<p><strong>Thinks with:</strong> money</p>
+</details>
+</div>
+</section>
+<h2 class="section">About Town</h2>
+<div class="npc"><p class="head"><span class="nm">Cael Gald</span> <span class="meta">· hunter · independent</span></p>
+<p>Lean, wind-burned, three goose feathers in his hat. <em>And yet:</em> A child&#x27;s wooden doll tied to his quiver.</p>
+<p class="say">“The northwest&#x27;s ours again. Say what you like about the rest.”</p>
+<p><strong>Wants:</strong> To hunt the far grounds before the orcs come back.<br><strong>Doesn’t want:</strong> Another spring without meat.<br><strong>Offers:</strong> A guide in the northwest.<br><strong>Found:</strong> The northwest hunting grounds, or skinning at his door.</p>
+<details><summary>More</summary>
+<p><strong>Thinks with:</strong> endurance<br><strong>Family:</strong> Brother of Torven Gald, the militia archer.</p>
+</details>
+</div>
+<div class="npc"><p class="head"><span class="nm">Pima</span> <span class="meta">· foundling messenger</span></p>
+<p>Young orphan girl. Small hand mirror, always in hand.</p>
+<p><strong>Wants:</strong> The Bronze Host defeated. What the mirror-fairy wants.<br><strong>Doesn’t want:</strong> Adults taking her mirror.<br><strong>Knows:</strong> A fairy girl, through the mirror.<br><strong>Found:</strong> Brennar Hallan’s household, Tagmira; alone with her mirror at night.</p>
+<details><summary>More</summary>
+<p><strong>Oddly also:</strong> Says the trees whisper at night. She is not wrong.<br><strong>Thinks with:</strong> magic<br><strong>Family:</strong> Orphan — no known family. Raised alongside fellow foundlings Salla and Dun.</p>
+<p><strong>Tragedy:</strong> Orphaned under unspecified circumstances. Raised as a servant-ward, not a daughter.</p>
+</details>
+</div>
+<h2 class="section">Not Yet Converted</h2><p class="gap">Old-format NPC entries, shown briefly until converted.</p>
+<div class="npc"><p class="head"><span class="nm">Hadran Throsk</span> <span class="meta">· Village Militia</span></p><p>Scarred veteran, limp from an old wound, booming voice that carries across the hall. Middle-aged, weathered, still formidable. Wears his militia captain&#x27;s insignia like a priest wears vestments.</p><p><strong>Wants:</strong> To protect Tagmira without spending lives he cannot replace. Wants to understand the orc threat well enough to do something about it.</p></div>
+<div class="npc"><p class="head"><span class="nm">Ulan Caernach</span> <span class="meta">· None</span></p><p>22, lean and deliberate in movement. Carries the curved knife Mellan gave him. Won the duel against Tenn Darnel at the Circle of Cossus. Has since fought orcs and skeletons alongside the party.</p><p><strong>Wants:</strong> To understand what he&#x27;s become after the things he&#x27;s seen. Quietly proud of the duel win; privately unsure what it means.</p></div>
+<div class="npc"><p class="head"><span class="nm">Rondasek Elaran</span> <span class="meta">· None</span></p><p>Young fighter, Elaran coloring — dark-browed, stocky. Less polished than Ulan, more openly eager.</p><p><strong>Wants:</strong> To be someone the village talks about the way they talk about Hadran.</p></div>
+<div class="npc"><p class="head"><span class="nm">Zimru, Hierophant of the Annunaki</span> <span class="meta">· Temple of the Old Gods</span></p><p>Tall, stooped slightly as though time itself bends around him. Skin like oiled parchment drawn thin over bone. Gold-threaded vestments long dulled but impeccably arranged. Eyes that burn with focused discipline — he remembers sight and continues the act out of sheer will.</p><p><strong>Wants:</strong> Order. The preservation of the old laws in the gods&#x27; absence. To prevent humanity&#x27;s extermination by guiding what remains. To continue the necromantic plan with Maedra. More sacrifices to keep the Sphere running.</p></div>
+<div class="npc"><p class="head"><span class="nm">Old Maedra (now undead)</span> <span class="meta">· Temple of the Old Gods</span></p><p>What she looked like in life: a small, ancient woman who appeared at funerals and vigils without being seen to arrive. What she looks like now: similar, but the stillness is absolute. The undead of the temple regard her with something close to reverence.</p><p><strong>Wants:</strong> Unclear even to her — she has quickened into undeath recently and is still becoming what she will be. Zimru sees her as anchoring &#x27;life beyond death.&#x27; She may still carry human attachments.</p></div>
+<div class="npc"><p class="head"><span class="nm">Tarrek Veyran</span> <span class="meta">· None</span></p><p>Gruff, broad, soot-stained. Runs the village forge. Fair in his dealings and known for it.</p><p><strong>Wants:</strong> A well-run forge, a village that leaves him alone to work.</p></div>
+<h2 class="section">Factions in Town</h2>
+<p><strong>Village Militia.</strong> <em>Purpose:</em> Keep the orcs cowed and the village fed. <em>Membership:</em> 7 standing, 6 veterans. <em>Scheme:</em> Hold the retaken northwest hunting grounds.</p>
+<p><strong>Tagmira Hunters.</strong> <em>Purpose:</em> Feed the village and keep the northwest. <em>Membership:</em> About a dozen hunters, Cael Gald among them. <em>Scheme:</em> Hunt the far grounds without the militia&#x27;s leave, and sell the game to Carnaxe.</p>
+<h2 class="section">Trouble</h2><ul><li>The Bronze Host was pushed back from the northwest, but all its leaders survived.</li><li>The party&#x27;s alliance with the dead is known, and resented by some; a few blame the party for the dead who went to the Bramblewood.</li><li>Maedra has vanished — whispers but no answers. The undead want more Tagmiran recruits.</li><li>Two Bronze Host orcs were brought to Tagmira as captives to witness the trial by combat — meant as intimidation. It may have given the orcs useful intelligence about Tagmira&#x27;s current strength instead.</li><li>The water-rights grudge persists after the duel. Tenn Darnel lost and has not forgiven Ulan Caernach.</li><li>Ulan Caernach and Rondasek Elaran are back to village life but changed — they&#x27;ve seen skeletons fight and orcs bleed. They are quietly restless.</li><li>Salt comes only by caravan. Taziri, Aelis Varrow, and the Aredos haggle over it every curing season.</li><li>The militia resents the Aredos buying game from the hunters, off grounds the militia bled to retake.</li></ul>
+<h2 class="section">Neighbors</h2><p>
+<strong>Caelrun:</strong> 18 miles west via luric road.<br><strong>Dravesa:</strong> 18 miles east via luric road.<br><strong>Carnaxe:</strong> 3 miles west via carnaxe track. Up the western ridge.</p>
+<h2 class="section">Steadings</h2>
+<p><strong>Carnaxe</strong> (family): A Lucernian family&#x27;s curing steading on the ridge, where Tagmira&#x27;s black legs are made. <em>Why here:</em> Cold ridge wind for the curing lofts, and juniper for the smoke.</p>
+</main>
