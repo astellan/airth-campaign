@@ -31,7 +31,7 @@ A few evocative words naming the main feature or function. "Purple Pool," "Scarl
 
 - Everything PCs perceive on first look. Usable as read-aloud.
 - Nothing hidden. Hints are fine.
-- Concise, evocative. Full sentences and noun phrases may mix.
+- Concise, evocative, complete sentences. Comma-listed basics (walls, floor, ceiling) are the one exception.
 - Lead with walls, floor, ceiling, then scene-setting.
 - Then features in order of obviousness, importance, immediacy. Monsters usually first.
 - Monsters: say what they're doing when PCs arrive. If they're using a feature, describe both in one sentence.
@@ -59,7 +59,7 @@ Qualities of the whole area, not tied to a feature, not obvious on sight. Bolded
 
 - Every monster in the initial description gets a feature paragraph.
 - Format: count and name in bold, stat location, rolled hp per individual, then disposition.
-  - "**3 orcs:** Stats in sidebar. hp 4, 6, 7. Dicing; ignore noise from Area 4."
+  - "**3 orcs:** Stats in sidebar. hp 4, 6, 7. They are dicing and ignore noise from Area 4."
 - Roll hp: d8 per HD, plus any modifier. Never average.
 - Numerals for counts: "3 orcs," not "three."
 - Personality, desires, bargaining positions: bullets under the feature.
@@ -105,21 +105,21 @@ An area with too many features or actions becomes several numbered sub-areas.
 
 **3. Scarlet Crypt**
 
-Stone blocks, 15′ ceiling. **10 sarcophagi** of black-veined stone emit a flickering scarlet glow. Dust over everything.
+Stone blocks, 15′ ceiling. **10 sarcophagi** of black-veined stone emit a flickering scarlet glow. Dust covers everything.
 
-**Sound:** Muffled, as if the air wants silence.
+**Sound:** Noise is muffled, as if the air wants silence.
 
 —
 
 **10 sarcophagi:** Heavy stone lids push back.
 
-- **X (on map):** A **wight**: stats in sidebar, hp 22. Dormant; wakes when exposed to light. Hates the living.
-- **Others:** Empty.
+- **X (on map):** A **wight**: stats in sidebar, hp 22. It lies dormant, wakes when exposed to light, and hates the living.
+- **Others:** These are empty.
 
 **6. Moss Cavern**
 
-Natural cavern, 30′ ceiling. Stalagmites; floor carpeted in **black moss**. **Secret door to Area 9:** Opens when pushed.
+Natural cavern, 30′ ceiling. Stalagmites rise from a floor carpeted in **black moss**. **Secret door to Area 9:** It opens when pushed.
 
 —
 
-**Black moss:** Dry. Smells of camphor.
+**Black moss:** It is dry and smells of camphor.

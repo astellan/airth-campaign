@@ -64,12 +64,12 @@ Hide empty fields. Never print "Not established" or a blank label. A sparse NPC 
 
 ## Writing rules
 
-**Appearance.** Build, age, clothing, marks, carried objects. Nothing that takes familiarity to notice.
-- *Good:* 40s. Strong hands. Ale-stained apron.
+**Appearance.** Build, age, clothing, marks, carried objects, as a comma-separated list. Nothing that takes familiarity to notice.
+- *Good:* 40s, strong hands, ale-stained apron.
 - *Bad:* Never sits.
 
 **And yet.** The twist on the look.
-- *Good:* Huge, scarred, tattooed. *And yet:* hums lullabies while he works.
+- *Good:* Huge, scarred, tattooed. *And yet:* he hums lullabies while he works.
 
 **Sayings.** The line players quote after the session. Voice lives here — manner shows through the words, not phonetic spelling.
 - *Good:* "Coin first. Then you can ask."
@@ -81,5 +81,7 @@ Hide empty fields. Never print "Not established" or a blank label. A sparse NPC 
 **Anecdotes and tragedies.** Specific past events with names, numbers, and consequences attached — not generic backstory. Not "lost people close to him in tomb collapses" but a named event: who died, when, how, and what habit the survivor still carries because of it. The named version gives a DM something to reference in play; the generic version doesn't.
 
 **Never name PCs or session events** in any field. NPC files describe the NPC, not the campaign's current state.
+
+**Fragments.** Short fields are labels and may be fragments (`wants`: "Her inn kept theology-free."). Longer fields (`oddly_also`, `family`, `anecdotes`, `tragedies`) use complete sentences, per `voice.md`.
 
 **Empty is fine.** Leave optional fields `null` rather than invent detail. Let it emerge at the table.
