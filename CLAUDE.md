@@ -2,6 +2,10 @@
 
 Canonical data store for a Tuesday-night AD&D (OSRIC 3rd edition) campaign set in the world of Airth, run in Park Slope. This repo is the source of truth — Google Docs are being retired in favor of these JSON files. Claude may be invoked here directly (via `@claude` in issues/PRs) or as a data source fetched by a separate DM-prep assistant.
 
+## Rules
+
+Canonical rules: **OSRIC 3.0 only.** No other rulebook is canon for this campaign.
+
 ## Repo shape
 
 ```
@@ -90,11 +94,11 @@ Structure maps onto `dungeon.schema.json` sections as follows:
 
 **Stat blocks** follow the OSRIC 3.0 GMG's own block convention, not the terser OSE inline notation — this campaign has no per-monster THAC0 field or condensed `Att n × w (d)` line; to-hit and saves come off the HD-based tables in the GMG (pp. 6–8), not off the individual monster.
 
-For a stock monster from any OSRIC-compatible sourcebook — OSRIC GMG, AD&D 1e Monster Manual, Fiend Folio, Monster Manual II, etc. — `monster_summary` needs only `name` and `source` (e.g. `"OSRIC GMG p.91"`, `"Monster Manual p.5"`, `"Fiend Folio p.34"`) — don't restate stats the book already has.
+For a stock monster from the OSRIC GMG, `monster_summary` needs only `name` and `source` (e.g. `"OSRIC GMG p.91"`) — don't restate stats the book already has.
 
-For a homebrew or reskinned monster, fill in `move`, `ac`, `hd`, `atk` using GMG value conventions — even if the base creature comes from the Monster Manual or Fiend Folio, convert its stats to these conventions rather than copying that book's own notation (e.g. AD&D 1e movement in inches → feet, AC with no ascending bracket → add one):
+For a homebrew or reskinned monster, fill in `move`, `ac`, `hd`, `atk` using GMG value conventions:
 - `ac`: descending AC only, no ascending bracket — `"2"`, not `"2 [18]"`. This campaign doesn't use ascending AC.
-- `move`: feet, not inches. Converting an old inches-based value (Monster Manual, Fiend Folio): multiply by 10 to get feet per round — `MV 12"` becomes `"120ft"`. Multiple modes: `"120ft; 60ft burrowing"`.
+- `move`: feet, not inches. Multiple modes: `"120ft; 60ft burrowing"`.
 - `hd`: OSRIC-style — plain number or with a modifier, `"2"` or `"4+1"`. Variable-HD creatures can use a range, `"3 to 8 (GM decides, or roll 1d6+2)"`.
 - `atk`: prose, not terse notation — `"2 claws (1d8+1 slashing) and 1 bite (1d8+1 piercing)"`.
 - `special_attack` / `special_defense`: free text for abilities beyond a basic attack line.
