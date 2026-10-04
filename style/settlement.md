@@ -10,7 +10,7 @@ Follows `style/voice.md`. Covers settlements and steadings. Storage rules in CLA
 4. **What makes it itself.** 2–4 short headed paragraphs: the local trade, the signature product, the custom outsiders misread, the hidden rot. Any local rule goes here (*−1 to reaction rolls*, *no weapons over a dagger*).
 5. **Encounters.** Separate d6 tables for day and night. Mix colour and trouble; named locals recur here.
 6. **Response.** Who comes when trouble starts, how fast by day and by night, reinforcements, bribery.
-7. **Keyed locations.** See location types below. Services and prices sit inside the location; secrets sit inside the location under a sub-heading; NPC cards (`style/npc.md`) sit at the location where they're found.
+7. **Keyed locations.** See location types below. Services and prices sit inside the location; findable hidden things sit under a **Hidden** sub-heading; NPC cards appear at their location (see NPCs in place).
 8. **Factions in town.** Purpose · Membership · Current scheme · leader's NPC card.
 9. **Trouble.** Current tensions, one line each.
 10. **Rumours.** d6–d10 table.
@@ -18,6 +18,34 @@ Follows `style/voice.md`. Covers settlements and steadings. Storage rules in CLA
 12. **Steadings.** Name, `kind`, `why_here`. Steadings also appear in Neighbors, by their own track or path.
 
 Entry length scales with importance: a gate gets one line, the main inn gets a page. Omit empty sections.
+
+## Location types
+
+Every location opens with one line of look and function, then the labels for its type. Use only the labels that have content.
+
+| Type | Labels |
+|---|---|
+| **Inn / tavern** | Sign · Common room · Guests · Services · Trouble |
+| **Temple / shrine** | Entrance · Interior · Populace · Rites |
+| **Shop / workshop** | Wares · Proprietor · Prices · Off the books |
+| **Market** | Days · Watch |
+| **Civic** (hall, court, gaol) | Interior · Staff · Fees · Prisoners |
+| **Residence / manor** | Entrance · Interior · Inhabitants |
+| **Guild / hall** | Interior · Members · Services · Joining |
+| **Gate / wall** | Watch · Toll |
+| **Dock / road** | Passage |
+| **Landmark** | Free labels as needed: Inscription · Origin · Custom |
+| **Garrison / barracks** | Strength (now vs. founding) · Readiness · Commander |
+| **Caravanserai / stables** | Yard · Beasts · Services · Who's passing through |
+| **Arena / fighting yard** | Bouts · Wagers · Champion |
+
+**Hidden.** Any location may end with a **Hidden** sub-heading: something physical and findable that isn't visible from the front door — a passage, a sealed room, an occupant, contraband. Narrative secrets (who knows what, who has told no one) do not go here.
+
+**Garrison strength.** Luric towns began as garrisons and have slackened over 80 years. Where it applies, state current strength against founding strength. This is the line that changes as the campaign turns.
+
+## NPCs in place
+
+An NPC's card appears at the location named in their `found` field, falling back to `home`. Settlement files do not list NPCs separately; the render pulls them in from `airth/npcs/`.
 
 ## Neighbors
 
