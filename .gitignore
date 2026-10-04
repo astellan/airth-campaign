@@ -1,2 +1,4 @@
 characters/
 .claude/
+__pycache__/
+*.pyc
