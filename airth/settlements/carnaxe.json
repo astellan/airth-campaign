@@ -1,0 +1,60 @@
+{
+  "$schema": "../../schema/settlement.schema.json",
+  "id": "carnaxe",
+  "name": "Carnaxe",
+  "status": "in_development",
+  "type": "steading",
+  "tagline": "A Lucernian family's curing steading on the ridge, where Tagmira's black legs are made.",
+  "region": "Luric Marches",
+  "parent": "tagmira",
+  "kind": "family",
+  "why_here": "Cold ridge wind for the curing lofts, and juniper for the smoke.",
+  "population": {
+    "total": 12,
+    "mix": "One Lucernian family, the Aredos, and their hands."
+  },
+  "palette": {
+    "constants": {
+      "far": [
+        "juniper smoke on the ridge"
+      ],
+      "near": [
+        "legs hanging in the wind-lofts",
+        "salt crusted on the doorposts"
+      ],
+      "leaving": [
+        "smoke in your hair for days"
+      ]
+    }
+  },
+  "locations": [
+    {
+      "id": "wind-lofts",
+      "name": "The Wind-Lofts",
+      "type": "shop",
+      "look": "Open-sided lofts on the ridge crest, hung with hundreds of curing legs.",
+      "labels": {
+        "wares": "Black legs of mutton and goat; hunters' hams of venison and boar. Prices pending OSRIC 3.0 table.",
+        "proprietor": "Amalric Aredo."
+      }
+    },
+    {
+      "id": "smoke-sheds",
+      "name": "Smoke-Sheds",
+      "type": "shop",
+      "look": "Low stone sheds where juniper smoulders day and night.",
+      "labels": {
+        "proprietor": "Beronia Aredo, who keeps the cure."
+      }
+    }
+  ],
+  "neighbors": [
+    {
+      "settlement": "tagmira",
+      "miles": 3,
+      "direction": "E",
+      "path": "carnaxe-track",
+      "notes": "Down the western ridge."
+    }
+  ]
+}

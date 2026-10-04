@@ -1,0 +1,25 @@
+{
+  "name": "Beronia Aredo",
+  "moniker": null,
+  "role": "curer",
+  "home": "Carnaxe, above Tagmira",
+  "home_settlement": "carnaxe",
+  "found": "The smoke-sheds at Carnaxe, feeding the juniper fires.",
+  "gender": "female",
+  "faction": "independent",
+  "thinks_with": "tradition",
+  "appearance": "Small, smoke-darkened, a ring of keys at her waist.",
+  "and_yet": "Hands white with salt to the wrist.",
+  "sayings": [
+    "My mother's cure. My daughter's cure. Not yours."
+  ],
+  "wants": "The cure kept in the family.",
+  "does_not_want": "Strangers in the smoke-sheds.",
+  "dreams": null,
+  "oddly_also": "Has never written the cure down.",
+  "knows": null,
+  "offers": null,
+  "family": "Wife of Amalric Aredo.",
+  "anecdotes": [],
+  "tragedies": []
+}

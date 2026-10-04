@@ -125,6 +125,15 @@
         "descriptors": [
           "lantern procession to the waystone"
         ]
+      },
+      {
+        "name": "The autumn slaughter",
+        "when": "Ragaia",
+        "descriptors": [
+          "the whole village at the slaughter",
+          "blood sausage on every hearth",
+          "juniper smoke from the ridge"
+        ]
       }
     ]
   },
@@ -134,12 +143,12 @@
       "text": "Everyone knows the dead walk in the Bramblewood, and some of Tagmira's own recent dead have gone there. Doors are barred at dusk."
     },
     {
-      "title": "The northwest retaken",
-      "text": "The party pushed the Bronze Host back and retook the northwestern hunting grounds. The village will eat this winter because of it."
+      "title": "Owed and blamed",
+      "text": "The party pushed the Bronze Host back and retook the northwestern hunting grounds, and the village will eat this winter because of it. Their alliance with the dead is known. Some are grateful; others blame them for the dead who walked into the wood."
     },
     {
-      "title": "Owed and blamed",
-      "text": "The party's alliance with the dead is known. Some are grateful. Others blame them for the dead who walked into the wood."
+      "title": "Black legs",
+      "text": "Whole legs of mutton and goat are salted and cold-smoked for months over ridge juniper at Carnaxe. Black legs are the local delicacy and the reason caravans stop. Hunters' hams of venison and boar cost more. Blood sausage is eaten fresh at the autumn slaughter and never sold; a visitor offered some is being honoured."
     },
     {
       "title": "Sacred ground everywhere",
@@ -153,7 +162,7 @@
       "**Tenn Darnel** glares at **Ulan Caernach** across a field boundary.",
       "A widow spits at the party's feet; her husband walked into the Bramblewood.",
       "**1d3 militia** practise with bows behind the hearth-hall.",
-      "Goats break through a fence and scatter through the lanes."
+      "A cart of black legs comes down from Carnaxe, wrapped in sacking."
     ],
     "night": [
       "The dogs at the forest edge stop barking all at once.",
@@ -351,7 +360,7 @@
       "id": "tagmira-hunters",
       "purpose": "Feed the village and keep the northwest.",
       "membership": "About a dozen hunters, Cael Gald among them.",
-      "scheme": "Hunt the far grounds without the militia's leave."
+      "scheme": "Hunt the far grounds without the militia's leave, and sell the game to Carnaxe."
     }
   ],
   "trouble": [
@@ -360,7 +369,9 @@
     "Maedra has vanished — whispers but no answers. The undead want more Tagmiran recruits.",
     "Two Bronze Host orcs were brought to Tagmira as captives to witness the trial by combat — meant as intimidation. It may have given the orcs useful intelligence about Tagmira's current strength instead.",
     "The water-rights grudge persists after the duel. Tenn Darnel lost and has not forgiven Ulan Caernach.",
-    "Ulan Caernach and Rondasek Elaran are back to village life but changed — they've seen skeletons fight and orcs bleed. They are quietly restless."
+    "Ulan Caernach and Rondasek Elaran are back to village life but changed — they've seen skeletons fight and orcs bleed. They are quietly restless.",
+    "Salt comes only by caravan. Taziri, Aelis Varrow, and the Aredos haggle over it every curing season.",
+    "The militia resents the Aredos buying game from the hunters, off grounds the militia bled to retake."
   ],
   "neighbors": [
     {
@@ -374,6 +385,13 @@
       "miles": 18,
       "direction": "E",
       "path": "luric-road"
+    },
+    {
+      "settlement": "carnaxe",
+      "miles": 3,
+      "direction": "W",
+      "path": "carnaxe-track",
+      "notes": "Up the western ridge."
     }
   ],
   "economy": [
@@ -383,17 +401,19 @@
     "tallow rendering",
     "simple iron tools",
     "pony stock",
-    "caravan logistics"
+    "caravan logistics",
+    "meat curing"
   ],
   "exports": [
     "wool",
     "hides",
     "timber",
-    "smoked meat",
+    "black legs (cured mutton and goat)",
     "tallow",
     "cheese",
     "nails",
-    "ponies"
+    "ponies",
+    "hunters' hams (cured venison and boar)"
   ],
   "imports": [
     "salt",

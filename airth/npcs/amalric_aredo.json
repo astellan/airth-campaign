@@ -1,0 +1,25 @@
+{
+  "name": "Amalric Aredo",
+  "moniker": null,
+  "role": "curer",
+  "home": "Carnaxe, above Tagmira",
+  "home_settlement": "carnaxe",
+  "found": "The Wind-Lofts at Carnaxe, turning the legs.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "tradition",
+  "appearance": "Heavy, salt-cracked hands, a Lucernian cut to his coat.",
+  "and_yet": "Smells of juniper, never of meat.",
+  "sayings": [
+    "A leg is ready when it tells you. Not before."
+  ],
+  "wants": "Salt from the next caravan.",
+  "does_not_want": "The militia telling him whose game to buy.",
+  "dreams": null,
+  "oddly_also": null,
+  "knows": null,
+  "offers": "Black legs and hunters' hams.",
+  "family": "Wife Beronia, who keeps the cure; grown sons who work the lofts.",
+  "anecdotes": [],
+  "tragedies": []
+}
