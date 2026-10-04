@@ -10,7 +10,7 @@
     "terrain": "flat grassland, forest to north and east",
     "travel_times": {
       "from_tagmira": "1 day east",
-      "to_orziben": "1 day west"
+      "to_orziben": "1 day east"
     }
   },
   "population": {

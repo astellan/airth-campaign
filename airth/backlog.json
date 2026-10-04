@@ -125,6 +125,13 @@
       "description": "Migrate all existing NPCs to the v2 schema: add name, role, sayings, knows, offers, found; remove self_image, recreation, pc_leverage (salvage good self_image lines into sayings, useful pc_leverage into knows/offers); trim fields to style/npc.md lengths; check and_yet is an appearance twist. Batches, with Andrew's approval — new field content is new content.",
       "status": "closed",
       "notes": "Then restore tests/test_npcs.py REQUIRED_FIELDS to the schema's full required list. Done 2026-10-04: all 27 migrated; tests restored to full v2 required list. PC/session-specific pc_leverage and anecdotes preserved in campaign_notes."
+    },
+    {
+      "id": "BL-19",
+      "category": "settlements",
+      "description": "Paths/roads session: define path file type, then add neighbors (pointcrawl links) to every settlement and steading.",
+      "status": "open",
+      "notes": "Luric Road (luric-road) runs west to east: Lamares, Nemetra, Caelrun, Tagmira, Dravesa, Orziben. Distances between stops not yet set (Andrew's example used 18 miles for Tagmira–Dravesa and Dravesa–Orziben; unconfirmed)."
     }
   ]
 }
