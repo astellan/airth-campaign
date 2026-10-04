@@ -169,10 +169,10 @@
     "watch": "20 watchmen on rotating shifts, answering to the Warden.",
     "arrival_day": "1d3 watchmen within 1d10 minutes.",
     "arrival_night": "1d3 watchmen within 1d4 turns.",
-    "reinforcements": "Vraed's militia, about 120 trained adults, raised in 1 hour.",
+    "reinforcements": "Vraed's 30 raiders, mustered from his hall within the hour.",
     "bribery": null,
-    "strength_now": "20 watchmen",
-    "strength_founding": null,
+    "strength_now": "20 watchmen, plus Vraed's 30 raiders",
+    "strength_founding": "40",
     "strength": "Comfortable after decades of quiet. Vraed's raiders are the only ones in town who have fought."
   },
   "locations": [
@@ -263,7 +263,7 @@
     {
       "id": "bandua-faithful",
       "purpose": "Keep the seasonal raids going and Dravesa's fighting strength intact.",
-      "membership": "About 30 initiated fighters; 120 militia trained.",
+      "membership": "About 30 initiated fighters who have raided.",
       "scheme": "Force the raid through, and move on Telvari if the Warden keeps stalling."
     }
   ],

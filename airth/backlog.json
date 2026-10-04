@@ -152,7 +152,7 @@
       "category": "settlements",
       "description": "Fill settlement gaps: founding garrison strength and bribery for each town; miles and paths for Caelrun's steadings; Lamares and Orziben settlement files (both on the Luric Road, referenced as neighbors).",
       "status": "open",
-      "notes": ""
+      "notes": " Garrisons done 2026-10-04: every post founded with 40. Remaining: Caelrun steading distances, Orziben."
     },
     {
       "id": "BL-23",
@@ -160,6 +160,13 @@
       "description": "Align every settlement price with the OSRIC 3.0 lodging, food, and services tables; add the rule to style/settlement.md. Tagmira's two inns are marked 'prices pending'.",
       "status": "open",
       "notes": "Waiting on the OSRIC 3.0 price table from Andrew."
+    },
+    {
+      "id": "BL-24",
+      "category": "settlements",
+      "description": "Build Orziben with Andrew.",
+      "status": "open",
+      "notes": "Agreed so far: tied for largest Luric town; earthen wall; the most Imazurani town in the Luric; ruled by an Imazurani council run like a crime family (Sopranos model); slightly drier, semi-arid climate and Imazurani architecture; Malac Schismatic pilgrims from across the Luric and from Velgroth pass through. The Mountain of Fire lies east of Imazuran, about 120 miles, mostly through settled, internally peaceful country (Imazuran a paramountcy). Exports wine, olive oil, alum; smiths buy charcoal; Imazuran caravans arriving less often; its Orthodox cleric has died."
     }
   ]
 }

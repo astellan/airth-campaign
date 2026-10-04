@@ -168,10 +168,10 @@
     "watch": "7 standing militia under Hadran Throsk.",
     "arrival_day": "1d3 militia within 1d10 minutes.",
     "arrival_night": "1d2 militia within 1d4 turns.",
-    "reinforcements": "6 veterans can be called, including Borric and Feln.",
+    "reinforcements": "6 veterans, including Borric and Feln. The hunters, about a dozen, may come or may not; they answer to no one.",
     "bribery": null,
-    "strength_now": "7 militia, 6 veterans",
-    "strength_founding": null,
+    "strength_now": "7 militia, 6 veterans, and a dozen hunters outside the militia",
+    "strength_founding": "40",
     "strength": "Seasoned now. They fought beside the party, won the northwest back, and sleep badly anyway."
   },
   "locations": [
@@ -346,6 +346,12 @@
       "purpose": "Keep the orcs cowed and the village fed.",
       "membership": "7 standing, 6 veterans.",
       "scheme": "Hold the retaken northwest hunting grounds."
+    },
+    {
+      "id": "tagmira-hunters",
+      "purpose": "Feed the village and keep the northwest.",
+      "membership": "About a dozen hunters, Cael Gald among them.",
+      "scheme": "Hunt the far grounds without the militia's leave."
     }
   ],
   "trouble": [

@@ -130,13 +130,13 @@
     ]
   },
   "response": {
-    "watch": "About 30 active militia under Captain Durvin.",
+    "watch": "30 militia under Captain Durvin, 15 of them veterans.",
     "arrival_day": "1d4 militia within 1d10 minutes.",
     "arrival_night": "1d3 militia within 1d4 turns, likely drunk.",
-    "reinforcements": "15 veterans.",
+    "reinforcements": "None; the veterans are already counted.",
     "bribery": null,
-    "strength_now": "30 militia, 15 veterans",
-    "strength_founding": null,
+    "strength_now": "30 militia, 15 of them veterans",
+    "strength_founding": "40",
     "strength": "Overconfident and under-informed. Patrols stop short of where the trouble is."
   },
   "locations": [
@@ -223,7 +223,7 @@
     {
       "id": "village-militia",
       "purpose": "Keep the village safe.",
-      "membership": "About 30 active, 15 veterans.",
+      "membership": "30 militia, 15 of them veterans.",
       "scheme": "Drinking, and dismissing the gnoll threat."
     },
     {

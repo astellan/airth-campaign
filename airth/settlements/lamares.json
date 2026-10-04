@@ -133,8 +133,8 @@
     "arrival_night": "1d3 watchmen within 1d4 turns.",
     "reinforcements": "12 militia under Captain Seretta at the North Fortress, 3 miles north.",
     "bribery": null,
-    "strength_now": "12 at the North Fortress, plus the village watch",
-    "strength_founding": null,
+    "strength_now": "12 at the North Fortress, plus a small village watch",
+    "strength_founding": "40",
     "strength": "The one town still behaving like a garrison: watchful, quiet, and asking for better weapons."
   },
   "locations": [

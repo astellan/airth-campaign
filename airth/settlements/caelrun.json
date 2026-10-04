@@ -155,13 +155,13 @@
     ]
   },
   "response": {
-    "watch": "A ceremonial militia of 36 under Kelvan Bresul, for disputes and drunk fishers.",
+    "watch": "About 20 ceremonial militia under Kelvan Bresul, for disputes and drunk fishers.",
     "arrival_day": "1d4 militia within 1d12 minutes.",
     "arrival_night": "1d3 militia within 1d4 turns, if Kelvan can be roused.",
-    "reinforcements": "24 veterans can be called.",
+    "reinforcements": "A handful of old veterans, if anyone thinks to call them.",
     "bribery": null,
-    "strength_now": "36 militia, 24 veterans",
-    "strength_founding": null,
+    "strength_now": "About 20 militia",
+    "strength_founding": "40",
     "strength": "Ceremonial. The real protection is the lizard-men, and almost no one knows it."
   },
   "locations": [
