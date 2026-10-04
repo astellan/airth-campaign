@@ -31,7 +31,7 @@
     "Isarna (the waystone)",
     "Ossamar (the ford, now cold)"
   ],
-  "strangers": "Clannish and slow to trust. The party has earned real goodwill.",
+  "strangers": "The party is known: owed for the northwest, and blamed for the dead. Hostility sits just under the surface.",
   "palette": {
     "constants": {
       "far": [
@@ -46,7 +46,7 @@
         "a wooden palisade, not much of a wall"
       ],
       "leaving": [
-        "the feeling of being watched from the tree line"
+        "eyes on your back from the doorways"
       ]
     },
     "by_time": {
@@ -73,11 +73,12 @@
           "wind off the northern ridges"
         ],
         "dusk": [
-          "the hearth-hall filling"
+          "doors barred early",
+          "wool and iron charms on the lintels"
         ],
         "night": [
-          "Hadran's court in the hearth-hall",
-          "something earthy and wrong on the north wind"
+          "empty lanes",
+          "a lamp in every window facing north"
         ]
       }
     },
@@ -129,12 +130,16 @@
   },
   "itself": [
     {
-      "title": "Spring patrols",
-      "text": "Every spring the militia patrols the northwest to keep the orcs cowed. It has worked for a generation. This year the Bronze Host has bronze weapons, coordination, and something behind it, and it is not working."
+      "title": "The dead walk",
+      "text": "Everyone knows the dead walk in the Bramblewood, and some of Tagmira's own recent dead have gone there. Doors are barred at dusk."
     },
     {
-      "title": "Under the Bramblewood",
-      "text": "The thorn-forest an hour north was grown by the old gods as a living perimeter. Nothing in it moves by day, and the village feels watched from the tree line."
+      "title": "The northwest retaken",
+      "text": "The party pushed the Bronze Host back and retook the northwestern hunting grounds. The village will eat this winter because of it."
+    },
+    {
+      "title": "Owed and blamed",
+      "text": "The party's alliance with the dead is known. Some are grateful. Others blame them for the dead who walked into the wood."
     },
     {
       "title": "Sacred ground everywhere",
@@ -144,9 +149,9 @@
   "encounters": {
     "day": [
       "**Hadran Throsk** wants news of the northwest.",
-      "Hunters come in from the northwest with less than they went out with.",
+      "Hunters back from the northwest with a full haul nod to the party.",
       "**Tenn Darnel** glares at **Ulan Caernach** across a field boundary.",
-      "A woman leaves bread and silver thread at the Waystone of Isarna.",
+      "A widow spits at the party's feet; her husband walked into the Bramblewood.",
       "**1d3 militia** practise with bows behind the hearth-hall.",
       "Goats break through a fence and scatter through the lanes."
     ],
@@ -155,7 +160,7 @@
       "**Old Borric** swears to anyone listening that he saw Maedra on the Bramblewood path.",
       "**2 militia** on the palisade, watching the northwest.",
       "A figure stands at the edge of the Bramblewood until a lantern is raised.",
-      "Singing in the hearth-hall, and the duel story told again.",
+      "A family keeps vigil over a fresh body, axes ready.",
       "Something howls on the ridge."
     ]
   },
@@ -167,7 +172,7 @@
     "bribery": null,
     "strength_now": "7 militia, 6 veterans",
     "strength_founding": null,
-    "strength": "Tough and experienced from a generation of spring patrols, but too few for what the Bronze Host has become."
+    "strength": "Seasoned now. They fought beside the party, won the northwest back, and sleep badly anyway."
   },
   "locations": [
     {
@@ -253,15 +258,14 @@
       "id": "village-militia",
       "purpose": "Keep the orcs cowed and the village fed.",
       "membership": "7 standing, 6 veterans.",
-      "scheme": "Hold the northwest hunting grounds against the Bronze Host."
+      "scheme": "Hold the retaken northwest hunting grounds."
     }
   ],
   "trouble": [
+    "The Bronze Host was pushed back from the northwest, but all its leaders survived.",
+    "The party's alliance with the dead is known, and resented by some; a few blame the party for the dead who went to the Bramblewood.",
     "Maedra has vanished — whispers but no answers. The undead want more Tagmiran recruits.",
-    "The Bronze Host has seized the northwest hunting grounds. This is not a rumor — hunters have been driven back, one was killed, and Tagmira will face serious food pressure this winter if nothing changes. Hadran and the elders know it.",
-    "The orcs are suddenly too powerful. They have bronze weapons, coordination, and something behind them. The Tagmirans are tough and have always held the line in spring patrols — but this is different, and it is starting to dawn on them.",
     "Two Bronze Host orcs were brought to Tagmira as captives to witness the trial by combat — meant as intimidation. It may have given the orcs useful intelligence about Tagmira's current strength instead.",
-    "The undead alliance is secret. If Hadran or the elders learned the party is allied with the Bramblewood undead, there would be a reckoning.",
     "The water-rights grudge persists after the duel. Tenn Darnel lost and has not forgiven Ulan Caernach.",
     "Ulan Caernach and Rondasek Elaran are back to village life but changed — they've seen skeletons fight and orcs bleed. They are quietly restless."
   ],
