@@ -175,6 +175,49 @@
           }
         }
       }
+    },
+    "neighbors": {
+      "type": "array",
+      "$comment": "Pointcrawl links; see style/settlement.md.",
+      "items": {
+        "type": "object",
+        "required": [
+          "settlement",
+          "miles",
+          "path"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "settlement": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "miles": {
+            "type": "number",
+            "minimum": 0
+          },
+          "direction": {
+            "type": "string",
+            "enum": [
+              "N",
+              "NE",
+              "E",
+              "SE",
+              "S",
+              "SW",
+              "W",
+              "NW"
+            ]
+          },
+          "path": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
     }
   },
   "allOf": [

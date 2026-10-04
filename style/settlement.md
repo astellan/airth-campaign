@@ -14,10 +14,22 @@ Follows `style/voice.md`. Covers settlements and steadings. Storage rules in CLA
 8. **Factions in town.** Purpose · Membership · Current scheme · leader's NPC card.
 9. **Trouble.** Current tensions, one line each.
 10. **Rumours.** d6–d10 table.
-11. **Getting out.** Routes, costs, travel times.
-12. **Steadings.** Name, `kind`, `why_here`.
+11. **Neighbors.** The settlement's place in the pointcrawl: each neighbor with distance, direction, and the path or road that leads there, plus any passage costs. *Tagmira: 18 miles west via luric-road.*
+12. **Steadings.** Name, `kind`, `why_here`. Steadings also appear in Neighbors, by their own track or path.
 
 Entry length scales with importance: a gate gets one line, the main inn gets a page. Omit empty sections.
+
+## Neighbors
+
+Settlements form a pointcrawl; the hexmap is not used here. Every settlement and steading lists its neighbors:
+
+- `settlement`: the neighbor's id.
+- `miles`: distance.
+- `direction`: compass direction from here.
+- `path`: id of the path or road travelled (lowercase, hyphenated: `luric-road`). Paths get their own file type later.
+- `notes`: optional — passage costs, travel time by boat, seasonal closure.
+
+Links are two-way: if Dravesa lists Tagmira, Tagmira lists Dravesa.
 
 ## Steadings
 
