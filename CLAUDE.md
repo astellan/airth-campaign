@@ -22,6 +22,7 @@ airth/
   adventure_sites/           dungeons, tombs, ruins, lairs
   encounter_tables/
   archive/
+style/                       presentation rules: voice.md + one file per content type
 schema/                      generic JSON Schemas (npc, settlement, faction, item, dungeon, region, session, encounter_table)
 tests/                       pytest validation suite — run before committing new/edited data
 characters/                  player-side training docs (not campaign canon)
@@ -51,15 +52,9 @@ Factions are organized as a node pyramid (`identity`, `goals`, `philosophy`, and
 
 ## Style
 
-### Prose voice
+How things are *stored* lives here. How things *read* — voice, layout, emphasis, rendering — lives in `style/`. Rule of thumb: saving it → CLAUDE.md; reading it → `style/`.
 
-Write in-world, present-tense, matter-of-fact. No hedging, no narrator commentary, no "seems to" or "appears to" — state it as fact even when the fact is strange. Let specific, concrete detail carry tone instead of adjectives: "ink-stained scar-ridged fingers" does more work than "a scholarly appearance." Humor and pathos come from understatement, not from the text calling attention to itself.
-
-Economy of words: never use three words where two will do. Cut qualifiers, throat-clearing, and redundant modifiers on the first pass. Sentence fragments are encouraged when they land — "No one agrees." does more work than "No one else agrees with him about this."
-
-Illustrative, not drawn from an existing NPC — good: *"Trades in favors, never coin. Coin can be traced."* Avoid: *"He has an interesting policy of avoiding cash because he worries about being tracked."* — same fact, but narrated instead of shown, and padded with "interesting" and "he worries."
-
-Don't foreshadow story beats or write toward a planned outcome ("this will become important later"). A field describes what's true now, not what the DM intends to happen.
+Before writing any prose field or rendering any output, read `style/voice.md` plus the type file that applies (`style/adventure_site.md`, `style/npc.md`, …). On presentation, `style/` wins over anything here.
 
 ### Naming & identifiers
 
@@ -69,17 +64,7 @@ Don't foreshadow story beats or write toward a planned outcome ("this will becom
 - New faction enum values must be added to `airth/config/npc.json` before any NPC references them, or `pytest` will fail on `test_faction_is_valid_enum`.
 - Don't invent a new id style per-file — check an existing entry in the same category first and match its pattern.
 
-### Field-writing patterns (NPCs)
-
-Short fields (`wants`, `does_not_want`, `oddly_also`, `and_yet`) run 2-3 words on average; 5-7 words is already on the long end. Terse enough to read aloud without editing on the fly. Illustrative: `wants`: "Quiet, and to be believed." `and_yet`: "Never draws first. Always finishes."
-
-`anecdotes` and `tragedies` are told as specific past events with names, numbers, and consequences attached — not generic backstory. Not "lost people close to him in tomb collapses" but a named event: who died, when, how, and what habit the survivor still carries because of it. The named version gives a DM something to reference in play; the generic version doesn't.
-
-`pc_leverage` is a minor field — only fill it in when there's a real hook tied to the NPC's faction or `wants`/`does_not_want`. Otherwise leave it `null` rather than inventing one.
-
-It's fine for fields to be `null` or "Not established" when the table hasn't generated that detail yet — don't backfill invented detail just to fill the field. Leave it empty and let it emerge at the table.
-
-### Adventure sites
+### Adventure sites (storage)
 
 Structure maps onto `dungeon.schema.json` sections as follows:
 
@@ -87,12 +72,12 @@ Structure maps onto `dungeon.schema.json` sections as follows:
 - **Random Happenings** → `random_events`. Aim for roughly 50/50 atmospheric (non-encounter) entries vs. actual encounters in each zone's table — the point is texture between fights, not a monster every roll.
 - **Denizens** → `factions` + `npcs`. Faction entries cover the group and its relation to others in the site; individual `npcs` entries are for named figures encountered in more than one area.
 - **General Notes** → `architecture`. Construction, doors, lighting, scale — whatever's true throughout the site rather than area-specific.
-- **Area Descriptions** → `key_locations`. See emphasis and stat-block conventions below.
+- **Area Descriptions** → `key_locations`.
 - **After the Adventure** → `resolution` + `persistent_consequences` + `reuse_notes`. Optional; fill in once outcomes exist, not preemptively.
 
-**Emphasis in `key_locations` descriptions:** bold key feature nouns (`**iron sarcophagus**`). Deeper features — secret doors, container contents, specific triggered events — go in the `features` object rather than buried in prose, so they read as discrete, checkable facts. Monster names are bold (`**giant rat**`); monster counts are numerals ("3 giant rats," not "three").
+Deeper features — secret doors, container contents, specific triggered events — go in the `features` object rather than buried in prose, so they read as discrete, checkable facts.
 
-**Stat blocks** follow the OSRIC 3.0 GMG's own block convention, not the terser OSE inline notation — this campaign has no per-monster THAC0 field or condensed `Att n × w (d)` line; to-hit and saves come off the HD-based tables in the GMG (pp. 6–8), not off the individual monster.
+**Stored stat fields** follow the OSRIC 3.0 GMG's own block convention, not the terser OSE inline notation — this campaign has no per-monster THAC0 field or condensed `Att n × w (d)` line; to-hit and saves come off the HD-based tables in the GMG (pp. 6–8), not off the individual monster.
 
 For a stock monster from the OSRIC GMG, `monster_summary` needs only `name` and `source` (e.g. `"OSRIC GMG p.91"`) — don't restate stats the book already has.
 
@@ -104,6 +89,8 @@ For a homebrew or reskinned monster, fill in `move`, `ac`, `hd`, `atk` using GMG
 - `special_attack` / `special_defense`: free text for abilities beyond a basic attack line.
 
 For a monster appearing in only one area, it's fine to skip `monster_summary` and put ac/hd/move/attacks inline in that area's `creatures` entry instead.
+
+Rendering (area layout, emphasis, full stat blocks, treasure, saves): see `style/adventure_site.md`.
 
 ## Validation
 
