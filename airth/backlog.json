@@ -118,6 +118,13 @@
       "description": "Save the typography sample page HTML as style/templates/artifact.html so every artifact starts from the same look; future skill points to it.",
       "status": "open",
       "notes": "Sample published 2026-10-04 (Scarlet Crypt / Moss Cavern example)."
+    },
+    {
+      "id": "BL-18",
+      "category": "npcs",
+      "description": "Migrate all existing NPCs to the v2 schema: add name, role, sayings, knows, offers, found; remove self_image, recreation, pc_leverage (salvage good self_image lines into sayings, useful pc_leverage into knows/offers); trim fields to style/npc.md lengths; check and_yet is an appearance twist. Batches, with Andrew's approval — new field content is new content.",
+      "status": "open",
+      "notes": "Then restore tests/test_npcs.py REQUIRED_FIELDS to the schema's full required list."
     }
   ]
 }

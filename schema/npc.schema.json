@@ -17,32 +17,30 @@
     "npc": {
       "type": "object",
       "required": [
-        "moniker",
+        "name",
+        "role",
         "home",
         "home_settlement",
         "gender",
         "faction",
-        "appearance",
-        "and_yet",
-        "wants",
-        "does_not_want",
-        "oddly_also",
         "thinks_with",
-        "family",
-        "self_image",
-        "recreation",
-        "dreams",
-        "anecdotes",
-        "tragedies",
-        "pc_leverage"
+        "appearance",
+        "wants",
+        "does_not_want"
       ],
       "additionalProperties": true,
       "properties": {
+        "name": {
+          "type": "string"
+        },
         "moniker": {
           "type": [
             "string",
             "null"
           ]
+        },
+        "role": {
+          "type": "string"
         },
         "home": {
           "type": "string"
@@ -51,35 +49,17 @@
           "type": "string",
           "$comment": "Reference: must match a key in airth_settlements.json. Use 'itinerant' for NPCs with no fixed settlement."
         },
+        "found": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
         "gender": {
           "type": "string"
         },
         "faction": {
           "type": "string"
-        },
-        "appearance": {
-          "type": "string"
-        },
-        "and_yet": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "wants": {
-          "type": "string"
-        },
-        "does_not_want": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "oddly_also": {
-          "type": [
-            "string",
-            "null"
-          ]
         },
         "thinks_with": {
           "type": "string",
@@ -101,22 +81,56 @@
             "tradition"
           ]
         },
-        "family": {
+        "appearance": {
           "type": "string"
         },
-        "self_image": {
+        "and_yet": {
           "type": [
             "string",
             "null"
           ]
         },
-        "recreation": {
+        "sayings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 2
+        },
+        "wants": {
+          "type": "string"
+        },
+        "does_not_want": {
           "type": [
             "string",
             "null"
           ]
         },
         "dreams": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "oddly_also": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "knows": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "offers": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "family": {
           "type": [
             "string",
             "null"
@@ -133,11 +147,9 @@
           "items": {
             "type": "string"
           }
-        },
-        "pc_leverage": {
-          "type": "string"
         }
-      }
+      },
+      "$comment": "Field definitions and length rules: style/npc.md. Tests enforce a reduced required set until legacy NPCs are migrated (see backlog)."
     }
   },
   "description": "Schema for a single NPC in a D&D campaign"
