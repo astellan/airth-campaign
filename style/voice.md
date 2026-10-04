@@ -113,3 +113,25 @@ One voice, tuned to the job. Pick the register by what the text is for.
 **Cross-references.** In parentheses: (Area 7), (see Ossek).
 
 **Split, don't sprawl.** An entry that needs more than one screen becomes sub-entries.
+
+## Typography (artifacts)
+
+**Face.** EB Garamond throughout; fallback Garamond, then Georgia. Italic for dialogue, spells, magic items, monster descriptions.
+
+**Column.** Single reading column, ~65 characters wide. Same on phone and laptop.
+
+**Headings.** Small caps. Area numbers in the accent colour.
+
+**Rules**
+- Full-width dark rule above each area.
+- Short centred rule for the dash between area actions and features.
+
+**Dialogue.** Indented, italic, in quotation marks. Speaker's name above in small caps.
+
+**Sidebars.** Tinted box, thin border. Stat blocks, new magic items, other sidebar material. Stat blocks as a label/value grid, small-caps labels.
+
+**Tables.** Hairline rows, dark rules top and bottom. Die column narrow, in the accent colour.
+
+**Colour.** Ink on off-white, plus one muted green accent — numbers and box headings only. Light and dark modes both.
+
+**No decoration.** No icons, emoji, drop caps, or ornaments.
