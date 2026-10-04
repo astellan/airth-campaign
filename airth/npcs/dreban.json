@@ -1,0 +1,25 @@
+{
+  "name": "Dreban",
+  "moniker": "Old Dreban the Lurist",
+  "role": "mask-carver",
+  "home": "Old Dreban's Hermitage, Lamares",
+  "home_settlement": "lamares",
+  "found": "Old Dreban's Hermitage, carving.",
+  "gender": "male",
+  "faction": "serdanos",
+  "thinks_with": "magic",
+  "appearance": "Moss in his beard, wood shavings on his robe, a mask pushed up on his head.",
+  "and_yet": null,
+  "sayings": [
+    "The masks are screaming. Nobody listens."
+  ],
+  "wants": "Peace restored between men and the fey.",
+  "does_not_want": "Being taken for harmless.",
+  "dreams": null,
+  "oddly_also": "The masks really do speak, by a little druidic magic.",
+  "knows": "Fey lore and the wild country.",
+  "offers": null,
+  "family": null,
+  "anecdotes": [],
+  "tragedies": []
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Sirnav",
+  "moniker": null,
+  "role": "innkeeper",
+  "home": "The Red Pot, Lamares",
+  "home_settlement": "lamares",
+  "found": "The Red Pot, by the fire at dusk.",
+  "gender": "female",
+  "faction": "independent",
+  "thinks_with": "diplomacy",
+  "appearance": "Round, warm-faced, flour on her sleeves.",
+  "and_yet": null,
+  "sayings": [
+    "Sit, sit. You'll tell me later."
+  ],
+  "wants": "Quiet talk and full rooms.",
+  "does_not_want": "Brawling under her roof.",
+  "dreams": null,
+  "oddly_also": "Never takes sides in public, and quietly gets her way.",
+  "knows": "Everyone's business.",
+  "offers": "Gossip and local knowledge.",
+  "family": null,
+  "anecdotes": [],
+  "tragedies": []
+}

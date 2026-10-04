@@ -1,0 +1,25 @@
+{
+  "name": "Chadem",
+  "moniker": "Ink-Thorn",
+  "role": "scribe",
+  "home": "Scribe's Corner, Lamares",
+  "home_settlement": "lamares",
+  "found": "Scribe's Corner, when he isn't off in some ruin.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "lore",
+  "appearance": "Thin, ink-stained fingers, one sleeve hanging heavy.",
+  "and_yet": "A knife in that sleeve.",
+  "sayings": [
+    "Is that writing? Let me see."
+  ],
+  "wants": "Pre-Fall texts, and someone to admit he was right.",
+  "does_not_want": "Anyone from Ilmenor asking after him.",
+  "dreams": null,
+  "oddly_also": "Failed his Ilmenor initiation and has never forgiven them.",
+  "knows": null,
+  "offers": "Coin for rubbings, inscriptions, and ruin maps; translations.",
+  "family": null,
+  "anecdotes": [],
+  "tragedies": []
+}

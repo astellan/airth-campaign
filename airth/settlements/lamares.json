@@ -1,0 +1,255 @@
+{
+  "$schema": "../../schema/settlement.schema.json",
+  "id": "lamares",
+  "name": "Lamares",
+  "status": "in_development",
+  "type": "village",
+  "tagline": "Westernmost village of the Marches, where the road climbs into the hills and nobody shouts.",
+  "region": "Luric Marches",
+  "population": {
+    "total": 900,
+    "mix": "Shepherds, beekeepers, and charcoal burners."
+  },
+  "ruler": "Lugo \"Cold-Eyes\" Varden, the Warden, from the Warden's Hall.",
+  "faiths": [
+    "Bandua (hearth-shrine with carved handprints)",
+    "Isarna (Meria's wardenship)"
+  ],
+  "strangers": "Mistrusted until proven.",
+  "palette": {
+    "constants": {
+      "far": [
+        "charcoal smoke, constant and acrid",
+        "sheep on distant hillsides"
+      ],
+      "near": [
+        "axes at the charcoal camps",
+        "stone-walled pens on the slope",
+        "hive-boxes behind walls"
+      ],
+      "threshold": [
+        "the road beginning its climb into the hills"
+      ],
+      "leaving": [
+        "lanolin on your hands",
+        "charcoal grit in your teeth"
+      ]
+    },
+    "by_time": {
+      "far": {
+        "night": [
+          "the North Fortress's fire in the mouth of the gorge"
+        ]
+      },
+      "within": {
+        "dawn": [
+          "shepherds heading up to the High Pens"
+        ],
+        "day": [
+          "bees around the hive-boxes",
+          "quiet talk; nobody shouts here"
+        ],
+        "dusk": [
+          "locals gathering at the Red Pot"
+        ],
+        "night": [
+          "night watches calling passwords",
+          "wet stone"
+        ]
+      }
+    },
+    "seasons": {
+      "winter": [
+        "snow on the hills",
+        "flocks brought down to the pens",
+        "charcoal mounds smoking through the snow"
+      ],
+      "spring": [
+        "lambing on the slopes",
+        "wild herbs on the wind"
+      ],
+      "summer": [
+        "shearing, the whole village at the High Pens",
+        "honey harvest"
+      ],
+      "autumn": [
+        "wax and honey packed for the caravan",
+        "charcoal camps moving to new ground"
+      ]
+    },
+    "situations": [
+      {
+        "name": "Ambarra",
+        "when": "6 Thunor",
+        "descriptors": [
+          "handprints renewed on the shrine walls",
+          "oaths at the hearth"
+        ]
+      },
+      {
+        "name": "Shearing",
+        "when": "early summer",
+        "descriptors": [
+          "the whole village at the High Pens",
+          "wool grease on everything"
+        ]
+      }
+    ]
+  },
+  "itself": [
+    {
+      "title": "The western edge",
+      "text": "Lamares is the last village before the wilderness thickens, and it is proud of holding the edge. Everything here is watchful, and people don't shout."
+    },
+    {
+      "title": "Wool, wax, and charcoal",
+      "text": "Sheep, bees, and the charcoal camps keep Lamares alive. Wool and honey go east on the caravans. Charcoal prices are falling, undercut by Dravesa."
+    },
+    {
+      "title": "The North Fortress",
+      "text": "Three miles north, a stone tower and palisade guard the gorge to the Stone Pillars orcs. Captain Seretta says the orc patrols are too organized, and that something has changed."
+    }
+  ],
+  "encounters": {
+    "day": [
+      "**Lugo Varden** hears a dispute at the Warden's Hall and says almost nothing.",
+      "**Chadem Ink-Thorn** asks if the party has any writing, rubbings, or ruin maps to sell.",
+      "Charcoal burners come in black to the eyes, and the village gives them room.",
+      "A shepherd drives a flock down from the High Pens early, looking north.",
+      "**1d4 militia** ride out toward the North Fortress.",
+      "**Old Dreban** comes down for food, wearing one of his masks."
+    ],
+    "night": [
+      "The watch calls a password the party doesn't know.",
+      "Quiet talk at the Red Pot stops when strangers come in.",
+      "Charcoal burners swear they heard voices in the northern woods.",
+      "The North Fortress's fire burns in the gorge mouth, then goes out.",
+      "Wolves on the high slopes.",
+      "**Captain Seretta** rides in after dark to see the Warden."
+    ]
+  },
+  "response": {
+    "watch": "A village watch that calls passwords at night, under the Warden.",
+    "arrival_day": "1d4 militia within 1d10 minutes.",
+    "arrival_night": "1d3 watchmen within 1d4 turns.",
+    "reinforcements": "12 militia under Captain Seretta at the North Fortress, 3 miles north.",
+    "bribery": null,
+    "strength_now": "12 at the North Fortress, plus the village watch",
+    "strength_founding": null,
+    "strength": "The one town still behaving like a garrison: watchful, quiet, and asking for better weapons."
+  },
+  "locations": [
+    {
+      "id": "wardens-hall",
+      "name": "Warden's Hall",
+      "type": "civic",
+      "look": "A slate-roofed stone hall at the centre of the village.",
+      "labels": {
+        "interior": "Benches, tables, weapon racks, and a map of the region pinned to the wall, annotated with patrols.",
+        "staff": "Lugo Varden holds court here."
+      }
+    },
+    {
+      "id": "red-pot",
+      "name": "The Red Pot",
+      "type": "inn",
+      "look": "A two-storey timber inn on a fieldstone foundation.",
+      "labels": {
+        "common_room": "Low-beamed and smoky, with a fire always going. Quiet talk; no brawling tolerated.",
+        "guests": "Locals at dusk, trading news.",
+        "services": "8 small rooms upstairs. Mutton stew, honey-cakes, charcoal-roasted vegetables, dark ale. Prices pending OSRIC 3.0 table."
+      }
+    },
+    {
+      "id": "high-pens",
+      "name": "The High Pens",
+      "type": "landmark",
+      "look": "Stone-walled sheep enclosures on the hillside west of the village.",
+      "labels": {
+        "custom": "Shepherds take the watch in turn. Shearing in early summer is a village-wide event."
+      }
+    },
+    {
+      "id": "hive-gardens",
+      "name": "Hive Gardens",
+      "type": "shop",
+      "look": "Rows of hive-boxes behind stone walls on the southern edge, among herb patches.",
+      "labels": {
+        "wares": "Honey, beeswax, mead."
+      }
+    },
+    {
+      "id": "charcoal-camps",
+      "name": "Charcoal Camps",
+      "type": "shop",
+      "look": "Smouldering earthen mounds in the hills east and north, moved each season.",
+      "labels": {
+        "wares": "Charcoal.",
+        "proprietor": "The charcoal burners, respected but kept apart."
+      }
+    },
+    {
+      "id": "scribes-corner",
+      "name": "Scribe's Corner",
+      "type": "shop",
+      "look": "A small room attached to the Warden's Hall.",
+      "labels": {
+        "proprietor": "Chadem Ink-Thorn, when he is there.",
+        "wares": "Contracts, letters, and village records.",
+        "off_the_books": "Pays for rubbings, inscriptions, and ruin maps."
+      }
+    },
+    {
+      "id": "drebans-hermitage",
+      "name": "Old Dreban's Hermitage",
+      "type": "residence",
+      "look": "A hut uphill among twisted pines, half a mile out, hung with carved wooden masks.",
+      "labels": {
+        "inhabitants": "Old Dreban the Lurist."
+      }
+    },
+    {
+      "id": "bandua-shrine",
+      "name": "Shrine to Bandua",
+      "type": "temple",
+      "look": "A stone hearth-shrine by the village green, its walls carved with handprints.",
+      "labels": {
+        "populace": "Village elders, in turn.",
+        "rites": "Oath-taking, household blessings, defensive prayers. The fire never goes out; it is rekindled from the Warden's Hall hearth."
+      }
+    },
+    {
+      "id": "north-fortress",
+      "name": "The North Fortress",
+      "type": "garrison",
+      "look": "A stone watchtower, palisade, and barracks at the mouth of a gorge, 3 miles north.",
+      "labels": {
+        "strength": "12 militia.",
+        "readiness": "Alert. The orc patrols have changed.",
+        "commander": "Captain Seretta."
+      }
+    }
+  ],
+  "factions": [
+    {
+      "id": "village-militia",
+      "purpose": "Hold the western edge.",
+      "membership": "The militia families; 12 at the North Fortress.",
+      "scheme": "Better weapons and more men for the fortress."
+    }
+  ],
+  "trouble": [
+    "The Stone Pillars orcs are suddenly organized, and have built a fortress, the Tor, crowned by a henge moved there by telekinesis.",
+    "Charcoal burners hear voices in the northern woods; the village calls it nerves.",
+    "Charcoal prices are falling, undercut by Dravesa.",
+    "Wool is excellent, but the cost of carrying it east keeps rising."
+  ],
+  "neighbors": [
+    {
+      "settlement": "nemetra",
+      "miles": 18,
+      "direction": "E",
+      "path": "luric-road"
+    }
+  ]
+}

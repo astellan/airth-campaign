@@ -118,7 +118,7 @@
       "**Master Potter Halbet** inspects a kiln load and smashes the flawed pieces.",
       "**Torvek** the smith complains to anyone near the forge about the iron shortage.",
       "**Mother Yaleth** sends a herb-wife to fetch the party.",
-      "**Medach** the scribe hurries out of the village with a knife and a satchel."
+      "A potter's cart of storage jars sets out for the road."
     ],
     "night": [
       "Militia singing at the Royal Welcome.",
@@ -209,16 +209,6 @@
       }
     },
     {
-      "id": "scribes-shed",
-      "name": "Scribe's Shed",
-      "type": "shop",
-      "look": "A cramped lean-to against the tavern.",
-      "labels": {
-        "proprietor": "Medach, Ilmenor-trained: thin, ink-stained, paranoid, and armed.",
-        "off_the_books": "Hunts pre-Fall inscriptions in the ruins without sanction."
-      }
-    },
-    {
       "id": "northern-trailhead",
       "name": "Northern Trailhead",
       "type": "landmark",
@@ -246,8 +236,7 @@
   "trouble": [
     "Militia dismisses gnoll threat; herb-wives know it is real",
     "Goblin refugees in the pig pens — villagers mock them, herb-wives study them",
-    "Unspoken lizard-man sufferance — Nemetra exists because they permit it",
-    "Medach the scribe operating outside sanctioned knowledge-gathering"
+    "Unspoken lizard-man sufferance — Nemetra exists because they permit it"
   ],
   "neighbors": [
     {

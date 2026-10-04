@@ -1,0 +1,25 @@
+{
+  "name": "Lugo Varden",
+  "moniker": "Cold-Eyes",
+  "role": "warden",
+  "home": "Warden's Hall, Lamares",
+  "home_settlement": "lamares",
+  "found": "Warden's Hall, holding court.",
+  "gender": "male",
+  "faction": "village-militia",
+  "thinks_with": "honor",
+  "appearance": "Lean, grey-bearded, plain dark wool, a sword he doesn't take off.",
+  "and_yet": "Pale eyes that don't blink enough.",
+  "sayings": [
+    "Say it once. I heard you."
+  ],
+  "wants": "Better weapons for the fortress.",
+  "does_not_want": "Panic over voices in the woods.",
+  "dreams": null,
+  "oddly_also": null,
+  "knows": null,
+  "offers": null,
+  "family": null,
+  "anecdotes": [],
+  "tragedies": []
+}

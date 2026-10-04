@@ -1,0 +1,23 @@
+{
+  "name": "Heskan Tul",
+  "moniker": null,
+  "role": "cattleman",
+  "home": "Lamares",
+  "home_settlement": "lamares",
+  "found": "His herds on the eastern pasture.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "endurance",
+  "appearance": "Burly, a broken nose, a cattle-goad in his fist.",
+  "and_yet": null,
+  "sayings": null,
+  "wants": "His herds safe.",
+  "does_not_want": "Taking orders from the Warden.",
+  "dreams": null,
+  "oddly_also": "Sympathizes with the Aurka, loudly.",
+  "knows": null,
+  "offers": null,
+  "family": null,
+  "anecdotes": [],
+  "tragedies": []
+}

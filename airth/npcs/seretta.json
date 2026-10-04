@@ -1,0 +1,25 @@
+{
+  "name": "Seretta",
+  "moniker": null,
+  "role": "militia captain",
+  "home": "The North Fortress, Lamares",
+  "home_settlement": "lamares",
+  "found": "The North Fortress, on the tower.",
+  "gender": "female",
+  "faction": "village-militia",
+  "thinks_with": "blade",
+  "appearance": "Amazigh, stern, a scarred throat.",
+  "and_yet": "Speaks softly; the scar took her voice's edge.",
+  "sayings": [
+    "Something has changed."
+  ],
+  "wants": "Proper defenses.",
+  "does_not_want": "Guesses about the Stone Pillars.",
+  "dreams": null,
+  "oddly_also": null,
+  "knows": "The orc patrols are too organized.",
+  "offers": null,
+  "family": null,
+  "anecdotes": [],
+  "tragedies": []
+}
