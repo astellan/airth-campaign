@@ -4,13 +4,20 @@
   "name": "Telvari",
   "status": "stub",
   "type": "steading",
+  "tagline": "Schismatic fire-worship steading at the forest edge, where humans and humanoids meet.",
   "region": "Luric Marches",
-  "location": {
-    "description": "Northern steading, half a day north of Dravesa. Schismatic locus of fire worship; also a point of humanoid-human interaction.",
-    "terrain": "forest edge",
-    "travel_times": {
-      "from_dravesa": "half day north"
+  "parent": "dravesa",
+  "kind": "hamlet",
+  "why_here": "Schismatic fire worship, at a distance from Dravesa's temples.",
+  "neighbors": [
+    {
+      "settlement": "dravesa",
+      "miles": 9,
+      "direction": "S",
+      "path": "telvari-track"
     }
-  },
-  "associated_settlements": ["dravesa"]
+  ],
+  "associated_settlements": [
+    "dravesa"
+  ]
 }

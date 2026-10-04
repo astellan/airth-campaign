@@ -137,8 +137,22 @@
       "id": "BL-20",
       "category": "settlements",
       "description": "Formalize settlement schema for render fields (tagline, header lines, itself, encounters, response, typed locations, rumours) and migrate the other settlements to the Dravesa model. Telvari needs kind, why_here, miles, and path.",
+      "status": "closed",
+      "notes": "Reference render: style/examples/dravesa.html. Dravesa gaps: founding garrison strength, bribery, equipment. Done 2026-10-04: Caelrun, Tagmira, Nemetra, Nebruz, Telvari migrated; Caelrun steadings (Salmura, Carvoal, Xuncal, Angueira) split into own files; embedded adventure sites extracted to airth/adventure_sites/."
+    },
+    {
+      "id": "BL-21",
+      "category": "npcs",
+      "description": "Convert NPCs still embedded in settlement files (npcs_legacy in caelrun.json: 14; tagmira.json: 7) to v2 NPC files in airth/npcs/, then remove npcs_legacy.",
       "status": "open",
-      "notes": "Reference render: style/examples/dravesa.html. Dravesa gaps: founding garrison strength, bribery, equipment."
+      "notes": "New fields (role, found, sayings, etc.) are new content; needs Andrew's go-ahead, as with the first migration."
+    },
+    {
+      "id": "BL-22",
+      "category": "settlements",
+      "description": "Fill settlement gaps: founding garrison strength and bribery for each town; miles and paths for Caelrun's steadings; Lamares and Orziben settlement files (both on the Luric Road, referenced as neighbors).",
+      "status": "open",
+      "notes": ""
     }
   ]
 }

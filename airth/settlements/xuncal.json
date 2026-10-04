@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schema/settlement.schema.json",
+  "id": "xuncal",
+  "name": "Xuncal",
+  "status": "stub",
+  "type": "steading",
+  "tagline": "Quiet reed-cutters' steading, worked by the same families for generations.",
+  "region": "Luric Marches",
+  "parent": "caelrun",
+  "kind": "resource",
+  "why_here": "The reed and rush beds.",
+  "population": {
+    "total": 35,
+    "mix": "3 families."
+  },
+  "exports_to_parent": [
+    "Rush mats",
+    "Willow baskets",
+    "Thatching reeds",
+    "Woven screens"
+  ],
+  "humanoid_tolerance": "none",
+  "threat_proximity": "safe"
+}

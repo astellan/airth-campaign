@@ -1,8 +1,14 @@
 {
+  "$schema": "../../schema/settlement.schema.json",
+  "id": "nemetra",
   "name": "Nemetra",
+  "status": "in_development",
   "type": "village",
+  "tagline": "Pig-pen and pottery village on the Luric Road, complacent while something gathers to the north.",
+  "region": "Luric Marches",
   "population": {
     "total": 1100,
+    "mix": "Swineherds and potters, with a large fringe.",
     "breakdown": {
       "agriculture_herding": 400,
       "militia_active": 30,
@@ -18,6 +24,245 @@
       "fringe_outliers": 488
     }
   },
+  "ruler": "No lord. Militia captain Durvin holds court on the village green.",
+  "faiths": [
+    "Bandua (hearth-shrine by the great oak)",
+    "Isarna (cracked waystone at the northern trailhead)"
+  ],
+  "strangers": "Busy and practical; nobody has time for them unless they bring coin.",
+  "palette": {
+    "constants": {
+      "far": [
+        "kiln smoke",
+        "manure on the wind"
+      ],
+      "near": [
+        "clay pits",
+        "pig pens sprawling to the west"
+      ],
+      "leaving": [
+        "clay dust on everything you own"
+      ]
+    },
+    "by_time": {
+      "far": {
+        "dusk": [
+          "four kilns glowing on the south edge"
+        ]
+      },
+      "within": {
+        "dawn": [
+          "pigs squealing for slop"
+        ],
+        "day": [
+          "pottery wheels spinning",
+          "children chasing piglets through the lanes"
+        ],
+        "dusk": [
+          "militia laughter from the Royal Welcome",
+          "herbed ale and roasting pork"
+        ],
+        "night": [
+          "kilns crackling",
+          "whimpering from the pig pens"
+        ]
+      }
+    },
+    "seasons": {
+      "winter": [
+        "the kilns the only warm place",
+        "slaughter season, salted pork"
+      ],
+      "spring": [
+        "mud and manure to the ankle",
+        "wet earth after rain"
+      ],
+      "summer": [
+        "clay pits dry and cracking",
+        "resin gathering"
+      ],
+      "autumn": [
+        "hazelnut harvest",
+        "charcoal smoke from the woods"
+      ]
+    },
+    "situations": [
+      {
+        "name": "Ambarra",
+        "when": "6 Thunor",
+        "descriptors": [
+          "oaths sworn at the hearth-shrine",
+          "new households blessed under the oak"
+        ]
+      }
+    ]
+  },
+  "itself": [
+    {
+      "title": "Pigs and pots",
+      "text": "Pork and pottery from Nemetra supply the Marches: salted pork, storage jars, roof tiles, decorated ware. The village is more prosperous than it looks, and smells worse."
+    },
+    {
+      "title": "By lizard-man sufferance",
+      "text": "Nemetra exists because the lizard-men to the south allow it. There is no compact, tribute, or acknowledgement. A few elders sense it, and none say it aloud."
+    },
+    {
+      "title": "Something in the north",
+      "text": "Goblin refugees have started appearing in the pig pens, gaunt and silent. The militia laughs at them. The herb-wives are studying them, and are afraid."
+    }
+  ],
+  "encounters": {
+    "day": [
+      "**Captain Durvin** drills the militia on the green and boasts of the goblins he has tamed.",
+      "A **goblin refugee** bolts from the pig pens when approached.",
+      "**Master Potter Halbet** inspects a kiln load and smashes the flawed pieces.",
+      "**Torvek** the smith complains to anyone near the forge about the iron shortage.",
+      "**Mother Yaleth** sends a herb-wife to fetch the party.",
+      "**Medach** the scribe hurries out of the village with a knife and a satchel."
+    ],
+    "night": [
+      "Militia singing at the Royal Welcome.",
+      "A potter sleeps beside a glowing kiln.",
+      "A goblin in the pig pens whispers one word in Common, then stops.",
+      "**Mother Yaleth** smokes on the compound steps, watching the north.",
+      "A fire burns far off in the northern woods.",
+      "The pigs panic in their pens at nothing anyone can see."
+    ]
+  },
+  "response": {
+    "watch": "About 30 active militia under Captain Durvin.",
+    "arrival_day": "1d4 militia within 1d10 minutes.",
+    "arrival_night": "1d3 militia within 1d4 turns, likely drunk.",
+    "reinforcements": "15 veterans.",
+    "bribery": null,
+    "strength_now": "30 militia, 15 veterans",
+    "strength_founding": null,
+    "strength": "Overconfident and under-informed. Patrols stop short of where the trouble is."
+  },
+  "locations": [
+    {
+      "id": "village-green",
+      "name": "Village Green",
+      "type": "landmark",
+      "look": "The central green under a great Bandua-blessed oak.",
+      "labels": {
+        "custom": "Announcements, markets, and militia drills. Captain Durvin holds court here."
+      }
+    },
+    {
+      "id": "royal-welcome",
+      "name": "The Royal Welcome",
+      "type": "inn",
+      "look": "The village tavern, run by round, nervous Varnis.",
+      "labels": {
+        "guests": "Militia, constantly.",
+        "services": "Pork stew, nut bread, herbed ale; 6 rooms upstairs."
+      }
+    },
+    {
+      "id": "pottery-quarter",
+      "name": "Pottery Quarter",
+      "type": "shop",
+      "look": "Four large kilns by the clay pits on the southern edge, always smoking.",
+      "labels": {
+        "wares": "Storage jars, roof tiles, decorated pottery.",
+        "proprietor": "Master Potter Halbet oversees production."
+      }
+    },
+    {
+      "id": "pig-pens",
+      "name": "Pig Pens",
+      "type": "landmark",
+      "look": "Sprawling, stinking enclosures on the western side.",
+      "labels": {
+        "custom": "The village's economic backbone."
+      },
+      "hidden": "Goblin refugees hide among the pigs at night. Tikka, the most coherent, escaped the Nighthowl caves and knows about Tharzuul."
+    },
+    {
+      "id": "herb-wives-compound",
+      "name": "Herb-Wives' Compound",
+      "type": "residence",
+      "look": "Three connected houses on the eastern edge, in gardens of medicinal and kitchen herbs.",
+      "labels": {
+        "inhabitants": "Mother Yaleth and six herb-wives."
+      }
+    },
+    {
+      "id": "smithy",
+      "name": "Torvek's Forge",
+      "type": "shop",
+      "look": "A small forge.",
+      "labels": {
+        "wares": "Tool repair, horseshoes, simple weapons.",
+        "proprietor": "Torvek, who complains of the iron shortage and knows the north is dangerous."
+      }
+    },
+    {
+      "id": "bandua-shrine",
+      "name": "Shrine to Bandua",
+      "type": "temple",
+      "look": "A stone hearth-shrine by the oak.",
+      "labels": {
+        "populace": "Tended by Elder Corveth, a retired militiaman.",
+        "rites": "Oath-taking; blessing new households."
+      }
+    },
+    {
+      "id": "scribes-shed",
+      "name": "Scribe's Shed",
+      "type": "shop",
+      "look": "A cramped lean-to against the tavern.",
+      "labels": {
+        "proprietor": "Medach, Ilmenor-trained: thin, ink-stained, paranoid, and armed.",
+        "off_the_books": "Hunts pre-Fall inscriptions in the ruins without sanction."
+      }
+    },
+    {
+      "id": "northern-trailhead",
+      "name": "Northern Trailhead",
+      "type": "landmark",
+      "look": "Where the road narrows into the forest, marked by a cairn and a cracked Isarna waystone.",
+      "labels": {
+        "custom": "Militia patrols end 2 hexes north."
+      },
+      "hidden": "Fresh gnoll and goblin tracks, plain to anyone who looks."
+    }
+  ],
+  "factions": [
+    {
+      "id": "village-militia",
+      "purpose": "Keep the village safe.",
+      "membership": "About 30 active, 15 veterans.",
+      "scheme": "Drinking, and dismissing the gnoll threat."
+    },
+    {
+      "id": "herb-wives",
+      "purpose": "Medicine, intelligence, and alarm.",
+      "membership": "Mother Yaleth and six herb-wives.",
+      "scheme": "Studying the goblin refugees to learn what is coming."
+    }
+  ],
+  "trouble": [
+    "Militia dismisses gnoll threat; herb-wives know it is real",
+    "Goblin refugees in the pig pens — villagers mock them, herb-wives study them",
+    "Unspoken lizard-man sufferance — Nemetra exists because they permit it",
+    "Medach the scribe operating outside sanctioned knowledge-gathering"
+  ],
+  "neighbors": [
+    {
+      "settlement": "lamares",
+      "miles": 18,
+      "direction": "W",
+      "path": "luric-road"
+    },
+    {
+      "settlement": "caelrun",
+      "miles": 18,
+      "direction": "E",
+      "path": "luric-road"
+    }
+  ],
   "economy": [
     "Pig farming",
     "Pottery and ceramics",
@@ -42,106 +287,53 @@
     "Wine",
     "Weapons"
   ],
-  "character": "Chaotic, smelly, busy — pig pens and pottery kilns define the air. More prosperous than it looks. Complacent despite a creeping danger from the north that only the herb-wives are taking seriously.",
-  "atmosphere": {
-    "sounds": [
-      "Constant pig squealing and grunting",
-      "Pottery wheels spinning",
-      "Kiln crackling",
-      "Militia laughter from the tavern",
-      "Children chasing piglets through lanes",
-      "Quiet goblin whimpering near the pens"
-    ],
-    "smells": [
-      "Manure (unavoidable)",
-      "Wood smoke and clay dust",
-      "Herbed ale and roasting pork",
-      "Wet earth after rain"
-    ],
-    "mood": "Militia overconfident and drinking; herb-wives tense and watchful; villagers busy and practical; something is wrong and most are choosing not to see it"
-  },
-  "locations": {
-    "village_green": "Central gathering space with a large Bandua-blessed oak. Used for announcements, markets, militia drills. Captain Durvin holds court here.",
-    "the_royal_welcome": "Tavern run by Varnis — round, nervous, serves everyone. Pork stew, nut bread, herbed ale. Militia drinks here constantly. Six rooms upstairs.",
-    "the_pottery_quarter": "Southern edge, near clay pits. Four large kilns constantly smoking. Master Potter Halbet oversees production.",
-    "the_pig_pens": "Western side, sprawling enclosures. Stinks terribly — the village's economic backbone. Currently where goblin refugees huddle.",
-    "herb_wives_compound": "Cluster of three interconnected houses on the eastern edge. Gardens of medicinal and culinary herbs. Mother Yaleth leads six herb-wives here.",
-    "the_smiths_forge": "Small forge run by Torvek. Repairs tools, shoes horses, makes simple weapons. Complains about iron shortages. Knows the north is dangerous.",
-    "shrine_to_bandua": "Stone hearth-shrine at village center near the oak. Tended by Elder Corveth (retired militiaman). Used for oath-taking and blessing new households.",
-    "the_scribes_shed": "Cramped lean-to attached to the tavern. Run by Medach — Ilmenor-trained scribe, thin, ink-stained, paranoid. Secretly hunting pre-Fall inscriptions in ruins. Carries a knife.",
-    "the_northern_trailhead": "Where the road narrows into the forest. Marked by a cairn and a cracked Isarna waystone. Militia patrol route ends 2 hexes north. Fresh gnoll and goblin tracks visible to anyone who looks."
-  },
-  "factions": [
-    "Militia (Captain Durvin)",
-    "Herb-wives (medicine, intelligence, alarm)",
-    "Potters (Master Potter Halbet, economic weight)",
-    "Lizard-men (shadow authority, unspoken)"
-  ],
-  "tensions": [
-    "Militia dismisses gnoll threat; herb-wives know it is real",
-    "Goblin refugees in the pig pens — villagers mock them, herb-wives study them",
-    "Unspoken lizard-man sufferance — Nemetra exists because they permit it",
-    "Medach the scribe operating outside sanctioned knowledge-gathering"
-  ],
-  "rumors": [
-    "The goblins are tame now — Durvin tamed them (militia bravado, false)",
-    "Something big is burning in the northern woods at night",
-    "A goblin woman spoke coherently to one of the herb-wives before going silent again"
-  ],
-  "defenses": {
-    "militia": "~30 active under Captain Durvin. Patrols end 2 hexes north. Overconfident and under-informed.",
-    "reality": "Lizard-men enforce territorial boundaries from the south. Nemetra exists by their sufferance.",
-    "village_understanding": "Most residents believe the militia protects them. The true arrangement with the lizard-men is unspoken and unacknowledged."
-  },
   "trade_focus": "Pork and pottery supplier for the Luric Marches; key stop on the Lamares-Orziben caravan route",
-  "nearest_neighbors": [
-    "Caelrun (southeast)",
-    "Tagmira (east)"
-  ],
-  "road_position": "On the main Lamares-Orziben caravan route between Caelrun and Tagmira",
-  "hidden_truth": "Nemetra exists by lizard-man sufferance. The arrangement is unspoken — no compact, no tribute, no acknowledgment. The lizard-men are powerful enough to wipe out the village and do not wish to. A handful of elders may sense this truth; none speak it aloud.",
-  "current_threat": {
-    "name": "The Gnoll Packs of Tharzuul the Ember-Tongue",
-    "summary": "~100 gnolls in 3 packs (Ashfang, Marrowgnaw, Nighthowl) 4+ hexes north, controlling ~200 enslaved goblins. Led by Tharzuul the Ember-Tongue, an ogre magi preaching fire-worship. Timeline to assault: 5-10 years. Immediate sign: goblin refugees appearing in Nemetra.",
-    "packs": {
-      "ashfang": {
-        "size": 50,
-        "leader": "Kethraz the Seared",
-        "lair": "Corrupted Grove",
-        "loyalty": "Most loyal to Tharzuul",
-        "magic_item": "Kethraz's Brand — iron war-club, once/day ignites target"
+  "dm_notes": {
+    "legacy_rumours": [
+      "The goblins are tame now — Durvin tamed them (militia bravado, false)",
+      "Something big is burning in the northern woods at night",
+      "A goblin woman spoke coherently to one of the herb-wives before going silent again"
+    ],
+    "current_threat": {
+      "name": "The Gnoll Packs of Tharzuul the Ember-Tongue",
+      "summary": "~100 gnolls in 3 packs (Ashfang, Marrowgnaw, Nighthowl) 4+ hexes north, controlling ~200 enslaved goblins. Led by Tharzuul the Ember-Tongue, an ogre magi preaching fire-worship. Timeline to assault: 5-10 years. Immediate sign: goblin refugees appearing in Nemetra.",
+      "packs": {
+        "ashfang": {
+          "size": 50,
+          "leader": "Kethraz the Seared",
+          "lair": "Corrupted Grove",
+          "loyalty": "Most loyal to Tharzuul",
+          "magic_item": "Kethraz's Brand — iron war-club, once/day ignites target"
+        },
+        "marrowgnaw": {
+          "size": 25,
+          "leader": "Vrakka the Hungry",
+          "lair": "The Old Ruin",
+          "loyalty": "Resentful — secretly still worships Yennoghu",
+          "magic_item": "Marrow-Render — bone saw, harvests bones in 1 round"
+        },
+        "nighthowl": {
+          "size": 25,
+          "leader": "Zhallix the Crescent",
+          "lair": "The Cave System",
+          "loyalty": "Opportunist — plays both sides",
+          "magic_item": "The Smokeveil Fetish — once/day 20' choking smoke cloud"
+        }
       },
-      "marrowgnaw": {
-        "size": 25,
-        "leader": "Vrakka the Hungry",
-        "lair": "The Old Ruin",
-        "loyalty": "Resentful — secretly still worships Yennoghu",
-        "magic_item": "Marrow-Render — bone saw, harvests bones in 1 round"
+      "lairs": {
+        "corrupted_grove": "Ashfang. Once druidic, now blackened. Permanent bonfire that whispers (fire elemental magic). 60 goblins enslaved here.",
+        "the_old_ruin": "Marrowgnaw. Pre-Fall watchtower, half-collapsed. Hidden basement Yennoghu shrine. 50 goblins enslaved here.",
+        "the_cave_system": "Nighthowl. Limestone caves with underground stream. 90 goblins here, some semi-autonomous. Ancient cave paintings.",
+        "the_bone_hollows": "Contested — Ashfang vs. Marrowgnaw. Deep ravine of accumulated bones. Occasional undead rise here.",
+        "carrion_ridge": "Contested — Marrowgnaw vs. Nighthowl. High ground with old stone circle.",
+        "the_flooded_dell": "Contested — Nighthowl vs. Ashfang. Marshy lowland. ~10 fugitive goblins living here."
       },
-      "nighthowl": {
-        "size": 25,
-        "leader": "Zhallix the Crescent",
-        "lair": "The Cave System",
-        "loyalty": "Opportunist — plays both sides",
-        "magic_item": "The Smokeveil Fetish — once/day 20' choking smoke cloud"
+      "goblin_refugees": {
+        "in_nemetra": "6-8 goblins have appeared over the past week. Traumatized, gaunt, hollow-eyed.",
+        "tikka": "Most coherent refugee. Escaped from Nighthowl. Hiding in the pig pens at night. Knows about Tharzuul and the cave tunnels.",
+        "skrix": "Still enslaved at Corrupted Grove. Secretly carves warnings into trees.",
+        "tharzuuls_staff": "Gnarled staff topped with a perpetually smoldering coal that whispers in Ignan. Destroying it might shatter his hold over the packs."
       }
-    },
-    "lairs": {
-      "corrupted_grove": "Ashfang. Once druidic, now blackened. Permanent bonfire that whispers (fire elemental magic). 60 goblins enslaved here.",
-      "the_old_ruin": "Marrowgnaw. Pre-Fall watchtower, half-collapsed. Hidden basement Yennoghu shrine. 50 goblins enslaved here.",
-      "the_cave_system": "Nighthowl. Limestone caves with underground stream. 90 goblins here, some semi-autonomous. Ancient cave paintings.",
-      "the_bone_hollows": "Contested — Ashfang vs. Marrowgnaw. Deep ravine of accumulated bones. Occasional undead rise here.",
-      "carrion_ridge": "Contested — Marrowgnaw vs. Nighthowl. High ground with old stone circle.",
-      "the_flooded_dell": "Contested — Nighthowl vs. Ashfang. Marshy lowland. ~10 fugitive goblins living here."
-    },
-    "goblin_refugees": {
-      "in_nemetra": "6-8 goblins have appeared over the past week. Traumatized, gaunt, hollow-eyed.",
-      "tikka": "Most coherent refugee. Escaped from Nighthowl. Hiding in the pig pens at night. Knows about Tharzuul and the cave tunnels.",
-      "skrix": "Still enslaved at Corrupted Grove. Secretly carves warnings into trees.",
-      "tharzuuls_staff": "Gnarled staff topped with a perpetually smoldering coal that whispers in Ignan. Destroying it might shatter his hold over the packs."
     }
-  },
-  "npcs": {},
-  "items": {},
-  "plots": {}
+  }
 }

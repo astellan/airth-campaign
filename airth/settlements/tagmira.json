@@ -1,8 +1,14 @@
 {
+  "$schema": "../../schema/settlement.schema.json",
+  "id": "tagmira",
   "name": "Tagmira",
+  "status": "in_development",
   "type": "village",
+  "tagline": "Hardscrabble upland village under the Bramblewood, holding off orcs it no longer understands.",
+  "region": "Luric Marches",
   "population": {
     "total": 320,
+    "mix": "Herders and farmers; clannish.",
     "breakdown": {
       "agriculture_herding": 275,
       "militia_active": 7,
@@ -18,6 +24,261 @@
       "fringe_outliers": 3
     }
   },
+  "ruler": "No lord. The elders, with militia captain Hadran Throsk holding informal court in the hearth-hall.",
+  "faiths": [
+    "Cossus (the stone circle; trial by combat)",
+    "Thulda (the gravefield and the Mound of Threads)",
+    "Isarna (the waystone)",
+    "Ossamar (the ford, now cold)"
+  ],
+  "strangers": "Clannish and slow to trust. The party has earned real goodwill.",
+  "palette": {
+    "constants": {
+      "far": [
+        "the Bramblewood a dark mass on the horizon",
+        "woodsmoke"
+      ],
+      "near": [
+        "goat paths up the ridges",
+        "livestock bells"
+      ],
+      "threshold": [
+        "a wooden palisade, not much of a wall"
+      ],
+      "leaving": [
+        "the feeling of being watched from the tree line"
+      ]
+    },
+    "by_time": {
+      "far": {
+        "dawn": [
+          "mist on the northern ridges"
+        ],
+        "day": [
+          "axe-work from the woodcutters"
+        ],
+        "dusk": [
+          "dogs going quiet near the forest edge"
+        ],
+        "night": [
+          "the Bramblewood black against the stars"
+        ]
+      },
+      "within": {
+        "dawn": [
+          "baking bread"
+        ],
+        "day": [
+          "goats and sheep in the lanes",
+          "wind off the northern ridges"
+        ],
+        "dusk": [
+          "the hearth-hall filling"
+        ],
+        "night": [
+          "Hadran's court in the hearth-hall",
+          "something earthy and wrong on the north wind"
+        ]
+      }
+    },
+    "seasons": {
+      "winter": [
+        "snow on the ridges",
+        "flocks folded",
+        "food short this year"
+      ],
+      "spring": [
+        "militia out on patrol to the northwest",
+        "lambing"
+      ],
+      "summer": [
+        "flocks high on the ridges",
+        "tallow rendering"
+      ],
+      "autumn": [
+        "smoked meat hung",
+        "pony sales",
+        "hunters back from the northwest, fewer than before"
+      ]
+    },
+    "situations": [
+      {
+        "name": "Cossial",
+        "when": "18 Ulkar",
+        "descriptors": [
+          "duels at the Circle of Cossus",
+          "war dances in the hearth-hall"
+        ]
+      },
+      {
+        "name": "Thuldar",
+        "when": "27 Dumnos",
+        "descriptors": [
+          "wool laid on the Mound of Threads",
+          "funeral chants at the gravefield"
+        ]
+      },
+      {
+        "name": "Israya",
+        "when": "7 Arkun",
+        "descriptors": [
+          "lantern procession to the waystone"
+        ]
+      }
+    ]
+  },
+  "itself": [
+    {
+      "title": "Spring patrols",
+      "text": "Every spring the militia patrols the northwest to keep the orcs cowed. It has worked for a generation. This year the Bronze Host has bronze weapons, coordination, and something behind it, and it is not working."
+    },
+    {
+      "title": "Under the Bramblewood",
+      "text": "The thorn-forest an hour north was grown by the old gods as a living perimeter. Nothing in it moves by day, and the village feels watched from the tree line."
+    },
+    {
+      "title": "Sacred ground everywhere",
+      "text": "A Cossus stone ring for trial by combat, a Thulda gravefield, a mound of wool offerings, an Isarna waystone, and a ford whose shrine has gone cold. The village keeps them all."
+    }
+  ],
+  "encounters": {
+    "day": [
+      "**Hadran Throsk** wants news of the northwest.",
+      "Hunters come in from the northwest with less than they went out with.",
+      "**Tenn Darnel** glares at **Ulan Caernach** across a field boundary.",
+      "A woman leaves bread and silver thread at the Waystone of Isarna.",
+      "**1d3 militia** practise with bows behind the hearth-hall.",
+      "Goats break through a fence and scatter through the lanes."
+    ],
+    "night": [
+      "The dogs at the forest edge stop barking all at once.",
+      "**Old Borric** swears to anyone listening that he saw Maedra on the Bramblewood path.",
+      "**2 militia** on the palisade, watching the northwest.",
+      "A figure stands at the edge of the Bramblewood until a lantern is raised.",
+      "Singing in the hearth-hall, and the duel story told again.",
+      "Something howls on the ridge."
+    ]
+  },
+  "response": {
+    "watch": "7 standing militia under Hadran Throsk.",
+    "arrival_day": "1d3 militia within 1d10 minutes.",
+    "arrival_night": "1d2 militia within 1d4 turns.",
+    "reinforcements": "6 veterans can be called, including Borric and Feln.",
+    "bribery": null,
+    "strength_now": "7 militia, 6 veterans",
+    "strength_founding": null,
+    "strength": "Tough and experienced from a generation of spring patrols, but too few for what the Bronze Host has become."
+  },
+  "locations": [
+    {
+      "id": "hearth-hall",
+      "name": "Hearth-Hall",
+      "type": "inn",
+      "look": "The central gathering hall: food, drink, and village business.",
+      "labels": {
+        "guests": "Villagers and militia; Hadran Throsk holds informal court most evenings.",
+        "services": "Food and drink; hirelings."
+      }
+    },
+    {
+      "id": "circle-of-cossus",
+      "name": "Circle of Cossus",
+      "type": "temple",
+      "look": "A stone ring in a forest glade south of the village, consecrated to Cossus.",
+      "labels": {
+        "interior": "The stones hum faintly when oaths are spoken.",
+        "rites": "Trial by combat; oath-swearing."
+      }
+    },
+    {
+      "id": "gravefield-of-thulda",
+      "name": "Gravefield of Thulda",
+      "type": "temple",
+      "look": "Burial mounds northeast of the village, ringed by carved posts and wrapped in wool.",
+      "labels": {
+        "populace": "Two quiet widows tend the mounds.",
+        "rites": "Offerings; burial rites of Thulda."
+      }
+    },
+    {
+      "id": "mound-of-threads",
+      "name": "Mound of Threads",
+      "type": "temple",
+      "look": "A rounded earthen mound on the western ridge, both tomb and shrine to Thulda.",
+      "labels": {
+        "populace": "Shepherds and mourners.",
+        "rites": "Wool offerings; mourning rites."
+      }
+    },
+    {
+      "id": "tree-of-mist-song",
+      "name": "Tree of Mist-Song",
+      "type": "landmark",
+      "look": "A lightning-scarred ash on a stony knoll north of the village, one of the oldest trees in the region.",
+      "labels": {
+        "custom": "Stones carved with spirals and claw marks ring its roots."
+      },
+      "hidden": "A dryad is trapped in the tree, dormant from loneliness. She stirs for real druidic attention, or for someone who sits by the tree in silence for a full turn."
+    },
+    {
+      "id": "waystone-of-isarna",
+      "name": "Waystone of Isarna",
+      "type": "landmark",
+      "look": "A stone marker etched with a crescent and a hoofprint, on the road west of the village.",
+      "labels": {
+        "custom": "Travellers leave bread and silver thread."
+      }
+    },
+    {
+      "id": "ford-of-ossamar",
+      "name": "Ford of Ossamar",
+      "type": "dock",
+      "look": "A wide, clear ford three miles east, marked by cairns and cold iron braziers.",
+      "labels": {
+        "passage": "Still usable. The shrine is untended and comfortless."
+      }
+    },
+    {
+      "id": "palisade",
+      "name": "Palisade",
+      "type": "gate",
+      "look": "A wooden palisade around the village.",
+      "labels": {
+        "watch": "Not fortified; a serious assault would be catastrophic."
+      }
+    }
+  ],
+  "factions": [
+    {
+      "id": "village-militia",
+      "purpose": "Keep the orcs cowed and the village fed.",
+      "membership": "7 standing, 6 veterans.",
+      "scheme": "Hold the northwest hunting grounds against the Bronze Host."
+    }
+  ],
+  "trouble": [
+    "Maedra has vanished — whispers but no answers. The undead want more Tagmiran recruits.",
+    "The Bronze Host has seized the northwest hunting grounds. This is not a rumor — hunters have been driven back, one was killed, and Tagmira will face serious food pressure this winter if nothing changes. Hadran and the elders know it.",
+    "The orcs are suddenly too powerful. They have bronze weapons, coordination, and something behind them. The Tagmirans are tough and have always held the line in spring patrols — but this is different, and it is starting to dawn on them.",
+    "Two Bronze Host orcs were brought to Tagmira as captives to witness the trial by combat — meant as intimidation. It may have given the orcs useful intelligence about Tagmira's current strength instead.",
+    "The undead alliance is secret. If Hadran or the elders learned the party is allied with the Bramblewood undead, there would be a reckoning.",
+    "The water-rights grudge persists after the duel. Tenn Darnel lost and has not forgiven Ulan Caernach.",
+    "Ulan Caernach and Rondasek Elaran are back to village life but changed — they've seen skeletons fight and orcs bleed. They are quietly restless."
+  ],
+  "neighbors": [
+    {
+      "settlement": "caelrun",
+      "miles": 18,
+      "direction": "W",
+      "path": "luric-road"
+    },
+    {
+      "settlement": "dravesa",
+      "miles": 18,
+      "direction": "E",
+      "path": "luric-road"
+    }
+  ],
   "economy": [
     "subsistence farming",
     "goat and sheep herding",
@@ -45,101 +306,62 @@
     "southern goods",
     "trade goods from Taziri's caravan"
   ],
-  "character": "A hardscrabble upland village hemmed by forest and old fears. Houses cluster around a central hearth-hall. The people are clannish, proud of small dignities, and slow to trust outsiders — but Sardet's deeds at the Circle of Cossus and the party's role fighting the orc raid have bought real goodwill.",
-  "atmosphere": {
-    "sounds": [
-      "wind off the northern ridges",
-      "livestock bells",
-      "the distant axe-work of woodcutters",
-      "dogs that go quiet near the forest edge at dusk"
+  "dm_notes": {
+    "legacy_rumours": [
+      "Old Maedra walked into the Bramblewood one night and didn't come back. Some say she went to die in peace. Others say the wood took her.",
+      "Old Borric swears he saw Maedra on the Bramblewood path at dusk — but she looked wrong. He won't say how.",
+      "The Ford of Ossamar has gone cold since Ildun vanished. Offerings left there feel unaccepted."
     ],
-    "smells": [
-      "woodsmoke",
-      "animal dung",
-      "baking bread",
-      "something faintly earthy and wrong near the Bramblewood"
+    "travel_to_tagmira": {
+      "duration": "1 day",
+      "traveling_with": "Taziri's caravan",
+      "waystone_stop": {
+        "location": "Waystone of Isarna, west of Tagmira (on the road from Caelrun)",
+        "event": "Taziri will want to stop for an offering. Bread and silver thread are traditional. Good moment for character roleplay and transition into Tagmira.",
+        "dm_notes": "Let this breathe — it signals arrival is near and gives the caravan a moment of ritual normalcy before the complications of Tagmira begin."
+      },
+      "flavor_notes": [
+        "The road north narrows. The Bramblewood is visible as a dark mass on the horizon well before Tagmira itself.",
+        "Taziri knows Tagmira well — she can brief the party on surface village politics if asked.",
+        "The militia members who know the party might be met on the road or at the gate.",
+        "Nothing in the Bramblewood moves by day — but the sense of being watched from the tree line is hard to shake."
+      ],
+      "possible_road_encounter": {
+        "name": "Returning Patrol",
+        "description": "A Tagmira patrol of 3 militia heading back from the northwest. They are not fleeing — they held the line but were outmatched. One is bandaged. They know the party and will report directly: the orcs have bronze weapons, they move in coordinated groups, and there are more of them than last spring. They want to know if the party is coming to help.",
+        "dm_notes": "Sets the tone correctly — these are not frightened villagers, they are soldiers who fought and are thinking about how to fight better. The party's arrival matters to them."
+      }
+    },
+    "session_pressure_points": {
+      "immediate": [
+        "Zimru wants an accounting of the sacrifice and a commitment to the next one — the orcs northwest are the obvious candidates",
+        "Tagmira's hunters are being pushed off the northwest grounds — Hadran needs help or intelligence",
+        "Maedra's transformation — the party will face her changed, and the village still doesn't know she's gone"
+      ],
+      "slow_burn": [
+        "The undead want Tagmiran recruits — someone in the village may already be in contact with them",
+        "The dryad in the Tree of Mist-Song — bitterly lonely, has knowledge of the Bramblewood, waiting",
+        "Velric's warning from the Sphere — a great danger foreseen, not yet revealed",
+        "Tenn Darnel lost the duel and has not forgiven it — a grudge waiting for a trigger"
+      ],
+      "convergence": "The orc threat and the sacrifice demand point in the same direction — the party can satisfy Zimru and defend Tagmira with the same action, if they can coordinate militia, manage the undead alliance's secrecy, and get through the Bronze Host's now-upgraded defenses."
+    },
+    "outside_powers": [
+      {
+        "name": "Temple of the Old Gods (Zimru's undead)",
+        "location": "Bramblewood",
+        "current_posture": "Quiet and patient. Sphere is functional after the orc sacrifice. Want more sacrifices — specifically more orcs, which conveniently aligns with Tagmira's orc problem. Also quietly seeking Tagmiran 'recruits' for undeath. Maedra is now Zimru's consort and seen by the undead as nearly a prophet.",
+        "disposition_to_party": "Allied, with expectations. Zimru will want an accounting of the sacrifice and will press for the next one.",
+        "party_terms": "The party accepts Ildun-Ayenar's sacrifice but forbids more human ones. Orcs and other humanoids only."
+      },
+      {
+        "name": "Bronze Host (Pact-Render orcs)",
+        "location": "Northwest hunting grounds and the Bronzeworking Triangle beyond",
+        "current_posture": "Actively pushing Tagmirans out of the northwest forest. Two months since the raid — all named orc leaders survived, equipment upgraded via Pact-Render fey bronze. Making a play for the hunting grounds as first step toward assault on Tagmira proper. The undead know and cannot act.",
+        "disposition_to_party": "Hostile"
+      }
     ],
-    "mood": "Watchful but not unfriendly. The village has suffered orc pressure, lost Old Maedra without explanation, and carries a low hum of unease it cannot name."
-  },
-  "locations": {
-    "gravefield_of_thulda": {
-      "type": "sacred_site",
-      "description": "Burial mounds northeast of the village, encircled by carved posts. Wool wrappings and grave-goods mark each mound. Tended by two quiet widows.",
-      "services": [
-        "place for offerings",
-        "burial rites of Thulda"
-      ],
-      "current_state": "Active."
-    },
-    "ford_of_ossamar": {
-      "type": "sacred_site",
-      "description": "A wide clear ford three miles east, marked by cairns and iron braziers. Once tended by Ildun-Ayenar. The shrine is now untended — braziers cold, cairns crumbling slightly at the edges. Travelers still stop here but find it comfortless.",
-      "services": [
-        "place for offerings",
-        "river crossing"
-      ],
-      "current_state": "Abandoned since the undead abducted Ildun-Ayenar here and carried him to the Temple of the Old Gods, where he was sacrificed to power the Sphere. The ford is still usable but the sacred atmosphere has drained away.",
-      "dm_notes": "The party accepts Ildun's sacrifice, on one condition: no more humans. Orcs and other humanoids only. Villagers think Ildun wandered off or died quietly. Anyone who knew him well — Maedra did — carries the truth into undeath."
-    },
-    "circle_of_cossus": {
-      "type": "sacred_site",
-      "description": "A stone ring in a forest glade south of the village. Originally a fey circle corrupted ~150 years ago when men tried to sacralize it, now consecrated to Cossus as a trial-by-combat ground. Sardet officiated the duel between Tenn Darnel and Ulan Caernach here, which won the party real standing in the village.",
-      "services": [
-        "trial by combat",
-        "oath-swearing"
-      ],
-      "current_state": "The stones still hum faintly when oaths are spoken. The fey corruption is old and dormant but not gone.",
-      "dm_notes": "Sardet's officiating here is remembered. If the party needs to call in goodwill with Tagmira, this is a touchstone. The residual fey taint is undetectable except to a druid (Brigantios could sense it). It is old and dormant but not gone."
-    },
-    "mound_of_threads": {
-      "type": "sacred_site",
-      "description": "A rounded earthen mound on the western ridge, shrine to Thulda sacred to shepherds and mourners. Wool offerings are laid here; it serves as both tomb and temple. Still actively maintained.",
-      "services": [
-        "place for offerings",
-        "mourning rites"
-      ],
-      "current_state": "Active. Wool offerings accumulate.",
-      "dm_notes": "No supernatural activity here yet, but Thulda's domain is death and mourning — thematically resonant with everything happening at the temple."
-    },
-    "tree_of_mist_song": {
-      "type": "sacred_site",
-      "description": "A lightning-scarred ash north of the village atop a stony knoll. One of the oldest trees in the region. Stones circle its roots, carved in spirals and claw marks. A dryad is trapped within — bitterly lonely, her forest long since cleared except for this one isolated tree. The party has not yet managed to rouse her.",
-      "services": [
-        "druidic site"
-      ],
-      "current_state": "The dryad is present but dormant from loneliness and despair. She will respond to genuine druidic attention or to someone who sits with her tree in true silence for a full turn.",
-      "dm_notes": "Once roused she will be desperate and raw — centuries of isolation. She knows things about the Bramblewood's origins (it was seeded by the old gods as a perimeter). Could become an ally or a tragedy depending on the party's choices. Nabia, Bracara's mentor, once held vigil here."
-    },
-    "waystone_of_isarna": {
-      "type": "sacred_site",
-      "description": "A stone marker etched with a crescent and hoofprint west of Tagmira, one of Isarna's oldest way-shrines. Taziri's caravan will almost certainly stop here for an offering on arrival. Bread and silver thread are traditional.",
-      "services": [
-        "place for offerings",
-        "traveler's waypoint"
-      ],
-      "current_state": "Active and well-maintained by passing travelers.",
-      "dm_notes": "Good moment for roleplay as the caravan arrives. Taziri's offering here is a natural transition into Tagmira proper."
-    },
-    "hearth_hall": {
-      "type": "tavern",
-      "description": "The central gathering hall of Tagmira. Food, drink, and village business. Militia captain Hadran Throsk holds informal court here most evenings.",
-      "services": [
-        "food & drink",
-        "hirelings",
-        "rumors",
-        "encounters with village factions"
-      ]
-    },
-    "bramblewood": {
-      "type": "wilderness",
-      "description": "The dense thorn-forest north of Tagmira. Grown by the old gods as a living perimeter, seeded with divine fear and watered by clerics' blood (see Thorn-Bound Covenant). Contains the Temple of the Old Gods. The undead cannot stray far from it without losing consciousness unless they pay a high magical cost.",
-      "services": [],
-      "current_state": "The orc Bronze Host is pressing from the northwest. The undead are aware but cannot project force outside the Bramblewood. The party is caught between these pressures.",
-      "dm_notes": "See temple and orc sections below."
-    }
-  },
-  "factions": [
-    {
+    "militia_members": {
       "name": "Village Militia",
       "leader": "Hadran Throsk",
       "strength": "7 standing, 6 veterans who can be called",
@@ -158,47 +380,45 @@
       "character": "Not a garrison force — Tagmirans are tough and have always spent the spring patrolling and intimidating the orcs. They know what war costs. The problem is not their courage but that the Bronze Host has suddenly become something different: better equipped, coordinated, and backed by something the militia does not understand.",
       "spring_patrol_tradition": "Every spring the militia patrols the northwest aggressively to keep orc pressure down. This has worked for a generation. It is not working now."
     },
-    {
-      "name": "Temple of the Old Gods (Zimru's undead)",
-      "location": "Bramblewood",
-      "current_posture": "Quiet and patient. Sphere is functional after the orc sacrifice. Want more sacrifices — specifically more orcs, which conveniently aligns with Tagmira's orc problem. Also quietly seeking Tagmiran 'recruits' for undeath. Maedra is now Zimru's consort and seen by the undead as nearly a prophet.",
-      "disposition_to_party": "Allied, with expectations. Zimru will want an accounting of the sacrifice and will press for the next one.",
-      "party_terms": "The party accepts Ildun-Ayenar's sacrifice but forbids more human ones. Orcs and other humanoids only."
+    "location_notes": {
+      "gravefield_of_thulda": {
+        "current_state": "Active."
+      },
+      "ford_of_ossamar": {
+        "current_state": "Abandoned since the undead abducted Ildun-Ayenar here and carried him to the Temple of the Old Gods, where he was sacrificed to power the Sphere. The ford is still usable but the sacred atmosphere has drained away.",
+        "dm_notes": "The party accepts Ildun's sacrifice, on one condition: no more humans. Orcs and other humanoids only. Villagers think Ildun wandered off or died quietly. Anyone who knew him well — Maedra did — carries the truth into undeath."
+      },
+      "circle_of_cossus": {
+        "current_state": "The stones still hum faintly when oaths are spoken. The fey corruption is old and dormant but not gone.",
+        "dm_notes": "Sardet's officiating here is remembered. If the party needs to call in goodwill with Tagmira, this is a touchstone. The residual fey taint is undetectable except to a druid (Brigantios could sense it). It is old and dormant but not gone."
+      },
+      "mound_of_threads": {
+        "current_state": "Active. Wool offerings accumulate.",
+        "dm_notes": "No supernatural activity here yet, but Thulda's domain is death and mourning — thematically resonant with everything happening at the temple."
+      },
+      "tree_of_mist_song": {
+        "current_state": "The dryad is present but dormant from loneliness and despair. She will respond to genuine druidic attention or to someone who sits with her tree in true silence for a full turn.",
+        "dm_notes": "Once roused she will be desperate and raw — centuries of isolation. She knows things about the Bramblewood's origins (it was seeded by the old gods as a perimeter). Could become an ally or a tragedy depending on the party's choices. Nabia, Bracara's mentor, once held vigil here."
+      },
+      "waystone_of_isarna": {
+        "current_state": "Active and well-maintained by passing travelers.",
+        "dm_notes": "Good moment for roleplay as the caravan arrives. Taziri's offering here is a natural transition into Tagmira proper."
+      },
+      "hearth_hall": {},
+      "bramblewood": {
+        "current_state": "The orc Bronze Host is pressing from the northwest. The undead are aware but cannot project force outside the Bramblewood. The party is caught between these pressures.",
+        "dm_notes": "See temple and orc sections below."
+      }
     },
-    {
-      "name": "Bronze Host (Pact-Render orcs)",
-      "location": "Northwest hunting grounds and the Bronzeworking Triangle beyond",
-      "current_posture": "Actively pushing Tagmirans out of the northwest forest. Two months since the raid — all named orc leaders survived, equipment upgraded via Pact-Render fey bronze. Making a play for the hunting grounds as first step toward assault on Tagmira proper. The undead know and cannot act.",
-      "disposition_to_party": "Hostile"
+    "bramblewood": {
+      "type": "wilderness",
+      "description": "The dense thorn-forest north of Tagmira. Grown by the old gods as a living perimeter, seeded with divine fear and watered by clerics' blood (see Thorn-Bound Covenant). Contains the Temple of the Old Gods. The undead cannot stray far from it without losing consciousness unless they pay a high magical cost.",
+      "services": [],
+      "current_state": "The orc Bronze Host is pressing from the northwest. The undead are aware but cannot project force outside the Bramblewood. The party is caught between these pressures.",
+      "dm_notes": "See temple and orc sections below."
     }
-  ],
-  "tensions": [
-    "Maedra has vanished — whispers but no answers. The undead want more Tagmiran recruits.",
-    "The Bronze Host has seized the northwest hunting grounds. This is not a rumor — hunters have been driven back, one was killed, and Tagmira will face serious food pressure this winter if nothing changes. Hadran and the elders know it.",
-    "The orcs are suddenly too powerful. They have bronze weapons, coordination, and something behind them. The Tagmirans are tough and have always held the line in spring patrols — but this is different, and it is starting to dawn on them.",
-    "Two Bronze Host orcs were brought to Tagmira as captives to witness the trial by combat — meant as intimidation. It may have given the orcs useful intelligence about Tagmira's current strength instead.",
-    "The undead alliance is secret. If Hadran or the elders learned the party is allied with the Bramblewood undead, there would be a reckoning.",
-    "The water-rights grudge persists after the duel. Tenn Darnel lost and has not forgiven Ulan Caernach.",
-    "Ulan Caernach and Rondasek Elaran are back to village life but changed — they've seen skeletons fight and orcs bleed. They are quietly restless."
-  ],
-  "rumors": [
-    "Old Maedra walked into the Bramblewood one night and didn't come back. Some say she went to die in peace. Others say the wood took her.",
-    "Old Borric swears he saw Maedra on the Bramblewood path at dusk — but she looked wrong. He won't say how.",
-    "The Ford of Ossamar has gone cold since Ildun vanished. Offerings left there feel unaccepted."
-  ],
-  "defenses": {
-    "militia": "7 standing under Hadran Throsk",
-    "veterans": "6 callable, including Borric and Feln",
-    "walls": "Wooden palisade wall surrounding the village",
-    "notes": "Tagmira is not fortified. A serious Bronze Host assault would be catastrophic without party intervention or some other force."
   },
-  "trade_focus": "Logistics and trade hub. Taziri's caravan is the primary outside connection.",
-  "nearest_neighbors": [
-    "Caelrun (1 day west)",
-    "Bramblewood temple (1 hour north)"
-  ],
-  "road_position": "Trade hub; Taziri's route terminates here",
-  "npcs": {
+  "npcs_legacy": {
     "hadran_throsk": {
       "moniker": "Hadran Throsk",
       "home": "Hearth-hall, Tagmira",
@@ -388,351 +608,5 @@
       "tragedies": [],
       "pc_leverage": "Practical help — metalwork, repairs, information about village disputes. Does not deal in rumors but will speak plainly if asked directly."
     }
-  },
-  "adventure_sites": {
-    "temple_of_the_old_gods": {
-      "name": "Temple of the Old Gods",
-      "type": [
-        "dungeon",
-        "sacred_site",
-        "ruins"
-      ],
-      "location": "Bramblewood, north of Tagmira",
-      "access_difficulty": "difficult",
-      "recommended_level": "2-4",
-      "estimated_sessions_min": 1,
-      "estimated_sessions_max": 3,
-      "overview": {
-        "what_it_is": "A functioning undead temple-complex preserving the rites and hierarchy of the old gods, now led by Zimru, a 300-year-old undead hierophant. Contains the Sphere — a divine communion device now powered by sacrifice.",
-        "why_it_exists": "Built in the age of the old gods; its undead inhabitants refused to abandon it when the gods went silent. The Bramblewood was grown by the old gods as a living perimeter.",
-        "current_state": "Functional and alert. The first orc sacrifice was completed; the Sphere is active. Zimru will press the party for more sacrifices. Maedra has newly joined as Zimru's consort and is regarded as a prophet by the undead. The undead know about the Bronze Host threat but cannot project force outside the Bramblewood.",
-        "historical_context": "The temple served willing sacrifices to Enki, Ninhursag, and the Annunaki pantheon. The undead here are former priests and initiates who chose to remain as custodians. See the Ghoul Theologian's lecture for their theological self-justification."
-      },
-      "access_challenges": {
-        "physical": [
-          "Bramblewood thorns and undead flora",
-          "Hollow Boars patrol near the temple"
-        ],
-        "magical": [
-          "Black Cantors suppress divine magic in 30' radius",
-          "Bramblewood encounters before reaching temple"
-        ],
-        "political": [
-          "The undead recognize the party as allies — but Zimru will judge any breach of the alliance severely"
-        ],
-        "environmental": [
-          "Difficult terrain",
-          "necrotic resonance throughout"
-        ],
-        "temporal": "The undead lose consciousness when straying from the temple unless they pay a high magical cost — they cannot escort the party or intervene outside"
-      },
-      "known_dangers": {
-        "creatures": [
-          "Hollow Boars",
-          "Pale Remnants",
-          "Black Cantors",
-          "Ossuary Confessors",
-          "Threnody Wights",
-          "Skeletal Servitors",
-          "Velric the Apologetic Wight (wandering)",
-          "Flesh-Splice Automatons"
-        ],
-        "traps": [
-          "Grasping Brambleheart (entangle)",
-          "Withered Thornbush (poison)",
-          "Pulsing Bloomvine (acid)"
-        ],
-        "environmental_hazards": [
-          "Necrotic resonance",
-          "Cradle Mound sleep effect",
-          "Torch of the Last Vigil (undead tracking)"
-        ],
-        "magical_hazards": [
-          "Black Cantor Inverted Hymn",
-          "Spinal Vat contact effects",
-          "Hanging Psalm Scrolls (1d20 table)"
-        ],
-        "unknown_threats": [
-          "Velric's warning: 'Zimru-Irkala has foreseen it — in the Sphere — YOU ARE IN GREAT DANGER'"
-        ]
-      },
-      "rewards": {
-        "treasure": [
-          "Eight Jars in Necromancy Chamber (including Black Blood/Potion of Healing, Stoneflower Extract/Potion of Undead Control, Distilled Marrow/Potion of Extra-Healing)",
-          "Necrotic scalpel (silvered dagger) in Storeroom",
-          "Clasp of Forgotten Names (Velric)",
-          "Minor relics throughout catacombs"
-        ],
-        "knowledge": [
-          "Sphere operation (Book 5: Who Knees Before the Mantle Gold)",
-          "True names of guardian undead (Book 10)",
-          "Bramblewood origins (Book 13: Thorn-Bound Covenant)",
-          "Sphere-linkage map fragment (Lentigus)"
-        ],
-        "magical_items": [
-          "Thorn dagger +1, +3 vs living (Cultivar chamber)",
-          "Chamber of the Cultivar ritual diagram (Manual of Golems, lignin)"
-        ],
-        "strategic_value": [
-          "Alliance with Zimru provides intelligence via the Sphere",
-          "Undead cannot help against orcs directly but can advise",
-          "Maedra may be able to relay information about Tagmira"
-        ],
-        "reputation_gains": [
-          "Continued good standing with Zimru if sacrifice obligations are met"
-        ]
-      },
-      "factions_interested": {
-        "zimru_and_undead": {
-          "interest_level": "obsessed",
-          "goals": "Keep the Sphere running via sacrifice. Recruit more Tagmirans to undeath. Preserve the temple. Guide what remains of humanity from the Bramblewood.",
-          "resources_committed": "The entire temple garrison",
-          "knowledge_level": "Full — they live here"
-        },
-        "bronze_host_orcs": {
-          "interest_level": "aware",
-          "goals": "Avoid the Bramblewood. The orcs fear it and give it wide berth — one reason they push northwest rather than directly at Tagmira.",
-          "resources_committed": "None directed at the temple",
-          "knowledge_level": "They know something terrible lives there"
-        }
-      },
-      "local_knowledge": {
-        "common_rumors": [
-          "The Bramblewood walks at night — shadows that move wrong.",
-          "Anyone who enters the wood alone doesn't come back the same.",
-          "Old Maedra went in and never came out."
-        ],
-        "specialist_knowledge": {
-          "enni_the_ash_wife": {
-            "cost_to_acquire": "Genuine respect and something she values",
-            "accuracy": "High — she has lived near it her whole life",
-            "information": [
-              "The wood was not always like this",
-              "Something in there remembers the old gods",
-              "Maedra knew more than she ever said"
-            ]
-          },
-          "the_bound_confessor_skull": {
-            "cost_to_acquire": "Roll on 'What It Wants' table",
-            "accuracy": "High but cryptic",
-            "information": [
-              "Password of the Gate",
-              "True names of guardians",
-              "Safest route to the inner sanctum"
-            ]
-          }
-        },
-        "forbidden_knowledge": [
-          "The Sphere shows Zimru things — including a great danger coming for the party (Velric's warning). What this danger is has not yet been revealed."
-        ]
-      },
-      "current_session_hooks": {
-        "zimru_will_want": [
-          "A full account of the orc sacrifice — who, how, what rites were observed",
-          "Commitment to arranging a second sacrifice. The orcs northwest of Tagmira are the obvious target — this aligns with the party's own interest in stopping the Bronze Host",
-          "Information about what the party observed in Caelrun and on the road"
-        ],
-        "maedra_factor": "The party will encounter her transformed for the first time (or again, if they have already). Her reception of them will be complex — she chose this, but she remembers them.",
-        "sphere_revelation": "Zimru may show the party something in the Sphere — either the Bronze Host's movements, or the vague danger Velric warned about, depending on what serves the story."
-      }
-    },
-    "bronze_host_territory": {
-      "name": "Bronze Host Orc Territory (Northwest Hunting Grounds)",
-      "type": [
-        "wilderness"
-      ],
-      "location": "Northwest of Tagmira, beyond the forest hunting grounds",
-      "access_difficulty": "moderate",
-      "recommended_level": "2-3",
-      "estimated_sessions_min": 1,
-      "estimated_sessions_max": 2,
-      "overview": {
-        "what_it_is": "The territory the Bronze Host orcs are seizing from Tagmira's hunters, backed by Pact-Render fey who supply them with bronze weapons and equipment via the Bronzeworking Triangle.",
-        "why_it_exists": "The Pact-Render has made a bargain with the orc tribe — bronze weapons and equipment in exchange for territorial expansion. Control of the hunting grounds is the first step toward an assault on Tagmira.",
-        "current_state": "Two months since the party drove back the initial raid. All named orc leaders survived. Equipment significantly upgraded: bronze spears, laminated wooden armor. The Bronzeworking Triangle (Ore Pit, Crucible Glen, Mule Paths) is operational. The undead know but cannot act.",
-        "historical_context": "These orcs were already territorial but lacked the equipment and coordination for a sustained campaign. The Pact-Render fey changed that equation."
-      },
-      "known_dangers": {
-        "creatures": [
-          "Orc Warriors of the Bronze Host (HD 1+1, bronze spears, coordinated thrust)",
-          "Orc Champions (HD 3, magical fey-carved spears, command voice)",
-          "Brat-Kho the Voice That Bends (Script-Stone of Persuasion)",
-          "Mollgarn the Unfailing (Ashmark of Preservation)",
-          "Ulzhar Bone-Tongue (Pendant of the Hollow Tongue)",
-          "Wane-Faced overseers at the Ore Pit",
-          "Possible Shee emissary on the Mule Paths"
-        ],
-        "traps": [
-          "Ambush positions in the ravine terrain",
-          "Hidden cache sites on the Mule Paths"
-        ],
-        "environmental_hazards": [
-          "Rough hill terrain",
-          "Narrow ravines favoring orc ambush"
-        ],
-        "magical_hazards": [
-          "Fey bronze weapons ignore cold iron wards",
-          "Pact-Render shee have unknown fey powers"
-        ],
-        "unknown_threats": [
-          "The Shee emissary's capabilities and schedule",
-          "Whether the Pact-Render itself can be engaged diplomatically or only opposed"
-        ]
-      },
-      "rewards": {
-        "treasure": [
-          "Bronze weapons (valuable, fey-crafted)",
-          "Relic items carried by the three champions",
-          "Possible contents of the Bronzeworking Triangle caches"
-        ],
-        "knowledge": [
-          "Understanding the Pact-Render's involvement",
-          "Location of the Bronzeworking Triangle"
-        ],
-        "magical_items": [
-          "Script-Stone of Persuasion (Brat-Kho)",
-          "Ashmark of Preservation (Mollgarn)",
-          "Pendant of the Hollow Tongue (Ulzhar)"
-        ],
-        "strategic_value": [
-          "Destroying or disrupting the Bronzeworking Triangle would collapse the orc military advantage",
-          "Eliminating the orc leaders would break the Host's coordination",
-          "Capturing the Shee emissary could provide leverage against the Pact-Render"
-        ],
-        "reputation_gains": [
-          "Tagmira's gratitude and trust if the hunting grounds are secured",
-          "Potential second sacrifice for Zimru if orc leaders are taken alive or killed appropriately"
-        ]
-      },
-      "factions_interested": {
-        "tagmira_militia": {
-          "interest_level": "investigating",
-          "goals": "Recover the northwest hunting grounds before winter. Do not yet grasp the Pact-Render dimension.",
-          "resources_committed": "Hadran can muster 10 militia + 6 veterans if convinced the threat is serious",
-          "knowledge_level": "Knows orcs are better equipped than before. Does not know about the Bronzeworking Triangle or the Shee."
-        },
-        "zimru_and_undead": {
-          "interest_level": "aware",
-          "goals": "The orcs make excellent sacrifice candidates. Cannot act directly. Will strongly encourage the party to address the threat — it serves both Tagmira and the Sphere.",
-          "resources_committed": "Intelligence via the Sphere only",
-          "knowledge_level": "High — the Sphere shows them the orc movements"
-        },
-        "pact_render": {
-          "interest_level": "actively_pursuing",
-          "goals": "Use the orcs as proxies to pressure Tagmira. Keep the Bronzeworking Triangle secret and operational.",
-          "resources_committed": "Shee emissary, bronze supply chain, Wane-Faced overseers",
-          "knowledge_level": "Full awareness of their own operation; does not know about the undead alliance"
-        }
-      },
-      "bronzeworking_triangle": {
-        "hex_1_ore_pit": {
-          "description": "Rocky hills with copper and tin extraction. Slave pens cut into stone. Wane-Faced (ogre) overseers and orc enforcers. Minor fey shrine to maintain the Pact.",
-          "encounters": [
-            "Collapsing mine shaft",
-            "Desperate slave escape attempt",
-            "Ore-smuggling gnoll"
-          ]
-        },
-        "hex_2_crucible_glen": {
-          "description": "Forested ravine with hidden charcoal kilns and clay forges. Portune-controlled, ritualized. Engraving stations where Pact symbols are inscribed on weapons.",
-          "encounters": [
-            "Rune-bound tools",
-            "Cursed molds",
-            "Overseer duel",
-            "Hidden forge-spirit"
-          ]
-        },
-        "hex_3_mule_paths": {
-          "description": "Foggy pine forest with disguised pack trails and hidden caches of bronze weapons.",
-          "encounters": [
-            "Abandoned shipment",
-            "Cursed buckler",
-            "Party mistaken for saboteurs",
-            "Shee emissary appearance"
-          ]
-        }
-      },
-      "orc_leaders": {
-        "brat_kho": {
-          "title": "Brat-Kho, the Voice That Bends",
-          "relic": "Script-Stone of Persuasion",
-          "ac": 4,
-          "hd": 3,
-          "dmg": "1d8+1",
-          "special": [
-            "Echo of Authority",
-            "Vocal Clarity",
-            "+2 reaction"
-          ],
-          "morale": 10
-        },
-        "mollgarn": {
-          "title": "Mollgarn the Unfailing",
-          "relic": "Ashmark of Preservation",
-          "ac": 3,
-          "hd": 3,
-          "dmg": "1d10",
-          "special": [
-            "Delay Poison",
-            "Forget"
-          ],
-          "morale": 11
-        },
-        "ulzhar": {
-          "title": "Ulzhar Bone-Tongue",
-          "relic": "Pendant of the Hollow Tongue",
-          "ac": 5,
-          "hd": 3,
-          "dmg": "1d6",
-          "special": [
-            "Comprehend Languages",
-            "Command Word",
-            "Binding Oath"
-          ],
-          "morale": 9
-        }
-      },
-      "captive_witness_incident": {
-        "summary": "The party previously defeated a Bronze Host force and took two orc captives to Tagmira to witness the Trial by Combat at the Circle of Cossus. The intent was intimidation — show the orcs what Tagmira does to its enemies.",
-        "possible_backfire": "The captives observed Tagmira's current defenses, population, and the fact that the village is relying on outside adventurers. This intelligence, brought back to the Bronze Host, may have encouraged rather than deterred their escalation.",
-        "dm_notes": "The party is partly responsible for the Bronze Host's current boldness, however inadvertently. Zimru, watching through the Sphere, almost certainly noticed this."
-      }
-    }
-  },
-  "travel_to_tagmira": {
-    "duration": "1 day",
-    "traveling_with": "Taziri's caravan",
-    "waystone_stop": {
-      "location": "Waystone of Isarna, west of Tagmira (on the road from Caelrun)",
-      "event": "Taziri will want to stop for an offering. Bread and silver thread are traditional. Good moment for character roleplay and transition into Tagmira.",
-      "dm_notes": "Let this breathe — it signals arrival is near and gives the caravan a moment of ritual normalcy before the complications of Tagmira begin."
-    },
-    "flavor_notes": [
-      "The road north narrows. The Bramblewood is visible as a dark mass on the horizon well before Tagmira itself.",
-      "Taziri knows Tagmira well — she can brief the party on surface village politics if asked.",
-      "The militia members who know the party might be met on the road or at the gate.",
-      "Nothing in the Bramblewood moves by day — but the sense of being watched from the tree line is hard to shake."
-    ],
-    "possible_road_encounter": {
-      "name": "Returning Patrol",
-      "description": "A Tagmira patrol of 3 militia heading back from the northwest. They are not fleeing — they held the line but were outmatched. One is bandaged. They know the party and will report directly: the orcs have bronze weapons, they move in coordinated groups, and there are more of them than last spring. They want to know if the party is coming to help.",
-      "dm_notes": "Sets the tone correctly — these are not frightened villagers, they are soldiers who fought and are thinking about how to fight better. The party's arrival matters to them."
-    }
-  },
-  "session_pressure_points": {
-    "immediate": [
-      "Zimru wants an accounting of the sacrifice and a commitment to the next one — the orcs northwest are the obvious candidates",
-      "Tagmira's hunters are being pushed off the northwest grounds — Hadran needs help or intelligence",
-      "Maedra's transformation — the party will face her changed, and the village still doesn't know she's gone"
-    ],
-    "slow_burn": [
-      "The undead want Tagmiran recruits — someone in the village may already be in contact with them",
-      "The dryad in the Tree of Mist-Song — bitterly lonely, has knowledge of the Bramblewood, waiting",
-      "Velric's warning from the Sphere — a great danger foreseen, not yet revealed",
-      "Tenn Darnel lost the duel and has not forgiven it — a grudge waiting for a trigger"
-    ],
-    "convergence": "The orc threat and the sacrifice demand point in the same direction — the party can satisfy Zimru and defend Tagmira with the same action, if they can coordinate militia, manage the undead alliance's secrecy, and get through the Bronze Host's now-upgraded defenses."
-  },
-  "items": {},
-  "plots": {}
+  }
 }

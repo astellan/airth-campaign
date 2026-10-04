@@ -1,0 +1,151 @@
+{
+  "$schema": "../../schema/dungeon.schema.json",
+  "id": "temple-of-the-old-gods",
+  "name": "Temple of the Old Gods",
+  "type": [
+    "dungeon",
+    "sacred_site",
+    "ruins"
+  ],
+  "location": "Bramblewood, north of Tagmira",
+  "access_difficulty": "difficult",
+  "recommended_level": "2-4",
+  "estimated_sessions_min": 1,
+  "estimated_sessions_max": 3,
+  "overview": {
+    "what_it_is": "A functioning undead temple-complex preserving the rites and hierarchy of the old gods, now led by Zimru, a 300-year-old undead hierophant. Contains the Sphere — a divine communion device now powered by sacrifice.",
+    "why_it_exists": "Built in the age of the old gods; its undead inhabitants refused to abandon it when the gods went silent. The Bramblewood was grown by the old gods as a living perimeter.",
+    "current_state": "Functional and alert. The first orc sacrifice was completed; the Sphere is active. Zimru will press the party for more sacrifices. Maedra has newly joined as Zimru's consort and is regarded as a prophet by the undead. The undead know about the Bronze Host threat but cannot project force outside the Bramblewood.",
+    "historical_context": "The temple served willing sacrifices to Enki, Ninhursag, and the Annunaki pantheon. The undead here are former priests and initiates who chose to remain as custodians. See the Ghoul Theologian's lecture for their theological self-justification."
+  },
+  "access_challenges": {
+    "physical": [
+      "Bramblewood thorns and undead flora",
+      "Hollow Boars patrol near the temple"
+    ],
+    "magical": [
+      "Black Cantors suppress divine magic in 30' radius",
+      "Bramblewood encounters before reaching temple"
+    ],
+    "political": [
+      "The undead recognize the party as allies — but Zimru will judge any breach of the alliance severely"
+    ],
+    "environmental": [
+      "Difficult terrain",
+      "necrotic resonance throughout"
+    ],
+    "temporal": "The undead lose consciousness when straying from the temple unless they pay a high magical cost — they cannot escort the party or intervene outside"
+  },
+  "known_dangers": {
+    "creatures": [
+      "Hollow Boars",
+      "Pale Remnants",
+      "Black Cantors",
+      "Ossuary Confessors",
+      "Threnody Wights",
+      "Skeletal Servitors",
+      "Velric the Apologetic Wight (wandering)",
+      "Flesh-Splice Automatons"
+    ],
+    "traps": [
+      "Grasping Brambleheart (entangle)",
+      "Withered Thornbush (poison)",
+      "Pulsing Bloomvine (acid)"
+    ],
+    "environmental_hazards": [
+      "Necrotic resonance",
+      "Cradle Mound sleep effect",
+      "Torch of the Last Vigil (undead tracking)"
+    ],
+    "magical_hazards": [
+      "Black Cantor Inverted Hymn",
+      "Spinal Vat contact effects",
+      "Hanging Psalm Scrolls (1d20 table)"
+    ],
+    "unknown_threats": [
+      "Velric's warning: 'Zimru-Irkala has foreseen it — in the Sphere — YOU ARE IN GREAT DANGER'"
+    ]
+  },
+  "rewards": {
+    "treasure": [
+      "Eight Jars in Necromancy Chamber (including Black Blood/Potion of Healing, Stoneflower Extract/Potion of Undead Control, Distilled Marrow/Potion of Extra-Healing)",
+      "Necrotic scalpel (silvered dagger) in Storeroom",
+      "Clasp of Forgotten Names (Velric)",
+      "Minor relics throughout catacombs"
+    ],
+    "knowledge": [
+      "Sphere operation (Book 5: Who Knees Before the Mantle Gold)",
+      "True names of guardian undead (Book 10)",
+      "Bramblewood origins (Book 13: Thorn-Bound Covenant)",
+      "Sphere-linkage map fragment (Lentigus)"
+    ],
+    "magical_items": [
+      "Thorn dagger +1, +3 vs living (Cultivar chamber)",
+      "Chamber of the Cultivar ritual diagram (Manual of Golems, lignin)"
+    ],
+    "strategic_value": [
+      "Alliance with Zimru provides intelligence via the Sphere",
+      "Undead cannot help against orcs directly but can advise",
+      "Maedra may be able to relay information about Tagmira"
+    ],
+    "reputation_gains": [
+      "Continued good standing with Zimru if sacrifice obligations are met"
+    ]
+  },
+  "factions_interested": {
+    "zimru_and_undead": {
+      "interest_level": "obsessed",
+      "goals": "Keep the Sphere running via sacrifice. Recruit more Tagmirans to undeath. Preserve the temple. Guide what remains of humanity from the Bramblewood.",
+      "resources_committed": "The entire temple garrison",
+      "knowledge_level": "Full — they live here"
+    },
+    "bronze_host_orcs": {
+      "interest_level": "aware",
+      "goals": "Avoid the Bramblewood. The orcs fear it and give it wide berth — one reason they push northwest rather than directly at Tagmira.",
+      "resources_committed": "None directed at the temple",
+      "knowledge_level": "They know something terrible lives there"
+    }
+  },
+  "local_knowledge": {
+    "common_rumors": [
+      "The Bramblewood walks at night — shadows that move wrong.",
+      "Anyone who enters the wood alone doesn't come back the same.",
+      "Old Maedra went in and never came out."
+    ],
+    "specialist_knowledge": {
+      "enni_the_ash_wife": {
+        "cost_to_acquire": "Genuine respect and something she values",
+        "accuracy": "High — she has lived near it her whole life",
+        "information": [
+          "The wood was not always like this",
+          "Something in there remembers the old gods",
+          "Maedra knew more than she ever said"
+        ]
+      },
+      "the_bound_confessor_skull": {
+        "cost_to_acquire": "Roll on 'What It Wants' table",
+        "accuracy": "High but cryptic",
+        "information": [
+          "Password of the Gate",
+          "True names of guardians",
+          "Safest route to the inner sanctum"
+        ]
+      }
+    },
+    "forbidden_knowledge": [
+      "The Sphere shows Zimru things — including a great danger coming for the party (Velric's warning). What this danger is has not yet been revealed."
+    ]
+  },
+  "current_session_hooks": {
+    "zimru_will_want": [
+      "A full account of the orc sacrifice — who, how, what rites were observed",
+      "Commitment to arranging a second sacrifice. The orcs northwest of Tagmira are the obvious target — this aligns with the party's own interest in stopping the Bronze Host",
+      "Information about what the party observed in Caelrun and on the road"
+    ],
+    "maedra_factor": "The party will encounter her transformed for the first time (or again, if they have already). Her reception of them will be complex — she chose this, but she remembers them.",
+    "sphere_revelation": "Zimru may show the party something in the Sphere — either the Bronze Host's movements, or the vague danger Velric warned about, depending on what serves the story."
+  },
+  "campaign_integration": {
+    "nearest_settlement": "tagmira"
+  }
+}

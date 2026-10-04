@@ -285,6 +285,12 @@
       "miles": 18,
       "direction": "E",
       "path": "luric-road"
+    },
+    {
+      "settlement": "telvari",
+      "miles": 9,
+      "direction": "N",
+      "path": "telvari-track"
     }
   ],
   "location": {

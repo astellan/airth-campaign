@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schema/settlement.schema.json",
+  "id": "salmura",
+  "name": "Salmura",
+  "status": "stub",
+  "type": "steading",
+  "tagline": "Windswept fish-drying steading, smoke always rising from the racks.",
+  "region": "Luric Marches",
+  "parent": "caelrun",
+  "kind": "resource",
+  "why_here": "Wind and room for the drying racks.",
+  "population": {
+    "total": 30,
+    "mix": "2 families."
+  },
+  "exports_to_parent": [
+    "Dried fish",
+    "Smoked fish",
+    "Fish jerky",
+    "Salted roe"
+  ],
+  "humanoid_tolerance": "none",
+  "threat_proximity": "cautious"
+}

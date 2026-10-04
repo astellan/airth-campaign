@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schema/settlement.schema.json",
+  "id": "carvoal",
+  "name": "Carvoal",
+  "status": "stub",
+  "type": "steading",
+  "tagline": "Smoky charcoal-burners' steading at the swamp edge, closest to the lizard-man patrols.",
+  "region": "Luric Marches",
+  "parent": "caelrun",
+  "kind": "noxious_trade",
+  "why_here": "Charcoal kilns and swamp-edge timber, too smoky for the village.",
+  "population": {
+    "total": 25,
+    "mix": "2 families."
+  },
+  "exports_to_parent": [
+    "Charcoal",
+    "Hardwood timber",
+    "Ash (for soap-making)"
+  ],
+  "humanoid_tolerance": "low",
+  "threat_proximity": "dangerous"
+}

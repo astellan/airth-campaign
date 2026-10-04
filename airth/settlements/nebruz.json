@@ -1,269 +1,430 @@
 {
+  "$schema": "../../schema/settlement.schema.json",
   "id": "nebruz",
   "name": "Nebruz",
+  "status": "ready",
   "type": "village",
+  "tagline": "Fugitive stilt-village in the swamp, where justice is swift and the alligators are fed twice a day.",
   "region": "Luric Marches",
-  "location": {
-    "description": "Western bank of the river through the swamp; accessible via the Caelrun swamp path.",
-    "terrain": "swamp",
-    "travel_times": {
-      "from_caelrun": "half-day via swamp path"
-    }
-  },
   "population": {
     "total": 200,
-    "character": "Fugitives, escaped slaves, failed merchants, desperate adventurers. Gruff, closed-mouthed, fiercely communal when threatened. Outsiders called 'dryboots.'",
+    "mix": "Fugitives, escaped slaves, failed merchants, desperate adventurers. Mostly men; few children.",
     "demographics": "Predominantly human. Heavily male (~4:1). Fewer than a dozen children. Mature adults; young leave, old do not survive."
   },
-  "physical": {
-    "construction": "Wood pilings over mud; a few buildings on dry hummocks. Brick for sturdier structures. Reed-thatched roofs. Boardwalks average 3 ft above ground; rush brands and coal braziers after dark.",
-    "atmosphere": "Grey-green moss on blackened timbers. Witch's beard in the trees. Tea-brown water. Frogs, and screams from the swamp after nightfall."
+  "ruler": "Phaid Torngrasp, the Marsh-Hand: elected mayor and magistrate.",
+  "faiths": [
+    "None in public; the temple is shuttered by the Marsh-Hand's decree."
+  ],
+  "strangers": "Called dryboots, and at a disadvantage before the Marsh-Hand.",
+  "equipment": "No posted prices at Swamp Rat Provisions; everything is haggled.",
+  "palette": {
+    "constants": {
+      "far": [
+        "watchtowers on 20′ posts in a half-ring",
+        "witch's beard hanging from the trees"
+      ],
+      "near": [
+        "quicksand fields",
+        "tea-brown water",
+        "spiked pits on the approaches"
+      ],
+      "threshold": [
+        "boardwalks 3′ above the mud",
+        "the harbor quays"
+      ],
+      "leaving": [
+        "mud to the knee",
+        "the watchtowers watching you go"
+      ]
+    },
+    "by_time": {
+      "within": {
+        "dawn": [
+          "mist on the water",
+          "the fish house buying the catch"
+        ],
+        "day": [
+          "haggling at Swamp Rat Provisions",
+          "grey-green moss on blackened timbers"
+        ],
+        "dusk": [
+          "the alligator feeding, 1sp to watch"
+        ],
+        "night": [
+          "rush brands and coal braziers",
+          "frogs",
+          "screams from the swamp"
+        ]
+      }
+    },
+    "seasons": {
+      "winter": [
+        "cold mist",
+        "coal braziers burning all day"
+      ],
+      "spring": [
+        "water high under the boardwalks",
+        "alligators mating; keep off the edges"
+      ],
+      "summer": [
+        "leeches in every pool",
+        "the fish house stink"
+      ],
+      "autumn": [
+        "hide trade at Meat & Skins",
+        "froggish-folk bringing mead and honeycomb"
+      ]
+    },
+    "situations": [
+      {
+        "name": "Sermoner Peryl returns",
+        "when": "every two weeks",
+        "descriptors": [
+          "a small boat at the landing",
+          "quiet singing behind closed shutters"
+        ]
+      },
+      {
+        "name": "An execution",
+        "when": "as sentenced",
+        "descriptors": [
+          "the whole village at the alligator pit",
+          "a plank and spears"
+        ]
+      }
+    ]
   },
-  "government": {
-    "marsh_hand": {
-      "name": "Phaid Torngrasp",
-      "title": "Marsh-Hand",
-      "role": "Combined mayor and magistrate. Elected by popular support. Holds court at his residence; no formal village hall.",
-      "class_level": "F5"
+  "itself": [
+    {
+      "title": "Swift justice",
+      "text": "There are no long trials and no prisons. The Marsh-Hand judges, and death sentences end at the alligator pit. Dryboots are at a disadvantage in any dispute."
     },
-    "sentinel": {
-      "name": null,
-      "title": "Sentinel",
-      "role": "Sheriff and captain of watch. Commands 10 enforcers.",
-      "class_level": null
+    {
+      "title": "The murkwatch",
+      "text": "Every able-bodied adult serves 2 shifts a month on watch, chosen by lottery, and failing to serve is a fineable offence."
     },
-    "enforcers": {
-      "count": 10,
-      "equipment": "Ring mail, cudgels, short swords, manacles."
+    {
+      "title": "Peace with the swamp",
+      "text": "A non-aggression treaty with the lizard-men holds, and their burial mounds are inviolable. The froggish-folk, governed by the lizard-men, trade mead and honeycomb."
     },
-    "law": "Swift justice; no prolonged trials or incarceration. Dryboots structurally disadvantaged before the Marsh-Hand."
+    {
+      "title": "Smugglers' hub",
+      "text": "Smuggling and private deals are the real trade. The warehouse keepers are underpaid and take bribes."
+    }
+  ],
+  "encounters": {
+    "day": [
+      "**Gerum o' the Spike** feeds the alligators while a crowd pays 1sp to watch.",
+      "**Dandal the Shaver** haggles a stranger to exhaustion.",
+      "A froggish-folk trader poles in with mead and honeycomb.",
+      "A **venomous snake** lies across the boardwalk; locals step over it.",
+      "**2 enforcers** march a manacled dryboot to the Marsh-Hand.",
+      "**Kalo the Mad** begs at the fish house door."
+    ],
+    "night": [
+      "Screams from the swamp, and nobody looks up.",
+      "A boat ties up at the warehouses without lights.",
+      "**1d4 giant river rats** nose through the rubbish under the boardwalk.",
+      "The ship's bell rings at the Painted Frog, and enforcers run across the street.",
+      "**Will-o'-wisps** drift beyond the quicksand.",
+      "Nobody crosses the Punishment Post plaza after dark."
+    ]
   },
+  "response": {
+    "watch": "10 enforcers in ring mail with cudgels and short swords, under the Sentinel.",
+    "arrival_day": "1–2 patrolling enforcers within 1d6 minutes; the gong outside the Enforcers' Post summons the rest.",
+    "arrival_night": "As by day. The ship's bell at the Painted Frog brings enforcers from across the street.",
+    "reinforcements": "The murkwatch and an armed populace, who fight guerrilla-style from the swamp if overwhelmed.",
+    "bribery": null,
+    "strength_now": "10 enforcers, 12 watchtowers",
+    "strength_founding": null,
+    "strength": "Never a garrison and never quiet. Everyone here fights, because everyone here has run from something."
+  },
+  "locations": [
+    {
+      "id": "harbor",
+      "name": "Nebruz Harbor",
+      "type": "dock",
+      "look": "A muddy riverbank ringed by wooden quays, shallow from silt.",
+      "labels": {
+        "passage": "Docking 1sp a day for a skiff, 5sp per 10′ of length for larger boats, which moor at pilings and send cargo ashore by jollyboat."
+      }
+    },
+    {
+      "id": "painted-frog",
+      "name": "The Painted Frog",
+      "type": "inn",
+      "look": "A three-storey inn with a crude frog statue at the door.",
+      "labels": {
+        "common_room": "Curtained booths, often used for clandestine meetings. A ship's bell by the bar summons the enforcers.",
+        "services": "Common room 5cp a night; private room 1gp; meals 2cp–1gp; drinks 1cp–2gp. Specialty: mushroom-stuffed eel on wild rice."
+      }
+    },
+    {
+      "id": "mothers-boarding-house",
+      "name": "Mother's Boarding House",
+      "type": "inn",
+      "look": "A hulking three-storey brick building for transient labourers.",
+      "labels": {
+        "services": "5sp a week: cot, blanket, footlocker, and gruel and hard bread twice a day.",
+        "trouble": "Does not rent to adventurers."
+      }
+    },
+    {
+      "id": "enforcers-post",
+      "name": "Enforcers' Post",
+      "type": "civic",
+      "look": "A squat brick building with an iron gong outside.",
+      "labels": {
+        "interior": "An armory of 2 spare ring mail, cudgels, and 4 short swords, and a small holding cell.",
+        "staff": "1 enforcer always on duty, 1–2 on patrol; the gong summons the rest."
+      }
+    },
+    {
+      "id": "alligator-pit",
+      "name": "Alligator Pit",
+      "type": "civic",
+      "look": "A 30′ × 20′ water pit behind a 4′ fence, holding 4 female alligators of about 11′.",
+      "labels": {
+        "staff": "Gerum o' the Spike, warden.",
+        "fees": "Public feedings twice a day, 1sp to watch. Death sentences end here, by plank at spear-point."
+      }
+    },
+    {
+      "id": "swamp-rat-provisions",
+      "name": "Swamp Rat Provisions",
+      "type": "shop",
+      "look": "A cluttered general store.",
+      "labels": {
+        "wares": "Nails, jerky, arrows, knives, wood-axes.",
+        "prices": "None posted; everything is haggled."
+      },
+      "hidden": "A locked warehouse outbuilding behind the store."
+    },
+    {
+      "id": "bloated-leech",
+      "name": "The Bloated Leech",
+      "type": "inn",
+      "look": "A low-roofed tavern, dim and open-plan, with a plank-and-barrel bar.",
+      "labels": {
+        "services": "Dreg beer 1cp. Bog water 2gp a bottle: a fiery liquor from swamp tubers with a dead leech in each bottle, lucky if swallowed."
+      }
+    },
+    {
+      "id": "punishment-post",
+      "name": "Punishment Post",
+      "type": "landmark",
+      "look": "An 8′ denuded tree trunk in an earthen plaza that doubles as the village green.",
+      "labels": {
+        "custom": "Site of corporal punishment. Avoided after dark, because the executed are said to haunt it."
+      }
+    },
+    {
+      "id": "warehouses",
+      "name": "Warehouses",
+      "type": "shop",
+      "look": "Two large two-storey warehouses.",
+      "labels": {
+        "wares": "Space rented to river traders for goods in transit.",
+        "off_the_books": "One underpaid keeper each, open to bribes and regularly used by smugglers."
+      }
+    },
+    {
+      "id": "fish-house",
+      "name": "Fish House",
+      "type": "shop",
+      "look": "Buys the catch daily and salts, smokes, and packs it in the back.",
+      "labels": {
+        "prices": "Pays well for exotic catches: giant crayfish, swamp eels, giant crabs."
+      }
+    },
+    {
+      "id": "meat-and-skins",
+      "name": "Meat & Skins",
+      "type": "shop",
+      "look": "A butchery and tannery, with a smokehouse and stretching room at the back.",
+      "labels": {
+        "wares": "Meat, hides, and small leather goods.",
+        "prices": "Best prices for exotic hides: alligator, snake, swamp beasts."
+      }
+    },
+    {
+      "id": "sundries",
+      "name": "Sundries",
+      "type": "shop",
+      "look": "A shop signed in Common and Gnomish.",
+      "labels": {
+        "wares": "Dried herbs, pipeweed, exotic fungi, snake-oil medicines. Buys curiosities from adventurers.",
+        "off_the_books": "Narcotics, poisons, thieves' tools, and magical components: the worst-kept secret in Nebruz."
+      }
+    },
+    {
+      "id": "dorotas-cottage",
+      "name": "Dorota's Cottage",
+      "type": "residence",
+      "look": "A small house on the outskirts, closer to the swamp than the boardwalks.",
+      "labels": {
+        "inhabitants": "Dorota, the village healer and wise woman since the temple closed."
+      }
+    },
+    {
+      "id": "shuttered-temple",
+      "name": "Shuttered Temple",
+      "type": "temple",
+      "look": "A converted storehouse, closed by the Marsh-Hand's decree.",
+      "labels": {
+        "interior": "Empty; the furnishings are in warehouse storage.",
+        "populace": "A small congregation, every two weeks, when Sermoner Peryl returns."
+      }
+    },
+    {
+      "id": "arms-and-iron",
+      "name": "Arms & Iron",
+      "type": "shop",
+      "look": "The only stone building in Nebruz.",
+      "labels": {
+        "wares": "Ironwork, weapons, arrowheads, and ring and chain mail from bog iron.",
+        "prices": "Excellent work, held back by low-grade ore."
+      }
+    },
+    {
+      "id": "marsh-hands-residence",
+      "name": "Marsh-Hand's Residence",
+      "type": "civic",
+      "look": "A two-storey building that serves as village hall and Phaid's home.",
+      "labels": {
+        "interior": "Civic business on the ground floor; private chambers above.",
+        "staff": "Phaid is present 75% of the time by day, rarely after dark."
+      }
+    },
+    {
+      "id": "kalos-home",
+      "name": "Kalo the Mad's Home",
+      "type": "residence",
+      "look": "A poorly kept single-storey house.",
+      "labels": {
+        "inhabitants": "Kalo the Mad, who will not go out after dark."
+      }
+    }
+  ],
+  "trouble": [
+    "The renegade lizard-folk band that maimed Kalo is still loose in the swamp.",
+    "The temple's closure still divides the village, and Sermoner Peryl keeps coming back."
+  ],
+  "neighbors": [
+    {
+      "settlement": "caelrun",
+      "miles": 9,
+      "direction": "N",
+      "path": "nebruz-crossing",
+      "notes": "3 miles on foot through lizard-man swamp, then 6 miles by boat through the channels."
+    }
+  ],
   "economy": {
-    "primary": ["fishing", "crabbing", "shellfishing", "hunting", "trapping"],
-    "exports": ["tanned hides", "preserved meat", "swamp beast eggs", "bog iron", "exotic herbs"],
-    "imports": ["weapons", "fresh vegetables", "rugged clothing", "spices", "liquors", "coal", "salt", "lamp oil"],
+    "primary": [
+      "fishing",
+      "crabbing",
+      "shellfishing",
+      "hunting",
+      "trapping"
+    ],
+    "exports": [
+      "tanned hides",
+      "preserved meat",
+      "swamp beast eggs",
+      "bog iron",
+      "exotic herbs"
+    ],
+    "imports": [
+      "weapons",
+      "fresh vegetables",
+      "rugged clothing",
+      "spices",
+      "liquors",
+      "coal",
+      "salt",
+      "lamp oil"
+    ],
     "secondary": "Smuggling hub; private criminal and political dealings.",
     "notable": "Honey and mead trade with the froggish-folk. Exotic herb market for alchemists and sorcerers."
   },
-  "defenses": {
-    "natural": "Swamp terrain on landward side. Quicksand fields ring the village.",
-    "constructed": "12 watchtowers on 20-ft posts in a semi-circle. Spiked pits and deadfalls in the swamp approaches.",
-    "murkwatch": "Every able-bodied adult serves 2 shifts/month by lottery. Failure is a fineable offense.",
-    "militia": "Armed populace; veteran warriors and a few magic-users. Guerilla tactics if overwhelmed.",
-    "allies": [
+  "dm_notes": {
+    "notes": "Effemi Nuha's class_level (MU9) is a concealed identity — she presents as a simple smith. Dorota knows the truth; Effemi does not know Dorota knows. Wilem Stonenose is hiding from a former thieves' guild and will not respond to Thieves' Cant. Sermoner Peryl's small congregation is unnamed. The renegade lizard-folk band that mutilated Kalo is distinct from the treaty tribes to the northwest and is still at large in the swamp.",
+    "session_history": [
       {
-        "faction": "lizard-men",
-        "territory": "entire swamp",
-        "basis": "non-aggression treaty; burial mounds inviolable"
-      },
-      {
-        "faction": "froggish-folk",
-        "territory": "entire swamp",
-        "basis": "inherently unthreatening and governed by lizard-men; active mead and honeycomb trade"
+        "session": 27,
+        "in_game_dates": "Ragaia 13-14",
+        "notes": "Party overnighted in Nebruz en route from Caelrun to Leeandra's hut. No encounters detailed."
       }
-    ]
-  },
-  "hazards": {
-    "within_village": [
-      "venomous snakes",
-      "giant river rats",
-      "alligators (mating season)",
-      "disease-carrying leeches in pools"
     ],
-    "swamp_approaches": [
-      "will-o-wisps (confirmed session 27)",
-      "bottomless fens",
-      "reptilian predators"
-    ]
-  },
-  "associated_npcs": [
-    {
-      "name": "Leeandra",
-      "role": "Swamp priestess; lizard-man diplomatic keystone for the Luric marches",
-      "location": "Swamp, several hours southwest of Nebruz",
-      "npc_ref": "airth_npcs.json"
-    }
-  ],
-  "locations": [
-    {
-      "id": 1,
-      "name": "Nebruz Harbor",
-      "type": "harbor",
-      "description": "Muddy riverbank ringed by wooden quays. Shallow from silt buildup; large boats moor at pilings and send cargo ashore by jollyboat.",
-      "services": "Docking fees: 1 sp/day (skiff), 5 sp per 10 ft of length (larger vessels)."
-    },
-    {
-      "id": 2,
-      "name": "The Painted Frog",
-      "type": "inn",
-      "description": "Three-story inn. Crude frog statue at the door. Curtained booths frequently used for clandestine meetings. Ship's bell by the bar summons the enforcers from across the street.",
-      "services": "Common room 5 cp/night; private room 1 gp/night. Meals 2 cp–1 gp. Drinks 1 cp–2 gp. Specialty: mushroom-stuffed eel on wild rice.",
-      "npc": {
-        "name": "Verfred Oot",
-        "role": "Proprietor",
-        "class_level": "F1"
-      }
-    },
-    {
-      "id": 3,
-      "name": "Mother's Boarding House",
-      "type": "lodging",
-      "description": "Hulking three-story brick building for transient laborers and those who cannot afford the inn. Does not rent to adventurers.",
-      "services": "5 sp/week: cot, blanket, footlocker, two meals of gruel and hard bread daily.",
-      "npc": {
-        "name": "Borgul Ramshead",
-        "role": "Proprietor ('Mother')",
-        "class_level": "F1"
-      }
-    },
-    {
-      "id": 4,
-      "name": "Enforcers' Post",
-      "type": "civic",
-      "description": "Squat brick building. One enforcer always on duty; one to two on patrol. Armory: 2 spare ring mail sets, cudgels, 4 short swords. Small holding cell. Iron gong outside summons all enforcers."
-    },
-    {
-      "id": 5,
-      "name": "Alligator Pit",
-      "type": "civic",
-      "description": "30x20 ft water pit enclosed by a 4-ft wooden fence. Home to four female alligators (~11 ft each). Death sentences carried out by plank-walk at spear-point.",
-      "services": "Public feedings twice daily; 1 sp to observe.",
-      "npc": {
-        "name": "Gerum o' the Spike",
-        "role": "Enforcer and alligator warden; lost his left hand, replaced with a metal hook",
-        "class_level": "F3"
-      }
-    },
-    {
-      "id": 6,
-      "name": "Swamp Rat Provisions",
-      "type": "trade",
-      "description": "Cluttered general store. No posted prices — all purchases require haggling. Stocks nails, jerky, arrows, knives, wood-axes. Locked warehouse outbuilding (6a).",
-      "npc": {
-        "name": "Dandal the Shaver",
-        "role": "Proprietor",
-        "class_level": "T2"
-      }
-    },
-    {
-      "id": 7,
-      "name": "The Bloated Leech",
-      "type": "tavern",
-      "description": "Low-roofed, open-plan interior. Plank-and-barrel bar. Poor illumination. Specialty: 'bog water,' a fiery liquor fermented from swamp tubers; dead leech in each bottle, said to bring good fortune if swallowed.",
-      "services": "Dreg beer 1 cp; bog water 2 gp/bottle.",
-      "npc": {
-        "name": "Adlaba Kurn",
-        "role": "Proprietor; eldest son Gerly (F2) serves as bouncer",
+    "government": {
+      "marsh_hand": {
+        "name": "Phaid Torngrasp",
+        "title": "Marsh-Hand",
+        "role": "Combined mayor and magistrate. Elected by popular support. Holds court at his residence; no formal village hall.",
+        "class_level": "F5"
+      },
+      "sentinel": {
+        "name": null,
+        "title": "Sentinel",
+        "role": "Sheriff and captain of watch. Commands 10 enforcers.",
         "class_level": null
-      }
+      },
+      "enforcers": {
+        "count": 10,
+        "equipment": "Ring mail, cudgels, short swords, manacles."
+      },
+      "law": "Swift justice; no prolonged trials or incarceration. Dryboots structurally disadvantaged before the Marsh-Hand."
     },
-    {
-      "id": 8,
-      "name": "Punishment Post",
-      "type": "civic",
-      "description": "Eight-foot denuded tree trunk in an earthen plaza. Site of corporal punishment; doubles as village green. Avoided after dark — believed haunted by the spirits of those executed here."
-    },
-    {
-      "id": 9,
-      "name": "Warehouses",
-      "type": "trade",
-      "description": "Two large two-story buildings. River traders rent space for goods in transit. Single underpaid keeper per warehouse — susceptible to bribes. Regularly exploited by smugglers.",
-      "count": 2
-    },
-    {
-      "id": 10,
-      "name": "Fish House",
-      "type": "trade",
-      "description": "Buys fresh catches daily; salts, smokes, and packs fish for distant markets in the rear. Pays well for exotic catches: giant crayfish, swamp eels, giant crabs.",
-      "npc": {
-        "name": "Schall the Honest",
-        "role": "Proprietor; operates with four apprentices",
-        "class_level": null
-      }
-    },
-    {
-      "id": 11,
-      "name": "Meat & Skins",
-      "type": "trade",
-      "description": "Combined butchery and tannery. Smokehouse and stretching room in the rear. Best earnings from exotic hides: alligator, snake, swamp critters. Sidelines in small leather goods.",
-      "npcs": [
-        {"name": "Sorga", "role": "Butcher", "class_level": null},
-        {"name": "Etienne", "role": "Tanner", "class_level": null}
+    "hazards": {
+      "within_village": [
+        "venomous snakes",
+        "giant river rats",
+        "alligators (mating season)",
+        "disease-carrying leeches in pools"
+      ],
+      "swamp_approaches": [
+        "will-o-wisps (confirmed session 27)",
+        "bottomless fens",
+        "reptilian predators"
       ]
     },
-    {
-      "id": 12,
-      "name": "Sundries",
-      "type": "trade",
-      "description": "Dried herbs, pipeweed, exotic fungi, snake-oil medicines. Buys curiosities from adventurers. Sign in Common and Gnomish. Under-the-counter trade in narcotics, poisons, thieves' tools, and magical components is the worst-kept secret in Nebruz.",
-      "npc": {
-        "name": "Wilem Stonenose",
-        "role": "Proprietor",
-        "class_level": "T2"
+    "associated_npcs": [
+      {
+        "name": "Leeandra",
+        "role": "Swamp priestess; lizard-man diplomatic keystone for the Luric marches",
+        "location": "Swamp, several hours southwest of Nebruz",
+        "npc_ref": "airth_npcs.json"
+      }
+    ],
+    "location": {
+      "description": "Western bank of the river through the swamp; accessible via the Caelrun swamp path.",
+      "terrain": "swamp",
+      "travel_times": {
+        "from_caelrun": "half-day via swamp path"
       }
     },
-    {
-      "id": 13,
-      "name": "Dorota's Cottage",
-      "type": "residence",
-      "description": "Small house on the village outskirts — seemingly isolated, but Dorota is deeply respected. Village healer and wise woman since the temple closed. Friend of Leeandra.",
-      "npc": {
-        "name": "Dorota",
-        "role": "Village wise woman and healer",
-        "class_level": "MU4/D4"
-      }
+    "physical": {
+      "construction": "Wood pilings over mud; a few buildings on dry hummocks. Brick for sturdier structures. Reed-thatched roofs. Boardwalks average 3 ft above ground; rush brands and coal braziers after dark.",
+      "atmosphere": "Grey-green moss on blackened timbers. Witch's beard in the trees. Tea-brown water. Frogs, and screams from the swamp after nightfall."
     },
-    {
-      "id": 14,
-      "name": "Shuttered Temple",
-      "type": "building",
-      "description": "A converted storehouse closed by Marsh-Hand decree after an itinerant cleric's aggressive proselytizing alienated the village. Furnishings in warehouse storage. The cleric returns every two weeks to hold private services for his small congregation.",
-      "npc": {
-        "name": "Sermoner Peryl",
-        "role": "Itinerant cleric; travels the river by small boat",
-        "class_level": "C1"
-      }
-    },
-    {
-      "id": 15,
-      "name": "Arms & Iron",
-      "type": "trade",
-      "description": "The only stone building in Nebruz. Produces ironwork, weapons, arrowheads, and ring and chainmail from bog iron. Work is excellent; final products suffer from low-grade ore. Proprietor is the most taciturn resident of an already taciturn village.",
-      "npc": {
-        "name": "Effemi Nuha",
-        "role": "Smith",
-        "class_level": "MU2"
-      }
-    },
-    {
-      "id": 16,
-      "name": "Marsh-Hand's Residence",
-      "type": "civic",
-      "description": "Two-story building serving as both village hall and Phaid's home. Ground floor for civic duties; upper floor private chambers. 75% chance Phaid is present during daylight. Rarely available after dark.",
-      "npc": {
-        "name": "Phaid Torngrasp",
-        "role": "Marsh-Hand",
-        "class_level": "F3"
-      }
-    },
-    {
-      "id": 17,
-      "name": "Kalo the Mad's Home",
-      "type": "residence",
-      "description": "Poorly maintained single-story house. Kalo lost both legs to renegade lizard-folk who tortured and partially ate him; he was rescued by Leeandra. He has never recovered mentally. He begs scraps from the inn, fish house, and private homes, and will not leave after dark — he is convinced his severed legs return each night to collect the rest of him.",
-      "npc": {
-        "name": "Kalo Xyln",
-        "role": "Former hunter; permanent invalid",
-        "class_level": null
-      }
+    "defenses": {
+      "natural": "Swamp terrain on landward side. Quicksand fields ring the village.",
+      "constructed": "12 watchtowers on 20-ft posts in a semi-circle. Spiked pits and deadfalls in the swamp approaches.",
+      "murkwatch": "Every able-bodied adult serves 2 shifts/month by lottery. Failure is a fineable offense.",
+      "militia": "Armed populace; veteran warriors and a few magic-users. Guerilla tactics if overwhelmed.",
+      "allies": [
+        {
+          "faction": "lizard-men",
+          "territory": "entire swamp",
+          "basis": "non-aggression treaty; burial mounds inviolable"
+        },
+        {
+          "faction": "froggish-folk",
+          "territory": "entire swamp",
+          "basis": "inherently unthreatening and governed by lizard-men; active mead and honeycomb trade"
+        }
+      ]
     }
-  ],
-  "dm_notes": "Effemi Nuha's class_level (MU9) is a concealed identity — she presents as a simple smith. Dorota knows the truth; Effemi does not know Dorota knows. Wilem Stonenose is hiding from a former thieves' guild and will not respond to Thieves' Cant. Sermoner Peryl's small congregation is unnamed. The renegade lizard-folk band that mutilated Kalo is distinct from the treaty tribes to the northwest and is still at large in the swamp.",
-  "session_history": [
-    {
-      "session": 27,
-      "in_game_dates": "Ragaia 13-14",
-      "notes": "Party overnighted in Nebruz en route from Caelrun to Leeandra's hut. No encounters detailed."
-    }
-  ]
+  }
 }

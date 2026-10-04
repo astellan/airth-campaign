@@ -1,0 +1,167 @@
+{
+  "$schema": "../../schema/dungeon.schema.json",
+  "id": "bronze-host-territory",
+  "name": "Bronze Host Orc Territory (Northwest Hunting Grounds)",
+  "type": [
+    "wilderness"
+  ],
+  "location": "Northwest of Tagmira, beyond the forest hunting grounds",
+  "access_difficulty": "moderate",
+  "recommended_level": "2-3",
+  "estimated_sessions_min": 1,
+  "estimated_sessions_max": 2,
+  "overview": {
+    "what_it_is": "The territory the Bronze Host orcs are seizing from Tagmira's hunters, backed by Pact-Render fey who supply them with bronze weapons and equipment via the Bronzeworking Triangle.",
+    "why_it_exists": "The Pact-Render has made a bargain with the orc tribe — bronze weapons and equipment in exchange for territorial expansion. Control of the hunting grounds is the first step toward an assault on Tagmira.",
+    "current_state": "Two months since the party drove back the initial raid. All named orc leaders survived. Equipment significantly upgraded: bronze spears, laminated wooden armor. The Bronzeworking Triangle (Ore Pit, Crucible Glen, Mule Paths) is operational. The undead know but cannot act.",
+    "historical_context": "These orcs were already territorial but lacked the equipment and coordination for a sustained campaign. The Pact-Render fey changed that equation."
+  },
+  "known_dangers": {
+    "creatures": [
+      "Orc Warriors of the Bronze Host (HD 1+1, bronze spears, coordinated thrust)",
+      "Orc Champions (HD 3, magical fey-carved spears, command voice)",
+      "Brat-Kho the Voice That Bends (Script-Stone of Persuasion)",
+      "Mollgarn the Unfailing (Ashmark of Preservation)",
+      "Ulzhar Bone-Tongue (Pendant of the Hollow Tongue)",
+      "Wane-Faced overseers at the Ore Pit",
+      "Possible Shee emissary on the Mule Paths"
+    ],
+    "traps": [
+      "Ambush positions in the ravine terrain",
+      "Hidden cache sites on the Mule Paths"
+    ],
+    "environmental_hazards": [
+      "Rough hill terrain",
+      "Narrow ravines favoring orc ambush"
+    ],
+    "magical_hazards": [
+      "Fey bronze weapons ignore cold iron wards",
+      "Pact-Render shee have unknown fey powers"
+    ],
+    "unknown_threats": [
+      "The Shee emissary's capabilities and schedule",
+      "Whether the Pact-Render itself can be engaged diplomatically or only opposed"
+    ]
+  },
+  "rewards": {
+    "treasure": [
+      "Bronze weapons (valuable, fey-crafted)",
+      "Relic items carried by the three champions",
+      "Possible contents of the Bronzeworking Triangle caches"
+    ],
+    "knowledge": [
+      "Understanding the Pact-Render's involvement",
+      "Location of the Bronzeworking Triangle"
+    ],
+    "magical_items": [
+      "Script-Stone of Persuasion (Brat-Kho)",
+      "Ashmark of Preservation (Mollgarn)",
+      "Pendant of the Hollow Tongue (Ulzhar)"
+    ],
+    "strategic_value": [
+      "Destroying or disrupting the Bronzeworking Triangle would collapse the orc military advantage",
+      "Eliminating the orc leaders would break the Host's coordination",
+      "Capturing the Shee emissary could provide leverage against the Pact-Render"
+    ],
+    "reputation_gains": [
+      "Tagmira's gratitude and trust if the hunting grounds are secured",
+      "Potential second sacrifice for Zimru if orc leaders are taken alive or killed appropriately"
+    ]
+  },
+  "factions_interested": {
+    "tagmira_militia": {
+      "interest_level": "investigating",
+      "goals": "Recover the northwest hunting grounds before winter. Do not yet grasp the Pact-Render dimension.",
+      "resources_committed": "Hadran can muster 10 militia + 6 veterans if convinced the threat is serious",
+      "knowledge_level": "Knows orcs are better equipped than before. Does not know about the Bronzeworking Triangle or the Shee."
+    },
+    "zimru_and_undead": {
+      "interest_level": "aware",
+      "goals": "The orcs make excellent sacrifice candidates. Cannot act directly. Will strongly encourage the party to address the threat — it serves both Tagmira and the Sphere.",
+      "resources_committed": "Intelligence via the Sphere only",
+      "knowledge_level": "High — the Sphere shows them the orc movements"
+    },
+    "pact_render": {
+      "interest_level": "actively_pursuing",
+      "goals": "Use the orcs as proxies to pressure Tagmira. Keep the Bronzeworking Triangle secret and operational.",
+      "resources_committed": "Shee emissary, bronze supply chain, Wane-Faced overseers",
+      "knowledge_level": "Full awareness of their own operation; does not know about the undead alliance"
+    }
+  },
+  "bronzeworking_triangle": {
+    "hex_1_ore_pit": {
+      "description": "Rocky hills with copper and tin extraction. Slave pens cut into stone. Wane-Faced (ogre) overseers and orc enforcers. Minor fey shrine to maintain the Pact.",
+      "encounters": [
+        "Collapsing mine shaft",
+        "Desperate slave escape attempt",
+        "Ore-smuggling gnoll"
+      ]
+    },
+    "hex_2_crucible_glen": {
+      "description": "Forested ravine with hidden charcoal kilns and clay forges. Portune-controlled, ritualized. Engraving stations where Pact symbols are inscribed on weapons.",
+      "encounters": [
+        "Rune-bound tools",
+        "Cursed molds",
+        "Overseer duel",
+        "Hidden forge-spirit"
+      ]
+    },
+    "hex_3_mule_paths": {
+      "description": "Foggy pine forest with disguised pack trails and hidden caches of bronze weapons.",
+      "encounters": [
+        "Abandoned shipment",
+        "Cursed buckler",
+        "Party mistaken for saboteurs",
+        "Shee emissary appearance"
+      ]
+    }
+  },
+  "orc_leaders": {
+    "brat_kho": {
+      "title": "Brat-Kho, the Voice That Bends",
+      "relic": "Script-Stone of Persuasion",
+      "ac": 4,
+      "hd": 3,
+      "dmg": "1d8+1",
+      "special": [
+        "Echo of Authority",
+        "Vocal Clarity",
+        "+2 reaction"
+      ],
+      "morale": 10
+    },
+    "mollgarn": {
+      "title": "Mollgarn the Unfailing",
+      "relic": "Ashmark of Preservation",
+      "ac": 3,
+      "hd": 3,
+      "dmg": "1d10",
+      "special": [
+        "Delay Poison",
+        "Forget"
+      ],
+      "morale": 11
+    },
+    "ulzhar": {
+      "title": "Ulzhar Bone-Tongue",
+      "relic": "Pendant of the Hollow Tongue",
+      "ac": 5,
+      "hd": 3,
+      "dmg": "1d6",
+      "special": [
+        "Comprehend Languages",
+        "Command Word",
+        "Binding Oath"
+      ],
+      "morale": 9
+    }
+  },
+  "captive_witness_incident": {
+    "summary": "The party previously defeated a Bronze Host force and took two orc captives to Tagmira to witness the Trial by Combat at the Circle of Cossus. The intent was intimidation — show the orcs what Tagmira does to its enemies.",
+    "possible_backfire": "The captives observed Tagmira's current defenses, population, and the fact that the village is relying on outside adventurers. This intelligence, brought back to the Bronze Host, may have encouraged rather than deterred their escalation.",
+    "dm_notes": "The party is partly responsible for the Bronze Host's current boldness, however inadvertently. Zimru, watching through the Sphere, almost certainly noticed this."
+  },
+  "campaign_integration": {
+    "nearest_settlement": "tagmira"
+  }
+}

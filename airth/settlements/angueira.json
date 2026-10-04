@@ -1,0 +1,24 @@
+{
+  "$schema": "../../schema/settlement.schema.json",
+  "id": "angueira",
+  "name": "Angueira",
+  "status": "stub",
+  "type": "steading",
+  "tagline": "Secretive eel-trapping steading of a single superstitious family.",
+  "region": "Luric Marches",
+  "parent": "caelrun",
+  "kind": "family",
+  "why_here": "The eel runs, and trap techniques the family will not share.",
+  "population": {
+    "total": 20,
+    "mix": "1 family."
+  },
+  "exports_to_parent": [
+    "Live eels",
+    "Eel oil",
+    "Smoked eels",
+    "Eel leather"
+  ],
+  "humanoid_tolerance": "moderate",
+  "threat_proximity": "cautious"
+}
