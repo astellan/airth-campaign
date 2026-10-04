@@ -1,20 +1,29 @@
 {
-  "moniker": "Warden Keln",
+  "name": "Stravar Keln",
+  "moniker": "the Warden",
+  "role": "warden",
   "home": "Warden's Hall, Dravesa",
   "home_settlement": "dravesa",
+  "found": "Warden’s Hall, sharpening his knife at dusk.",
   "gender": "male",
   "faction": "independent",
-  "appearance": "Mid-50s, compact, precise. Jaw scar he doesn't discuss.",
-  "and_yet": "Former caravan guard — too rough for the job he does now.",
-  "wants": "Resolution before Rakhmoth arrives, without martyrs.",
-  "does_not_want": "Acting without evidence — expulsion makes martyrs.",
-  "oddly_also": "Keeps a private list of everyone who has traveled to the Mountain of Fire.",
   "thinks_with": "diplomacy",
-  "family": "Estranged wife in Orziben; three grown children he rarely sees.",
-  "self_image": "The man holding things together until someone wiser decides.",
-  "recreation": "Sharpens his knife at the end of every day whether it needs it or not.",
+  "appearance": "Mid-50s. Compact. Scar along the jaw.",
+  "and_yet": null,
+  "sayings": [
+    "Until someone wiser decides."
+  ],
+  "wants": "Resolution before Rakhmoth arrives, without martyrs.",
+  "does_not_want": "Acting without evidence.",
   "dreams": "Dravesa quiet enough that nobody needs a warden.",
-  "anecdotes": ["Talked a Bronze Host raiding party into leaving a steading unmolested with no weapons drawn."],
-  "tragedies": ["The wife left when he took this posting. He thought she'd come around."],
-  "pc_leverage": "Solid evidence on Savar → coin and a letter of passage for Orziben."
+  "oddly_also": "Keeps a private list of everyone who has traveled to the Mountain of Fire.",
+  "knows": "Caravan roads and who travels them.",
+  "offers": "Coin; passage to Orziben.",
+  "family": "Estranged wife in Orziben; three grown children he rarely sees.",
+  "anecdotes": [
+    "Talked a Bronze Host raiding party into leaving a steading unmolested with no weapons drawn."
+  ],
+  "tragedies": [
+    "The wife left when he took this posting. He thought she'd come around."
+  ]
 }

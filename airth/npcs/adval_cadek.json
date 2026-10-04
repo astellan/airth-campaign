@@ -1,20 +1,29 @@
 {
-  "moniker": "Adval Cadek",
+  "name": "Adval Cadek",
+  "moniker": null,
+  "role": "merchant",
   "home": "Cadek Merchant House, Dravesa",
   "home_settlement": "dravesa",
+  "found": null,
   "gender": "male",
   "faction": "independent",
-  "appearance": "50s, prosperous build gone soft with grief.",
-  "and_yet": "Still dressed well — hasn't stopped caring about appearances even now.",
+  "thinks_with": "guilt",
+  "appearance": "50s. Prosperous build gone soft.",
+  "and_yet": "Still dressed immaculately.",
+  "sayings": [
+    "I should have seen it."
+  ],
   "wants": "Proof that Savar sent his son to his death.",
   "does_not_want": "To hear that Jorun went willingly.",
-  "oddly_also": "Hasn't opened his warehouse in six weeks — losing money daily and doesn't care.",
-  "thinks_with": "guilt",
-  "family": "Wife Pemma, holding the household together; Jorun (son, missing, 21); two younger daughters.",
-  "self_image": "A father who failed to see what was happening.",
-  "recreation": "None, since Jorun left.",
   "dreams": "Jorun comes home.",
-  "anecdotes": ["Built the Cadek house from a single mule cart twenty years ago."],
-  "tragedies": ["Jorun left for the Mountain of Fire six weeks ago and has not returned."],
-  "pc_leverage": "Has money. Will hire the party. Is not wrong about what happened."
+  "oddly_also": "Warehouse shut six weeks. Losing money daily; doesn’t care.",
+  "knows": null,
+  "offers": "Coin, for proof.",
+  "family": "Wife Pemma, holding the household together; Jorun (son, missing, 21); two younger daughters.",
+  "anecdotes": [
+    "Built the Cadek house from a single mule cart twenty years ago."
+  ],
+  "tragedies": [
+    "Jorun left for the Mountain of Fire six weeks ago and has not returned."
+  ]
 }

@@ -12,12 +12,9 @@ ITINERANT = "itinerant"  # universal value for NPCs with no fixed settlement
 # Required fields
 # ---------------------------------------------------------------------------
 
-# Loosened during the v2 NPC migration: only fields present in both the legacy
-# and current schema. Restore to the schema's full required list once all
-# NPCs are migrated (see backlog).
 REQUIRED_FIELDS = [
-    "home", "home_settlement", "gender", "faction",
-    "appearance", "wants", "does_not_want", "thinks_with",
+    "name", "role", "home", "home_settlement", "gender", "faction",
+    "thinks_with", "appearance", "wants", "does_not_want",
 ]
 
 def test_required_fields_present(npcs):

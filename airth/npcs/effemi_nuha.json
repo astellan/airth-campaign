@@ -1,22 +1,27 @@
 {
+  "name": "Effemi Nuha",
   "moniker": null,
-  "home": "Arms & Iron smithy, Nebruz — the only stone building in the village",
+  "role": "smith",
+  "home": "Arms & Iron, Nebruz’s only stone building",
   "home_settlement": "nebruz",
+  "found": null,
   "gender": "female",
   "faction": "none",
-  "appearance": "Short human woman; corded arm muscles, close-cropped hair. Iron ring on right hand (enchanted against divination). Communicates in grunts and monosyllables.",
-  "and_yet": "MU9 — a former imperial wizard who forged enchanted blades for nobility. Presents entirely as a simple smith. Dorota knows; Effemi does not know Dorota knows.",
-  "wants": "Anonymity; her past buried; to keep smithing in peace",
-  "does_not_want": "Anyone from her former life finding her; any reason to reveal her magical abilities",
-  "oddly_also": null,
   "thinks_with": "pride",
-  "family": "Not established",
-  "self_image": null,
-  "recreation": null,
+  "appearance": "Short. Corded arms, cropped hair. Iron ring, right hand.",
+  "and_yet": null,
+  "sayings": [
+    "Mm. Two days."
+  ],
+  "wants": "Anonymity. Quiet smithing.",
+  "does_not_want": "Her past finding her.",
   "dreams": null,
+  "oddly_also": "9th-level magic-user, once imperial. The ring wards off divination.",
+  "knows": null,
+  "offers": "Fine blades.",
+  "family": null,
   "anecdotes": [],
   "tragedies": [
-    "A courtly coup stripped her of her imperial position and set magical and political rivals on her trail"
-  ],
-  "pc_leverage": "Ordinary circumstances will not move her; an overwhelming threat to Nebruz might force her hand; her smithwork is excellent despite low-grade bog iron"
+    "A court coup stripped her imperial post and set magical and political rivals on her trail."
+  ]
 }

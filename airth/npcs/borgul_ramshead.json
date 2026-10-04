@@ -1,20 +1,25 @@
 {
+  "name": "Borgul Ramshead",
   "moniker": "Mother",
+  "role": "boarding-house keeper",
   "home": "Mother's Boarding House, Nebruz",
   "home_settlement": "nebruz",
+  "found": null,
   "gender": "male",
   "faction": "independent",
-  "appearance": "Human male; towering, heavyset, former slaver",
-  "and_yet": null,
-  "wants": "Full rooms and no trouble",
-  "does_not_want": "Adventurers in his house",
-  "oddly_also": null,
   "thinks_with": "fists",
-  "family": "Not established",
-  "self_image": null,
-  "recreation": null,
+  "appearance": "Towering. Heavyset. Iron keyring at his belt.",
+  "and_yet": null,
+  "sayings": [
+    "No adventurers. Not under my roof."
+  ],
+  "wants": "Full rooms, no trouble.",
+  "does_not_want": "Adventurers under his roof.",
   "dreams": null,
+  "oddly_also": "Former slaver. Runs the cleanest house in Nebruz.",
+  "knows": null,
+  "offers": null,
+  "family": null,
   "anecdotes": [],
-  "tragedies": [],
-  "pc_leverage": "He does not rent to adventurers; bribery or a strong reputation in Nebruz might change this"
+  "tragedies": []
 }

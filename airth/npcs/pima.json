@@ -1,31 +1,36 @@
 {
+  "name": "Pima",
   "moniker": null,
+  "role": "foundling messenger",
   "home": "Tagmira",
   "home_settlement": "tagmira",
+  "found": "Talking to the mirror when she thinks she’s alone.",
   "gender": "female",
   "faction": "none",
-  "appearance": "Young orphan girl. Quiet, clever. One of the foundlings Brennar Hallan raised as messengers and servants. Wary of strangers — except Trebastos.",
-  "and_yet": "Never without a small hand mirror. Does not explain it.",
-  "wants": "The Bronze Host defeated; protection for Tagmira. To learn what the fairy in the mirror wants.",
-  "does_not_want": "Adults taking her mirror. Adults dismissing what she's seen.",
-  "oddly_also": "Says the trees whisper at night. She is not wrong.",
   "thinks_with": "magic",
+  "appearance": "Young orphan girl. Small hand mirror, always in hand.",
+  "and_yet": null,
+  "sayings": null,
+  "wants": "The Bronze Host defeated. What the mirror-fairy wants.",
+  "does_not_want": "Adults taking her mirror.",
+  "dreams": null,
+  "oddly_also": "Says the trees whisper at night. She is not wrong.",
+  "knows": "A fairy girl, through the mirror.",
+  "offers": null,
   "family": "Orphan — no known family. Raised alongside fellow foundlings Salla and Dun.",
-  "self_image": "Someone who knows something important that no one will believe.",
-  "recreation": "Watching. Listening. Long conversations with the mirror when she thinks no one is near.",
-  "dreams": "Unclear — possibly shaped by whatever the fairy has told her.",
-  "anecdotes": [
-    "Session 23: implored the party to defeat the Bronze Host.",
-    "Trebastos (Andre's fighter) has struck up a genuine rapport with her — she trusts him as she trusts almost no one."
-  ],
+  "anecdotes": [],
   "tragedies": [
     "Orphaned under unspecified circumstances. Raised as a servant-ward, not a daughter."
   ],
-  "pc_leverage": "Trebastos has her trust. She will speak to him about the mirror if he asks directly and privately — never in front of strangers. She has asked the party to defeat the Bronze Host on behalf of Tagmira.",
   "fairie_connection": {
     "mirror": "A magic mirror Pima found, enabling two-way communication with fairie",
     "fairy_girl": "A fairy girl on the other side of the mirror; identity unknown beyond being Pima's contact",
     "aislith": "The fairy queen, described to Pima by the fairy girl",
     "dm_notes": "The nature and origin of the mirror is unknown. The fairy girl's relationship to Aislith and motivations for reaching out through Pima are unestablished. Trebastos's relationship with her is the natural way to surface this thread. The Pact-Render's fey and the Gloaming Court may stand on opposite sides of the same fey politics — unknown as yet."
-  }
+  },
+  "campaign_notes": [
+    "Trebastos has her trust. She will speak to him about the mirror if he asks directly and privately — never in front of strangers. She has asked the party to defeat the Bronze Host on behalf of Tagmira.",
+    "Session 23: implored the party to defeat the Bronze Host.",
+    "Trebastos (Andre's fighter) has struck up a genuine rapport with her — she trusts him as she trusts almost no one."
+  ]
 }

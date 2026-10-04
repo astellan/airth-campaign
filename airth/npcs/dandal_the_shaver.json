@@ -1,20 +1,25 @@
 {
-  "moniker": "The Shaver",
+  "name": "Dandal",
+  "moniker": "the Shaver",
+  "role": "provisioner",
   "home": "Swamp Rat Provisions, Nebruz",
   "home_settlement": "nebruz",
+  "found": null,
   "gender": "male",
   "faction": "independent",
-  "appearance": "Human male; sharp eyes, enjoys a negotiation more than the sale",
-  "and_yet": null,
-  "wants": "The best possible price, always",
-  "does_not_want": "Anyone who won't haggle",
-  "oddly_also": null,
   "thinks_with": "money",
-  "family": "Not established",
-  "self_image": null,
-  "recreation": null,
+  "appearance": "Thin. Sharp eyes. Abacus on a cord.",
+  "and_yet": null,
+  "sayings": [
+    "That’s a starting price, surely."
+  ],
+  "wants": "The best price, always.",
+  "does_not_want": "Customers who won’t haggle.",
   "dreams": null,
+  "oddly_also": "Enjoys the haggle more than the sale.",
+  "knows": null,
+  "offers": "Swamp provisions.",
+  "family": null,
   "anecdotes": [],
-  "tragedies": [],
-  "pc_leverage": "Come prepared to haggle; know your goods; never show desperation"
+  "tragedies": []
 }

@@ -1,20 +1,25 @@
 {
+  "name": "Adlaba Kurn",
   "moniker": null,
+  "role": "tavern keeper",
   "home": "The Bloated Leech tavern, Nebruz",
   "home_settlement": "nebruz",
+  "found": null,
   "gender": "female",
   "faction": "independent",
-  "appearance": "Human female, early 40s; warm and popular with locals and dryboots alike",
-  "and_yet": null,
-  "wants": "A full house and a good night's take",
-  "does_not_want": "Fights that damage the furniture",
-  "oddly_also": null,
   "thinks_with": "persuasion",
-  "family": "Son Gerly (fighter, serves as bouncer)",
-  "self_image": null,
-  "recreation": null,
+  "appearance": "Early 40s. Easy smile. Apron pockets heavy with coin.",
+  "and_yet": null,
+  "sayings": [
+    "Drink the bog water. Everyone does."
+  ],
+  "wants": "A full house, a good night’s take.",
+  "does_not_want": "Fights that break furniture.",
   "dreams": null,
+  "oddly_also": null,
+  "knows": "Everything that happens in Nebruz.",
+  "offers": null,
+  "family": "Son Gerly, a fighter, works the door.",
   "anecdotes": [],
-  "tragedies": [],
-  "pc_leverage": "Drink her bog water; tip well; she knows everything that happens in Nebruz"
+  "tragedies": []
 }

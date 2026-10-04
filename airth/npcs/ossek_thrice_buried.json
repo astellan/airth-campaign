@@ -1,19 +1,26 @@
 {
+  "name": "Ossek",
   "moniker": "Thrice-Buried",
-  "home": "Itinerant; uses a back room in a Caelrun fishmonger's he does accounts for",
+  "role": "antiquarian",
+  "home": "Back room of a Caelrun fishmonger’s",
   "home_settlement": "itinerant",
+  "found": "Annotating his own notes, by lamplight.",
   "gender": "male",
   "faction": "aurka",
-  "appearance": "Small, back-injured and crooked, ink-stained scar-ridged fingers. Moves with the careful deliberation of bad knees. Always: an overfull satchel, paper rolls in his belt, lamp-oil smell. Pale eyes that are always reading something, even when looking at you.",
-  "and_yet": "Can walk past Ilmenor inquisitors, tomb guardians, and militia captains on nothing but confident tone and improvised credentials. People believe him immediately and regret it later.",
-  "wants": "To read Ameniseb's tomb inscriptions — believes his work on conditional immortality connects to deliberately suppressed pre-Silence arcane knowledge.",
-  "does_not_want": "To fight, climb, run, or share credit.",
-  "oddly_also": "Collects small ceramic animal figurines from ruins — not for value, just because he likes them. Dozens wrapped in cloth in his satchel.",
   "thinks_with": "lore",
+  "appearance": "Small, crooked back. Ink-stained, scarred fingers. Satchel of paper rolls.",
+  "and_yet": "The satchel clinks: dozens of ceramic animal figurines.",
+  "sayings": [
+    "The rubbing was worth it.",
+    "Bressul always checked those first."
+  ],
+  "wants": "Ameniseb’s tomb inscriptions.",
+  "does_not_want": "To fight, climb, run, or share credit.",
+  "dreams": "Rewrite the accepted history of the Silence.",
+  "oddly_also": "Talks past inquisitors and guards on tone and improvised credentials.",
+  "knows": "Tomb layouts; old inscriptions.",
+  "offers": "Inscription reading. Aurka contacts.",
   "family": "Two adult sons, Jevek and Danek, in Velgroth-Lucernia — they think he is dead, or wish he were. A niece in Caelrun who leaves food out for him.",
-  "self_image": "The most competent man in any given ruin. Physically diminished, intellectually unmatched. Has earned every scar.",
-  "recreation": "Annotating his own notes. Arguing with texts. Writing marginalia he will never send.",
-  "dreams": "To find something that rewrites accepted history of the Silence — not for glory, just to know.",
   "anecdotes": [
     "Convinced an Ilmenor inquisitor his grimoire was a recipe book by reading from it in a made-up dialect for four unbroken minutes.",
     "Emerged from the second collapse after three days underground — dehydrated, one broken rib — still clutching his rubbing. 'The rubbing was worth it.' No one agrees.",
@@ -24,5 +31,7 @@
     "Bressul — steady, experienced, survived everything, killed in the second collapse. Ossek invokes him most when pointing out load-bearing features: 'Bressul always checked those first.'",
     "Davanek — killed two years ago in the third collapse. Ossek still refers to him in the present tense occasionally, catching himself with a small cough. He has not noticed the pattern, or does not consider it relevant."
   ],
-  "pc_leverage": "Needs Zardun's hands, eyes, and feet — traps, locks, moving quietly when something turns out to be home. Offers: tomb layout knowledge, inscription reading, Aurka contacts, and the judgment to abort before it goes wrong. Will not hesitate to run; is not ashamed of this. Will mention Nevret, Bressul, and Davanek with unsettling frequency in contexts that make Zardun wonder whether they also thought the partnership sounded like a good idea."
+  "campaign_notes": [
+    "Needs Zardun's hands, eyes, and feet — traps, locks, moving quietly when something turns out to be home. Offers: tomb layout knowledge, inscription reading, Aurka contacts, and the judgment to abort before it goes wrong. Will not hesitate to run; is not ashamed of this. Will mention Nevret, Bressul, and Davanek with unsettling frequency in contexts that make Zardun wonder whether they also thought the partnership sounded like a good idea."
+  ]
 }

@@ -1,20 +1,25 @@
 {
-  "moniker": "o' the Spike",
+  "name": "Gerum",
+  "moniker": "o’ the Spike",
+  "role": "enforcer",
   "home": "Enforcers' Post, Nebruz",
   "home_settlement": "nebruz",
+  "found": null,
   "gender": "male",
   "faction": "independent",
-  "appearance": "Human male; left hand replaced with a metal hook",
-  "and_yet": null,
-  "wants": "Order kept; alligators fed on schedule",
-  "does_not_want": "Dryboots causing scenes near the pit",
-  "oddly_also": null,
   "thinks_with": "blade",
-  "family": "Not established",
-  "self_image": null,
-  "recreation": null,
+  "appearance": "Metal hook for a left hand. Scale-mail vest.",
+  "and_yet": null,
+  "sayings": [
+    "Marsh-Hand’s word. Not mine."
+  ],
+  "wants": "Order kept. Alligators fed on time.",
+  "does_not_want": "Dryboots making scenes at the pit.",
   "dreams": null,
+  "oddly_also": "Enforces Phaid’s judgments, never his own.",
+  "knows": null,
+  "offers": null,
+  "family": null,
   "anecdotes": [],
-  "tragedies": [],
-  "pc_leverage": "Respect the post; don't make his job harder; he enforces Phaid's judgments, not his own opinions"
+  "tragedies": []
 }

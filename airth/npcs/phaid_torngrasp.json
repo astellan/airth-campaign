@@ -1,20 +1,25 @@
 {
+  "name": "Phaid Torngrasp",
   "moniker": "Marsh-Hand",
-  "home": "Nebruz — the Marsh-Hand's residence, which doubles as village hall",
+  "role": "village headman",
+  "home": "Marsh-Hand’s hall, Nebruz",
   "home_settlement": "nebruz",
+  "found": null,
   "gender": "male",
   "faction": "independent",
-  "appearance": "Human male, late 30s. Missing the pinky and index fingers on his right hand ('Torngrasp'). The reason is disputed.",
-  "and_yet": null,
-  "wants": "Nebruz to remain unnoticed, free, and self-governing",
-  "does_not_want": "Outside authorities; anything that draws attention to Nebruz",
-  "oddly_also": null,
   "thinks_with": "honor",
-  "family": "Not established",
-  "self_image": null,
-  "recreation": null,
+  "appearance": "Late 30s. Right hand missing index and little fingers.",
+  "and_yet": null,
+  "sayings": [
+    "Nebruz settles its own business."
+  ],
+  "wants": "Nebruz unnoticed, free, self-governing.",
+  "does_not_want": "Outside authorities. Attention on Nebruz.",
   "dreams": null,
+  "oddly_also": "How he lost the fingers is disputed.",
+  "knows": null,
+  "offers": null,
+  "family": null,
   "anecdotes": [],
-  "tragedies": [],
-  "pc_leverage": "Earn community standing; bring problems through proper Nebruz channels; avoid making him look weak before the village"
+  "tragedies": []
 }
