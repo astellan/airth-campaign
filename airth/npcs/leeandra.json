@@ -4,7 +4,7 @@
   "role": "potion-brewer",
   "home": "Swamp hut, half a day SW of Nebruz",
   "home_settlement": "nebruz",
-  "found": null,
+  "found": "Her swamp hut, tending a brew.",
   "gender": "female",
   "faction": "independent",
   "thinks_with": "diplomacy",

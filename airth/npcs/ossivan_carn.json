@@ -4,7 +4,7 @@
   "role": "lay-judge",
   "home": "Velgroth; rides a Marches circuit",
   "home_settlement": "itinerant",
-  "found": "Feast days and disputes along his circuit.",
+  "found": "Town squares and inns on feast days, along his circuit.",
   "gender": "male",
   "faction": "lugus-lay-judiciary",
   "thinks_with": "tradition",

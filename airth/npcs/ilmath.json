@@ -4,7 +4,7 @@
   "role": "high fire-seer",
   "home": "Temple of the Eternal Flame, Dravesa",
   "home_settlement": "dravesa",
-  "found": "Tending the temple flame, every dawn.",
+  "found": "Temple of the Eternal Flame, tending the flame at dawn.",
   "gender": "female",
   "faction": "malac-orthodox",
   "thinks_with": "faith",

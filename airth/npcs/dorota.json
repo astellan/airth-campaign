@@ -4,7 +4,7 @@
   "role": "hedge-witch",
   "home": "Cottage at the swamp’s edge, Nebruz",
   "home_settlement": "nebruz",
-  "found": null,
+  "found": "Her cottage at the swamp’s edge, brewing.",
   "gender": "female",
   "faction": "none",
   "thinks_with": "lore",

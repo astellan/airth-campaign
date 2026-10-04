@@ -4,7 +4,7 @@
   "role": "merchant",
   "home": "Cadek Merchant House, Dravesa",
   "home_settlement": "dravesa",
-  "found": null,
+  "found": "Cadek Merchant House, shut inside; out twice a day to make a scene.",
   "gender": "male",
   "faction": "independent",
   "thinks_with": "guilt",

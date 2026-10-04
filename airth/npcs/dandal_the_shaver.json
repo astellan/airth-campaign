@@ -4,7 +4,7 @@
   "role": "provisioner",
   "home": "Swamp Rat Provisions, Nebruz",
   "home_settlement": "nebruz",
-  "found": null,
+  "found": "Swamp Rat Provisions, behind the counter.",
   "gender": "male",
   "faction": "independent",
   "thinks_with": "money",

@@ -4,7 +4,7 @@
   "role": "beggar",
   "home": "Rundown house, Nebruz",
   "home_settlement": "nebruz",
-  "found": null,
+  "found": "Begging on the Nebruz boardwalks by day; locked in his house by dark.",
   "gender": "male",
   "faction": "none",
   "thinks_with": "fear",

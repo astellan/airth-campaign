@@ -45,7 +45,7 @@ Hide empty fields. Never print "Not established" or a blank label. A sparse NPC 
 | `role` | yes | 1–3 words | What they do. Everyone has one, even "drifter." |
 | `home` | yes | 2–6 words | Where they live or work. |
 | `home_settlement` | yes | id | Settlement id, or `itinerant`. |
-| `found` | no | 3–8 words | Where and when to find them off-duty. |
+| `found` | no | 3–12 words | Where to find them: a named location first, then when or doing what. *Warden’s Hall, sharpening his knife at dusk.* Settlement renders place the NPC card at this location. |
 | `gender` | yes | 1 word | |
 | `faction` | yes | id | From `airth/config/npc.json`. |
 | `thinks_with` | yes | enum | From the schema enum. |

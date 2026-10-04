@@ -4,7 +4,7 @@
   "role": "smith",
   "home": "Arms & Iron, Nebruz’s only stone building",
   "home_settlement": "nebruz",
-  "found": null,
+  "found": "Arms & Iron, at the forge.",
   "gender": "female",
   "faction": "none",
   "thinks_with": "pride",

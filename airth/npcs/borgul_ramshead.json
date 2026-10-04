@@ -4,7 +4,7 @@
   "role": "boarding-house keeper",
   "home": "Mother's Boarding House, Nebruz",
   "home_settlement": "nebruz",
-  "found": null,
+  "found": "Mother's Boarding House, on the porch.",
   "gender": "male",
   "faction": "independent",
   "thinks_with": "fists",

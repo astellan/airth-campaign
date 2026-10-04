@@ -4,7 +4,7 @@
   "role": "enforcer",
   "home": "Enforcers' Post, Nebruz",
   "home_settlement": "nebruz",
-  "found": null,
+  "found": "Enforcers' Post, by the alligator pit.",
   "gender": "male",
   "faction": "independent",
   "thinks_with": "blade",

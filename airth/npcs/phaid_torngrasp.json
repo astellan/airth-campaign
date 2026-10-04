@@ -4,7 +4,7 @@
   "role": "village headman",
   "home": "Marsh-Hand’s hall, Nebruz",
   "home_settlement": "nebruz",
-  "found": null,
+  "found": "Marsh-Hand’s hall, hearing complaints.",
   "gender": "male",
   "faction": "independent",
   "thinks_with": "honor",
