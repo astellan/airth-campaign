@@ -50,3 +50,36 @@ One voice, tuned to the job. Pick the register by what the text is for.
 **Proper nouns.** Names of places, factions, NPCs, and gods come from the repo exactly as written. Never coin a new one without permission.
 
 **Plain over grand.** Old, short, concrete words. "Rot," not "decomposition." "The dead," not "undead entities." No modern idiom, no corporate or game-designer jargon ("mechanic," "engagement," "lore drop").
+
+## Emphasis & notation
+
+**Bold**
+- Key feature nouns where first named: **iron sarcophagus**.
+- Monsters with their count: **3 ghouls**.
+- Lead-ins for area actions and multi-action features: **Entering:**, **Opening:**.
+- Saving throws: **save vs. spells**.
+- Nothing else. Never bold for tone.
+
+**Italics**
+- Spells: *sleep*, *dispel magic*.
+- Magic items: *staff of wizardry*.
+- Book and tome titles.
+- Never italics for tone.
+
+**Quotation marks.** Inscriptions, spoken lines, written signs: "The Accursed Gate of Doom."
+
+**Numbers**
+- Numerals always: 3 ghouls, 10′ pit, 5 days.
+- Ranges with an en dash: 2–3, levels 1–3.
+- Levels as ordinals: 5th-level magic-user.
+
+**Units**
+- Feet with the prime mark in rendered text: 10′, 120′ move. (Stored data uses "ft"; see CLAUDE.md.)
+- Coin with no space: 350gp. Weight in coins: weighs 50 coins.
+
+**Dice and chances**
+- Dice: 1d6, 2d4+1, d% for percentile.
+- Chances: 2-in-6.
+- Ability scores in caps, always in AD&D order: STR, INT, WIS, DEX, CON, CHA.
+
+*Example:* **3 ghouls** crouch over a **broken litter**. The wall bears an inscription: "Rest is earned." Each ghoul carries 2d6gp.
