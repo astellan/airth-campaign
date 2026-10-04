@@ -1,0 +1,28 @@
+{
+  "name": "Enni",
+  "moniker": "the Ash-Wife",
+  "role": "hedge witch (3rd level)",
+  "home": "The Ash-House, Tagmira",
+  "home_settlement": "tagmira",
+  "found": "The Ash-House by the western woods, tracing stories in the hearth-ash.",
+  "gender": "female",
+  "faction": "none",
+  "thinks_with": "lore",
+  "appearance": "Old, near-blind eyes, ash-grey shawl, knucklebones in a bag at her hip.",
+  "and_yet": "Her eyes follow you exactly.",
+  "sayings": [
+    "Ask me what I know, not what I'll tell you.",
+    "The ash remembers."
+  ],
+  "wants": "One last heir who will listen.",
+  "does_not_want": "The village forgetting the gods' silence.",
+  "dreams": "That the hearth-fires speak again. It would be a bad thing.",
+  "oddly_also": "Takes food and trinkets from villagers who fear her, without comment.",
+  "knows": "Which charms still work against the dead.",
+  "offers": "Healing, charms; friends and identify, for a price.",
+  "family": "A few distant kin; one loyal servant, Medam.",
+  "anecdotes": [],
+  "tragedies": [
+    "Has watched the old knowledge dwindle to almost nothing in her lifetime."
+  ]
+}

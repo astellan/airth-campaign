@@ -1,0 +1,25 @@
+{
+  "name": "Ambata Corr",
+  "moniker": null,
+  "role": "tallow-chandler",
+  "home": "The Stink-House, Tagmira",
+  "home_settlement": "tagmira",
+  "found": "The Stink-House, stirring the vats.",
+  "gender": "female",
+  "faction": "independent",
+  "thinks_with": "tradition",
+  "appearance": "60s, greasy hands, candle-stubs in her apron.",
+  "and_yet": "She smells of rosemary, not fat.",
+  "sayings": [
+    "Light's cheap. Darkness costs more."
+  ],
+  "wants": "Every north window lit this winter.",
+  "does_not_want": "The Stink-House moved further out.",
+  "dreams": null,
+  "oddly_also": null,
+  "knows": null,
+  "offers": "Candles and tallow.",
+  "family": null,
+  "anecdotes": [],
+  "tragedies": []
+}

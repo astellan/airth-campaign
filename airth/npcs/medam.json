@@ -1,0 +1,23 @@
+{
+  "name": "Medam",
+  "moniker": null,
+  "role": "servant",
+  "home": "The Ash-House, Tagmira",
+  "home_settlement": "tagmira",
+  "found": "The Ash-House, fetching water and wood.",
+  "gender": "male",
+  "faction": "none",
+  "thinks_with": "devotion",
+  "appearance": "Big, slow-moving youth, soot on his face.",
+  "and_yet": "Moves without a sound.",
+  "sayings": null,
+  "wants": "Enni fed and warm.",
+  "does_not_want": "Strangers in the hut.",
+  "dreams": null,
+  "oddly_also": null,
+  "knows": null,
+  "offers": null,
+  "family": null,
+  "anecdotes": [],
+  "tragedies": []
+}

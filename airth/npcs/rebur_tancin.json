@@ -1,0 +1,25 @@
+{
+  "name": "Rebur Tancin",
+  "moniker": null,
+  "role": "tanner",
+  "home": "Tanning pits, Tagmira",
+  "home_settlement": "tagmira",
+  "found": "The tanning pits by the stream, stained to the elbow.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "money",
+  "appearance": "Stained to the elbows, bare feet, a scraping knife.",
+  "and_yet": "A neat beard, oiled and combed.",
+  "sayings": [
+    "Hides don't lie about the beast."
+  ],
+  "wants": "Bigger game from the northwest.",
+  "does_not_want": "Orc hides; he won't touch them.",
+  "dreams": null,
+  "oddly_also": null,
+  "knows": null,
+  "offers": "Goat and sheep hides; leather.",
+  "family": null,
+  "anecdotes": [],
+  "tragedies": []
+}

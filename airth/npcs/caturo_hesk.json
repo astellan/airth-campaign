@@ -1,0 +1,25 @@
+{
+  "name": "Caturo Hesk",
+  "moniker": null,
+  "role": "pony breeder",
+  "home": "Caturo's Corrals, Tagmira",
+  "home_settlement": "tagmira",
+  "found": "Caturo's Corrals on the south slope.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "money",
+  "appearance": "Small, bandy-legged, rope burns on both palms.",
+  "and_yet": "A gold ring in one ear.",
+  "sayings": [
+    "A Tagmira pony will outlive you."
+  ],
+  "wants": "Buyers from the caravans.",
+  "does_not_want": "His ponies requisitioned by the militia.",
+  "dreams": null,
+  "oddly_also": null,
+  "knows": null,
+  "offers": "Hardy upland ponies.",
+  "family": null,
+  "anecdotes": [],
+  "tragedies": []
+}

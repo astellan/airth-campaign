@@ -277,6 +277,67 @@
       "labels": {
         "watch": "Not fortified; a serious assault would be catastrophic."
       }
+    },
+    {
+      "id": "ash-house",
+      "name": "The Ash-House",
+      "type": "residence",
+      "look": "Enni's turf-roofed lean-to at the edge of the western woods, smoke leaking through the thatch.",
+      "labels": {
+        "inhabitants": "Enni the Ash-Wife and her servant Medam."
+      },
+      "hidden": "A hearth-pit of ash many years deep, with small bones in it."
+    },
+    {
+      "id": "wheel-ring",
+      "name": "The Wheel-Ring",
+      "type": "caravanserai",
+      "look": "A churned yard beside the Crescent and Hoof where Taziri's route ends.",
+      "labels": {
+        "yard": "Wagons drawn up in a ring at night.",
+        "beasts": "Mules, oxen, and Tagmiran ponies.",
+        "passing_through": "Taziri's teamsters and pony buyers."
+      }
+    },
+    {
+      "id": "caturos-corrals",
+      "name": "Caturo's Corrals",
+      "type": "shop",
+      "look": "Rail fences on the south slope.",
+      "labels": {
+        "wares": "Hardy upland ponies, the village's best export.",
+        "proprietor": "Caturo Hesk."
+      }
+    },
+    {
+      "id": "gobans-forge",
+      "name": "Goban's Forge",
+      "type": "shop",
+      "look": "A low stone forge.",
+      "labels": {
+        "wares": "Nails, simple iron tools, arrowheads.",
+        "proprietor": "Goban Tesk, always short of iron."
+      }
+    },
+    {
+      "id": "stink-house",
+      "name": "The Stink-House",
+      "type": "shop",
+      "look": "The tallow-house, downwind of everything.",
+      "labels": {
+        "wares": "Tallow and candles rendered from sheep fat.",
+        "proprietor": "Ambata Corr."
+      }
+    },
+    {
+      "id": "tanning-pits",
+      "name": "Tanning Pits",
+      "type": "shop",
+      "look": "Pits by the stream below the village.",
+      "labels": {
+        "wares": "Goat and sheep hides.",
+        "proprietor": "Rebur Tancin."
+      }
     }
   ],
   "factions": [
@@ -591,30 +652,6 @@
       ],
       "pc_leverage": "The party knew her in life. She may be the most human-accessible face of the undead alliance — and also potentially its most dangerous element if her human attachments lead her to act outside Zimru's order.",
       "dm_notes": "Maedra is a slow-burn NPC. She does not need to appear this session necessarily, but her presence should be felt — the undead's deference to her, the way she's changed. She and Zimru are consorts in whatever sense that word applies to the undead."
-    },
-    "enni_the_ash_wife": {
-      "moniker": "Enni the Ash-Wife",
-      "home": "Lean-to at the forest's edge, Tagmira",
-      "home_settlement": "Tagmira",
-      "gender": "female",
-      "faction": "None",
-      "appearance": "Old, nearly blind, sharp-eyed despite it. Speaks in riddles and feigns more power than she has — though she has some.",
-      "and_yet": "Villagers fear her and also bring her food and trinkets for healing. She accepts both without comment.",
-      "wants": "To pass on her full knowledge before she dies. To name one last heir who will listen.",
-      "does_not_want": "Her people to forget the gods' silence — that forgetting is its own danger.",
-      "oddly_also": "Wants someone to ask her what she actually knows, rather than what she'll say for free.",
-      "thinks_with": "Parable, long memory, grave silence.",
-      "family": "A few distant kin and one loyal servant.",
-      "self_image": "The last woman in Tagmira who remembers what it felt like when the gods still spoke.",
-      "recreation": "Tracing stories in the ash of the hearth.",
-      "dreams": "That the hearth-fires will speak again.",
-      "anecdotes": [
-        "Can cast friends and identify — the village knows this and uses her accordingly."
-      ],
-      "tragedies": [
-        "Has watched the sacred knowledge of the old ways dwindle to almost nothing in her lifetime."
-      ],
-      "pc_leverage": "Respects memory, ritual, and those who listen more than they speak. She almost certainly knows something is wrong with Maedra and the Bramblewood — but will make the party work for it."
     },
     "tarrek_veyran": {
       "moniker": "Tarrek Veyran",
