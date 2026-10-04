@@ -111,6 +111,13 @@
       "description": "Flesh out schemas/session_log.schema.json — stub created, needs review against full session log data",
       "status": "open",
       "notes": "Stub covers current session structure including optional in_game_dates and quests_pending_or_deferred fields. Validate all sessions and extend as the log grows."
+    },
+    {
+      "id": "BL-17",
+      "category": "style",
+      "description": "Save the typography sample page HTML as style/templates/artifact.html so every artifact starts from the same look; future skill points to it.",
+      "status": "open",
+      "notes": "Sample published 2026-10-04 (Scarlet Crypt / Moss Cavern example)."
     }
   ]
 }
