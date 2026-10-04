@@ -131,7 +131,7 @@
       "category": "settlements",
       "description": "Paths/roads session: define path file type, then add neighbors (pointcrawl links) to every settlement and steading.",
       "status": "open",
-      "notes": "Luric Road (luric-road) runs west to east: Lamares, Nemetra, Caelrun, Tagmira, Dravesa, Orziben. Distances between stops not yet set (Andrew's example used 18 miles for Tagmira–Dravesa and Dravesa–Orziben; unconfirmed)."
+      "notes": "Luric Road (luric-road) runs west to east: Lamares, Nemetra, Caelrun, Tagmira, Dravesa, Orziben. Stops are 18 miles apart by design: one day's journey from one safe walled town to the next."
     }
   ]
 }
