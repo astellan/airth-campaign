@@ -329,10 +329,10 @@
       }
     },
     {
-      "id": "stink-house",
-      "name": "The Stink-House",
+      "id": "corrs-chandlery",
+      "name": "Corr's Chandlery",
       "type": "shop",
-      "look": "The tallow-house, downwind of everything.",
+      "look": "The tallow-house, set downwind of the village.",
       "labels": {
         "wares": "Tallow and candles rendered from sheep fat.",
         "proprietor": "Ambata Corr."
