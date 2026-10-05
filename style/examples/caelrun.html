@@ -1,0 +1,364 @@
+<title>Caelrun</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap">
+<style>
+/* Layout: single reading column, ~65ch; areas separated by full rules; sidebars as tinted boxes. */
+:root {
+  --paper: #fbfbf7;
+  --ink: #1e201c;
+  --ink-soft: #55594f;
+  --accent: #3e5937;
+  --rule: #c8cbbf;
+  --panel: #f0f1ea;
+  --serif: "EB Garamond", Garamond, "Garamond Premier Pro", Georgia, "Times New Roman", serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #161814; --ink: #e3e5dc; --ink-soft: #a3a89a; --accent: #a3bd97;
+    --rule: #3a3f36; --panel: #1f221d; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #161814; --ink: #e3e5dc; --ink-soft: #a3a89a; --accent: #a3bd97;
+  --rule: #3a3f36; --panel: #1f221d; color-scheme: dark;
+}
+body {
+  background: var(--paper); color: var(--ink);
+  font-family: var(--serif); font-size: 1.125rem; line-height: 1.5;
+  padding-inline: 16px; padding-block: 2.5rem 4rem;
+}
+main { max-width: 38rem; margin-inline: auto; }
+.sample-note {
+  font-size: .95rem; color: var(--ink-soft); font-style: italic;
+  border-bottom: 1px solid var(--rule); padding-bottom: 1rem; margin: 0 0 2rem;
+}
+h1 { font-weight: 500; font-size: 2.1rem; line-height: 1.15; margin: 0 0 .25rem; text-wrap: balance; }
+.kicker { font-variant: small-caps; letter-spacing: .06em; color: var(--ink-soft); margin: 0 0 1.25rem; }
+h2.section {
+  font-weight: 600; font-size: 1.15rem; font-variant: small-caps; letter-spacing: .06em;
+  color: var(--accent); margin: 2.4rem 0 .6rem; border-bottom: 1px solid var(--rule); padding-bottom: .25rem;
+}
+.area { border-top: 1px solid var(--ink); padding-top: 1.1rem; margin-top: 2.2rem; }
+.area h2 {
+  font-weight: 600; font-size: 1.35rem; margin: 0 0 .6rem; text-wrap: balance;
+  font-variant: small-caps; letter-spacing: .03em;
+}
+.area h2 .num { color: var(--accent); font-variant-numeric: lining-nums; margin-right: .35em; }
+p { margin: 0 0 .75rem; }
+strong { font-weight: 600; }
+.sep { border: 0; border-top: 1px solid var(--rule); width: 3rem; margin: 1rem auto; }
+ul { margin: 0 0 .75rem; padding-left: 1.25rem; }
+li { margin-bottom: .3rem; }
+.dialogue { margin: .5rem 0 1rem 2rem; font-style: italic; }
+.sidebar { background: var(--panel); border: 1px solid var(--rule); padding: 1rem 1.15rem; margin: 1.5rem 0; }
+.sidebar h3 {
+  margin: 0 0 .5rem; font-size: 1.1rem; font-weight: 600;
+  font-variant: small-caps; letter-spacing: .05em; color: var(--accent);
+}
+.sidebar .desc { font-style: italic; margin-bottom: .75rem; }
+dl.stats {
+  display: grid; grid-template-columns: max-content 1fr; gap: .15rem 1rem; margin: 0;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+dl.stats dt { font-variant: small-caps; letter-spacing: .05em; color: var(--ink-soft); }
+dl.stats dd { margin: 0; min-width: 0; }
+.npc-head { margin: 0 0 .5rem; }
+.npc-head .nm { font-weight: 600; font-size: 1.15rem; }
+.npc-head .meta { color: var(--ink-soft); }
+.table-wrap { overflow-x: auto; margin: 1rem 0 1.5rem; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums lining-nums; }
+caption {
+  text-align: left; font-weight: 600; font-variant: small-caps; letter-spacing: .05em;
+  color: var(--accent); padding-bottom: .35rem; font-size: 1.1rem;
+}
+th, td { text-align: left; padding: .3rem .6rem; border-top: 1px solid var(--rule); vertical-align: top; }
+thead th { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); font-weight: 600; font-variant: small-caps; letter-spacing: .05em; }
+td.die, th.die { width: 2.5rem; text-align: center; color: var(--accent); }
+tbody tr:last-child td { border-bottom: 1px solid var(--ink); }
+.ref { color: var(--ink-soft); }
+</style>
+<style>
+.tagline { font-style: italic; color: var(--ink-soft); margin: 0 0 1.25rem; font-size: 1.15rem; }
+.facts p { margin: 0 0 .3rem; }
+.pal p { margin: 0 0 .35rem; }
+.pal em { color: var(--ink-soft); }
+table.grid th:first-child, table.grid td:first-child { width: 6rem; font-variant: small-caps; letter-spacing: .04em; font-weight: 600; }
+table.grid td { font-size: 1rem; }
+.loc { border-top: 1px solid var(--ink); padding-top: 1rem; margin-top: 1.8rem; }
+.loc h3 { font-weight: 600; font-size: 1.25rem; font-variant: small-caps; letter-spacing: .03em; margin: 0 0 .4rem; }
+.loc h3 .num { color: var(--accent); margin-right: .35em; }
+.npc { background: var(--panel); border: 1px solid var(--rule); padding: .8rem 1rem; margin: 1rem 0 .5rem; }
+.npc .head { margin: 0 0 .35rem; }
+.npc .nm { font-weight: 600; }
+.npc .meta { color: var(--ink-soft); }
+.npc p { margin: 0 0 .35rem; }
+.npc .say { font-style: italic; margin-left: 1.25rem; }
+.npc details { margin-top: .4rem; }
+.npc summary { cursor: pointer; color: var(--accent); font-variant: small-caps; letter-spacing: .05em; }
+.npc summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.gap { color: var(--ink-soft); font-style: italic; }
+.hidden{border-left:2px solid var(--accent);padding-left:.6rem}
+</style>
+
+<main>
+<p class="sample-note">Rendered from <code>airth/settlements/caelrun.json</code> to <code>style/settlement.md</code>. Gaps in the data are shown in grey.</p>
+<h1>Caelrun</h1>
+<p class="tagline">Lakeside fishing village that feeds the Marches, and does not ask who lets it.</p>
+<div class="facts">
+<p><strong>Inhabitants:</strong> 1200 (village). Mostly fisherfolk; barley farmers along the shore; fringe camps at the bog edge.</p>
+<p><strong>Ruler:</strong> No lord. The great families rule in practice: the Hallans (the fleet) and the Tarnes (the grain).</p>
+<p><strong>Strangers:</strong> Welcome for trade. Some things are carefully not asked about, and strangers who ask are noticed.</p>
+<p class="gap"><strong>Equipment:</strong> not recorded.</p>
+<p><strong>Faiths:</strong> Thulda (grey-robed funeral shrine); Ossamar (cairns on the water paths).</p>
+</div>
+<h2 class="section">Arrival</h2><div class="pal">
+<p><strong>Far:</strong> smoke from the drying racks · waterfowl over the reeds · <em>the lake flat and grey beyond the barley</em></p>
+<p><strong>Near:</strong> walkways on stilts · barley to the shoreline · <em>racks hung with split fish, smoking</em></p>
+<p><strong>Threshold:</strong> boats everywhere · nets hung like spiderwebs · <em>market stalls at the dock</em></p>
+<p><strong>Leaving:</strong> fish smell in your clothes for days · <em>the reed beds closing behind the road</em></p>
+</div>
+<div class="table-wrap"><table class="grid"><thead><tr><th></th><th>Dawn</th><th>Day</th><th>Dusk</th><th>Night</th></tr></thead><tbody>
+<tr><td>Threshold</td><td>boats pushing off · oars creaking</td><td>fish market calls · nets spread on every fence</td><td>boats coming in low with the catch</td><td>lanterns on the jetty · lapping water</td></tr>
+<tr><td>Within</td><td>thunk of net-mending already · oars creaking out</td><td>fish oil rendering · children scaling fish</td><td>smoke thickening over the racks</td><td>the Waterside Tavern loud · reeds rustling where there is no wind · on moonless nights, a green-blue glow over the northern deep</td></tr>
+</tbody></table></div>
+<div class="pal">
+<p><strong>Winter</strong> <em>(Voarn–Thunor)</em>: ice at the lake edge · boats hauled up · eel traps set under the ice</p>
+<p><strong>Spring</strong> <em>(Arkun–Ulkar)</em>: barley sowing · lake high in the reeds</p>
+<p><strong>Summer</strong> <em>(Sarnath–Keltoi)</em>: humid and still · old temple columns showing in the shallows in drought · flies on the racks</p>
+<p><strong>Autumn</strong> <em>(Ragaia–Eshmun)</em>: barley harvest · eel runs · smokehouses working day and night</p>
+<p><strong>Tilanda</strong> <em>(9 Nabaia)</em>: pilgrim boats arriving · offerings floated on the lake · Brother Kellis&#x27;s cairns hung with ribbons</p>
+<p><strong>Thuldar</strong> <em>(27 Dumnos)</em>: women veiled in wool · funeral chants from the Thulda shrine</p>
+<p><strong>Market day</strong> <em>(weekly)</em>: crowds on the walkways · caravan factors haggling at the Dockside Market</p>
+<p><strong>Storm coming</strong> <em>(any season)</em>: boats hauled up early · no one diving tomorrow</p>
+</div>
+<h2 class="section">What Makes It Itself</h2>
+<p><strong>Food for the Marches.</strong> Fish, eels, and barley from Caelrun feed the other Marches villages. Dried and smoked fish, fish oil, rush mats, and lake-hemp rope go out along the road. Caelrun has no smith of its own; iron, tools, and boat-nails come in by caravan.</p>
+<p><strong>By lizard-man sufferance.</strong> The swamp around Caelrun is lizard-man country, and the village survives because they allow it. Most residents believe their prosperity comes from hard work and good land. Sarith the Watcher, Brecht Hallan, and Ordun Tarnes know the compact&#x27;s real shape and keep it unspoken.</p>
+<p><strong>Debt-bound.</strong> Debts pass from father to son here. Bound labourers work them off in the oil pits, and the village does not protect anyone who runs.</p>
+<p><strong>Ruins under the lake.</strong> The Submerged Temple-Garden lies in the northern deep. Its columns show in the shallows in a dry summer, and on moonless nights the water over it glows. The Aurka are diving it; the elders know exploring it is limited by the compact.</p>
+<h2 class="section">Encounters</h2>
+<div class="table-wrap"><table><caption>d6 Caelrun by day</caption><thead><tr><th class="die">d6</th><th>Encounter</th></tr></thead><tbody>
+<tr><td class="die">1</td><td><strong>Essa the Net-Mender</strong> offers a piece of gossip, and wants one back.</td></tr>
+<tr><td class="die">2</td><td>Two families argue on the walkway over whose net it is.</td></tr>
+<tr><td class="die">3</td><td>A boat comes in with a strange catch, and a crowd gathers.</td></tr>
+<tr><td class="die">4</td><td><strong>2d4 militia</strong> make a drunken patrol along the walkways.</td></tr>
+<tr><td class="die">5</td><td>A stranger with ink-stained hands is quietly buying anything old from the lake.</td></tr>
+<tr><td class="die">6</td><td><strong>3 Aurka</strong> from a rival team load diving gear into a hired boat.</td></tr>
+</tbody></table></div>
+<div class="table-wrap"><table><caption>d6 Caelrun by night</caption><thead><tr><th class="die">d6</th><th>Encounter</th></tr></thead><tbody>
+<tr><td class="die">1</td><td><strong>Kelvan Bresul</strong>, drunk, tells a war story at the Waterside Tavern.</td></tr>
+<tr><td class="die">2</td><td>Bresul boats slip out without lanterns, low in the water.</td></tr>
+<tr><td class="die">3</td><td><strong>Yavra Quickwater</strong> waits at the Main Jetty for a passenger.</td></tr>
+<tr><td class="die">4</td><td>Green-blue light over the northern deep, brighter than last time.</td></tr>
+<tr><td class="die">5</td><td>A <strong>lizard-man</strong> stands at the reed line, watching, and is gone when looked at again.</td></tr>
+<tr><td class="die">6</td><td><strong>Dren</strong> sits on the oil-pit wall, counting something on his fingers.</td></tr>
+</tbody></table></div>
+<h2 class="section">Response</h2>
+<p><strong>The watch:</strong> About 20 ceremonial militia under Kelvan Bresul, mostly good for drunks and disputes.</p>
+<p><strong>By day:</strong> 1d4 militia within 1d12 minutes.</p>
+<p><strong>By night:</strong> 1d3 militia within 1d4 turns, if Kelvan can be roused.</p>
+<p><strong>Reinforcements:</strong> A handful of old veterans, if anyone thinks to call them.</p>
+<p><strong>Strength:</strong> About 20 militia (founded with 40). Ceremonial. The real protection is the lizard-men, and almost no one knows it.</p>
+<p><strong>Bribery:</strong> Easily: a few coppers and a good story.</p>
+<h2 class="section">Places</h2>
+<section class="loc"><h3><span class="num">1.</span>Silver Perch Inn</h3>
+<p>An inn on stilts overlooking the docks, run by the Hallans.</p>
+<p><strong>Guests:</strong> Taziri&#x27;s caravan and whoever travels with it.</p>
+<p class="gap"><strong>Services:</strong> Rooms over the water; lake fish and barley bread. Prices pending OSRIC 3.0 table.</p>
+</section>
+<section class="loc"><h3><span class="num">2.</span>Waterside Tavern</h3>
+<p>The village tavern, on the water and loud every night.</p>
+<p><strong>Guests:</strong> Fishers, militia, and their drinking captain.</p>
+<p><strong>Trouble:</strong> War stories of dubious accuracy; fishing-rights quarrels spill onto the walkway.</p>
+<div class="npc"><p class="head"><span class="nm">Kelvan Bresul</span> <span class="meta">· militia captain · village militia</span></p>
+<p>Soft around the middle, red-faced, ceremonial armour polished bright.</p>
+<p class="say">“When I was your age, we held the line.”</p>
+<p><strong>Wants:</strong> To be taken seriously.<br><strong>Doesn’t want:</strong> Night patrols near the swamp edge.<br><strong>Found:</strong> Waterside Tavern, telling war stories.</p>
+<details><summary>More</summary>
+<p><strong>Oddly also:</strong> Half-sees things in the marshes, and drinks so he won&#x27;t.<br><strong>Dreams:</strong> To prove himself in a real fight, which terrifies him.<br><strong>Thinks with:</strong> fear<br><strong>Family:</strong> A wife tired of his drinking; two teenage sons.</p>
+</details>
+</div>
+</section>
+<section class="loc"><h3><span class="num">3.</span>Dockside Market</h3>
+<p>Stalls on the dock where the catch is sold and the Norvaks negotiate caravan trade.</p>
+<p><strong>Days:</strong> Every morning; market day draws the whole lake.</p>
+</section>
+<section class="loc"><h3><span class="num">4.</span>The Fishmonger&#x27;s</h3>
+<p>A fishmonger&#x27;s near the docks.</p>
+<p><strong>Wares:</strong> Fresh and salted fish.</p>
+<p class="hidden"><strong>Hidden:</strong> A back room where Ossek Thrice-Buried does the accounts as cover. It is a node in the Aurka network.</p>
+<div class="npc"><p class="head"><span class="nm">Ossek, Thrice-Buried</span> <span class="meta">· antiquarian · aurka</span></p>
+<p>Small, crooked back. Ink-stained, scarred fingers. Satchel of paper rolls. <em>And yet:</em> The satchel clinks: dozens of ceramic animal figurines.</p>
+<p class="say">“The rubbing was worth it.”</p>
+<p class="say">“Bressul always checked those first.”</p>
+<p><strong>Wants:</strong> Ameniseb’s tomb inscriptions.<br><strong>Doesn’t want:</strong> To fight, climb, run, or share credit.<br><strong>Knows:</strong> Tomb layouts; old inscriptions.<br><strong>Offers:</strong> Inscription reading. Aurka contacts.<br><strong>Found:</strong> The Fishmonger&#x27;s back room in Caelrun, annotating his notes by lamplight.</p>
+<details><summary>More</summary>
+<p><strong>Oddly also:</strong> Talks past inquisitors and guards on tone and improvised credentials.<br><strong>Dreams:</strong> Rewrite the accepted history of the Silence.<br><strong>Thinks with:</strong> lore<br><strong>Family:</strong> Two adult sons, Jevek and Danek, in Velgroth-Lucernia — they think he is dead, or wish he were. A niece in Caelrun who leaves food out for him.</p>
+<p><strong>Anecdote:</strong> Convinced an Ilmenor inquisitor his grimoire was a recipe book by reading from it in a made-up dialect for four unbroken minutes.</p>
+<p><strong>Anecdote:</strong> Emerged from the second collapse after three days underground — dehydrated, one broken rib — still clutching his rubbing. &#x27;The rubbing was worth it.&#x27; No one agrees.</p>
+<p><strong>Anecdote:</strong> Identified a sealed vault in Caelrun&#x27;s lake ruins from waterlogged timber patterns during a drought — without entering the water. Sold the information before learning what was inside. Still annoyed.</p>
+<p><strong>Tragedy:</strong> Nevret — young Aurka, one season in, killed in the first collapse. Ossek got out. Keeps Nevret&#x27;s iron stylus in his breast pocket; doesn&#x27;t discuss it, except constantly, in passing, as though Nevret might walk in.</p>
+<p><strong>Tragedy:</strong> Bressul — steady, experienced, survived everything, killed in the second collapse. Ossek invokes him most when pointing out load-bearing features: &#x27;Bressul always checked those first.&#x27;</p>
+<p><strong>Tragedy:</strong> Davanek — killed two years ago in the third collapse. Ossek still refers to him in the present tense occasionally, catching himself with a small cough. He has not noticed the pattern, or does not consider it relevant.</p>
+</details>
+</div>
+</section>
+<section class="loc"><h3><span class="num">5.</span>Guild Hall</h3>
+<p>The net-menders&#x27; and rope-makers&#x27; hall, and the village&#x27;s real exchange for gossip.</p>
+<p><strong>Members:</strong> Net-menders and rope-makers under Essa.</p>
+<p><strong>Services:</strong> Nets and lake-hemp rope of good quality.</p>
+<div class="npc"><p class="head"><span class="nm">Essa, the Net-Mender</span> <span class="meta">· guild mistress · independent</span></p>
+<p>Weathered, blind in one eye, a net in her lap.</p>
+<p class="say">“A story for a story.”</p>
+<p><strong>Wants:</strong> The guild kept neutral, and good gossip.<br><strong>Doesn’t want:</strong> Being left out of the news.<br><strong>Knows:</strong> Who owes whom, across the village.<br><strong>Offers:</strong> Nets, rope, and information traded fairly.<br><strong>Found:</strong> Guild Hall, hands never still.</p>
+<details><summary>More</summary>
+<p><strong>Dreams:</strong> To retire the most respected elder in Caelrun, having written nothing down.<br><strong>Thinks with:</strong> persuasion<br><strong>Family:</strong> Widowed; grown children fish for other families.</p>
+<p><strong>Anecdote:</strong> Lost her eye to a snapped line in a storm and mended the net before she let anyone look at her.</p>
+</details>
+</div>
+</section>
+<section class="loc"><h3><span class="num">6.</span>The Oil Pits</h3>
+<p>Fish-oil rendering vats, visible from the walkways and smelled from everywhere.</p>
+<p><strong>Wares:</strong> Fish oil.</p>
+<p><strong>Proprietor:</strong> The Norvaks.</p>
+<p><strong>Off the books:</strong> Worked by debt-bound labourers; debts are bought and sold like barrels.</p>
+<div class="npc"><p class="head"><span class="nm">Dren</span> <span class="meta">· bound labourer · independent</span></p>
+<p>Young, thin, stained with fish oil. <em>And yet:</em> Clean, careful hands.</p>
+<p class="say">“Seven more years. I count them.”</p>
+<p><strong>Wants:</strong> Free of the Norvak debt.<br><strong>Doesn’t want:</strong> Being reminded of it.<br><strong>Found:</strong> The Oil Pits, stinking of fish oil.</p>
+<details><summary>More</summary>
+<p><strong>Oddly also:</strong> Drinks stolen wine and imagines the oil pits burning.<br><strong>Dreams:</strong> Escape to Nebruz to work bog iron, and never see a fish again.<br><strong>Thinks with:</strong> guilt<br><strong>Family:</strong> Inherited his dead father&#x27;s debt; his siblings scattered.</p>
+</details>
+</div>
+</section>
+<section class="loc"><h3><span class="num">7.</span>Boatwright&#x27;s Yard</h3>
+<p>Sawdust, pitch, and hulls on trestles.</p>
+<p><strong>Wares:</strong> Fishing boats built to last decades.</p>
+<p><strong>Proprietor:</strong> Tovar the boatwright, who will not be rushed.</p>
+<div class="npc"><p class="head"><span class="nm">Tovar</span> <span class="meta">· boatwright · independent</span></p>
+<p>Calloused hands, sawdust in his beard. <em>And yet:</em> Hums tunelessly while he works.</p>
+<p class="say">“Built to last. Or not built.”</p>
+<p><strong>Wants:</strong> Every boat to last decades.<br><strong>Doesn’t want:</strong> Rush jobs or cheap timber.<br><strong>Offers:</strong> Fishing boats, built properly.<br><strong>Found:</strong> Boatwright&#x27;s Yard, finding fault.</p>
+<details><summary>More</summary>
+<p><strong>Dreams:</strong> The perfect fishing boat.<br><strong>Thinks with:</strong> tradition<br><strong>Family:</strong> Three terrified apprentices; a wife who understands his moods.</p>
+</details>
+</div>
+</section>
+<section class="loc"><h3><span class="num">8.</span>Shrine of Thulda</h3>
+<p>A small grey shrine where the dead are prepared.</p>
+<p><strong>Populace:</strong> Mourners, and Mother Hildreth spinning wool by the door.</p>
+<p><strong>Rites:</strong> Funeral rites.</p>
+<div class="npc"><p class="head"><span class="nm">Hildreth, Mother Hildreth</span> <span class="meta">· Thulda priestess · independent</span></p>
+<p>Elderly, serene, grey wool robes.</p>
+<p class="say">“The dead are in no hurry. Neither am I.”</p>
+<p><strong>Wants:</strong> Proper funeral rites, peace for the dying.<br><strong>Doesn’t want:</strong> Rushed burials.<br><strong>Found:</strong> Shrine of Thulda, spinning wool by the door.</p>
+<details><summary>More</summary>
+<p><strong>Dreams:</strong> A successor, and to die in her sleep at the shrine.<br><strong>Thinks with:</strong> faith<br><strong>Family:</strong> Outlived her husband and two children.</p>
+<p><strong>Tragedy:</strong> Buried her husband and both her children at her own shrine.</p>
+</details>
+</div>
+</section>
+<section class="loc"><h3><span class="num">9.</span>Hallan Compound</h3>
+<p>The fleet master&#x27;s family compound by the main jetty.</p>
+<p><strong>Inhabitants:</strong> Brecht Hallan, about 40 kin, and servants under Penna.</p>
+<div class="npc"><p class="head"><span class="nm">Penna</span> <span class="meta">· household servant · independent</span></p>
+<p>Middle-aged, brisk, a ring of keys.</p>
+<p><strong>Wants:</strong> The household running smoothly.<br><strong>Doesn’t want:</strong> Her children treated as lesser.<br><strong>Knows:</strong> The Hallan compound&#x27;s routines better than the Hallans.<br><strong>Found:</strong> Hallan Compound, running the household.</p>
+<details><summary>More</summary>
+<p><strong>Dreams:</strong> Her eldest daughter marrying above her station.<br><strong>Thinks with:</strong> tradition<br><strong>Family:</strong> Third generation in Hallan service; husband serves too; four children.</p>
+</details>
+</div>
+<div class="npc"><p class="head"><span class="nm">Sarith, the Watcher</span> <span class="meta">· village elder · independent</span></p>
+<p>Old, visibly scarred, a cane. <em>And yet:</em> Sharp eyes that miss nothing.</p>
+<p><strong>Wants:</strong> The lizard-man compact kept.<br><strong>Doesn’t want:</strong> Fool heroes, and Aurka drawing the wrong attention.<br><strong>Found:</strong> Hallan Compound, carving waystones in the yard.</p>
+<details><summary>More</summary>
+<p><strong>Oddly also:</strong> Former Elunad. Teaches the few who listen.<br><strong>Dreams:</strong> To die knowing the compact will hold.<br><strong>Thinks with:</strong> lore<br><strong>Family:</strong> Adopted by the Hallans after serving with them; never married.</p>
+</details>
+</div>
+</section>
+<section class="loc"><h3><span class="num">10.</span>Tarnes Granary</h3>
+<p>Barley stores above the shore fields.</p>
+<p><strong>Wares:</strong> Barley, seed and food.</p>
+<div class="npc"><p class="head"><span class="nm">Merra, Merra of the Fields</span> <span class="meta">· field manager · independent</span></p>
+<p>Sun-darkened, sharp-eyed, sleeves rolled.</p>
+<p class="say">“Fishers can keep their opinions on barley.”</p>
+<p><strong>Wants:</strong> Land used well, and her expertise respected.<br><strong>Doesn’t want:</strong> Wasted resources.<br><strong>Found:</strong> Tarnes Granary, giving orders.</p>
+<details><summary>More</summary>
+<p><strong>Oddly also:</strong> Resents being asked what she does for pleasure.<br><strong>Dreams:</strong> More barley, under her hand.<br><strong>Thinks with:</strong> money<br><strong>Family:</strong> Married into the Tarnes family; three children work the fields.</p>
+</details>
+</div>
+<div class="npc"><p class="head"><span class="nm">Ordun Tarnes, the Quiet Negotiator</span> <span class="meta">· grain-collective head · independent</span></p>
+<p>Weathered, patient, soil under his nails.</p>
+<p><strong>Wants:</strong> Good harvests and peace with all parties.<br><strong>Doesn’t want:</strong> The village learning of his quiet negotiations.<br><strong>Found:</strong> Tarnes Granary, or walking the barley fields alone at dawn.</p>
+<details><summary>More</summary>
+<p><strong>Oddly also:</strong> One of the few who knows the lizard-man compact, and keeps it.<br><strong>Dreams:</strong> A worthy heir for what he knows.<br><strong>Thinks with:</strong> diplomacy<br><strong>Family:</strong> Tarnes patriarch; an extended family of fifteen and more.</p>
+</details>
+</div>
+</section>
+<section class="loc"><h3><span class="num">11.</span>Main Jetty</h3>
+<p>The boat landing at the heart of the village.</p>
+<p><strong>Passage:</strong> Boats to the decaying dock on the southwest shore, then the swamp path: 6 miles by water and 3 on foot to Nebruz. Yavra Quickwater ferries, for a price and no questions.</p>
+<div class="npc"><p class="head"><span class="nm">Brecht Hallan, the Fleet Master</span> <span class="meta">· fleet master · independent</span></p>
+<p>Weathered, hard-faced, a captain&#x27;s bearing.</p>
+<p class="say">“The lake gives. Don&#x27;t ask what it takes.”</p>
+<p><strong>Wants:</strong> A good season and the compact honoured quietly.<br><strong>Doesn’t want:</strong> Kin who talk too much.<br><strong>Found:</strong> Main Jetty at dawn, counting boats out.</p>
+<details><summary>More</summary>
+<p><strong>Oddly also:</strong> Commands forty-odd boats; inherited the lizard-man secret from his father.<br><strong>Dreams:</strong> To pass the fleet and the secret to a worthy heir, and die on the water.<br><strong>Thinks with:</strong> money<br><strong>Family:</strong> Hallan patriarch; forty and more kin.</p>
+</details>
+</div>
+</section>
+<section class="loc"><h3><span class="num">12.</span>Decaying Dock</h3>
+<p>A half-sunk dock on the southwest shore where the swamp path begins.</p>
+<p><strong>Passage:</strong> Swamp path to Nebruz, 3 miles on foot through lizard-man country. Will-o&#x27;-wisps have been seen.</p>
+</section>
+<section class="loc"><h3><span class="num">13.</span>The Marsh Edge</h3>
+<p>Leech pools, fringe camps, Kessa&#x27;s hut, and Varren&#x27;s stilted shack where the lake turns to swamp.</p>
+<p><strong>Custom:</strong> Outside village authority.</p>
+<p class="hidden"><strong>Hidden:</strong> Channels the smugglers use at night, toward Nebruz.</p>
+<div class="npc"><p class="head"><span class="nm">Kessa, the Leech-Wife</span> <span class="meta">· leech-gatherer · independent</span></p>
+<p>Stained fingers, mud to the thigh, a leech-jar. <em>And yet:</em> Talks gently to the leeches.</p>
+<p><strong>Wants:</strong> To be left alone.<br><strong>Doesn’t want:</strong> Questions about what she sees out there.<br><strong>Offers:</strong> Medicinal herbs and leeches.<br><strong>Found:</strong> The Marsh Edge, wading with a jar.</p>
+<details><summary>More</summary>
+<p><strong>Dreams:</strong> To die in the marsh and go back to the mud.<br><strong>Thinks with:</strong> lore<br><strong>Family:</strong> None; may have fled something long ago.</p>
+</details>
+</div>
+<div class="npc"><p class="head"><span class="nm">Varren, Muddfoot</span> <span class="meta">· informant · aurka</span></p>
+<p>Twitchy, mud-caked, reeking of frog.</p>
+<p class="say">“Everything&#x27;s for sale. Even this.”</p>
+<p><strong>Wants:</strong> Aurka coin, and information to trade.<br><strong>Doesn’t want:</strong> Being caught informing.<br><strong>Found:</strong> The Marsh Edge, in his stilted shack, catching frogs.</p>
+<details><summary>More</summary>
+<p><strong>Oddly also:</strong> Wants his family&#x27;s respect, and won&#x27;t admit it.<br><strong>Dreams:</strong> The Aurka find something big, he gets his cut, and his family begs forgiveness he&#x27;ll refuse.<br><strong>Thinks with:</strong> money<br><strong>Family:</strong> A disowned Bresul cousin, cast out for theft; claims he was framed.</p>
+</details>
+</div>
+</section>
+<section class="loc"><h3><span class="num">14.</span>Far-Shore Reed Hut</h3>
+<p>Brother Kellis&#x27;s reed hut on the far shore, ringed with cairns that mark the safe water paths.</p>
+<p><strong>Inhabitants:</strong> Brother Kellis. Travellers leave offerings at the cairns before crossing.</p>
+<div class="npc"><p class="head"><span class="nm">Kellis, Brother Kellis</span> <span class="meta">· Ossamar devotee · ossamar devotees</span></p>
+<p>Thin, barefoot, river-wet robes.</p>
+<p class="say">“Neither shore. Neither water.”</p>
+<p><strong>Wants:</strong> Safe crossings for travellers, and solitude.<br><strong>Doesn’t want:</strong> Village politics, or the cairns disturbed.<br><strong>Offers:</strong> The safe water paths.<br><strong>Found:</strong> Far-Shore Reed Hut, arranging cairn stones at dawn.</p>
+<details><summary>More</summary>
+<p><strong>Dreams:</strong> To understand Ossamar perfectly, and drown peacefully.<br><strong>Thinks with:</strong> faith<br><strong>Family:</strong> No ties; left a former life behind decades ago.</p>
+</details>
+</div>
+</section>
+<section class="loc"><h3><span class="num">15.</span>The Drowned Columns</h3>
+<p>Temple pillars that break the surface in a dry summer, about 800 yards north of the fishing grounds.</p>
+<p><strong>Custom:</strong> Fishers steer around them; fish avoid the water there.</p>
+</section>
+<h2 class="section">Factions in Town</h2>
+<p><strong>Aurka.</strong> <em>Purpose:</em> Recover pre-Silence knowledge. <em>Membership:</em> Ossek&#x27;s node in the fishmonger&#x27;s back room; Varren Muddfoot informs. <em>Scheme:</em> Diving the Submerged Temple-Garden; stopped at its sealed lead door. A rival team is preparing too.</p>
+<p><strong>Lizard Men.</strong> <em>Purpose:</em> Hold the swamp. <em>Membership:</em> Three tendencies: the Clean Death, the Restrained Hunger, the Long Work. <em>Scheme:</em> Watch from the reeds, and answer any breach of the compact. Not quickly, not obviously, but surely.</p>
+<p><strong>Ilmenor.</strong> <em>Purpose:</em> Pre-Silence knowledge, under their control. <em>Membership:</em> An agent, quietly buying. <em>Scheme:</em> Watching the temple ruins from a distance.</p>
+<h2 class="section">Trouble</h2><ul><li>Aurka activity at the ruins is drawing unwanted attention, and a rival team is preparing its own dive.</li><li>The lizard-man compact is unspoken; a major expedition into the temple would breach it.</li><li>Dren, debt-bound at the oil pits, wants to run to Nebruz. The Norvaks will pursue, and the village won&#x27;t protect him.</li><li>Bresul boats make midnight trips, carrying something.</li><li>Tobacco, by way of Mother Yaleth, has caught on among the militia.</li><li>Fishing-rights disputes between families.</li><li>Fringe workers at the bog edge live outside village authority.</li></ul>
+<h2 class="section">Neighbors</h2><p>
+<strong>Nemetra:</strong> 18 miles west via luric road.<br><strong>Tagmira:</strong> 18 miles east via luric road.<br><strong>Nebruz:</strong> 9 miles south via nebruz crossing. 6 miles by boat through the swamp channels, then 3 miles on foot through lizard-man swamp.</p>
+<h2 class="section">Steadings</h2>
+<p><strong>Xuncal</strong> (resource): Quiet reed-cutters&#x27; steading, worked by the same families for generations. <em>Why here:</em> The reed and rush beds.</p>
+<p><strong>Salmura</strong> (resource): Windswept fish-drying steading, smoke always rising from the racks. <em>Why here:</em> Wind and room for the drying racks.</p>
+<p><strong>Angueira</strong> (family): Secretive eel-trapping steading of a single superstitious family. <em>Why here:</em> The eel runs, and trap techniques the family will not share.</p>
+<p><strong>Carvoal</strong> (noxious_trade): Smoky charcoal-burners&#x27; steading at the swamp edge, closest to the lizard-man patrols. <em>Why here:</em> Charcoal kilns and swamp-edge timber, too smoky for the village.</p>
+</main>

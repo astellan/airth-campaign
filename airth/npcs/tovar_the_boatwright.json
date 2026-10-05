@@ -4,7 +4,7 @@
   "role": "boatwright",
   "home": "Tovar's Boatyard, Caelrun",
   "home_settlement": "caelrun",
-  "found": "Tovar's Boatyard, finding fault.",
+  "found": "Boatwright's Yard, finding fault.",
   "gender": "male",
   "faction": "independent",
   "thinks_with": "tradition",

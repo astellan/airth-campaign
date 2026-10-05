@@ -2,7 +2,7 @@
   "$schema": "../../schema/settlement.schema.json",
   "id": "caelrun",
   "name": "Caelrun",
-  "status": "in_development",
+  "status": "ready",
   "type": "village",
   "tagline": "Lakeside fishing village that feeds the Marches, and does not ask who lets it.",
   "region": "Luric Marches",
@@ -29,7 +29,7 @@
     "Thulda (grey-robed funeral shrine)",
     "Ossamar (cairns on the water paths)"
   ],
-  "strangers": "Welcome for trade; watched near the swamp edge.",
+  "strangers": "Welcome for trade. Some things are carefully not asked about, and strangers who ask are noticed.",
   "palette": {
     "constants": {
       "far": [
@@ -38,13 +38,18 @@
         "the lake flat and grey beyond the barley"
       ],
       "near": [
+        "walkways on stilts",
         "barley to the shoreline",
-        "rush beds",
-        "racks hung with split fish"
+        "racks hung with split fish, smoking"
       ],
       "leaving": [
         "fish smell in your clothes for days",
         "the reed beds closing behind the road"
+      ],
+      "threshold": [
+        "boats everywhere",
+        "nets hung like spiderwebs",
+        "market stalls at the dock"
       ]
     },
     "by_time": {
@@ -67,7 +72,8 @@
       },
       "within": {
         "dawn": [
-          "net-menders already at work"
+          "thunk of net-mending already",
+          "oars creaking out"
         ],
         "day": [
           "fish oil rendering",
@@ -78,7 +84,8 @@
         ],
         "night": [
           "the Waterside Tavern loud",
-          "something moving out in the reeds"
+          "reeds rustling where there is no wind",
+          "on moonless nights, a green-blue glow over the northern deep"
         ]
       }
     },
@@ -108,6 +115,7 @@
         "name": "Tilanda",
         "when": "9 Nabaia",
         "descriptors": [
+          "pilgrim boats arriving",
           "offerings floated on the lake",
           "Brother Kellis's cairns hung with ribbons"
         ]
@@ -119,59 +127,80 @@
           "women veiled in wool",
           "funeral chants from the Thulda shrine"
         ]
+      },
+      {
+        "name": "Market day",
+        "when": "weekly",
+        "descriptors": [
+          "crowds on the walkways",
+          "caravan factors haggling at the Dockside Market"
+        ]
+      },
+      {
+        "name": "Storm coming",
+        "when": "any season",
+        "descriptors": [
+          "boats hauled up early",
+          "no one diving tomorrow"
+        ]
       }
     ]
   },
   "itself": [
     {
       "title": "Food for the Marches",
-      "text": "Fish, eels, and barley from Caelrun feed the other Marches villages. Dried and smoked fish, fish oil, rush mats, and lake-hemp rope go out along the road."
+      "text": "Fish, eels, and barley from Caelrun feed the other Marches villages. Dried and smoked fish, fish oil, rush mats, and lake-hemp rope go out along the road. Caelrun has no smith of its own; iron, tools, and boat-nails come in by caravan."
     },
     {
       "title": "By lizard-man sufferance",
-      "text": "The village exists because the lizard-men allow it. Most residents believe their prosperity comes from hard work and a good location. A few families, the Hallans and the Tarnes among them, know the truth and keep the unspoken compact."
+      "text": "The swamp around Caelrun is lizard-man country, and the village survives because they allow it. Most residents believe their prosperity comes from hard work and good land. Sarith the Watcher, Brecht Hallan, and Ordun Tarnes know the compact's real shape and keep it unspoken."
+    },
+    {
+      "title": "Debt-bound",
+      "text": "Debts pass from father to son here. Bound labourers work them off in the oil pits, and the village does not protect anyone who runs."
     },
     {
       "title": "Ruins under the lake",
-      "text": "Pre-Silence temple foundations lie in the northern depths of the lake. The Aurka have been diving there, and the attention worries those who keep the compact."
+      "text": "The Submerged Temple-Garden lies in the northern deep. Its columns show in the shallows in a dry summer, and on moonless nights the water over it glows. The Aurka are diving it; the elders know exploring it is limited by the compact."
     }
   ],
   "encounters": {
     "day": [
-      "**Essa the net-mender** offers a piece of gossip, and wants one back.",
-      "Two fishing families shout over a contested stretch of shore.",
-      "**Tovar the boatwright** berates an apprentice over a badly fitted plank.",
-      "A cart of smoked fish loses a wheel on the road.",
-      "**1d3 Aurka** come ashore wet, carrying something wrapped in sacking.",
-      "A funeral procession walks to the Thulda shrine, chanting."
+      "**Essa the Net-Mender** offers a piece of gossip, and wants one back.",
+      "Two families argue on the walkway over whose net it is.",
+      "A boat comes in with a strange catch, and a crowd gathers.",
+      "**2d4 militia** make a drunken patrol along the walkways.",
+      "A stranger with ink-stained hands is quietly buying anything old from the lake.",
+      "**3 Aurka** from a rival team load diving gear into a hired boat."
     ],
     "night": [
       "**Kelvan Bresul**, drunk, tells a war story at the Waterside Tavern.",
-      "A boat slips out without lanterns toward the southern channels.",
-      "**Yavra Quickwater** waits at the far jetty for a passenger.",
-      "A fire breaks out in a fish-oil rendering shed.",
-      "Lights move in the reeds where no one fishes, and by morning there is nothing.",
-      "Leech-gatherers from the bog edge come in to drink and are turned away."
+      "Bresul boats slip out without lanterns, low in the water.",
+      "**Yavra Quickwater** waits at the Main Jetty for a passenger.",
+      "Green-blue light over the northern deep, brighter than last time.",
+      "A **lizard-man** stands at the reed line, watching, and is gone when looked at again.",
+      "**Dren** sits on the oil-pit wall, counting something on his fingers."
     ]
   },
   "response": {
-    "watch": "About 20 ceremonial militia under Kelvan Bresul, for disputes and drunk fishers.",
+    "watch": "About 20 ceremonial militia under Kelvan Bresul, mostly good for drunks and disputes.",
     "arrival_day": "1d4 militia within 1d12 minutes.",
     "arrival_night": "1d3 militia within 1d4 turns, if Kelvan can be roused.",
     "reinforcements": "A handful of old veterans, if anyone thinks to call them.",
-    "bribery": null,
+    "bribery": "Easily: a few coppers and a good story.",
     "strength_now": "About 20 militia",
     "strength_founding": "40",
     "strength": "Ceremonial. The real protection is the lizard-men, and almost no one knows it."
   },
   "locations": [
     {
-      "id": "fish-market",
-      "name": "Fish Market",
-      "type": "market",
-      "look": "Open stalls on the shore where the catch is sold each morning.",
+      "id": "silver-perch",
+      "name": "Silver Perch Inn",
+      "type": "inn",
+      "look": "An inn on stilts overlooking the docks, run by the Hallans.",
       "labels": {
-        "days": "Every morning; busiest after the autumn eel runs."
+        "guests": "Taziri's caravan and whoever travels with it.",
+        "services": "Rooms over the water; lake fish and barley bread. Prices pending OSRIC 3.0 table."
       }
     },
     {
@@ -181,27 +210,57 @@
       "look": "The village tavern, on the water and loud every night.",
       "labels": {
         "guests": "Fishers, militia, and their drinking captain.",
-        "trouble": "Fishing-rights quarrels spill out onto the jetty."
+        "trouble": "War stories of dubious accuracy; fishing-rights quarrels spill onto the walkway."
+      }
+    },
+    {
+      "id": "dockside-market",
+      "name": "Dockside Market",
+      "type": "market",
+      "look": "Stalls on the dock where the catch is sold and the Norvaks negotiate caravan trade.",
+      "labels": {
+        "days": "Every morning; market day draws the whole lake."
+      }
+    },
+    {
+      "id": "fishmongers",
+      "name": "The Fishmonger's",
+      "type": "shop",
+      "look": "A fishmonger's near the docks.",
+      "labels": {
+        "wares": "Fresh and salted fish."
+      },
+      "hidden": "A back room where Ossek Thrice-Buried does the accounts as cover. It is a node in the Aurka network."
+    },
+    {
+      "id": "net-menders-guild",
+      "name": "Guild Hall",
+      "type": "guild",
+      "look": "The net-menders' and rope-makers' hall, and the village's real exchange for gossip.",
+      "labels": {
+        "members": "Net-menders and rope-makers under Essa.",
+        "services": "Nets and lake-hemp rope of good quality."
+      }
+    },
+    {
+      "id": "oil-pits",
+      "name": "The Oil Pits",
+      "type": "shop",
+      "look": "Fish-oil rendering vats, visible from the walkways and smelled from everywhere.",
+      "labels": {
+        "wares": "Fish oil.",
+        "proprietor": "The Norvaks.",
+        "off_the_books": "Worked by debt-bound labourers; debts are bought and sold like barrels."
       }
     },
     {
       "id": "boatyard",
-      "name": "Tovar's Boatyard",
+      "name": "Boatwright's Yard",
       "type": "shop",
       "look": "Sawdust, pitch, and hulls on trestles.",
       "labels": {
         "wares": "Fishing boats built to last decades.",
         "proprietor": "Tovar the boatwright, who will not be rushed."
-      }
-    },
-    {
-      "id": "net-menders-guild",
-      "name": "Net-Menders' Guild",
-      "type": "guild",
-      "look": "The rope-walk and the net-menders' hall.",
-      "labels": {
-        "members": "Net-menders and rope-makers under Essa.",
-        "services": "Nets and lake-hemp rope of good quality."
       }
     },
     {
@@ -224,21 +283,58 @@
       }
     },
     {
+      "id": "tarnes-granary",
+      "name": "Tarnes Granary",
+      "type": "shop",
+      "look": "Barley stores above the shore fields.",
+      "labels": {
+        "wares": "Barley, seed and food."
+      }
+    },
+    {
       "id": "jetty",
       "name": "Main Jetty",
       "type": "dock",
       "look": "The boat landing at the heart of the village.",
       "labels": {
-        "passage": "To Nebruz: 6 miles south by boat through the swamp channels, then 3 miles on foot. Yavra Quickwater ferries, for a price and no questions."
+        "passage": "Boats to the decaying dock on the southwest shore, then the swamp path: 6 miles by water and 3 on foot to Nebruz. Yavra Quickwater ferries, for a price and no questions."
       }
     },
     {
-      "id": "kellis-cairns",
-      "name": "Brother Kellis's Cairns",
-      "type": "landmark",
-      "look": "A reed hut on the far shore, and stone cairns marking the safe water paths.",
+      "id": "decaying-dock",
+      "name": "Decaying Dock",
+      "type": "dock",
+      "look": "A half-sunk dock on the southwest shore where the swamp path begins.",
       "labels": {
-        "custom": "Travellers leave offerings at the cairns before crossing."
+        "passage": "Swamp path to Nebruz, 3 miles on foot through lizard-man country. Will-o'-wisps have been seen."
+      }
+    },
+    {
+      "id": "marsh-edge",
+      "name": "The Marsh Edge",
+      "type": "landmark",
+      "look": "Leech pools, fringe camps, Kessa's hut, and Varren's stilted shack where the lake turns to swamp.",
+      "labels": {
+        "custom": "Outside village authority."
+      },
+      "hidden": "Channels the smugglers use at night, toward Nebruz."
+    },
+    {
+      "id": "kellis-cairns",
+      "name": "Far-Shore Reed Hut",
+      "type": "residence",
+      "look": "Brother Kellis's reed hut on the far shore, ringed with cairns that mark the safe water paths.",
+      "labels": {
+        "inhabitants": "Brother Kellis. Travellers leave offerings at the cairns before crossing."
+      }
+    },
+    {
+      "id": "drowned-columns",
+      "name": "The Drowned Columns",
+      "type": "landmark",
+      "look": "Temple pillars that break the surface in a dry summer, about 800 yards north of the fishing grounds.",
+      "labels": {
+        "custom": "Fishers steer around them; fish avoid the water there."
       }
     }
   ],
@@ -246,14 +342,30 @@
     {
       "id": "aurka",
       "purpose": "Recover pre-Silence knowledge.",
-      "scheme": "Diving the submerged temple foundations in the lake."
+      "membership": "Ossek's node in the fishmonger's back room; Varren Muddfoot informs.",
+      "scheme": "Diving the Submerged Temple-Garden; stopped at its sealed lead door. A rival team is preparing too."
+    },
+    {
+      "id": "lizard-men",
+      "purpose": "Hold the swamp.",
+      "membership": "Three tendencies: the Clean Death, the Restrained Hunger, the Long Work.",
+      "scheme": "Watch from the reeds, and answer any breach of the compact. Not quickly, not obviously, but surely."
+    },
+    {
+      "id": "ilmenor",
+      "purpose": "Pre-Silence knowledge, under their control.",
+      "membership": "An agent, quietly buying.",
+      "scheme": "Watching the temple ruins from a distance."
     }
   ],
   "trouble": [
-    "Aurka activity drawing unwanted attention to ruins",
-    "Unspoken lizard-man control - acknowledged by few, ignored by most",
-    "Fishing rights disputes between families",
-    "Fringe workers (leech gatherers, bog-edge camps) operate outside village authority"
+    "Aurka activity at the ruins is drawing unwanted attention, and a rival team is preparing its own dive.",
+    "The lizard-man compact is unspoken; a major expedition into the temple would breach it.",
+    "Dren, debt-bound at the oil pits, wants to run to Nebruz. The Norvaks will pursue, and the village won't protect him.",
+    "Bresul boats make midnight trips, carrying something.",
+    "Tobacco, by way of Mother Yaleth, has caught on among the militia.",
+    "Fishing-rights disputes between families.",
+    "Fringe workers at the bog edge live outside village authority."
   ],
   "neighbors": [
     {
@@ -314,6 +426,8 @@
       "Aurka found carved stones in submerged temple foundations",
       "Nebruz smugglers use secret lake channels at night",
       "Old temple columns visible in shallows during summer droughts"
-    ]
+    ],
+    "campaign_state": "As of session 27: the party passed through with Taziri's caravan, met Yavra Quickwater, then went Caelrun, decaying dock, swamp path, Nebruz, Leeandra's hut. Leeandra is brewing water-breathing potions in exchange for giant constrictor brain fluid. The party has not yet dived the Submerged Temple-Garden. Their Aurka contact is Ossek, not Varren.",
+    "temple_notes": "Western Wing beyond a sealed lead door: a greater wight hierophant conducting Nanna-Sin's liturgy alone, who wants to give someone the Tablets of the Reckoning (the Silence was a timed alignment and will recur). The ruins glow when the 300-year-old preservation enchantments are stressed. Full room-by-room writeup lives in Andrew's local site_submerged_temple_garden.md, not yet in the repo."
   }
 }

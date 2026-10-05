@@ -39,8 +39,8 @@
       "id": "BL-06",
       "category": "npcs",
       "description": "Add NPC record: Yavra (Caelrun)",
-      "status": "open",
-      "notes": "Ferryman/boatman in Caelrun. First appeared session 27. Minimal detail currently on record."
+      "status": "closed",
+      "notes": "Ferryman/boatman in Caelrun. First appeared session 27. Minimal detail currently on record. Closed 2026-10-05: Yavra has a v2 NPC file."
     },
     {
       "id": "BL-07",
@@ -167,6 +167,20 @@
       "description": "Build Orziben with Andrew.",
       "status": "open",
       "notes": "Agreed so far: tied for largest Luric town; earthen wall; the most Imazurani town in the Luric; ruled by an Imazurani council run like a crime family (Sopranos model); slightly drier, semi-arid climate and Imazurani architecture; Malac Schismatic pilgrims from across the Luric and from Velgroth pass through. The Mountain of Fire lies east of Imazuran, about 120 miles, mostly through settled, internally peaceful country (Imazuran a paramountcy). Exports wine, olive oil, alum; smiths buy charcoal; Imazuran caravans arriving less often; its Orthodox cleric has died."
+    },
+    {
+      "id": "BL-25",
+      "category": "factions",
+      "description": "Create a lizard-men faction file (goal/philosophy/limits pyramid) from the three tendencies in world_reference/mortals.json: the Clean Death, the Restrained Hunger, the Long Work. Add 'lizard-men' to the NPC faction enum and set Leeandra's faction (closes BL-10).",
+      "status": "open",
+      "notes": "Caelrun's central hidden tension."
+    },
+    {
+      "id": "BL-26",
+      "category": "adventure_sites",
+      "description": "Ingest Andrew's local site_submerged_temple_garden.md (12-area writeup) into airth/adventure_sites/submerged_temple_garden_enki_ki.json.",
+      "status": "open",
+      "notes": "Needs the file from Andrew."
     }
   ]
 }
