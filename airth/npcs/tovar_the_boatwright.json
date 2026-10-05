@@ -1,0 +1,25 @@
+{
+  "name": "Tovar",
+  "moniker": null,
+  "role": "boatwright",
+  "home": "Tovar's Boatyard, Caelrun",
+  "home_settlement": "caelrun",
+  "found": "Tovar's Boatyard, finding fault.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "tradition",
+  "appearance": "Calloused hands, sawdust in his beard.",
+  "and_yet": "Hums tunelessly while he works.",
+  "sayings": [
+    "Built to last. Or not built."
+  ],
+  "wants": "Every boat to last decades.",
+  "does_not_want": "Rush jobs or cheap timber.",
+  "dreams": "The perfect fishing boat.",
+  "oddly_also": null,
+  "knows": null,
+  "offers": "Fishing boats, built properly.",
+  "family": "Three terrified apprentices; a wife who understands his moods.",
+  "anecdotes": [],
+  "tragedies": []
+}

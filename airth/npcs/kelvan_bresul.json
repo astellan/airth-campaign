@@ -1,0 +1,25 @@
+{
+  "name": "Kelvan Bresul",
+  "moniker": null,
+  "role": "militia captain",
+  "home": "Caelrun",
+  "home_settlement": "caelrun",
+  "found": "Waterside Tavern, telling war stories.",
+  "gender": "male",
+  "faction": "village-militia",
+  "thinks_with": "fear",
+  "appearance": "Soft around the middle, red-faced, ceremonial armour polished bright.",
+  "and_yet": null,
+  "sayings": [
+    "When I was your age, we held the line."
+  ],
+  "wants": "To be taken seriously.",
+  "does_not_want": "Night patrols near the swamp edge.",
+  "dreams": "To prove himself in a real fight, which terrifies him.",
+  "oddly_also": "Half-sees things in the marshes, and drinks so he won't.",
+  "knows": null,
+  "offers": null,
+  "family": "A wife tired of his drinking; two teenage sons.",
+  "anecdotes": [],
+  "tragedies": []
+}

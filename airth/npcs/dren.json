@@ -1,0 +1,25 @@
+{
+  "name": "Dren",
+  "moniker": null,
+  "role": "bound labourer",
+  "home": "Caelrun",
+  "home_settlement": "caelrun",
+  "found": "The rendering sheds, stinking of fish oil.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "guilt",
+  "appearance": "Young, thin, stained with fish oil.",
+  "and_yet": "Clean, careful hands.",
+  "sayings": [
+    "Seven more years. I count them."
+  ],
+  "wants": "Free of the Norvak debt.",
+  "does_not_want": "Being reminded of it.",
+  "dreams": "Flight to Velgroth, and never to see a fish again.",
+  "oddly_also": "Drinks stolen wine and imagines the oil pits burning.",
+  "knows": null,
+  "offers": null,
+  "family": "Inherited his dead father's debt; his siblings scattered.",
+  "anecdotes": [],
+  "tragedies": []
+}

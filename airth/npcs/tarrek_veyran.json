@@ -1,0 +1,27 @@
+{
+  "name": "Tarrek Veyran",
+  "moniker": null,
+  "role": "smith",
+  "home": "Tarrek's Forge, Tagmira",
+  "home_settlement": "tagmira",
+  "found": "Tarrek's Forge, at the anvil from dawn.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "tradition",
+  "appearance": "Gruff, broad, soot-stained, a leather apron scorched through.",
+  "and_yet": null,
+  "sayings": [
+    "Settle it outside. Not in my forge."
+  ],
+  "wants": "A well-run forge and to be left to work.",
+  "does_not_want": "Feuds spilling into his forge.",
+  "dreams": "A good apprentice.",
+  "oddly_also": "Settles disputes when Hadran can't, because people trust him. Believes in the gods less than most.",
+  "knows": null,
+  "offers": "Metalwork, repairs, and plain answers if asked directly.",
+  "family": "Elder sister Morla, a healer; apprentices Garrin and Felmar.",
+  "anecdotes": [
+    "Stood neutral witness at the trial by combat between Tenn Darnel and Ulan Caernach."
+  ],
+  "tragedies": []
+}

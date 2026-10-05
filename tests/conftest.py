@@ -56,3 +56,8 @@ def settlement_schema():
 def settlement_config():
     with open(AIRTH / "config" / "settlement.json") as f:
         return json.load(f)
+
+
+@pytest.fixture(scope="session")
+def adventure_site_ids():
+    return {json.loads(p.read_text()).get("id") for p in (AIRTH / "adventure_sites").glob("*.json")}

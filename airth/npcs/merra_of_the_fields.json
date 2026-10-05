@@ -1,0 +1,25 @@
+{
+  "name": "Merra",
+  "moniker": "Merra of the Fields",
+  "role": "field manager",
+  "home": "Caelrun",
+  "home_settlement": "caelrun",
+  "found": "The barley fields, giving orders.",
+  "gender": "female",
+  "faction": "independent",
+  "thinks_with": "money",
+  "appearance": "Sun-darkened, sharp-eyed, sleeves rolled.",
+  "and_yet": null,
+  "sayings": [
+    "Fishers can keep their opinions on barley."
+  ],
+  "wants": "Land used well, and her expertise respected.",
+  "does_not_want": "Wasted resources.",
+  "dreams": "More barley, under her hand.",
+  "oddly_also": "Resents being asked what she does for pleasure.",
+  "knows": null,
+  "offers": null,
+  "family": "Married into the Tarnes family; three children work the fields.",
+  "anecdotes": [],
+  "tragedies": []
+}

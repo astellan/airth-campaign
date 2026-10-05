@@ -1,0 +1,25 @@
+{
+  "name": "Brecht Hallan",
+  "moniker": "the Fleet Master",
+  "role": "fleet master",
+  "home": "Hallan Compound, Caelrun",
+  "home_settlement": "caelrun",
+  "found": "Main Jetty at dawn, counting boats out.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "money",
+  "appearance": "Weathered, hard-faced, a captain's bearing.",
+  "and_yet": null,
+  "sayings": [
+    "The lake gives. Don't ask what it takes."
+  ],
+  "wants": "A good season and the compact honoured quietly.",
+  "does_not_want": "Kin who talk too much.",
+  "dreams": "To pass the fleet and the secret to a worthy heir, and die on the water.",
+  "oddly_also": "Commands forty-odd boats; inherited the lizard-man secret from his father.",
+  "knows": null,
+  "offers": null,
+  "family": "Hallan patriarch; forty and more kin.",
+  "anecdotes": [],
+  "tragedies": []
+}

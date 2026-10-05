@@ -1,0 +1,25 @@
+{
+  "name": "Kellis",
+  "moniker": "Brother Kellis",
+  "role": "Ossamar devotee",
+  "home": "Reed hut on the far shore, Caelrun",
+  "home_settlement": "caelrun",
+  "found": "Brother Kellis's Cairns, arranging stones at dawn.",
+  "gender": "transgender",
+  "faction": "ossamar-devotees",
+  "thinks_with": "faith",
+  "appearance": "Thin, barefoot, river-wet robes.",
+  "and_yet": null,
+  "sayings": [
+    "Neither shore. Neither water."
+  ],
+  "wants": "Safe crossings for travellers, and solitude.",
+  "does_not_want": "Village politics, or the cairns disturbed.",
+  "dreams": "To understand Ossamar perfectly, and drown peacefully.",
+  "oddly_also": null,
+  "knows": null,
+  "offers": "The safe water paths.",
+  "family": "No ties; left a former life behind decades ago.",
+  "anecdotes": [],
+  "tragedies": []
+}

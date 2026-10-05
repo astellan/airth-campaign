@@ -1,0 +1,31 @@
+{
+  "name": "Maedra",
+  "moniker": "Old Maedra",
+  "role": "undead prophet",
+  "home": "Temple of the Old Gods, Bramblewood",
+  "home_settlement": "temple-of-the-old-gods",
+  "found": "Temple of the Old Gods, at Zimru's side.",
+  "gender": "female",
+  "faction": "temple-of-the-old-gods",
+  "thinks_with": "lore",
+  "appearance": "Small, ancient, utterly still.",
+  "and_yet": "The temple's dead bow as she passes.",
+  "sayings": null,
+  "wants": "Not yet known, even to her.",
+  "does_not_want": "To be forgotten by Tagmira.",
+  "dreams": null,
+  "oddly_also": "Wept for Ildun-Ayenar before she changed; the dead took it as a sign she was ready.",
+  "knows": null,
+  "offers": null,
+  "family": "None living; she outlived everyone.",
+  "anecdotes": [
+    "Knew Ildun-Ayenar better than anyone realized.",
+    "Came to every funeral and vigil in Tagmira without being seen to arrive."
+  ],
+  "tragedies": [
+    "Chose undeath. Whether that is a tragedy depends on what she does with it."
+  ],
+  "campaign_notes": [
+    "Slow burn. Her presence should be felt before she appears. She and Zimru are consorts. The most human face of the alliance, and possibly its most dangerous element."
+  ]
+}

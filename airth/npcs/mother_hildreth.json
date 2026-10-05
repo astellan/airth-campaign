@@ -1,0 +1,27 @@
+{
+  "name": "Hildreth",
+  "moniker": "Mother Hildreth",
+  "role": "Thulda priestess",
+  "home": "Shrine of Thulda, Caelrun",
+  "home_settlement": "caelrun",
+  "found": "Shrine of Thulda, spinning wool by the door.",
+  "gender": "female",
+  "faction": "independent",
+  "thinks_with": "faith",
+  "appearance": "Elderly, serene, grey wool robes.",
+  "and_yet": null,
+  "sayings": [
+    "The dead are in no hurry. Neither am I."
+  ],
+  "wants": "Proper funeral rites, peace for the dying.",
+  "does_not_want": "Rushed burials.",
+  "dreams": "A successor, and to die in her sleep at the shrine.",
+  "oddly_also": null,
+  "knows": null,
+  "offers": null,
+  "family": "Outlived her husband and two children.",
+  "anecdotes": [],
+  "tragedies": [
+    "Buried her husband and both her children at her own shrine."
+  ]
+}

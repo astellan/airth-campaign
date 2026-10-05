@@ -1,0 +1,31 @@
+{
+  "name": "Zimru",
+  "moniker": "Hierophant of the Annunaki",
+  "role": "undead hierophant",
+  "home": "Temple of the Old Gods, Bramblewood",
+  "home_settlement": "temple-of-the-old-gods",
+  "found": "Temple of the Old Gods, before the Sphere.",
+  "gender": "male",
+  "faction": "temple-of-the-old-gods",
+  "thinks_with": "tradition",
+  "appearance": "Tall, stooped, parchment skin over bone, dulled gold vestments.",
+  "and_yet": "The vestments are arranged impeccably.",
+  "sayings": [
+    "If the gods have died, then their law must rule in their stead.",
+    "They would have let the world die praying."
+  ],
+  "wants": "Order, and more sacrifices for the Sphere.",
+  "does_not_want": "Forgetting: of names, rites, obligations.",
+  "dreams": "A world held to the old laws until the gods return, or until he accepts they will not.",
+  "oddly_also": "Sometimes addresses the party in the plural, as if to a congregation, then corrects himself.",
+  "knows": "The Bronze Host's movements, through the Sphere.",
+  "offers": "Sight through the Sphere, for obligations honoured.",
+  "family": "None living. The temple's undead are his order; Maedra is his consort.",
+  "anecdotes": [],
+  "tragedies": [
+    "Three centuries of perfect lucidity, watching everything he served collapse and be forgotten."
+  ],
+  "campaign_notes": [
+    "Voice: undead Tywin Lannister. No contractions; every line a decree. Judges the party's order, not their morality. Will press for the next sacrifice. Stat as greater wight, HD 10+, 5th-level cleric / 5th-level magic-user; level drain on touch, used as judgment."
+  ]
+}

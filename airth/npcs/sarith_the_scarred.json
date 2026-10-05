@@ -1,0 +1,23 @@
+{
+  "name": "Sarith",
+  "moniker": "the Watcher",
+  "role": "village elder",
+  "home": "Caelrun",
+  "home_settlement": "caelrun",
+  "found": "Hallan Compound, carving waystones in the yard.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "lore",
+  "appearance": "Old, visibly scarred, a cane.",
+  "and_yet": "Sharp eyes that miss nothing.",
+  "sayings": null,
+  "wants": "The lizard-man compact kept.",
+  "does_not_want": "Fool heroes, and Aurka drawing the wrong attention.",
+  "dreams": "To die knowing the compact will hold.",
+  "oddly_also": "Former Elunad. Teaches the few who listen.",
+  "knows": null,
+  "offers": null,
+  "family": "Adopted by the Hallans after serving with them; never married.",
+  "anecdotes": [],
+  "tragedies": []
+}

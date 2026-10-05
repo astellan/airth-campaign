@@ -1,0 +1,25 @@
+{
+  "name": "Yavra",
+  "moniker": "Quickwater",
+  "role": "ferry operator",
+  "home": "Nebruz",
+  "home_settlement": "nebruz",
+  "found": "Main Jetty at Caelrun, waiting at night for a passenger.",
+  "gender": "female",
+  "faction": "independent",
+  "thinks_with": "money",
+  "appearance": "Amazigh, wiry, wet to the knees.",
+  "and_yet": "Suspicious eyes in a smiling face.",
+  "sayings": [
+    "No lanterns. No questions."
+  ],
+  "wants": "Profitable smuggling routes.",
+  "does_not_want": "Questions about her night trips.",
+  "dreams": "To retire rich to Imazuran and never explain how.",
+  "oddly_also": null,
+  "knows": "Every channel through the swamp.",
+  "offers": "Passage to Nebruz, no questions.",
+  "family": "Married into the Norvaks of Caelrun, but works alone and sends money home.",
+  "anecdotes": [],
+  "tragedies": []
+}

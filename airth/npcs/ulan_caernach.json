@@ -1,0 +1,29 @@
+{
+  "name": "Ulan Caernach",
+  "moniker": null,
+  "role": "hunter",
+  "home": "Tagmira",
+  "home_settlement": "tagmira",
+  "found": "Hearth-Hall in the evenings, with the older fighters.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "endurance",
+  "appearance": "22, lean, deliberate, a carved curved knife at his belt.",
+  "and_yet": "Rubs the knife's grip with his thumb when thinking.",
+  "sayings": null,
+  "wants": "To understand what he has become.",
+  "does_not_want": "To go looking for violence.",
+  "dreams": null,
+  "oddly_also": "Wants someone to tell him whether the alliance with the dead is right. Suspects no one will.",
+  "knows": null,
+  "offers": null,
+  "family": "Mother Rinna; brother Theren, who wants to join the Elunad; stepfather Mellan, a hunter, who gave him the knife.",
+  "anecdotes": [
+    "Won the trial by combat against Tenn Darnel at the Circle of Cossus.",
+    "Fought orcs and animated skeletons alongside the party."
+  ],
+  "tragedies": [],
+  "campaign_notes": [
+    "Sardet officiated his duel and has his respect. Will answer the party's call without much persuasion."
+  ]
+}

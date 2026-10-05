@@ -61,13 +61,13 @@ def test_faction_is_valid_enum(npcs, airth_npc_config):
 # Reference: home_settlement
 # ---------------------------------------------------------------------------
 
-def test_home_settlement_references_exist(npcs, settlements):
-    """home_settlement must be a key in airth/settlements/, or 'itinerant'."""
+def test_home_settlement_references_exist(npcs, settlements, adventure_site_ids):
+    """home_settlement must be a settlement id, an adventure site id, or 'itinerant'."""
     invalid = []
     for npc_key, npc in npcs.items():
         value = npc.get("home_settlement")
-        if value and value != ITINERANT and value not in settlements:
-            invalid.append(f"{npc_key}: '{value}' not found in airth/settlements/")
+        if value and value != ITINERANT and value not in settlements and value not in adventure_site_ids:
+            invalid.append(f"{npc_key}: '{value}' not found in airth/settlements/ or airth/adventure_sites/")
     assert not invalid, "\n".join(invalid)
 
 

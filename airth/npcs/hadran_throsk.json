@@ -1,0 +1,33 @@
+{
+  "name": "Hadran Throsk",
+  "moniker": null,
+  "role": "militia captain",
+  "home": "Hearth-Hall, Tagmira",
+  "home_settlement": "tagmira",
+  "found": "Hearth-Hall, holding court most evenings.",
+  "gender": "male",
+  "faction": "village-militia",
+  "thinks_with": "endurance",
+  "appearance": "Middle-aged, scarred, a limp, captain's insignia worn like vestments.",
+  "and_yet": "Carves delicate figurines of old war heroes.",
+  "sayings": [
+    "I count the dead before the glory."
+  ],
+  "wants": "The northwest held without spending lives.",
+  "does_not_want": "Another generation bled out in someone else's fight.",
+  "dreams": "A fortified Tagmira that doesn't need him.",
+  "oddly_also": "Deeply skeptical of magic, but respects the gods.",
+  "knows": null,
+  "offers": null,
+  "family": "An estranged daughter in Velgroth-Lucernia; no kin left in the village.",
+  "anecdotes": [
+    "Rallied the militia during a night raid five winters ago; that is why they follow him.",
+    "Served as a mercenary for the Confederation before coming home."
+  ],
+  "tragedies": [
+    "His daughter left for Velgroth-Lucernia and will not write. He does not say why."
+  ],
+  "campaign_notes": [
+    "The party must decide how much to tell him about the Pact-Render behind the Bronze Host. He was never comfortable with the alliance with the dead."
+  ]
+}

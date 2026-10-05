@@ -1,0 +1,27 @@
+{
+  "name": "Essa",
+  "moniker": "the Net-Mender",
+  "role": "guild mistress",
+  "home": "Net-Menders' Guild, Caelrun",
+  "home_settlement": "caelrun",
+  "found": "Net-Menders' Guild, hands never still.",
+  "gender": "female",
+  "faction": "independent",
+  "thinks_with": "persuasion",
+  "appearance": "Weathered, blind in one eye, a net in her lap.",
+  "and_yet": null,
+  "sayings": [
+    "A story for a story."
+  ],
+  "wants": "The guild kept neutral, and good gossip.",
+  "does_not_want": "Being left out of the news.",
+  "dreams": "To retire the most respected elder in Caelrun, having written nothing down.",
+  "oddly_also": null,
+  "knows": "Who owes whom, across the village.",
+  "offers": "Nets, rope, and information traded fairly.",
+  "family": "Widowed; grown children fish for other families.",
+  "anecdotes": [
+    "Lost her eye to a snapped line in a storm and mended the net before she let anyone look at her."
+  ],
+  "tragedies": []
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Penna",
+  "moniker": null,
+  "role": "household servant",
+  "home": "Hallan Compound, Caelrun",
+  "home_settlement": "caelrun",
+  "found": "Hallan Compound, running the household.",
+  "gender": "female",
+  "faction": "independent",
+  "thinks_with": "tradition",
+  "appearance": "Middle-aged, brisk, a ring of keys.",
+  "and_yet": null,
+  "sayings": null,
+  "wants": "The household running smoothly.",
+  "does_not_want": "Her children treated as lesser.",
+  "dreams": "Her eldest daughter marrying above her station.",
+  "oddly_also": null,
+  "knows": "The Hallan compound's routines better than the Hallans.",
+  "offers": null,
+  "family": "Third generation in Hallan service; husband serves too; four children.",
+  "anecdotes": [],
+  "tragedies": []
+}

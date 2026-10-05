@@ -1,0 +1,23 @@
+{
+  "name": "Kessa",
+  "moniker": "the Leech-Wife",
+  "role": "leech-gatherer",
+  "home": "Marsh edge, Caelrun",
+  "home_settlement": "caelrun",
+  "found": "The marsh edge, wading with a jar.",
+  "gender": "female",
+  "faction": "independent",
+  "thinks_with": "lore",
+  "appearance": "Stained fingers, mud to the thigh, a leech-jar.",
+  "and_yet": "Talks gently to the leeches.",
+  "sayings": null,
+  "wants": "To be left alone.",
+  "does_not_want": "Questions about what she sees out there.",
+  "dreams": "To die in the marsh and go back to the mud.",
+  "oddly_also": null,
+  "knows": null,
+  "offers": "Medicinal herbs and leeches.",
+  "family": "None; may have fled something long ago.",
+  "anecdotes": [],
+  "tragedies": []
+}

@@ -44,7 +44,7 @@ Hide empty fields. Never print "Not established" or a blank label. A sparse NPC 
 | `moniker` | no | 1–3 words | What locals call them: epithet, title, nickname. |
 | `role` | yes | 1–3 words | What they do. Everyone has one, even "drifter." |
 | `home` | yes | 2–6 words | Where they live or work. |
-| `home_settlement` | yes | id | Settlement id, or `itinerant`. |
+| `home_settlement` | yes | id | Settlement id, adventure-site id (for denizens), or `itinerant`. |
 | `found` | no | 3–12 words | Where to find them: a named location first, then when or doing what. *Warden’s Hall, sharpening his knife at dusk.* Settlement renders place the NPC card at this location. |
 | `gender` | yes | 1 word | |
 | `faction` | yes | id | From `airth/config/npc.json`. |

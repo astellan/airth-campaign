@@ -1,0 +1,25 @@
+{
+  "name": "Varren",
+  "moniker": "Muddfoot",
+  "role": "informant",
+  "home": "Stilted shack, Caelrun",
+  "home_settlement": "caelrun",
+  "found": "His stilted shack at the marsh edge, catching frogs.",
+  "gender": "male",
+  "faction": "aurka",
+  "thinks_with": "money",
+  "appearance": "Twitchy, mud-caked, reeking of frog.",
+  "and_yet": null,
+  "sayings": [
+    "Everything's for sale. Even this."
+  ],
+  "wants": "Aurka coin, and information to trade.",
+  "does_not_want": "Being caught informing.",
+  "dreams": "The Aurka find something big, he gets his cut, and his family begs forgiveness he'll refuse.",
+  "oddly_also": "Wants his family's respect, and won't admit it.",
+  "knows": null,
+  "offers": null,
+  "family": "A disowned Bresul cousin, cast out for theft; claims he was framed.",
+  "anecdotes": [],
+  "tragedies": []
+}
