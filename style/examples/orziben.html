@@ -1,0 +1,249 @@
+<title>Orziben</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap">
+<style>
+/* Print-first: two dense columns on Letter portrait; places, NPCs and tables flow between them. */
+:root {
+  --paper: #fbfbf7; --ink: #1e201c; --ink-soft: #55594f; --accent: #3e5937;
+  --rule: #c8cbbf; --panel: #f0f1ea;
+  --serif: "EB Garamond", Garamond, "Garamond Premier Pro", Georgia, "Times New Roman", serif;
+  color-scheme: light;
+}
+@media screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --paper:#161814; --ink:#e3e5dc; --ink-soft:#a3a89a; --accent:#a3bd97; --rule:#3a3f36; --panel:#1f221d; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --paper:#161814; --ink:#e3e5dc; --ink-soft:#a3a89a; --accent:#a3bd97; --rule:#3a3f36; --panel:#1f221d; color-scheme: dark; }
+@page { size: letter portrait; margin: .45in .75in; }
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font-family: var(--serif);
+  font-size: 10.5pt; line-height: 1.28; margin: 0; padding: 16px; }
+main { max-width: 8in; margin-inline: auto; column-count: 2; column-gap: .3in; column-rule: 1px solid var(--rule); }
+@media screen and (max-width: 640px) { main { column-count: 1; } }
+.sample-note { column-span: all; font-size: 8pt; color: var(--ink-soft); font-style: italic; margin: 0 0 .3rem; }
+h1 { column-span: all; font-weight: 600; font-size: 20pt; line-height: 1.1; margin: 0;
+  font-variant: small-caps; letter-spacing: .03em; }
+.tagline { column-span: all; font-style: italic; color: var(--ink-soft); margin: 0 0 .35rem; font-size: 11pt; }
+.facts { column-span: all; display: grid; grid-template-columns: 1fr 1fr; gap: .05rem 1.2rem;
+  border-top: 1.5px solid var(--ink); border-bottom: 1px solid var(--rule); padding: .3rem 0; margin-bottom: .4rem; }
+.facts p { margin: 0; }
+h2.section { font-weight: 600; font-size: 10.5pt; font-variant: small-caps; letter-spacing: .08em;
+  color: var(--accent); margin: .55rem 0 .2rem; border-bottom: 1px solid var(--ink); padding-bottom: 1px;
+  break-after: avoid; }
+main > h2.section:first-of-type { margin-top: 0; }
+p { margin: 0 0 .22rem; }
+strong { font-weight: 600; }
+ul { margin: 0 0 .25rem; padding-left: 1rem; }
+li { margin-bottom: .1rem; }
+.pal p { margin: 0 0 .12rem; }
+.pal em { color: var(--ink-soft); }
+.table-wrap { margin: .2rem 0 .35rem; break-inside: avoid; }
+.table-wrap:has(table.grid) { column-span: all; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums lining-nums; font-size: 9.5pt; }
+caption { text-align: left; font-weight: 600; font-variant: small-caps; letter-spacing: .05em; color: var(--accent); padding-bottom: 1px; }
+th, td { text-align: left; padding: 1px .3rem; border-top: 1px solid var(--rule); vertical-align: top; }
+thead th { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); font-weight: 600; font-variant: small-caps; letter-spacing: .05em; }
+tbody tr:last-child td { border-bottom: 1px solid var(--ink); }
+td.die, th.die { width: 1.6rem; text-align: center; color: var(--accent); }
+table.grid th:first-child, table.grid td:first-child { width: 4.5rem; font-variant: small-caps; letter-spacing: .04em; font-weight: 600; }
+.loc { border-top: 1px solid var(--ink); padding-top: .15rem; margin-top: .4rem; }
+.loc h3 { font-weight: 600; font-size: 11pt; font-variant: small-caps; letter-spacing: .03em; margin: 0 0 .05rem; break-after: avoid; }
+.loc h3 .num { color: var(--accent); margin-right: .25em; }
+.npc { background: var(--panel); border: 1px solid var(--rule); padding: .2rem .4rem; margin: .25rem 0; break-inside: avoid; font-size: 9.5pt; }
+.npc p { margin: 0 0 .1rem; }
+.npc .head { margin: 0; }
+.npc .nm { font-weight: 600; font-variant: small-caps; letter-spacing: .03em; font-size: 10.5pt; }
+.npc .meta { color: var(--ink-soft); }
+.npc .say { font-style: italic; margin-left: .8rem; }
+.npc .more { border-top: 1px dotted var(--rule); margin-top: .1rem; padding-top: .1rem; color: var(--ink-soft); }
+.npc .more strong { color: var(--ink); }
+.gap { color: var(--ink-soft); font-style: italic; }
+.hidden { border-left: 2px solid var(--accent); padding-left: .4rem; }
+.ref { color: var(--ink-soft); }
+@media print { body { padding: 0; background: #fff; } main { max-width: none; } .npc { background: #f3f4ee; } }
+</style>
+
+<main>
+<p class="sample-note">Rendered from <code>airth/settlements/orziben.json</code> to <code>style/settlement.md</code>. Gaps in the data are shown in grey.</p>
+<h1>Orziben (draft)</h1>
+<p class="tagline">Earth-walled Imazuran road-end town of wine, alum, and caravans that come less often.</p>
+<div class="facts">
+<p><strong>Inhabitants:</strong> 1200 (town). Mostly Imazuran; Gallaecian vintners on the south slope. Tied with Caelrun as the largest town in the Luric.</p>
+<p><strong>Ruler:</strong> The Council of Houses, run in practice by the Idir family and its head, Amastan ut Idir. Watch Captain Haelis Corran answers to them.</p>
+<p><strong>Strangers:</strong> Welcome if they carry goods or coin. Pilgrims are tolerated and charged for everything. Anyone asking about the Council is noticed.</p>
+<p><strong>Equipment:</strong> Good. Imazuran goods at list price; western goods +10%.</p>
+<p><strong>Faiths:</strong> Malac Orthodox (Temple of the Eternal Flame); Malac Schismatic pilgrims, passing through for the Mountain of Fire; Isarna (crescents at the East Gate); New Gods and family bazinas in the Imazuran quarters.</p>
+</div>
+<h2 class="section">Arrival</h2><div class="pal">
+<p><strong>Far:</strong> flat roofs and pale mudbrick · <em>alum-works smoke, white and acrid</em></p>
+<p><strong>Near:</strong> walled vineyards and olive rows on dry slopes · <em>the Sebkha road running off east, pale with salt (the Sebkha: the dry salt-flat belt between the Marches and the Imazuran Confederation)</em></p>
+<p><strong>Threshold:</strong> an earthen wall, grassed over, two gates in it · <em>East Gate hung with Isarna crescents</em></p>
+<p><strong>Within:</strong> courtyard houses, blank walls to the street · <em>shade cloths over the lanes</em></p>
+<p><strong>Leaving:</strong> west: green coming back, then forest · <em>east: nothing ahead but salt glare</em></p>
+</div>
+<div class="table-wrap"><table class="grid"><thead><tr><th></th><th>Dawn</th><th>Day</th><th>Dusk</th><th>Night</th></tr></thead><tbody>
+<tr><td>Threshold</td><td>East Gate opens first · teamsters leaving thread at the crescents</td><td>watch asks easterners their road · wagons waved through the west</td><td>last carts in off the salt</td><td>East Gate shut · West Gate on the Council&#x27;s pass</td></tr>
+<tr><td>Within</td><td>temple fire smoke, thin · bread and wine-lees</td><td>Imazuran and Gallaecian haggling · alum stink when the wind turns</td><td>Vine and Lantern filling</td><td>drums in the caravan quarter · one lamp in the temple</td></tr>
+</tbody></table></div>
+<div class="pal">
+<p><strong>Winter</strong> <em>(Voarn–Thunor)</em>: vines cut back · Sebkha road empty · salt wind through the shutters</p>
+<p><strong>Spring</strong> <em>(Arkun–Ulkar)</em>: first caravans east · terraces turned</p>
+<p><strong>Summer</strong> <em>(Sarnath–Keltoi)</em>: heat off the salt · dust on everything · alum pans steaming · Schismatic pilgrims on the road east</p>
+<p><strong>Autumn</strong> <em>(Ragaia–Eshmun)</em>: grape harvest, the whole town in the terraces · new wine in the streets</p>
+<p><strong>Caravan arrives</strong>: Salt Yard full · Imazuran drums at dusk · prices drop by morning</p>
+<p><strong>Malzûn</strong> <em>(2 Belghaen)</em>: Schismatic pilgrims crowd the town · Orthodox fire lit · no priest to lead the rite</p>
+</div>
+<h2 class="section">What Makes It Itself</h2>
+<p><strong>End of the road.</strong> The Luric Road stops here and the Sebkha road begins. Everything bound east or west changes wagons in Orziben, including Schismatic pilgrims bound for the Mountain of Fire, 120 miles east. Wine, olive oil, and alum go west; dyers across the Marches need the alum.</p>
+<p><strong>The Council.</strong> Orziben has no warden. The Council of Houses runs it like a family business, and the Idir family runs the Council. Favours are owed, collected, and remembered.</p>
+<p><strong>The caravans are thinning.</strong> The Imazuran trains come half as often as they did two years ago. Nobody in the caravan quarter will say why.</p>
+<p><strong>The man on the hill.</strong> A blind hermit lives in the hills north of town. Those who go up come back with answers they can&#x27;t use. Parents keep their children off the north path.</p>
+<h2 class="section">Encounters</h2>
+<div class="table-wrap"><table><caption>d6 Orziben by day</caption><thead><tr><th class="die">d6</th><th>Encounter</th></tr></thead><tbody>
+<tr><td class="die">1</td><td><strong>Sarit n&#x27;Khaleb</strong> argues tariffs with a Gallaecian vintner.</td></tr>
+<tr><td class="die">2</td><td>An alum cart sheds white powder down the street; eyes sting.</td></tr>
+<tr><td class="die">3</td><td><strong>2d6 Schismatic pilgrims</strong> haggle over the price of water for the Sebkha.</td></tr>
+<tr><td class="die">4</td><td>A mother hauls her son back from the north path by the ear: &quot;Not up there. He&#x27;ll tell you things.&quot;</td></tr>
+<tr><td class="die">5</td><td><strong>Cerin</strong> buys lamp oil at three shops, a little at each.</td></tr>
+<tr><td class="die">6</td><td><strong>1d3 watchmen</strong> turn back a Sebkha salt-trader with no pass.</td></tr>
+</tbody></table></div>
+<div class="table-wrap"><table><caption>d6 Orziben by night</caption><thead><tr><th class="die">d6</th><th>Encounter</th></tr></thead><tbody>
+<tr><td class="die">1</td><td>The East Gate opens for one rider, then shuts.</td></tr>
+<tr><td class="die">2</td><td>Drums in the caravan quarter stop mid-beat.</td></tr>
+<tr><td class="die">3</td><td><strong>2 Idir cousins</strong> call on a shop that is late paying the Council.</td></tr>
+<tr><td class="die">4</td><td>A light moves in the empty temple.</td></tr>
+<tr><td class="die">5</td><td>For a moment, a lit window shows a different room. Then the old one.</td></tr>
+<tr><td class="die">6</td><td>Something howls far out on the Sebkha.</td></tr>
+</tbody></table></div>
+<h2 class="section">Response</h2>
+<p><strong>The watch:</strong> 18 watchmen under Captain Haelis Corran, paid by the Council.</p>
+<p><strong>By day:</strong> 1d4 watchmen within 1d10 minutes.</p>
+<p><strong>By night:</strong> 1d3 watchmen within 1d4 turns.</p>
+<p><strong>Reinforcements:</strong> Idir house guards, if the Council wants them sent.</p>
+<p><strong>Strength:</strong> 18 watchmen (founded with 40). The east wall is kept up. The west is not. The watch does what the Council says.</p>
+<p><strong>Bribery:</strong> 5gp makes a gate-watchman forget a cart. Nothing works against the Council&#x27;s word.</p>
+<h2 class="section">Places</h2>
+<section class="loc"><h3><span class="num">1.</span>East Gate</h3>
+<p>A gate in the earthen wall onto the Sebkha road, hung with copper Isarna crescents and silver thread.</p>
+<p><strong>Watch:</strong> 4 watchmen by day; shut at dark.</p>
+<p><strong>Toll:</strong> 1sp a wagon, waived for those who leave thread at the crescents.</p>
+<div class="npc"><p class="head"><span class="nm">Haelis Corran, Captain</span> <span class="meta">· watch captain · independent</span></p>
+<p>50s, heavy, Gallaecian, ink on his cuffs. <em>And yet:</em> Pays the Council&#x27;s cousins on time and hates every coin of it.</p>
+<p class="say">“I keep the gates. Ask the Council about the rest.”</p>
+<p><strong>Wants:</strong> The eastern caravans back, and his watch his own again.<br><strong>Doesn’t want:</strong> To find out what the Idir cousins do after dark.<br><strong>Found:</strong> East Gate, checking the bolts himself.</p>
+<div class="more">
+<p><strong>Thinks with:</strong> money</p>
+</div>
+</div>
+</section>
+<section class="loc"><h3><span class="num">2.</span>West Gate</h3>
+<p>A gate in the earthen wall onto the Luric Road. Hinges rusting.</p>
+<p><strong>Watch:</strong> 2 watchmen by day, often 1. Opened after dark on the Council&#x27;s pass.</p>
+</section>
+<section class="loc"><h3><span class="num">3.</span>The Salt Yard</h3>
+<p>A walled yard inside the East Gate where the Sebkha road ends. Half empty.</p>
+<p><strong>Yard:</strong> Stalls for 20 wagons; 8 in use.</p>
+<p><strong>Beasts:</strong> Mules, camels when the Imazuran trains come in.</p>
+<p><strong>Services:</strong> Stabling 2sp a night; water 1cp a beast; teamsters for hire.</p>
+<p><strong>Who’s passing through:</strong> Taziri&#x27;s wagons; fewer Imazuran trains.</p>
+</section>
+<section class="loc"><h3><span class="num">4.</span>Pilgrim Camp</h3>
+<p>Bare ground outside the East Gate where Schismatic pilgrims sleep before the Sebkha.</p>
+<p><strong>Custom:</strong> Sun-disks scratched into the wall facing east. Water sold by the jar, Council price.</p>
+</section>
+<section class="loc"><h3><span class="num">5.</span>Temple of the Eternal Flame</h3>
+<p>The Orthodox temple, older than the walls. The fire is lit; nobody leads the rite.</p>
+<p><strong>Populace:</strong> Elders. One acolyte.</p>
+<p><strong>Rites:</strong> Blessings, when asked. Cerin gives them badly and takes no coin.</p>
+<p class="hidden"><strong>Hidden:</strong> The dead cleric&#x27;s letters to Ilmath in Dravesa, sealed and never sent, in a chest under the altar.</p>
+<div class="npc"><p class="head"><span class="nm">Cerin</span> <span class="meta">· acolyte · malac orthodox</span></p>
+<p>17, thin, singed sleeves. <em>And yet:</em> Knows the whole rite by heart. Has never led it.</p>
+<p class="say">“The Fire-seer is resting.”</p>
+<p><strong>Wants:</strong> Someone to tell him what to do.<br><strong>Doesn’t want:</strong> Anyone to learn the cleric is dead.<br><strong>Knows:</strong> Where the cleric&#x27;s unsent letters to Ilmath are.<br><strong>Found:</strong> Temple of the Eternal Flame, feeding the fire.</p>
+<div class="more">
+<p><strong>Thinks with:</strong> fear</p>
+</div>
+</div>
+</section>
+<section class="loc"><h3><span class="num">6.</span>N&#x27;Khaleb Warehouses</h3>
+<p>Three long stone sheds by the Salt Yard, the n&#x27;Khaleb mark on every door.</p>
+<p><strong>Wares:</strong> Everything Taziri&#x27;s caravan carries west to east: wool, honey, charcoal, dyes, pelts.</p>
+<p><strong>Proprietor:</strong> Sarit n&#x27;Khaleb.</p>
+<div class="npc"><p class="head"><span class="nm">Sarit n&#x27;Khaleb</span> <span class="meta">· warehouse factor · independent</span></p>
+<p>22, Imazuran, her mother&#x27;s measuring-chain at her belt. <em>And yet:</em> Sings road-songs while she counts, as her mother does.</p>
+<p class="say">“Count it twice. Then once more.”</p>
+<p><strong>Wants:</strong> To find out who is stopping the eastern trains.<br><strong>Doesn’t want:</strong> Her mother to think she can&#x27;t hold Orziben.<br><strong>Found:</strong> N&#x27;Khaleb Warehouses, at the ledgers.</p>
+<div class="more">
+<p><strong>Thinks with:</strong> money<br><strong>Family:</strong> Daughter of Taziri n&#x27;Khaleb; brothers Khalid and Davin; uncle Azghar.</p>
+</div>
+</div>
+</section>
+<section class="loc"><h3><span class="num">7.</span>Alum-Works</h3>
+<p>Boiling pans and clay pits downwind of town. White crust on everything.</p>
+<p><strong>Wares:</strong> Alum, by the sack.</p>
+<p><strong>Proprietor:</strong> Maza ut Idir, for the Idir family.</p>
+<p><strong>Off the books:</strong> Buys bog iron from Nerzul.</p>
+<div class="npc"><p class="head"><span class="nm">Maza ut Idir</span> <span class="meta">· alum-boiler · independent</span></p>
+<p>40s, Imazuran, hands cracked white to the wrist. <em>And yet:</em> Wears good silk under the leather apron.</p>
+<p><strong>Wants:</strong> Bog iron, cheap, and no questions.<br><strong>Doesn’t want:</strong> Her brother asking where her iron comes from.<br><strong>Offers:</strong> Alum by the sack.<br><strong>Found:</strong> Alum-Works, at the pans.</p>
+<div class="more">
+<p><strong>Thinks with:</strong> endurance<br><strong>Family:</strong> Sister of Amastan ut Idir, head of the Council.</p>
+</div>
+</div>
+</section>
+<section class="loc"><h3><span class="num">8.</span>The Vine and Lantern</h3>
+<p>The town&#x27;s wine is poured here.</p>
+<p><strong>Sign:</strong> A lantern hung in a vine.</p>
+<p><strong>Common room:</strong> Long tables, wine by the jug.</p>
+<p><strong>Guests:</strong> Vintners, teamsters, and the odd traveller bound east.</p>
+<p><strong>Services:</strong> Private room 6sp a night; common room 3cp; meals 2cp–5sp; wine 1cp a cup.</p>
+<p><strong>Trouble:</strong> Imazuran and Gallaecian drivers drink at separate tables, and say so.</p>
+</section>
+<section class="loc"><h3><span class="num">9.</span>The Council House</h3>
+<p>The biggest courtyard house on the square. The Council sits by the fountain.</p>
+<p><strong>Staff:</strong> Idir cousins at the door; two clerks.</p>
+<p><strong>Fees:</strong> Letters of passage east 3gp; anything else by arrangement.</p>
+<div class="npc"><p class="head"><span class="nm">Amastan ut Idir</span> <span class="meta">· head of the Council of Houses · independent</span></p>
+<p>60, lean, Imazuran, plain robes, one heavy silver ring. <em>And yet:</em> Feeds the courtyard cats himself, by name.</p>
+<p class="say">“Everyone in Orziben owes someone. Better me.”</p>
+<p><strong>Wants:</strong> The eastern trains back, and whoever stopped them in his debt.<br><strong>Doesn’t want:</strong> A warden from the west.<br><strong>Offers:</strong> Favours, at interest.<br><strong>Found:</strong> The Council House, in the courtyard by the fountain.</p>
+<div class="more">
+<p><strong>Thinks with:</strong> money<br><strong>Family:</strong> Sister Maza runs the alum-works; cousins at every door.</p>
+</div>
+</div>
+</section>
+<section class="loc"><h3><span class="num">10.</span>Iron Row</h3>
+<p>A short street of forges by the West Gate.</p>
+<p><strong>Wares:</strong> Nails, tools, arrowheads for the watch.</p>
+<p><strong>Proprietor:</strong> Doran Vell, the master smith.</p>
+<div class="npc"><p class="head"><span class="nm">Doran Vell</span> <span class="meta">· master smith · independent</span></p>
+<p>Broad, bald, burn-scars to the elbow.</p>
+<p class="say">“Charcoal first. Then talk.”</p>
+<p><strong>Wants:</strong> Taziri&#x27;s charcoal on time.<br><strong>Doesn’t want:</strong> To be paid in swords again.<br><strong>Offers:</strong> Smithing and repairs.<br><strong>Found:</strong> Iron Row, at the biggest forge.</p>
+<div class="more">
+<p><strong>Thinks with:</strong> tradition</p>
+</div>
+</div>
+</section>
+<section class="loc"><h3><span class="num">11.</span>Fenn&#x27;s Mirrors</h3>
+<p>A narrow shop full of bronze glare.</p>
+<p><strong>Wares:</strong> Polished bronze mirrors; one on commission, paid for and not yet collected.</p>
+<p><strong>Proprietor:</strong> Ysolde Fenn.</p>
+<p><strong>Off the books:</strong> A few mirrors she won&#x27;t sell. She says they show the next room over.</p>
+<div class="npc"><p class="head"><span class="nm">Ysolde Fenn</span> <span class="meta">· mirror-maker · independent</span></p>
+<p>30s, small, squints in daylight. <em>And yet:</em> Never looks at her own reflection.</p>
+<p class="say">“Bronze remembers what it&#x27;s seen.”</p>
+<p><strong>Wants:</strong> To make a mirror that shows what&#x27;s really there.<br><strong>Doesn’t want:</strong> To sell the ones she keeps in the back.<br><strong>Offers:</strong> Bronze mirrors, made to order.<br><strong>Found:</strong> Fenn&#x27;s Mirrors, polishing.</p>
+<div class="more">
+<p><strong>Thinks with:</strong> magic</p>
+</div>
+</div>
+</section>
+<h2 class="section">Factions in Town</h2>
+<p><strong>Council Of Houses.</strong> <em>Purpose:</em> Run Orziben, and take a share of everything that passes through. <em>Membership:</em> The leading Imazuran houses; the Idir family first among them. <em>Scheme:</em> Find out who is stopping the eastern trains, and make them pay.</p>
+<p><strong>Malac Orthodox.</strong> <em>Purpose:</em> Keep the fire lit. <em>Membership:</em> Elders and one acolyte. <em>Scheme:</em> Cerin is hiding the cleric&#x27;s death until someone tells him what to do.</p>
+<p><strong>Ilmenor.</strong> <em>Purpose:</em> Unknown here. <em>Membership:</em> One scribe, lodging at the Vine and Lantern. <em>Scheme:</em> Notes who takes the north path.</p>
+<h2 class="section">Trouble</h2><ul><li>Imazuran caravans have halved in two years. The Council wants a name.</li><li>The Orthodox cleric died two months ago. Cerin and Ilmath both say nothing; Schismatic pilgrims fill the town around an empty temple.</li><li>Maza ut Idir buys bog iron from Nerzul under the Council&#x27;s nose, or with its blessing.</li></ul>
+<h2 class="section">Neighbors</h2><p>
+<strong>Dravesa:</strong> 18 miles west via luric road.</p>
+</main>

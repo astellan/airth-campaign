@@ -1,0 +1,28 @@
+{
+  "home_settlement": "orziben",
+  "and_yet": "Pays the Council's cousins on time and hates every coin of it.",
+  "sayings": [
+    "I keep the gates. Ask the Council about the rest."
+  ],
+  "dreams": null,
+  "oddly_also": null,
+  "knows": null,
+  "offers": null,
+  "family": null,
+  "anecdotes": [],
+  "tragedies": [],
+  "campaign_notes": [
+    "Draft stub for Orziben (2026-10-06)."
+  ],
+  "name": "Haelis Corran",
+  "moniker": "Captain",
+  "role": "watch captain",
+  "home": "Orziben",
+  "found": "East Gate, checking the bolts himself.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "money",
+  "appearance": "50s, heavy, Gallaecian, ink on his cuffs.",
+  "wants": "The eastern caravans back, and his watch his own again.",
+  "does_not_want": "To find out what the Idir cousins do after dark."
+}

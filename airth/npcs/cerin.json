@@ -1,0 +1,27 @@
+{
+  "home_settlement": "orziben",
+  "and_yet": "Knows the whole rite by heart. Has never led it.",
+  "sayings": [
+    "The Fire-seer is resting."
+  ],
+  "dreams": null,
+  "oddly_also": null,
+  "knows": "Where the cleric's unsent letters to Ilmath are.",
+  "offers": null,
+  "family": null,
+  "anecdotes": [],
+  "tragedies": [],
+  "campaign_notes": [
+    "Draft stub for Orziben (2026-10-06)."
+  ],
+  "name": "Cerin",
+  "role": "acolyte",
+  "home": "Temple of the Eternal Flame, Orziben",
+  "found": "Temple of the Eternal Flame, feeding the fire.",
+  "gender": "male",
+  "faction": "malac-orthodox",
+  "thinks_with": "fear",
+  "appearance": "17, thin, singed sleeves.",
+  "wants": "Someone to tell him what to do.",
+  "does_not_want": "Anyone to learn the cleric is dead."
+}

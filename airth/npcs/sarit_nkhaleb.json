@@ -1,0 +1,27 @@
+{
+  "home_settlement": "orziben",
+  "and_yet": "Sings road-songs while she counts, as her mother does.",
+  "sayings": [
+    "Count it twice. Then once more."
+  ],
+  "dreams": null,
+  "oddly_also": null,
+  "knows": null,
+  "offers": null,
+  "family": "Daughter of Taziri n'Khaleb; brothers Khalid and Davin; uncle Azghar.",
+  "anecdotes": [],
+  "tragedies": [],
+  "campaign_notes": [
+    "Draft stub for Orziben (2026-10-06)."
+  ],
+  "name": "Sarit n'Khaleb",
+  "role": "warehouse factor",
+  "home": "N'Khaleb Warehouses, Orziben",
+  "found": "N'Khaleb Warehouses, at the ledgers.",
+  "gender": "female",
+  "faction": "independent",
+  "thinks_with": "money",
+  "appearance": "22, Imazuran, her mother's measuring-chain at her belt.",
+  "wants": "To find out who is stopping the eastern trains.",
+  "does_not_want": "Her mother to think she can't hold Orziben."
+}

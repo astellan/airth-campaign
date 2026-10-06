@@ -1,0 +1,27 @@
+{
+  "name": "Amastan ut Idir",
+  "role": "head of the Council of Houses",
+  "home": "The Council House, Orziben",
+  "home_settlement": "orziben",
+  "found": "The Council House, in the courtyard by the fountain.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "money",
+  "appearance": "60, lean, Imazuran, plain robes, one heavy silver ring.",
+  "and_yet": "Feeds the courtyard cats himself, by name.",
+  "sayings": [
+    "Everyone in Orziben owes someone. Better me."
+  ],
+  "wants": "The eastern trains back, and whoever stopped them in his debt.",
+  "does_not_want": "A warden from the west.",
+  "dreams": null,
+  "oddly_also": null,
+  "knows": null,
+  "offers": "Favours, at interest.",
+  "family": "Sister Maza runs the alum-works; cousins at every door.",
+  "anecdotes": [],
+  "tragedies": [],
+  "campaign_notes": [
+    "Draft stub for Orziben (2026-10-06). Council run like a crime family (BL-24)."
+  ]
+}

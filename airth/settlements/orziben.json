@@ -1,0 +1,338 @@
+{
+  "$schema": "../../schema/settlement.schema.json",
+  "id": "orziben",
+  "name": "Orziben",
+  "status": "in_development",
+  "type": "town",
+  "tagline": "Earth-walled Imazuran road-end town of wine, alum, and caravans that come less often.",
+  "region": "Luric Marches",
+  "population": {
+    "total": 1200,
+    "mix": "Mostly Imazuran; Gallaecian vintners on the south slope. Tied with Caelrun as the largest town in the Luric."
+  },
+  "ruler": "The Council of Houses, run in practice by the Idir family and its head, Amastan ut Idir. Watch Captain Haelis Corran answers to them.",
+  "faiths": [
+    "Malac Orthodox (Temple of the Eternal Flame)",
+    "Malac Schismatic pilgrims, passing through for the Mountain of Fire",
+    "Isarna (crescents at the East Gate)",
+    "New Gods and family bazinas in the Imazuran quarters"
+  ],
+  "strangers": "Welcome if they carry goods or coin. Pilgrims are tolerated and charged for everything. Anyone asking about the Council is noticed.",
+  "equipment": "Good. Imazuran goods at list price; western goods +10%.",
+  "palette": {
+    "constants": {
+      "far": [
+        "flat roofs and pale mudbrick",
+        "alum-works smoke, white and acrid"
+      ],
+      "near": [
+        "walled vineyards and olive rows on dry slopes",
+        "the Sebkha road running off east, pale with salt (the Sebkha: the dry salt-flat belt between the Marches and the Imazuran Confederation)"
+      ],
+      "threshold": [
+        "an earthen wall, grassed over, two gates in it",
+        "East Gate hung with Isarna crescents"
+      ],
+      "leaving": [
+        "west: green coming back, then forest",
+        "east: nothing ahead but salt glare"
+      ],
+      "within": [
+        "courtyard houses, blank walls to the street",
+        "shade cloths over the lanes"
+      ]
+    },
+    "by_time": {
+      "threshold": {
+        "dawn": [
+          "East Gate opens first",
+          "teamsters leaving thread at the crescents"
+        ],
+        "day": [
+          "watch asks easterners their road",
+          "wagons waved through the west"
+        ],
+        "dusk": [
+          "last carts in off the salt"
+        ],
+        "night": [
+          "East Gate shut",
+          "West Gate on the Council's pass"
+        ]
+      },
+      "within": {
+        "dawn": [
+          "temple fire smoke, thin",
+          "bread and wine-lees"
+        ],
+        "day": [
+          "Imazuran and Gallaecian haggling",
+          "alum stink when the wind turns"
+        ],
+        "dusk": [
+          "Vine and Lantern filling"
+        ],
+        "night": [
+          "drums in the caravan quarter",
+          "one lamp in the temple"
+        ]
+      }
+    },
+    "seasons": {
+      "winter": [
+        "vines cut back",
+        "Sebkha road empty",
+        "salt wind through the shutters"
+      ],
+      "spring": [
+        "first caravans east",
+        "terraces turned"
+      ],
+      "summer": [
+        "heat off the salt",
+        "dust on everything",
+        "alum pans steaming",
+        "Schismatic pilgrims on the road east"
+      ],
+      "autumn": [
+        "grape harvest, the whole town in the terraces",
+        "new wine in the streets"
+      ]
+    },
+    "situations": [
+      {
+        "name": "Caravan arrives",
+        "descriptors": [
+          "Salt Yard full",
+          "Imazuran drums at dusk",
+          "prices drop by morning"
+        ]
+      },
+      {
+        "name": "Malzûn",
+        "when": "2 Belghaen",
+        "descriptors": [
+          "Schismatic pilgrims crowd the town",
+          "Orthodox fire lit",
+          "no priest to lead the rite"
+        ]
+      }
+    ]
+  },
+  "itself": [
+    {
+      "title": "End of the road",
+      "text": "The Luric Road stops here and the Sebkha road begins. Everything bound east or west changes wagons in Orziben, including Schismatic pilgrims bound for the Mountain of Fire, 120 miles east. Wine, olive oil, and alum go west; dyers across the Marches need the alum."
+    },
+    {
+      "title": "The Council",
+      "text": "Orziben has no warden. The Council of Houses runs it like a family business, and the Idir family runs the Council. Favours are owed, collected, and remembered."
+    },
+    {
+      "title": "The caravans are thinning",
+      "text": "The Imazuran trains come half as often as they did two years ago. Nobody in the caravan quarter will say why."
+    },
+    {
+      "title": "The man on the hill",
+      "text": "A blind hermit lives in the hills north of town. Those who go up come back with answers they can't use. Parents keep their children off the north path."
+    }
+  ],
+  "encounters": {
+    "day": [
+      "**Sarit n'Khaleb** argues tariffs with a Gallaecian vintner.",
+      "An alum cart sheds white powder down the street; eyes sting.",
+      "**2d6 Schismatic pilgrims** haggle over the price of water for the Sebkha.",
+      "A mother hauls her son back from the north path by the ear: \"Not up there. He'll tell you things.\"",
+      "**Cerin** buys lamp oil at three shops, a little at each.",
+      "**1d3 watchmen** turn back a Sebkha salt-trader with no pass."
+    ],
+    "night": [
+      "The East Gate opens for one rider, then shuts.",
+      "Drums in the caravan quarter stop mid-beat.",
+      "**2 Idir cousins** call on a shop that is late paying the Council.",
+      "A light moves in the empty temple.",
+      "For a moment, a lit window shows a different room. Then the old one.",
+      "Something howls far out on the Sebkha."
+    ]
+  },
+  "response": {
+    "watch": "18 watchmen under Captain Haelis Corran, paid by the Council.",
+    "arrival_day": "1d4 watchmen within 1d10 minutes.",
+    "arrival_night": "1d3 watchmen within 1d4 turns.",
+    "reinforcements": "Idir house guards, if the Council wants them sent.",
+    "bribery": "5gp makes a gate-watchman forget a cart. Nothing works against the Council's word.",
+    "strength_now": "18 watchmen",
+    "strength_founding": "40",
+    "strength": "The east wall is kept up. The west is not. The watch does what the Council says."
+  },
+  "locations": [
+    {
+      "id": "east-gate",
+      "name": "East Gate",
+      "type": "gate",
+      "look": "A gate in the earthen wall onto the Sebkha road, hung with copper Isarna crescents and silver thread.",
+      "labels": {
+        "watch": "4 watchmen by day; shut at dark.",
+        "toll": "1sp a wagon, waived for those who leave thread at the crescents."
+      }
+    },
+    {
+      "id": "west-gate",
+      "name": "West Gate",
+      "type": "gate",
+      "look": "A gate in the earthen wall onto the Luric Road. Hinges rusting.",
+      "labels": {
+        "watch": "2 watchmen by day, often 1. Opened after dark on the Council's pass."
+      }
+    },
+    {
+      "id": "salt-yard",
+      "name": "The Salt Yard",
+      "type": "caravanserai",
+      "look": "A walled yard inside the East Gate where the Sebkha road ends. Half empty.",
+      "labels": {
+        "yard": "Stalls for 20 wagons; 8 in use.",
+        "beasts": "Mules, camels when the Imazuran trains come in.",
+        "services": "Stabling 2sp a night; water 1cp a beast; teamsters for hire.",
+        "passing_through": "Taziri's wagons; fewer Imazuran trains."
+      }
+    },
+    {
+      "id": "pilgrim-camp",
+      "name": "Pilgrim Camp",
+      "type": "landmark",
+      "look": "Bare ground outside the East Gate where Schismatic pilgrims sleep before the Sebkha.",
+      "labels": {
+        "custom": "Sun-disks scratched into the wall facing east. Water sold by the jar, Council price."
+      }
+    },
+    {
+      "id": "temple-eternal-flame-orziben",
+      "name": "Temple of the Eternal Flame",
+      "type": "temple",
+      "look": "The Orthodox temple, older than the walls. The fire is lit; nobody leads the rite.",
+      "labels": {
+        "populace": "Elders. One acolyte.",
+        "rites": "Blessings, when asked. Cerin gives them badly and takes no coin."
+      },
+      "hidden": "The dead cleric's letters to Ilmath in Dravesa, sealed and never sent, in a chest under the altar."
+    },
+    {
+      "id": "nkhaleb-warehouses",
+      "name": "N'Khaleb Warehouses",
+      "type": "shop",
+      "look": "Three long stone sheds by the Salt Yard, the n'Khaleb mark on every door.",
+      "labels": {
+        "wares": "Everything Taziri's caravan carries west to east: wool, honey, charcoal, dyes, pelts.",
+        "proprietor": "Sarit n'Khaleb."
+      }
+    },
+    {
+      "id": "alum-works",
+      "name": "Alum-Works",
+      "type": "shop",
+      "look": "Boiling pans and clay pits downwind of town. White crust on everything.",
+      "labels": {
+        "wares": "Alum, by the sack.",
+        "proprietor": "Maza ut Idir, for the Idir family.",
+        "off_the_books": "Buys bog iron from Nerzul."
+      }
+    },
+    {
+      "id": "vine-and-lantern",
+      "name": "The Vine and Lantern",
+      "type": "inn",
+      "look": "The town's wine is poured here.",
+      "labels": {
+        "sign": "A lantern hung in a vine.",
+        "common_room": "Long tables, wine by the jug.",
+        "guests": "Vintners, teamsters, and the odd traveller bound east.",
+        "services": "Private room 6sp a night; common room 3cp; meals 2cp–5sp; wine 1cp a cup.",
+        "trouble": "Imazuran and Gallaecian drivers drink at separate tables, and say so."
+      }
+    },
+    {
+      "id": "council-house",
+      "name": "The Council House",
+      "type": "civic",
+      "look": "The biggest courtyard house on the square. The Council sits by the fountain.",
+      "labels": {
+        "staff": "Idir cousins at the door; two clerks.",
+        "fees": "Letters of passage east 3gp; anything else by arrangement."
+      }
+    },
+    {
+      "id": "iron-row",
+      "name": "Iron Row",
+      "type": "shop",
+      "look": "A short street of forges by the West Gate.",
+      "labels": {
+        "wares": "Nails, tools, arrowheads for the watch.",
+        "proprietor": "Doran Vell, the master smith."
+      }
+    },
+    {
+      "id": "fenn-mirrors",
+      "name": "Fenn's Mirrors",
+      "type": "shop",
+      "look": "A narrow shop full of bronze glare.",
+      "labels": {
+        "wares": "Polished bronze mirrors; one on commission, paid for and not yet collected.",
+        "proprietor": "Ysolde Fenn.",
+        "off_the_books": "A few mirrors she won't sell. She says they show the next room over."
+      }
+    }
+  ],
+  "factions": [
+    {
+      "id": "council-of-houses",
+      "purpose": "Run Orziben, and take a share of everything that passes through.",
+      "membership": "The leading Imazuran houses; the Idir family first among them.",
+      "scheme": "Find out who is stopping the eastern trains, and make them pay."
+    },
+    {
+      "id": "malac-orthodox",
+      "purpose": "Keep the fire lit.",
+      "membership": "Elders and one acolyte.",
+      "scheme": "Cerin is hiding the cleric's death until someone tells him what to do."
+    },
+    {
+      "id": "ilmenor",
+      "purpose": "Unknown here.",
+      "membership": "One scribe, lodging at the Vine and Lantern.",
+      "scheme": "Notes who takes the north path."
+    }
+  ],
+  "trouble": [
+    "Imazuran caravans have halved in two years. The Council wants a name.",
+    "The Orthodox cleric died two months ago. Cerin and Ilmath both say nothing; Schismatic pilgrims fill the town around an empty temple.",
+    "Maza ut Idir buys bog iron from Nerzul under the Council's nose, or with its blessing."
+  ],
+  "neighbors": [
+    {
+      "settlement": "dravesa",
+      "miles": 18,
+      "direction": "W",
+      "path": "luric-road"
+    }
+  ],
+  "location": {
+    "description": "Earth-walled town at the east end of the Luric Road, where the Sebkha road begins. Semi-arid: vineyards and olives on the south slope; hills to the north.",
+    "terrain": "dry slopes, salt flat to the east, hills to the north"
+  },
+  "economy": {
+    "exports": [
+      "wine",
+      "olive oil",
+      "alum"
+    ],
+    "imports": [
+      "charcoal",
+      "seed barley",
+      "iron",
+      "wool",
+      "dyes",
+      "pelts"
+    ]
+  }
+}

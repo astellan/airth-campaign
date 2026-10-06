@@ -47,10 +47,10 @@ def npc_card(n):
     depth = [(k, n.get(f)) for k, f in [("Oddly also", "oddly_also"), ("Dreams", "dreams"), ("Thinks with", "thinks_with"), ("Family", "family")] if n.get(f)]
     stories = [("Anecdote", a) for a in n.get("anecdotes") or []] + [("Tragedy", t) for t in n.get("tragedies") or []]
     if depth or stories:
-        h.append("<details><summary>More</summary>")
+        h.append('<div class="more">')
         if depth: h.append("<p>" + "<br>".join(f"<strong>{k}:</strong> {esc(v)}" for k, v in depth) + "</p>")
         for k, v in stories: h.append(f"<p><strong>{k}:</strong> {esc(v)}</p>")
-        h.append("</details>")
+        h.append("</div>")
     h.append("</div>")
     return "\n".join(h)
 
@@ -61,7 +61,8 @@ def render(sid):
     out = []
     w = out.append
     w(f'<p class="sample-note">Rendered from <code>airth/settlements/{sid}.json</code> to <code>style/settlement.md</code>. Gaps in the data are shown in grey.</p>')
-    w(f"<h1>{esc(s['name'])}</h1>")
+    draft = " (draft)" if s.get("status") in ("stub", "in_development") else ""
+    w(f"<h1>{esc(s['name'])}{draft}</h1>")
     if s.get("tagline"): w(f'<p class="tagline">{esc(s["tagline"])}</p>')
     pop = s.get("population") or {}
     w('<div class="facts">')
@@ -96,7 +97,8 @@ def render(sid):
         for season, items in (p.get("seasons") or {}).items():
             w(f"<p><strong>{season.capitalize()}</strong> <em>({months[season]})</em>: " + " · ".join(esc(x) for x in items) + "</p>")
         for sit in p.get("situations") or []:
-            w(f"<p><strong>{esc(sit['name'])}</strong> <em>({esc(sit.get('when',''))})</em>: " + " · ".join(esc(x) for x in sit["descriptors"]) + "</p>")
+            when = f" <em>({esc(sit['when'])})</em>" if sit.get("when") else ""
+            w(f"<p><strong>{esc(sit['name'])}</strong>{when}: " + " · ".join(esc(x) for x in sit["descriptors"]) + "</p>")
         w("</div>")
     if s.get("itself"):
         w('<h2 class="section">What Makes It Itself</h2>')

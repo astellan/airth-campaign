@@ -1,0 +1,27 @@
+{
+  "home_settlement": "orziben",
+  "and_yet": null,
+  "sayings": [
+    "Charcoal first. Then talk."
+  ],
+  "dreams": null,
+  "oddly_also": null,
+  "knows": null,
+  "offers": "Smithing and repairs.",
+  "family": null,
+  "anecdotes": [],
+  "tragedies": [],
+  "campaign_notes": [
+    "Draft stub for Orziben (2026-10-06)."
+  ],
+  "name": "Doran Vell",
+  "role": "master smith",
+  "home": "Iron Row, Orziben",
+  "found": "Iron Row, at the biggest forge.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "tradition",
+  "appearance": "Broad, bald, burn-scars to the elbow.",
+  "wants": "Taziri's charcoal on time.",
+  "does_not_want": "To be paid in swords again."
+}
