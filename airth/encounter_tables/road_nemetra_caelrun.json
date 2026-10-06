@@ -1,0 +1,190 @@
+{
+  "id": "road-nemetra-caelrun",
+  "name": "Luric Road: Nemetra to Caelrun",
+  "status": "in_development",
+  "die": "d12",
+  "region_id": "luric-marches",
+  "terrain": "Farmland, then lake lowlands. Humid near the water. 18 miles, one day.",
+  "frequency": "Roll once in the morning and once in the afternoon.",
+  "description": "Roll d12 for the kind of encounter, then roll on that table.",
+  "table": [
+    {
+      "roll": 1,
+      "roll_to": 3,
+      "encounter": "Locals",
+      "subtable": "nemetra-caelrun-locals"
+    },
+    {
+      "roll": 4,
+      "encounter": "Sent by someone",
+      "subtable": "nemetra-caelrun-sent"
+    },
+    {
+      "roll": 5,
+      "roll_to": 6,
+      "encounter": "Common travellers",
+      "subtable": "road-common-travellers"
+    },
+    {
+      "roll": 7,
+      "encounter": "Factions",
+      "subtable": "road-factions"
+    },
+    {
+      "roll": 8,
+      "encounter": "From Velgroth-Lucernia",
+      "subtable": "road-from-velgroth"
+    },
+    {
+      "roll": 9,
+      "encounter": "From Imazuran",
+      "subtable": "road-from-imazuran"
+    },
+    {
+      "roll": 10,
+      "encounter": "Hostile",
+      "subtable": "nemetra-caelrun-hostile"
+    },
+    {
+      "roll": 11,
+      "roll_to": 12,
+      "encounter": "The road itself",
+      "subtable": "nemetra-caelrun-road"
+    }
+  ],
+  "subtables": [
+    {
+      "id": "nemetra-caelrun-locals",
+      "name": "Locals",
+      "die": "d8",
+      "table": [
+        {
+          "roll": 1,
+          "encounter": "**Halbet** rides east on top of a cart of storage jars, counting cracks. Won't sell on the road."
+        },
+        {
+          "roll": 2,
+          "encounter": "**Torvek** walking east to Caelrun to buy iron off the Bresul boats. Asks the party not to mention it."
+        },
+        {
+          "roll": 3,
+          "encounter": "**Varren** the frog-gigger, watching from a rise. Offers to show the party where the Aurka dive."
+        },
+        {
+          "roll": 4,
+          "encounter": "**Kessa** comes up out of the wet ground by the road with a jar of leeches. Won't say what she saw."
+        },
+        {
+          "roll": 5,
+          "encounter": "**Dren** off the road, running south toward Nebruz. **1d4 Norvak men** are an hour behind him."
+        },
+        {
+          "roll": 6,
+          "encounter": "**Brother Kellis** rebuilding a cairn where the road dips toward the lake. \"Mind the compact.\""
+        },
+        {
+          "roll": 7,
+          "encounter": "**Medach** heading east with a satchel of rubbings, to show Ossek in Caelrun. Wants an escort; can't pay one."
+        },
+        {
+          "roll": 8,
+          "encounter": "**Kelvan Bresul** and **2 Caelrun militia**, hungover, walking home from drinking with Durvin."
+        }
+      ]
+    },
+    {
+      "id": "nemetra-caelrun-sent",
+      "name": "Sent by someone",
+      "die": "d6",
+      "table": [
+        {
+          "roll": 1,
+          "encounter": "A herb-wife sent by **Mother Yaleth**, carrying tobacco for the Caelrun militia and a question: has anyone there seen goblins?"
+        },
+        {
+          "roll": 2,
+          "encounter": "**Halbet**'s apprentice, asking travellers to look for seconds sold under Halbet's mark in the Caelrun market. Halbet pays for names."
+        },
+        {
+          "roll": 3,
+          "encounter": "A boy sent west by **Essa** to find out what the goblin business in Nemetra is. She'll pay well for news first."
+        },
+        {
+          "roll": 4,
+          "encounter": "A Tarnes cousin carrying a sealed letter from **Ordun Tarnes** to Lamares. Won't say for whom."
+        },
+        {
+          "roll": 5,
+          "encounter": "A fisher's son pushing his father's body home on a handcart. **Hildreth** will bury him, but the family can't pay for the cart."
+        },
+        {
+          "roll": 6,
+          "encounter": "A militiaman sent by **Captain Durvin** to tell Caelrun the northern woods are under control."
+        }
+      ]
+    },
+    {
+      "id": "nemetra-caelrun-hostile",
+      "name": "Hostile",
+      "die": "d4",
+      "status": "stub",
+      "table": [
+        {
+          "roll": 1,
+          "encounter": "To be built: lizard men out of the south shallows."
+        },
+        {
+          "roll": 2,
+          "encounter": "To be built: bandits."
+        },
+        {
+          "roll": 3,
+          "encounter": "To be built: goblin raiders. Not refugees."
+        },
+        {
+          "roll": 4,
+          "encounter": "To be built: something from the lake."
+        }
+      ]
+    },
+    {
+      "id": "nemetra-caelrun-road",
+      "name": "The road itself",
+      "die": "d8",
+      "table": [
+        {
+          "roll": 1,
+          "encounter": "A fish cart broken down, the catch rotting. The driver says catches have been strange."
+        },
+        {
+          "roll": 2,
+          "encounter": "Rush-weavers resting by the road. Lights on the water last night, they say."
+        },
+        {
+          "roll": 3,
+          "encounter": "**1d4 pottery smugglers** with Halbet's seconds, nervous. Lizard-man tracks nearby."
+        },
+        {
+          "roll": 4,
+          "encounter": "A grain theft site. Goblin prints, too orderly, leading south."
+        },
+        {
+          "roll": 5,
+          "encounter": "Lake fog rolls over the road. 1 turn lost; sounds carry strangely."
+        },
+        {
+          "roll": 6,
+          "encounter": "Every waterfowl in the reeds to the south takes off at once."
+        },
+        {
+          "roll": 7,
+          "encounter": "A Bandua oath-cord tied to a milestone, fresh."
+        },
+        {
+          "roll": 8,
+          "encounter": "Nothing. Waterfowl, mud, lake smell."
+        }
+      ]
+    }
+  ]
+}

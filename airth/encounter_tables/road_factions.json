@@ -1,0 +1,42 @@
+{
+  "id": "road-factions",
+  "name": "Factions on the road",
+  "status": "in_development",
+  "shared": true,
+  "die": "d8",
+  "description": "Members of known factions about their business. Any stretch.",
+  "table": [
+    {
+      "roll": 1,
+      "encounter": "**1d3 Elunad rangers** clearing a fallen tree off the road. They trade news and want news back."
+    },
+    {
+      "roll": 2,
+      "encounter": "**Ilmenor scribe** with 2 hired guards, copying the inscription off a waystone. Polite. Writes the party down too."
+    },
+    {
+      "roll": 3,
+      "encounter": "**2d10 Malac Schismatic pilgrims**, eastbound for the Mountain of Fire, copper sun-disks at their throats."
+    },
+    {
+      "roll": 4,
+      "encounter": "**1d6 Bandua faithful** from Dravesa, spears and spear-mark tattoos, recruiting fighters for the seasonal raid."
+    },
+    {
+      "roll": 5,
+      "encounter": "**Ossamar devotee** checking the next ford, lighting a brazier. Asks every traveller for an offering."
+    },
+    {
+      "roll": 6,
+      "encounter": "**1d4 Aurka diggers** with shovels and rope, heading off-road. They say they're surveying."
+    },
+    {
+      "roll": 7,
+      "encounter": "**Serdanos druid** kneeling at a blighted verge, taking soil in a jar."
+    },
+    {
+      "roll": 8,
+      "encounter": "**Ardanir omen-reader** standing in a field, watching the sky. Tells the party what the next storm means, unasked."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "road-from-velgroth",
+  "name": "From Velgroth-Lucernia",
+  "status": "in_development",
+  "shared": true,
+  "die": "d6",
+  "description": "Westerners on the road, from the High Kingship's kingdoms. More common at the west end.",
+  "table": [
+    {
+      "roll": 1,
+      "encounter": "**Velgroth wool-buyer** and 2 guards, comparing Marches prices against home. Pays for honest answers."
+    },
+    {
+      "roll": 2,
+      "encounter": "**Landless younger son**, good horse, worn sword, looking for service with anyone."
+    },
+    {
+      "roll": 3,
+      "encounter": "**Thalvyr envoy** with 4 riders, bound east. Says nothing about the errand."
+    },
+    {
+      "roll": 4,
+      "encounter": "**Lucernian veteran** offering spear drill for coin. Laments that nobody at home trains any more."
+    },
+    {
+      "roll": 5,
+      "encounter": "**Gallaecian family** under false names, fleeing a feud in the west."
+    },
+    {
+      "roll": 6,
+      "encounter": "**Lucernian scholar** walking east to an Irkali site in Imazuran, stopping at every shrine on the way."
+    }
+  ]
+}

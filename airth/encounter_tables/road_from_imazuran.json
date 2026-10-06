@@ -1,0 +1,34 @@
+{
+  "id": "road-from-imazuran",
+  "name": "From Imazuran",
+  "status": "in_development",
+  "shared": true,
+  "die": "d6",
+  "description": "Easterners on the road, from the Imazuran Confederation. More common at the east end.",
+  "table": [
+    {
+      "roll": 1,
+      "encounter": "**Imazuran salt-trader** with 2 camels, separated from his caravan, walking west alone."
+    },
+    {
+      "roll": 2,
+      "encounter": "**Idir cousin** from Orziben's Council, riding west to collect a debt. Polite until he isn't."
+    },
+    {
+      "roll": 3,
+      "encounter": "**Clan envoy** of the Amghar Naravas, asking Marches militias whether they'd ride east to retake lost land."
+    },
+    {
+      "roll": 4,
+      "encounter": "**Refugee family** from Thagaste, displaced by humanoids, heading west to anywhere."
+    },
+    {
+      "roll": 5,
+      "encounter": "**1d4 horse-traders** with 6 steppe ponies, selling cheap and fast."
+    },
+    {
+      "roll": 6,
+      "encounter": "**Imazuran storyteller** with a drum, working the road for coin and supper."
+    }
+  ]
+}

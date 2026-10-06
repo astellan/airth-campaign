@@ -1,0 +1,50 @@
+{
+  "id": "road-common-travellers",
+  "name": "Common travellers",
+  "status": "in_development",
+  "shared": true,
+  "die": "d10",
+  "description": "Ordinary people on the Luric Road. Any stretch.",
+  "table": [
+    {
+      "roll": 1,
+      "encounter": "**Pedlar** on foot: pins, ribbons, knives, copper Isarna crescents. Knows the last town's news."
+    },
+    {
+      "roll": 2,
+      "encounter": "**Tinker** pushing a handcart forge. Sharpens anything for 1cp; repeats everything he hears."
+    },
+    {
+      "roll": 3,
+      "encounter": "**1d4 carts** with carters, loaded with the nearer town's goods. In less quiet times, 1d4 hired guards."
+    },
+    {
+      "roll": 4,
+      "encounter": "**2d6 labourers** looking for harvest or wall work. Some fled a burned steading and won't say where."
+    },
+    {
+      "roll": 5,
+      "encounter": "**Quack** with a cart of cure-alls and a bone he swears is from an Irkali saint."
+    },
+    {
+      "roll": 6,
+      "encounter": "**Scribe** on foot looking for a post. Writes a letter for 1sp; reads one for 1cp."
+    },
+    {
+      "roll": 7,
+      "encounter": "**Beggar-hermit** at a waystone. Tells the local legend for a coin, a different one for two."
+    },
+    {
+      "roll": 8,
+      "encounter": "**2d6 diggers and masons** with their own tools, bound for whichever wall is being mended."
+    },
+    {
+      "roll": 9,
+      "encounter": "**Militia deserter**, begging to travel with the party. Has plenty to say about his captain."
+    },
+    {
+      "roll": 10,
+      "encounter": "**A family moving house**: cart, goats, grandmother, everything they own. Their steading is gone."
+    }
+  ]
+}
