@@ -181,6 +181,13 @@
       "description": "Ingest Andrew's local site_submerged_temple_garden.md (12-area writeup) into airth/adventure_sites/submerged_temple_garden_enki_ki.json.",
       "status": "open",
       "notes": "Needs the file from Andrew."
+    },
+    {
+      "id": "BL-27",
+      "category": "npcs",
+      "description": "Improve NPC wants / does_not_want for relevance: tie them to current troubles, factions, and things the party can act on.",
+      "status": "open",
+      "notes": "Raised 2026-10-06 reviewing the Nemetra and Orziben drafts."
     }
   ]
 }
