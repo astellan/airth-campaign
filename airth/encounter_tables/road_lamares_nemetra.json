@@ -1,0 +1,190 @@
+{
+  "id": "road-lamares-nemetra",
+  "name": "Luric Road: Lamares to Nemetra",
+  "status": "in_development",
+  "die": "d12",
+  "region_id": "luric-marches",
+  "terrain": "Pasture and farmland, then hazel groves. Orc country to the north. 18 miles, one day.",
+  "frequency": "Roll once in the morning and once in the afternoon.",
+  "description": "Roll d12 for the kind of encounter, then roll on that table.",
+  "table": [
+    {
+      "roll": 1,
+      "encounter": "Locals",
+      "subtable": "lamares-nemetra-locals",
+      "roll_to": 3
+    },
+    {
+      "roll": 4,
+      "encounter": "Sent by someone",
+      "subtable": "lamares-nemetra-sent"
+    },
+    {
+      "roll": 5,
+      "encounter": "Common travellers",
+      "subtable": "road-common-travellers",
+      "roll_to": 6
+    },
+    {
+      "roll": 7,
+      "encounter": "Factions",
+      "subtable": "road-factions"
+    },
+    {
+      "roll": 8,
+      "encounter": "From Velgroth-Lucernia",
+      "subtable": "road-from-velgroth",
+      "roll_to": 9
+    },
+    {
+      "roll": 10,
+      "encounter": "From Imazuran",
+      "subtable": "road-from-imazuran"
+    },
+    {
+      "roll": 11,
+      "encounter": "Hostile",
+      "subtable": "lamares-nemetra-hostile"
+    },
+    {
+      "roll": 12,
+      "encounter": "The road itself",
+      "subtable": "lamares-nemetra-road"
+    }
+  ],
+  "subtables": [
+    {
+      "id": "lamares-nemetra-locals",
+      "name": "Locals",
+      "die": "d8",
+      "table": [
+        {
+          "roll": 1,
+          "encounter": "**Heskan Tul** driving **2d10 cattle** east to market. Orcs took two head last month; he pays outriders 5sp a day."
+        },
+        {
+          "roll": 2,
+          "encounter": "**Chadem** walking east to a ruin with a satchel of paper. Asks whether Medach in Nemetra has found anything. Hopes not."
+        },
+        {
+          "roll": 3,
+          "encounter": "**Taziri n'Khaleb**'s caravan, 5 wagons eastbound. She looks the party over and counts their weapons."
+        },
+        {
+          "roll": 4,
+          "encounter": "**Dreban** the mask-carver, turning off the road into the woods with a new mask. Trades a fey story for help carrying it."
+        },
+        {
+          "roll": 5,
+          "encounter": "**Halbet**'s jar cart westbound to Lamares, the carter walking beside it to save the mule."
+        },
+        {
+          "roll": 6,
+          "encounter": "**Elder Corveth** limping west to witness an oath at the Lamares fortress. Glad of company."
+        },
+        {
+          "roll": 7,
+          "encounter": "**1d4 Lamares militia** on Seretta's orders, checking the road for orc sign. They ask what the party has seen."
+        },
+        {
+          "roll": 8,
+          "encounter": "**Sirnav**'s cart going east for casks of Nemetra's herbed ale and a side of pork."
+        }
+      ]
+    },
+    {
+      "id": "lamares-nemetra-sent",
+      "name": "Sent by someone",
+      "die": "d6",
+      "table": [
+        {
+          "roll": 1,
+          "encounter": "A militiaman with a letter from **Seretta** to **Captain Durvin**: the orc patrols are too organized. Durvin will laugh at it."
+        },
+        {
+          "roll": 2,
+          "encounter": "A runner from **Lugo Varden** with an order for 40 spearheads from **Torvek**. Torvek has no iron."
+        },
+        {
+          "roll": 3,
+          "encounter": "A herb-wife sent west by **Mother Yaleth** for a plant that grows only under the Lamares fortress walls."
+        },
+        {
+          "roll": 4,
+          "encounter": "**Sirnav** asks travellers to carry a recipe to **Varnis** at the Royal Welcome, and bring hers back."
+        },
+        {
+          "roll": 5,
+          "encounter": "**Heskan Tul**'s son, offering 5sp a day to anyone who will ride with the herd to Nemetra."
+        },
+        {
+          "roll": 6,
+          "encounter": "**Chadem** pays 2sp for every inscription copied off a milestone or waystone on the way."
+        }
+      ]
+    },
+    {
+      "id": "lamares-nemetra-hostile",
+      "name": "Hostile",
+      "die": "d4",
+      "status": "stub",
+      "table": [
+        {
+          "roll": 1,
+          "encounter": "To be built: an orc patrol from the north."
+        },
+        {
+          "roll": 2,
+          "encounter": "To be built: bandits."
+        },
+        {
+          "roll": 3,
+          "encounter": "To be built: wolves after the cattle."
+        },
+        {
+          "roll": 4,
+          "encounter": "To be built."
+        }
+      ]
+    },
+    {
+      "id": "lamares-nemetra-road",
+      "name": "The road itself",
+      "die": "d8",
+      "table": [
+        {
+          "roll": 1,
+          "encounter": "The road churned to mud by drovers. Cattle dung everywhere."
+        },
+        {
+          "roll": 2,
+          "encounter": "Hazel groves. Nut-gatherers in the branches call down the price of a sack."
+        },
+        {
+          "roll": 3,
+          "encounter": "An Isarna crescent freshly scratched on a milestone."
+        },
+        {
+          "roll": 4,
+          "encounter": "Orc tracks cross the road north to south and back again, three days old."
+        },
+        {
+          "roll": 5,
+          "encounter": "A dead cow by the road, hamstrung, not eaten. An orc patrol's work: **1d4 orcs** watch from the trees to see who comes."
+        },
+        {
+          "roll": 6,
+          "encounter": "Kiln smoke on the horizon. Nemetra is close."
+        },
+        {
+          "roll": 7,
+          "encounter": "Rain. The road knee-deep in places; 1 hour lost."
+        },
+        {
+          "roll": 8,
+          "encounter": "Nothing. Cattle lowing far off."
+        }
+      ]
+    }
+  ]
+}

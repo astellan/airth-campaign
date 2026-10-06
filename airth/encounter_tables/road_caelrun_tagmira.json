@@ -1,0 +1,190 @@
+{
+  "id": "road-caelrun-tagmira",
+  "name": "Luric Road: Caelrun to Tagmira",
+  "status": "in_development",
+  "die": "d12",
+  "region_id": "luric-marches",
+  "terrain": "Lake lowlands, then upland ridges. Bramblewood to the north. 18 miles, one day.",
+  "frequency": "Roll once in the morning and once in the afternoon.",
+  "description": "Roll d12 for the kind of encounter, then roll on that table.",
+  "table": [
+    {
+      "roll": 1,
+      "encounter": "Locals",
+      "subtable": "caelrun-tagmira-locals",
+      "roll_to": 3
+    },
+    {
+      "roll": 4,
+      "encounter": "Sent by someone",
+      "subtable": "caelrun-tagmira-sent"
+    },
+    {
+      "roll": 5,
+      "encounter": "Common travellers",
+      "subtable": "road-common-travellers",
+      "roll_to": 6
+    },
+    {
+      "roll": 7,
+      "encounter": "Factions",
+      "subtable": "road-factions"
+    },
+    {
+      "roll": 8,
+      "encounter": "From Velgroth-Lucernia",
+      "subtable": "road-from-velgroth"
+    },
+    {
+      "roll": 9,
+      "encounter": "From Imazuran",
+      "subtable": "road-from-imazuran"
+    },
+    {
+      "roll": 10,
+      "encounter": "Hostile",
+      "subtable": "caelrun-tagmira-hostile"
+    },
+    {
+      "roll": 11,
+      "encounter": "The road itself",
+      "subtable": "caelrun-tagmira-road",
+      "roll_to": 12
+    }
+  ],
+  "subtables": [
+    {
+      "id": "caelrun-tagmira-locals",
+      "name": "Locals",
+      "die": "d8",
+      "table": [
+        {
+          "roll": 1,
+          "encounter": "**Taziri n'Khaleb**'s caravan bound for Tagmira's Wheel-Ring. Aelis Varrow will have the stew on."
+        },
+        {
+          "roll": 2,
+          "encounter": "**Penna** of the Hallan household walking east with letters and a basket for the Hallans in Tagmira."
+        },
+        {
+          "roll": 3,
+          "encounter": "**Caturo Hesk** leading 4 ponies west to sell in Caelrun. Will sell one to the party, on the spot."
+        },
+        {
+          "roll": 4,
+          "encounter": "**Rebur Tancin** with a cart of hides for Caelrun's oil pits; he'll come back with fish oil."
+        },
+        {
+          "roll": 5,
+          "encounter": "**Ordun Tarnes** with 3 carts of barley for Tagmira, where food is short this winter. He wants a fair price."
+        },
+        {
+          "roll": 6,
+          "encounter": "**Rondasek Elaran** walking west to see the lake, looking for a fight worth telling."
+        },
+        {
+          "roll": 7,
+          "encounter": "**Hildreth** walking east to the Gravefield of Thulda; the Tagmira widows asked for her."
+        },
+        {
+          "roll": 8,
+          "encounter": "**Merra** pacing the Tarnes barley fields along the road, counting the losses to birds."
+        }
+      ]
+    },
+    {
+      "id": "caelrun-tagmira-sent",
+      "name": "Sent by someone",
+      "die": "d6",
+      "table": [
+        {
+          "roll": 1,
+          "encounter": "A teamster sent west by **Aelis Varrow**: is Taziri's caravan late? She counts every rider."
+        },
+        {
+          "roll": 2,
+          "encounter": "A militiaman from **Hadran Throsk** to **Kelvan Bresul**: if the orcs come back to the northwest, will Caelrun send men?"
+        },
+        {
+          "roll": 3,
+          "encounter": "**Gorran Fesk** pays 5gp to anyone who brings back his brother Aedd, who walked into the Bramblewood dead."
+        },
+        {
+          "roll": 4,
+          "encounter": "A Hallan boy with a crate of smoked fish from **Brecht Hallan** for his kin in Tagmira, and a carved toy for Pima."
+        },
+        {
+          "roll": 5,
+          "encounter": "**Medam**, sent by **Enni** the Ash-Wife to buy leeches from **Kessa**. He walks the whole way without a sound."
+        },
+        {
+          "roll": 6,
+          "encounter": "A boy sent by **Ambata Corr** with 2gp and a jug for Caelrun fish oil. Every north window lit this winter."
+        }
+      ]
+    },
+    {
+      "id": "caelrun-tagmira-hostile",
+      "name": "Hostile",
+      "die": "d4",
+      "status": "stub",
+      "table": [
+        {
+          "roll": 1,
+          "encounter": "To be built: Bronze Host orcs."
+        },
+        {
+          "roll": 2,
+          "encounter": "To be built: the dead out of the Bramblewood."
+        },
+        {
+          "roll": 3,
+          "encounter": "To be built: bandits."
+        },
+        {
+          "roll": 4,
+          "encounter": "To be built: wolves on the ridges."
+        }
+      ]
+    },
+    {
+      "id": "caelrun-tagmira-road",
+      "name": "The road itself",
+      "die": "d8",
+      "table": [
+        {
+          "roll": 1,
+          "encounter": "The lake drops behind. The road climbs onto goat paths and ridges."
+        },
+        {
+          "roll": 2,
+          "encounter": "Livestock bells on the ridges. A shepherd waves the party off his grazing."
+        },
+        {
+          "roll": 3,
+          "encounter": "The Bramblewood, a dark line to the north all afternoon."
+        },
+        {
+          "roll": 4,
+          "encounter": "Wool and iron charms tied to a roadside post, facing north."
+        },
+        {
+          "roll": 5,
+          "encounter": "A cart in the ditch. The ox went lame and was butchered where it fell."
+        },
+        {
+          "roll": 6,
+          "encounter": "Wind off the northern ridges, cold even in summer."
+        },
+        {
+          "roll": 7,
+          "encounter": "Juniper smoke from the Carnaxe curing lofts on the western ridge."
+        },
+        {
+          "roll": 8,
+          "encounter": "Nothing. Goats."
+        }
+      ]
+    }
+  ]
+}

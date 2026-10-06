@@ -1,0 +1,190 @@
+{
+  "id": "road-dravesa-orziben",
+  "name": "Luric Road: Dravesa to Orziben",
+  "status": "in_development",
+  "die": "d12",
+  "region_id": "luric-marches",
+  "terrain": "Forest edge, then dry slopes of vines and olives. Sebkha to the east. 18 miles, one day.",
+  "frequency": "Roll once in the morning and once in the afternoon.",
+  "description": "Roll d12 for the kind of encounter, then roll on that table.",
+  "table": [
+    {
+      "roll": 1,
+      "encounter": "Locals",
+      "subtable": "dravesa-orziben-locals",
+      "roll_to": 3
+    },
+    {
+      "roll": 4,
+      "encounter": "Sent by someone",
+      "subtable": "dravesa-orziben-sent"
+    },
+    {
+      "roll": 5,
+      "encounter": "Common travellers",
+      "subtable": "road-common-travellers",
+      "roll_to": 6
+    },
+    {
+      "roll": 7,
+      "encounter": "Factions",
+      "subtable": "road-factions"
+    },
+    {
+      "roll": 8,
+      "encounter": "From Velgroth-Lucernia",
+      "subtable": "road-from-velgroth"
+    },
+    {
+      "roll": 9,
+      "encounter": "From Imazuran",
+      "subtable": "road-from-imazuran",
+      "roll_to": 10
+    },
+    {
+      "roll": 11,
+      "encounter": "Hostile",
+      "subtable": "dravesa-orziben-hostile"
+    },
+    {
+      "roll": 12,
+      "encounter": "The road itself",
+      "subtable": "dravesa-orziben-road"
+    }
+  ],
+  "subtables": [
+    {
+      "id": "dravesa-orziben-locals",
+      "name": "Locals",
+      "die": "d8",
+      "table": [
+        {
+          "roll": 1,
+          "encounter": "**Taziri n'Khaleb**'s caravan on its last leg. Sarit will meet it at the Salt Yard."
+        },
+        {
+          "roll": 2,
+          "encounter": "**Adval Cadek** riding east, asking every pilgrim whether they saw his son Jorun."
+        },
+        {
+          "roll": 3,
+          "encounter": "**Stravar Keln** riding east alone to see his estranged wife. Says it's caravan business."
+        },
+        {
+          "roll": 4,
+          "encounter": "**2d10 Schismatic pilgrims** from Dravesa, carrying Savar's letters of introduction to the Mountain of Fire."
+        },
+        {
+          "roll": 5,
+          "encounter": "**Maza ut Idir**'s alum carts going west for Dravesa's dye-works. An Idir cousin rides with them."
+        },
+        {
+          "roll": 6,
+          "encounter": "**Doran Vell**'s apprentice walking west to buy charcoal in Dravesa; Taziri's is late."
+        },
+        {
+          "roll": 7,
+          "encounter": "**1d6 Bandua raiders** from Vraed's hall scouting the forest edge for the seasonal raid."
+        },
+        {
+          "roll": 8,
+          "encounter": "**Sarit n'Khaleb** riding west to meet her mother's caravan early. Asks what the party saw on the Sebkha road."
+        }
+      ]
+    },
+    {
+      "id": "dravesa-orziben-sent",
+      "name": "Sent by someone",
+      "die": "d6",
+      "table": [
+        {
+          "roll": 1,
+          "encounter": "A Fire-seer sent east by **Ilmath** with sealed instructions for **Cerin**. Ilmath knows the cleric is dead."
+        },
+        {
+          "roll": 2,
+          "encounter": "A cart sent by **Maret Duvall** for Orziben wine for the Gilded Ash."
+        },
+        {
+          "roll": 3,
+          "encounter": "An Idir cousin sent by **Amastan ut Idir** to ask Stravar Keln whether Dravesa's raiders would ride the Sebkha road for pay."
+        },
+        {
+          "roll": 4,
+          "encounter": "**Adval Cadek** pays travellers bound east to carry Jorun's description to the Salt Yard."
+        },
+        {
+          "roll": 5,
+          "encounter": "**Sarit n'Khaleb** asks westbound travellers to give Taziri a ledger page: Orziben prices have dropped."
+        },
+        {
+          "roll": 6,
+          "encounter": "A young Schismatic sent by **Savar** with letters for the pilgrims at the camp outside Orziben."
+        }
+      ]
+    },
+    {
+      "id": "dravesa-orziben-hostile",
+      "name": "Hostile",
+      "die": "d4",
+      "status": "stub",
+      "table": [
+        {
+          "roll": 1,
+          "encounter": "To be built: humanoids out of the northern hills."
+        },
+        {
+          "roll": 2,
+          "encounter": "To be built: bandits."
+        },
+        {
+          "roll": 3,
+          "encounter": "To be built: something off the Sebkha."
+        },
+        {
+          "roll": 4,
+          "encounter": "To be built."
+        }
+      ]
+    },
+    {
+      "id": "dravesa-orziben-road",
+      "name": "The road itself",
+      "die": "d8",
+      "table": [
+        {
+          "roll": 1,
+          "encounter": "The forest falls back. The land dries. The first vine terraces."
+        },
+        {
+          "roll": 2,
+          "encounter": "Olive rows on the south slopes, dust on the leaves."
+        },
+        {
+          "roll": 3,
+          "encounter": "White alum smoke on the eastern horizon."
+        },
+        {
+          "roll": 4,
+          "encounter": "Sun-disks scratched on the milestones, all facing east."
+        },
+        {
+          "roll": 5,
+          "encounter": "A roadside well. Water 1cp a cup, Council price."
+        },
+        {
+          "roll": 6,
+          "encounter": "A footpath climbs into the northern hills. Orziben parents keep children off it."
+        },
+        {
+          "roll": 7,
+          "encounter": "A pilgrim's grave by the road: a sun-disk on a stick."
+        },
+        {
+          "roll": 8,
+          "encounter": "Nothing. Dust and cicadas."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+<title>Luric Road: Dravesa to Orziben</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap">
+<style>
+/* Print-first: two dense columns on Letter portrait; places, NPCs and tables flow between them. */
+:root {
+  --paper: #fbfbf7; --ink: #1e201c; --ink-soft: #55594f; --accent: #3e5937;
+  --rule: #c8cbbf; --panel: #f0f1ea;
+  --serif: "EB Garamond", Garamond, "Garamond Premier Pro", Georgia, "Times New Roman", serif;
+  color-scheme: light;
+}
+@media screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --paper:#161814; --ink:#e3e5dc; --ink-soft:#a3a89a; --accent:#a3bd97; --rule:#3a3f36; --panel:#1f221d; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --paper:#161814; --ink:#e3e5dc; --ink-soft:#a3a89a; --accent:#a3bd97; --rule:#3a3f36; --panel:#1f221d; color-scheme: dark; }
+@page { size: letter portrait; margin: .45in .75in; }
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font-family: var(--serif);
+  font-size: 10.5pt; line-height: 1.28; margin: 0; padding: 16px; }
+main { max-width: 8in; margin-inline: auto; column-count: 2; column-gap: .3in; column-rule: 1px solid var(--rule); }
+@media screen and (max-width: 640px) { main { column-count: 1; } }
+.sample-note { column-span: all; font-size: 8pt; color: var(--ink-soft); font-style: italic; margin: 0 0 .3rem; }
+h1 { column-span: all; font-weight: 600; font-size: 20pt; line-height: 1.1; margin: 0;
+  font-variant: small-caps; letter-spacing: .03em; }
+.tagline { column-span: all; font-style: italic; color: var(--ink-soft); margin: 0 0 .35rem; font-size: 11pt; }
+.facts { column-span: all; display: grid; grid-template-columns: 1fr 1fr; gap: .05rem 1.2rem;
+  border-top: 1.5px solid var(--ink); border-bottom: 1px solid var(--rule); padding: .3rem 0; margin-bottom: .4rem; }
+.facts p { margin: 0; }
+h2.section { font-weight: 600; font-size: 10.5pt; font-variant: small-caps; letter-spacing: .08em;
+  color: var(--accent); margin: .55rem 0 .2rem; border-bottom: 1px solid var(--ink); padding-bottom: 1px;
+  break-after: avoid; }
+main > h2.section:first-of-type { margin-top: 0; }
+p { margin: 0 0 .22rem; }
+strong { font-weight: 600; }
+ul { margin: 0 0 .25rem; padding-left: 1rem; }
+li { margin-bottom: .1rem; }
+.pal p { margin: 0 0 .12rem; }
+.pal em { color: var(--ink-soft); }
+.table-wrap { margin: .2rem 0 .35rem; break-inside: avoid; }
+.table-wrap:has(table.grid) { column-span: all; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums lining-nums; font-size: 9.5pt; }
+caption { text-align: left; font-weight: 600; font-variant: small-caps; letter-spacing: .05em; color: var(--accent); padding-bottom: 1px; }
+th, td { text-align: left; padding: 1px .3rem; border-top: 1px solid var(--rule); vertical-align: top; }
+thead th { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); font-weight: 600; font-variant: small-caps; letter-spacing: .05em; }
+tbody tr:last-child td { border-bottom: 1px solid var(--ink); }
+td.die, th.die { width: 1.6rem; text-align: center; color: var(--accent); }
+table.grid th:first-child, table.grid td:first-child { width: 4.5rem; font-variant: small-caps; letter-spacing: .04em; font-weight: 600; }
+.loc { border-top: 1px solid var(--ink); padding-top: .15rem; margin-top: .4rem; }
+.loc h3 { font-weight: 600; font-size: 11pt; font-variant: small-caps; letter-spacing: .03em; margin: 0 0 .05rem; break-after: avoid; }
+.loc h3 .num { color: var(--accent); margin-right: .25em; }
+.npc { background: var(--panel); border: 1px solid var(--rule); padding: .2rem .4rem; margin: .25rem 0; break-inside: avoid; font-size: 9.5pt; }
+.npc p { margin: 0 0 .1rem; }
+.npc .head { margin: 0; }
+.npc .nm { font-weight: 600; font-variant: small-caps; letter-spacing: .03em; font-size: 10.5pt; }
+.npc .meta { color: var(--ink-soft); }
+.npc .say { font-style: italic; margin-left: .8rem; }
+.npc .more { border-top: 1px dotted var(--rule); margin-top: .1rem; padding-top: .1rem; color: var(--ink-soft); }
+.npc .more strong { color: var(--ink); }
+.gap { color: var(--ink-soft); font-style: italic; }
+.hidden { border-left: 2px solid var(--accent); padding-left: .4rem; }
+.ref { color: var(--ink-soft); }
+@media print { body { padding: 0; background: #fff; } main { max-width: none; } .npc { background: #f3f4ee; } }
+</style>
+
+<style>.cat{column-span:all}.cat table{width:60%}td.die,th.die{width:2.4rem;white-space:nowrap}.table-wrap{break-inside:auto}tr{break-inside:avoid}h2.section .ref{font-weight:400;font-size:9pt;margin-left:.4em}table caption{display:none}</style>
+<main>
+<p class="sample-note">Rendered from <code>airth/encounter_tables/</code>. Grey rows are placeholders.</p>
+<h1>Luric Road: Dravesa to Orziben (draft)</h1>
+<p class="tagline">Forest edge, then dry slopes of vines and olives. Sebkha to the east. 18 miles, one day. Roll once in the morning and once in the afternoon. Roll d12 for the kind of encounter, then roll on that table.</p>
+<div class="cat"><div class="table-wrap"><table><caption>d12 Encounter type</caption><thead><tr><th class="die">d12</th><th>Encounter</th></tr></thead><tbody>
+<tr><td class="die">1–3</td><td>Locals</td></tr>
+<tr><td class="die">4</td><td>Sent by someone</td></tr>
+<tr><td class="die">5–6</td><td>Common travellers</td></tr>
+<tr><td class="die">7</td><td>Factions</td></tr>
+<tr><td class="die">8</td><td>From Velgroth-Lucernia</td></tr>
+<tr><td class="die">9–10</td><td>From Imazuran</td></tr>
+<tr><td class="die">11</td><td>Hostile</td></tr>
+<tr><td class="die">12</td><td>The road itself</td></tr>
+</tbody></table></div></div>
+<h2 class="section">1–3 Locals<span class="ref"></span></h2>
+<div class="table-wrap"><table><caption>d8 Locals</caption><thead><tr><th class="die">d8</th><th>Encounter</th></tr></thead><tbody>
+<tr><td class="die">1</td><td><strong>Taziri n&#x27;Khaleb</strong>&#x27;s caravan on its last leg. Sarit will meet it at the Salt Yard.</td></tr>
+<tr><td class="die">2</td><td><strong>Adval Cadek</strong> riding east, asking every pilgrim whether they saw his son Jorun.</td></tr>
+<tr><td class="die">3</td><td><strong>Stravar Keln</strong> riding east alone to see his estranged wife. Says it&#x27;s caravan business.</td></tr>
+<tr><td class="die">4</td><td><strong>2d10 Schismatic pilgrims</strong> from Dravesa, carrying Savar&#x27;s letters of introduction to the Mountain of Fire.</td></tr>
+<tr><td class="die">5</td><td><strong>Maza ut Idir</strong>&#x27;s alum carts going west for Dravesa&#x27;s dye-works. An Idir cousin rides with them.</td></tr>
+<tr><td class="die">6</td><td><strong>Doran Vell</strong>&#x27;s apprentice walking west to buy charcoal in Dravesa; Taziri&#x27;s is late.</td></tr>
+<tr><td class="die">7</td><td><strong>1d6 Bandua raiders</strong> from Vraed&#x27;s hall scouting the forest edge for the seasonal raid.</td></tr>
+<tr><td class="die">8</td><td><strong>Sarit n&#x27;Khaleb</strong> riding west to meet her mother&#x27;s caravan early. Asks what the party saw on the Sebkha road.</td></tr>
+</tbody></table></div>
+<h2 class="section">4 Sent by someone<span class="ref"></span></h2>
+<div class="table-wrap"><table><caption>d6 Sent by someone</caption><thead><tr><th class="die">d6</th><th>Encounter</th></tr></thead><tbody>
+<tr><td class="die">1</td><td>A Fire-seer sent east by <strong>Ilmath</strong> with sealed instructions for <strong>Cerin</strong>. Ilmath knows the cleric is dead.</td></tr>
+<tr><td class="die">2</td><td>A cart sent by <strong>Maret Duvall</strong> for Orziben wine for the Gilded Ash.</td></tr>
+<tr><td class="die">3</td><td>An Idir cousin sent by <strong>Amastan ut Idir</strong> to ask Stravar Keln whether Dravesa&#x27;s raiders would ride the Sebkha road for pay.</td></tr>
+<tr><td class="die">4</td><td><strong>Adval Cadek</strong> pays travellers bound east to carry Jorun&#x27;s description to the Salt Yard.</td></tr>
+<tr><td class="die">5</td><td><strong>Sarit n&#x27;Khaleb</strong> asks westbound travellers to give Taziri a ledger page: Orziben prices have dropped.</td></tr>
+<tr><td class="die">6</td><td>A young Schismatic sent by <strong>Savar</strong> with letters for the pilgrims at the camp outside Orziben.</td></tr>
+</tbody></table></div>
+<h2 class="section">5–6 Common travellers<span class="ref"> · shared</span></h2>
+<div class="table-wrap"><table><caption>d10 Common travellers</caption><thead><tr><th class="die">d10</th><th>Encounter</th></tr></thead><tbody>
+<tr><td class="die">1</td><td><strong>Pedlar</strong> on foot: pins, ribbons, knives, copper Isarna crescents. Knows the last town&#x27;s news.</td></tr>
+<tr><td class="die">2</td><td><strong>Tinker</strong> pushing a handcart forge. Sharpens anything for 1cp; repeats everything he hears.</td></tr>
+<tr><td class="die">3</td><td><strong>1d4 carts</strong> with carters, loaded with the nearer town&#x27;s goods. In less quiet times, 1d4 hired guards.</td></tr>
+<tr><td class="die">4</td><td><strong>2d6 labourers</strong> looking for harvest or wall work. Some fled a burned steading and won&#x27;t say where.</td></tr>
+<tr><td class="die">5</td><td><strong>Quack</strong> with a cart of cure-alls and a bone he swears is from an Irkali saint.</td></tr>
+<tr><td class="die">6</td><td><strong>Scribe</strong> on foot looking for a post. Writes a letter for 1sp; reads one for 1cp.</td></tr>
+<tr><td class="die">7</td><td><strong>Beggar-hermit</strong> at a waystone. Tells the local legend for a coin, a different one for two.</td></tr>
+<tr><td class="die">8</td><td><strong>2d6 diggers and masons</strong> with their own tools, bound for whichever wall is being mended.</td></tr>
+<tr><td class="die">9</td><td><strong>Militia deserter</strong>, begging to travel with the party. Has plenty to say about his captain.</td></tr>
+<tr><td class="die">10</td><td><strong>A family moving house</strong>: cart, goats, grandmother, everything they own. Their steading is gone.</td></tr>
+</tbody></table></div>
+<h2 class="section">7 Factions<span class="ref"> · shared</span></h2>
+<div class="table-wrap"><table><caption>d8 Factions on the road</caption><thead><tr><th class="die">d8</th><th>Encounter</th></tr></thead><tbody>
+<tr><td class="die">1</td><td><strong>1d3 Elunad rangers</strong> clearing a fallen tree off the road. They trade news and want news back.</td></tr>
+<tr><td class="die">2</td><td><strong>Ilmenor scribe</strong> with 2 hired guards, copying the inscription off a waystone. Polite. Writes the party down too.</td></tr>
+<tr><td class="die">3</td><td><strong>2d10 Malac Schismatic pilgrims</strong>, eastbound for the Mountain of Fire, copper sun-disks at their throats.</td></tr>
+<tr><td class="die">4</td><td><strong>1d6 Bandua faithful</strong> from Dravesa, spears and spear-mark tattoos, recruiting fighters for the seasonal raid.</td></tr>
+<tr><td class="die">5</td><td><strong>Ossamar devotee</strong> checking the next ford, lighting a brazier. Asks every traveller for an offering.</td></tr>
+<tr><td class="die">6</td><td><strong>1d4 Aurka diggers</strong> with shovels and rope, heading off-road. They say they&#x27;re surveying.</td></tr>
+<tr><td class="die">7</td><td><strong>Serdanos druid</strong> kneeling at a blighted verge, taking soil in a jar.</td></tr>
+<tr><td class="die">8</td><td><strong>Ardanir omen-reader</strong> standing in a field, watching the sky. Tells the party what the next storm means, unasked.</td></tr>
+</tbody></table></div>
+<h2 class="section">8 From Velgroth-Lucernia<span class="ref"> · shared</span></h2>
+<div class="table-wrap"><table><caption>d6 From Velgroth-Lucernia</caption><thead><tr><th class="die">d6</th><th>Encounter</th></tr></thead><tbody>
+<tr><td class="die">1</td><td><strong>Velgroth wool-buyer</strong> and 2 guards, comparing Marches prices against home. Pays for honest answers.</td></tr>
+<tr><td class="die">2</td><td><strong>Landless younger son</strong>, good horse, worn sword, looking for service with anyone.</td></tr>
+<tr><td class="die">3</td><td><strong>Thalvyr envoy</strong> with 4 riders, bound east. Says nothing about the errand.</td></tr>
+<tr><td class="die">4</td><td><strong>Lucernian veteran</strong> offering spear drill for coin. Laments that nobody at home trains any more.</td></tr>
+<tr><td class="die">5</td><td><strong>Gallaecian family</strong> under false names, fleeing a feud in the west.</td></tr>
+<tr><td class="die">6</td><td><strong>Lucernian scholar</strong> walking east to an Irkali site in Imazuran, stopping at every shrine on the way.</td></tr>
+</tbody></table></div>
+<h2 class="section">9–10 From Imazuran<span class="ref"> · shared</span></h2>
+<div class="table-wrap"><table><caption>d6 From Imazuran</caption><thead><tr><th class="die">d6</th><th>Encounter</th></tr></thead><tbody>
+<tr><td class="die">1</td><td><strong>Imazuran salt-trader</strong> with 2 camels, separated from his caravan, walking west alone.</td></tr>
+<tr><td class="die">2</td><td><strong>Idir cousin</strong> from Orziben&#x27;s Council, riding west to collect a debt. Polite until he isn&#x27;t.</td></tr>
+<tr><td class="die">3</td><td><strong>Clan envoy</strong> of the Amghar Naravas, asking Marches militias whether they&#x27;d ride east to retake lost land.</td></tr>
+<tr><td class="die">4</td><td><strong>Refugee family</strong> from Thagaste, displaced by humanoids, heading west to anywhere.</td></tr>
+<tr><td class="die">5</td><td><strong>1d4 horse-traders</strong> with 6 steppe ponies, selling cheap and fast.</td></tr>
+<tr><td class="die">6</td><td><strong>Imazuran storyteller</strong> with a drum, working the road for coin and supper.</td></tr>
+</tbody></table></div>
+<h2 class="section">11 Hostile<span class="ref"></span></h2>
+<div class="table-wrap"><table><caption>d4 Hostile</caption><thead><tr><th class="die">d4</th><th>Encounter</th></tr></thead><tbody>
+<tr><td class="die">1</td><td class="gap">To be built: humanoids out of the northern hills.</td></tr>
+<tr><td class="die">2</td><td class="gap">To be built: bandits.</td></tr>
+<tr><td class="die">3</td><td class="gap">To be built: something off the Sebkha.</td></tr>
+<tr><td class="die">4</td><td class="gap">To be built.</td></tr>
+</tbody></table></div>
+<h2 class="section">12 The road itself<span class="ref"></span></h2>
+<div class="table-wrap"><table><caption>d8 The road itself</caption><thead><tr><th class="die">d8</th><th>Encounter</th></tr></thead><tbody>
+<tr><td class="die">1</td><td>The forest falls back. The land dries. The first vine terraces.</td></tr>
+<tr><td class="die">2</td><td>Olive rows on the south slopes, dust on the leaves.</td></tr>
+<tr><td class="die">3</td><td>White alum smoke on the eastern horizon.</td></tr>
+<tr><td class="die">4</td><td>Sun-disks scratched on the milestones, all facing east.</td></tr>
+<tr><td class="die">5</td><td>A roadside well. Water 1cp a cup, Council price.</td></tr>
+<tr><td class="die">6</td><td>A footpath climbs into the northern hills. Orziben parents keep children off it.</td></tr>
+<tr><td class="die">7</td><td>A pilgrim&#x27;s grave by the road: a sun-disk on a stick.</td></tr>
+<tr><td class="die">8</td><td>Nothing. Dust and cicadas.</td></tr>
+</tbody></table></div>
+</main>

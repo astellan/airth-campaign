@@ -1,0 +1,190 @@
+{
+  "id": "road-tagmira-dravesa",
+  "name": "Luric Road: Tagmira to Dravesa",
+  "status": "in_development",
+  "die": "d12",
+  "region_id": "luric-marches",
+  "terrain": "Upland, the Ford of Ossamar, then grassland, forest to the north. 18 miles, one day.",
+  "frequency": "Roll once in the morning and once in the afternoon.",
+  "description": "Roll d12 for the kind of encounter, then roll on that table.",
+  "table": [
+    {
+      "roll": 1,
+      "encounter": "Locals",
+      "subtable": "tagmira-dravesa-locals",
+      "roll_to": 3
+    },
+    {
+      "roll": 4,
+      "encounter": "Sent by someone",
+      "subtable": "tagmira-dravesa-sent"
+    },
+    {
+      "roll": 5,
+      "encounter": "Common travellers",
+      "subtable": "road-common-travellers",
+      "roll_to": 6
+    },
+    {
+      "roll": 7,
+      "encounter": "Factions",
+      "subtable": "road-factions"
+    },
+    {
+      "roll": 8,
+      "encounter": "From Velgroth-Lucernia",
+      "subtable": "road-from-velgroth"
+    },
+    {
+      "roll": 9,
+      "encounter": "From Imazuran",
+      "subtable": "road-from-imazuran"
+    },
+    {
+      "roll": 10,
+      "encounter": "Hostile",
+      "subtable": "tagmira-dravesa-hostile"
+    },
+    {
+      "roll": 11,
+      "encounter": "The road itself",
+      "subtable": "tagmira-dravesa-road",
+      "roll_to": 12
+    }
+  ],
+  "subtables": [
+    {
+      "id": "tagmira-dravesa-locals",
+      "name": "Locals",
+      "die": "d8",
+      "table": [
+        {
+          "roll": 1,
+          "encounter": "**Meria** at the Ford of Ossamar, 3 miles out. Asks an offering before anyone crosses; blesses those who give."
+        },
+        {
+          "roll": 2,
+          "encounter": "**Taziri n'Khaleb**'s caravan, carrying Tagmira's black legs and tallow east."
+        },
+        {
+          "roll": 3,
+          "encounter": "**Garrin and Felmar**, Tarrek Veyran's apprentices, with a cart of nails for Dravesa. Arguing about who drives."
+        },
+        {
+          "roll": 4,
+          "encounter": "**Bren Duvall** of the Gilded Ash, going west to buy black legs for the kitchen."
+        },
+        {
+          "roll": 5,
+          "encounter": "**Vraed Halman** and **1d6 raiders**, riding west to recruit Tagmira's veterans for the seasonal raid."
+        },
+        {
+          "roll": 6,
+          "encounter": "**Ulan Caernach** walking east to see Vraed's fighting hall, thumb on his knife."
+        },
+        {
+          "roll": 7,
+          "encounter": "**Cael Gald** hunting the forest edge south of the road. Waves the party quiet."
+        },
+        {
+          "roll": 8,
+          "encounter": "**Borric** walking east to tell Dravesa's watch about Maedra. Nobody there knows her."
+        }
+      ]
+    },
+    {
+      "id": "tagmira-dravesa-sent",
+      "name": "Sent by someone",
+      "die": "d6",
+      "table": [
+        {
+          "roll": 1,
+          "encounter": "A rider from **Stravar Keln** going west for news of the Bronze Host."
+        },
+        {
+          "roll": 2,
+          "encounter": "**Rondasek Elaran**, sent east by **Hadran Throsk** to tell Vraed: no Tagmiran fighters this season."
+        },
+        {
+          "roll": 3,
+          "encounter": "A teamster sent ahead by **Aelis Varrow** to book stabling for Taziri's wagons at the Gilded Ash."
+        },
+        {
+          "roll": 4,
+          "encounter": "A stableboy with 2 ponies for a Dravesa buyer. **Caturo Hesk** pays 2sp to whoever keeps the boy safe."
+        },
+        {
+          "roll": 5,
+          "encounter": "Two casks of tallow from **Ambata Corr** for the Temple of the Eternal Flame. The Orthodox burn her candles."
+        },
+        {
+          "roll": 6,
+          "encounter": "Notices from **Adval Cadek** nailed to the milestones: 10gp for word of his son Jorun."
+        }
+      ]
+    },
+    {
+      "id": "tagmira-dravesa-hostile",
+      "name": "Hostile",
+      "die": "d4",
+      "status": "stub",
+      "table": [
+        {
+          "roll": 1,
+          "encounter": "To be built: Bronze Host orcs."
+        },
+        {
+          "roll": 2,
+          "encounter": "To be built: the dead out of the Bramblewood."
+        },
+        {
+          "roll": 3,
+          "encounter": "To be built: wolves from the forest."
+        },
+        {
+          "roll": 4,
+          "encounter": "To be built: bandits."
+        }
+      ]
+    },
+    {
+      "id": "tagmira-dravesa-road",
+      "name": "The road itself",
+      "die": "d8",
+      "table": [
+        {
+          "roll": 1,
+          "encounter": "The Ford of Ossamar: cairns, iron braziers, cold clear water to the knee."
+        },
+        {
+          "roll": 2,
+          "encounter": "The upland gives way to flat grass and steading fences."
+        },
+        {
+          "roll": 3,
+          "encounter": "Pine tar on the wind before Dravesa's stone walls show."
+        },
+        {
+          "roll": 4,
+          "encounter": "Axe-cut stumps. The tree line close on the north."
+        },
+        {
+          "roll": 5,
+          "encounter": "A steading family's cart loaded with pelts, bound for the walls before dark."
+        },
+        {
+          "roll": 6,
+          "encounter": "Bandua spear marks chalked on a milestone."
+        },
+        {
+          "roll": 7,
+          "encounter": "A flame-drop pendant in the mud, chain broken."
+        },
+        {
+          "roll": 8,
+          "encounter": "Nothing. Grass and wind."
+        }
+      ]
+    }
+  ]
+}
