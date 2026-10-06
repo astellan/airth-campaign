@@ -1,0 +1,26 @@
+{
+  "home_settlement": "nemetra",
+  "and_yet": "Smashes any pot with a flaw, even his own.",
+  "sayings": [],
+  "dreams": null,
+  "oddly_also": null,
+  "knows": null,
+  "offers": "Storage jars, roof tiles, decorated pottery.",
+  "family": "The Halbet potters; 20 workers and apprentices.",
+  "anecdotes": [],
+  "tragedies": [],
+  "campaign_notes": [
+    "Ingested from Drive 'Nemetra arrival scene' and 'Nemetra Gnoll Threat' (2026-10-06)."
+  ],
+  "name": "Halbet",
+  "moniker": "Master Potter",
+  "role": "master potter",
+  "home": "Pottery Quarter, Nemetra",
+  "found": "Pottery Quarter, at the kilns.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "tradition",
+  "appearance": "Grey clay to the elbows, a burn scar across one cheek.",
+  "wants": "Taziri's price for his jars, and no less.",
+  "does_not_want": "Smugglers selling seconds under his name."
+}

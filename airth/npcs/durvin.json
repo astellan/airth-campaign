@@ -1,0 +1,29 @@
+{
+  "home_settlement": "nemetra",
+  "and_yet": "Never leads a patrol past the second hill north.",
+  "sayings": [
+    "We've got the goblins broken! They come crawling to us now!",
+    "Those howls? Animals."
+  ],
+  "dreams": null,
+  "oddly_also": null,
+  "knows": null,
+  "offers": "A guided walk along the 'safe' northern patrol route.",
+  "family": "The Zerens, who run the pig pens.",
+  "anecdotes": [],
+  "tragedies": [],
+  "campaign_notes": [
+    "Ingested from Drive 'Nemetra arrival scene' and 'Nemetra Gnoll Threat' (2026-10-06)."
+  ],
+  "name": "Durvin",
+  "moniker": "Captain",
+  "role": "militia captain",
+  "home": "Nemetra",
+  "found": "Village Green by day, holding court; the Royal Welcome by night.",
+  "gender": "male",
+  "faction": "village-militia",
+  "thinks_with": "pride",
+  "appearance": "Big, red-faced, militia sash stained with ale.",
+  "wants": "To be thanked for taming the goblins.",
+  "does_not_want": "Anyone asking what the goblins are running from."
+}

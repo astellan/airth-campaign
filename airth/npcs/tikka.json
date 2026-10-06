@@ -1,0 +1,25 @@
+{
+  "home_settlement": "nemetra",
+  "and_yet": "Meets your eye. The others don't.",
+  "sayings": [],
+  "dreams": null,
+  "oddly_also": null,
+  "knows": "The fire-speaker (Tharzuul), the Nighthowl caves and their escape tunnels.",
+  "offers": null,
+  "family": null,
+  "anecdotes": [],
+  "tragedies": [],
+  "campaign_notes": [
+    "Ingested from Drive 'Nemetra arrival scene' and 'Nemetra Gnoll Threat' (2026-10-06)."
+  ],
+  "name": "Tikka",
+  "role": "goblin refugee",
+  "home": "Pig Pens, Nemetra",
+  "found": "Pig Pens, hiding among the pigs at night.",
+  "gender": "female",
+  "faction": "none",
+  "thinks_with": "fear",
+  "appearance": "Small, gaunt, gnoll-bite scars on one arm.",
+  "wants": "Not to be sent back.",
+  "does_not_want": "The militia to notice her."
+}

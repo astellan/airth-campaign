@@ -1,0 +1,241 @@
+<title>Nemetra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap">
+<style>
+/* Print-first: two dense columns on Letter portrait; places, NPCs and tables flow between them. */
+:root {
+  --paper: #fbfbf7; --ink: #1e201c; --ink-soft: #55594f; --accent: #3e5937;
+  --rule: #c8cbbf; --panel: #f0f1ea;
+  --serif: "EB Garamond", Garamond, "Garamond Premier Pro", Georgia, "Times New Roman", serif;
+  color-scheme: light;
+}
+@media screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --paper:#161814; --ink:#e3e5dc; --ink-soft:#a3a89a; --accent:#a3bd97; --rule:#3a3f36; --panel:#1f221d; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --paper:#161814; --ink:#e3e5dc; --ink-soft:#a3a89a; --accent:#a3bd97; --rule:#3a3f36; --panel:#1f221d; color-scheme: dark; }
+@page { size: letter portrait; margin: .45in .75in; }
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font-family: var(--serif);
+  font-size: 10.5pt; line-height: 1.28; margin: 0; padding: 16px; }
+main { max-width: 8in; margin-inline: auto; column-count: 2; column-gap: .3in; column-rule: 1px solid var(--rule); }
+@media screen and (max-width: 640px) { main { column-count: 1; } }
+.sample-note { column-span: all; font-size: 8pt; color: var(--ink-soft); font-style: italic; margin: 0 0 .3rem; }
+h1 { column-span: all; font-weight: 600; font-size: 20pt; line-height: 1.1; margin: 0;
+  font-variant: small-caps; letter-spacing: .03em; }
+.tagline { column-span: all; font-style: italic; color: var(--ink-soft); margin: 0 0 .35rem; font-size: 11pt; }
+.facts { column-span: all; display: grid; grid-template-columns: 1fr 1fr; gap: .05rem 1.2rem;
+  border-top: 1.5px solid var(--ink); border-bottom: 1px solid var(--rule); padding: .3rem 0; margin-bottom: .4rem; }
+.facts p { margin: 0; }
+h2.section { font-weight: 600; font-size: 10.5pt; font-variant: small-caps; letter-spacing: .08em;
+  color: var(--accent); margin: .55rem 0 .2rem; border-bottom: 1px solid var(--ink); padding-bottom: 1px;
+  break-after: avoid; }
+main > h2.section:first-of-type { margin-top: 0; }
+p { margin: 0 0 .22rem; }
+strong { font-weight: 600; }
+ul { margin: 0 0 .25rem; padding-left: 1rem; }
+li { margin-bottom: .1rem; }
+.pal p { margin: 0 0 .12rem; }
+.pal em { color: var(--ink-soft); }
+.table-wrap { margin: .2rem 0 .35rem; break-inside: avoid; }
+.table-wrap:has(table.grid) { column-span: all; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums lining-nums; font-size: 9.5pt; }
+caption { text-align: left; font-weight: 600; font-variant: small-caps; letter-spacing: .05em; color: var(--accent); padding-bottom: 1px; }
+th, td { text-align: left; padding: 1px .3rem; border-top: 1px solid var(--rule); vertical-align: top; }
+thead th { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); font-weight: 600; font-variant: small-caps; letter-spacing: .05em; }
+tbody tr:last-child td { border-bottom: 1px solid var(--ink); }
+td.die, th.die { width: 1.6rem; text-align: center; color: var(--accent); }
+table.grid th:first-child, table.grid td:first-child { width: 4.5rem; font-variant: small-caps; letter-spacing: .04em; font-weight: 600; }
+.loc { border-top: 1px solid var(--ink); padding-top: .15rem; margin-top: .4rem; }
+.loc h3 { font-weight: 600; font-size: 11pt; font-variant: small-caps; letter-spacing: .03em; margin: 0 0 .05rem; break-after: avoid; }
+.loc h3 .num { color: var(--accent); margin-right: .25em; }
+.npc { background: var(--panel); border: 1px solid var(--rule); padding: .2rem .4rem; margin: .25rem 0; break-inside: avoid; font-size: 9.5pt; }
+.npc p { margin: 0 0 .1rem; }
+.npc .head { margin: 0; }
+.npc .nm { font-weight: 600; font-variant: small-caps; letter-spacing: .03em; font-size: 10.5pt; }
+.npc .meta { color: var(--ink-soft); }
+.npc .say { font-style: italic; margin-left: .8rem; }
+.npc .more { border-top: 1px dotted var(--rule); margin-top: .1rem; padding-top: .1rem; color: var(--ink-soft); }
+.npc .more strong { color: var(--ink); }
+.gap { color: var(--ink-soft); font-style: italic; }
+.hidden { border-left: 2px solid var(--accent); padding-left: .4rem; }
+.ref { color: var(--ink-soft); }
+@media print { body { padding: 0; background: #fff; } main { max-width: none; } .npc { background: #f3f4ee; } }
+</style>
+
+<main>
+<p class="sample-note">Rendered from <code>airth/settlements/nemetra.json</code> to <code>style/settlement.md</code>. Gaps in the data are shown in grey.</p>
+<h1>Nemetra (draft)</h1>
+<p class="tagline">Pig-pen and pottery village on the Luric Road, complacent while something gathers to the north.</p>
+<div class="facts">
+<p><strong>Inhabitants:</strong> 1100 (village). Swineherds and potters, with a large fringe.</p>
+<p><strong>Ruler:</strong> No lord. Militia captain Durvin holds court on the village green.</p>
+<p><strong>Strangers:</strong> Busy and practical; nobody has time for them unless they bring coin.</p>
+<p><strong>Equipment:</strong> Basic. Tools, pottery, and pork plenty; iron goods scarce, +25%.</p>
+<p><strong>Faiths:</strong> Bandua (hearth-shrine by the great oak); Isarna (cracked waystone at the northern trailhead).</p>
+</div>
+<h2 class="section">Arrival</h2><div class="pal">
+<p><strong>Far:</strong> kiln smoke · <em>manure on the wind</em></p>
+<p><strong>Near:</strong> clay pits · <em>pig pens sprawling to the west</em></p>
+<p><strong>Leaving:</strong> clay dust on everything you own</p>
+</div>
+<div class="table-wrap"><table class="grid"><thead><tr><th></th><th>Dawn</th><th>Day</th><th>Dusk</th><th>Night</th></tr></thead><tbody>
+<tr><td>Far</td><td></td><td></td><td>four kilns glowing on the south edge</td><td></td></tr>
+<tr><td>Within</td><td>pigs squealing for slop</td><td>pottery wheels spinning · children chasing piglets through the lanes</td><td>militia laughter from the Royal Welcome · herbed ale and roasting pork</td><td>kilns crackling · whimpering from the pig pens</td></tr>
+</tbody></table></div>
+<div class="pal">
+<p><strong>Winter</strong> <em>(Voarn–Thunor)</em>: the kilns the only warm place · slaughter season, salted pork</p>
+<p><strong>Spring</strong> <em>(Arkun–Ulkar)</em>: mud and manure to the ankle · wet earth after rain</p>
+<p><strong>Summer</strong> <em>(Sarnath–Keltoi)</em>: clay pits dry and cracking · resin gathering</p>
+<p><strong>Autumn</strong> <em>(Ragaia–Eshmun)</em>: hazelnut harvest · charcoal smoke from the woods</p>
+<p><strong>Ambarra</strong> <em>(6 Thunor)</em>: oaths sworn at the hearth-shrine · new households blessed under the oak</p>
+</div>
+<h2 class="section">What Makes It Itself</h2>
+<p><strong>Pigs and pots.</strong> Pork and pottery from Nemetra supply the Marches: salted pork, storage jars, roof tiles, decorated ware. The village is more prosperous than it looks, and smells worse.</p>
+<p><strong>By lizard-man sufferance.</strong> Nemetra exists because the lizard-men to the south allow it. There is no compact, tribute, or acknowledgement. A few elders sense it, and none say it aloud.</p>
+<p><strong>Something in the north.</strong> Goblin refugees have started appearing in the pig pens, gaunt and silent. The militia laughs at them. The herb-wives are studying them, and are afraid.</p>
+<h2 class="section">Encounters</h2>
+<div class="table-wrap"><table><caption>d6 Nemetra by day</caption><thead><tr><th class="die">d6</th><th>Encounter</th></tr></thead><tbody>
+<tr><td class="die">1</td><td><strong>Captain Durvin</strong> drills the militia on the green and boasts of the goblins he has tamed.</td></tr>
+<tr><td class="die">2</td><td>A <strong>goblin refugee</strong> bolts from the pig pens when approached.</td></tr>
+<tr><td class="die">3</td><td><strong>Master Potter Halbet</strong> inspects a kiln load and smashes the flawed pieces.</td></tr>
+<tr><td class="die">4</td><td><strong>Torvek</strong> the smith complains to anyone near the forge about the iron shortage.</td></tr>
+<tr><td class="die">5</td><td><strong>Mother Yaleth</strong> sends a herb-wife to fetch the party.</td></tr>
+<tr><td class="die">6</td><td>A potter&#x27;s cart of storage jars sets out for the road.</td></tr>
+</tbody></table></div>
+<div class="table-wrap"><table><caption>d6 Nemetra by night</caption><thead><tr><th class="die">d6</th><th>Encounter</th></tr></thead><tbody>
+<tr><td class="die">1</td><td>Militia singing at the Royal Welcome.</td></tr>
+<tr><td class="die">2</td><td>A potter sleeps beside a glowing kiln.</td></tr>
+<tr><td class="die">3</td><td>A goblin in the pig pens whispers one word in Common, then stops.</td></tr>
+<tr><td class="die">4</td><td><strong>Mother Yaleth</strong> smokes on the compound steps, watching the north.</td></tr>
+<tr><td class="die">5</td><td>A fire burns far off in the northern woods.</td></tr>
+<tr><td class="die">6</td><td>The pigs panic in their pens at nothing anyone can see.</td></tr>
+</tbody></table></div>
+<h2 class="section">Response</h2>
+<p><strong>The watch:</strong> 30 militia under Captain Durvin, 15 of them veterans.</p>
+<p><strong>By day:</strong> 1d4 militia within 1d10 minutes.</p>
+<p><strong>By night:</strong> 1d3 militia within 1d4 turns, likely drunk.</p>
+<p><strong>Reinforcements:</strong> None; the veterans are already counted.</p>
+<p><strong>Strength:</strong> 30 militia, 15 of them veterans (founded with 40). Overconfident and under-informed. Patrols stop short of where the trouble is.</p>
+<p><strong>Bribery:</strong> A round at the Royal Welcome buys a militiaman&#x27;s silence about almost anything.</p>
+<h2 class="section">Places</h2>
+<section class="loc"><h3><span class="num">1.</span>Village Green</h3>
+<p>The central green under a great Bandua-blessed oak.</p>
+<p><strong>Custom:</strong> Announcements, markets, and militia drills. Captain Durvin holds court here.</p>
+<div class="npc"><p class="head"><span class="nm">Durvin, Captain</span> <span class="meta">· militia captain · village militia</span></p>
+<p>Big, red-faced, militia sash stained with ale. <em>And yet:</em> Never leads a patrol past the second hill north.</p>
+<p class="say">“We&#x27;ve got the goblins broken! They come crawling to us now!”</p>
+<p class="say">“Those howls? Animals.”</p>
+<p><strong>Wants:</strong> To be thanked for taming the goblins.<br><strong>Doesn’t want:</strong> Anyone asking what the goblins are running from.<br><strong>Offers:</strong> A guided walk along the &#x27;safe&#x27; northern patrol route.<br><strong>Found:</strong> Village Green by day, holding court; the Royal Welcome by night.</p>
+<div class="more">
+<p><strong>Thinks with:</strong> pride<br><strong>Family:</strong> The Zerens, who run the pig pens.</p>
+</div>
+</div>
+</section>
+<section class="loc"><h3><span class="num">2.</span>The Royal Welcome</h3>
+<p>The village tavern.</p>
+<p><strong>Guests:</strong> Militia, constantly.</p>
+<p><strong>Services:</strong> Pork stew, nut bread, herbed ale; 6 rooms upstairs.</p>
+<div class="npc"><p class="head"><span class="nm">Varnis</span> <span class="meta">· tavern-keeper · independent</span></p>
+<p>Round, flour on her apron, eyes always on the door.</p>
+<p class="say">“Sit anywhere. Not there. That&#x27;s the captain&#x27;s.”</p>
+<p><strong>Wants:</strong> The militia&#x27;s tab paid.<br><strong>Doesn’t want:</strong> Trouble under her roof.<br><strong>Offers:</strong> Pork stew, nut bread, herbed ale; 6 rooms upstairs.<br><strong>Found:</strong> The Royal Welcome, behind the bar.</p>
+<div class="more">
+<p><strong>Thinks with:</strong> fear</p>
+</div>
+</div>
+</section>
+<section class="loc"><h3><span class="num">3.</span>Pottery Quarter</h3>
+<p>Four large kilns by the clay pits on the southern edge, always smoking.</p>
+<p><strong>Wares:</strong> Storage jars, roof tiles, decorated pottery.</p>
+<p><strong>Proprietor:</strong> Master Potter Halbet.</p>
+<div class="npc"><p class="head"><span class="nm">Halbet, Master Potter</span> <span class="meta">· master potter · independent</span></p>
+<p>Grey clay to the elbows, a burn scar across one cheek. <em>And yet:</em> Smashes any pot with a flaw, even his own.</p>
+<p><strong>Wants:</strong> Taziri&#x27;s price for his jars, and no less.<br><strong>Doesn’t want:</strong> Smugglers selling seconds under his name.<br><strong>Offers:</strong> Storage jars, roof tiles, decorated pottery.<br><strong>Found:</strong> Pottery Quarter, at the kilns.</p>
+<div class="more">
+<p><strong>Thinks with:</strong> tradition<br><strong>Family:</strong> The Halbet potters; 20 workers and apprentices.</p>
+</div>
+</div>
+</section>
+<section class="loc"><h3><span class="num">4.</span>Pig Pens</h3>
+<p>Sprawling, stinking enclosures on the western side.</p>
+<p><strong>Custom:</strong> The village&#x27;s economic backbone.</p>
+<p class="hidden"><strong>Hidden:</strong> Goblin refugees hide among the pigs at night.</p>
+<div class="npc"><p class="head"><span class="nm">Tikka</span> <span class="meta">· goblin refugee</span></p>
+<p>Small, gaunt, gnoll-bite scars on one arm. <em>And yet:</em> Meets your eye. The others don&#x27;t.</p>
+<p><strong>Wants:</strong> Not to be sent back.<br><strong>Doesn’t want:</strong> The militia to notice her.<br><strong>Knows:</strong> The fire-speaker (Tharzuul), the Nighthowl caves and their escape tunnels.<br><strong>Found:</strong> Pig Pens, hiding among the pigs at night.</p>
+<div class="more">
+<p><strong>Thinks with:</strong> fear</p>
+</div>
+</div>
+</section>
+<section class="loc"><h3><span class="num">5.</span>Herb-Wives&#x27; Compound</h3>
+<p>Three connected houses on the eastern edge, in gardens of medicinal and kitchen herbs.</p>
+<p><strong>Inhabitants:</strong> Mother Yaleth and six herb-wives.</p>
+<div class="npc"><p class="head"><span class="nm">Yaleth, Mother</span> <span class="meta">· herb-wife · herb wives</span></p>
+<p>Late 60s. Faded green shawl. Hazelwood staff, herb bundles at her belt. <em>And yet:</em> Pipe of strong tobacco clenched in her teeth.</p>
+<p class="say">“I was right then. I’m right now.”</p>
+<p><strong>Wants:</strong> The northern woods threat taken seriously.<br><strong>Doesn’t want:</strong> Militia meddling. Goblins harmed before questioning.<br><strong>Knows:</strong> Every herb within a day’s walk.<br><strong>Found:</strong> Herb-wives’ compound, Nemetra; on the steps at dusk, smoking.</p>
+<div class="more">
+<p><strong>Dreams:</strong> Nemetra exporting tobacco. Dying respected.<br><strong>Thinks with:</strong> lore<br><strong>Family:</strong> A distant cousin. 6 herb-wives under her guidance. No living children.</p>
+<p><strong>Anecdote:</strong> Delivered Captain Durvin himself during a winter storm—he was blue when he came out, she breathed life back into him. He&#x27;s never thanked her once.</p>
+<p><strong>Anecdote:</strong> Diagnosed Nemetra&#x27;s pottery master with lung rot from kiln smoke 20 years ago—he ignored her, kept working, died within the year. His son listens now.</p>
+<p><strong>Anecdote:</strong> Once talked down a delirious wounded orc at the forest edge using only hand signs and offering him water. Militia wanted to kill it. She sent it limping north with bandaged leg.</p>
+<p><strong>Tragedy:</strong> Lost all three of her children (two daughters, one son) to fever in a single week during Year 285. She knows every herb that might have saved them—none grew close enough in time.</p>
+<p><strong>Tragedy:</strong> Her husband left her 40 years ago, said she &#x27;loved plants more than people.&#x27; He remarried in Tagmira. She never speaks of him but keeps his tobacco pouch.</p>
+<p><strong>Tragedy:</strong> Her mentor, Old Kessa, was killed by militiamen who thought she was consorting with fey (she was gathering moonlit herbs). Yaleth found the body. Durvin&#x27;s father led that patrol—she&#x27;s never forgotten.</p>
+</div>
+</div>
+</section>
+<section class="loc"><h3><span class="num">6.</span>Torvek&#x27;s Forge</h3>
+<p>A small forge.</p>
+<p><strong>Wares:</strong> Tool repair, horseshoes, simple weapons.</p>
+<p><strong>Proprietor:</strong> Torvek.</p>
+<div class="npc"><p class="head"><span class="nm">Torvek</span> <span class="meta">· smith · independent</span></p>
+<p>Stooped, soot-black, a missing finger.</p>
+<p class="say">“No iron. No iron, no nails. No nails, no village.”</p>
+<p><strong>Wants:</strong> Iron from the east, regular.<br><strong>Doesn’t want:</strong> To be ignored about the north again.<br><strong>Knows:</strong> The northern woods are dangerous; he has seen the tracks.<br><strong>Offers:</strong> Tool repair, horseshoes, simple weapons.<br><strong>Found:</strong> Torvek&#x27;s Forge, complaining to whoever is near.</p>
+<div class="more">
+<p><strong>Thinks with:</strong> endurance<br><strong>Family:</strong> Distant cousin to the Veyran smiths of Tagmira.</p>
+</div>
+</div>
+</section>
+<section class="loc"><h3><span class="num">7.</span>Shrine to Bandua</h3>
+<p>A stone hearth-shrine by the oak.</p>
+<p><strong>Populace:</strong> Tended by Elder Corveth, a retired militiaman.</p>
+<p><strong>Rites:</strong> Oath-taking; blessing new households.</p>
+<div class="npc"><p class="head"><span class="nm">Corveth, Elder</span> <span class="meta">· shrine-keeper · bandua faithful</span></p>
+<p>Old militiaman, one leg stiff, oath-cord on his wrist.</p>
+<p class="say">“Swear on the hearth or don&#x27;t swear.”</p>
+<p><strong>Wants:</strong> Oaths kept.<br><strong>Doesn’t want:</strong> Durvin&#x27;s boasting taken for an oath.<br><strong>Offers:</strong> Oath-taking; blessings for new households.<br><strong>Found:</strong> Shrine to Bandua, by the oak.</p>
+<div class="more">
+<p><strong>Thinks with:</strong> tradition</p>
+</div>
+</div>
+</section>
+<section class="loc"><h3><span class="num">8.</span>Scribe&#x27;s Shed</h3>
+<p>A cramped lean-to against the Royal Welcome.</p>
+<p><strong>Wares:</strong> Contracts, letters, village records.</p>
+<p><strong>Proprietor:</strong> Medach.</p>
+<p><strong>Off the books:</strong> Hires anyone literate or strong to dig in the northern ruins.</p>
+<div class="npc"><p class="head"><span class="nm">Medach</span> <span class="meta">· scribe · independent</span></p>
+<p>Thin, ink-stained, a knife he keeps touching. <em>And yet:</em> Ilmenor-trained, barely; never says why he left.</p>
+<p class="say">“Can you read? Good. Can you dig?”</p>
+<p><strong>Wants:</strong> Pre-Fall inscriptions from the northern ruins.<br><strong>Doesn’t want:</strong> The Ilmenor hearing what he finds.<br><strong>Offers:</strong> Contracts, letters, village records; pay for anyone who will dig north.<br><strong>Found:</strong> Scribe&#x27;s Shed, scratching at a contract.</p>
+<div class="more">
+<p><strong>Thinks with:</strong> lore</p>
+</div>
+</div>
+</section>
+<section class="loc"><h3><span class="num">9.</span>Northern Trailhead</h3>
+<p>Where the road narrows into the forest, marked by a cairn and a cracked Isarna waystone.</p>
+<p><strong>Custom:</strong> Militia patrols end 2 hexes north.</p>
+<p class="hidden"><strong>Hidden:</strong> Fresh gnoll and goblin tracks, plain to anyone who looks.</p>
+</section>
+<h2 class="section">Factions in Town</h2>
+<p><strong>Village Militia.</strong> <em>Purpose:</em> Keep the village safe. <em>Membership:</em> 30 militia, 15 of them veterans. <em>Scheme:</em> Drinking, and dismissing the gnoll threat.</p>
+<p><strong>Herb Wives.</strong> <em>Purpose:</em> Medicine, intelligence, and alarm. <em>Membership:</em> Mother Yaleth and six herb-wives. <em>Scheme:</em> Studying the goblin refugees to learn what is coming.</p>
+<h2 class="section">Trouble</h2><ul><li>Militia dismisses gnoll threat; herb-wives know it is real</li><li>Goblin refugees in the pig pens — villagers mock them, herb-wives study them</li><li>Unspoken lizard-man sufferance — Nemetra exists because they permit it</li></ul>
+<h2 class="section">Neighbors</h2><p>
+<strong>Lamares:</strong> 18 miles west via luric road.<br><strong>Caelrun:</strong> 18 miles east via luric road.</p>
+</main>

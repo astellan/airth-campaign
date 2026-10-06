@@ -1,0 +1,27 @@
+{
+  "home_settlement": "nemetra",
+  "and_yet": null,
+  "sayings": [
+    "Sit anywhere. Not there. That's the captain's."
+  ],
+  "dreams": null,
+  "oddly_also": null,
+  "knows": null,
+  "offers": "Pork stew, nut bread, herbed ale; 6 rooms upstairs.",
+  "family": null,
+  "anecdotes": [],
+  "tragedies": [],
+  "campaign_notes": [
+    "Ingested from Drive 'Nemetra arrival scene' and 'Nemetra Gnoll Threat' (2026-10-06)."
+  ],
+  "name": "Varnis",
+  "role": "tavern-keeper",
+  "home": "The Royal Welcome, Nemetra",
+  "found": "The Royal Welcome, behind the bar.",
+  "gender": "female",
+  "faction": "independent",
+  "thinks_with": "fear",
+  "appearance": "Round, flour on her apron, eyes always on the door.",
+  "wants": "The militia's tab paid.",
+  "does_not_want": "Trouble under her roof."
+}

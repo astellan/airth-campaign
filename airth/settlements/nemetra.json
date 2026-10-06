@@ -134,7 +134,7 @@
     "arrival_day": "1d4 militia within 1d10 minutes.",
     "arrival_night": "1d3 militia within 1d4 turns, likely drunk.",
     "reinforcements": "None; the veterans are already counted.",
-    "bribery": null,
+    "bribery": "A round at the Royal Welcome buys a militiaman's silence about almost anything.",
     "strength_now": "30 militia, 15 of them veterans",
     "strength_founding": "40",
     "strength": "Overconfident and under-informed. Patrols stop short of where the trouble is."
@@ -153,7 +153,7 @@
       "id": "royal-welcome",
       "name": "The Royal Welcome",
       "type": "inn",
-      "look": "The village tavern, run by round, nervous Varnis.",
+      "look": "The village tavern.",
       "labels": {
         "guests": "Militia, constantly.",
         "services": "Pork stew, nut bread, herbed ale; 6 rooms upstairs."
@@ -166,7 +166,7 @@
       "look": "Four large kilns by the clay pits on the southern edge, always smoking.",
       "labels": {
         "wares": "Storage jars, roof tiles, decorated pottery.",
-        "proprietor": "Master Potter Halbet oversees production."
+        "proprietor": "Master Potter Halbet."
       }
     },
     {
@@ -177,7 +177,7 @@
       "labels": {
         "custom": "The village's economic backbone."
       },
-      "hidden": "Goblin refugees hide among the pigs at night. Tikka, the most coherent, escaped the Nighthowl caves and knows about Tharzuul."
+      "hidden": "Goblin refugees hide among the pigs at night."
     },
     {
       "id": "herb-wives-compound",
@@ -195,7 +195,7 @@
       "look": "A small forge.",
       "labels": {
         "wares": "Tool repair, horseshoes, simple weapons.",
-        "proprietor": "Torvek, who complains of the iron shortage and knows the north is dangerous."
+        "proprietor": "Torvek."
       }
     },
     {
@@ -206,6 +206,17 @@
       "labels": {
         "populace": "Tended by Elder Corveth, a retired militiaman.",
         "rites": "Oath-taking; blessing new households."
+      }
+    },
+    {
+      "id": "scribes-shed",
+      "name": "Scribe's Shed",
+      "type": "shop",
+      "look": "A cramped lean-to against the Royal Welcome.",
+      "labels": {
+        "wares": "Contracts, letters, village records.",
+        "proprietor": "Medach.",
+        "off_the_books": "Hires anyone literate or strong to dig in the northern ruins."
       }
     },
     {
@@ -324,5 +335,6 @@
         "tharzuuls_staff": "Gnarled staff topped with a perpetually smoldering coal that whispers in Ignan. Destroying it might shatter his hold over the packs."
       }
     }
-  }
+  },
+  "equipment": "Basic. Tools, pottery, and pork plenty; iron goods scarce, +25%."
 }

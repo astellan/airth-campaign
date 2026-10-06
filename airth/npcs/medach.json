@@ -1,0 +1,27 @@
+{
+  "home_settlement": "nemetra",
+  "and_yet": "Ilmenor-trained, barely; never says why he left.",
+  "sayings": [
+    "Can you read? Good. Can you dig?"
+  ],
+  "dreams": null,
+  "oddly_also": null,
+  "knows": null,
+  "offers": "Contracts, letters, village records; pay for anyone who will dig north.",
+  "family": null,
+  "anecdotes": [],
+  "tragedies": [],
+  "campaign_notes": [
+    "Ingested from Drive 'Nemetra arrival scene' and 'Nemetra Gnoll Threat' (2026-10-06)."
+  ],
+  "name": "Medach",
+  "role": "scribe",
+  "home": "Scribe's Shed, Nemetra",
+  "found": "Scribe's Shed, scratching at a contract.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "lore",
+  "appearance": "Thin, ink-stained, a knife he keeps touching.",
+  "wants": "Pre-Fall inscriptions from the northern ruins.",
+  "does_not_want": "The Ilmenor hearing what he finds."
+}

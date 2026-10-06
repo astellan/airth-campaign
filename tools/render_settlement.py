@@ -28,9 +28,11 @@ def npcs_for(sid):
 
 def place(npc, locations):
     for key in ("found", "home"):
-        text = (npc.get(key) or "").lower()
+        norm = lambda t: (t or "").lower().replace("\u2019", "'")
+        text = norm(npc.get(key))
         for loc in locations:
-            if loc["name"].lower() in text or loc["name"].lower().removeprefix("the ") in text:
+            name = norm(loc["name"])
+            if name in text or name.removeprefix("the ") in text:
                 return loc["id"]
     return None
 
