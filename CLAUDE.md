@@ -49,6 +49,7 @@ Factions are organized as a node pyramid (`identity`, `goals`, `philosophy`, and
 - **No XP or mechanics.** Never add hit points, spell slots, leveling math, or any player-side mechanical tracking to these files. That's the players' responsibility, not campaign data.
 - **OSR tone, not 5e.** Gritty, matter-of-fact, Gygaxian. The world is indifferent: no balanced-encounter design, no story protection, no guaranteed dramatic beats. Monsters are dangerous, treasure meaningful, death real.
 - **Session log is incomplete.** Absence of a session entry doesn't mean nothing happened — don't infer negative facts from gaps.
+- **No dead-end mysteries.** Every secret, unexplained detail, or hook ("won't say why", "carrying something", "purpose unknown") must have its answer recorded where the DM can find it (`dm_notes`, `knows`, `hidden`, or the relevant file), and the answer must be something the party can reach. If there is no answer, don't write the mystery.
 - **Never generate new content — NPCs, encounters, locations, lore, anything — without discussing it and getting explicit permission first**, no matter how small. Don't assume scope from a schema fix or bug report.
 
 ## Style

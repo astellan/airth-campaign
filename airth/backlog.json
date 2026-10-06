@@ -188,6 +188,13 @@
       "description": "Improve NPC wants / does_not_want for relevance: tie them to current troubles, factions, and things the party can act on.",
       "status": "open",
       "notes": "Raised 2026-10-06 reviewing the Nemetra and Orziben drafts."
+    },
+    {
+      "id": "BL-28",
+      "category": "data_integrity",
+      "description": "Excise mysteries that don't lead anywhere: unexplained secrets, 'won't say why', 'carrying something', unknown purposes with no answer recorded. Either record the answer the party can reach, or cut the mystery.",
+      "status": "open",
+      "notes": "Rule added to CLAUDE.md 2026-10-06. Known candidates from recent drafts: Orziben (Ilmenor scribe 'purpose unknown here'; Fenn's mirrors that show 'the next room over'; the lit window showing a different room; something howling on the Sebkha), road tables (Ordun Tarnes's sealed letter 'won't say for whom'; Thalvyr envoy's unspoken errand; Kessa 'won't say what she saw'), Caelrun (Bresul boats' midnight trips 'carrying something'). Sweep all settlements, NPCs, and adventure sites."
     }
   ]
 }
