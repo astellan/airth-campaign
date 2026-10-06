@@ -234,8 +234,7 @@
       "look": "Boiling pans and clay pits downwind of town. White crust on everything.",
       "labels": {
         "wares": "Alum, by the sack.",
-        "proprietor": "Maza ut Idir, for the Idir family.",
-        "off_the_books": "Buys bog iron from Nerzul."
+        "proprietor": "Maza ut Idir, for the Idir family."
       }
     },
     {
@@ -305,8 +304,7 @@
   ],
   "trouble": [
     "Imazuran caravans have halved in two years. The Council wants a name.",
-    "The Orthodox cleric died two months ago. Cerin and Ilmath both say nothing; Schismatic pilgrims fill the town around an empty temple.",
-    "Maza ut Idir buys bog iron from Nerzul under the Council's nose, or with its blessing."
+    "The Orthodox cleric died two months ago. Cerin and Ilmath both say nothing; Schismatic pilgrims fill the town around an empty temple."
   ],
   "neighbors": [
     {

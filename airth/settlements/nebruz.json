@@ -106,10 +106,6 @@
     {
       "title": "Peace with the swamp",
       "text": "A non-aggression treaty with the lizard-men holds, and their burial mounds are inviolable. The froggish-folk, governed by the lizard-men, trade mead and honeycomb."
-    },
-    {
-      "title": "Smugglers' hub",
-      "text": "Smuggling and private deals are the real trade. The warehouse keepers are underpaid and take bribes."
     }
   ],
   "encounters": {
@@ -226,7 +222,7 @@
       "look": "Two large two-storey warehouses.",
       "labels": {
         "wares": "Space rented to river traders for goods in transit.",
-        "off_the_books": "One underpaid keeper each, open to bribes and regularly used by smugglers."
+        "off_the_books": "One underpaid keeper each, open to bribes."
       }
     },
     {
@@ -345,7 +341,7 @@
       "salt",
       "lamp oil"
     ],
-    "secondary": "Smuggling hub; private criminal and political dealings.",
+    "secondary": "Private criminal and political dealings.",
     "notable": "Honey and mead trade with the froggish-folk. Exotic herb market for alchemists and sorcerers."
   },
   "dm_notes": {

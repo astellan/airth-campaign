@@ -53,7 +53,7 @@ Label keys for each type are listed in `airth/config/settlement.json`; tests che
 | **Caravanserai / stables** | Yard · Beasts · Services · Who's passing through |
 | **Arena / fighting yard** | Bouts · Wagers · Champion |
 
-**Hidden.** Any location may end with a **Hidden** sub-heading: something physical and findable that isn't visible from the front door — a passage, a sealed room, an occupant, contraband. Narrative secrets (who knows what, who has told no one) do not go here.
+**Hidden.** Any location may end with a **Hidden** sub-heading: something physical and findable that isn't visible from the front door — a passage, a sealed room, an occupant, a cache. Narrative secrets (who knows what, who has told no one) do not go here.
 
 **Garrison strength.** Luric towns began as garrisons and have slackened over 80 years. Where it applies, state current strength against founding strength. This is the line that changes as the campaign turns.
 

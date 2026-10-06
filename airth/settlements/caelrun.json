@@ -317,7 +317,7 @@
       "labels": {
         "custom": "Outside village authority."
       },
-      "hidden": "Channels the smugglers use at night, toward Nebruz."
+      "hidden": "Night channels through the swamp toward Nebruz."
     },
     {
       "id": "kellis-cairns",
@@ -424,7 +424,6 @@
   "dm_notes": {
     "legacy_rumours": [
       "Aurka found carved stones in submerged temple foundations",
-      "Nebruz smugglers use secret lake channels at night",
       "Old temple columns visible in shallows during summer droughts"
     ],
     "campaign_state": "As of session 27: the party passed through with Taziri's caravan, met Yavra Quickwater, then went Caelrun, decaying dock, swamp path, Nebruz, Leeandra's hut. Leeandra is brewing water-breathing potions in exchange for giant constrictor brain fluid. The party has not yet dived the Submerged Temple-Garden. Their Aurka contact is Ossek, not Varren.",
