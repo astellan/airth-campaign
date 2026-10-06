@@ -3,103 +3,64 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap">
 <style>
-/* Layout: single reading column, ~65ch; areas separated by full rules; sidebars as tinted boxes. */
+/* Print-first: two dense columns on Letter portrait; places, NPCs and tables flow between them. */
 :root {
-  --paper: #fbfbf7;
-  --ink: #1e201c;
-  --ink-soft: #55594f;
-  --accent: #3e5937;
-  --rule: #c8cbbf;
-  --panel: #f0f1ea;
+  --paper: #fbfbf7; --ink: #1e201c; --ink-soft: #55594f; --accent: #3e5937;
+  --rule: #c8cbbf; --panel: #f0f1ea;
   --serif: "EB Garamond", Garamond, "Garamond Premier Pro", Georgia, "Times New Roman", serif;
   color-scheme: light;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper: #161814; --ink: #e3e5dc; --ink-soft: #a3a89a; --accent: #a3bd97;
-    --rule: #3a3f36; --panel: #1f221d; color-scheme: dark;
-  }
+@media screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --paper:#161814; --ink:#e3e5dc; --ink-soft:#a3a89a; --accent:#a3bd97; --rule:#3a3f36; --panel:#1f221d; color-scheme: dark; }
 }
-:root[data-theme="dark"] {
-  --paper: #161814; --ink: #e3e5dc; --ink-soft: #a3a89a; --accent: #a3bd97;
-  --rule: #3a3f36; --panel: #1f221d; color-scheme: dark;
-}
-body {
-  background: var(--paper); color: var(--ink);
-  font-family: var(--serif); font-size: 1.125rem; line-height: 1.5;
-  padding-inline: 16px; padding-block: 2.5rem 4rem;
-}
-main { max-width: 38rem; margin-inline: auto; }
-.sample-note {
-  font-size: .95rem; color: var(--ink-soft); font-style: italic;
-  border-bottom: 1px solid var(--rule); padding-bottom: 1rem; margin: 0 0 2rem;
-}
-h1 { font-weight: 500; font-size: 2.1rem; line-height: 1.15; margin: 0 0 .25rem; text-wrap: balance; }
-.kicker { font-variant: small-caps; letter-spacing: .06em; color: var(--ink-soft); margin: 0 0 1.25rem; }
-h2.section {
-  font-weight: 600; font-size: 1.15rem; font-variant: small-caps; letter-spacing: .06em;
-  color: var(--accent); margin: 2.4rem 0 .6rem; border-bottom: 1px solid var(--rule); padding-bottom: .25rem;
-}
-.area { border-top: 1px solid var(--ink); padding-top: 1.1rem; margin-top: 2.2rem; }
-.area h2 {
-  font-weight: 600; font-size: 1.35rem; margin: 0 0 .6rem; text-wrap: balance;
-  font-variant: small-caps; letter-spacing: .03em;
-}
-.area h2 .num { color: var(--accent); font-variant-numeric: lining-nums; margin-right: .35em; }
-p { margin: 0 0 .75rem; }
+:root[data-theme="dark"] { --paper:#161814; --ink:#e3e5dc; --ink-soft:#a3a89a; --accent:#a3bd97; --rule:#3a3f36; --panel:#1f221d; color-scheme: dark; }
+@page { size: letter portrait; margin: .45in .5in; }
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font-family: var(--serif);
+  font-size: 10.5pt; line-height: 1.28; margin: 0; padding: 16px; }
+main { max-width: 8in; margin-inline: auto; column-count: 2; column-gap: .3in; column-rule: 1px solid var(--rule); }
+@media screen and (max-width: 640px) { main { column-count: 1; } }
+.sample-note { column-span: all; font-size: 8pt; color: var(--ink-soft); font-style: italic; margin: 0 0 .3rem; }
+h1 { column-span: all; font-weight: 600; font-size: 20pt; line-height: 1.1; margin: 0;
+  font-variant: small-caps; letter-spacing: .03em; }
+.tagline { column-span: all; font-style: italic; color: var(--ink-soft); margin: 0 0 .35rem; font-size: 11pt; }
+.facts { column-span: all; display: grid; grid-template-columns: 1fr 1fr; gap: .05rem 1.2rem;
+  border-top: 1.5px solid var(--ink); border-bottom: 1px solid var(--rule); padding: .3rem 0; margin-bottom: .4rem; }
+.facts p { margin: 0; }
+h2.section { font-weight: 600; font-size: 10.5pt; font-variant: small-caps; letter-spacing: .08em;
+  color: var(--accent); margin: .55rem 0 .2rem; border-bottom: 1px solid var(--ink); padding-bottom: 1px;
+  break-after: avoid; }
+main > h2.section:first-of-type { margin-top: 0; }
+p { margin: 0 0 .22rem; }
 strong { font-weight: 600; }
-.sep { border: 0; border-top: 1px solid var(--rule); width: 3rem; margin: 1rem auto; }
-ul { margin: 0 0 .75rem; padding-left: 1.25rem; }
-li { margin-bottom: .3rem; }
-.dialogue { margin: .5rem 0 1rem 2rem; font-style: italic; }
-.sidebar { background: var(--panel); border: 1px solid var(--rule); padding: 1rem 1.15rem; margin: 1.5rem 0; }
-.sidebar h3 {
-  margin: 0 0 .5rem; font-size: 1.1rem; font-weight: 600;
-  font-variant: small-caps; letter-spacing: .05em; color: var(--accent);
-}
-.sidebar .desc { font-style: italic; margin-bottom: .75rem; }
-dl.stats {
-  display: grid; grid-template-columns: max-content 1fr; gap: .15rem 1rem; margin: 0;
-  font-variant-numeric: tabular-nums lining-nums;
-}
-dl.stats dt { font-variant: small-caps; letter-spacing: .05em; color: var(--ink-soft); }
-dl.stats dd { margin: 0; min-width: 0; }
-.npc-head { margin: 0 0 .5rem; }
-.npc-head .nm { font-weight: 600; font-size: 1.15rem; }
-.npc-head .meta { color: var(--ink-soft); }
-.table-wrap { overflow-x: auto; margin: 1rem 0 1.5rem; }
-table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums lining-nums; }
-caption {
-  text-align: left; font-weight: 600; font-variant: small-caps; letter-spacing: .05em;
-  color: var(--accent); padding-bottom: .35rem; font-size: 1.1rem;
-}
-th, td { text-align: left; padding: .3rem .6rem; border-top: 1px solid var(--rule); vertical-align: top; }
-thead th { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); font-weight: 600; font-variant: small-caps; letter-spacing: .05em; }
-td.die, th.die { width: 2.5rem; text-align: center; color: var(--accent); }
-tbody tr:last-child td { border-bottom: 1px solid var(--ink); }
-.ref { color: var(--ink-soft); }
-</style>
-<style>
-.tagline { font-style: italic; color: var(--ink-soft); margin: 0 0 1.25rem; font-size: 1.15rem; }
-.facts p { margin: 0 0 .3rem; }
-.pal p { margin: 0 0 .35rem; }
+ul { margin: 0 0 .25rem; padding-left: 1rem; }
+li { margin-bottom: .1rem; }
+.pal p { margin: 0 0 .12rem; }
 .pal em { color: var(--ink-soft); }
-table.grid th:first-child, table.grid td:first-child { width: 6rem; font-variant: small-caps; letter-spacing: .04em; font-weight: 600; }
-table.grid td { font-size: 1rem; }
-.loc { border-top: 1px solid var(--ink); padding-top: 1rem; margin-top: 1.8rem; }
-.loc h3 { font-weight: 600; font-size: 1.25rem; font-variant: small-caps; letter-spacing: .03em; margin: 0 0 .4rem; }
-.loc h3 .num { color: var(--accent); margin-right: .35em; }
-.npc { background: var(--panel); border: 1px solid var(--rule); padding: .8rem 1rem; margin: 1rem 0 .5rem; }
-.npc .head { margin: 0 0 .35rem; }
-.npc .nm { font-weight: 600; }
+.table-wrap { margin: .2rem 0 .35rem; break-inside: avoid; }
+.table-wrap:has(table.grid) { column-span: all; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums lining-nums; font-size: 9.5pt; }
+caption { text-align: left; font-weight: 600; font-variant: small-caps; letter-spacing: .05em; color: var(--accent); padding-bottom: 1px; }
+th, td { text-align: left; padding: 1px .3rem; border-top: 1px solid var(--rule); vertical-align: top; }
+thead th { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); font-weight: 600; font-variant: small-caps; letter-spacing: .05em; }
+tbody tr:last-child td { border-bottom: 1px solid var(--ink); }
+td.die, th.die { width: 1.6rem; text-align: center; color: var(--accent); }
+table.grid th:first-child, table.grid td:first-child { width: 4.5rem; font-variant: small-caps; letter-spacing: .04em; font-weight: 600; }
+.loc { border-top: 1px solid var(--ink); padding-top: .15rem; margin-top: .4rem; }
+.loc h3 { font-weight: 600; font-size: 11pt; font-variant: small-caps; letter-spacing: .03em; margin: 0 0 .05rem; break-after: avoid; }
+.loc h3 .num { color: var(--accent); margin-right: .25em; }
+.npc { background: var(--panel); border: 1px solid var(--rule); padding: .2rem .4rem; margin: .25rem 0; break-inside: avoid; font-size: 9.5pt; }
+.npc p { margin: 0 0 .1rem; }
+.npc .head { margin: 0; }
+.npc .nm { font-weight: 600; font-variant: small-caps; letter-spacing: .03em; font-size: 10.5pt; }
 .npc .meta { color: var(--ink-soft); }
-.npc p { margin: 0 0 .35rem; }
-.npc .say { font-style: italic; margin-left: 1.25rem; }
-.npc details { margin-top: .4rem; }
-.npc summary { cursor: pointer; color: var(--accent); font-variant: small-caps; letter-spacing: .05em; }
-.npc summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.npc .say { font-style: italic; margin-left: .8rem; }
+.npc .more { border-top: 1px dotted var(--rule); margin-top: .1rem; padding-top: .1rem; color: var(--ink-soft); }
+.npc .more strong { color: var(--ink); }
 .gap { color: var(--ink-soft); font-style: italic; }
-.hidden{border-left:2px solid var(--accent);padding-left:.6rem}
+.hidden { border-left: 2px solid var(--accent); padding-left: .4rem; }
+.ref { color: var(--ink-soft); }
+@media print { body { padding: 0; background: #fff; } main { max-width: none; } .npc { background: #f3f4ee; } }
 </style>
 
 <main>
@@ -171,38 +132,38 @@ table.grid td { font-size: 1rem; }
 <p>Old, bow-legged, militia cloak worn thin. <em>And yet:</em> A new, well-kept sword.</p>
 <p class="say">“I know what I saw on that path.”</p>
 <p><strong>Wants:</strong> Someone to believe him about Maedra.<br><strong>Doesn’t want:</strong> To go near the Bramblewood again.<br><strong>Knows:</strong> He saw Maedra on the Bramblewood path at dusk, and she looked wrong.<br><strong>Found:</strong> Hearth-Hall, telling anyone who&#x27;ll listen.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Thinks with:</strong> tradition</p>
-</details>
+</div>
 </div>
 <div class="npc"><p class="head"><span class="nm">Hadran Throsk</span> <span class="meta">· militia captain · village militia</span></p>
 <p>Middle-aged, scarred, a limp, captain&#x27;s insignia worn like vestments. <em>And yet:</em> Carves delicate figurines of old war heroes.</p>
 <p class="say">“I count the dead before the glory.”</p>
 <p><strong>Wants:</strong> The northwest held without spending lives.<br><strong>Doesn’t want:</strong> Another generation bled out in someone else&#x27;s fight.<br><strong>Found:</strong> Hearth-Hall, holding court most evenings.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> Deeply skeptical of magic, but respects the gods.<br><strong>Dreams:</strong> A fortified Tagmira that doesn&#x27;t need him.<br><strong>Thinks with:</strong> endurance<br><strong>Family:</strong> An estranged daughter in Velgroth-Lucernia; no kin left in the village.</p>
 <p><strong>Anecdote:</strong> Rallied the militia during a night raid five winters ago; that is why they follow him.</p>
 <p><strong>Anecdote:</strong> Served as a mercenary for the Confederation before coming home.</p>
 <p><strong>Tragedy:</strong> His daughter left for Velgroth-Lucernia and will not write. He does not say why.</p>
-</details>
+</div>
 </div>
 <div class="npc"><p class="head"><span class="nm">Rondasek Elaran</span> <span class="meta">· young fighter · independent</span></p>
 <p>Young, stocky, dark-browed, openly eager. <em>And yet:</em> Fresh offerings in his hand for the Tree of Mist-Song.</p>
 <p class="say">“Next time, call me first.”</p>
 <p><strong>Wants:</strong> To be talked about the way they talk about Hadran.<br><strong>Doesn’t want:</strong> To be ordinary after what he has seen.<br><strong>Found:</strong> Behind the Hearth-Hall, sparring with anyone who will.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> Quietly fascinated by the dead, and would never say so.<br><strong>Dreams:</strong> Something worth telling.<br><strong>Thinks with:</strong> pride<br><strong>Family:</strong> Kin to Dornan Elaran; cousin to Fenth the ridge-courier.</p>
 <p><strong>Anecdote:</strong> Fought orcs and skeletons alongside the party; has left offerings at the Tree of Mist-Song ever since, and won&#x27;t say why.</p>
-</details>
+</div>
 </div>
 <div class="npc"><p class="head"><span class="nm">Ulan Caernach</span> <span class="meta">· hunter · independent</span></p>
 <p>22, lean, deliberate, a carved curved knife at his belt. <em>And yet:</em> Rubs the knife&#x27;s grip with his thumb when thinking.</p>
 <p><strong>Wants:</strong> To understand what he has become.<br><strong>Doesn’t want:</strong> To go looking for violence.<br><strong>Found:</strong> Hearth-Hall in the evenings, with the older fighters.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> Wants someone to tell him whether the alliance with the dead is right. Suspects no one will.<br><strong>Thinks with:</strong> endurance<br><strong>Family:</strong> Mother Rinna; brother Theren, who wants to join the Elunad; stepfather Mellan, a hunter, who gave him the knife.</p>
 <p><strong>Anecdote:</strong> Won the trial by combat against Tenn Darnel at the Circle of Cossus.</p>
 <p><strong>Anecdote:</strong> Fought orcs and animated skeletons alongside the party.</p>
-</details>
+</div>
 </div>
 </section>
 <section class="loc"><h3><span class="num">2.</span>The Crescent and Hoof</h3>
@@ -216,9 +177,9 @@ table.grid td { font-size: 1rem; }
 <p>50s, broad, a teamster&#x27;s whip coiled at her belt. <em>And yet:</em> Silver thread braided into her grey hair, like a waystone offering.</p>
 <p class="say">“Pay up front. The road doesn&#x27;t wait.”</p>
 <p><strong>Wants:</strong> Taziri&#x27;s caravan to keep coming.<br><strong>Doesn’t want:</strong> The party and the hunters brawling under her roof.<br><strong>Knows:</strong> Everything the caravans heard on the road.<br><strong>Offers:</strong> Stabling and road news.<br><strong>Found:</strong> The Crescent and Hoof, counting teamsters&#x27; coin by the fire pit.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> Keeps a tally of every rider who went north and didn&#x27;t come back.<br><strong>Thinks with:</strong> money</p>
-</details>
+</div>
 </div>
 </section>
 <section class="loc"><h3><span class="num">3.</span>The Barred Door</h3>
@@ -232,10 +193,10 @@ table.grid td { font-size: 1rem; }
 <p>Big, grey-bearded, an axe hung behind the bar. <em>And yet:</em> His hands shake when he pours.</p>
 <p class="say">“Door&#x27;s barred at dusk. In or out.”</p>
 <p><strong>Wants:</strong> His brother&#x27;s body back from the Bramblewood.<br><strong>Doesn’t want:</strong> The party drinking here.<br><strong>Knows:</strong> Which families have lost someone to the wood.<br><strong>Found:</strong> The Barred Door, behind the bar with the axe.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Thinks with:</strong> guilt</p>
 <p><strong>Tragedy:</strong> His brother Aedd died of fever this spring. Three nights later he walked north into the Bramblewood.</p>
-</details>
+</div>
 </div>
 </section>
 <section class="loc"><h3><span class="num">4.</span>Circle of Cossus</h3>
@@ -269,9 +230,9 @@ table.grid td { font-size: 1rem; }
 <p>Middle-aged, road-worn cloak, a crescent-and-hoof pendant. <em>And yet:</em> Wet to the knees, always.</p>
 <p class="say">“A ford is a door. Someone has to keep it.”</p>
 <p><strong>Wants:</strong> The ford&#x27;s shrine warm again.<br><strong>Doesn’t want:</strong> Travellers crossing without an offering.<br><strong>Knows:</strong> The old crossing rites of Isarna and Ossamar.<br><strong>Offers:</strong> Blessings for safe passage.<br><strong>Found:</strong> Ford of Ossamar, rebuilding the cairns and relighting the braziers.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Thinks with:</strong> devotion</p>
-</details>
+</div>
 </div>
 </section>
 <section class="loc"><h3><span class="num">10.</span>Palisade</h3>
@@ -287,17 +248,17 @@ table.grid td { font-size: 1rem; }
 <p class="say">“Ask me what I know, not what I&#x27;ll tell you.”</p>
 <p class="say">“The ash remembers.”</p>
 <p><strong>Wants:</strong> One last heir who will listen.<br><strong>Doesn’t want:</strong> The village forgetting the gods&#x27; silence.<br><strong>Knows:</strong> Which charms still work against the dead.<br><strong>Offers:</strong> Healing, charms; friends and identify, for a price.<br><strong>Found:</strong> The Ash-House by the western woods, tracing stories in the hearth-ash.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> Takes food and trinkets from villagers who fear her, without comment.<br><strong>Dreams:</strong> That the hearth-fires speak again. It would be a bad thing.<br><strong>Thinks with:</strong> lore<br><strong>Family:</strong> A few distant kin; one loyal servant, Medam.</p>
 <p><strong>Tragedy:</strong> Has watched the old knowledge dwindle to almost nothing in her lifetime.</p>
-</details>
+</div>
 </div>
 <div class="npc"><p class="head"><span class="nm">Medam</span> <span class="meta">· servant</span></p>
 <p>Big, slow-moving youth, soot on his face. <em>And yet:</em> Moves without a sound.</p>
 <p><strong>Wants:</strong> Enni fed and warm.<br><strong>Doesn’t want:</strong> Strangers in the hut.<br><strong>Found:</strong> The Ash-House, fetching water and wood.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Thinks with:</strong> devotion</p>
-</details>
+</div>
 </div>
 </section>
 <section class="loc"><h3><span class="num">12.</span>The Wheel-Ring</h3>
@@ -314,9 +275,9 @@ table.grid td { font-size: 1rem; }
 <p>Small, bandy-legged, rope burns on both palms. <em>And yet:</em> A gold ring in one ear.</p>
 <p class="say">“A Tagmira pony will outlive you.”</p>
 <p><strong>Wants:</strong> Buyers from the caravans.<br><strong>Doesn’t want:</strong> His ponies requisitioned by the militia.<br><strong>Offers:</strong> Hardy upland ponies.<br><strong>Found:</strong> Caturo&#x27;s Corrals on the south slope.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Thinks with:</strong> money</p>
-</details>
+</div>
 </div>
 </section>
 <section class="loc"><h3><span class="num">14.</span>Tarrek&#x27;s Forge</h3>
@@ -327,10 +288,10 @@ table.grid td { font-size: 1rem; }
 <p>Gruff, broad, soot-stained, a leather apron scorched through.</p>
 <p class="say">“Settle it outside. Not in my forge.”</p>
 <p><strong>Wants:</strong> A well-run forge and to be left to work.<br><strong>Doesn’t want:</strong> Feuds spilling into his forge.<br><strong>Offers:</strong> Metalwork, repairs, and plain answers if asked directly.<br><strong>Found:</strong> Tarrek&#x27;s Forge, at the anvil from dawn.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> Settles disputes when Hadran can&#x27;t, because people trust him. Believes in the gods less than most.<br><strong>Dreams:</strong> A good apprentice.<br><strong>Thinks with:</strong> tradition<br><strong>Family:</strong> Elder sister Morla, a healer; apprentices Garrin and Felmar.</p>
 <p><strong>Anecdote:</strong> Stood neutral witness at the trial by combat between Tenn Darnel and Ulan Caernach.</p>
-</details>
+</div>
 </div>
 </section>
 <section class="loc"><h3><span class="num">15.</span>Corr&#x27;s Chandlery</h3>
@@ -341,9 +302,9 @@ table.grid td { font-size: 1rem; }
 <p>60s, greasy hands, candle-stubs in her apron. <em>And yet:</em> She smells of rosemary, not fat.</p>
 <p class="say">“Light&#x27;s cheap. Darkness costs more.”</p>
 <p><strong>Wants:</strong> Every north window lit this winter.<br><strong>Doesn’t want:</strong> The chandlery moved further out.<br><strong>Offers:</strong> Candles and tallow.<br><strong>Found:</strong> Corr&#x27;s Chandlery, stirring the vats.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Thinks with:</strong> tradition</p>
-</details>
+</div>
 </div>
 </section>
 <section class="loc"><h3><span class="num">16.</span>Tanning Pits</h3>
@@ -354,9 +315,9 @@ table.grid td { font-size: 1rem; }
 <p>Stained to the elbows, bare feet, a scraping knife. <em>And yet:</em> A neat beard, oiled and combed.</p>
 <p class="say">“Hides don&#x27;t lie about the beast.”</p>
 <p><strong>Wants:</strong> Bigger game from the northwest.<br><strong>Doesn’t want:</strong> Orc hides; he won&#x27;t touch them.<br><strong>Offers:</strong> Goat and sheep hides; leather.<br><strong>Found:</strong> The tanning pits by the stream, stained to the elbow.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Thinks with:</strong> money</p>
-</details>
+</div>
 </div>
 </section>
 <h2 class="section">About Town</h2>
@@ -364,17 +325,17 @@ table.grid td { font-size: 1rem; }
 <p>Lean, wind-burned, three goose feathers in his hat. <em>And yet:</em> A child&#x27;s wooden doll tied to his quiver.</p>
 <p class="say">“The northwest&#x27;s ours again. Say what you like about the rest.”</p>
 <p><strong>Wants:</strong> To hunt the far grounds before the orcs come back.<br><strong>Doesn’t want:</strong> Another spring without meat.<br><strong>Offers:</strong> A guide in the northwest.<br><strong>Found:</strong> The northwest hunting grounds, or skinning at his door.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Thinks with:</strong> endurance<br><strong>Family:</strong> Brother of Torven Gald, the militia archer.</p>
-</details>
+</div>
 </div>
 <div class="npc"><p class="head"><span class="nm">Pima</span> <span class="meta">· foundling messenger</span></p>
 <p>Young orphan girl. Small hand mirror, always in hand.</p>
 <p><strong>Wants:</strong> The Bronze Host defeated. What the mirror-fairy wants.<br><strong>Doesn’t want:</strong> Adults taking her mirror.<br><strong>Knows:</strong> A fairy girl, through the mirror.<br><strong>Found:</strong> Brennar Hallan’s household, Tagmira; alone with her mirror at night.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> Says the trees whisper at night. She is not wrong.<br><strong>Thinks with:</strong> magic<br><strong>Family:</strong> Orphan — no known family. Raised alongside fellow foundlings Salla and Dun.</p>
 <p><strong>Tragedy:</strong> Orphaned under unspecified circumstances. Raised as a servant-ward, not a daughter.</p>
-</details>
+</div>
 </div>
 <h2 class="section">Factions in Town</h2>
 <p><strong>Village Militia.</strong> <em>Purpose:</em> Keep the orcs cowed and the village fed. <em>Membership:</em> 7 standing, 6 veterans. <em>Scheme:</em> Hold the retaken northwest hunting grounds.</p>

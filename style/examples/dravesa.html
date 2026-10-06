@@ -3,102 +3,64 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap">
 <style>
-/* Layout: single reading column, ~65ch; areas separated by full rules; sidebars as tinted boxes. */
+/* Print-first: two dense columns on Letter portrait; places, NPCs and tables flow between them. */
 :root {
-  --paper: #fbfbf7;
-  --ink: #1e201c;
-  --ink-soft: #55594f;
-  --accent: #3e5937;
-  --rule: #c8cbbf;
-  --panel: #f0f1ea;
+  --paper: #fbfbf7; --ink: #1e201c; --ink-soft: #55594f; --accent: #3e5937;
+  --rule: #c8cbbf; --panel: #f0f1ea;
   --serif: "EB Garamond", Garamond, "Garamond Premier Pro", Georgia, "Times New Roman", serif;
   color-scheme: light;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper: #161814; --ink: #e3e5dc; --ink-soft: #a3a89a; --accent: #a3bd97;
-    --rule: #3a3f36; --panel: #1f221d; color-scheme: dark;
-  }
+@media screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --paper:#161814; --ink:#e3e5dc; --ink-soft:#a3a89a; --accent:#a3bd97; --rule:#3a3f36; --panel:#1f221d; color-scheme: dark; }
 }
-:root[data-theme="dark"] {
-  --paper: #161814; --ink: #e3e5dc; --ink-soft: #a3a89a; --accent: #a3bd97;
-  --rule: #3a3f36; --panel: #1f221d; color-scheme: dark;
-}
-body {
-  background: var(--paper); color: var(--ink);
-  font-family: var(--serif); font-size: 1.125rem; line-height: 1.5;
-  padding-inline: 16px; padding-block: 2.5rem 4rem;
-}
-main { max-width: 38rem; margin-inline: auto; }
-.sample-note {
-  font-size: .95rem; color: var(--ink-soft); font-style: italic;
-  border-bottom: 1px solid var(--rule); padding-bottom: 1rem; margin: 0 0 2rem;
-}
-h1 { font-weight: 500; font-size: 2.1rem; line-height: 1.15; margin: 0 0 .25rem; text-wrap: balance; }
-.kicker { font-variant: small-caps; letter-spacing: .06em; color: var(--ink-soft); margin: 0 0 1.25rem; }
-h2.section {
-  font-weight: 600; font-size: 1.15rem; font-variant: small-caps; letter-spacing: .06em;
-  color: var(--accent); margin: 2.4rem 0 .6rem; border-bottom: 1px solid var(--rule); padding-bottom: .25rem;
-}
-.area { border-top: 1px solid var(--ink); padding-top: 1.1rem; margin-top: 2.2rem; }
-.area h2 {
-  font-weight: 600; font-size: 1.35rem; margin: 0 0 .6rem; text-wrap: balance;
-  font-variant: small-caps; letter-spacing: .03em;
-}
-.area h2 .num { color: var(--accent); font-variant-numeric: lining-nums; margin-right: .35em; }
-p { margin: 0 0 .75rem; }
+:root[data-theme="dark"] { --paper:#161814; --ink:#e3e5dc; --ink-soft:#a3a89a; --accent:#a3bd97; --rule:#3a3f36; --panel:#1f221d; color-scheme: dark; }
+@page { size: letter portrait; margin: .45in .5in; }
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font-family: var(--serif);
+  font-size: 10.5pt; line-height: 1.28; margin: 0; padding: 16px; }
+main { max-width: 8in; margin-inline: auto; column-count: 2; column-gap: .3in; column-rule: 1px solid var(--rule); }
+@media screen and (max-width: 640px) { main { column-count: 1; } }
+.sample-note { column-span: all; font-size: 8pt; color: var(--ink-soft); font-style: italic; margin: 0 0 .3rem; }
+h1 { column-span: all; font-weight: 600; font-size: 20pt; line-height: 1.1; margin: 0;
+  font-variant: small-caps; letter-spacing: .03em; }
+.tagline { column-span: all; font-style: italic; color: var(--ink-soft); margin: 0 0 .35rem; font-size: 11pt; }
+.facts { column-span: all; display: grid; grid-template-columns: 1fr 1fr; gap: .05rem 1.2rem;
+  border-top: 1.5px solid var(--ink); border-bottom: 1px solid var(--rule); padding: .3rem 0; margin-bottom: .4rem; }
+.facts p { margin: 0; }
+h2.section { font-weight: 600; font-size: 10.5pt; font-variant: small-caps; letter-spacing: .08em;
+  color: var(--accent); margin: .55rem 0 .2rem; border-bottom: 1px solid var(--ink); padding-bottom: 1px;
+  break-after: avoid; }
+main > h2.section:first-of-type { margin-top: 0; }
+p { margin: 0 0 .22rem; }
 strong { font-weight: 600; }
-.sep { border: 0; border-top: 1px solid var(--rule); width: 3rem; margin: 1rem auto; }
-ul { margin: 0 0 .75rem; padding-left: 1.25rem; }
-li { margin-bottom: .3rem; }
-.dialogue { margin: .5rem 0 1rem 2rem; font-style: italic; }
-.sidebar { background: var(--panel); border: 1px solid var(--rule); padding: 1rem 1.15rem; margin: 1.5rem 0; }
-.sidebar h3 {
-  margin: 0 0 .5rem; font-size: 1.1rem; font-weight: 600;
-  font-variant: small-caps; letter-spacing: .05em; color: var(--accent);
-}
-.sidebar .desc { font-style: italic; margin-bottom: .75rem; }
-dl.stats {
-  display: grid; grid-template-columns: max-content 1fr; gap: .15rem 1rem; margin: 0;
-  font-variant-numeric: tabular-nums lining-nums;
-}
-dl.stats dt { font-variant: small-caps; letter-spacing: .05em; color: var(--ink-soft); }
-dl.stats dd { margin: 0; min-width: 0; }
-.npc-head { margin: 0 0 .5rem; }
-.npc-head .nm { font-weight: 600; font-size: 1.15rem; }
-.npc-head .meta { color: var(--ink-soft); }
-.table-wrap { overflow-x: auto; margin: 1rem 0 1.5rem; }
-table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums lining-nums; }
-caption {
-  text-align: left; font-weight: 600; font-variant: small-caps; letter-spacing: .05em;
-  color: var(--accent); padding-bottom: .35rem; font-size: 1.1rem;
-}
-th, td { text-align: left; padding: .3rem .6rem; border-top: 1px solid var(--rule); vertical-align: top; }
-thead th { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); font-weight: 600; font-variant: small-caps; letter-spacing: .05em; }
-td.die, th.die { width: 2.5rem; text-align: center; color: var(--accent); }
-tbody tr:last-child td { border-bottom: 1px solid var(--ink); }
-.ref { color: var(--ink-soft); }
-</style>
-<style>
-.tagline { font-style: italic; color: var(--ink-soft); margin: 0 0 1.25rem; font-size: 1.15rem; }
-.facts p { margin: 0 0 .3rem; }
-.pal p { margin: 0 0 .35rem; }
+ul { margin: 0 0 .25rem; padding-left: 1rem; }
+li { margin-bottom: .1rem; }
+.pal p { margin: 0 0 .12rem; }
 .pal em { color: var(--ink-soft); }
-table.grid th:first-child, table.grid td:first-child { width: 6rem; font-variant: small-caps; letter-spacing: .04em; font-weight: 600; }
-table.grid td { font-size: 1rem; }
-.loc { border-top: 1px solid var(--ink); padding-top: 1rem; margin-top: 1.8rem; }
-.loc h3 { font-weight: 600; font-size: 1.25rem; font-variant: small-caps; letter-spacing: .03em; margin: 0 0 .4rem; }
-.loc h3 .num { color: var(--accent); margin-right: .35em; }
-.npc { background: var(--panel); border: 1px solid var(--rule); padding: .8rem 1rem; margin: 1rem 0 .5rem; }
-.npc .head { margin: 0 0 .35rem; }
-.npc .nm { font-weight: 600; }
+.table-wrap { margin: .2rem 0 .35rem; break-inside: avoid; }
+.table-wrap:has(table.grid) { column-span: all; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums lining-nums; font-size: 9.5pt; }
+caption { text-align: left; font-weight: 600; font-variant: small-caps; letter-spacing: .05em; color: var(--accent); padding-bottom: 1px; }
+th, td { text-align: left; padding: 1px .3rem; border-top: 1px solid var(--rule); vertical-align: top; }
+thead th { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); font-weight: 600; font-variant: small-caps; letter-spacing: .05em; }
+tbody tr:last-child td { border-bottom: 1px solid var(--ink); }
+td.die, th.die { width: 1.6rem; text-align: center; color: var(--accent); }
+table.grid th:first-child, table.grid td:first-child { width: 4.5rem; font-variant: small-caps; letter-spacing: .04em; font-weight: 600; }
+.loc { border-top: 1px solid var(--ink); padding-top: .15rem; margin-top: .4rem; }
+.loc h3 { font-weight: 600; font-size: 11pt; font-variant: small-caps; letter-spacing: .03em; margin: 0 0 .05rem; break-after: avoid; }
+.loc h3 .num { color: var(--accent); margin-right: .25em; }
+.npc { background: var(--panel); border: 1px solid var(--rule); padding: .2rem .4rem; margin: .25rem 0; break-inside: avoid; font-size: 9.5pt; }
+.npc p { margin: 0 0 .1rem; }
+.npc .head { margin: 0; }
+.npc .nm { font-weight: 600; font-variant: small-caps; letter-spacing: .03em; font-size: 10.5pt; }
 .npc .meta { color: var(--ink-soft); }
-.npc p { margin: 0 0 .35rem; }
-.npc .say { font-style: italic; margin-left: 1.25rem; }
-.npc details { margin-top: .4rem; }
-.npc summary { cursor: pointer; color: var(--accent); font-variant: small-caps; letter-spacing: .05em; }
-.npc summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.npc .say { font-style: italic; margin-left: .8rem; }
+.npc .more { border-top: 1px dotted var(--rule); margin-top: .1rem; padding-top: .1rem; color: var(--ink-soft); }
+.npc .more strong { color: var(--ink); }
 .gap { color: var(--ink-soft); font-style: italic; }
+.hidden { border-left: 2px solid var(--accent); padding-left: .4rem; }
+.ref { color: var(--ink-soft); }
+@media print { body { padding: 0; background: #fff; } main { max-width: none; } .npc { background: #f3f4ee; } }
 </style>
 
 <main>
@@ -193,11 +155,11 @@ table.grid td { font-size: 1rem; }
 <p>Mid-70s. White robes. Clear eyes.</p>
 <p class="say">“I am Malac’s last credible witness.”</p>
 <p><strong>Wants:</strong> The Orthodox to outlast the schism.<br><strong>Doesn’t want:</strong> Pity.<br><strong>Knows:</strong> Savar met Jorun alone six times before the pilgrimage.<br><strong>Found:</strong> Tending the temple flame, every dawn.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> Last senior Orthodox cleric alive. Has told no one.<br><strong>Dreams:</strong> A proper successor before she dies.<br><strong>Thinks with:</strong> faith.<br><strong>Family:</strong> Widowed; two adult children in Orziben she writes to rarely.</p>
 <p><strong>Anecdote:</strong> Refused to close the temple during a Bronze Host siege, and held full services with arrows in the door.</p>
 <p><strong>Tragedy:</strong> One of her Fire-seers defected to the Schismatics three years ago. She blamed herself.</p>
-</details>
+</div>
 </div>
 </section>
 
@@ -210,11 +172,11 @@ table.grid td { font-size: 1rem; }
 <p>Early 30s. Lean. Friendly smile. <em>And yet:</em> warm to the touch, and his eyes linger half a second too long.</p>
 <p class="say">“Jorun’s pilgrimage was a good thing.”</p>
 <p><strong>Wants:</strong> Rakhmoth’s arrival. Recognition for the Schismatics.<br><strong>Doesn’t want:</strong> Inquiry into Jorun Cadek.<br><strong>Found:</strong> Writing to pilgrims at the Mountain of Fire.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> Perfect recall of every conversation.<br><strong>Dreams:</strong> Rakhmoth’s theology recognized before the Orthodox die out.<br><strong>Thinks with:</strong> persuasion.<br><strong>Family:</strong> Disowned when he joined the Schismatics. A young son, Dav, raised by his mother across town.</p>
 <p><strong>Anecdote:</strong> Quoted a man’s own words back to him from three years prior, verbatim, mid-argument.</p>
 <p><strong>Tragedy:</strong> Dav doesn’t know who his father is.</p>
-</details>
+</div>
 </div>
 </section>
 
@@ -230,11 +192,11 @@ table.grid td { font-size: 1rem; }
 <p>Mid-40s. Two fingers missing, left hand. Bandua’s mark tattooed on right forearm. <em>And yet:</em> ink-stained fingers on the maimed hand.</p>
 <p class="say">“I’m the only one here taking this seriously.”</p>
 <p><strong>Wants:</strong> The seasonal raid. Schismatics gone before Rakhmoth.<br><strong>Doesn’t want:</strong> Stravar stalling.<br><strong>Offers:</strong> 4 fighters as escort.<br><strong>Found:</strong> Fighting-hall yard at dawn, training alone.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> Has never lost a fighter under his command.<br><strong>Dreams:</strong> His sons leading raids after him.<br><strong>Thinks with:</strong> blade.<br><strong>Family:</strong> Wife Sera; two sons of raiding age; two younger daughters.</p>
 <p><strong>Anecdote:</strong> Lost two fingers to a goblin and killed it with the same hand.</p>
 <p><strong>Tragedy:</strong> Lost a close friend when a Schismatic-leaning steading refused to send warning of a raid.</p>
-</details>
+</div>
 </div>
 </section>
 
@@ -247,11 +209,11 @@ table.grid td { font-size: 1rem; }
 <p>Mid-50s. Compact. Scar along the jaw.</p>
 <p class="say">“Until someone wiser decides.”</p>
 <p><strong>Wants:</strong> Resolution before Rakhmoth arrives, without martyrs.<br><strong>Doesn’t want:</strong> Acting without evidence.<br><strong>Knows:</strong> Caravan roads and who travels them.<br><strong>Offers:</strong> Coin; passage to Orziben.<br><strong>Found:</strong> Warden’s Hall, sharpening his knife at dusk.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> Keeps a private list of everyone who has travelled to the Mountain of Fire.<br><strong>Dreams:</strong> Dravesa quiet enough that nobody needs a warden.<br><strong>Thinks with:</strong> diplomacy.<br><strong>Family:</strong> Estranged wife in Orziben; three grown children he rarely sees.</p>
 <p><strong>Anecdote:</strong> Talked a Bronze Host raiding party into leaving a steading unmolested, with no weapons drawn.</p>
 <p><strong>Tragedy:</strong> His wife left when he took this posting. He thought she would come around.</p>
-</details>
+</div>
 </div>
 </section>
 
@@ -266,11 +228,11 @@ table.grid td { font-size: 1rem; }
 <p>40s. Strong hands. Ale-stained apron.</p>
 <p class="say">“Leave your god at the door.”</p>
 <p><strong>Wants:</strong> Her inn kept theology-free.<br><strong>Doesn’t want:</strong> Factions recruiting in her common room.<br><strong>Knows:</strong> Everything said in her common room.<br><strong>Offers:</strong> Gossip, for a story.<br><strong>Found:</strong> Behind the bar; account books at close.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> Knows which faction every regular belongs to and seats them accordingly.<br><strong>Dreams:</strong> Her daughter takes over the inn; her son goes somewhere safer.<br><strong>Thinks with:</strong> money.<br><strong>Family:</strong> Husband Bren runs the kitchen; 2 teenagers work the inn. Raised Orthodox; never speaks of it.</p>
 <p><strong>Anecdote:</strong> Threw Vraed’s men and two Schismatics out at once last Waterday, without calling the watch.</p>
 <p><strong>Tragedy:</strong> Her brother joined the Schismatics last year. They haven’t spoken since.</p>
-</details>
+</div>
 </div>
 </section>
 
@@ -283,11 +245,11 @@ table.grid td { font-size: 1rem; }
 <p>50s. Prosperous build gone soft. <em>And yet:</em> still dressed immaculately.</p>
 <p class="say">“I should have seen it.”</p>
 <p><strong>Wants:</strong> Proof that Savar sent his son to his death.<br><strong>Doesn’t want:</strong> To hear that Jorun went willingly.<br><strong>Offers:</strong> Coin, for proof.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> Warehouse shut six weeks. Losing money daily; doesn’t care.<br><strong>Dreams:</strong> Jorun comes home.<br><strong>Thinks with:</strong> guilt.<br><strong>Family:</strong> Wife Pemma, holding the household together; Jorun (son, missing, 21); two younger daughters.</p>
 <p><strong>Anecdote:</strong> Built the Cadek house from a single mule cart twenty years ago.</p>
 <p><strong>Tragedy:</strong> Jorun left for the Mountain of Fire six weeks ago and has not returned.</p>
-</details>
+</div>
 </div>
 </section>
 

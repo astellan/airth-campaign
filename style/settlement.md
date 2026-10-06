@@ -20,6 +20,17 @@ No rumour tables for now.
 
 Entry length scales with importance: a gate gets one line, the main inn gets a page. Omit empty sections.
 
+## Print layout
+
+Settlements are printed for the table. Dense, not airy.
+
+- Letter portrait, ~0.5in margins, two columns with a hairline rule between; one column on phones.
+- Body 10.5pt, tight leading (~1.3), small gaps: headings sit right on their content.
+- Title, tagline, header, and the time-of-day grid span both columns. The header is a two-column label grid.
+- Places, NPC cards, and tables flow between columns; NPC cards and tables don't break across columns.
+- NPC cards at 9.5pt, all fields shown (no collapsed "More"), secondary fields in soft ink below a dotted rule.
+- Reference CSS: `style/examples/tagmira.html`.
+
 ## Location types
 
 Every location opens with one line of look and function, then the labels for its type. Use only the labels that have content.

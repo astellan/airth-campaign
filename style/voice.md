@@ -118,7 +118,7 @@ One voice, tuned to the job. Pick the register by what the text is for.
 
 **Face.** EB Garamond throughout; fallback Garamond, then Georgia. Italic for dialogue, spells, magic items, monster descriptions.
 
-**Column.** Single reading column, ~65 characters wide. Same on phone and laptop.
+**Column.** Single reading column, ~65 characters wide, unless the type file sets a print layout (settlements do).
 
 **Headings.** Small caps. Area numbers in the accent colour.
 

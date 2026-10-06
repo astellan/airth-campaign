@@ -3,103 +3,64 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap">
 <style>
-/* Layout: single reading column, ~65ch; areas separated by full rules; sidebars as tinted boxes. */
+/* Print-first: two dense columns on Letter portrait; places, NPCs and tables flow between them. */
 :root {
-  --paper: #fbfbf7;
-  --ink: #1e201c;
-  --ink-soft: #55594f;
-  --accent: #3e5937;
-  --rule: #c8cbbf;
-  --panel: #f0f1ea;
+  --paper: #fbfbf7; --ink: #1e201c; --ink-soft: #55594f; --accent: #3e5937;
+  --rule: #c8cbbf; --panel: #f0f1ea;
   --serif: "EB Garamond", Garamond, "Garamond Premier Pro", Georgia, "Times New Roman", serif;
   color-scheme: light;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper: #161814; --ink: #e3e5dc; --ink-soft: #a3a89a; --accent: #a3bd97;
-    --rule: #3a3f36; --panel: #1f221d; color-scheme: dark;
-  }
+@media screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --paper:#161814; --ink:#e3e5dc; --ink-soft:#a3a89a; --accent:#a3bd97; --rule:#3a3f36; --panel:#1f221d; color-scheme: dark; }
 }
-:root[data-theme="dark"] {
-  --paper: #161814; --ink: #e3e5dc; --ink-soft: #a3a89a; --accent: #a3bd97;
-  --rule: #3a3f36; --panel: #1f221d; color-scheme: dark;
-}
-body {
-  background: var(--paper); color: var(--ink);
-  font-family: var(--serif); font-size: 1.125rem; line-height: 1.5;
-  padding-inline: 16px; padding-block: 2.5rem 4rem;
-}
-main { max-width: 38rem; margin-inline: auto; }
-.sample-note {
-  font-size: .95rem; color: var(--ink-soft); font-style: italic;
-  border-bottom: 1px solid var(--rule); padding-bottom: 1rem; margin: 0 0 2rem;
-}
-h1 { font-weight: 500; font-size: 2.1rem; line-height: 1.15; margin: 0 0 .25rem; text-wrap: balance; }
-.kicker { font-variant: small-caps; letter-spacing: .06em; color: var(--ink-soft); margin: 0 0 1.25rem; }
-h2.section {
-  font-weight: 600; font-size: 1.15rem; font-variant: small-caps; letter-spacing: .06em;
-  color: var(--accent); margin: 2.4rem 0 .6rem; border-bottom: 1px solid var(--rule); padding-bottom: .25rem;
-}
-.area { border-top: 1px solid var(--ink); padding-top: 1.1rem; margin-top: 2.2rem; }
-.area h2 {
-  font-weight: 600; font-size: 1.35rem; margin: 0 0 .6rem; text-wrap: balance;
-  font-variant: small-caps; letter-spacing: .03em;
-}
-.area h2 .num { color: var(--accent); font-variant-numeric: lining-nums; margin-right: .35em; }
-p { margin: 0 0 .75rem; }
+:root[data-theme="dark"] { --paper:#161814; --ink:#e3e5dc; --ink-soft:#a3a89a; --accent:#a3bd97; --rule:#3a3f36; --panel:#1f221d; color-scheme: dark; }
+@page { size: letter portrait; margin: .45in .5in; }
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font-family: var(--serif);
+  font-size: 10.5pt; line-height: 1.28; margin: 0; padding: 16px; }
+main { max-width: 8in; margin-inline: auto; column-count: 2; column-gap: .3in; column-rule: 1px solid var(--rule); }
+@media screen and (max-width: 640px) { main { column-count: 1; } }
+.sample-note { column-span: all; font-size: 8pt; color: var(--ink-soft); font-style: italic; margin: 0 0 .3rem; }
+h1 { column-span: all; font-weight: 600; font-size: 20pt; line-height: 1.1; margin: 0;
+  font-variant: small-caps; letter-spacing: .03em; }
+.tagline { column-span: all; font-style: italic; color: var(--ink-soft); margin: 0 0 .35rem; font-size: 11pt; }
+.facts { column-span: all; display: grid; grid-template-columns: 1fr 1fr; gap: .05rem 1.2rem;
+  border-top: 1.5px solid var(--ink); border-bottom: 1px solid var(--rule); padding: .3rem 0; margin-bottom: .4rem; }
+.facts p { margin: 0; }
+h2.section { font-weight: 600; font-size: 10.5pt; font-variant: small-caps; letter-spacing: .08em;
+  color: var(--accent); margin: .55rem 0 .2rem; border-bottom: 1px solid var(--ink); padding-bottom: 1px;
+  break-after: avoid; }
+main > h2.section:first-of-type { margin-top: 0; }
+p { margin: 0 0 .22rem; }
 strong { font-weight: 600; }
-.sep { border: 0; border-top: 1px solid var(--rule); width: 3rem; margin: 1rem auto; }
-ul { margin: 0 0 .75rem; padding-left: 1.25rem; }
-li { margin-bottom: .3rem; }
-.dialogue { margin: .5rem 0 1rem 2rem; font-style: italic; }
-.sidebar { background: var(--panel); border: 1px solid var(--rule); padding: 1rem 1.15rem; margin: 1.5rem 0; }
-.sidebar h3 {
-  margin: 0 0 .5rem; font-size: 1.1rem; font-weight: 600;
-  font-variant: small-caps; letter-spacing: .05em; color: var(--accent);
-}
-.sidebar .desc { font-style: italic; margin-bottom: .75rem; }
-dl.stats {
-  display: grid; grid-template-columns: max-content 1fr; gap: .15rem 1rem; margin: 0;
-  font-variant-numeric: tabular-nums lining-nums;
-}
-dl.stats dt { font-variant: small-caps; letter-spacing: .05em; color: var(--ink-soft); }
-dl.stats dd { margin: 0; min-width: 0; }
-.npc-head { margin: 0 0 .5rem; }
-.npc-head .nm { font-weight: 600; font-size: 1.15rem; }
-.npc-head .meta { color: var(--ink-soft); }
-.table-wrap { overflow-x: auto; margin: 1rem 0 1.5rem; }
-table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums lining-nums; }
-caption {
-  text-align: left; font-weight: 600; font-variant: small-caps; letter-spacing: .05em;
-  color: var(--accent); padding-bottom: .35rem; font-size: 1.1rem;
-}
-th, td { text-align: left; padding: .3rem .6rem; border-top: 1px solid var(--rule); vertical-align: top; }
-thead th { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); font-weight: 600; font-variant: small-caps; letter-spacing: .05em; }
-td.die, th.die { width: 2.5rem; text-align: center; color: var(--accent); }
-tbody tr:last-child td { border-bottom: 1px solid var(--ink); }
-.ref { color: var(--ink-soft); }
-</style>
-<style>
-.tagline { font-style: italic; color: var(--ink-soft); margin: 0 0 1.25rem; font-size: 1.15rem; }
-.facts p { margin: 0 0 .3rem; }
-.pal p { margin: 0 0 .35rem; }
+ul { margin: 0 0 .25rem; padding-left: 1rem; }
+li { margin-bottom: .1rem; }
+.pal p { margin: 0 0 .12rem; }
 .pal em { color: var(--ink-soft); }
-table.grid th:first-child, table.grid td:first-child { width: 6rem; font-variant: small-caps; letter-spacing: .04em; font-weight: 600; }
-table.grid td { font-size: 1rem; }
-.loc { border-top: 1px solid var(--ink); padding-top: 1rem; margin-top: 1.8rem; }
-.loc h3 { font-weight: 600; font-size: 1.25rem; font-variant: small-caps; letter-spacing: .03em; margin: 0 0 .4rem; }
-.loc h3 .num { color: var(--accent); margin-right: .35em; }
-.npc { background: var(--panel); border: 1px solid var(--rule); padding: .8rem 1rem; margin: 1rem 0 .5rem; }
-.npc .head { margin: 0 0 .35rem; }
-.npc .nm { font-weight: 600; }
+.table-wrap { margin: .2rem 0 .35rem; break-inside: avoid; }
+.table-wrap:has(table.grid) { column-span: all; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums lining-nums; font-size: 9.5pt; }
+caption { text-align: left; font-weight: 600; font-variant: small-caps; letter-spacing: .05em; color: var(--accent); padding-bottom: 1px; }
+th, td { text-align: left; padding: 1px .3rem; border-top: 1px solid var(--rule); vertical-align: top; }
+thead th { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); font-weight: 600; font-variant: small-caps; letter-spacing: .05em; }
+tbody tr:last-child td { border-bottom: 1px solid var(--ink); }
+td.die, th.die { width: 1.6rem; text-align: center; color: var(--accent); }
+table.grid th:first-child, table.grid td:first-child { width: 4.5rem; font-variant: small-caps; letter-spacing: .04em; font-weight: 600; }
+.loc { border-top: 1px solid var(--ink); padding-top: .15rem; margin-top: .4rem; }
+.loc h3 { font-weight: 600; font-size: 11pt; font-variant: small-caps; letter-spacing: .03em; margin: 0 0 .05rem; break-after: avoid; }
+.loc h3 .num { color: var(--accent); margin-right: .25em; }
+.npc { background: var(--panel); border: 1px solid var(--rule); padding: .2rem .4rem; margin: .25rem 0; break-inside: avoid; font-size: 9.5pt; }
+.npc p { margin: 0 0 .1rem; }
+.npc .head { margin: 0; }
+.npc .nm { font-weight: 600; font-variant: small-caps; letter-spacing: .03em; font-size: 10.5pt; }
 .npc .meta { color: var(--ink-soft); }
-.npc p { margin: 0 0 .35rem; }
-.npc .say { font-style: italic; margin-left: 1.25rem; }
-.npc details { margin-top: .4rem; }
-.npc summary { cursor: pointer; color: var(--accent); font-variant: small-caps; letter-spacing: .05em; }
-.npc summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.npc .say { font-style: italic; margin-left: .8rem; }
+.npc .more { border-top: 1px dotted var(--rule); margin-top: .1rem; padding-top: .1rem; color: var(--ink-soft); }
+.npc .more strong { color: var(--ink); }
 .gap { color: var(--ink-soft); font-style: italic; }
-.hidden{border-left:2px solid var(--accent);padding-left:.6rem}
+.hidden { border-left: 2px solid var(--accent); padding-left: .4rem; }
+.ref { color: var(--ink-soft); }
+@media print { body { padding: 0; background: #fff; } main { max-width: none; } .npc { background: #f3f4ee; } }
 </style>
 
 <main>
@@ -176,9 +137,9 @@ table.grid td { font-size: 1rem; }
 <p>Soft around the middle, red-faced, ceremonial armour polished bright.</p>
 <p class="say">“When I was your age, we held the line.”</p>
 <p><strong>Wants:</strong> To be taken seriously.<br><strong>Doesn’t want:</strong> Night patrols near the swamp edge.<br><strong>Found:</strong> Waterside Tavern, telling war stories.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> Half-sees things in the marshes, and drinks so he won&#x27;t.<br><strong>Dreams:</strong> To prove himself in a real fight, which terrifies him.<br><strong>Thinks with:</strong> fear<br><strong>Family:</strong> A wife tired of his drinking; two teenage sons.</p>
-</details>
+</div>
 </div>
 </section>
 <section class="loc"><h3><span class="num">3.</span>Dockside Market</h3>
@@ -194,7 +155,7 @@ table.grid td { font-size: 1rem; }
 <p class="say">“The rubbing was worth it.”</p>
 <p class="say">“Bressul always checked those first.”</p>
 <p><strong>Wants:</strong> Ameniseb’s tomb inscriptions.<br><strong>Doesn’t want:</strong> To fight, climb, run, or share credit.<br><strong>Knows:</strong> Tomb layouts; old inscriptions.<br><strong>Offers:</strong> Inscription reading. Aurka contacts.<br><strong>Found:</strong> The Fishmonger&#x27;s back room in Caelrun, annotating his notes by lamplight.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> Talks past inquisitors and guards on tone and improvised credentials.<br><strong>Dreams:</strong> Rewrite the accepted history of the Silence.<br><strong>Thinks with:</strong> lore<br><strong>Family:</strong> Two adult sons, Jevek and Danek, in Velgroth-Lucernia — they think he is dead, or wish he were. A niece in Caelrun who leaves food out for him.</p>
 <p><strong>Anecdote:</strong> Convinced an Ilmenor inquisitor his grimoire was a recipe book by reading from it in a made-up dialect for four unbroken minutes.</p>
 <p><strong>Anecdote:</strong> Emerged from the second collapse after three days underground — dehydrated, one broken rib — still clutching his rubbing. &#x27;The rubbing was worth it.&#x27; No one agrees.</p>
@@ -202,7 +163,7 @@ table.grid td { font-size: 1rem; }
 <p><strong>Tragedy:</strong> Nevret — young Aurka, one season in, killed in the first collapse. Ossek got out. Keeps Nevret&#x27;s iron stylus in his breast pocket; doesn&#x27;t discuss it, except constantly, in passing, as though Nevret might walk in.</p>
 <p><strong>Tragedy:</strong> Bressul — steady, experienced, survived everything, killed in the second collapse. Ossek invokes him most when pointing out load-bearing features: &#x27;Bressul always checked those first.&#x27;</p>
 <p><strong>Tragedy:</strong> Davanek — killed two years ago in the third collapse. Ossek still refers to him in the present tense occasionally, catching himself with a small cough. He has not noticed the pattern, or does not consider it relevant.</p>
-</details>
+</div>
 </div>
 </section>
 <section class="loc"><h3><span class="num">5.</span>Guild Hall</h3>
@@ -213,10 +174,10 @@ table.grid td { font-size: 1rem; }
 <p>Weathered, blind in one eye, a net in her lap.</p>
 <p class="say">“A story for a story.”</p>
 <p><strong>Wants:</strong> The guild kept neutral, and good gossip.<br><strong>Doesn’t want:</strong> Being left out of the news.<br><strong>Knows:</strong> Who owes whom, across the village.<br><strong>Offers:</strong> Nets, rope, and information traded fairly.<br><strong>Found:</strong> Guild Hall, hands never still.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Dreams:</strong> To retire the most respected elder in Caelrun, having written nothing down.<br><strong>Thinks with:</strong> persuasion<br><strong>Family:</strong> Widowed; grown children fish for other families.</p>
 <p><strong>Anecdote:</strong> Lost her eye to a snapped line in a storm and mended the net before she let anyone look at her.</p>
-</details>
+</div>
 </div>
 </section>
 <section class="loc"><h3><span class="num">6.</span>The Oil Pits</h3>
@@ -228,9 +189,9 @@ table.grid td { font-size: 1rem; }
 <p>Young, thin, stained with fish oil. <em>And yet:</em> Clean, careful hands.</p>
 <p class="say">“Seven more years. I count them.”</p>
 <p><strong>Wants:</strong> Free of the Norvak debt.<br><strong>Doesn’t want:</strong> Being reminded of it.<br><strong>Found:</strong> The Oil Pits, stinking of fish oil.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> Drinks stolen wine and imagines the oil pits burning.<br><strong>Dreams:</strong> Escape to Nebruz to work bog iron, and never see a fish again.<br><strong>Thinks with:</strong> guilt<br><strong>Family:</strong> Inherited his dead father&#x27;s debt; his siblings scattered.</p>
-</details>
+</div>
 </div>
 </section>
 <section class="loc"><h3><span class="num">7.</span>Boatwright&#x27;s Yard</h3>
@@ -241,9 +202,9 @@ table.grid td { font-size: 1rem; }
 <p>Calloused hands, sawdust in his beard. <em>And yet:</em> Hums tunelessly while he works.</p>
 <p class="say">“Built to last. Or not built.”</p>
 <p><strong>Wants:</strong> Every boat to last decades.<br><strong>Doesn’t want:</strong> Rush jobs or cheap timber.<br><strong>Offers:</strong> Fishing boats, built properly.<br><strong>Found:</strong> Boatwright&#x27;s Yard, finding fault.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Dreams:</strong> The perfect fishing boat.<br><strong>Thinks with:</strong> tradition<br><strong>Family:</strong> Three terrified apprentices; a wife who understands his moods.</p>
-</details>
+</div>
 </div>
 </section>
 <section class="loc"><h3><span class="num">8.</span>Shrine of Thulda</h3>
@@ -254,10 +215,10 @@ table.grid td { font-size: 1rem; }
 <p>Elderly, serene, grey wool robes.</p>
 <p class="say">“The dead are in no hurry. Neither am I.”</p>
 <p><strong>Wants:</strong> Proper funeral rites, peace for the dying.<br><strong>Doesn’t want:</strong> Rushed burials.<br><strong>Found:</strong> Shrine of Thulda, spinning wool by the door.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Dreams:</strong> A successor, and to die in her sleep at the shrine.<br><strong>Thinks with:</strong> faith<br><strong>Family:</strong> Outlived her husband and two children.</p>
 <p><strong>Tragedy:</strong> Buried her husband and both her children at her own shrine.</p>
-</details>
+</div>
 </div>
 </section>
 <section class="loc"><h3><span class="num">9.</span>Hallan Compound</h3>
@@ -266,16 +227,16 @@ table.grid td { font-size: 1rem; }
 <div class="npc"><p class="head"><span class="nm">Penna</span> <span class="meta">· household servant · independent</span></p>
 <p>Middle-aged, brisk, a ring of keys.</p>
 <p><strong>Wants:</strong> The household running smoothly.<br><strong>Doesn’t want:</strong> Her children treated as lesser.<br><strong>Knows:</strong> The Hallan compound&#x27;s routines better than the Hallans.<br><strong>Found:</strong> Hallan Compound, running the household.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Dreams:</strong> Her eldest daughter marrying above her station.<br><strong>Thinks with:</strong> tradition<br><strong>Family:</strong> Third generation in Hallan service; husband serves too; four children.</p>
-</details>
+</div>
 </div>
 <div class="npc"><p class="head"><span class="nm">Sarith, the Watcher</span> <span class="meta">· village elder · independent</span></p>
 <p>Old, visibly scarred, a cane. <em>And yet:</em> Sharp eyes that miss nothing.</p>
 <p><strong>Wants:</strong> The lizard-man compact kept.<br><strong>Doesn’t want:</strong> Fool heroes, and Aurka drawing the wrong attention.<br><strong>Found:</strong> Hallan Compound, carving waystones in the yard.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> Former Elunad. Teaches the few who listen.<br><strong>Dreams:</strong> To die knowing the compact will hold.<br><strong>Thinks with:</strong> lore<br><strong>Family:</strong> Adopted by the Hallans after serving with them; never married.</p>
-</details>
+</div>
 </div>
 </section>
 <section class="loc"><h3><span class="num">10.</span>Tarnes Granary</h3>
@@ -285,16 +246,16 @@ table.grid td { font-size: 1rem; }
 <p>Sun-darkened, sharp-eyed, sleeves rolled.</p>
 <p class="say">“Fishers can keep their opinions on barley.”</p>
 <p><strong>Wants:</strong> Land used well, and her expertise respected.<br><strong>Doesn’t want:</strong> Wasted resources.<br><strong>Found:</strong> Tarnes Granary, giving orders.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> Resents being asked what she does for pleasure.<br><strong>Dreams:</strong> More barley, under her hand.<br><strong>Thinks with:</strong> money<br><strong>Family:</strong> Married into the Tarnes family; three children work the fields.</p>
-</details>
+</div>
 </div>
 <div class="npc"><p class="head"><span class="nm">Ordun Tarnes, the Quiet Negotiator</span> <span class="meta">· grain-collective head · independent</span></p>
 <p>Weathered, patient, soil under his nails.</p>
 <p><strong>Wants:</strong> Good harvests and peace with all parties.<br><strong>Doesn’t want:</strong> The village learning of his quiet negotiations.<br><strong>Found:</strong> Tarnes Granary, or walking the barley fields alone at dawn.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> One of the few who knows the lizard-man compact, and keeps it.<br><strong>Dreams:</strong> A worthy heir for what he knows.<br><strong>Thinks with:</strong> diplomacy<br><strong>Family:</strong> Tarnes patriarch; an extended family of fifteen and more.</p>
-</details>
+</div>
 </div>
 </section>
 <section class="loc"><h3><span class="num">11.</span>Main Jetty</h3>
@@ -304,9 +265,9 @@ table.grid td { font-size: 1rem; }
 <p>Weathered, hard-faced, a captain&#x27;s bearing.</p>
 <p class="say">“The lake gives. Don&#x27;t ask what it takes.”</p>
 <p><strong>Wants:</strong> A good season and the compact honoured quietly.<br><strong>Doesn’t want:</strong> Kin who talk too much.<br><strong>Found:</strong> Main Jetty at dawn, counting boats out.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> Commands forty-odd boats; inherited the lizard-man secret from his father.<br><strong>Dreams:</strong> To pass the fleet and the secret to a worthy heir, and die on the water.<br><strong>Thinks with:</strong> money<br><strong>Family:</strong> Hallan patriarch; forty and more kin.</p>
-</details>
+</div>
 </div>
 </section>
 <section class="loc"><h3><span class="num">12.</span>Decaying Dock</h3>
@@ -320,17 +281,17 @@ table.grid td { font-size: 1rem; }
 <div class="npc"><p class="head"><span class="nm">Kessa, the Leech-Wife</span> <span class="meta">· leech-gatherer · independent</span></p>
 <p>Stained fingers, mud to the thigh, a leech-jar. <em>And yet:</em> Talks gently to the leeches.</p>
 <p><strong>Wants:</strong> To be left alone.<br><strong>Doesn’t want:</strong> Questions about what she sees out there.<br><strong>Offers:</strong> Medicinal herbs and leeches.<br><strong>Found:</strong> The Marsh Edge, wading with a jar.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Dreams:</strong> To die in the marsh and go back to the mud.<br><strong>Thinks with:</strong> lore<br><strong>Family:</strong> None; may have fled something long ago.</p>
-</details>
+</div>
 </div>
 <div class="npc"><p class="head"><span class="nm">Varren, Muddfoot</span> <span class="meta">· informant · aurka</span></p>
 <p>Twitchy, mud-caked, reeking of frog.</p>
 <p class="say">“Everything&#x27;s for sale. Even this.”</p>
 <p><strong>Wants:</strong> Aurka coin, and information to trade.<br><strong>Doesn’t want:</strong> Being caught informing.<br><strong>Found:</strong> The Marsh Edge, in his stilted shack, catching frogs.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Oddly also:</strong> Wants his family&#x27;s respect, and won&#x27;t admit it.<br><strong>Dreams:</strong> The Aurka find something big, he gets his cut, and his family begs forgiveness he&#x27;ll refuse.<br><strong>Thinks with:</strong> money<br><strong>Family:</strong> A disowned Bresul cousin, cast out for theft; claims he was framed.</p>
-</details>
+</div>
 </div>
 </section>
 <section class="loc"><h3><span class="num">14.</span>Far-Shore Reed Hut</h3>
@@ -340,9 +301,9 @@ table.grid td { font-size: 1rem; }
 <p>Thin, barefoot, river-wet robes.</p>
 <p class="say">“Neither shore. Neither water.”</p>
 <p><strong>Wants:</strong> Safe crossings for travellers, and solitude.<br><strong>Doesn’t want:</strong> Village politics, or the cairns disturbed.<br><strong>Offers:</strong> The safe water paths.<br><strong>Found:</strong> Far-Shore Reed Hut, arranging cairn stones at dawn.</p>
-<details><summary>More</summary>
+<div class="more">
 <p><strong>Dreams:</strong> To understand Ossamar perfectly, and drown peacefully.<br><strong>Thinks with:</strong> faith<br><strong>Family:</strong> No ties; left a former life behind decades ago.</p>
-</details>
+</div>
 </div>
 </section>
 <section class="loc"><h3><span class="num">15.</span>The Drowned Columns</h3>
