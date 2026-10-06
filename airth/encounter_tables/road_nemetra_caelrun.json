@@ -64,7 +64,7 @@
         },
         {
           "roll": 2,
-          "encounter": "**Torvek** walking east to Caelrun to buy iron off the Bresul boats. Asks the party not to mention it."
+          "encounter": "**Torvek** walking east to buy iron in Caelrun. Nemetra has none."
         },
         {
           "roll": 3,
@@ -103,7 +103,7 @@
         },
         {
           "roll": 2,
-          "encounter": "**Halbet**'s apprentice, asking travellers to look for seconds sold under Halbet's mark in the Caelrun market. Halbet pays for names."
+          "encounter": "**Halbet**'s apprentice runs after the party with 6 jars for the Silver Perch Inn. Halbet pays 2sp on delivery."
         },
         {
           "roll": 3,
@@ -162,7 +162,7 @@
         },
         {
           "roll": 3,
-          "encounter": "**1d4 pottery smugglers** with Halbet's seconds, nervous. Lizard-man tracks nearby."
+          "encounter": "Lizard-man tracks cross the road toward the lake, a day old."
         },
         {
           "roll": 4,
