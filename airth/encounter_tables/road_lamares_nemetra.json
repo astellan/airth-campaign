@@ -68,7 +68,7 @@
         },
         {
           "roll": 3,
-          "encounter": "**Taziri n'Khaleb**'s caravan, 5 wagons eastbound. She looks the party over and counts their weapons."
+          "encounter": "The caravan of **Taziri n'Khaleb**, 5 wagons eastbound. She looks the party over and counts their weapons."
         },
         {
           "roll": 4,
@@ -76,7 +76,7 @@
         },
         {
           "roll": 5,
-          "encounter": "**Halbet**'s jar cart westbound to Lamares, the carter walking beside it to save the mule."
+          "encounter": "A jar cart from **Halbet** westbound to Lamares, the carter walking beside it to save the mule."
         },
         {
           "roll": 6,
@@ -88,7 +88,7 @@
         },
         {
           "roll": 8,
-          "encounter": "**Sirnav**'s cart going east for casks of Nemetra's herbed ale and a side of pork."
+          "encounter": "A cart from **Sirnav** going east for casks of Nemetra's herbed ale and a side of pork."
         }
       ]
     },
@@ -115,7 +115,7 @@
         },
         {
           "roll": 5,
-          "encounter": "**Heskan Tul**'s son, offering 5sp a day to anyone who will ride with the herd to Nemetra."
+          "encounter": "The son of **Heskan Tul**, offering 5sp a day to anyone who will ride with the herd to Nemetra."
         },
         {
           "roll": 6,

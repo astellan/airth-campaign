@@ -5,6 +5,8 @@ NPC cards are pulled from airth/npcs/ and placed by `found` (falling back to `ho
 """
 import html, json, re, sys
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from npcref import build_index, md as npc_md
 
 ROOT = Path(__file__).resolve().parent.parent
 A = ROOT / "airth"
@@ -112,7 +114,7 @@ def render(sid):
         w('<h2 class="section">Encounters</h2>')
         for when in ["day", "night"]:
             w(f'<div class="table-wrap"><table><caption>d6 {esc(s["name"])} by {when}</caption><thead><tr><th class="die">d6</th><th>Encounter</th></tr></thead><tbody>')
-            for i, e in enumerate(enc[when], 1): w(f'<tr><td class="die">{i}</td><td>{md(e)}</td></tr>')
+            for i, e in enumerate(enc[when], 1): w(f'<tr><td class="die">{i}</td><td>{npc_md(e, *NPC_INDEX)}</td></tr>')
             w("</tbody></table></div>")
     r = s.get("response")
     if r:
@@ -173,6 +175,7 @@ def render(sid):
         for x in steads: w(f"<p><strong>{esc(x['name'])}</strong> ({esc(x.get('kind'))}): {esc(x.get('tagline'))} <em>Why here:</em> {esc(x.get('why_here'))}</p>")
     return "\n".join(out)
 
+NPC_INDEX = build_index()
 STYLE = (ROOT / "style" / "examples" / "dravesa.html").read_text()
 HEAD = STYLE[: STYLE.index("<main>")]
 
@@ -181,6 +184,7 @@ if __name__ == "__main__":
     S = load_settlements()
     head = re.sub(r"<title>.*?</title>", f"<title>{S[sid]['name']}</title>", HEAD, count=1)
     head = head.replace("</style>\n\n", ".hidden{border-left:2px solid var(--accent);padding-left:.6rem}\n</style>\n\n", 1) if ".hidden" not in head else head
+    head = head.replace("</head>", "") + "<style>.npcref{font-variant:small-caps;letter-spacing:.03em}.npctag{color:var(--ink-soft)}</style>\n"
     body = "<main>\n" + render(sid) + "\n</main>\n"
     out = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / "style" / "examples" / f"{sid}.html"
     out.write_text(head + body)

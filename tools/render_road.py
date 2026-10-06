@@ -6,13 +6,16 @@ airth/encounter_tables/. Every sub-table is printed, so the page stands alone.
 """
 import html, json, re, sys
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from npcref import build_index, md as npc_md
 
 ROOT = Path(__file__).resolve().parent.parent
 T = ROOT / "airth" / "encounter_tables"
 
+NPC_INDEX = build_index()
+
 def md(s):
-    s = html.escape(s or "")
-    return re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
+    return npc_md(s, *NPC_INDEX)
 
 def load_tables():
     out = {}
@@ -57,7 +60,7 @@ def render(tid):
 
 STYLE = (ROOT / "style" / "examples" / "dravesa.html").read_text()
 HEAD = STYLE[: STYLE.index("<main>")]
-EXTRA = ("<style>.cat{column-span:all}.cat table{width:60%}td.die,th.die{width:2.4rem;white-space:nowrap}.table-wrap{break-inside:auto}tr{break-inside:avoid}h2.section .ref{font-weight:400;font-size:9pt;margin-left:.4em}"
+EXTRA = ("<style>.npcref{font-variant:small-caps;letter-spacing:.03em}.npctag{color:var(--ink-soft)}.cat{column-span:all}.cat table{width:60%}td.die,th.die{width:2.4rem;white-space:nowrap}.table-wrap{break-inside:auto}tr{break-inside:avoid}h2.section .ref{font-weight:400;font-size:9pt;margin-left:.4em}"
          "table caption{display:none}</style>\n")
 
 if __name__ == "__main__":

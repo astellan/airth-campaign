@@ -60,7 +60,7 @@
       "table": [
         {
           "roll": 1,
-          "encounter": "**Taziri n'Khaleb**'s caravan on its last leg. Sarit will meet it at the Salt Yard."
+          "encounter": "The caravan of **Taziri n'Khaleb**, on its last leg. Sarit will meet it at the Salt Yard."
         },
         {
           "roll": 2,
@@ -76,11 +76,11 @@
         },
         {
           "roll": 5,
-          "encounter": "**Maza ut Idir**'s alum carts going west for Dravesa's dye-works. An Idir cousin rides with them."
+          "encounter": "Alum carts from **Maza ut Idir** going west for Dravesa's dye-works. An Idir cousin rides with them."
         },
         {
           "roll": 6,
-          "encounter": "**Doran Vell**'s apprentice walking west to buy charcoal in Dravesa; Taziri's is late."
+          "encounter": "An apprentice of **Doran Vell** walking west to buy charcoal in Dravesa; Taziri's is late."
         },
         {
           "roll": 7,
