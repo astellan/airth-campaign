@@ -11,7 +11,9 @@
   "thinks_with": "tradition",
   "appearance": "Hide-stained hands. Leather apron, well made.",
   "and_yet": null,
-  "sayings": null,
+  "sayings": [
+    "Lizard-folk hide? Not from a treaty tribe? Then we'll talk."
+  ],
   "wants": "Quality hides.",
   "does_not_want": "Rushed or spoiled skins.",
   "dreams": null,

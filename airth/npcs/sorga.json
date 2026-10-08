@@ -11,8 +11,10 @@
   "thinks_with": "tradition",
   "appearance": "Strong arms. Blood-flecked apron.",
   "and_yet": null,
-  "sayings": null,
-  "wants": "Good hides, fresh kills.",
+  "sayings": [
+    "The pit eats better than I do."
+  ],
+  "wants": "The Marsh-Hand to pay for pit offal.",
   "does_not_want": "Spoiled meat.",
   "dreams": null,
   "oddly_also": null,

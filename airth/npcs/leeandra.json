@@ -10,11 +10,13 @@
   "thinks_with": "diplomacy",
   "appearance": "Swamp-worn leathers. Rings on every finger.",
   "and_yet": null,
-  "sayings": null,
+  "sayings": [
+    "The tribes keep their word. The exiles don't."
+  ],
   "wants": "Peace among the lizard-man tribes. Ring-lore.",
   "does_not_want": "Tribal war in the Marches.",
   "dreams": null,
-  "oddly_also": "Close friends with Dorota. Neither explains it.",
+  "oddly_also": null,
   "knows": "Lizard-man tribal politics.",
   "offers": "Potions.",
   "family": null,

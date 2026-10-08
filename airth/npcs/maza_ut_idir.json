@@ -2,7 +2,9 @@
   "home_settlement": "orziben",
   "location": "alum-works",
   "and_yet": "Wears good silk under the leather apron.",
-  "sayings": [],
+  "sayings": [
+    "Idir prices, or carry it yourself."
+  ],
   "dreams": null,
   "oddly_also": null,
   "knows": null,

@@ -10,8 +10,10 @@
   "faction": "independent",
   "thinks_with": "lore",
   "appearance": "Looks late 20s. Swamp-stained hem. Charms at her throat.",
-  "and_yet": "Far older than she looks. Fae blood.",
-  "sayings": null,
+  "and_yet": "Her eyes catch lamplight like a cat's.",
+  "sayings": [
+    "Want the lizard-folk? Ask Leeandra. Bring a gift."
+  ],
   "wants": "Village health; peace with the swamp tribes.",
   "does_not_want": "The temple reopened. War with the tribes.",
   "dreams": null,
@@ -20,5 +22,6 @@
   "offers": "Healing. Charms.",
   "family": null,
   "anecdotes": [],
-  "tragedies": []
+  "tragedies": [],
+  "dm_notes": "She is far older than she looks, by fae blood."
 }

@@ -10,7 +10,9 @@
   "thinks_with": "faith",
   "appearance": "Burning eyes. Threadbare robes.",
   "and_yet": null,
-  "sayings": null,
+  "sayings": [
+    "The gods aren't dead. Nebruz stopped listening."
+  ],
   "wants": "The Nebruz temple reopened. Converts.",
   "does_not_want": "The Marsh-Hand’s decree standing.",
   "dreams": null,

@@ -12,7 +12,7 @@
   "appearance": "Towering. Heavyset. Iron keyring at his belt.",
   "and_yet": null,
   "sayings": [
-    "No adventurers. Not under my roof."
+    "No adventurers. They bring the swamp back with them."
   ],
   "wants": "Full rooms, no trouble.",
   "does_not_want": "Adventurers under his roof.",
@@ -22,5 +22,6 @@
   "offers": null,
   "family": null,
   "anecdotes": [],
-  "tragedies": []
+  "tragedies": [],
+  "dm_notes": "He sold lizard-folk captives downriver 20 years ago. Some of the renegade band know his face."
 }

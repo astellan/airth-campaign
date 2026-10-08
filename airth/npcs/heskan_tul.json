@@ -10,8 +10,10 @@
   "thinks_with": "endurance",
   "appearance": "Burly, a broken nose, a cattle-goad in his fist.",
   "and_yet": null,
-  "sayings": null,
-  "wants": "His herds safe.",
+  "sayings": [
+    "Orcs took two head. The Warden took none."
+  ],
+  "wants": "Outriders against the orcs, at 5sp a day.",
   "does_not_want": "Taking orders from the Warden.",
   "dreams": null,
   "oddly_also": "Sympathizes with the Aurka, loudly.",

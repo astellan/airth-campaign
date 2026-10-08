@@ -12,7 +12,7 @@
   "appearance": "Soft around the middle, red-faced, ceremonial armour polished bright.",
   "and_yet": null,
   "sayings": [
-    "When I was your age, we held the line."
+    "Night patrols? The swamp's no place for militia after dark."
   ],
   "wants": "To be taken seriously.",
   "does_not_want": "Night patrols near the swamp edge.",
@@ -22,5 +22,6 @@
   "offers": null,
   "family": "A wife tired of his drinking; two teenage sons.",
   "anecdotes": [],
-  "tragedies": []
+  "tragedies": [],
+  "dm_notes": "Bresul boats carry salvage from the Drowned Columns to Nebruz at night. Kelvan keeps patrols off the swamp edge so no one sees."
 }

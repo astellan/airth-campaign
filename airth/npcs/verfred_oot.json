@@ -11,7 +11,9 @@
   "thinks_with": "money",
   "appearance": "Built like a press-gang boss. Scarred knuckles.",
   "and_yet": null,
-  "sayings": null,
+  "sayings": [
+    "Trouble? Have a drink. On the house."
+  ],
   "wants": "A quiet house, paying customers.",
   "does_not_want": "Violence in his inn",
   "dreams": null,

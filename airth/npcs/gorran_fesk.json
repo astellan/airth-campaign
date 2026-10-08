@@ -15,7 +15,7 @@
     "Door's barred at dusk. In or out."
   ],
   "wants": "His brother's body back from the Bramblewood.",
-  "does_not_want": "The party drinking here.",
+  "does_not_want": "Anyone who deals with the dead drinking here.",
   "dreams": null,
   "oddly_also": null,
   "knows": "Which families have lost someone to the wood.",
