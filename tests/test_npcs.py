@@ -111,3 +111,37 @@ def test_location_references_exist(npcs, settlements):
         if loc not in ids:
             invalid.append(f"{npc_key}: location '{loc}' not in {npc.get('home_settlement')}")
     assert not invalid, "\n".join(invalid)
+
+
+# ---------------------------------------------------------------------------
+# Prose: backstory sentences have subjects (style/voice.md, Backstory)
+# ---------------------------------------------------------------------------
+
+import re
+
+_SUBJECTLESS_OPENERS = set(
+    "held took lost found told got kept left went came made ran sold saw chose won fought "
+    "led built had knew gave brought bought sent set sets holds keeps takes walks runs "
+    "carries sees knows wants says swears pays leaves buries lives works has receives "
+    "believes guards talks once never still always".split()
+)
+
+def _sentences(text):
+    return [s for s in re.split(r"(?<=[.!?])\s+", text.strip()) if s]
+
+def test_backstory_sentences_have_subjects(npcs):
+    """Anecdotes, tragedies and dm_notes must not open a sentence on a bare verb."""
+    bad = []
+    for npc_key, npc in npcs.items():
+        for field in ("anecdotes", "tragedies", "dm_notes"):
+            value = npc.get(field)
+            items = value if isinstance(value, list) else [value] if value else []
+            for item in items:
+                for s in _sentences(item):
+                    words = re.sub(r"[^\w\s'-]", "", s).split()
+                    if not words:
+                        continue
+                    first = words[0].lower()
+                    if re.fullmatch(r"[a-z]+ed", first) or first in _SUBJECTLESS_OPENERS:
+                        bad.append(f"{npc_key}.{field}: {s}")
+    assert not bad, "Subjectless sentences:\n" + "\n".join(bad)

@@ -4,6 +4,7 @@
   "role": "household servant",
   "home": "Hallan Compound, Caelrun",
   "home_settlement": "caelrun",
+  "location": "hallan-compound",
   "found": "Hallan Compound, running the household.",
   "gender": "female",
   "faction": "independent",

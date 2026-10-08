@@ -1,8 +1,9 @@
 {
   "home_settlement": "nemetra",
+  "location": "bandua-shrine",
   "and_yet": null,
   "sayings": [
-    "Swear on the hearth or don't swear."
+    "Durvin swore the goblins were tamed. Not on my hearth."
   ],
   "dreams": null,
   "oddly_also": null,
@@ -23,6 +24,6 @@
   "faction": "bandua-faithful",
   "thinks_with": "tradition",
   "appearance": "Old militiaman, one leg stiff, oath-cord on his wrist.",
-  "wants": "Oaths kept.",
+  "wants": "Durvin to swear his patrols on the hearth.",
   "does_not_want": "Durvin's boasting taken for an oath."
 }

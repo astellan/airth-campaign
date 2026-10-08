@@ -3,6 +3,7 @@
   "role": "head of the Council of Houses",
   "home": "The Council House, Orziben",
   "home_settlement": "orziben",
+  "location": "council-house",
   "found": "The Council House, in the courtyard by the fountain.",
   "gender": "male",
   "faction": "independent",

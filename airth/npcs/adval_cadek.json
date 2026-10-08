@@ -4,6 +4,7 @@
   "role": "merchant",
   "home": "Cadek Merchant House, Dravesa",
   "home_settlement": "dravesa",
+  "location": "cadek-merchant-house",
   "found": "Cadek Merchant House, shut inside; out twice a day to make a scene.",
   "gender": "male",
   "faction": "independent",
@@ -21,7 +22,7 @@
   "offers": "Coin, for proof.",
   "family": "Wife Pemma, holding the household together; Jorun (son, missing, 21); two younger daughters.",
   "anecdotes": [
-    "Built the Cadek house from a single mule cart twenty years ago."
+    "He built the Cadek house from a single mule cart twenty years ago."
   ],
   "tragedies": [
     "Jorun left for the Mountain of Fire six weeks ago and has not returned."

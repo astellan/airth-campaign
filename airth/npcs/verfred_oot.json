@@ -4,6 +4,7 @@
   "role": "innkeeper",
   "home": "The Painted Frog inn, Nebruz",
   "home_settlement": "nebruz",
+  "location": "painted-frog",
   "found": "The Painted Frog, behind the bar.",
   "gender": "male",
   "faction": "independent",

@@ -4,6 +4,7 @@
   "role": "Schismatic preacher",
   "home": "House of the Mountain of Fire, Dravesa",
   "home_settlement": "dravesa",
+  "location": "house-mountain-of-fire",
   "found": "House of the Mountain of Fire, writing to pilgrims.",
   "gender": "male",
   "faction": "malac-schismatics",
@@ -21,7 +22,7 @@
   "offers": null,
   "family": "His family disowned him when he joined the Schismatics; a young son, Dav, being raised by his mother across town.",
   "anecdotes": [
-    "Quoted a man's own words back to him from three years prior, verbatim, mid-argument."
+    "He quoted a man's own words back to him from three years prior, verbatim, mid-argument."
   ],
   "tragedies": [
     "Dav doesn't know who his father is."

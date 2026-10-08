@@ -112,7 +112,7 @@
   "encounters": {
     "day": [
       "**Lugo Varden** hears a dispute at the Warden's Hall and says almost nothing.",
-      "**Chadem Ink-Thorn** asks if the party has any writing, rubbings, or ruin maps to sell.",
+      "A charcoal burner swears he heard his own name called from the northern woods.",
       "Charcoal burners come in black to the eyes, and the village gives them room.",
       "A shepherd drives a flock down from the High Pens early, looking north.",
       "**1d4 militia** ride out toward the North Fortress.",
@@ -185,17 +185,6 @@
       "labels": {
         "wares": "Charcoal.",
         "proprietor": "The charcoal burners, respected but kept apart."
-      }
-    },
-    {
-      "id": "scribes-corner",
-      "name": "Scribe's Corner",
-      "type": "shop",
-      "look": "A small room attached to the Warden's Hall.",
-      "labels": {
-        "proprietor": "Chadem Ink-Thorn, when he is there.",
-        "wares": "Contracts, letters, and village records.",
-        "off_the_books": "Pays for rubbings, inscriptions, and ruin maps."
       }
     },
     {

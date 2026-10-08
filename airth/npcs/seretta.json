@@ -4,6 +4,7 @@
   "role": "militia captain",
   "home": "The North Fortress, Lamares",
   "home_settlement": "lamares",
+  "location": "north-fortress",
   "found": "The North Fortress, on the tower.",
   "gender": "female",
   "faction": "village-militia",

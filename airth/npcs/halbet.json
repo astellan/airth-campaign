@@ -1,12 +1,15 @@
 {
   "home_settlement": "nemetra",
+  "location": "pottery-quarter",
   "and_yet": "Smashes any pot with a flaw, even his own.",
-  "sayings": [],
+  "sayings": [
+    "Who's digging my clay at night? Tarba sleeps like the dead."
+  ],
   "dreams": null,
   "oddly_also": null,
   "knows": null,
   "offers": "Storage jars, roof tiles, decorated pottery.",
-  "family": "The Halbet potters; 20 workers and apprentices.",
+  "family": "Son of the old master potter, dead of kiln-lung. He heeds Mother Yaleth because of it. The Halbet potters number 20 workers and apprentices.",
   "anecdotes": [],
   "tragedies": [],
   "campaign_notes": [

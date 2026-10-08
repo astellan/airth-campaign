@@ -4,6 +4,7 @@
   "role": "innkeeper",
   "home": "The Gilded Ash Inn, Dravesa",
   "home_settlement": "dravesa",
+  "location": "gilded-ash-inn",
   "found": "The Gilded Ash Inn, behind the bar; account books at close.",
   "gender": "female",
   "faction": "independent",

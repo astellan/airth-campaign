@@ -4,6 +4,7 @@
   "role": "militia captain",
   "home": "Hearth-Hall, Tagmira",
   "home_settlement": "tagmira",
+  "location": "hearth-hall",
   "found": "Hearth-Hall, holding court most evenings.",
   "gender": "male",
   "faction": "village-militia",
@@ -21,8 +22,8 @@
   "offers": null,
   "family": "An estranged daughter in Velgroth-Lucernia; no kin left in the village.",
   "anecdotes": [
-    "Rallied the militia during a night raid five winters ago; that is why they follow him.",
-    "Served as a mercenary for the Confederation before coming home."
+    "He rallied the militia during a night raid five winters ago; that is why they follow him.",
+    "He served as a mercenary for the Confederation before coming home."
   ],
   "tragedies": [
     "His daughter left for Velgroth-Lucernia and will not write. He does not say why."

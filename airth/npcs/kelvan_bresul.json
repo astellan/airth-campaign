@@ -4,6 +4,7 @@
   "role": "militia captain",
   "home": "Caelrun",
   "home_settlement": "caelrun",
+  "location": "waterside-tavern",
   "found": "Waterside Tavern, telling war stories.",
   "gender": "male",
   "faction": "village-militia",

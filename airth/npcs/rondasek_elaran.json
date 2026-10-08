@@ -4,6 +4,7 @@
   "role": "young fighter",
   "home": "Tagmira",
   "home_settlement": "tagmira",
+  "location": "hearth-hall",
   "found": "Behind the Hearth-Hall, sparring with anyone who will.",
   "gender": "male",
   "faction": "independent",
@@ -21,7 +22,7 @@
   "offers": null,
   "family": "Kin to Dornan Elaran; cousin to Fenth the ridge-courier.",
   "anecdotes": [
-    "Fought orcs and skeletons alongside the party; has left offerings at the Tree of Mist-Song ever since, and won't say why."
+    "He fought orcs and skeletons alongside the party, and has left offerings at the Tree of Mist-Song ever since. He won't say why."
   ],
   "tragedies": [],
   "campaign_notes": [

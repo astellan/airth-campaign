@@ -4,6 +4,7 @@
   "role": "butcher",
   "home": "Meat & Skins, Nebruz",
   "home_settlement": "nebruz",
+  "location": "meat-and-skins",
   "found": "Meat & Skins, at the block.",
   "gender": "female",
   "faction": "independent",

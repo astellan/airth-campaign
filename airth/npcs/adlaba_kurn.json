@@ -4,6 +4,7 @@
   "role": "tavern keeper",
   "home": "The Bloated Leech tavern, Nebruz",
   "home_settlement": "nebruz",
+  "location": "bloated-leech",
   "found": "The Bloated Leech, working the room.",
   "gender": "female",
   "faction": "independent",

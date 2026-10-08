@@ -4,6 +4,7 @@
   "role": "mask-carver",
   "home": "Old Dreban's Hermitage, Lamares",
   "home_settlement": "lamares",
+  "location": "drebans-hermitage",
   "found": "Old Dreban's Hermitage, carving.",
   "gender": "male",
   "faction": "serdanos",

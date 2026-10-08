@@ -1,6 +1,7 @@
 {
   "home_settlement": "nemetra",
-  "and_yet": "Ilmenor-trained, barely; never says why he left.",
+  "location": "scribes-shed",
+  "and_yet": "Ilmenor mark on his wrist, scraped half off.",
   "sayings": [
     "Can you read? Good. Can you dig?"
   ],
@@ -23,5 +24,6 @@
   "thinks_with": "lore",
   "appearance": "Thin, ink-stained, a knife he keeps touching.",
   "wants": "Pre-Fall inscriptions from the northern ruins.",
-  "does_not_want": "The Ilmenor hearing what he finds."
+  "does_not_want": "The Ilmenor hearing what he finds.",
+  "dm_notes": "The Ilmenor expelled him for selling a copied pre-Fall rubbing. They want the original back."
 }

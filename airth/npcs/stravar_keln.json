@@ -4,6 +4,7 @@
   "role": "warden",
   "home": "Warden's Hall, Dravesa",
   "home_settlement": "dravesa",
+  "location": "wardens-hall",
   "found": "Warden’s Hall, sharpening his knife at dusk.",
   "gender": "male",
   "faction": "independent",
@@ -21,7 +22,7 @@
   "offers": "Coin; passage to Orziben.",
   "family": "Estranged wife in Orziben; three grown children he rarely sees.",
   "anecdotes": [
-    "Talked a Bronze Host raiding party into leaving a steading unmolested with no weapons drawn."
+    "He talked a Bronze Host raiding party into leaving a steading unmolested with no weapons drawn."
   ],
   "tragedies": [
     "The wife left when he took this posting. He thought she'd come around."

@@ -20,7 +20,11 @@ One voice, tuned to the job. Pick the register by what the text is for.
 - *Good:* **Iron door.** Rusted shut. Opens on a combined STR of 30+.
 - *Bad:* There is an old iron door here which has rusted shut over the years.
 
-**Narrative.** Montages, travel, recaps, backstory. Read once, aloud or in prep. Sparse fragments; grammar optional. Image, then image, no connective tissue.
+**Narrative.** Montages, travel, recaps. Read once, aloud or in prep. Sparse fragments; grammar optional. Image, then image, no connective tissue.
+
+**Backstory.** Anecdotes, tragedies, DM notes. Full sentences, every one with a subject. Short is fine; subjectless is not. A sentence that opens on a verb ("Found…", "Lost…", "Holds…") is a fragment: give it a subject.
+- *Good:* He found clawed tracks past the second hill and turned back.
+- *Bad:* Found clawed tracks past the second hill. Told no one.
 - *Good:* Three days of rain. Mud to the knee. The mule dies on the second.
 - *Bad:* The journey takes three days, during which it rains constantly and the mule unfortunately dies.
 

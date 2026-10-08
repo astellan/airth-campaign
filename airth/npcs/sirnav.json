@@ -4,6 +4,7 @@
   "role": "innkeeper",
   "home": "The Red Pot, Lamares",
   "home_settlement": "lamares",
+  "location": "red-pot",
   "found": "The Red Pot, by the fire at dusk.",
   "gender": "female",
   "faction": "independent",

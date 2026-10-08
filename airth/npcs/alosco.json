@@ -22,13 +22,13 @@
   "offers": "Guiding, 2sp a day.",
   "family": "None living.",
   "anecdotes": [
-    "Led 9 Tagmira wool wagons through snow in 3 days. Lost none.",
-    "Walked Cindas north twice this month. The only militiaman who pays."
+    "He led 9 Tagmira wool wagons through snow in 3 days and lost none.",
+    "He has walked Cindas north twice this month. Cindas is the only militiaman who pays."
   ],
   "tragedies": [
-    "Lost his brother Virot to a spring flood on the Tagmira road, 12 years ago. Sets a pebble on every waystone he passes, one for Virot."
+    "He lost his brother Virot to a spring flood on the Tagmira road 12 years ago. He sets a pebble on every waystone he passes, one for Virot."
   ],
-  "dm_notes": "The spiral marks Ashfang ground. Disturb it: Ashfang patrol arrives in 1d4 hours.",
+  "dm_notes": "The spiral marks Ashfang ground. If the party disturbs it, an Ashfang patrol arrives in 1d4 hours.",
   "campaign_notes": [
     "Created 2026-10-07 in the Nemetra NPC quality test; drawn from Drive 'Nemetra Gnoll Threat'."
   ]

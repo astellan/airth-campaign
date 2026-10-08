@@ -4,6 +4,7 @@
   "role": "provisioner",
   "home": "Swamp Rat Provisions, Nebruz",
   "home_settlement": "nebruz",
+  "location": "swamp-rat-provisions",
   "found": "Swamp Rat Provisions, behind the counter.",
   "gender": "male",
   "faction": "independent",

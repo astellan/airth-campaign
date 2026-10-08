@@ -1,5 +1,6 @@
 {
   "home_settlement": "nemetra",
+  "location": "village-green",
   "and_yet": "Never leads a patrol past the second hill north.",
   "sayings": [
     "We've got the goblins broken! They come crawling to us now!",
@@ -9,7 +10,7 @@
   "oddly_also": null,
   "knows": null,
   "offers": "A guided walk along the 'safe' northern patrol route.",
-  "family": "The Zerens, who run the pig pens.",
+  "family": "Elder brother of Ilduro; the Zerens own the pig pens.",
   "anecdotes": [],
   "tragedies": [],
   "campaign_notes": [
@@ -25,5 +26,6 @@
   "thinks_with": "pride",
   "appearance": "Big, red-faced, militia sash stained with ale.",
   "wants": "To be thanked for taming the goblins.",
-  "does_not_want": "Anyone asking what the goblins are running from."
+  "does_not_want": "Anyone asking what the goblins are running from.",
+  "dm_notes": "He found clawed tracks past the second hill last spring and turned back. He has told no one."
 }

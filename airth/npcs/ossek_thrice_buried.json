@@ -4,6 +4,7 @@
   "role": "antiquarian",
   "home": "Back room of a Caelrun fishmonger’s",
   "home_settlement": "caelrun",
+  "location": "fishmongers",
   "found": "The Fishmonger's back room in Caelrun, annotating his notes by lamplight.",
   "gender": "male",
   "faction": "aurka",
@@ -22,12 +23,12 @@
   "offers": "Inscription reading. Aurka contacts.",
   "family": "Two adult sons, Jevek and Danek, in Velgroth-Lucernia — they think he is dead, or wish he were. A niece in Caelrun who leaves food out for him.",
   "anecdotes": [
-    "Convinced an Ilmenor inquisitor his grimoire was a recipe book by reading from it in a made-up dialect for four unbroken minutes.",
-    "Emerged from the second collapse after three days underground — dehydrated, one broken rib — still clutching his rubbing. 'The rubbing was worth it.' No one agrees.",
-    "Identified a sealed vault in Caelrun's lake ruins from waterlogged timber patterns during a drought — without entering the water. Sold the information before learning what was inside. Still annoyed."
+    "He convinced an Ilmenor inquisitor his grimoire was a recipe book by reading from it in a made-up dialect for four unbroken minutes.",
+    "He emerged from the second collapse after three days underground, dehydrated, with one broken rib, still clutching his rubbing. 'The rubbing was worth it.' No one agrees.",
+    "He identified a sealed vault in Caelrun's lake ruins from waterlogged timber patterns during a drought, without entering the water. He sold the information before learning what was inside, and is still annoyed."
   ],
   "tragedies": [
-    "Nevret — young Aurka, one season in, killed in the first collapse. Ossek got out. Keeps Nevret's iron stylus in his breast pocket; doesn't discuss it, except constantly, in passing, as though Nevret might walk in.",
+    "Nevret, a young Aurka one season in, was killed in the first collapse. Ossek got out. He keeps Nevret's iron stylus in his breast pocket and doesn't discuss it, except constantly, in passing, as though Nevret might walk in.",
     "Bressul — steady, experienced, survived everything, killed in the second collapse. Ossek invokes him most when pointing out load-bearing features: 'Bressul always checked those first.'",
     "Davanek — killed two years ago in the third collapse. Ossek still refers to him in the present tense occasionally, catching himself with a small cough. He has not noticed the pattern, or does not consider it relevant."
   ],

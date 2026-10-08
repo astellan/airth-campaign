@@ -4,6 +4,7 @@
   "role": "hedge witch (3rd level)",
   "home": "The Ash-House, Tagmira",
   "home_settlement": "tagmira",
+  "location": "ash-house",
   "found": "The Ash-House by the western woods, tracing stories in the hearth-ash.",
   "gender": "female",
   "faction": "independent",
@@ -23,6 +24,6 @@
   "family": "A few distant kin; one loyal servant, Medam.",
   "anecdotes": [],
   "tragedies": [
-    "Has watched the old knowledge dwindle to almost nothing in her lifetime."
+    "She has watched the old knowledge dwindle to almost nothing in her lifetime."
   ]
 }

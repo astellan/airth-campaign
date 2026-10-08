@@ -4,6 +4,7 @@
   "role": "raid leader",
   "home": "Vraed's Fighting Hall, Dravesa",
   "home_settlement": "dravesa",
+  "location": "vraeds-fighting-hall",
   "found": "Vraed's Fighting Hall, training alone in the yard at dawn.",
   "gender": "male",
   "faction": "bandua-faithful",
@@ -21,9 +22,9 @@
   "offers": "4 fighters as escort.",
   "family": "Wife Sera; two sons of raiding age; two younger daughters.",
   "anecdotes": [
-    "Lost two fingers to a goblin and killed it with the same hand."
+    "He lost two fingers to a goblin and killed it with the same hand."
   ],
   "tragedies": [
-    "Lost a close friend when a Schismatic-influenced steading refused to send warning of a raid."
+    "He lost a close friend when a Schismatic-influenced steading refused to send warning of a raid."
   ]
 }

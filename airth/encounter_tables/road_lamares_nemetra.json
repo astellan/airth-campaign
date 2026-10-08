@@ -64,7 +64,7 @@
         },
         {
           "roll": 2,
-          "encounter": "**Chadem** walking east to a ruin with a satchel of paper. Asks whether Medach in Nemetra has found anything. Hopes not."
+          "encounter": "**2 charcoal burners** walk east to sell in Nemetra at half last year's price."
         },
         {
           "roll": 3,
@@ -119,7 +119,7 @@
         },
         {
           "roll": 6,
-          "encounter": "**Chadem** pays 2sp for every inscription copied off a milestone or waystone on the way."
+          "encounter": "A Lamares wool-factor pays 1sp a bale to anyone who will help haul east."
         }
       ]
     },

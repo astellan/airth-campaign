@@ -4,6 +4,7 @@
   "role": "village elder",
   "home": "Caelrun",
   "home_settlement": "caelrun",
+  "location": "hallan-compound",
   "found": "Hallan Compound, carving waystones in the yard.",
   "gender": "male",
   "faction": "independent",

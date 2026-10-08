@@ -4,6 +4,7 @@
   "role": "beggar",
   "home": "Rundown house, Nebruz",
   "home_settlement": "nebruz",
+  "location": "kalos-home",
   "found": "Begging on the Nebruz boardwalks by day; locked in his house by dark.",
   "gender": "male",
   "faction": "independent",
@@ -22,7 +23,7 @@
   "family": null,
   "anecdotes": [],
   "tragedies": [
-    "Captured by a renegade band of lizard-folk (exiles from the treaty tribes) who tortured him and ate his legs over several days. Leeandra drove them off and returned him to Nebruz. His body survived; his mind did not.",
-    "Believes his severed legs return each night to walk outside his door and collect the rest of him."
+    "He was captured by a renegade band of lizard-folk (exiles from the treaty tribes) who tortured him and ate his legs over several days. Leeandra drove them off and returned him to Nebruz. His body survived; his mind did not.",
+    "He believes his severed legs return each night to walk outside his door and collect the rest of him."
   ]
 }

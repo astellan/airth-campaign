@@ -89,15 +89,13 @@ Hide empty fields. Never print "Not established" or a blank label. A sparse NPC 
 
 **Oddly also.** Only a trait that can come up in play. Literacy, a fine sense of touch, a favourite colour: cut.
 
-**Live ties only.** Every NPC links to at least one existing NPC or faction, and the link is something that can happen at the table. Never record an absence: "has never spoken to him" never comes up.
-- *Good:* Carries every patrol report to Mother Yaleth before Durvin hears it.
-- *Bad:* She has never spoken to him.
+**Ties are rare.** A link to another NPC or faction is optional. Add one only when it is a hook the party can use, and never more than one per NPC. Never record an absence: "has never spoken to him" never comes up.
 
 **DM notes.** Every hook, secret or odd detail on the card gets its answer here (see CLAUDE.md, no dead-end mysteries). The answer fits who the NPC is: a crone who keeps the old ways knows what her offering does.
 - *Good:* Deliberate. Her mother kept the stone before her.
 - *Bad:* Not tribute; habit. Nobody asked for it.
 
-**Anecdotes and tragedies.** Specific past events with names, numbers, and consequences attached — not generic backstory. Not "lost people close to him in tomb collapses" but a named event: who died, when, how, and what habit the survivor still carries because of it. The named version gives a DM something to reference in play; the generic version doesn't.
+**Anecdotes and tragedies.** Specific past events with names, numbers, and consequences attached — not generic backstory. Not "lost people close to him in tomb collapses" but a named event: who died, when, how, and what habit the survivor still carries because of it. The named version gives a DM something to reference in play; the generic version doesn't. Full sentences with subjects (see voice.md, Backstory).
 
 **Gender.** The campaign keeps the traditional roles of the early middle ages. Ratios follow the role: hunters, soldiers, smiths, and raiders skew heavily male; herb-wives, midwives, and spinners skew female; innkeepers and traders are mixed. Exceptions exist and are rare; never generate them at even odds.
 

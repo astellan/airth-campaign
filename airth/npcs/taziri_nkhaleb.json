@@ -21,14 +21,14 @@
   "offers": "Caravan passage.",
   "family": "Late husband Irven (Elunad, killed 8 years ago). Sons Khalid (24, return caravans) and Davin (19, Ilmenor scribe). Daughter Sarit (22, Orziben warehouses). Brother Azghar, teamster.",
   "anecdotes": [
-    "Once outbid a hobgoblin warlord for iron nails using only dried figs and honey",
-    "Navigated through fey-glamoured woods by singing Isarna hymns until dawn",
-    "Refused Covenant-Bound 'special cargo' offer despite massive payment"
+    "She once outbid a hobgoblin warlord for iron nails using only dried figs and honey.",
+    "She navigated through fey-glamoured woods by singing Isarna hymns until dawn.",
+    "She refused a Covenant-Bound 'special cargo' offer despite massive payment."
   ],
   "tragedies": [
-    "Husband Irven killed in southern swamps 8 years ago (believes lizard-men responsible)",
-    "Has hidden map of 'safe paths' Irven drew before death—guards it obsessively",
-    "Receives coded letters from Davin hinting at dangerous Ilmenor secrets"
+    "Her husband Irven was killed in the southern swamps 8 years ago. She believes lizard-men killed him.",
+    "She has a hidden map of 'safe paths' that Irven drew before his death, and guards it obsessively.",
+    "She receives coded letters from Davin hinting at dangerous Ilmenor secrets."
   ],
   "caravan": {
     "route": "Caelrun to Tagmira (primary), broader Luric Marches circuit",

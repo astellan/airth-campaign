@@ -4,6 +4,7 @@
   "role": "high fire-seer",
   "home": "Temple of the Eternal Flame, Dravesa",
   "home_settlement": "dravesa",
+  "location": "temple-eternal-flame",
   "found": "Temple of the Eternal Flame, tending the flame at dawn.",
   "gender": "female",
   "faction": "malac-orthodox",
@@ -21,7 +22,7 @@
   "offers": null,
   "family": "Widowed; two adult children in Orziben she corresponds with rarely.",
   "anecdotes": [
-    "Refused to close the temple during a Bronze Host siege; conducted full services with arrows in the door."
+    "She refused to close the temple during a Bronze Host siege and held full services with arrows in the door."
   ],
   "tragedies": [
     "One of her Fire-seers defected to the Schismatics three years ago. She blamed herself."

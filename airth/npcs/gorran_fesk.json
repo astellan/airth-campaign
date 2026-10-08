@@ -4,6 +4,7 @@
   "role": "alehouse keeper",
   "home": "The Barred Door, Tagmira",
   "home_settlement": "tagmira",
+  "location": "barred-door",
   "found": "The Barred Door, behind the bar with the axe.",
   "gender": "male",
   "faction": "independent",

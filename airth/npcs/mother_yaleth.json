@@ -2,8 +2,9 @@
   "name": "Yaleth",
   "moniker": "Mother",
   "role": "herb-wife",
-  "home": "Nemetra—has never left, refuses to, sees leaving as betrayal of the sick and dying who need her",
+  "home": "Herb-Wives' Compound, Nemetra",
   "home_settlement": "nemetra",
+  "location": "herb-wives-compound",
   "found": "Herb-wives’ compound, Nemetra; on the steps at dusk, smoking.",
   "gender": "female",
   "faction": "herb-wives",
@@ -11,23 +12,22 @@
   "appearance": "Late 60s. Faded green shawl. Hazelwood staff, herb bundles at her belt.",
   "and_yet": "Pipe of strong tobacco clenched in her teeth.",
   "sayings": [
-    "I was right then. I’m right now."
+    "Goblins don't beg. Something broke them."
   ],
   "wants": "The northern woods threat taken seriously.",
   "does_not_want": "Militia meddling. Goblins harmed before questioning.",
   "dreams": "Nemetra exporting tobacco. Dying respected.",
   "oddly_also": null,
-  "knows": "Every herb within a day’s walk.",
+  "knows": "The north woods smell burnt. Wrong burnt.",
   "offers": null,
   "family": "A distant cousin. 6 herb-wives under her guidance. No living children.",
   "anecdotes": [
-    "Delivered Captain Durvin himself during a winter storm—he was blue when he came out, she breathed life back into him. He's never thanked her once.",
-    "Diagnosed Nemetra's pottery master with lung rot from kiln smoke 20 years ago—he ignored her, kept working, died within the year. His son listens now.",
-    "Once talked down a delirious wounded orc at the forest edge using only hand signs and offering him water. Militia wanted to kill it. She sent it limping north with bandaged leg."
+    "She delivered Durvin blue in a winter storm and breathed life back into him. He mocks her herb-lore on the green to this day.",
+    "She told Nemetra's old master potter he had lung rot from kiln smoke, 20 years ago. He ignored her, kept working, and died within the year. His son Halbet listens to her now.",
+    "She once talked down a delirious wounded orc at the forest edge using only hand signs and an offer of water. The militia wanted to kill it. She sent it limping north with a bandaged leg."
   ],
   "tragedies": [
-    "Lost all three of her children (two daughters, one son) to fever in a single week during Year 285. She knows every herb that might have saved them—none grew close enough in time.",
-    "Her husband left her 40 years ago, said she 'loved plants more than people.' He remarried in Tagmira. She never speaks of him but keeps his tobacco pouch.",
-    "Her mentor, Old Kessa, was killed by militiamen who thought she was consorting with fey (she was gathering moonlit herbs). Yaleth found the body. Durvin's father led that patrol—she's never forgotten."
+    "She lost all three of her children (two daughters, one son) to fever in a single week during Year 285. She knows every herb that might have saved them; none grew close enough in time.",
+    "Her husband left her 40 years ago, said she 'loved plants more than people.' He remarried in Tagmira. She never speaks of him but keeps his tobacco pouch."
   ]
 }

@@ -4,6 +4,7 @@
   "role": "warden",
   "home": "Warden's Hall, Lamares",
   "home_settlement": "lamares",
+  "location": "wardens-hall",
   "found": "Warden's Hall, holding court.",
   "gender": "male",
   "faction": "village-militia",

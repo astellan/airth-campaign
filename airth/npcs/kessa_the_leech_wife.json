@@ -4,6 +4,7 @@
   "role": "leech-gatherer",
   "home": "Marsh edge, Caelrun",
   "home_settlement": "caelrun",
+  "location": "marsh-edge",
   "found": "The Marsh Edge, wading with a jar.",
   "gender": "female",
   "faction": "independent",

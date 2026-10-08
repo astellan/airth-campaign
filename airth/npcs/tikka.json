@@ -1,7 +1,10 @@
 {
   "home_settlement": "nemetra",
+  "location": "pig-pens",
   "and_yet": "Meets your eye. The others don't.",
-  "sayings": [],
+  "sayings": [
+    "Fire-talker. Fire-talker comes."
+  ],
   "dreams": null,
   "oddly_also": null,
   "knows": "The fire-speaker (Tharzuul), the Nighthowl caves and their escape tunnels.",

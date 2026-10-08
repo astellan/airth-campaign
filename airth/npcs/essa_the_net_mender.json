@@ -4,6 +4,7 @@
   "role": "guild mistress",
   "home": "Net-Menders' Guild, Caelrun",
   "home_settlement": "caelrun",
+  "location": "net-menders-guild",
   "found": "Guild Hall, hands never still.",
   "gender": "female",
   "faction": "independent",
@@ -21,7 +22,7 @@
   "offers": "Nets, rope, and information traded fairly.",
   "family": "Widowed; grown children fish for other families.",
   "anecdotes": [
-    "Lost her eye to a snapped line in a storm and mended the net before she let anyone look at her."
+    "She lost her eye to a snapped line in a storm and mended the net before she let anyone look at her."
   ],
   "tragedies": []
 }

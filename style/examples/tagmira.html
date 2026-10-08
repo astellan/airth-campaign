@@ -14,7 +14,7 @@
   :root:not([data-theme="light"]) { --paper:#161814; --ink:#e3e5dc; --ink-soft:#a3a89a; --accent:#a3bd97; --rule:#3a3f36; --panel:#1f221d; color-scheme: dark; }
 }
 :root[data-theme="dark"] { --paper:#161814; --ink:#e3e5dc; --ink-soft:#a3a89a; --accent:#a3bd97; --rule:#3a3f36; --panel:#1f221d; color-scheme: dark; }
-@page { size: letter portrait; margin: .45in .5in; }
+@page { size: letter portrait; margin: .45in .75in; }
 * { box-sizing: border-box; }
 body { background: var(--paper); color: var(--ink); font-family: var(--serif);
   font-size: 10.5pt; line-height: 1.28; margin: 0; padding: 16px; }
@@ -63,9 +63,12 @@ table.grid th:first-child, table.grid td:first-child { width: 4.5rem; font-varia
 @media print { body { padding: 0; background: #fff; } main { max-width: none; } .npc { background: #f3f4ee; } }
 </style>
 
+<style>.npcref{font-variant:small-caps;letter-spacing:.03em}.npctag{color:var(--ink-soft)}</style>
+<style>.npcref{font-variant:small-caps;letter-spacing:.03em}.npctag{color:var(--ink-soft)}</style>
+<style>.npcref{font-variant:small-caps;letter-spacing:.03em}.npctag{color:var(--ink-soft)}</style>
 <main>
 <p class="sample-note">Rendered from <code>airth/settlements/tagmira.json</code> to <code>style/settlement.md</code>. Gaps in the data are shown in grey.</p>
-<h1>Tagmira</h1>
+<h1>Tagmira (draft)</h1>
 <p class="tagline">Hardscrabble upland village under the Bramblewood, holding off orcs it no longer understands.</p>
 <div class="facts">
 <p><strong>Inhabitants:</strong> 320 (village). Herders and farmers; clannish.</p>
@@ -101,16 +104,16 @@ table.grid th:first-child, table.grid td:first-child { width: 4.5rem; font-varia
 <p><strong>Sacred ground everywhere.</strong> A Cossus stone ring for trial by combat, a Thulda gravefield, a mound of wool offerings, an Isarna waystone, and a ford whose cold shrine is being restored. The village keeps them all.</p>
 <h2 class="section">Encounters</h2>
 <div class="table-wrap"><table><caption>d6 Tagmira by day</caption><thead><tr><th class="die">d6</th><th>Encounter</th></tr></thead><tbody>
-<tr><td class="die">1</td><td><strong>Hadran Throsk</strong> wants news of the northwest.</td></tr>
+<tr><td class="die">1</td><td><strong class="npcref">Hadran Throsk</strong><span class="npctag">, militia captain · Village Militia, Tagmira,</span> wants news of the northwest.</td></tr>
 <tr><td class="die">2</td><td>Hunters back from the northwest with a full haul nod to the party.</td></tr>
-<tr><td class="die">3</td><td><strong>Tenn Darnel</strong> glares at <strong>Ulan Caernach</strong> across a field boundary.</td></tr>
+<tr><td class="die">3</td><td><strong>Tenn Darnel</strong> glares at <strong class="npcref">Ulan Caernach</strong><span class="npctag">, hunter · Tagmira,</span> across a field boundary.</td></tr>
 <tr><td class="die">4</td><td>A widow spits at the party&#x27;s feet; her husband walked into the Bramblewood.</td></tr>
 <tr><td class="die">5</td><td><strong>1d3 militia</strong> practise with bows behind the hearth-hall.</td></tr>
 <tr><td class="die">6</td><td>A cart of black legs comes down from Carnaxe, wrapped in sacking.</td></tr>
 </tbody></table></div>
 <div class="table-wrap"><table><caption>d6 Tagmira by night</caption><thead><tr><th class="die">d6</th><th>Encounter</th></tr></thead><tbody>
 <tr><td class="die">1</td><td>The dogs at the forest edge stop barking all at once.</td></tr>
-<tr><td class="die">2</td><td><strong>Old Borric</strong> swears to anyone listening that he saw Maedra on the Bramblewood path.</td></tr>
+<tr><td class="die">2</td><td><strong class="npcref">Old Borric</strong><span class="npctag">, veteran · Village Militia, Tagmira,</span> swears to anyone listening that he saw Maedra on the Bramblewood path.</td></tr>
 <tr><td class="die">3</td><td><strong>2 militia</strong> on the palisade, watching the northwest.</td></tr>
 <tr><td class="die">4</td><td>A figure stands at the edge of the Bramblewood until a lantern is raised.</td></tr>
 <tr><td class="die">5</td><td>A family keeps vigil over a fresh body, axes ready.</td></tr>
@@ -142,8 +145,8 @@ table.grid th:first-child, table.grid td:first-child { width: 4.5rem; font-varia
 <p><strong>Wants:</strong> The northwest held without spending lives.<br><strong>Doesn’t want:</strong> Another generation bled out in someone else&#x27;s fight.<br><strong>Found:</strong> Hearth-Hall, holding court most evenings.</p>
 <div class="more">
 <p><strong>Oddly also:</strong> Deeply skeptical of magic, but respects the gods.<br><strong>Dreams:</strong> A fortified Tagmira that doesn&#x27;t need him.<br><strong>Thinks with:</strong> endurance<br><strong>Family:</strong> An estranged daughter in Velgroth-Lucernia; no kin left in the village.</p>
-<p><strong>Anecdote:</strong> Rallied the militia during a night raid five winters ago; that is why they follow him.</p>
-<p><strong>Anecdote:</strong> Served as a mercenary for the Confederation before coming home.</p>
+<p><strong>Anecdote:</strong> He rallied the militia during a night raid five winters ago; that is why they follow him.</p>
+<p><strong>Anecdote:</strong> He served as a mercenary for the Confederation before coming home.</p>
 <p><strong>Tragedy:</strong> His daughter left for Velgroth-Lucernia and will not write. He does not say why.</p>
 </div>
 </div>
@@ -153,7 +156,7 @@ table.grid th:first-child, table.grid td:first-child { width: 4.5rem; font-varia
 <p><strong>Wants:</strong> To be talked about the way they talk about Hadran.<br><strong>Doesn’t want:</strong> To be ordinary after what he has seen.<br><strong>Found:</strong> Behind the Hearth-Hall, sparring with anyone who will.</p>
 <div class="more">
 <p><strong>Oddly also:</strong> Quietly fascinated by the dead, and would never say so.<br><strong>Dreams:</strong> Something worth telling.<br><strong>Thinks with:</strong> pride<br><strong>Family:</strong> Kin to Dornan Elaran; cousin to Fenth the ridge-courier.</p>
-<p><strong>Anecdote:</strong> Fought orcs and skeletons alongside the party; has left offerings at the Tree of Mist-Song ever since, and won&#x27;t say why.</p>
+<p><strong>Anecdote:</strong> He fought orcs and skeletons alongside the party, and has left offerings at the Tree of Mist-Song ever since. He won&#x27;t say why.</p>
 </div>
 </div>
 <div class="npc"><p class="head"><span class="nm">Ulan Caernach</span> <span class="meta">· hunter · independent</span></p>
@@ -161,8 +164,8 @@ table.grid th:first-child, table.grid td:first-child { width: 4.5rem; font-varia
 <p><strong>Wants:</strong> To understand what he has become.<br><strong>Doesn’t want:</strong> To go looking for violence.<br><strong>Found:</strong> Hearth-Hall in the evenings, with the older fighters.</p>
 <div class="more">
 <p><strong>Oddly also:</strong> Wants someone to tell him whether the alliance with the dead is right. Suspects no one will.<br><strong>Thinks with:</strong> endurance<br><strong>Family:</strong> Mother Rinna; brother Theren, who wants to join the Elunad; stepfather Mellan, a hunter, who gave him the knife.</p>
-<p><strong>Anecdote:</strong> Won the trial by combat against Tenn Darnel at the Circle of Cossus.</p>
-<p><strong>Anecdote:</strong> Fought orcs and animated skeletons alongside the party.</p>
+<p><strong>Anecdote:</strong> He won the trial by combat against Tenn Darnel at the Circle of Cossus.</p>
+<p><strong>Anecdote:</strong> He fought orcs and animated skeletons alongside the party.</p>
 </div>
 </div>
 </section>
@@ -226,7 +229,7 @@ table.grid th:first-child, table.grid td:first-child { width: 4.5rem; font-varia
 <section class="loc"><h3><span class="num">9.</span>Ford of Ossamar</h3>
 <p>A wide, clear ford three miles east, marked by cairns and iron braziers.</p>
 <p><strong>Passage:</strong> Usable. Meria of the Ford has come from Lamares to restore the shrine, cold since Ildun-Ayenar was taken.</p>
-<div class="npc"><p class="head"><span class="nm">Meria, Meria of the Ford</span> <span class="meta">· Isarna warden</span></p>
+<div class="npc"><p class="head"><span class="nm">Meria, Meria of the Ford</span> <span class="meta">· Isarna warden · independent</span></p>
 <p>Middle-aged, road-worn cloak, a crescent-and-hoof pendant. <em>And yet:</em> Wet to the knees, always.</p>
 <p class="say">“A ford is a door. Someone has to keep it.”</p>
 <p><strong>Wants:</strong> The ford&#x27;s shrine warm again.<br><strong>Doesn’t want:</strong> Travellers crossing without an offering.<br><strong>Knows:</strong> The old crossing rites of Isarna and Ossamar.<br><strong>Offers:</strong> Blessings for safe passage.<br><strong>Found:</strong> Ford of Ossamar, rebuilding the cairns and relighting the braziers.</p>
@@ -243,17 +246,17 @@ table.grid th:first-child, table.grid td:first-child { width: 4.5rem; font-varia
 <p>Enni&#x27;s turf-roofed lean-to at the edge of the western woods, smoke leaking through the thatch.</p>
 <p><strong>Inhabitants:</strong> Enni the Ash-Wife and her servant Medam.</p>
 <p class="hidden"><strong>Hidden:</strong> A hearth-pit of ash many years deep, with small bones in it.</p>
-<div class="npc"><p class="head"><span class="nm">Enni, the Ash-Wife</span> <span class="meta">· hedge witch (3rd level)</span></p>
+<div class="npc"><p class="head"><span class="nm">Enni, the Ash-Wife</span> <span class="meta">· hedge witch (3rd level) · independent</span></p>
 <p>Old, near-blind eyes, ash-grey shawl, knucklebones in a bag at her hip. <em>And yet:</em> Her eyes follow you exactly.</p>
 <p class="say">“Ask me what I know, not what I&#x27;ll tell you.”</p>
 <p class="say">“The ash remembers.”</p>
 <p><strong>Wants:</strong> One last heir who will listen.<br><strong>Doesn’t want:</strong> The village forgetting the gods&#x27; silence.<br><strong>Knows:</strong> Which charms still work against the dead.<br><strong>Offers:</strong> Healing, charms; friends and identify, for a price.<br><strong>Found:</strong> The Ash-House by the western woods, tracing stories in the hearth-ash.</p>
 <div class="more">
 <p><strong>Oddly also:</strong> Takes food and trinkets from villagers who fear her, without comment.<br><strong>Dreams:</strong> That the hearth-fires speak again. It would be a bad thing.<br><strong>Thinks with:</strong> lore<br><strong>Family:</strong> A few distant kin; one loyal servant, Medam.</p>
-<p><strong>Tragedy:</strong> Has watched the old knowledge dwindle to almost nothing in her lifetime.</p>
+<p><strong>Tragedy:</strong> She has watched the old knowledge dwindle to almost nothing in her lifetime.</p>
 </div>
 </div>
-<div class="npc"><p class="head"><span class="nm">Medam</span> <span class="meta">· servant</span></p>
+<div class="npc"><p class="head"><span class="nm">Medam</span> <span class="meta">· servant · independent</span></p>
 <p>Big, slow-moving youth, soot on his face. <em>And yet:</em> Moves without a sound.</p>
 <p><strong>Wants:</strong> Enni fed and warm.<br><strong>Doesn’t want:</strong> Strangers in the hut.<br><strong>Found:</strong> The Ash-House, fetching water and wood.</p>
 <div class="more">
@@ -329,12 +332,12 @@ table.grid th:first-child, table.grid td:first-child { width: 4.5rem; font-varia
 <p><strong>Thinks with:</strong> endurance<br><strong>Family:</strong> Brother of Torven Gald, the militia archer.</p>
 </div>
 </div>
-<div class="npc"><p class="head"><span class="nm">Pima</span> <span class="meta">· foundling messenger</span></p>
+<div class="npc"><p class="head"><span class="nm">Pima</span> <span class="meta">· foundling messenger · independent</span></p>
 <p>Young orphan girl. Small hand mirror, always in hand.</p>
 <p><strong>Wants:</strong> The Bronze Host defeated. What the mirror-fairy wants.<br><strong>Doesn’t want:</strong> Adults taking her mirror.<br><strong>Knows:</strong> A fairy girl, through the mirror.<br><strong>Found:</strong> Brennar Hallan’s household, Tagmira; alone with her mirror at night.</p>
 <div class="more">
 <p><strong>Oddly also:</strong> Says the trees whisper at night. She is not wrong.<br><strong>Thinks with:</strong> magic<br><strong>Family:</strong> Orphan — no known family. Raised alongside fellow foundlings Salla and Dun.</p>
-<p><strong>Tragedy:</strong> Orphaned under unspecified circumstances. Raised as a servant-ward, not a daughter.</p>
+<p><strong>Tragedy:</strong> She was orphaned under unspecified circumstances and raised as a servant-ward, not a daughter.</p>
 </div>
 </div>
 <h2 class="section">Factions in Town</h2>

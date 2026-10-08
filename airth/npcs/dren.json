@@ -4,6 +4,7 @@
   "role": "bound labourer",
   "home": "Caelrun",
   "home_settlement": "caelrun",
+  "location": "oil-pits",
   "found": "The Oil Pits, stinking of fish oil.",
   "gender": "male",
   "faction": "independent",

@@ -4,6 +4,7 @@
   "role": "Thulda priestess",
   "home": "Shrine of Thulda, Caelrun",
   "home_settlement": "caelrun",
+  "location": "thulda-shrine",
   "found": "Shrine of Thulda, spinning wool by the door.",
   "gender": "female",
   "faction": "independent",
@@ -22,6 +23,6 @@
   "family": "Outlived her husband and two children.",
   "anecdotes": [],
   "tragedies": [
-    "Buried her husband and both her children at her own shrine."
+    "She buried her husband and both her children at her own shrine."
   ]
 }

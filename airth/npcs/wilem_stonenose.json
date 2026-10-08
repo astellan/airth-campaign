@@ -4,6 +4,7 @@
   "role": "shopkeeper",
   "home": "Sundries, Nebruz",
   "home_settlement": "nebruz",
+  "location": "sundries",
   "found": "Sundries, at the counter.",
   "gender": "male",
   "faction": "independent",

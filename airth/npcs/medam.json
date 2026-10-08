@@ -4,6 +4,7 @@
   "role": "servant",
   "home": "The Ash-House, Tagmira",
   "home_settlement": "tagmira",
+  "location": "ash-house",
   "found": "The Ash-House, fetching water and wood.",
   "gender": "male",
   "faction": "independent",

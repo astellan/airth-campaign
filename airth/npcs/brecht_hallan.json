@@ -4,6 +4,7 @@
   "role": "fleet master",
   "home": "Hallan Compound, Caelrun",
   "home_settlement": "caelrun",
+  "location": "jetty",
   "found": "Main Jetty at dawn, counting boats out.",
   "gender": "male",
   "faction": "independent",

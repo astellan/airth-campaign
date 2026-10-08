@@ -4,6 +4,7 @@
   "role": "fishmonger",
   "home": "Fish House, Nebruz",
   "home_settlement": "nebruz",
+  "location": "fish-house",
   "found": "Fish House, gutting the morning catch.",
   "gender": "male",
   "faction": "independent",

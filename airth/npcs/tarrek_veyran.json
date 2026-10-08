@@ -4,6 +4,7 @@
   "role": "smith",
   "home": "Tarrek's Forge, Tagmira",
   "home_settlement": "tagmira",
+  "location": "tarreks-forge",
   "found": "Tarrek's Forge, at the anvil from dawn.",
   "gender": "male",
   "faction": "independent",

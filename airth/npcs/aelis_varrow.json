@@ -4,6 +4,7 @@
   "role": "innkeeper",
   "home": "The Crescent and Hoof, Tagmira",
   "home_settlement": "tagmira",
+  "location": "crescent-and-hoof",
   "found": "The Crescent and Hoof, counting teamsters' coin by the fire pit.",
   "gender": "female",
   "faction": "independent",
