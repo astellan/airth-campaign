@@ -1,0 +1,29 @@
+{
+  "name": "Iltiria",
+  "moniker": null,
+  "role": "herb-wife",
+  "home": "Herb-Wives' Compound, Nemetra",
+  "home_settlement": "nemetra",
+  "found": "Pig Pens at dusk, crouched by a sty.",
+  "gender": "female",
+  "faction": "herb-wives",
+  "thinks_with": "lore",
+  "appearance": "Teenage. Barefoot. Slate tablet of scratched marks.",
+  "and_yet": "Goblin tooth-marks on both hands.",
+  "sayings": [
+    "They don't fear us. They fear the kilns."
+  ],
+  "wants": "Enough goblin words to ask real questions.",
+  "does_not_want": "Militia kicking her goblins.",
+  "dreams": null,
+  "oddly_also": null,
+  "knows": "12 goblin words. \"Fire-talker\" is one.",
+  "offers": "Salves, poultices.",
+  "family": null,
+  "anecdotes": [],
+  "tragedies": [],
+  "dm_notes": "Fire-talker is Tharzuul.",
+  "campaign_notes": [
+    "Created 2026-10-07 in the Nemetra NPC quality test; drawn from Drive 'Nemetra Gnoll Threat'."
+  ]
+}

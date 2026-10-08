@@ -1,0 +1,31 @@
+{
+  "name": "Aritza",
+  "moniker": null,
+  "role": "bound servant",
+  "home": "The Royal Welcome, Nemetra",
+  "home_settlement": "nemetra",
+  "found": "The Royal Welcome, serving the militia.",
+  "gender": "female",
+  "faction": "independent",
+  "thinks_with": "endurance",
+  "appearance": "30s. Iron bond-ring on her wrist. Tray on hip.",
+  "and_yet": null,
+  "sayings": [
+    "Captain's ale, captain's tab, my back."
+  ],
+  "wants": "Her 30gp bond cleared.",
+  "does_not_want": "Sold on to Orziben.",
+  "dreams": null,
+  "oddly_also": null,
+  "knows": "Cindas and 4 others doubt Durvin.",
+  "offers": "Ale, gossip.",
+  "family": null,
+  "anecdotes": [],
+  "tragedies": [
+    "Bound for her husband's debt after a kiln collapse killed him. 3 years served, 4 left."
+  ],
+  "dm_notes": null,
+  "campaign_notes": [
+    "Created 2026-10-07 in the Nemetra NPC quality test; drawn from Drive 'Nemetra Gnoll Threat'."
+  ]
+}

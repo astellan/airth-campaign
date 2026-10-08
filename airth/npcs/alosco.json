@@ -1,0 +1,34 @@
+{
+  "name": "Alosco",
+  "moniker": null,
+  "role": "trail guide",
+  "home": "Northern Trailhead, Nemetra",
+  "home_settlement": "nemetra",
+  "found": "Northern Trailhead, sitting against the cracked waystone.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "faith",
+  "appearance": "Lean. Crescent pendant. Staff notched with journeys.",
+  "and_yet": null,
+  "sayings": [
+    "Past the bone spiral? That's an omen. I turn back."
+  ],
+  "wants": "Paying travellers headed north.",
+  "does_not_want": "To pass the smoking bone spiral.",
+  "dreams": "Mend the cracked Isarna waystone.",
+  "oddly_also": null,
+  "knows": "Where the bone spiral stands, and that it was warm.",
+  "offers": "Guiding, 2sp a day.",
+  "family": "None living.",
+  "anecdotes": [
+    "Led 9 Tagmira wool wagons through snow in 3 days. Lost none.",
+    "Walked Cindas north twice this month. The only militiaman who pays."
+  ],
+  "tragedies": [
+    "Lost his brother Virot to a spring flood on the Tagmira road, 12 years ago. Sets a pebble on every waystone he passes, one for Virot."
+  ],
+  "dm_notes": "The spiral marks Ashfang ground. Disturb it: Ashfang patrol arrives in 1d4 hours.",
+  "campaign_notes": [
+    "Created 2026-10-07 in the Nemetra NPC quality test; drawn from Drive 'Nemetra Gnoll Threat'."
+  ]
+}

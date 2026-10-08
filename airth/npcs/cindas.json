@@ -1,0 +1,32 @@
+{
+  "name": "Cindas",
+  "moniker": null,
+  "role": "militia veteran",
+  "home": "Nemetra",
+  "home_settlement": "nemetra",
+  "found": "The Royal Welcome, back table, drinking water.",
+  "gender": "male",
+  "faction": "village-militia",
+  "thinks_with": "guilt",
+  "appearance": "50s. Grey beard. Mail rusted at the hem.",
+  "and_yet": null,
+  "sayings": [
+    "Hyenas don't walk on two legs, Captain.",
+    "Captain? Then the tab's mine."
+  ],
+  "wants": "10 sober men for a patrol past the second hill.",
+  "does_not_want": "Durvin's job.",
+  "dreams": null,
+  "oddly_also": null,
+  "knows": "Gnoll tracks 12 miles north; goblins hauling wood.",
+  "offers": null,
+  "family": null,
+  "anecdotes": [
+    "Held the torch on the patrol that killed Old Kessa. Now carries every patrol report to Mother Yaleth before Durvin hears it."
+  ],
+  "tragedies": [],
+  "dm_notes": null,
+  "campaign_notes": [
+    "Created 2026-10-07 in the Nemetra NPC quality test; drawn from Drive 'Nemetra Gnoll Threat'."
+  ]
+}

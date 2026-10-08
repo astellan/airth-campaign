@@ -88,6 +88,6 @@ Hide empty fields. Never print "Not established" or a blank label. A sparse NPC 
 
 ## NPCs named outside their card
 
-In encounter tables, road tables, and anywhere else an NPC is named away from their own card, the name carries a tag: **ILMATH**, high fire-seer · Malac Orthodox, Dravesa. Name in small caps, then role, faction (omitted when independent or none), and home town ("itinerant" if they have none).
+In encounter tables, road tables, and anywhere else an NPC is named away from their own card, the name carries a tag: **ILMATH**, high fire-seer · Malac Orthodox, Dravesa. Name in small caps, then role, faction (omitted when independent), and home town ("itinerant" if they have none).
 
 The renderers add the tag from `airth/npcs/` (`tools/npcref.py`), so stored text just bolds the name: `**Ilmath**`. Don't put a possessive on a bolded name (`**Halbet**'s apprentice`); write `an apprentice of **Halbet**`, so the tag reads cleanly. A named person with no NPC file gets no tag; give their tie in the text instead (*Bren Duvall of the Gilded Ash*).

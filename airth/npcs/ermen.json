@@ -1,0 +1,29 @@
+{
+  "name": "Ermen",
+  "moniker": null,
+  "role": "charcoal-burner",
+  "home": "Northern Woods, Nemetra",
+  "home_settlement": "nemetra",
+  "found": "Northern Woods, at his clamps half a day north of the trailhead.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "endurance",
+  "appearance": "Soot-black. Singed beard. Smells of smoke.",
+  "and_yet": "Hands scrubbed pink.",
+  "sayings": [
+    "Something leaves me a bone every week. Good neighbour."
+  ],
+  "wants": "Torvek to pay for last season's charcoal.",
+  "does_not_want": "To move his clamps south.",
+  "dreams": null,
+  "oddly_also": "Keeps every bone in a sack. 14 so far.",
+  "knows": "Something big walks his clearing at night.",
+  "offers": "Charcoal; a night by his clamp.",
+  "family": null,
+  "anecdotes": [],
+  "tragedies": [],
+  "dm_notes": "Ashfang gnolls leave the bones as offerings to his fire. They will not harm a fire-keeper.",
+  "campaign_notes": [
+    "Created 2026-10-07 in the Nemetra NPC quality test; drawn from Drive 'Nemetra Gnoll Threat'."
+  ]
+}

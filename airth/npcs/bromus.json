@@ -1,0 +1,29 @@
+{
+  "name": "Bromus",
+  "moniker": null,
+  "role": "resin-gatherer",
+  "home": "Nemetra",
+  "home_settlement": "nemetra",
+  "found": "Scribe's Shed, selling Medach resin for ink.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "money",
+  "appearance": "Wiry. Sticky fingers. Bone chime at his belt.",
+  "and_yet": null,
+  "sayings": [
+    "Medach pays by the stone. Not going back for stones."
+  ],
+  "wants": "His digging wage from Medach.",
+  "does_not_want": "To go north again.",
+  "dreams": null,
+  "oddly_also": null,
+  "knows": "A half-fallen tower 12 miles north, full of bones.",
+  "offers": "Resin, torches, the way to the tower.",
+  "family": null,
+  "anecdotes": [],
+  "tragedies": [],
+  "dm_notes": "Medach buys his resin for ink, so asked him to dig first. The tower is the Old Ruin, Marrowgnaw lair. He took the chime off the outer wall and ran.",
+  "campaign_notes": [
+    "Created 2026-10-07 in the Nemetra NPC quality test; drawn from Drive 'Nemetra Gnoll Threat'."
+  ]
+}

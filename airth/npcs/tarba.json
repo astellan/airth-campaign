@@ -1,0 +1,29 @@
+{
+  "name": "Tarba",
+  "moniker": null,
+  "role": "kiln apprentice",
+  "home": "Pottery Quarter, Nemetra",
+  "home_settlement": "nemetra",
+  "found": "Clay pits, behind the fourth kiln.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "money",
+  "appearance": "16. Clay-grey to the eyebrows. Burn blisters.",
+  "and_yet": null,
+  "sayings": [
+    "Goblins'll dig all night if you keep the kiln lit."
+  ],
+  "wants": "Cheap hands for the clay pits.",
+  "does_not_want": "Halbet learning goblins carry his clay.",
+  "dreams": null,
+  "oddly_also": null,
+  "knows": "Goblins tend a kiln better than he does.",
+  "offers": null,
+  "family": null,
+  "anecdotes": [],
+  "tragedies": [],
+  "dm_notes": "The Ashfang trained them as fire-tenders. They never let a fire die.",
+  "campaign_notes": [
+    "Created 2026-10-07 in the Nemetra NPC quality test; drawn from Drive 'Nemetra Gnoll Threat'."
+  ]
+}

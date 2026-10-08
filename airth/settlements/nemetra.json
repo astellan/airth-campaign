@@ -228,6 +228,25 @@
         "custom": "Militia patrols end 2 hexes north."
       },
       "hidden": "Fresh gnoll and goblin tracks, plain to anyone who looks."
+    },
+    {
+      "id": "northern-woods",
+      "name": "Northern Woods",
+      "type": "landmark",
+      "look": "Oak, hazel and pine north of the trailhead. Charcoal smoke in the trees.",
+      "labels": {
+        "custom": "Ermen's charcoal clamps half a day in; resin taps along the paths."
+      }
+    },
+    {
+      "id": "south-fields",
+      "name": "South Fields",
+      "type": "landmark",
+      "look": "Stubble and hazel down to the marsh edge. A flat stone at the reeds, stained dark.",
+      "labels": {
+        "custom": "Bodica leaves slaughter offal on the stone."
+      },
+      "hidden": "Lizard-men in the reeds at night, watching the fields."
     }
   ],
   "factions": [

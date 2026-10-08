@@ -1,0 +1,29 @@
+{
+  "name": "Leovic",
+  "moniker": null,
+  "role": "carter",
+  "home": "Pottery Quarter, Nemetra",
+  "home_settlement": "nemetra",
+  "found": "Pottery Quarter, loading Halbet's jars.",
+  "gender": "male",
+  "faction": "independent",
+  "thinks_with": "money",
+  "appearance": "Broad. Mule-bitten ear. Whip over one shoulder.",
+  "and_yet": null,
+  "sayings": [
+    "Goblins on the road at night. Going the wrong way."
+  ],
+  "wants": "2 guards for the next jar run east.",
+  "does_not_want": "Halbet's rates from last year.",
+  "dreams": null,
+  "oddly_also": null,
+  "knows": "Goblins cross the Luric Road at night, northbound by dawn.",
+  "offers": "A seat on the cart, east or west.",
+  "family": null,
+  "anecdotes": [],
+  "tragedies": [],
+  "dm_notes": "Nighthowl spies. Zhallix frees goblins who bring news; these watch the Luric Road and carry what they see back north.",
+  "campaign_notes": [
+    "Created 2026-10-07 in the Nemetra NPC quality test; drawn from Drive 'Nemetra Gnoll Threat'."
+  ]
+}

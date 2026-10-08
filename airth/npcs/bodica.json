@@ -1,0 +1,29 @@
+{
+  "name": "Bodica",
+  "moniker": null,
+  "role": "crone",
+  "home": "South Fields, Nemetra",
+  "home_settlement": "nemetra",
+  "found": "South Fields, at the marsh-edge stone after slaughter.",
+  "gender": "female",
+  "faction": "independent",
+  "thinks_with": "tradition",
+  "appearance": "80s. Toothless. Shawl stinking of pig offal.",
+  "and_yet": null,
+  "sayings": [
+    "They let us be. Don't give them a reason."
+  ],
+  "wants": "Her grandson out of the southern marsh.",
+  "does_not_want": "Militia patrols going south.",
+  "dreams": null,
+  "oddly_also": "Leaves slaughter offal on a flat stone by the marsh. It's gone by morning.",
+  "knows": "Lizard-men have always watched the south fields at night.",
+  "offers": null,
+  "family": null,
+  "anecdotes": [],
+  "tragedies": [],
+  "dm_notes": "Deliberate. Her mother kept the stone before her. The lizard-men know it, and know her.",
+  "campaign_notes": [
+    "Created 2026-10-07 in the Nemetra NPC quality test; drawn from Drive 'Nemetra Gnoll Threat'."
+  ]
+}
