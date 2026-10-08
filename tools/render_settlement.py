@@ -1,7 +1,7 @@
 """Render a settlement JSON file to HTML per style/settlement.md.
 
 Usage: python tools/render_settlement.py <settlement-id> [out.html]
-NPC cards are pulled from airth/npcs/ and placed by `found` (falling back to `home`).
+NPC cards are pulled from airth/npcs/ and placed by `location`, then `found`, then `home`.
 """
 import html, json, re, sys
 from pathlib import Path
@@ -29,6 +29,8 @@ def npcs_for(sid):
     return out
 
 def place(npc, locations):
+    if npc.get("location") in {l["id"] for l in locations}:
+        return npc["location"]
     for key in ("found", "home"):
         norm = lambda t: (t or "").lower().replace("\u2019", "'")
         text = norm(npc.get(key))
@@ -50,6 +52,7 @@ def npc_card(n):
     h.append("<p>" + "<br>".join(f"<strong>{k}:</strong> {esc(v)}" for k, v in run) + "</p>")
     depth = [(k, n.get(f)) for k, f in [("Oddly also", "oddly_also"), ("Dreams", "dreams"), ("Thinks with", "thinks_with"), ("Family", "family")] if n.get(f)]
     stories = [("Anecdote", a) for a in n.get("anecdotes") or []] + [("Tragedy", t) for t in n.get("tragedies") or []]
+    if n.get("dm_notes"): stories.append(("DM", n["dm_notes"]))
     if depth or stories:
         h.append('<div class="more">')
         if depth: h.append("<p>" + "<br>".join(f"<strong>{k}:</strong> {esc(v)}" for k, v in depth) + "</p>")

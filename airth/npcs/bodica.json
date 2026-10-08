@@ -4,6 +4,7 @@
   "role": "crone",
   "home": "South Fields, Nemetra",
   "home_settlement": "nemetra",
+  "location": "south-fields",
   "found": "South Fields, at the marsh-edge stone after slaughter.",
   "gender": "female",
   "faction": "independent",

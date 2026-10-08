@@ -35,8 +35,9 @@ Top-level `adventure_sites/`, `archive/`, `encounter_tables/`, `npcs/`, `schemas
 
 1. Check `airth/backlog.json` for an existing open item covering the request.
 2. Check existing data (factions, NPCs, settlements) before inventing new ones — extend what exists rather than duplicating.
-3. Validate against `schema/*.json` and, for NPCs, `airth/config/npc.json` enums (e.g. `faction`).
-4. Run `pytest` (see `tests/`) before committing. Tests check: required NPC fields present, `thinks_with` and `faction` are valid enum values, `home_settlement` resolves to a real settlement or `"itinerant"`, and array fields (`anecdotes`, `tragedies`) contain only strings. Settlement tests validate new-format settlements (those with a `tagline`) against the schema, check location labels against their type, and check that `parent` exists and `neighbors` links are two-way.
+3. For NPCs, check the settlement's existing NPCs for the same role before drafting (one innkeeper per inn), and propose a slate of roles for approval before writing any cards.
+4. Validate against `schema/*.json` and, for NPCs, `airth/config/npc.json` enums (e.g. `faction`).
+5. Run `pytest` (see `tests/`) before committing. Tests check: required NPC fields present, `thinks_with` and `faction` are valid enum values, `home_settlement` resolves to a real settlement or `"itinerant"`, `location` names a location in that settlement, and array fields (`anecdotes`, `tragedies`) contain only strings. Settlement tests validate new-format settlements (those with a `tagline`) against the schema, check location labels against their type, and check that `parent` exists and `neighbors` links are two-way.
 
 ## Faction structure
 
@@ -57,6 +58,12 @@ Factions are organized as a node pyramid (`identity`, `goals`, `philosophy`, and
 How things are *stored* lives here. How things *read* — voice, layout, emphasis, rendering — lives in `style/`. Rule of thumb: saving it → CLAUDE.md; reading it → `style/`.
 
 Before writing any prose field or rendering any output, read `style/voice.md` plus the type file that applies (`style/adventure_site.md`, `style/npc.md`, …). On presentation, `style/` wins over anything here.
+
+### NPCs (storage)
+
+- `faction`: `independent` for anyone beholden to no faction. There is no `none`.
+- `location`: the id of a location in `home_settlement`'s `locations` array. Set it whenever the NPC is found at a keyed location; renders place the card there.
+- `dm_notes`: string. Holds the answer to every hook on the card. Never rendered for players.
 
 ### Naming & identifiers
 

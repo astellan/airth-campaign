@@ -93,3 +93,21 @@ def test_tragedies_are_strings(npcs):
             if not isinstance(item, str):
                 invalid.append(f"{npc_key}: tragedies[{i}] is not a string")
     assert not invalid, "\n".join(invalid)
+
+
+# ---------------------------------------------------------------------------
+# Reference: location
+# ---------------------------------------------------------------------------
+
+def test_location_references_exist(npcs, settlements):
+    """location must be a location id inside the NPC's home_settlement."""
+    invalid = []
+    for npc_key, npc in npcs.items():
+        loc = npc.get("location")
+        if not loc:
+            continue
+        s = settlements.get(npc.get("home_settlement"))
+        ids = {l.get("id") for l in (s or {}).get("locations", [])}
+        if loc not in ids:
+            invalid.append(f"{npc_key}: location '{loc}' not in {npc.get('home_settlement')}")
+    assert not invalid, "\n".join(invalid)

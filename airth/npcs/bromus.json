@@ -4,6 +4,7 @@
   "role": "resin-gatherer",
   "home": "Nemetra",
   "home_settlement": "nemetra",
+  "location": "scribes-shed",
   "found": "Scribe's Shed, selling Medach resin for ink.",
   "gender": "male",
   "faction": "independent",

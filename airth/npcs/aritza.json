@@ -4,6 +4,7 @@
   "role": "bound servant",
   "home": "The Royal Welcome, Nemetra",
   "home_settlement": "nemetra",
+  "location": "royal-welcome",
   "found": "The Royal Welcome, serving the militia.",
   "gender": "female",
   "faction": "independent",

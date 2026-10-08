@@ -4,6 +4,7 @@
   "role": "carter",
   "home": "Pottery Quarter, Nemetra",
   "home_settlement": "nemetra",
+  "location": "pottery-quarter",
   "found": "Pottery Quarter, loading Halbet's jars.",
   "gender": "male",
   "faction": "independent",

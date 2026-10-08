@@ -4,6 +4,7 @@
   "role": "kiln apprentice",
   "home": "Pottery Quarter, Nemetra",
   "home_settlement": "nemetra",
+  "location": "pottery-quarter",
   "found": "Clay pits, behind the fourth kiln.",
   "gender": "male",
   "faction": "independent",

@@ -5,7 +5,7 @@ Follows `style/voice.md`. Storage rules for NPC files are in CLAUDE.md; field li
 ## Render order
 
 ```
-**Name Moniker**, role · home · faction
+**Name Moniker**, role · Settlement, N. Location · faction
 
 Appearance. And yet.
 
@@ -25,14 +25,15 @@ Appearance. And yet.
 **Family:** …
 **Anecdote:** …
 **Tragedy:** …
+**DM:** …
 ```
 
-1. **Header:** name and moniker, role, home, faction.
+1. **Header:** name and moniker, role, location, faction. Location reads as settlement, then the location's number and name in file order: *Nemetra, 4. Pig Pens*. With no `location`, use `home`.
 2. **First sight:** appearance, then and-yet.
 3. **First words:** sayings.
 4. **Running them:** wants, doesn't want, knows, offers, found.
 5. **Dash.**
-6. **Depth:** for prep, not mid-session.
+6. **Depth:** for prep, not mid-session. `dm_notes` renders last, as **DM:**.
 
 Hide empty fields. Never print "Not established" or a blank label. A sparse NPC renders as header, appearance, wants — 3 lines is fine.
 
@@ -45,7 +46,8 @@ Hide empty fields. Never print "Not established" or a blank label. A sparse NPC 
 | `role` | yes | 1–3 words | What they do. Everyone has one, even "drifter." |
 | `home` | yes | 2–6 words | Where they live or work. |
 | `home_settlement` | yes | id | Settlement id, adventure-site id (for denizens), or `itinerant`. |
-| `found` | no | 3–12 words | Where to find them: a named location first, then when or doing what. *Warden’s Hall, sharpening his knife at dusk.* Settlement renders place the NPC card at this location. |
+| `location` | no | id | Location id inside `home_settlement` (`pig-pens`). Settlement renders place the NPC card here. |
+| `found` | no | 3–12 words | Where to find them: a named location first, then when or doing what. *Warden’s Hall, sharpening his knife at dusk.* Used for placement only when `location` is empty. |
 | `gender` | yes | 1 word | |
 | `faction` | yes | id | From `airth/config/npc.json`. |
 | `thinks_with` | yes | enum | From the schema enum. |
@@ -61,6 +63,7 @@ Hide empty fields. Never print "Not established" or a blank label. A sparse NPC 
 | `family` | no | 1–2 sentences | Plain facts. |
 | `anecdotes` | no | ≤3 entries, 1–3 sentences each | Things they did. |
 | `tragedies` | no | ≤3 entries, 1–3 sentences each | Things they lost. |
+| `dm_notes` | no | 1–3 sentences | The answer to every hook, secret, or odd detail on the card. DM eyes only. |
 
 ## Writing rules
 
@@ -71,12 +74,28 @@ Hide empty fields. Never print "Not established" or a blank label. A sparse NPC 
 **And yet.** The twist on the look.
 - *Good:* Huge, scarred, tattooed. *And yet:* hums lullabies while he works.
 
-**Sayings.** The line players quote after the session. Voice lives here — manner shows through the words, not phonetic spelling.
+**Sayings.** The line players quote after the session. Voice lives here — manner shows through the words, not phonetic spelling. If the NPC touches a faction or an adventure hook, the saying points at it.
 - *Good:* "Coin first. Then you can ask."
+- *Good (hook):* "Pigs don't scream at nothing. Mine scream every night."
+- *Weak (no hook):* "Pigs know. Pigs always know."
 
 **Wants vs. dreams.** Split by horizon.
 - *Wants:* Her inn kept theology-free.
 - *Dreams:* Daughter takes over the inn.
+
+**Wants touch the trouble.** Wants or doesn't-want touches one of the home settlement's `trouble` entries, or a faction the party can deal with. Something PCs could help or hinder this month.
+- *Good:* 10 sober men for a patrol past the second hill.
+- *Weak:* A quiet life.
+
+**Oddly also.** Only a trait that can come up in play. Literacy, a fine sense of touch, a favourite colour: cut.
+
+**Live ties only.** Every NPC links to at least one existing NPC or faction, and the link is something that can happen at the table. Never record an absence: "has never spoken to him" never comes up.
+- *Good:* Carries every patrol report to Mother Yaleth before Durvin hears it.
+- *Bad:* She has never spoken to him.
+
+**DM notes.** Every hook, secret or odd detail on the card gets its answer here (see CLAUDE.md, no dead-end mysteries). The answer fits who the NPC is: a crone who keeps the old ways knows what her offering does.
+- *Good:* Deliberate. Her mother kept the stone before her.
+- *Bad:* Not tribute; habit. Nobody asked for it.
 
 **Anecdotes and tragedies.** Specific past events with names, numbers, and consequences attached — not generic backstory. Not "lost people close to him in tomb collapses" but a named event: who died, when, how, and what habit the survivor still carries because of it. The named version gives a DM something to reference in play; the generic version doesn't.
 

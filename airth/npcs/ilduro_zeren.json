@@ -4,6 +4,7 @@
   "role": "swineherd",
   "home": "Pig Pens, Nemetra",
   "home_settlement": "nemetra",
+  "location": "pig-pens",
   "found": "Pig Pens, slopping at dawn.",
   "gender": "male",
   "faction": "independent",

@@ -49,6 +49,19 @@
           "type": "string",
           "$comment": "Reference: must match a key in airth_settlements.json. Use 'itinerant' for NPCs with no fixed settlement."
         },
+        "location": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-z0-9-]+$"
+        },
+        "dm_notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
         "found": {
           "type": [
             "string",
