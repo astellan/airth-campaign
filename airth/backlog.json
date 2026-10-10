@@ -18,22 +18,22 @@
       "id": "BL-03",
       "category": "npcs",
       "description": "Add NPC record: Ossek Thrice-Buried",
-      "status": "open",
-      "notes": "Antiquarian, tomb-diver, Aurka contacts. Zardoon's recurring contact. Source doc: OSSEK THRICE-BURIED Google Doc (session 26)."
+      "status": "closed",
+      "notes": "Antiquarian, tomb-diver, Aurka contacts. Zardoon's recurring contact. Source doc: OSSEK THRICE-BURIED Google Doc (session 26). Closed 2026-10-10: npcs/ossek_thrice_buried.json exists."
     },
     {
       "id": "BL-04",
       "category": "npcs",
       "description": "Add NPC record: Tazuln 'the Seer'",
-      "status": "open",
-      "notes": "Illusionist hermit north of Orziben. Chekkad's trainer and ongoing mentor. Source doc: Chekkad's Training Google Doc (session 26)."
+      "status": "closed",
+      "notes": "Illusionist hermit north of Orziben. Chekkad's trainer and ongoing mentor. Source doc: Chekkad's Training Google Doc (session 26). Closed 2026-10-10: npcs/tazuln.json exists."
     },
     {
       "id": "BL-05",
       "category": "npcs",
       "description": "Add NPC record: Ossivan Carn",
-      "status": "open",
-      "notes": "Traveling lay-judge of Lugus, Marches circuit, originally Velgroth. Recurring antagonist/neutral figure. Source doc: strummer_training.md and lugazil_tagmira.md."
+      "status": "closed",
+      "notes": "Traveling lay-judge of Lugus, Marches circuit, originally Velgroth. Recurring antagonist/neutral figure. Source doc: strummer_training.md and lugazil_tagmira.md. Closed 2026-10-10: npcs/ossivan_carn.json exists."
     },
     {
       "id": "BL-06",
@@ -60,8 +60,8 @@
       "id": "BL-09",
       "category": "data_integrity",
       "description": "Resolve 'Zardun' vs. 'Zardoon' — campaign state uses Zardun, session logs use Zardoon",
-      "status": "open",
-      "notes": "Standardize across all files once spelling is confirmed."
+      "status": "closed",
+      "notes": "Standardize across all files once spelling is confirmed. Closed 2026-10-10: Zardoon is canonical; standardized in campaign_main.json, session_log.json, ossek_thrice_buried.json. Archive left untouched."
     },
     {
       "id": "BL-10",
@@ -88,8 +88,8 @@
       "id": "BL-13",
       "category": "settlements",
       "description": "Write Nebruz settlement notes",
-      "status": "open",
-      "notes": "Party overnighted there in session 27. Flagged in dm_notes as pending. Adapted from Gnatdamp in Gygax Magazine #1 — full text in Andrew's Google Doc."
+      "status": "closed",
+      "notes": "Party overnighted there in session 27. Flagged in dm_notes as pending. Adapted from Gnatdamp in Gygax Magazine #1 — full text in Andrew's Google Doc. Closed 2026-10-10: settlements/nebruz.json exists, status ready."
     },
     {
       "id": "BL-14",
@@ -102,15 +102,15 @@
       "id": "BL-15",
       "category": "schema",
       "description": "Flesh out schemas/items.schema.json — stub created, needs review against full item data",
-      "status": "open",
-      "notes": "Stub covers current item structure. Validate all items.json entries against it and extend enum lists as needed."
+      "status": "closed",
+      "notes": "Stub covers current item structure. Validate all items.json entries against it and extend enum lists as needed. Closed 2026-10-10: superseded by schema/item.schema.json."
     },
     {
       "id": "BL-16",
       "category": "schema",
       "description": "Flesh out schemas/session_log.schema.json — stub created, needs review against full session log data",
-      "status": "open",
-      "notes": "Stub covers current session structure including optional in_game_dates and quests_pending_or_deferred fields. Validate all sessions and extend as the log grows."
+      "status": "closed",
+      "notes": "Stub covers current session structure including optional in_game_dates and quests_pending_or_deferred fields. Validate all sessions and extend as the log grows. Closed 2026-10-10: superseded by schema/session.schema.json."
     },
     {
       "id": "BL-17",
