@@ -67,8 +67,8 @@
       "id": "BL-10",
       "category": "data_integrity",
       "description": "Fix Leeandra's NPC record: thinks_with needs 'diplomacy', faction needs 'lizard-men'",
-      "status": "open",
-      "notes": "Record won't validate against schemas/npcs.schema.json until these are corrected."
+      "status": "closed",
+      "notes": "Record won't validate against schemas/npcs.schema.json until these are corrected. Closed 2026-10-10: faction set to lizard-men; thinks_with already diplomacy."
     },
     {
       "id": "BL-11",
@@ -172,8 +172,8 @@
       "id": "BL-25",
       "category": "factions",
       "description": "Create a lizard-men faction file (goal/philosophy/limits pyramid) from the three tendencies in world_reference/mortals.json: the Clean Death, the Restrained Hunger, the Long Work. Add 'lizard-men' to the NPC faction enum and set Leeandra's faction (closes BL-10).",
-      "status": "open",
-      "notes": "Caelrun's central hidden tension."
+      "status": "closed",
+      "notes": "Caelrun's central hidden tension. Closed 2026-10-10: factions/lizard-men.json written; shamans of Semuyana lead; lizard-men added to NPC faction enum."
     },
     {
       "id": "BL-26",

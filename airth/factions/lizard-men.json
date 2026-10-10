@@ -1,0 +1,155 @@
+{
+  "$schema": "../../schema/faction.schema.json",
+  "id": "lizard-men",
+  "name": "Lizard-Men",
+  "identity": {
+    "descriptors": ["apex predators", "patient", "organized", "devout", "divided"],
+    "public_perception": "Swamp monsters, to most humans. Border folk avoid the deep water and think little more about it. Caelrun believes its prosperity is its own. Hobgoblins fear them and will not move against them."
+  },
+  "goals": {
+    "primary": "Keep the swamp, and the lizard-men in it, fed, whole, and their own.",
+    "secondary": [
+      "Hold the peace among lizard-men. No lizard-man war.",
+      "Hold the peace with humans: the unspoken compact at Caelrun, the treaty at Nebruz.",
+      "Keep the lizard-man tongue from outsiders."
+    ],
+    "hidden_agenda": "Caelrun and every other human settlement in the swamp exists by lizard-man sufferance. The Long Work is reshaping the Marches to drive humans out over centuries."
+  },
+  "philosophy": {
+    "summary": "Rational and patient. What looks like wilderness is managed land. Disputes go to the shamans and to Leeandra, not to the spear.",
+    "methods": [
+      "Intensive husbandry: egg nurseries, insect colonies, fish ponds, fungus beds, managed hunting grounds.",
+      "Froggish-folk labour for weirs, channels, messages, and lookouts.",
+      "Watching from the reeds. A breach of the compact is answered slowly, quietly, and surely.",
+      "Shamanic magic, granted by Semuyana."
+    ],
+    "limits": [
+      "Will not teach the lizard-man tongue to outsiders.",
+      "Will not make war on other lizard-men while the shamans can stop it.",
+      "Will not leave the swamp for long. Dry ground debilitates them.",
+      "Will not eat humans. The Restrained Hunger keeps this limit and resents it."
+    ]
+  },
+  "position": {
+    "territory": "The swamps of the Luric Marches, from the deep water around Caelrun to the channels past Nebruz.",
+    "power_level": "regional"
+  },
+  "relationships": {
+    "rivals": [
+      {
+        "faction_id": "hobgoblin-city-states",
+        "nature": "The hobgoblins fear lizard-men, will not move against them, and will not enslave them. The lizard-men give them no thought."
+      },
+      {
+        "faction_id": "fire-elementals",
+        "nature": "Lizard-men cannot hear fire elemental whispers and cannot be recruited into the fire conspiracy."
+      },
+      {
+        "faction_id": "gloaming-court",
+        "nature": "Fey glamours and fey manipulation do not take on lizard-men."
+      }
+    ],
+    "needs": [
+      "Leeandra alive and neutral.",
+      "Humans who stay out of the deep swamp and away from the burial mounds."
+    ],
+    "provides": [
+      "Mead and honeycomb, through froggish-folk trade at Nebruz.",
+      "The safety of the swamp settlements, though few humans know it."
+    ]
+  },
+  "nodes": {
+    "shamans-of-semuyana": {
+      "name": "Shamans of Semuyana",
+      "type": "leadership",
+      "role": "Semuyana grants the shamans' spells directly. All three tendencies honour them. The shamans work to curb the brutality of lizard-man against lizard-man, as the early Church curbed private war: they hear disputes, sanctify truces, and shame or shun the violent.",
+      "goal": "No lizard-man kills another lizard-man.",
+      "connections": ["leeandra", "swamp-husbandry"]
+    },
+    "leeandra": {
+      "name": "Leeandra",
+      "type": "floating",
+      "role": "Cross-tendency diplomat, outside all three. Keeps the tendencies from open war and the swamp from raiding Caelrun. Trusted and resented equally.",
+      "npcs": ["leeandra"],
+      "location": "Nebruz",
+      "connections": ["shamans-of-semuyana", "nebruz-trade"],
+      "notes": "Her removal would be catastrophic for the Luric Marches."
+    },
+    "swamp-husbandry": {
+      "name": "Swamp Husbandry",
+      "type": "operations",
+      "role": "Nurseries, weirs, insect mounds, fungus beds, and culled hunting grounds. Channels are not random; log structures are not debris. The engine of the Long Work.",
+      "connections": ["froggish-folk"]
+    },
+    "reed-line-watchers": {
+      "name": "Reed-Line Watchers",
+      "type": "operations",
+      "role": "Lizard-men who watch the human settlements from the reeds. At Caelrun, one stands at the reed line and is gone when looked at again.",
+      "goal": "Answer any breach of the compact. Not quickly, not obviously, but surely.",
+      "location": "Caelrun",
+      "notes": "A major expedition into the Submerged Temple-Garden would breach the compact."
+    },
+    "froggish-folk": {
+      "name": "Froggish Folk",
+      "type": "support",
+      "role": "Subject labour: weir harvesters, channel clearers, messengers, lookouts, and the chorus. Shamans give them magic they cannot make themselves. Free froggish folk live outside lizard-man settlements, without that protection.",
+      "connections": ["swamp-husbandry", "nebruz-trade"]
+    },
+    "nebruz-trade": {
+      "name": "Nebruz Trade",
+      "type": "support",
+      "role": "A non-aggression treaty with Nebruz holds. Froggish folk under lizard-man rule trade mead and honeycomb there. The lizard-man burial mounds are inviolable.",
+      "location": "Nebruz",
+      "connections": ["leeandra"]
+    }
+  },
+  "subfactions": {
+    "clean-death": {
+      "id": "clean-death",
+      "name": "The Clean Death",
+      "identity": {"descriptors": ["humane", "pluralist", "content"]},
+      "goals": {"primary": "Lasting peace with neighbouring peoples, as equals."},
+      "philosophy": {
+        "summary": "Kill without cruelty. Death is necessary; cruelty is not. Lizard-men are one people among many.",
+        "limits": [
+          "Kind and fair to froggish folk.",
+          "No expansion beyond the swamp.",
+          "Uneasy with the Long Work, whose endgame they find wrong."
+        ]
+      }
+    },
+    "restrained-hunger": {
+      "id": "restrained-hunger",
+      "name": "The Restrained Hunger",
+      "identity": {"descriptors": ["hungry", "disciplined", "proud"]},
+      "goals": {
+        "primary": "Hold the hunger for humanoid flesh in check, for now, and be honoured for it.",
+        "hidden_agenda": "The hunger is real. The restraint is fragile."
+      },
+      "philosophy": {
+        "summary": "Restraint is discipline and virtue, not shame. They threaten by appetite, not by conquest.",
+        "limits": [
+          "Do not eat humans.",
+          "Do eat froggish folk, rarely, and goblins whenever chance allows."
+        ]
+      }
+    },
+    "long-work": {
+      "id": "long-work",
+      "name": "The Long Work",
+      "identity": {"descriptors": ["humane", "patient", "expansionist"]},
+      "goals": {
+        "primary": "Grow the swamp over centuries: divert water, flood plains, make the Marches unfit for humans.",
+        "hidden_agenda": "Humanity will retreat as the swamp advances. They do not call it war."
+      },
+      "philosophy": {
+        "summary": "Kill cleanly, like the Clean Death, but change the world rather than accept it. Territory is an engineering problem.",
+        "limits": [
+          "No aggression and no haste.",
+          "Indifferent to froggish folk."
+        ]
+      }
+    }
+  },
+  "dm_notes": "The three tendencies are ideological, not territorial or hereditary; siblings may differ. All worship Semuyana, honour the shamans, and back Leeandra. The Restrained Hunger forces the Clean Death and the Long Work into an uneasy alliance. The Long Work's endgame, the slow displacement of humanity, is the party's lever on that alliance once they learn it. Sarith the Watcher, Brecht Hallan, and Ordun Tarnes know the Caelrun compact's real shape."
+}
