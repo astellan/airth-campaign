@@ -53,7 +53,7 @@ Hide empty fields. Never print "Not established" or a blank label. A sparse NPC 
 | `thinks_with` | yes | enum | From the schema enum. |
 | `appearance` | yes | 3 details, <15 words | Only what PCs see at first glance. |
 | `and_yet` | no | 2–7 words | One detail contradicting the appearance. About the look only. |
-| `sayings` | no | 1–2 lines, <12 words each | Quips players will remember and repeat. |
+| `sayings` | no | 1–7 lines, <12 words each | Quips players will remember and repeat. |
 | `wants` | yes | 2–7 words | Now. Concrete; PCs could help or hinder this month. |
 | `does_not_want` | yes | 2–7 words | Now. |
 | `dreams` | no | 3–10 words | A life goal. Possibly never reached. |

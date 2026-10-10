@@ -111,7 +111,7 @@
           "items": {
             "type": "string"
           },
-          "maxItems": 2
+          "maxItems": 7
         },
         "wants": {
           "type": "string"

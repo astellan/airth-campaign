@@ -11,13 +11,19 @@
   "appearance": "Swamp-worn leathers. Rings on every finger.",
   "and_yet": null,
   "sayings": [
-    "The tribes keep their word. The exiles don't."
+    "Caelrun thinks it tamed the swamp. The swamp agreed to be patient.",
+    "Some of them are hungry for you. They're proud of not eating.",
+    "The water rises a finger a year. Ask who digs the channels.",
+    "When a shaman speaks, the spears go down. Usually.",
+    "Kill clean, they say. Not all of them say it.",
+    "I keep three peoples from each other's throats. And yours.",
+    "Don't learn their tongue. They'll know who taught you."
   ],
-  "wants": "Peace among the lizard-man tribes. Ring-lore.",
-  "does_not_want": "Tribal war in the Marches.",
+  "wants": "Peace among the lizard-men. Ring-lore.",
+  "does_not_want": "Lizard-man war in the Marches.",
   "dreams": null,
   "oddly_also": null,
-  "knows": "Lizard-man tribal politics.",
+  "knows": "Lizard-man politics.",
   "offers": "Potions.",
   "family": null,
   "anecdotes": [],
@@ -27,7 +33,7 @@
     "brew_started_in_game": "Ragaia 15",
     "brew_ready_in_game": "Ragaia 19",
     "ingredient_needed": "Giant constrictor snake brain fluid — party tasked with retrieval (session 27)",
-    "dm_notes": "Load-bearing for two arcs: the water-breathing brew (4-day clock) and the constrictor hunt (session 28 driver). Diplomatic keystone of the Luric marches — her neutrality prevents lizard-man tribal war and keeps tribes from raiding Caelrun."
+    "dm_notes": "Load-bearing for two arcs: the water-breathing brew (4-day clock) and the constrictor hunt (session 28 driver). Diplomatic keystone of the Luric marches — her neutrality keeps the three lizard-man tendencies from open war and keeps the swamp from raiding Caelrun."
   },
   "campaign_notes": [
     "Deliver the upland herbs from Mother Yaleth (done, session 27); retrieve giant constrictor snake brain fluid for ring-lore; demonstrate respect for lizard-man tribal politics and the swamp's balance"
